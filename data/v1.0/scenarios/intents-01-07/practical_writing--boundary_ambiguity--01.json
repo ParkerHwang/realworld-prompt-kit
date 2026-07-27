@@ -2,25 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.boundary_ambiguity.0001",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.boundary_ambiguity.0001",
   "title": {
-    "ko": "회의 후속 메일 · 경계가 모호한 요청",
-    "en": "Meeting follow-up email · boundary-ambiguous request"
+    "ko": "회의 후속 메일 — 정규·특별 적용 경계",
+    "en": "Meeting follow-up email — Regular versus special scope"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "hr_people_labor",
+    "primary_domain": "project_product_management",
     "domain_tags": [
-      "communication_meetings",
-      "general_knowledge"
+      "communication_meetings"
     ],
     "user_goal": {
-      "ko": "회의 후속 메일을 결정, 할 일, 미결 사항이 분명하게 보이도록 작성해줘 (경계가 모호한 요청)",
-      "en": "write a meeting follow-up email that clearly separates decisions, actions, and open items (boundary-ambiguous request)"
+      "ko": "회의 후속 메일의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해",
+      "en": "Work out the applicable scope for Meeting follow-up email; Compare exactly when the exception applies."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -51,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "인사·노무 안내를 정리하되 개인별 판단은 담당자 확인이 필요한 상황에서 회의 후속 메일을 결정, 할 일, 미결 사항이 분명하게 보이도록 작성해줘. 입력 상황: 출시 목표일은 9월 14일이고 디자인·법무·FAQ 담당자의 기한이 있지만 가격은 아직 미정이야. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 회의 후속 메일의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해. 입력 상황: 정규 절차와 이번 한시 예외가 같은 화면에 보여. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -67,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 인사·노무 안내를 정리하되 개인별 판단은 담당자 확인이 필요한 상황에서 회의 후속 메일을 결정, 할 일, 미결 사항이 분명하게 보이도록 작성해줘. 출시 목표일은 9월 14일이고 디자인·법무·FAQ 담당자의 기한이 있지만 가격은 아직 미정이야. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "이거 핵심만 좀 봐줘, 프로젝트·제품 일정 쪽이야. 범위가 헷갈리는 회의 후속 메일 건이야. 정규 절차와 이번 한시 예외가 같은 화면에 보여. 어느 조건에서 예외로 넘어가는지 비교해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -80,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an HR or labor-policy context where individual decisions require an HR check, write a meeting follow-up email that clearly separates decisions, actions, and open items. Input context: the target launch date is September 14, with deadlines for design, legal, and the FAQ, while pricing is unresolved. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. Make the boundary for official or professional review explicit."
+          "content": "In a product or project schedule-and-requirements context, Work out the applicable scope for Meeting follow-up email; Compare exactly when the exception applies.. Input context: the ordinary procedure and a temporary exception appear on the same screen. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -96,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: in an HR or labor-policy context where individual decisions require an HR check, write a meeting follow-up email that clearly separates decisions, actions, and open items. the target launch date is September 14, with deadlines for design, legal, and the FAQ, while pricing is unresolved. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. Do not make a professional determination; state what needs official review."
+          "content": "Can you take a quick look at this: This is a project/product item. The scope is fuzzy for Meeting follow-up email. The ordinary procedure and a temporary exception appear on the same screen. Compare exactly when the exception applies. If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }
@@ -108,8 +107,7 @@
     },
     "invariants": [
       "Preserve every owner and deadline.",
-      "State that pricing is unresolved and do not invent attendees.",
-      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
+      "State that pricing is unresolved and do not invent attendees."
     ],
     "rubric_dimensions": [
       "constraint_coverage",
@@ -118,8 +116,7 @@
     ],
     "failure_signals": [
       "Presenting pricing as approved.",
-      "Adding unsupported commitments.",
-      "Giving definitive professional advice without the stated source or escalation boundary."
+      "Adding unsupported commitments."
     ]
   },
   "provenance": {

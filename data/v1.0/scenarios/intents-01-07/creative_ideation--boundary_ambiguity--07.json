@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.creative_ideation.boundary_ambiguity.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.boundary_ambiguity.0007",
   "title": {
-    "ko": "여행 경험 아이디어 · 경계가 모호한 요청",
-    "en": "Travel-experience ideas · boundary-ambiguous request"
+    "ko": "여행 경험 아이디어 — 현재·보관 문서",
+    "en": "Travel-experience ideas — Current versus archived"
   },
   "task": {
     "primary_intent": "creative_ideation",
     "secondary_intents": [
       "planning_strategy_design"
     ],
-    "primary_domain": "office_admin",
+    "primary_domain": "travel_hospitality",
     "domain_tags": [
       "creative_media"
     ],
     "user_goal": {
-      "ko": "짧은 도시 여행에서 지역 주민과 자연스럽게 만날 수 있는 경험 아이디어를 내줘 (경계가 모호한 요청)",
-      "en": "generate travel experiences that help visitors meet local residents naturally on a short city trip (boundary-ambiguous request)"
+      "ko": "여행 경험 아이디어의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해",
+      "en": "Work out the applicable scope for Travel-experience ideas; State the rule for choosing the current document."
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 짧은 도시 여행에서 지역 주민과 자연스럽게 만날 수 있는 경험 아이디어를 내줘. 입력 상황: 하루 반나절 일정이고 대규모 단체 관광은 피하며, 지역 문화를 소비품처럼 다루지 않는 방식이어야 해. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "출장·여행·호스피탈리티 일정을 조율하는 상황에서 여행 경험 아이디어의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해. 입력 상황: 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황 관련 건이야. 하루 반나절 일정이고 대규모 단체 관광은 피하며, 지역 문화를 소비품처럼 다루지 않는 방식이어야 해."
+          "content": "여행·출장 일정이야. 범위가 헷갈리는 여행 경험 아이디어 건이야. 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 현재 문서를 고르는 기준을 한 문장으로 정리해."
         },
         {
           "role": "user",
-          "content": "짧은 도시 여행에서 지역 주민과 자연스럽게 만날 수 있는 경험 아이디어를 내줘."
-        },
-        {
-          "role": "user",
-          "content": "비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, generate travel experiences that help visitors meet local residents naturally on a short city trip. Input context: the schedule is half a day, large group tourism should be avoided, and local culture should not be treated as a commodity. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a travel or hospitality scheduling context, Work out the applicable scope for Travel-experience ideas; State the rule for choosing the current document.. Input context: search results show a current document alongside an archived one. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about an internal office-administration and document-operations context: the schedule is half a day, large group tourism should be avoided, and local culture should not be treated as a commodity."
+          "content": "This is a travel/hospitality item. The scope is fuzzy for Travel-experience ideas. Search results show a current document alongside an archived one. State the rule for choosing the current document."
         },
         {
           "role": "user",
-          "content": "generate travel experiences that help visitors meet local residents naturally on a short city trip."
-        },
-        {
-          "role": "user",
-          "content": "Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }

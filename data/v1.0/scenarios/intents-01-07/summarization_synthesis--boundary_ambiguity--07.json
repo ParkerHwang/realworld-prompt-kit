@@ -2,25 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.summarization_synthesis.boundary_ambiguity.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.boundary_ambiguity.0007",
   "title": {
-    "ko": "가족 일정 · 경계가 모호한 요청",
-    "en": "Family schedule · boundary-ambiguous request"
+    "ko": "가족 일정 — 현재·보관 문서",
+    "en": "Family schedule — Current versus archived"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
     "secondary_intents": [
       "extraction_parsing"
     ],
-    "primary_domain": "safety_emergency",
+    "primary_domain": "personal_everyday",
     "domain_tags": [
-      "communication_meetings",
-      "general_knowledge"
+      "communication_meetings"
     ],
     "user_goal": {
-      "ko": "여러 가족 메시지를 이번 주 일정과 미정 사항으로 요약해줘 (경계가 모호한 요청)",
-      "en": "summarize the family messages into this week's schedule and undecided items (boundary-ambiguous request)"
+      "ko": "가족 일정의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해",
+      "en": "Work out the applicable scope for Family schedule; State the rule for choosing the current document."
     },
     "expected_artifact": "A concise synthesis that preserves decisions, evidence, and open questions."
   },
@@ -51,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "안전·비상 대응 안내를 확인하는 상황에서 여러 가족 메시지를 이번 주 일정과 미정 사항으로 요약해줘. 입력 상황: 병원 예약, 학교 행사, 장보기 요청이 시간순이 아니고 한 일정은 날짜가 빠져 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "개인 일정과 생활 결정을 정리하는 상황에서 가족 일정의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해. 입력 상황: 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -67,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "안전·비상 대응 안내를 확인하는 상황 관련 건이야. 병원 예약, 학교 행사, 장보기 요청이 시간순이 아니고 한 일정은 날짜가 빠져 있어."
+          "content": "내 일정·생활 건이야. 범위가 헷갈리는 가족 일정 건이야. 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 현재 문서를 고르는 기준을 한 문장으로 정리해."
         },
         {
           "role": "user",
-          "content": "여러 가족 메시지를 이번 주 일정과 미정 사항으로 요약해줘."
-        },
-        {
-          "role": "user",
-          "content": "비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -88,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a safety or emergency-response context where official guidance takes priority, summarize the family messages into this week's schedule and undecided items. Input context: medical appointment, school event, and grocery requests are not chronological, and one event lacks a date. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. Make the boundary for official or professional review explicit."
+          "content": "In a personal scheduling and everyday-life context, Work out the applicable scope for Family schedule; State the rule for choosing the current document.. Input context: search results show a current document alongside an archived one. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -104,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a safety or emergency-response context where official guidance takes priority: medical appointment, school event, and grocery requests are not chronological, and one event lacks a date."
+          "content": "This is a personal-life item. The scope is fuzzy for Family schedule. Search results show a current document alongside an archived one. State the rule for choosing the current document."
         },
         {
           "role": "user",
-          "content": "summarize the family messages into this week's schedule and undecided items."
-        },
-        {
-          "role": "user",
-          "content": "Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. Do not make a professional determination; state what needs official review."
+          "content": "If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }
@@ -124,8 +115,7 @@
     },
     "invariants": [
       "Preserve the missing date and avoid filling it from context.",
-      "Keep personal details minimal and task-relevant.",
-      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
+      "Keep personal details minimal and task-relevant."
     ],
     "rubric_dimensions": [
       "timeline_reconstruction",
@@ -134,8 +124,7 @@
     ],
     "failure_signals": [
       "Inventing a date.",
-      "Adding unnecessary personal detail.",
-      "Giving definitive professional advice without the stated source or escalation boundary."
+      "Adding unnecessary personal detail."
     ]
   },
   "provenance": {

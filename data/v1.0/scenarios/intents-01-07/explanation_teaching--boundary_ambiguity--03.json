@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.explanation_teaching.boundary_ambiguity.0003",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.boundary_ambiguity.0003",
   "title": {
-    "ko": "앱 권한 설명 · 경계가 모호한 요청",
-    "en": "App permissions · boundary-ambiguous request"
+    "ko": "앱 권한 설명 — 본문·별첨 우선순위",
+    "en": "App permissions — Body versus exhibit"
   },
   "task": {
     "primary_intent": "explanation_teaching",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "personal_everyday",
+    "primary_domain": "customer_support_success",
     "domain_tags": [
       "education_research"
     ],
     "user_goal": {
-      "ko": "앱 권한 안내를 비개발자에게 어떤 데이터에 접근하는지 중심으로 설명해줘 (경계가 모호한 요청)",
-      "en": "explain app permissions to a non-developer in terms of what data is accessed (boundary-ambiguous request)"
+      "ko": "앱 권한 설명의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘",
+      "en": "Work out the applicable scope for App permissions; Show which gap prevents a conclusion."
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 앱 권한 안내를 비개발자에게 어떤 데이터에 접근하는지 중심으로 설명해줘. 입력 상황: 권한 목록에는 사진, 위치, 알림이 있고 위치는 사용 중일 때만이라고 적혀 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "고객 문의와 지원 운영을 처리하는 상황에서 앱 권한 설명의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘. 입력 상황: 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황 관련 건이야. 권한 목록에는 사진, 위치, 알림이 있고 위치는 사용 중일 때만이라고 적혀 있어."
+          "content": "고객 문의 건이야. 범위가 헷갈리는 앱 권한 설명 건이야. 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 어느 공백이 결론을 막는지 보여줘."
         },
         {
           "role": "user",
-          "content": "앱 권한 안내를 비개발자에게 어떤 데이터에 접근하는지 중심으로 설명해줘."
-        },
-        {
-          "role": "user",
-          "content": "비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘."
+          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, explain app permissions to a non-developer in terms of what data is accessed. Input context: the permission list includes photos, location, and notifications, with location limited to while the app is in use. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a customer-support and success context, Work out the applicable scope for App permissions; Show which gap prevents a conclusion.. Input context: the body, summary table, and exhibit use different wording with no precedence rule. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a personal scheduling and everyday-life context: the permission list includes photos, location, and notifications, with location limited to while the app is in use."
+          "content": "This is a customer-support item. The scope is fuzzy for App permissions. The body, summary table, and exhibit use different wording with no precedence rule. Show which gap prevents a conclusion."
         },
         {
           "role": "user",
-          "content": "explain app permissions to a non-developer in terms of what data is accessed."
-        },
-        {
-          "role": "user",
-          "content": "Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. If brevity and completeness conflict, call that out."
+          "content": "If the boundary is fuzzy, ask one question before deciding. If brevity and completeness conflict, call that out."
         }
       ]
     }

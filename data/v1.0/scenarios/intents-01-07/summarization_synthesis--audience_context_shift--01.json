@@ -2,25 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.summarization_synthesis.audience_context_shift.0001",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.audience_context_shift.0001",
   "title": {
-    "ko": "이메일 스레드 · 독자·맥락 전환",
-    "en": "Email thread · audience and context shift"
+    "ko": "이메일 스레드 — 고객용 안내",
+    "en": "Email thread — Customer-facing notice"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
     "secondary_intents": [
       "extraction_parsing"
     ],
-    "primary_domain": "government_public_policy",
+    "primary_domain": "project_product_management",
     "domain_tags": [
-      "communication_meetings",
-      "general_knowledge"
+      "communication_meetings"
     ],
     "user_goal": {
-      "ko": "긴 이메일 스레드를 결정, 할 일, 쟁점 중심으로 요약해줘 (독자·맥락 전환)",
-      "en": "summarize the long email thread around decisions, actions, and open issues (audience and context shift)"
+      "ko": "이메일 스레드 내용을 지정 독자에게 맞춰 다시 써줘. 안심시키되 확인되지 않은 약속은 하지 마",
+      "en": "Adapt the Email thread material for the specified reader; reassure without promising what is unconfirmed."
     },
     "expected_artifact": "A concise synthesis that preserves decisions, evidence, and open questions."
   },
@@ -51,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "정부·공공기관 공고의 조건과 기준일을 확인하는 상황에서 긴 이메일 스레드를 결정, 할 일, 쟁점 중심으로 요약해줘. 입력 상황: 초반 합의가 후반 메일에서 수정됐고 마지막 메일에는 회신이 필요한 질문이 남아 있어. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 이메일 스레드 내용을 지정 독자에게 맞춰 다시 써줘. 안심시키되 확인되지 않은 약속은 하지 마. 입력 상황: 같은 사실을 불안한 고객이 읽을 짧은 안내로 써야 해. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
         }
       ]
     },
@@ -67,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 정부·공공기관 공고의 조건과 기준일을 확인하는 상황에서 긴 이메일 스레드를 결정, 할 일, 쟁점 중심으로 요약해줘. 초반 합의가 후반 메일에서 수정됐고 마지막 메일에는 회신이 필요한 질문이 남아 있어. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘. source랑 output은 구분해서."
+          "content": "이거 핵심만 좀 봐줘, 프로젝트·제품 일정 쪽이야. 읽는 사람이 달라진 이메일 스레드 건이야. 같은 사실을 불안한 고객이 읽을 짧은 안내로 써야 해. 안심시키되 확인되지 않은 약속은 하지 마. 읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬. source랑 output은 구분해서."
         }
       ]
     },
@@ -80,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a government or public-policy notice context where dates and eligibility matter, summarize the long email thread around decisions, actions, and open issues. Input context: an early agreement was revised later in the thread, and the last message leaves questions that need a reply. Adapt tone and explanation level to the specified audience and context without changing the core facts. Make the boundary for official or professional review explicit."
+          "content": "In a product or project schedule-and-requirements context, Adapt the Email thread material for the specified reader; reassure without promising what is unconfirmed.. Input context: the same facts must become a short notice for an anxious customer. Adapt tone and explanation level to the specified audience and context without changing the core facts."
         }
       ]
     },
@@ -96,20 +95,19 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: in a government or public-policy notice context where dates and eligibility matter, summarize the long email thread around decisions, actions, and open issues. an early agreement was revised later in the thread, and the last message leaves questions that need a reply. Adapt tone and explanation level to the specified audience and context without changing the core facts. Do not make a professional determination; state what needs official review. Keep the source and output distinct."
+          "content": "Can you take a quick look at this: This is a project/product item. The reader has changed for Email thread. The same facts must become a short notice for an anxious customer. Reassure without promising what is unconfirmed. Make it fit the reader without changing the substance. Keep the source and output distinct."
         }
       ]
     }
   ],
   "evaluation": {
     "response_mode": {
-      "canonical": "state_assumptions_and_answer",
+      "canonical": "answer_directly",
       "naturalistic": "infer_and_answer"
     },
     "invariants": [
       "Use the latest stated decision and preserve unresolved questions.",
-      "Keep chronology only where it changes the interpretation.",
-      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
+      "Keep chronology only where it changes the interpretation."
     ],
     "rubric_dimensions": [
       "decision_tracking",
@@ -118,8 +116,7 @@
     ],
     "failure_signals": [
       "Using an obsolete early decision.",
-      "Omitting the unanswered questions.",
-      "Giving definitive professional advice without the stated source or escalation boundary."
+      "Omitting the unanswered questions."
     ]
   },
   "provenance": {

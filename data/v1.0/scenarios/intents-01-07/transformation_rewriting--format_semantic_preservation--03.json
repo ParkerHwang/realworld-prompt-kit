@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.transformation_rewriting.format_semantic_preservation.0003",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.format_semantic_preservation.0003",
   "title": {
-    "ko": "한국어·영어 현지화 · 형식 보존 변환",
-    "en": "Korean-English localization · format-preserving transformation"
+    "ko": "한국어·영어 현지화 — 지역화 카피",
+    "en": "Korean-English localization — Localized copy"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
     "secondary_intents": [
       "practical_writing"
     ],
-    "primary_domain": "customer_support_success",
+    "primary_domain": "general_knowledge",
     "domain_tags": [
       "education_research"
     ],
     "user_goal": {
-      "ko": "제품 안내 문구를 한국어와 영어 사용자에게 자연스럽게 현지화해줘 (형식 보존 변환)",
-      "en": "localize the product notice naturally for Korean and English users (format-preserving transformation)"
+      "ko": "한국어·영어 현지화 자료를 지정 형식으로 바꿔줘. 지역 표현만 바꾸고 정책 문장은 보존해",
+      "en": "Convert the Korean-English localization material to the requested format; change conventions but preserve the policy."
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "고객 문의와 지원 운영을 처리하는 상황에서 제품 안내 문구를 한국어와 영어 사용자에게 자연스럽게 현지화해줘. 입력 상황: 버튼 이름, 결제 단위, 날짜 표기, 고객지원 링크는 지역별로 달라질 수 있지만 정책 자체는 같아. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "일반 정보와 상식을 확인하는 상황에서 한국어·영어 현지화 자료를 지정 형식으로 바꿔줘. 지역 표현만 바꾸고 정책 문장은 보존해. 입력 상황: 같은 정책을 두 지역의 결제·날짜 형식으로 내보내야 해. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "고객 문의와 지원 운영을 처리하는 상황 관련 건이야. 버튼 이름, 결제 단위, 날짜 표기, 고객지원 링크는 지역별로 달라질 수 있지만 정책 자체는 같아."
+          "content": "일반 정보 조회 건이야. 모양을 바꿔야 하는 한국어·영어 현지화 건이야. 같은 정책을 두 지역의 결제·날짜 형식으로 내보내야 해. 지역 표현만 바꾸고 정책 문장은 보존해."
         },
         {
           "role": "user",
-          "content": "제품 안내 문구를 한국어와 영어 사용자에게 자연스럽게 현지화해줘."
-        },
-        {
-          "role": "user",
-          "content": "지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "모양은 바꿔도 숫자·날짜·조건은 건드리지 마."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a customer-support and success context, localize the product notice naturally for Korean and English users. Input context: button labels, currency units, date formats, and support links may vary by region while the policy remains the same. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "In a general-information and everyday-knowledge context, Convert the Korean-English localization material to the requested format; change conventions but preserve the policy.. Input context: the same policy must be rendered in two regional currency and date conventions. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a customer-support and success context: button labels, currency units, date formats, and support links may vary by region while the policy remains the same."
+          "content": "This is a general-information lookup. The format needs changing for Korean-English localization. The same policy must be rendered in two regional currency and date conventions. Change conventions but preserve the policy."
         },
         {
           "role": "user",
-          "content": "localize the product notice naturally for Korean and English users."
-        },
-        {
-          "role": "user",
-          "content": "Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "Change the shape, not the numbers, dates, or conditions."
         }
       ]
     }

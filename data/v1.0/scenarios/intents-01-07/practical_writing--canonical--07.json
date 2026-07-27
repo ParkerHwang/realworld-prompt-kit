@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.canonical.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.canonical.0007",
   "title": {
-    "ko": "운영 장애 공지 · 기본 요청",
-    "en": "Operations-incident notice · ordinary request"
+    "ko": "운영 장애 공지 — 소수 기록 묶음",
+    "en": "Operations-incident notice — Small record set"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "customer_support_success",
+    "primary_domain": "software_it",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "내부 장애 공지를 영향, 현재 조치, 다음 업데이트 시각이 분명하게 보이도록 써줘 (기본 요청)",
-      "en": "write an internal incident notice with impact, current action, and next update time (ordinary request)"
+      "ko": "내부 장애 공지를 영향, 현재 조치, 다음 업데이트 시각이 분명하게 보이도록 써줘 작은 표본에서 확인되는 내용만 말해",
+      "en": "write an internal incident notice with impact, current action, and next update time; state only what this small set supports"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "고객 문의와 지원 운영을 처리하는 상황에서 내부 장애 공지를 영향, 현재 조치, 다음 업데이트 시각이 분명하게 보이도록 써줘. 입력 상황: 문제는 일부 사용자 로그인이고 원인은 확인 전이며 다음 업데이트는 16시로 예정돼 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "내부 소프트웨어·IT 운영 자료를 확인하는 상황에서 내부 장애 공지를 영향, 현재 조치, 다음 업데이트 시각이 분명하게 보이도록 써줘 작은 표본에서 확인되는 내용만 말해. 입력 상황: 문제는 일부 사용자 로그인이고 원인은 확인 전이며 다음 업데이트는 16시로 예정돼 있어. 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "고객 문의와 지원 운영을 처리하는 상황 관련 건이야. 문제는 일부 사용자 로그인이고 원인은 확인 전이며 다음 업데이트는 16시로 예정돼 있어."
+          "content": "내부 IT 쪽이야. 일부 사용자의 로그인 장애 공지 초안 부탁해. 원인은 아직 모름, 지금 조치 중, 다음 업데이트는 16시라는 걸 분리해서 써줘. 참고로 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 그래서 작은 표본에서 확인되는 내용만 말해."
         },
         {
           "role": "user",
-          "content": "내부 장애 공지를 영향, 현재 조치, 다음 업데이트 시각이 분명하게 보이도록 써줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a customer-support and success context, write an internal incident notice with impact, current action, and next update time. Input context: the issue affects login for some users, the cause is unconfirmed, and the next update is scheduled for 16:00. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In an internal software or IT operations context, write an internal incident notice with impact, current action, and next update time; state only what this small set supports. Input context: the issue affects login for some users, the cause is unconfirmed, and the next update is scheduled for 16:00. there are only five records and one has a blank field. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a customer-support and success context: the issue affects login for some users, the cause is unconfirmed, and the next update is scheduled for 16:00."
+          "content": "This is an internal IT item. Draft an incident notice for partial login failure. Separate impact, action in progress, and the next update at 16:00; the cause is not known yet. For this case, there are only five records and one has a blank field. So state only what this small set supports."
         },
         {
           "role": "user",
-          "content": "write an internal incident notice with impact, current action, and next update time."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }

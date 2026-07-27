@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.boundary_ambiguity.0005",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.boundary_ambiguity.0005",
   "title": {
-    "ko": "지원금 신청 요약 · 경계가 모호한 요청",
-    "en": "Grant-application summary · boundary-ambiguous request"
+    "ko": "지원금 신청 요약 — 정기·일회성 항목",
+    "en": "Grant-application summary — Recurring versus one-off"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "strategy_business_operations",
+    "primary_domain": "education_research",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "지원금 신청서의 사업 목적, 대상, 예산, 성과 지표를 짧은 요약으로 작성해줘 (경계가 모호한 요청)",
-      "en": "write a concise grant-application summary covering purpose, audience, budget, and outcomes (boundary-ambiguous request)"
+      "ko": "지원금 신청 요약의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해",
+      "en": "Work out the applicable scope for Grant-application summary; Classify the two kinds without conflating them."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 지원금 신청서의 사업 목적, 대상, 예산, 성과 지표를 짧은 요약으로 작성해줘. 입력 상황: 대상은 지역 청년이고 예산은 1천2백만 원이며 성과 지표 초안은 참여자 수와 완료율이야. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "수업·학습·연구 자료를 다루는 상황에서 지원금 신청 요약의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해. 입력 상황: 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한 내용이 좀 깨졌는데, 사업 운영의 선택지와 실행 조건을 검토하는 상황에서 지원금 신청서의 사업 목적, 대상, 예산, 성과 지표를 짧은 요약으로 작성해줘. 대상은 지역 청년이고 예산은 1천2백만 원이며 성과 지표 초안은 참여자 수와 완료율이야. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 바로 보내거나 바꾸지는 말고 검토용 초안으로 줘."
+          "content": "복붙한 내용이 좀 깨졌는데, 수업·연구 자료야. 범위가 헷갈리는 지원금 신청 요약 건이야. 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 두 종류를 섞지 않고 분류해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 바로 보내거나 바꾸지는 말고 검토용 초안으로 줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a business-operations context where options and execution conditions matter, write a concise grant-application summary covering purpose, audience, budget, and outcomes. Input context: the audience is local young adults, the budget is 12 million won, and draft metrics are participant count and completion rate. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In an education, learning, or research context, Work out the applicable scope for Grant-application summary; Classify the two kinds without conflating them.. Input context: recurring work and one-off requests use the same form. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "The pasted text is a bit messy: in a business-operations context where options and execution conditions matter, write a concise grant-application summary covering purpose, audience, budget, and outcomes. the audience is local young adults, the budget is 12 million won, and draft metrics are participant count and completion rate. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. Do not send or change anything; make it a review draft."
+          "content": "The pasted text is a bit messy: This is an education/research item. The scope is fuzzy for Grant-application summary. Recurring work and one-off requests use the same form. Classify the two kinds without conflating them. If the boundary is fuzzy, ask one question before deciding. Do not send or change anything; make it a review draft."
         }
       ]
     }

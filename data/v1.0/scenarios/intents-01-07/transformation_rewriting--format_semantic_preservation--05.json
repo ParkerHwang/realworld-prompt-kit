@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.transformation_rewriting.format_semantic_preservation.0005",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.format_semantic_preservation.0005",
   "title": {
-    "ko": "메모의 구조화 · 형식 보존 변환",
-    "en": "Structured data from notes · format-preserving transformation"
+    "ko": "메모의 구조화 — 스키마 JSON",
+    "en": "Structured data from notes — Schema-constrained JSON"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
     "secondary_intents": [
       "practical_writing"
     ],
-    "primary_domain": "general_knowledge",
+    "primary_domain": "office_admin",
     "domain_tags": [
       "education_research"
     ],
     "user_goal": {
-      "ko": "비정형 메모를 지정한 JSON 필드로 변환해줘 (형식 보존 변환)",
-      "en": "convert unstructured notes into the requested JSON fields (format-preserving transformation)"
+      "ko": "메모의 구조화 자료를 지정 형식으로 바꿔줘. JSON 외 말은 내지 말고 값의 출처를 보존해",
+      "en": "Convert the Structured data from notes material to the requested format; return only json and preserve value provenance."
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지역 생활 정보와 공공 안내를 확인하는 상황에서 비정형 메모를 지정한 JSON 필드로 변환해줘. 입력 상황: 필드는 title, owner, deadline, priority이고, 메모에 없는 값은 null로 두기로 했어. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "사내 행정과 문서 운영을 처리하는 상황에서 메모의 구조화 자료를 지정 형식으로 바꿔줘. JSON 외 말은 내지 말고 값의 출처를 보존해. 입력 상황: 출력 스키마는 네 필드만 허용하고 빠진 값은 null이야. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "지역 생활 정보와 공공 안내를 확인하는 상황 관련 건이야. 필드는 title, owner, deadline, priority이고, 메모에 없는 값은 null로 두기로 했어."
+          "content": "회사 행정 쪽이야. 모양을 바꿔야 하는 메모의 구조화 건이야. 출력 스키마는 네 필드만 허용하고 빠진 값은 null이야. JSON 외 말은 내지 말고 값의 출처를 보존해."
         },
         {
           "role": "user",
-          "content": "비정형 메모를 지정한 JSON 필드로 변환해줘."
-        },
-        {
-          "role": "user",
-          "content": "지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "모양은 바꿔도 숫자·날짜·조건은 건드리지 마."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a local-life information and public-notice context, convert unstructured notes into the requested JSON fields. Input context: the fields are title, owner, deadline, and priority, and values absent from the notes must be null. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "In an internal office-administration and document-operations context, Convert the Structured data from notes material to the requested format; return only json and preserve value provenance.. Input context: the output schema allows four fields only and absent values must be null. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a local-life information and public-notice context: the fields are title, owner, deadline, and priority, and values absent from the notes must be null."
+          "content": "This is an office-admin item. The format needs changing for Structured data from notes. The output schema allows four fields only and absent values must be null. Return only json and preserve value provenance."
         },
         {
           "role": "user",
-          "content": "convert unstructured notes into the requested JSON fields."
-        },
-        {
-          "role": "user",
-          "content": "Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "Change the shape, not the numbers, dates, or conditions."
         }
       ]
     }

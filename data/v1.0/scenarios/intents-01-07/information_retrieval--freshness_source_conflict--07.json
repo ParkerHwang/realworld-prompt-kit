@@ -2,11 +2,11 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.information_retrieval.freshness_source_conflict.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.freshness_source_conflict.0007",
   "title": {
-    "ko": "재활용 배출 일정 · 최신성·출처 충돌",
-    "en": "Recycling schedule · freshness and source conflict"
+    "ko": "재활용 배출 일정 — 공식 FAQ·개별 답변",
+    "en": "Recycling schedule — Official FAQ versus individual reply"
   },
   "task": {
     "primary_intent": "information_retrieval",
@@ -18,8 +18,8 @@
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "우리 동네 재활용 배출 요일을 확인해줘 (최신성·출처 충돌)",
-      "en": "find the recycling collection day for the neighborhood (freshness and source conflict)"
+      "ko": "재활용 배출 일정에 관한 현재 근거를 대조해줘. 공식성·최신성·추가 확인 방법을 함께 알려줘",
+      "en": "Reconcile the current evidence for Recycling schedule; state authority, freshness, and how to verify further."
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 우리 동네 재활용 배출 요일을 확인해줘. 입력 상황: 구청 공지와 아파트 안내문이 다르고 이번 달에 임시 휴무일이 하나 있어. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨."
+          "content": "개인 일정과 생활 결정을 정리하는 상황에서 재활용 배출 일정에 관한 현재 근거를 대조해줘. 공식성·최신성·추가 확인 방법을 함께 알려줘. 입력 상황: 공식 FAQ와 담당자의 개별 답변이 다른 날짜를 말하고 있어. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황 관련 건이야. 구청 공지와 아파트 안내문이 다르고 이번 달에 임시 휴무일이 하나 있어."
+          "content": "내 일정·생활 건이야. 자료가 엇갈린 재활용 배출 일정 건이야. 공식 FAQ와 담당자의 개별 답변이 다른 날짜를 말하고 있어. 공식성·최신성·추가 확인 방법을 함께 알려줘."
         },
         {
           "role": "user",
-          "content": "우리 동네 재활용 배출 요일을 확인해줘."
-        },
-        {
-          "role": "user",
-          "content": "기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨."
+          "content": "새 자료인지, 어느 출처인지 나눠서 보여줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, find the recycling collection day for the neighborhood. Input context: the district notice and building notice disagree, and there is one temporary holiday change this month. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary."
+          "content": "In a personal scheduling and everyday-life context, Reconcile the current evidence for Recycling schedule; state authority, freshness, and how to verify further.. Input context: the official FAQ and an individual reply give different dates. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a personal scheduling and everyday-life context: the district notice and building notice disagree, and there is one temporary holiday change this month."
+          "content": "This is a personal-life item. The sources disagree for Recycling schedule. The official faq and an individual reply give different dates. State authority, freshness, and how to verify further."
         },
         {
           "role": "user",
-          "content": "find the recycling collection day for the neighborhood."
-        },
-        {
-          "role": "user",
-          "content": "State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary."
+          "content": "Show which source and date each answer comes from. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
         }
       ]
     }

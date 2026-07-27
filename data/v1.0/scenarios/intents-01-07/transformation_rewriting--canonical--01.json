@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.transformation_rewriting.canonical.0001",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.canonical.0001",
   "title": {
-    "ko": "격식 메일의 친근한 버전 · 기본 요청",
-    "en": "Friendly version of a formal email · ordinary request"
+    "ko": "격식 메일의 친근한 버전 — 이번 주 기준표",
+    "en": "Friendly version of a formal email — This week's baseline"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
     "secondary_intents": [
       "practical_writing"
     ],
-    "primary_domain": "data_analytics",
+    "primary_domain": "office_admin",
     "domain_tags": [
       "education_research"
     ],
     "user_goal": {
-      "ko": "격식 있는 안내 메일을 고객에게 보낼 친근하지만 정확한 말투로 바꿔줘 (기본 요청)",
-      "en": "rewrite a formal notice in a friendly but accurate tone for customers (ordinary request)"
+      "ko": "격식 있는 안내 메일을 고객에게 보낼 친근하지만 정확한 말투로 바꿔줘 현재 바로 쓸 수 있는 답 한 가지를 정리해",
+      "en": "rewrite a formal notice in a friendly but accurate tone for customers; give one answer that can be used now"
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지표 표와 분석 메모를 검토하는 상황에서 격식 있는 안내 메일을 고객에게 보낼 친근하지만 정확한 말투로 바꿔줘. 입력 상황: 원문에는 배송 지연 사유, 새 예상일, 환불 선택지가 있고 사과 표현은 과하지 않게 하라고 되어 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "사내 행정과 문서 운영을 처리하는 상황에서 격식 있는 안내 메일을 고객에게 보낼 친근하지만 정확한 말투로 바꿔줘 현재 바로 쓸 수 있는 답 한 가지를 정리해. 입력 상황: 원문에는 배송 지연 사유, 새 예상일, 환불 선택지가 있고 사과 표현은 과하지 않게 하라고 되어 있어. 이번 건은 이번 주 월요일에 배포된 한 장짜리 공지를 기준으로 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 지표 표와 분석 메모를 검토하는 상황에서 격식 있는 안내 메일을 고객에게 보낼 친근하지만 정확한 말투로 바꿔줘. 원문에는 배송 지연 사유, 새 예상일, 환불 선택지가 있고 사과 표현은 과하지 않게 하라고 되어 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "이거 핵심만 좀 봐줘, 회사 행정 쪽이야. 배송 지연 안내를 고객용으로 덜 딱딱하게 다시 써줘. 지연 사유·새 예상일·환불 선택지는 그대로, 없는 보상은 약속하지 말고. 참고로 이번 건은 이번 주 월요일에 배포된 한 장짜리 공지를 기준으로 해. 그래서 현재 바로 쓸 수 있는 답 한 가지를 정리해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a metrics-table and data-analysis context, rewrite a formal notice in a friendly but accurate tone for customers. Input context: the source includes the reason for a delivery delay, a new estimate, and refund options, with a request not to over-apologize. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In an internal office-administration and document-operations context, rewrite a formal notice in a friendly but accurate tone for customers; give one answer that can be used now. Input context: the source includes the reason for a delivery delay, a new estimate, and refund options, with a request not to over-apologize. this case uses a one-page notice issued on Monday this week. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: in a metrics-table and data-analysis context, rewrite a formal notice in a friendly but accurate tone for customers. the source includes the reason for a delivery delay, a new estimate, and refund options, with a request not to over-apologize. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Can you take a quick look at this: This is an office-admin item. Rewrite the delivery-delay notice so it feels warmer to customers. Keep the reason, new estimate, and refund options exactly; do not add compensation. For this case, this case uses a one-page notice issued on Monday this week. So give one answer that can be used now. Use what can actually be checked; say when something is unknown."
         }
       ]
     }

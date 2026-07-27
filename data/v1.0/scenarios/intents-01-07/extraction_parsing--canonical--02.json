@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.extraction_parsing.canonical.0002",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.canonical.0002",
   "title": {
-    "ko": "청구서 필드 · 기본 요청",
-    "en": "Invoice fields · ordinary request"
+    "ko": "청구서 필드 — 승인본과 내부 메모",
+    "en": "Invoice fields — Approved copy and internal note"
   },
   "task": {
     "primary_intent": "extraction_parsing",
     "secondary_intents": [
       "classification_organization"
     ],
-    "primary_domain": "communication_meetings",
+    "primary_domain": "supply_chain_logistics",
     "domain_tags": [
       "office_admin"
     ],
     "user_goal": {
-      "ko": "청구서에서 공급자, 청구 기간, 소계, 세금, 합계를 추출해줘 (기본 요청)",
-      "en": "extract the supplier, billing period, subtotal, tax, and total from the invoice (ordinary request)"
+      "ko": "청구서에서 공급자, 청구 기간, 소계, 세금, 합계를 추출해줘 승인된 문서만 근거로 삼아",
+      "en": "extract the supplier, billing period, subtotal, tax, and total from the invoice; use only the approved document as evidence"
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 청구서에서 공급자, 청구 기간, 소계, 세금, 합계를 추출해줘. 입력 상황: 청구서 이미지에는 소계가 흐릿하고 합계는 보이지만 통화 기호가 잘리지 않았어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "공급망·물류 일정과 예외를 조정하는 상황에서 청구서에서 공급자, 청구 기간, 소계, 세금, 합계를 추출해줘 승인된 문서만 근거로 삼아. 입력 상황: 청구서 이미지에는 소계가 흐릿하고 합계는 보이지만 통화 기호가 잘리지 않았어. 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황 관련 건이야. 청구서 이미지에는 소계가 흐릿하고 합계는 보이지만 통화 기호가 잘리지 않았어."
+          "content": "납기·물류 건이야. 청구서에서 공급자, 기간, 소계, 세금, 합계만 추출해줘. 이미지에서 소계가 흐리고 통화 기호도 잘렸으니 안 보이는 숫자는 만들지 말고 표시해. 참고로 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 그래서 승인된 문서만 근거로 삼아."
         },
         {
           "role": "user",
-          "content": "청구서에서 공급자, 청구 기간, 소계, 세금, 합계를 추출해줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, extract the supplier, billing period, subtotal, tax, and total from the invoice. Input context: the invoice image shows the total but the subtotal is blurry and the currency symbol is clipped. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a supply-chain and logistics scheduling context, extract the supplier, billing period, subtotal, tax, and total from the invoice; use only the approved document as evidence. Input context: the invoice image shows the total but the subtotal is blurry and the currency symbol is clipped. an approved PDF arrives with an internal reference note. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a team-meeting and work-communication context: the invoice image shows the total but the subtotal is blurry and the currency symbol is clipped."
+          "content": "This is a supply-chain item. Extract supplier, billing period, subtotal, tax, and total from the invoice. The subtotal is blurry and the currency mark is clipped, so mark unreadable values rather than reconstructing them. For this case, an approved PDF arrives with an internal reference note. So use only the approved document as evidence."
         },
         {
           "role": "user",
-          "content": "extract the supplier, billing period, subtotal, tax, and total from the invoice."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }

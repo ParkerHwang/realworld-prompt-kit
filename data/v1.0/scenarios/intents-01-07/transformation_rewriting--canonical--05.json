@@ -2,25 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.transformation_rewriting.canonical.0005",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.canonical.0005",
   "title": {
-    "ko": "메모의 구조화 · 기본 요청",
-    "en": "Structured data from notes · ordinary request"
+    "ko": "메모의 구조화 — 지역별 두 버전",
+    "en": "Structured data from notes — Two regional versions"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
     "secondary_intents": [
       "practical_writing"
     ],
-    "primary_domain": "legal_compliance",
+    "primary_domain": "office_admin",
     "domain_tags": [
-      "education_research",
-      "general_knowledge"
+      "education_research"
     ],
     "user_goal": {
-      "ko": "비정형 메모를 지정한 JSON 필드로 변환해줘 (기본 요청)",
-      "en": "convert unstructured notes into the requested JSON fields (ordinary request)"
+      "ko": "비정형 메모를 지정한 JSON 필드로 변환해줘 지역 조건을 섞지 않고 해당 지역만 답해",
+      "en": "convert unstructured notes into the requested JSON fields; answer for the requested region without mixing conditions"
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -51,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "계약·컴플라이언스 자료의 적용 범위를 검토하는 상황에서 비정형 메모를 지정한 JSON 필드로 변환해줘. 입력 상황: 필드는 title, owner, deadline, priority이고, 메모에 없는 값은 null로 두기로 했어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "사내 행정과 문서 운영을 처리하는 상황에서 비정형 메모를 지정한 JSON 필드로 변환해줘 지역 조건을 섞지 않고 해당 지역만 답해. 입력 상황: 필드는 title, owner, deadline, priority이고, 메모에 없는 값은 null로 두기로 했어. 서울용과 부산용 안내가 한 파일에 섞여 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -67,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한내용이 좀 깨졌는데, 계약·컴플라이언스 자료의 적용 범위를 검토하는 상황에서 비정형 메모를 지정한 JSON 필드로 변환해줘;. 필드는 title, owner, deadline, priority이고, 메모에 없는 값은 null로 두기로 했어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "복붙한내용이 좀 깨졌는데, 회사 행정 쪽이야. 이 메모를 title, owner, deadline, priority 네 필드 JSON으로만 바꿔줘. 없는 값은 null이고 priority를 임의로 정하면 안 돼. 참고로 서울용과 부산용 안내가 한 파일에 섞여 있어. 그래서 지역 조건을 섞지 않고 해당 지역만 답해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘;."
         }
       ]
     },
@@ -80,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a contract or compliance context where the applicable scope must be verified, convert unstructured notes into the requested JSON fields. Input context: the fields are title, owner, deadline, and priority, and values absent from the notes must be null. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. Make the boundary for official or professional review explicit."
+          "content": "In an internal office-administration and document-operations context, convert unstructured notes into the requested JSON fields; answer for the requested region without mixing conditions. Input context: the fields are title, owner, deadline, and priority, and values absent from the notes must be null. Seoul and Busan notices are mixed in one file. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -96,20 +95,19 @@
       "messages": [
         {
           "role": "user",
-          "content": "Thepasted text is a bit messy: in a contract or compliance context where the applicable scope must be verified, convert unstructured notes into the requested JSON fields.. the fields are title, owner, deadline, and priority, and values absent from the notes must be null. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. Do not make a professional determination; state what needs official review."
+          "content": "Thepasted text is a bit messy: This is an office-admin item.. Convert the notes into JSON with only title, owner, deadline, and priority. Use null where absent; do not guess a priority. For this case, Seoul and Busan notices are mixed in one file. So answer for the requested region without mixing conditions. Use what can actually be checked; say when something is unknown."
         }
       ]
     }
   ],
   "evaluation": {
     "response_mode": {
-      "canonical": "state_assumptions_and_answer",
+      "canonical": "answer_directly",
       "naturalistic": "infer_and_answer"
     },
     "invariants": [
       "Use null for absent values and retain the stated wording.",
-      "Return only the requested JSON structure.",
-      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
+      "Return only the requested JSON structure."
     ],
     "rubric_dimensions": [
       "schema_fidelity",
@@ -118,8 +116,7 @@
     ],
     "failure_signals": [
       "Guessing a priority.",
-      "Returning prose outside the requested structure.",
-      "Giving definitive professional advice without the stated source or escalation boundary."
+      "Returning prose outside the requested structure."
     ]
   },
   "provenance": {

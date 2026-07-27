@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.creative_ideation.boundary_ambiguity.0003",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.boundary_ambiguity.0003",
   "title": {
-    "ko": "동네 가게 캠페인 · 경계가 모호한 요청",
-    "en": "Local-store campaign · boundary-ambiguous request"
+    "ko": "동네 가게 캠페인 — 본문·별첨 우선순위",
+    "en": "Local-store campaign — Body versus exhibit"
   },
   "task": {
     "primary_intent": "creative_ideation",
     "secondary_intents": [
       "planning_strategy_design"
     ],
-    "primary_domain": "communication_meetings",
+    "primary_domain": "sales_marketing",
     "domain_tags": [
       "creative_media"
     ],
     "user_goal": {
-      "ko": "동네 가게의 재방문을 늘릴 캠페인 아이디어를 내줘 (경계가 모호한 요청)",
-      "en": "generate campaign ideas to increase repeat visits for a local store (boundary-ambiguous request)"
+      "ko": "동네 가게 캠페인의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘",
+      "en": "Work out the applicable scope for Local-store campaign; Show which gap prevents a conclusion."
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 동네 가게의 재방문을 늘릴 캠페인 아이디어를 내줘. 입력 상황: 광고 예산은 작고 기존 고객에게 과도한 개인정보를 요구하지 않으며, 할인만 반복하는 방식은 피하려 해. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "영업·마케팅 캠페인 자료를 준비하는 상황에서 동네 가게 캠페인의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘. 입력 상황: 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황 관련 건이야. 광고 예산은 작고 기존 고객에게 과도한 개인정보를 요구하지 않으며, 할인만 반복하는 방식은 피하려 해."
+          "content": "영업·캠페인 자료야. 범위가 헷갈리는 동네 가게 캠페인 건이야. 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 어느 공백이 결론을 막는지 보여줘."
         },
         {
           "role": "user",
-          "content": "동네 가게의 재방문을 늘릴 캠페인 아이디어를 내줘."
-        },
-        {
-          "role": "user",
-          "content": "비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘."
+          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, generate campaign ideas to increase repeat visits for a local store. Input context: the ad budget is small, customers should not be asked for excessive personal data, and repeated discounting should be avoided. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a sales or marketing-campaign context, Work out the applicable scope for Local-store campaign; Show which gap prevents a conclusion.. Input context: the body, summary table, and exhibit use different wording with no precedence rule. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a team-meeting and work-communication context: the ad budget is small, customers should not be asked for excessive personal data, and repeated discounting should be avoided."
+          "content": "This is a sales/marketing item. The scope is fuzzy for Local-store campaign. The body, summary table, and exhibit use different wording with no precedence rule. Show which gap prevents a conclusion."
         },
         {
           "role": "user",
-          "content": "generate campaign ideas to increase repeat visits for a local store."
-        },
-        {
-          "role": "user",
-          "content": "Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. If brevity and completeness conflict, call that out."
+          "content": "If the boundary is fuzzy, ask one question before deciding. If brevity and completeness conflict, call that out."
         }
       ]
     }

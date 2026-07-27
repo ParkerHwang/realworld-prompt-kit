@@ -2,25 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.explanation_teaching.canonical.0006",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.canonical.0006",
   "title": {
-    "ko": "학교 개념 비교 · 기본 요청",
-    "en": "School-concept comparison · ordinary request"
+    "ko": "학교 개념 비교 — 인수인계 자료",
+    "en": "School-concept comparison — Handoff packet"
   },
   "task": {
     "primary_intent": "explanation_teaching",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "health_care",
+    "primary_domain": "general_knowledge",
     "domain_tags": [
-      "education_research",
-      "general_knowledge"
+      "education_research"
     ],
     "user_goal": {
-      "ko": "두 과학 개념의 차이를 중학생이 이해할 수 있게 표와 예시로 설명해줘 (기본 요청)",
-      "en": "explain the difference between two science concepts to a middle-school student with a table and examples (ordinary request)"
+      "ko": "두 과학 개념의 차이를 중학생이 이해할 수 있게 표와 예시로 설명해줘 출처와 미확인 부분을 표시해",
+      "en": "explain the difference between two science concepts to a middle-school student with a table and examples; mark sources and anything not yet confirmed"
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -51,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "건강 안내 자료를 읽고 의료진에게 확인할 내용을 정리하는 상황에서 두 과학 개념의 차이를 중학생이 이해할 수 있게 표와 예시로 설명해줘. 입력 상황: 교과서 정의는 비슷한 단어를 쓰지만 관찰 가능한 예시는 서로 달라. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "일반 정보와 상식을 확인하는 상황에서 두 과학 개념의 차이를 중학생이 이해할 수 있게 표와 예시로 설명해줘 출처와 미확인 부분을 표시해. 입력 상황: 교과서 정의는 비슷한 단어를 쓰지만 관찰 가능한 예시는 서로 달라. 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -67,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "건강 안내 자료를 읽고 의료진에게 확인할 내용을 정리하는 상황 관련 건이야. 교과서 정의는 비슷한 단어를 쓰지만 관찰 가능한 예시는 서로 달라."
+          "content": "일반 정보 조회 건이야. 비슷해 보이는 두 과학 개념 차이를 중학생용 표랑 예시로 보여줘. 경계가 흐려지지 않게 각자 예시 하나씩 줘. 참고로 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 그래서 출처와 미확인 부분을 표시해."
         },
         {
           "role": "user",
-          "content": "두 과학 개념의 차이를 중학생이 이해할 수 있게 표와 예시로 설명해줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -88,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a health-information context where questions for a clinician must be separated from diagnosis, explain the difference between two science concepts to a middle-school student with a table and examples. Input context: the textbook definitions use similar words, but their observable examples differ. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. Make the boundary for official or professional review explicit."
+          "content": "In a general-information and everyday-knowledge context, explain the difference between two science concepts to a middle-school student with a table and examples; mark sources and anything not yet confirmed. Input context: the textbook definitions use similar words, but their observable examples differ. the owner is changing and the next owner must use the result immediately. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -104,28 +99,23 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a health-information context where questions for a clinician must be separated from diagnosis: the textbook definitions use similar words, but their observable examples differ."
+          "content": "This is a general-information lookup. Show the difference between the two similar science concepts in a middle-school table with one example for each. Do not blur their boundary. For this case, the owner is changing and the next owner must use the result immediately. So mark sources and anything not yet confirmed."
         },
         {
           "role": "user",
-          "content": "explain the difference between two science concepts to a middle-school student with a table and examples."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input. Do not make a professional determination; state what needs official review."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }
   ],
   "evaluation": {
     "response_mode": {
-      "canonical": "state_assumptions_and_answer",
+      "canonical": "answer_directly",
       "naturalistic": "infer_and_answer"
     },
     "invariants": [
       "Keep the concepts distinct and use one example for each.",
-      "Avoid an oversimplification that erases the boundary.",
-      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
+      "Avoid an oversimplification that erases the boundary."
     ],
     "rubric_dimensions": [
       "distinction",
@@ -134,8 +124,7 @@
     ],
     "failure_signals": [
       "Treating the concepts as synonyms.",
-      "Using examples outside the stated level.",
-      "Giving definitive professional advice without the stated source or escalation boundary."
+      "Using examples outside the stated level."
     ]
   },
   "provenance": {

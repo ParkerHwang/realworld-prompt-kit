@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.creative_ideation.creativity_diversity.0006",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.creativity_diversity.0006",
   "title": {
-    "ko": "제품 기능 발상 · 창의성·다양성",
-    "en": "Product-feature ideas · creative diversity"
+    "ko": "제품 기능 발상 — 승인 흐름 제품",
+    "en": "Product-feature ideas — Approval-flow product"
   },
   "task": {
     "primary_intent": "creative_ideation",
     "secondary_intents": [
       "planning_strategy_design"
     ],
-    "primary_domain": "strategy_business_operations",
+    "primary_domain": "software_it",
     "domain_tags": [
       "creative_media"
     ],
     "user_goal": {
-      "ko": "승인 대기 시간을 줄이는 제품 기능 아이디어를 서로 다른 방향으로 내줘 (창의성·다양성)",
-      "en": "generate product-feature ideas from different directions to reduce approval waiting time (creative diversity)"
+      "ko": "제품 기능 발상를 주제로 서로 다른 아이디어를 내줘. 자동화와 사람 검토를 다르게 조합해",
+      "en": "Generate genuinely different ideas around Product-feature ideas; vary automation and human-review combinations."
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 승인 대기 시간을 줄이는 제품 기능 아이디어를 서로 다른 방향으로 내줘. 입력 상황: 작은 팀이 쓸 수 있어야 하고 관리자 권한을 우회하는 기능은 허용되지 않으며, 성공 신호는 처리 시간과 재작업률이야. 서로 다른 방향의 아이디어를 내고, 각 아이디어가 제약을 어떻게 만족하는지 짧게 설명해."
+          "content": "내부 소프트웨어·IT 운영 자료를 확인하는 상황에서 제품 기능 발상를 주제로 서로 다른 아이디어를 내줘. 자동화와 사람 검토를 다르게 조합해. 입력 상황: 작은 팀의 승인 대기를 줄이는 기능이지만 권한 우회는 금지야. 서로 다른 방향의 아이디어를 내고, 각 아이디어가 제약을 어떻게 만족하는지 짧게 설명해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황 관련 건이야. 작은 팀이 쓸 수 있어야 하고 관리자 권한을 우회하는 기능은 허용되지 않으며, 성공 신호는 처리 시간과 재작업률이야."
+          "content": "내부 IT 쪽이야. 방향을 여러 개로 열어야 하는 제품 기능 발상 건이야. 작은 팀의 승인 대기를 줄이는 기능이지만 권한 우회는 금지야. 자동화와 사람 검토를 다르게 조합해."
         },
         {
           "role": "user",
-          "content": "승인 대기 시간을 줄이는 제품 기능 아이디어를 서로 다른 방향으로 내줘."
-        },
-        {
-          "role": "user",
-          "content": "서로 다른 방향의 아이디어를 내고, 각 아이디어가 제약을 어떻게 만족하는지 짧게 설명해."
+          "content": "서로 결이 다른 안으로 내고, 왜 괜찮은지도 한 줄씩 붙여줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a business-operations context where options and execution conditions matter, generate product-feature ideas from different directions to reduce approval waiting time. Input context: the ideas must fit small teams, may not bypass admin authority, and should relate to processing time and rework rate. Offer ideas from genuinely different directions and briefly explain how each satisfies the constraints."
+          "content": "In an internal software or IT operations context, Generate genuinely different ideas around Product-feature ideas; vary automation and human-review combinations.. Input context: the product reduces small-team approval waiting but may not bypass authority. Offer ideas from genuinely different directions and briefly explain how each satisfies the constraints."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a business-operations context where options and execution conditions matter: the ideas must fit small teams, may not bypass admin authority, and should relate to processing time and rework rate."
+          "content": "This is an internal IT item. The directions need to stay diverse for Product-feature ideas. The product reduces small-team approval waiting but may not bypass authority. Vary automation and human-review combinations."
         },
         {
           "role": "user",
-          "content": "generate product-feature ideas from different directions to reduce approval waiting time."
-        },
-        {
-          "role": "user",
-          "content": "Offer ideas from genuinely different directions and briefly explain how each satisfies the constraints."
+          "content": "Give genuinely different options and one line on why each works."
         }
       ]
     }

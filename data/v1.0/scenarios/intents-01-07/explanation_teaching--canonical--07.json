@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.explanation_teaching.canonical.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.canonical.0007",
   "title": {
-    "ko": "가전 안전 안내 · 기본 요청",
-    "en": "Appliance-safety explanation · ordinary request"
+    "ko": "가전 안전 안내 — 소수 기록 묶음",
+    "en": "Appliance-safety explanation — Small record set"
   },
   "task": {
     "primary_intent": "explanation_teaching",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "software_it",
+    "primary_domain": "personal_everyday",
     "domain_tags": [
       "education_research"
     ],
     "user_goal": {
-      "ko": "가전제품 안전 안내를 사용자가 해야 할 일과 하지 말아야 할 일로 설명해줘 (기본 요청)",
-      "en": "explain the appliance-safety notice as do and do-not actions for users (ordinary request)"
+      "ko": "가전제품 안전 안내를 사용자가 해야 할 일과 하지 말아야 할 일로 설명해줘 작은 표본에서 확인되는 내용만 말해",
+      "en": "explain the appliance-safety notice as do and do-not actions for users; state only what this small set supports"
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "내부 소프트웨어·IT 운영 자료를 확인하는 상황에서 가전제품 안전 안내를 사용자가 해야 할 일과 하지 말아야 할 일로 설명해줘. 입력 상황: 안내에는 물기 있는 손 금지, 이상 소음 시 전원 차단, 내부 수리는 서비스센터 문의가 적혀 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "개인 일정과 생활 결정을 정리하는 상황에서 가전제품 안전 안내를 사용자가 해야 할 일과 하지 말아야 할 일로 설명해줘 작은 표본에서 확인되는 내용만 말해. 입력 상황: 안내에는 물기 있는 손 금지, 이상 소음 시 전원 차단, 내부 수리는 서비스센터 문의가 적혀 있어. 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "내부 소프트웨어·IT 운영 자료를 확인하는 상황 관련 건이야. 안내에는 물기 있는 손 금지, 이상 소음 시 전원 차단, 내부 수리는 서비스센터 문의가 적혀 있어."
+          "content": "내 일정·생활 건이야. 가전 안전 안내를 해야 할 일/하면 안 되는 일로 바꿔줘. 젖은 손 금지, 이상 소음이면 전원 끄기, 내부 수리는 서비스센터라는 점은 빠지면 안 돼. 참고로 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 그래서 작은 표본에서 확인되는 내용만 말해."
         },
         {
           "role": "user",
-          "content": "가전제품 안전 안내를 사용자가 해야 할 일과 하지 말아야 할 일로 설명해줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal software or IT operations context, explain the appliance-safety notice as do and do-not actions for users. Input context: the notice says not to use wet hands, to disconnect power after unusual noise, and to contact service for internal repair. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a personal scheduling and everyday-life context, explain the appliance-safety notice as do and do-not actions for users; state only what this small set supports. Input context: the notice says not to use wet hands, to disconnect power after unusual noise, and to contact service for internal repair. there are only five records and one has a blank field. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about an internal software or IT operations context: the notice says not to use wet hands, to disconnect power after unusual noise, and to contact service for internal repair."
+          "content": "This is a personal-life item. Turn the appliance notice into do and do-not actions. Keep no wet hands, disconnect after unusual noise, and service-center repair; do not invent a repair step. For this case, there are only five records and one has a blank field. So state only what this small set supports."
         },
         {
           "role": "user",
-          "content": "explain the appliance-safety notice as do and do-not actions for users."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }

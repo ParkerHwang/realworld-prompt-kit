@@ -2,25 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.verification_uncertainty.0004",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.verification_uncertainty.0004",
   "title": {
-    "ko": "고객 사과 답변 · 검증·불확실성",
-    "en": "Customer apology reply · verification and uncertainty"
+    "ko": "고객 사과 답변 — 미확인 원인",
+    "en": "Customer apology reply — Unconfirmed cause"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "health_care",
+    "primary_domain": "customer_support_success",
     "domain_tags": [
-      "communication_meetings",
-      "general_knowledge"
+      "communication_meetings"
     ],
     "user_goal": {
-      "ko": "고객에게 보낼 사과 답변을 사실, 해결 방법, 다음 안내 순서로 작성해줘 (검증·불확실성)",
-      "en": "write a customer apology reply in the order of facts, remedy, and next update (verification and uncertainty)"
+      "ko": "고객 사과 답변 자료의 근거와 미확인 부분을 나눠줘. 원인 단정 대신 다음 조사 순서를 제안해",
+      "en": "Separate evidence and unknowns in the Customer apology reply material; propose the next investigation order instead of naming a cause."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -51,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "건강 안내 자료를 읽고 의료진에게 확인할 내용을 정리하는 상황에서 고객에게 보낼 사과 답변을 사실, 해결 방법, 다음 안내 순서로 작성해줘. 입력 상황: 주문 지연은 확인됐지만 원인은 아직 조사 중이고 48시간 안에 다시 안내하기로 했어. 검증된 사실, 가정, 불확실성, 다음 확인 단계를 분리해서 제시해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "고객 문의와 지원 운영을 처리하는 상황에서 고객 사과 답변 자료의 근거와 미확인 부분을 나눠줘. 원인 단정 대신 다음 조사 순서를 제안해. 입력 상황: 영향은 보이지만 원인 후보 세 개를 아직 검증하지 못했어. 검증된 사실, 가정, 불확실성, 다음 확인 단계를 분리해서 제시해."
         }
       ]
     },
@@ -67,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 건강 안내 자료를 읽고 의료진에게 확인할 내용을 정리하는 상황의 그 자료 주문 지연은 확인됐지만 원인은 아직 조사 중이고 48시간 안에 다시 안내하기로 했어."
+          "content": "어 그러니까 내가 말한 건, 고객 문의 건이야: 근거를 다시 봐야 하는 고객 사과 답변 건이야. 영향은 보이지만 원인 후보 세 개를 아직 검증하지 못했어. 원인 단정 대신 다음 조사 순서를 제안해."
         },
         {
           "role": "user",
-          "content": "위 건 고객에게 보낼 사과 답변을 사실, 해결 방법, 다음 안내 순서로 작성해줘. 검증된 사실, 가정, 불확실성, 다음 확인 단계를 분리해서 제시해. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "위 건은 확정·추정·아직 모르는 것·다음 체크를 따로 적어줘."
         }
       ]
     },
@@ -84,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a health-information context where questions for a clinician must be separated from diagnosis, write a customer apology reply in the order of facts, remedy, and next update. Input context: the order delay is confirmed but the cause is still under investigation, with a new update promised within 48 hours. Separate verified facts, assumptions, uncertainty, and the next verification step. Make the boundary for official or professional review explicit."
+          "content": "In a customer-support and success context, Separate evidence and unknowns in the Customer apology reply material; propose the next investigation order instead of naming a cause.. Input context: the impact is visible but three candidate causes are unverified. Separate verified facts, assumptions, uncertainty, and the next verification step."
         }
       ]
     },
@@ -100,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is, the same a health-information context where questions for a clinician must be separated from diagnosis item: the order delay is confirmed but the cause is still under investigation, with a new update promised within 48 hours."
+          "content": "Actually, what I mean is, This is a customer-support item: The evidence needs checking for Customer apology reply. The impact is visible but three candidate causes are unverified. Propose the next investigation order instead of naming a cause."
         },
         {
           "role": "user",
-          "content": "For that, write a customer apology reply in the order of facts, remedy, and next update. Separate verified facts, assumptions, uncertainty, and the next verification step. Do not make a professional determination; state what needs official review."
+          "content": "For that item: Keep confirmed, guessed, unknown, and next-check items separate."
         }
       ]
     }
@@ -116,8 +115,7 @@
     },
     "invariants": [
       "Acknowledge the confirmed delay without inventing a cause.",
-      "Keep the 48-hour update commitment.",
-      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
+      "Keep the 48-hour update commitment."
     ],
     "rubric_dimensions": [
       "empathy",
@@ -126,8 +124,7 @@
     ],
     "failure_signals": [
       "Inventing the cause.",
-      "Promising a refund or date not provided.",
-      "Giving definitive professional advice without the stated source or escalation boundary."
+      "Promising a refund or date not provided."
     ]
   },
   "provenance": {

@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.format_semantic_preservation.0008",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.format_semantic_preservation.0008",
   "title": {
-    "ko": "제품 한 장 브리프 · 형식 보존 변환",
-    "en": "One-page product brief · format-preserving transformation"
+    "ko": "제품 한 장 브리프 — 제출 양식",
+    "en": "One-page product brief — Submission form"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "office_admin",
+    "primary_domain": "project_product_management",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "제품 아이디어를 문제, 대상 사용자, 제안, 성공 신호가 들어간 한 장 브리프로 써줘 (형식 보존 변환)",
-      "en": "write a one-page product brief with problem, target user, proposal, and success signals (format-preserving transformation)"
+      "ko": "제품 한 장 브리프 자료를 지정 형식으로 바꿔줘. 필수 누락을 빈칸으로 드러내",
+      "en": "Convert the One-page product brief material to the requested format; make missing required fields visible."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 제품 아이디어를 문제, 대상 사용자, 제안, 성공 신호가 들어간 한 장 브리프로 써줘. 입력 상황: 대상은 소규모 팀이고 핵심 문제는 승인 대기이며, 성공 신호는 처리 시간 감소와 재작업 감소야. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 제품 한 장 브리프 자료를 지정 형식으로 바꿔줘. 필수 누락을 빈칸으로 드러내. 입력 상황: 메모를 제출 양식으로 옮기지만 식별자 두 개는 입력에 없어. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일단 초안으로, 사내 행정과 문서 운영을 처리하는 상황에서 제품 아이디어를 문제, 대상 사용자, 제안, 성공 신호가 들어간 한 장 브리프로 써줘. 대상은 소규모 팀이고 핵심 문제는 승인 대기이며, 성공 신호는 처리 시간 감소와 재작업 감소야. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해. 중간에 끊겼다가 다시 보는 거라 앞부분을 지어내진 마."
+          "content": "일단 초안으로, 프로젝트·제품 일정 쪽이야. 모양을 바꿔야 하는 제품 한 장 브리프 건이야. 메모를 제출 양식으로 옮기지만 식별자 두 개는 입력에 없어. 필수 누락을 빈칸으로 드러내. 모양은 바꿔도 숫자·날짜·조건은 건드리지 마. 중간에 끊겼다가 다시 보는 거라 앞부분을 지어내진 마."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, write a one-page product brief with problem, target user, proposal, and success signals. Input context: the target is small teams, the core problem is approval waiting time, and success signals are lower processing time and rework. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "In a product or project schedule-and-requirements context, Convert the One-page product brief material to the requested format; make missing required fields visible.. Input context: notes must become a submission form while two identifiers are absent. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "A draft is fine for now: in an internal office-administration and document-operations context, write a one-page product brief with problem, target user, proposal, and success signals. the target is small teams, the core problem is approval waiting time, and success signals are lower processing time and rework. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors. This is resumed after an interruption, so do not invent the missing middle."
+          "content": "A draft is fine for now: This is a project/product item. The format needs changing for One-page product brief. Notes must become a submission form while two identifiers are absent. Make missing required fields visible. Change the shape, not the numbers, dates, or conditions. This is resumed after an interruption, so do not invent the missing middle."
         }
       ]
     }

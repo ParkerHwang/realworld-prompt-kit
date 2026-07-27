@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.information_retrieval.boundary_ambiguity.0004",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.boundary_ambiguity.0004",
   "title": {
-    "ko": "도서관 강좌 접수 · 경계가 모호한 요청",
-    "en": "Library-class registration · boundary-ambiguous request"
+    "ko": "도서관 강좌 접수 — 현장·본사 기준",
+    "en": "Library-class registration — Local site versus headquarters"
   },
   "task": {
     "primary_intent": "information_retrieval",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "communication_meetings",
+    "primary_domain": "office_admin",
     "domain_tags": [
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "강좌 접수 시작일과 대기 등록 방법을 찾아줘 (경계가 모호한 요청)",
-      "en": "find the class-registration opening date and waitlist process (boundary-ambiguous request)"
+      "ko": "도서관 강좌 접수의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해",
+      "en": "Work out the applicable scope for Library-class registration; Separate what changes by jurisdiction."
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 강좌 접수 시작일과 대기 등록 방법을 찾아줘. 입력 상황: 웹페이지에는 올해 공지와 지난해 공지가 함께 검색되고, 접수 페이지에는 대기 버튼이 따로 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "사내 행정과 문서 운영을 처리하는 상황에서 도서관 강좌 접수의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해. 입력 상황: 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 팀 회의와 업무 커뮤니케이션을 정리하는 상황의 그 자료 웹페이지에는 올해 공지와 지난해 공지가 함께 검색되고, 접수 페이지에는 대기 버튼이 따로 있어."
+          "content": "어 그러니까 내가 말한 건, 회사 행정 쪽이야: 범위가 헷갈리는 도서관 강좌 접수 건이야. 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 지역 관할에 따라 무엇이 달라지는지 구분해."
         },
         {
           "role": "user",
-          "content": "위 건 강좌 접수 시작일과 대기 등록 방법을 찾아줘. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "위 건은 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, find the class-registration opening date and waitlist process. Input context: the page search returns this year's notice and last year's notice, and the registration page has a separate waitlist button. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In an internal office-administration and document-operations context, Work out the applicable scope for Library-class registration; Separate what changes by jurisdiction.. Input context: the site notice may apply differently from the headquarters baseline. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is, the same a team-meeting and work-communication context item: the page search returns this year's notice and last year's notice, and the registration page has a separate waitlist button."
+          "content": "Actually, what I mean is, This is an office-admin item: The scope is fuzzy for Library-class registration. The site notice may apply differently from the headquarters baseline. Separate what changes by jurisdiction."
         },
         {
           "role": "user",
-          "content": "For that, find the class-registration opening date and waitlist process. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "For that item: If the boundary is fuzzy, ask one question before deciding. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
         }
       ]
     }

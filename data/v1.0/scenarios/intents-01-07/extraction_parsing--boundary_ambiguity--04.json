@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.extraction_parsing.boundary_ambiguity.0004",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.boundary_ambiguity.0004",
   "title": {
-    "ko": "영수증 항목 · 경계가 모호한 요청",
-    "en": "Receipt line items · boundary-ambiguous request"
+    "ko": "영수증 항목 — 현장·본사 기준",
+    "en": "Receipt line items — Local site versus headquarters"
   },
   "task": {
     "primary_intent": "extraction_parsing",
     "secondary_intents": [
       "classification_organization"
     ],
-    "primary_domain": "customer_support_success",
+    "primary_domain": "personal_everyday",
     "domain_tags": [
       "office_admin"
     ],
     "user_goal": {
-      "ko": "영수증에서 품목, 수량, 단가, 할인액을 추출해줘 (경계가 모호한 요청)",
-      "en": "extract item, quantity, unit price, and discount from the receipt (boundary-ambiguous request)"
+      "ko": "영수증 항목의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해",
+      "en": "Work out the applicable scope for Receipt line items; Separate what changes by jurisdiction."
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "고객 문의와 지원 운영을 처리하는 상황에서 영수증에서 품목, 수량, 단가, 할인액을 추출해줘. 입력 상황: 영수증에는 묶음 할인 한 줄과 개별 품목 세 줄이 있고, 총 할인액만 표시돼. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "개인 일정과 생활 결정을 정리하는 상황에서 영수증 항목의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해. 입력 상황: 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 고객 문의와 지원 운영을 처리하는 상황의 그 자료 영수증에는 묶음 할인 한 줄과 개별 품목 세 줄이 있고, 총 할인액만 표시돼."
+          "content": "어 그러니까 내가 말한 건, 내 일정·생활 건이야: 범위가 헷갈리는 영수증 항목 건이야. 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 지역 관할에 따라 무엇이 달라지는지 구분해."
         },
         {
           "role": "user",
-          "content": "위 건 영수증에서 품목, 수량, 단가, 할인액을 추출해줘. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "위 건은 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a customer-support and success context, extract item, quantity, unit price, and discount from the receipt. Input context: the receipt has one bundle-discount line and three item lines, but only the total discount is shown. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a personal scheduling and everyday-life context, Work out the applicable scope for Receipt line items; Separate what changes by jurisdiction.. Input context: the site notice may apply differently from the headquarters baseline. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is, the same a customer-support and success context item: the receipt has one bundle-discount line and three item lines, but only the total discount is shown."
+          "content": "Actually, what I mean is, This is a personal-life item: The scope is fuzzy for Receipt line items. The site notice may apply differently from the headquarters baseline. Separate what changes by jurisdiction."
         },
         {
           "role": "user",
-          "content": "For that, extract item, quantity, unit price, and discount from the receipt. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "For that item: If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }

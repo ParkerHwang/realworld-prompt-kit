@@ -2,25 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.extraction_parsing.input_robustness.0006",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.input_robustness.0006",
   "title": {
-    "ko": "설문 응답 코딩 · 불완전·노이즈 입력",
-    "en": "Survey-response coding · incomplete or noisy input"
+    "ko": "설문 응답 코딩 — 중간 자기수정",
+    "en": "Survey-response coding — Mid-task correction"
   },
   "task": {
     "primary_intent": "extraction_parsing",
     "secondary_intents": [
       "classification_organization"
     ],
-    "primary_domain": "health_care",
+    "primary_domain": "customer_support_success",
     "domain_tags": [
-      "office_admin",
-      "general_knowledge"
+      "office_admin"
     ],
     "user_goal": {
-      "ko": "자유응답에서 반복 주제와 대표 문장을 추출해줘 (불완전·노이즈 입력)",
-      "en": "extract recurring themes and representative quotes from free-text survey responses (incomplete or noisy input)"
+      "ko": "설문 응답 코딩 작업에 필요한 내용을 깨진 입력에서 복원해줘. 마지막 조건을 우선해 수정 이력을 짧게 남겨",
+      "en": "Recover what the Survey-response coding task needs from the damaged input; follow the last condition and note the correction briefly."
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -51,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "건강 안내 자료를 읽고 의료진에게 확인할 내용을 정리하는 상황에서 자유응답에서 반복 주제와 대표 문장을 추출해줘. 입력 상황: 응답에는 비슷한 불만이 다른 표현으로 반복되고, 한 문장은 두 주제에 걸쳐 있어. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "고객 문의와 지원 운영을 처리하는 상황에서 설문 응답 코딩 작업에 필요한 내용을 깨진 입력에서 복원해줘. 마지막 조건을 우선해 수정 이력을 짧게 남겨. 입력 상황: 사용자가 대상과 날짜를 한 번 바꿔 말한 뒤 마지막 조건을 남겼어. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해."
         }
       ]
     },
@@ -67,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "건강 안내 자료를 읽고 의료진에게 확인할 내용을 정리하는 상황 관련 건이야. 응답에는 비슷한 불만이 다른 표현으로 반복되고, 한 문장은 두 주제에 걸쳐 있어."
+          "content": "고객 문의 건이야. 입력이 좀 깨진 설문 응답 코딩 건이야. 사용자가 대상과 날짜를 한 번 바꿔 말한 뒤 마지막 조건을 남겼어. 마지막 조건을 우선해 수정 이력을 짧게 남겨."
         },
         {
           "role": "user",
-          "content": "자유응답에서 반복 주제와 대표 문장을 추출해줘."
-        },
-        {
-          "role": "user",
-          "content": "오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "깨진 부분은 추측하지 말고 확인 필요로 남겨줘."
         }
       ]
     },
@@ -88,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a health-information context where questions for a clinician must be separated from diagnosis, extract recurring themes and representative quotes from free-text survey responses. Input context: responses repeat a similar complaint in different wording, and one sentence spans two themes. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation. Make the boundary for official or professional review explicit."
+          "content": "In a customer-support and success context, Recover what the Survey-response coding task needs from the damaged input; follow the last condition and note the correction briefly.. Input context: the user changed the target and date once, then left a final condition. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation."
         }
       ]
     },
@@ -104,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a health-information context where questions for a clinician must be separated from diagnosis: responses repeat a similar complaint in different wording, and one sentence spans two themes."
+          "content": "This is a customer-support item. The input is messy for Survey-response coding. The user changed the target and date once, then left a final condition. Follow the last condition and note the correction briefly."
         },
         {
           "role": "user",
-          "content": "extract recurring themes and representative quotes from free-text survey responses."
-        },
-        {
-          "role": "user",
-          "content": "Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation. Do not make a professional determination; state what needs official review."
+          "content": "Do not repair broken bits by guessing; mark what needs checking."
         }
       ]
     }
@@ -124,8 +115,7 @@
     },
     "invariants": [
       "Allow one response to carry multiple themes.",
-      "Do not present the representative quote as a population statistic.",
-      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
+      "Do not present the representative quote as a population statistic."
     ],
     "rubric_dimensions": [
       "theme_fidelity",
@@ -134,8 +124,7 @@
     ],
     "failure_signals": [
       "Forcing one label per response.",
-      "Claiming prevalence from a small sample.",
-      "Giving definitive professional advice without the stated source or escalation boundary."
+      "Claiming prevalence from a small sample."
     ]
   },
   "provenance": {

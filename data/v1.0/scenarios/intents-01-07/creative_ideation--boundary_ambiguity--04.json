@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.creative_ideation.boundary_ambiguity.0004",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.boundary_ambiguity.0004",
   "title": {
-    "ko": "수업 활동 · 경계가 모호한 요청",
-    "en": "Lesson activity · boundary-ambiguous request"
+    "ko": "수업 활동 — 현장·본사 기준",
+    "en": "Lesson activity — Local site versus headquarters"
   },
   "task": {
     "primary_intent": "creative_ideation",
     "secondary_intents": [
       "planning_strategy_design"
     ],
-    "primary_domain": "office_admin",
+    "primary_domain": "science_rd",
     "domain_tags": [
       "creative_media"
     ],
     "user_goal": {
-      "ko": "중학생 수업에서 개념을 직접 써보게 하는 활동 아이디어를 내줘 (경계가 모호한 요청)",
-      "en": "generate classroom activities that let middle-school students use the concept directly (boundary-ambiguous request)"
+      "ko": "수업 활동의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해",
+      "en": "Work out the applicable scope for Lesson activity; Separate what changes by jurisdiction."
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 중학생 수업에서 개념을 직접 써보게 하는 활동 아이디어를 내줘. 입력 상황: 준비물은 종이와 칠판뿐이고 25분 안에 끝나며, 경쟁에서 탈락하는 학생이 생기면 안 돼. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "과학·R&D 실험 자료와 연구 기록을 다루는 상황에서 수업 활동의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해. 입력 상황: 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 사내 행정과 문서 운영을 처리하는 상황의 그 자료 준비물은 종이와 칠판뿐이고 25분 안에 끝나며, 경쟁에서 탈락하는 학생이 생기면 안 돼."
+          "content": "어 그러니까 내가 말한 건, 실험·연구 기록이야: 범위가 헷갈리는 수업 활동 건이야. 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 지역 관할에 따라 무엇이 달라지는지 구분해."
         },
         {
           "role": "user",
-          "content": "위 건 중학생 수업에서 개념을 직접 써보게 하는 활동 아이디어를 내줘. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "위 건은 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, generate classroom activities that let middle-school students use the concept directly. Input context: materials are limited to paper and a board, the activity must fit in 25 minutes, and no student should be eliminated through competition. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a science or R&D experiment-and-records context, Work out the applicable scope for Lesson activity; Separate what changes by jurisdiction.. Input context: the site notice may apply differently from the headquarters baseline. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is, the same an internal office-administration and document-operations context item: materials are limited to paper and a board, the activity must fit in 25 minutes, and no student should be eliminated through competition."
+          "content": "Actually, what I mean is, This is a science/R&D item: The scope is fuzzy for Lesson activity. The site notice may apply differently from the headquarters baseline. Separate what changes by jurisdiction."
         },
         {
           "role": "user",
-          "content": "For that, generate classroom activities that let middle-school students use the concept directly. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "For that item: If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }

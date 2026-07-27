@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.information_retrieval.boundary_ambiguity.0008",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.boundary_ambiguity.0008",
   "title": {
-    "ko": "주장 원출처 찾기 · 경계가 모호한 요청",
-    "en": "Primary source for a claim · boundary-ambiguous request"
+    "ko": "주장 원출처 찾기 — 초보·전문가 독자",
+    "en": "Primary source for a claim — Beginner versus specialist reader"
   },
   "task": {
     "primary_intent": "information_retrieval",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "personal_everyday",
+    "primary_domain": "science_rd",
     "domain_tags": [
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "이 주장에 대한 가장 가까운 원출처를 찾아줘 (경계가 모호한 요청)",
-      "en": "find the closest primary source for this claim (boundary-ambiguous request)"
+      "ko": "주장 원출처 찾기의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해",
+      "en": "Work out the applicable scope for Primary source for a claim; Propose an output that respects both audiences."
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 이 주장에 대한 가장 가까운 원출처를 찾아줘. 입력 상황: 블로그 두 개가 같은 문장을 인용하지만 원문 링크가 없고 발표 연도만 2019년으로 알려져 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "과학·R&D 실험 자료와 연구 기록을 다루는 상황에서 주장 원출처 찾기의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 입력 상황: 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일단 초안으로, 개인 일정과 생활 결정을 정리하는 상황에서 이 주장에 대한 가장 가까운 원출처를 찾아줘. 블로그 두 개가 같은 문장을 인용하지만 원문 링크가 없고 발표 연도만 2019년으로 알려져 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "일단 초안으로, 실험·연구 기록이야. 범위가 헷갈리는 주장 원출처 찾기 건이야. 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, find the closest primary source for this claim. Input context: two blogs repeat the same sentence without an original link, and only the publication year 2019 is known. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a science or R&D experiment-and-records context, Work out the applicable scope for Primary source for a claim; Propose an output that respects both audiences.. Input context: the same facts must be explained differently to a beginner and a specialist. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "A draft is fine for now: in a personal scheduling and everyday-life context, find the closest primary source for this claim. two blogs repeat the same sentence without an original link, and only the publication year 2019 is known. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "A draft is fine for now: This is a science/R&D item. The scope is fuzzy for Primary source for a claim. The same facts must be explained differently to a beginner and a specialist. Propose an output that respects both audiences. If the boundary is fuzzy, ask one question before deciding. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
         }
       ]
     }

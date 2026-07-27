@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.boundary_ambiguity.0008",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.boundary_ambiguity.0008",
   "title": {
-    "ko": "제품 한 장 브리프 · 경계가 모호한 요청",
-    "en": "One-page product brief · boundary-ambiguous request"
+    "ko": "제품 한 장 브리프 — 초보·전문가 독자",
+    "en": "One-page product brief — Beginner versus specialist reader"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "software_it",
+    "primary_domain": "project_product_management",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "제품 아이디어를 문제, 대상 사용자, 제안, 성공 신호가 들어간 한 장 브리프로 써줘 (경계가 모호한 요청)",
-      "en": "write a one-page product brief with problem, target user, proposal, and success signals (boundary-ambiguous request)"
+      "ko": "제품 한 장 브리프의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해",
+      "en": "Work out the applicable scope for One-page product brief; Propose an output that respects both audiences."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "내부 소프트웨어·IT 운영 자료를 확인하는 상황에서 제품 아이디어를 문제, 대상 사용자, 제안, 성공 신호가 들어간 한 장 브리프로 써줘. 입력 상황: 대상은 소규모 팀이고 핵심 문제는 승인 대기이며, 성공 신호는 처리 시간 감소와 재작업 감소야. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 제품 한 장 브리프의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 입력 상황: 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일단 초안으로, 내부 소프트웨어·IT 운영 자료를 확인하는 상황에서 제품 아이디어를 문제, 대상 사용자, 제안, 성공 신호가 들어간 한 장 브리프로 써줘. 대상은 소규모 팀이고 핵심 문제는 승인 대기이며, 성공 신호는 처리 시간 감소와 재작업 감소야. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "일단 초안으로, 프로젝트·제품 일정 쪽이야. 범위가 헷갈리는 제품 한 장 브리프 건이야. 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal software or IT operations context, write a one-page product brief with problem, target user, proposal, and success signals. Input context: the target is small teams, the core problem is approval waiting time, and success signals are lower processing time and rework. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a product or project schedule-and-requirements context, Work out the applicable scope for One-page product brief; Propose an output that respects both audiences.. Input context: the same facts must be explained differently to a beginner and a specialist. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "A draft is fine for now: in an internal software or IT operations context, write a one-page product brief with problem, target user, proposal, and success signals. the target is small teams, the core problem is approval waiting time, and success signals are lower processing time and rework. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "A draft is fine for now: This is a project/product item. The scope is fuzzy for One-page product brief. The same facts must be explained differently to a beginner and a specialist. Propose an output that respects both audiences. If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }

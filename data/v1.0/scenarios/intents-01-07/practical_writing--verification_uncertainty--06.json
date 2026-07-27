@@ -2,24 +2,25 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.verification_uncertainty.0006",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.verification_uncertainty.0006",
   "title": {
-    "ko": "학습 계획 · 검증·불확실성",
-    "en": "Study plan · verification and uncertainty"
+    "ko": "학습 계획 — 공식 확인 경계",
+    "en": "Study plan — Official-review boundary"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "nonprofit_social_impact",
+    "primary_domain": "hr_people_labor",
     "domain_tags": [
-      "communication_meetings"
+      "communication_meetings",
+      "general_knowledge"
     ],
     "user_goal": {
-      "ko": "시험까지 4주 남은 학습 계획을 주차별 목표와 복습 시점이 보이게 작성해줘 (검증·불확실성)",
-      "en": "write a four-week study plan with weekly goals and review points (verification and uncertainty)"
+      "ko": "학습 계획 자료의 근거와 미확인 부분을 나눠줘. 도움이 되는 정리와 전문가 판단을 분리해",
+      "en": "Separate evidence and unknowns in the Study plan material; separate useful organization from professional judgment."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +51,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "비영리 활동과 사회적 영향 자료를 정리하는 상황에서 시험까지 4주 남은 학습 계획을 주차별 목표와 복습 시점이 보이게 작성해줘. 입력 상황: 주당 평일 40분, 주말 90분만 가능하고 마지막 주에는 새 단원을 추가하지 않기로 했어. 검증된 사실, 가정, 불확실성, 다음 확인 단계를 분리해서 제시해."
+          "content": "인사·노무 안내를 정리하되 개인별 판단은 담당자 확인이 필요한 상황에서 학습 계획 자료의 근거와 미확인 부분을 나눠줘. 도움이 되는 정리와 전문가 판단을 분리해. 입력 상황: 안전·법률·재무 판단에 쓸 자료라 담당 기관 확인이 필요해. 검증된 사실, 가정, 불확실성, 다음 확인 단계를 분리해서 제시해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
         }
       ]
     },
@@ -66,15 +67,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "비영리 활동과 사회적 영향 자료를 정리하는 상황 관련 건이야. 주당 평일 40분, 주말 90분만 가능하고 마지막 주에는 새 단원을 추가하지 않기로 했어."
+          "content": "인사 정책 건이야. 근거를 다시 봐야 하는 학습 계획 건이야. 안전·법률·재무 판단에 쓸 자료라 담당 기관 확인이 필요해. 도움이 되는 정리와 전문가 판단을 분리해."
         },
         {
           "role": "user",
-          "content": "시험까지 4주 남은 학습 계획을 주차별 목표와 복습 시점이 보이게 작성해줘."
-        },
-        {
-          "role": "user",
-          "content": "검증된 사실, 가정, 불확실성, 다음 확인 단계를 분리해서 제시해."
+          "content": "확정·추정·아직 모르는 것·다음 체크를 따로 적어줘. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
         }
       ]
     },
@@ -87,7 +84,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a nonprofit or social-impact operations context, write a four-week study plan with weekly goals and review points. Input context: only 40 minutes on weekdays and 90 minutes on weekends are available, and no new unit should be added in the final week. Separate verified facts, assumptions, uncertainty, and the next verification step."
+          "content": "In an HR or labor-policy context where individual decisions require an HR check, Separate evidence and unknowns in the Study plan material; separate useful organization from professional judgment.. Input context: the material may inform a safety, legal, or finance decision and needs official review. Separate verified facts, assumptions, uncertainty, and the next verification step. Make the boundary for official or professional review explicit."
         }
       ]
     },
@@ -103,15 +100,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a nonprofit or social-impact operations context: only 40 minutes on weekdays and 90 minutes on weekends are available, and no new unit should be added in the final week."
+          "content": "This is an HR/policy item. The evidence needs checking for Study plan. The material may inform a safety, legal, or finance decision and needs official review. Separate useful organization from professional judgment."
         },
         {
           "role": "user",
-          "content": "write a four-week study plan with weekly goals and review points."
-        },
-        {
-          "role": "user",
-          "content": "Separate verified facts, assumptions, uncertainty, and the next verification step."
+          "content": "Keep confirmed, guessed, unknown, and next-check items separate. Do not make a professional determination; state what needs official review."
         }
       ]
     }
@@ -123,7 +116,8 @@
     },
     "invariants": [
       "Respect the available time and reserve the final week for review.",
-      "Do not promise mastery."
+      "Do not promise mastery.",
+      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
     ],
     "rubric_dimensions": [
       "schedule_feasibility",
@@ -132,7 +126,8 @@
     ],
     "failure_signals": [
       "Overloading the time budget.",
-      "Adding new material in the final week."
+      "Adding new material in the final week.",
+      "Giving definitive professional advice without the stated source or escalation boundary."
     ]
   },
   "provenance": {

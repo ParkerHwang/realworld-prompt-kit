@@ -2,25 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.extraction_parsing.canonical.0004",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.canonical.0004",
   "title": {
-    "ko": "영수증 항목 · 기본 요청",
-    "en": "Receipt line items · ordinary request"
+    "ko": "영수증 항목 — 다음 분기 결정",
+    "en": "Receipt line items — Next-quarter decision"
   },
   "task": {
     "primary_intent": "extraction_parsing",
     "secondary_intents": [
       "classification_organization"
     ],
-    "primary_domain": "government_public_policy",
+    "primary_domain": "personal_everyday",
     "domain_tags": [
-      "office_admin",
-      "general_knowledge"
+      "office_admin"
     ],
     "user_goal": {
-      "ko": "영수증에서 품목, 수량, 단가, 할인액을 추출해줘 (기본 요청)",
-      "en": "extract item, quantity, unit price, and discount from the receipt (ordinary request)"
+      "ko": "영수증에서 품목, 수량, 단가, 할인액을 추출해줘 결정에 필요한 핵심 근거와 보류 조건을 정리해",
+      "en": "extract item, quantity, unit price, and discount from the receipt; state the key evidence and hold conditions"
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -51,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "정부·공공기관 공고의 조건과 기준일을 확인하는 상황에서 영수증에서 품목, 수량, 단가, 할인액을 추출해줘. 입력 상황: 영수증에는 묶음 할인 한 줄과 개별 품목 세 줄이 있고, 총 할인액만 표시돼. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "개인 일정과 생활 결정을 정리하는 상황에서 영수증에서 품목, 수량, 단가, 할인액을 추출해줘 결정에 필요한 핵심 근거와 보류 조건을 정리해. 입력 상황: 영수증에는 묶음 할인 한 줄과 개별 품목 세 줄이 있고, 총 할인액만 표시돼. 다음 분기 실행 여부를 오늘 정해야 하는 자료야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -67,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 정부·공공기관 공고의 조건과 기준일을 확인하는 상황에서 영수증에서 품목, 수량, 단가, 할인액을 추출해줘. 영수증에는 묶음 할인 한 줄과 개별 품목 세 줄이 있고, 총 할인액만 표시돼. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘. 참고 메모가 중간에 붙어 있어도 요청과 자료는 나눠서 봐줘. 아, 대상은 전체가 아니라 위에 적은 범위만이야."
+          "content": "어 그러니까 내가 말한 건, 내 일정·생활 건이야. 영수증 품목별로 품목·수량·단가·할인을 뽑아줘. 묶음 할인 한 줄과 총 할인액만 있으니 품목별 할인으로 나눠 계산하지 마. 참고로 다음 분기 실행 여부를 오늘 정해야 하는 자료야. 그래서 결정에 필요한 핵심 근거와 보류 조건을 정리해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘. 참고 메모가 중간에 붙어 있어도 요청과 자료는 나눠서 봐줘. 아, 대상은 전체가 아니라 위에 적은 범위만이야."
         }
       ]
     },
@@ -80,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a government or public-policy notice context where dates and eligibility matter, extract item, quantity, unit price, and discount from the receipt. Input context: the receipt has one bundle-discount line and three item lines, but only the total discount is shown. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. Make the boundary for official or professional review explicit."
+          "content": "In a personal scheduling and everyday-life context, extract item, quantity, unit price, and discount from the receipt; state the key evidence and hold conditions. Input context: the receipt has one bundle-discount line and three item lines, but only the total discount is shown. the material supports a go-or-hold decision for next quarter today. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -96,20 +95,19 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is: in a government or public-policy notice context where dates and eligibility matter, extract item, quantity, unit price, and discount from the receipt. the receipt has one bundle-discount line and three item lines, but only the total discount is shown. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. Do not make a professional determination; state what needs official review. If notes are pasted inline, separate the request from the material. Actually, use only the scope stated above, not the broader one."
+          "content": "Actually, what I mean is: This is a personal-life item. Read the receipt into item, quantity, unit price, and discount fields. There is a bundle-discount line and only a total discount, so do not invent an allocation by item. For this case, the material supports a go-or-hold decision for next quarter today. So state the key evidence and hold conditions. Use what can actually be checked; say when something is unknown. If notes are pasted inline, separate the request from the material. Actually, use only the scope stated above, not the broader one."
         }
       ]
     }
   ],
   "evaluation": {
     "response_mode": {
-      "canonical": "state_assumptions_and_answer",
+      "canonical": "answer_directly",
       "naturalistic": "infer_and_answer"
     },
     "invariants": [
       "Keep the bundle discount at the level shown.",
-      "Do not allocate a total discount across items without a rule.",
-      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
+      "Do not allocate a total discount across items without a rule."
     ],
     "rubric_dimensions": [
       "line_item_fidelity",
@@ -118,8 +116,7 @@
     ],
     "failure_signals": [
       "Inventing per-item discounts.",
-      "Double-counting the bundle line.",
-      "Giving definitive professional advice without the stated source or escalation boundary."
+      "Double-counting the bundle line."
     ]
   },
   "provenance": {

@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.canonical.0008",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.canonical.0008",
   "title": {
-    "ko": "제품 한 장 브리프 · 기본 요청",
-    "en": "One-page product brief · ordinary request"
+    "ko": "제품 한 장 브리프 — 외부 공유 전",
+    "en": "One-page product brief — Before external sharing"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "customer_support_success",
+    "primary_domain": "project_product_management",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "제품 아이디어를 문제, 대상 사용자, 제안, 성공 신호가 들어간 한 장 브리프로 써줘 (기본 요청)",
-      "en": "write a one-page product brief with problem, target user, proposal, and success signals (ordinary request)"
+      "ko": "제품 아이디어를 문제, 대상 사용자, 제안, 성공 신호가 들어간 한 장 브리프로 써줘 공유 가능한 형식으로 근거를 함께 제시해",
+      "en": "write a one-page product brief with problem, target user, proposal, and success signals; make the evidence visible in a shareable format"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "고객 문의와 지원 운영을 처리하는 상황에서 제품 아이디어를 문제, 대상 사용자, 제안, 성공 신호가 들어간 한 장 브리프로 써줘. 입력 상황: 대상은 소규모 팀이고 핵심 문제는 승인 대기이며, 성공 신호는 처리 시간 감소와 재작업 감소야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 제품 아이디어를 문제, 대상 사용자, 제안, 성공 신호가 들어간 한 장 브리프로 써줘 공유 가능한 형식으로 근거를 함께 제시해. 입력 상황: 대상은 소규모 팀이고 핵심 문제는 승인 대기이며, 성공 신호는 처리 시간 감소와 재작업 감소야. 외부 공유 직전이라 원문 근거와 제한을 짧게 붙여야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "고객 문의와 지원 운영을 처리하는 상황 관련 건이야. 대상은 소규모 팀이고 핵심 문제는 승인 대기이며, 성공 신호는 처리 시간 감소와 재작업 감소야."
+          "content": "프로젝트·제품 일정 쪽이야. 작은 팀용 승인 대기 문제 제품 브리프를 한 장으로. 대상/문제/제안/처리시간·재작업 성공 신호를 나누고 검증됐다고 말하진 마. 참고로 외부 공유 직전이라 원문 근거와 제한을 짧게 붙여야 해. 그래서 공유 가능한 형식으로 근거를 함께 제시해."
         },
         {
           "role": "user",
-          "content": "제품 아이디어를 문제, 대상 사용자, 제안, 성공 신호가 들어간 한 장 브리프로 써줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a customer-support and success context, write a one-page product brief with problem, target user, proposal, and success signals. Input context: the target is small teams, the core problem is approval waiting time, and success signals are lower processing time and rework. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a product or project schedule-and-requirements context, write a one-page product brief with problem, target user, proposal, and success signals; make the evidence visible in a shareable format. Input context: the target is small teams, the core problem is approval waiting time, and success signals are lower processing time and rework. the result is going outside the team and needs a short source note and limitation. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a customer-support and success context: the target is small teams, the core problem is approval waiting time, and success signals are lower processing time and rework."
+          "content": "This is a project/product item. Make a one-page brief for a small-team approval-waiting problem. Separate audience, problem, proposal, and processing-time/rework signals; it is not validated yet. For this case, the result is going outside the team and needs a short source note and limitation. So make the evidence visible in a shareable format."
         },
         {
           "role": "user",
-          "content": "write a one-page product brief with problem, target user, proposal, and success signals."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }

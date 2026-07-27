@@ -2,22 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.explanation_teaching.audience_context_shift.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.audience_context_shift.0007",
   "title": {
-    "ko": "가전 안전 안내 · 독자·맥락 전환",
-    "en": "Appliance-safety explanation · audience and context shift"
+    "ko": "가전 안전 안내 — 혼합 언어 수업",
+    "en": "Appliance-safety explanation — Mixed-language classroom"
   },
   "task": {
     "primary_intent": "explanation_teaching",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "education_research",
-    "domain_tags": [],
+    "primary_domain": "personal_everyday",
+    "domain_tags": [
+      "education_research"
+    ],
     "user_goal": {
-      "ko": "가전제품 안전 안내를 사용자가 해야 할 일과 하지 말아야 할 일로 설명해줘 (독자·맥락 전환)",
-      "en": "explain the appliance-safety notice as do and do-not actions for users (audience and context shift)"
+      "ko": "가전 안전 안내 내용을 지정 독자에게 맞춰 다시 써줘. 표현을 단순하게 하고 문화적 전제를 설명해",
+      "en": "Adapt the Appliance-safety explanation material for the specified reader; simplify wording and explain cultural assumptions."
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -48,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "수업·학습·연구 자료를 다루는 상황에서 가전제품 안전 안내를 사용자가 해야 할 일과 하지 말아야 할 일로 설명해줘. 입력 상황: 안내에는 물기 있는 손 금지, 이상 소음 시 전원 차단, 내부 수리는 서비스센터 문의가 적혀 있어. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "개인 일정과 생활 결정을 정리하는 상황에서 가전 안전 안내 내용을 지정 독자에게 맞춰 다시 써줘. 표현을 단순하게 하고 문화적 전제를 설명해. 입력 상황: 서로 다른 언어 배경의 학생이 함께 읽을 자료야. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
         }
       ]
     },
@@ -64,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "수업·학습·연구 자료를 다루는 상황 관련 건이야. 안내에는 물기 있는 손 금지, 이상 소음 시 전원 차단, 내부 수리는 서비스센터 문의가 적혀 있어."
+          "content": "내 일정·생활 건이야. 읽는 사람이 달라진 가전 안전 안내 건이야. 서로 다른 언어 배경의 학생이 함께 읽을 자료야. 표현을 단순하게 하고 문화적 전제를 설명해."
         },
         {
           "role": "user",
-          "content": "가전제품 안전 안내를 사용자가 해야 할 일과 하지 말아야 할 일로 설명해줘."
-        },
-        {
-          "role": "user",
-          "content": "지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬."
         }
       ]
     },
@@ -85,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an education, learning, or research context, explain the appliance-safety notice as do and do-not actions for users. Input context: the notice says not to use wet hands, to disconnect power after unusual noise, and to contact service for internal repair. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "In a personal scheduling and everyday-life context, Adapt the Appliance-safety explanation material for the specified reader; simplify wording and explain cultural assumptions.. Input context: students with different language backgrounds will read the material together. Adapt tone and explanation level to the specified audience and context without changing the core facts."
         }
       ]
     },
@@ -101,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about an education, learning, or research context: the notice says not to use wet hands, to disconnect power after unusual noise, and to contact service for internal repair."
+          "content": "This is a personal-life item. The reader has changed for Appliance-safety explanation. Students with different language backgrounds will read the material together. Simplify wording and explain cultural assumptions."
         },
         {
           "role": "user",
-          "content": "explain the appliance-safety notice as do and do-not actions for users."
-        },
-        {
-          "role": "user",
-          "content": "Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "Make it fit the reader without changing the substance."
         }
       ]
     }

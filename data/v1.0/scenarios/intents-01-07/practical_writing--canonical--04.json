@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.canonical.0004",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.canonical.0004",
   "title": {
-    "ko": "고객 사과 답변 · 기본 요청",
-    "en": "Customer apology reply · ordinary request"
+    "ko": "고객 사과 답변 — 다음 분기 결정",
+    "en": "Customer apology reply — Next-quarter decision"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "sales_marketing",
+    "primary_domain": "customer_support_success",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "고객에게 보낼 사과 답변을 사실, 해결 방법, 다음 안내 순서로 작성해줘 (기본 요청)",
-      "en": "write a customer apology reply in the order of facts, remedy, and next update (ordinary request)"
+      "ko": "고객에게 보낼 사과 답변을 사실, 해결 방법, 다음 안내 순서로 작성해줘 결정에 필요한 핵심 근거와 보류 조건을 정리해",
+      "en": "write a customer apology reply in the order of facts, remedy, and next update; state the key evidence and hold conditions"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "영업·마케팅 캠페인 자료를 준비하는 상황에서 고객에게 보낼 사과 답변을 사실, 해결 방법, 다음 안내 순서로 작성해줘. 입력 상황: 주문 지연은 확인됐지만 원인은 아직 조사 중이고 48시간 안에 다시 안내하기로 했어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "고객 문의와 지원 운영을 처리하는 상황에서 고객에게 보낼 사과 답변을 사실, 해결 방법, 다음 안내 순서로 작성해줘 결정에 필요한 핵심 근거와 보류 조건을 정리해. 입력 상황: 주문 지연은 확인됐지만 원인은 아직 조사 중이고 48시간 안에 다시 안내하기로 했어. 다음 분기 실행 여부를 오늘 정해야 하는 자료야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 영업·마케팅 캠페인 자료를 준비하는 상황에서 고객에게 보낼 사과 답변을 사실, 해결 방법, 다음 안내 순서로 작성해줘. 주문 지연은 확인됐지만 원인은 아직 조사 중이고 48시간 안에 다시 안내하기로 했어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 참고 메모가 중간에 붙어 있어도 요청과 자료는 나눠서 봐줘. 아, 대상은 전체가 아니라 위에 적은 범위만이야."
+          "content": "어 그러니까 내가 말한 건, 고객 문의 건이야. 주문 지연 고객에게 답장해줘. 지연은 맞지만 원인은 아직 조사 중이고 48시간 안에 다시 알리기로 한 정도만 말해. 참고로 다음 분기 실행 여부를 오늘 정해야 하는 자료야. 그래서 결정에 필요한 핵심 근거와 보류 조건을 정리해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘. 참고 메모가 중간에 붙어 있어도 요청과 자료는 나눠서 봐줘. 아, 대상은 전체가 아니라 위에 적은 범위만이야."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a sales or marketing-campaign context, write a customer apology reply in the order of facts, remedy, and next update. Input context: the order delay is confirmed but the cause is still under investigation, with a new update promised within 48 hours. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a customer-support and success context, write a customer apology reply in the order of facts, remedy, and next update; state the key evidence and hold conditions. Input context: the order delay is confirmed but the cause is still under investigation, with a new update promised within 48 hours. the material supports a go-or-hold decision for next quarter today. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is: in a sales or marketing-campaign context, write a customer apology reply in the order of facts, remedy, and next update. the order delay is confirmed but the cause is still under investigation, with a new update promised within 48 hours. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. If notes are pasted inline, separate the request from the material. Actually, use only the scope stated above, not the broader one."
+          "content": "Actually, what I mean is: This is a customer-support item. Reply to the customer whose order is late. Acknowledge the delay, say the cause is still under investigation, and keep the promised update within 48 hours. For this case, the material supports a go-or-hold decision for next quarter today. So state the key evidence and hold conditions. Use what can actually be checked; say when something is unknown. If notes are pasted inline, separate the request from the material. Actually, use only the scope stated above, not the broader one."
         }
       ]
     }

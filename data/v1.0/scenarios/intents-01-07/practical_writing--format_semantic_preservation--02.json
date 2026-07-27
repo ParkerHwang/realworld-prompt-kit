@@ -2,25 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.format_semantic_preservation.0002",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.format_semantic_preservation.0002",
   "title": {
-    "ko": "임원 상태 업데이트 · 형식 보존 변환",
-    "en": "Executive status update · format-preserving transformation"
+    "ko": "임원 상태 업데이트 — 스프레드시트 표",
+    "en": "Executive status update — Spreadsheet table"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "safety_emergency",
+    "primary_domain": "project_product_management",
     "domain_tags": [
-      "communication_meetings",
-      "general_knowledge"
+      "communication_meetings"
     ],
     "user_goal": {
-      "ko": "임원에게 보낼 짧은 상태 업데이트를 현재 상태, 위험, 의사결정 요청으로 작성해줘 (형식 보존 변환)",
-      "en": "write a short executive update with status, risks, and decisions needed (format-preserving transformation)"
+      "ko": "임원 상태 업데이트 자료를 지정 형식으로 바꿔줘. 표로 바꾸면서 애매한 말은 애매한 채 둬",
+      "en": "Convert the Executive status update material to the requested format; convert it while preserving vague wording."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -51,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "안전·비상 대응 안내를 확인하는 상황에서 임원에게 보낼 짧은 상태 업데이트를 현재 상태, 위험, 의사결정 요청으로 작성해줘. 입력 상황: 일정은 녹색이지만 범위가 줄었고, 예산 승인 한 건과 외부 공급 일정 확인 한 건이 남아 있어. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 임원 상태 업데이트 자료를 지정 형식으로 바꿔줘. 표로 바꾸면서 애매한 말은 애매한 채 둬. 입력 상황: 설명 문장을 담당·기한·상태 열로 옮겨야 해. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
         }
       ]
     },
@@ -67,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "안전·비상 대응 안내를 확인하는 상황 관련 건이야. 일정은 녹색이지만 범위가 줄었고, 예산 승인 한 건과 외부 공급 일정 확인 한 건이 남아 있어."
+          "content": "프로젝트·제품 일정 쪽이야. 모양을 바꿔야 하는 임원 상태 업데이트 건이야. 설명 문장을 담당·기한·상태 열로 옮겨야 해. 표로 바꾸면서 애매한 말은 애매한 채 둬."
         },
         {
           "role": "user",
-          "content": "임원에게 보낼 짧은 상태 업데이트를 현재 상태, 위험, 의사결정 요청으로 작성해줘."
-        },
-        {
-          "role": "user",
-          "content": "지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "모양은 바꿔도 숫자·날짜·조건은 건드리지 마."
         }
       ]
     },
@@ -88,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a safety or emergency-response context where official guidance takes priority, write a short executive update with status, risks, and decisions needed. Input context: the schedule is green but scope was reduced, with one budget approval and one external-supplier date still open. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors. Make the boundary for official or professional review explicit."
+          "content": "In a product or project schedule-and-requirements context, Convert the Executive status update material to the requested format; convert it while preserving vague wording.. Input context: narrative text must become owner, deadline, and status columns. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
         }
       ]
     },
@@ -104,28 +99,23 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a safety or emergency-response context where official guidance takes priority: the schedule is green but scope was reduced, with one budget approval and one external-supplier date still open."
+          "content": "This is a project/product item. The format needs changing for Executive status update. Narrative text must become owner, deadline, and status columns. Convert it while preserving vague wording."
         },
         {
           "role": "user",
-          "content": "write a short executive update with status, risks, and decisions needed."
-        },
-        {
-          "role": "user",
-          "content": "Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors. Do not make a professional determination; state what needs official review."
+          "content": "Change the shape, not the numbers, dates, or conditions."
         }
       ]
     }
   ],
   "evaluation": {
     "response_mode": {
-      "canonical": "state_assumptions_and_answer",
+      "canonical": "answer_directly",
       "naturalistic": "infer_and_answer"
     },
     "invariants": [
       "Do not call the scope green.",
-      "Separate status from decisions requested.",
-      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
+      "Separate status from decisions requested."
     ],
     "rubric_dimensions": [
       "executive_clarity",
@@ -134,8 +124,7 @@
     ],
     "failure_signals": [
       "Reporting all dimensions as green.",
-      "Hiding the pending approval.",
-      "Giving definitive professional advice without the stated source or escalation boundary."
+      "Hiding the pending approval."
     ]
   },
   "provenance": {

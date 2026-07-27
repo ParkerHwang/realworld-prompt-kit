@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.canonical.0003",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.canonical.0003",
   "title": {
-    "ko": "공급업체 협의 메시지 · 기본 요청",
-    "en": "Vendor negotiation message · ordinary request"
+    "ko": "공급업체 협의 메시지 — 월말 운영자료",
+    "en": "Vendor negotiation message — Month-end operations set"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "manufacturing_quality",
+    "primary_domain": "strategy_business_operations",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "공급업체에 일정과 가격을 다시 확인하는 협의 메시지를 써줘 (기본 요청)",
-      "en": "write a vendor message asking to reconfirm schedule and pricing (ordinary request)"
+      "ko": "공급업체에 일정과 가격을 다시 확인하는 협의 메시지를 써줘 두 표의 공통값과 주의점을 구분해",
+      "en": "write a vendor message asking to reconfirm schedule and pricing; separate common values from cautions"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "제조 공정과 품질관리 기록을 다루는 상황에서 공급업체에 일정과 가격을 다시 확인하는 협의 메시지를 써줘. 입력 상황: 원하는 납기는 10월 10일이고 예산 상한은 8천이지만, 대체 납기나 분할 납품도 제안받고 싶어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 공급업체에 일정과 가격을 다시 확인하는 협의 메시지를 써줘 두 표의 공통값과 주의점을 구분해. 입력 상황: 원하는 납기는 10월 10일이고 예산 상한은 8천이지만, 대체 납기나 분할 납품도 제안받고 싶어. 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "제조 공정과 품질관리 기록을 다루는 상황 관련 건이야. 원하는 납기는 10월 10일이고 예산 상한은 8천이지만, 대체 납기나 분할 납품도 제안받고 싶어."
+          "content": "사업 운영 자료야. 공급업체에 10/10 납기와 8천 예산을 다시 확인하는 메시지 써줘. 분할 납품이나 다른 날짜도 제안은 받되 우리가 확정한 것처럼 쓰진 마. 참고로 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 그래서 두 표의 공통값과 주의점을 구분해."
         },
         {
           "role": "user",
-          "content": "공급업체에 일정과 가격을 다시 확인하는 협의 메시지를 써줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a manufacturing-process and quality-control context, write a vendor message asking to reconfirm schedule and pricing. Input context: the desired delivery date is October 10 and the budget cap is 8,000, but alternative dates or split delivery are welcome. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a business-operations context where options and execution conditions matter, write a vendor message asking to reconfirm schedule and pricing; separate common values from cautions. Input context: the desired delivery date is October 10 and the budget cap is 8,000, but alternative dates or split delivery are welcome. two teams supplied updated tables before month-end close. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a manufacturing-process and quality-control context: the desired delivery date is October 10 and the budget cap is 8,000, but alternative dates or split delivery are welcome."
+          "content": "This is a business-operations item. Write to the supplier to reconfirm October 10 and the 8,000 budget cap. Invite a split delivery or another date as options, not as an accepted change. For this case, two teams supplied updated tables before month-end close. So separate common values from cautions."
         },
         {
           "role": "user",
-          "content": "write a vendor message asking to reconfirm schedule and pricing."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }

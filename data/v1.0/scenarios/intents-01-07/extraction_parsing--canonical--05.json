@@ -2,24 +2,25 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.extraction_parsing.canonical.0005",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.canonical.0005",
   "title": {
-    "ko": "안전 사고 타임라인 · 기본 요청",
-    "en": "Safety-incident timeline · ordinary request"
+    "ko": "안전 사고 타임라인 — 지역별 두 버전",
+    "en": "Safety-incident timeline — Two regional versions"
   },
   "task": {
     "primary_intent": "extraction_parsing",
     "secondary_intents": [
       "classification_organization"
     ],
-    "primary_domain": "customer_support_success",
+    "primary_domain": "safety_emergency",
     "domain_tags": [
-      "office_admin"
+      "office_admin",
+      "general_knowledge"
     ],
     "user_goal": {
-      "ko": "사고 보고서에서 시간순 사건, 조치, 미확인 사실을 추출해줘 (기본 요청)",
-      "en": "extract the chronological events, actions, and unconfirmed facts from the incident report (ordinary request)"
+      "ko": "사고 보고서에서 시간순 사건, 조치, 미확인 사실을 추출해줘 지역 조건을 섞지 않고 해당 지역만 답해",
+      "en": "extract the chronological events, actions, and unconfirmed facts from the incident report; answer for the requested region without mixing conditions"
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -50,7 +51,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "고객 문의와 지원 운영을 처리하는 상황에서 사고 보고서에서 시간순 사건, 조치, 미확인 사실을 추출해줘. 입력 상황: 보고서의 일부 시각은 '경'으로만 적혀 있고 목격자 진술과 CCTV 기록의 순서가 다르게 보이네. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "안전·비상 대응 안내를 확인하는 상황에서 사고 보고서에서 시간순 사건, 조치, 미확인 사실을 추출해줘 지역 조건을 섞지 않고 해당 지역만 답해. 입력 상황: 보고서의 일부 시각은 '경'으로만 적혀 있고 목격자 진술과 CCTV 기록의 순서가 다르게 보이네. 서울용과 부산용 안내가 한 파일에 섞여 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
         }
       ]
     },
@@ -66,7 +67,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한내용이 좀 깨졌는데, 고객 문의와 지원 운영을 처리하는 상황에서 사고 보고서에서 시간순 사건, 조치, 미확인 사실을 추출해줘;. 보고서의 일부 시각은 '경'으로만 적혀 있고 목격자 진술과 CCTV 기록의 순서가 다르게 보이네. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "복붙한내용이 좀 깨졌는데, 안전 대응 안내야. 사고 보고서를 시간순으로 정리하되 조치랑 아직 확인 안 된 사실을 따로 표시해줘;. 목격자랑 CCTV 순서가 다르고 시각도 일부는 대략적이야. 참고로 서울용과 부산용 안내가 한 파일에 섞여 있어. 그래서 지역 조건을 섞지 않고 해당 지역만 답해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘;. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
         }
       ]
     },
@@ -79,7 +80,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a customer-support and success context, extract the chronological events, actions, and unconfirmed facts from the incident report. Input context: some timestamps are approximate and the witness statement and CCTV log appear to differ in order. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a safety or emergency-response context where official guidance takes priority, extract the chronological events, actions, and unconfirmed facts from the incident report; answer for the requested region without mixing conditions. Input context: some timestamps are approximate and the witness statement and CCTV log appear to differ in order. Seoul and Busan notices are mixed in one file. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. Make the boundary for official or professional review explicit."
         }
       ]
     },
@@ -95,19 +96,20 @@
       "messages": [
         {
           "role": "user",
-          "content": "Thepasted text is a bit messy: in a customer-support and success context, extract the chronological events, actions, and unconfirmed facts from the incident report.. some timestamps are approximate and the witness statement and CCTV log appear to differ in order. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Thepasted text is a bit messy: This is a safety-response item.. Put the incident report in time order, with actions and unconfirmed facts separated. Some times are approximate and the witness and CCTV sequences differ; preserve both accounts. For this case, Seoul and Busan notices are mixed in one file. So answer for the requested region without mixing conditions. Use what can actually be checked; say when something is unknown. Do not make a professional determination; state what needs official review."
         }
       ]
     }
   ],
   "evaluation": {
     "response_mode": {
-      "canonical": "answer_directly",
+      "canonical": "state_assumptions_and_answer",
       "naturalistic": "infer_and_answer"
     },
     "invariants": [
       "Preserve approximate times and conflicting accounts.",
-      "Mark unconfirmed facts rather than resolving them."
+      "Mark unconfirmed facts rather than resolving them.",
+      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
     ],
     "rubric_dimensions": [
       "timeline_order",
@@ -116,7 +118,8 @@
     ],
     "failure_signals": [
       "Turning approximate time into an exact time.",
-      "Choosing one account without noting conflict."
+      "Choosing one account without noting conflict.",
+      "Giving definitive professional advice without the stated source or escalation boundary."
     ]
   },
   "provenance": {

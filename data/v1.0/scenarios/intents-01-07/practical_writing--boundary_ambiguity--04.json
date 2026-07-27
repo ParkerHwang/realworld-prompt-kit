@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.boundary_ambiguity.0004",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.boundary_ambiguity.0004",
   "title": {
-    "ko": "고객 사과 답변 · 경계가 모호한 요청",
-    "en": "Customer apology reply · boundary-ambiguous request"
+    "ko": "고객 사과 답변 — 현장·본사 기준",
+    "en": "Customer apology reply — Local site versus headquarters"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "project_product_management",
+    "primary_domain": "customer_support_success",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "고객에게 보낼 사과 답변을 사실, 해결 방법, 다음 안내 순서로 작성해줘 (경계가 모호한 요청)",
-      "en": "write a customer apology reply in the order of facts, remedy, and next update (boundary-ambiguous request)"
+      "ko": "고객 사과 답변의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해",
+      "en": "Work out the applicable scope for Customer apology reply; Separate what changes by jurisdiction."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 고객에게 보낼 사과 답변을 사실, 해결 방법, 다음 안내 순서로 작성해줘. 입력 상황: 주문 지연은 확인됐지만 원인은 아직 조사 중이고 48시간 안에 다시 안내하기로 했어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "고객 문의와 지원 운영을 처리하는 상황에서 고객 사과 답변의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해. 입력 상황: 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 제품·프로젝트 일정과 요구사항을 다루는 상황의 그 자료 주문 지연은 확인됐지만 원인은 아직 조사 중이고 48시간 안에 다시 안내하기로 했어."
+          "content": "어 그러니까 내가 말한 건, 고객 문의 건이야: 범위가 헷갈리는 고객 사과 답변 건이야. 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 지역 관할에 따라 무엇이 달라지는지 구분해."
         },
         {
           "role": "user",
-          "content": "위 건 고객에게 보낼 사과 답변을 사실, 해결 방법, 다음 안내 순서로 작성해줘. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "위 건은 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a product or project schedule-and-requirements context, write a customer apology reply in the order of facts, remedy, and next update. Input context: the order delay is confirmed but the cause is still under investigation, with a new update promised within 48 hours. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a customer-support and success context, Work out the applicable scope for Customer apology reply; Separate what changes by jurisdiction.. Input context: the site notice may apply differently from the headquarters baseline. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is, the same a product or project schedule-and-requirements context item: the order delay is confirmed but the cause is still under investigation, with a new update promised within 48 hours."
+          "content": "Actually, what I mean is, This is a customer-support item: The scope is fuzzy for Customer apology reply. The site notice may apply differently from the headquarters baseline. Separate what changes by jurisdiction."
         },
         {
           "role": "user",
-          "content": "For that, write a customer apology reply in the order of facts, remedy, and next update. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "For that item: If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }

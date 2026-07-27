@@ -2,22 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.information_retrieval.freshness_source_conflict.0005",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.freshness_source_conflict.0005",
   "title": {
-    "ko": "제품 보증 비교 · 최신성·출처 충돌",
-    "en": "Product-warranty comparison · freshness and source conflict"
+    "ko": "제품 보증 비교 — 구청·건물 공지",
+    "en": "Product-warranty comparison — District versus building notice"
   },
   "task": {
     "primary_intent": "information_retrieval",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "general_knowledge",
-    "domain_tags": [],
+    "primary_domain": "software_it",
+    "domain_tags": [
+      "general_knowledge"
+    ],
     "user_goal": {
-      "ko": "두 제품의 보증 기간과 수리 제외 조건을 비교해줘 (최신성·출처 충돌)",
-      "en": "compare the warranty periods and repair exclusions for two products (freshness and source conflict)"
+      "ko": "제품 보증 비교에 관한 현재 근거를 대조해줘. 관할과 적용 대상을 확인한 뒤 충돌을 남겨",
+      "en": "Reconcile the current evidence for Product-warranty comparison; check jurisdiction and audience while preserving the conflict."
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -48,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지역 생활 정보와 공공 안내를 확인하는 상황에서 두 제품의 보증 기간과 수리 제외 조건을 비교해줘. 입력 상황: 판매 페이지의 표와 제조사 보증서 PDF의 표현이 다르고, 한 제품은 지역별 조건이 따로 있어. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨."
+          "content": "내부 소프트웨어·IT 운영 자료를 확인하는 상황에서 제품 보증 비교에 관한 현재 근거를 대조해줘. 관할과 적용 대상을 확인한 뒤 충돌을 남겨. 입력 상황: 구청 공지와 건물 공지의 임시 휴무 날짜가 달라. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
         }
       ]
     },
@@ -64,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "지역 생활 정보와 공공 안내를 확인하는 상황 관련 건이야. 판매 페이지의 표와 제조사 보증서 PDF의 표현이 다르고, 한 제품은 지역별 조건이 따로 있어."
+          "content": "내부 IT 쪽이야. 자료가 엇갈린 제품 보증 비교 건이야. 구청 공지와 건물 공지의 임시 휴무 날짜가 달라. 관할과 적용 대상을 확인한 뒤 충돌을 남겨."
         },
         {
           "role": "user",
-          "content": "두 제품의 보증 기간과 수리 제외 조건을 비교해줘."
-        },
-        {
-          "role": "user",
-          "content": "기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨."
+          "content": "새 자료인지, 어느 출처인지 나눠서 보여줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
         }
       ]
     },
@@ -85,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a local-life information and public-notice context, compare the warranty periods and repair exclusions for two products. Input context: the seller's table and the manufacturer's warranty PDF use different wording, and one product has regional conditions. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary."
+          "content": "In an internal software or IT operations context, Reconcile the current evidence for Product-warranty comparison; check jurisdiction and audience while preserving the conflict.. Input context: the district and building notices give different temporary-closure dates. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
         }
       ]
     },
@@ -101,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a local-life information and public-notice context: the seller's table and the manufacturer's warranty PDF use different wording, and one product has regional conditions."
+          "content": "This is an internal IT item. The sources disagree for Product-warranty comparison. The district and building notices give different temporary-closure dates. Check jurisdiction and audience while preserving the conflict."
         },
         {
           "role": "user",
-          "content": "compare the warranty periods and repair exclusions for two products."
-        },
-        {
-          "role": "user",
-          "content": "State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary."
+          "content": "Show which source and date each answer comes from. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
         }
       ]
     }

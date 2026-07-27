@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.explanation_teaching.boundary_ambiguity.0004",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.boundary_ambiguity.0004",
   "title": {
-    "ko": "실험 결과 설명 · 경계가 모호한 요청",
-    "en": "Experiment result · boundary-ambiguous request"
+    "ko": "실험 결과 설명 — 현장·본사 기준",
+    "en": "Experiment result — Local site versus headquarters"
   },
   "task": {
     "primary_intent": "explanation_teaching",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "communication_meetings",
+    "primary_domain": "data_analytics",
     "domain_tags": [
       "education_research"
     ],
     "user_goal": {
-      "ko": "실험 결과를 비전문가에게 결과, 불확실성, 다음 확인 단계로 나눠 설명해줘 (경계가 모호한 요청)",
-      "en": "explain the experiment to a non-specialist as result, uncertainty, and next check (boundary-ambiguous request)"
+      "ko": "실험 결과 설명의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해",
+      "en": "Work out the applicable scope for Experiment result; Separate what changes by jurisdiction."
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 실험 결과를 비전문가에게 결과, 불확실성, 다음 확인 단계로 나눠 설명해줘. 입력 상황: 표본이 작고 두 조건의 차이는 관찰됐지만 반복 실험은 아직 없어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "지표 표와 분석 메모를 검토하는 상황에서 실험 결과 설명의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해. 입력 상황: 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 팀 회의와 업무 커뮤니케이션을 정리하는 상황의 그 자료 표본이 작고 두 조건의 차이는 관찰됐지만 반복 실험은 아직 없어."
+          "content": "어 그러니까 내가 말한 건, 지표·분석 메모야: 범위가 헷갈리는 실험 결과 설명 건이야. 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 지역 관할에 따라 무엇이 달라지는지 구분해."
         },
         {
           "role": "user",
-          "content": "위 건 실험 결과를 비전문가에게 결과, 불확실성, 다음 확인 단계로 나눠 설명해줘. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "위 건은 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, explain the experiment to a non-specialist as result, uncertainty, and next check. Input context: the sample is small and a difference was observed between conditions, but there has been no replication. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a metrics-table and data-analysis context, Work out the applicable scope for Experiment result; Separate what changes by jurisdiction.. Input context: the site notice may apply differently from the headquarters baseline. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is, the same a team-meeting and work-communication context item: the sample is small and a difference was observed between conditions, but there has been no replication."
+          "content": "Actually, what I mean is, This is a metrics/analysis item: The scope is fuzzy for Experiment result. The site notice may apply differently from the headquarters baseline. Separate what changes by jurisdiction."
         },
         {
           "role": "user",
-          "content": "For that, explain the experiment to a non-specialist as result, uncertainty, and next check. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "For that item: If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }

@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.information_retrieval.boundary_ambiguity.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.boundary_ambiguity.0007",
   "title": {
-    "ko": "재활용 배출 일정 · 경계가 모호한 요청",
-    "en": "Recycling schedule · boundary-ambiguous request"
+    "ko": "재활용 배출 일정 — 현재·보관 문서",
+    "en": "Recycling schedule — Current versus archived"
   },
   "task": {
     "primary_intent": "information_retrieval",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "sales_marketing",
+    "primary_domain": "energy_environment",
     "domain_tags": [
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "우리 동네 재활용 배출 요일을 확인해줘 (경계가 모호한 요청)",
-      "en": "find the recycling collection day for the neighborhood (boundary-ambiguous request)"
+      "ko": "재활용 배출 일정의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해",
+      "en": "Work out the applicable scope for Recycling schedule; State the rule for choosing the current document."
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "영업·마케팅 캠페인 자료를 준비하는 상황에서 우리 동네 재활용 배출 요일을 확인해줘. 입력 상황: 구청 공지와 아파트 안내문이 다르고 이번 달에 임시 휴무일이 하나 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "에너지 사용과 환경 운영 자료를 비교하는 상황에서 재활용 배출 일정의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해. 입력 상황: 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "영업·마케팅 캠페인 자료를 준비하는 상황 관련 건이야. 구청 공지와 아파트 안내문이 다르고 이번 달에 임시 휴무일이 하나 있어."
+          "content": "에너지·환경 운영 건이야. 범위가 헷갈리는 재활용 배출 일정 건이야. 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 현재 문서를 고르는 기준을 한 문장으로 정리해."
         },
         {
           "role": "user",
-          "content": "우리 동네 재활용 배출 요일을 확인해줘."
-        },
-        {
-          "role": "user",
-          "content": "비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a sales or marketing-campaign context, find the recycling collection day for the neighborhood. Input context: the district notice and building notice disagree, and there is one temporary holiday change this month. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In an energy-use and environmental-operations context, Work out the applicable scope for Recycling schedule; State the rule for choosing the current document.. Input context: search results show a current document alongside an archived one. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a sales or marketing-campaign context: the district notice and building notice disagree, and there is one temporary holiday change this month."
+          "content": "This is an energy/environment item. The scope is fuzzy for Recycling schedule. Search results show a current document alongside an archived one. State the rule for choosing the current document."
         },
         {
           "role": "user",
-          "content": "find the recycling collection day for the neighborhood."
-        },
-        {
-          "role": "user",
-          "content": "Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "If the boundary is fuzzy, ask one question before deciding. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
         }
       ]
     }

@@ -2,11 +2,11 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.extraction_parsing.canonical.0008",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.canonical.0008",
   "title": {
-    "ko": "연구 변수 · 기본 요청",
-    "en": "Research variables · ordinary request"
+    "ko": "연구 변수 — 외부 공유 전",
+    "en": "Research variables — Before external sharing"
   },
   "task": {
     "primary_intent": "extraction_parsing",
@@ -18,8 +18,8 @@
       "office_admin"
     ],
     "user_goal": {
-      "ko": "연구 초록에서 표본, 독립변수, 결과변수, 제한점을 추출해줘 (기본 요청)",
-      "en": "extract the sample, independent variable, outcome, and limitations from the abstract (ordinary request)"
+      "ko": "연구 초록에서 표본, 독립변수, 결과변수, 제한점을 추출해줘 공유 가능한 형식으로 근거를 함께 제시해",
+      "en": "extract the sample, independent variable, outcome, and limitations from the abstract; make the evidence visible in a shareable format"
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지표 표와 분석 메모를 검토하는 상황에서 연구 초록에서 표본, 독립변수, 결과변수, 제한점을 추출해줘. 입력 상황: 초록에는 표본 수는 있지만 비교군 설명이 없고 제한점은 한 문장으로만 적혀 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "지표 표와 분석 메모를 검토하는 상황에서 연구 초록에서 표본, 독립변수, 결과변수, 제한점을 추출해줘 공유 가능한 형식으로 근거를 함께 제시해. 입력 상황: 초록에는 표본 수는 있지만 비교군 설명이 없고 제한점은 한 문장으로만 적혀 있어. 외부 공유 직전이라 원문 근거와 제한을 짧게 붙여야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "지표 표와 분석 메모를 검토하는 상황 관련 건이야. 초록에는 표본 수는 있지만 비교군 설명이 없고 제한점은 한 문장으로만 적혀 있어."
+          "content": "지표·분석 메모야. 초록만 보고 표본, 독립변수, 결과변수, 제한점을 정리해줘. 비교군 설명이 없으니 인과관계라고 쓰지 말고 초록에 없는 건 비워둬. 참고로 외부 공유 직전이라 원문 근거와 제한을 짧게 붙여야 해. 그래서 공유 가능한 형식으로 근거를 함께 제시해."
         },
         {
           "role": "user",
-          "content": "연구 초록에서 표본, 독립변수, 결과변수, 제한점을 추출해줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a metrics-table and data-analysis context, extract the sample, independent variable, outcome, and limitations from the abstract. Input context: the abstract gives a sample size but no comparison-group description, and limitations are stated in one sentence. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a metrics-table and data-analysis context, extract the sample, independent variable, outcome, and limitations from the abstract; make the evidence visible in a shareable format. Input context: the abstract gives a sample size but no comparison-group description, and limitations are stated in one sentence. the result is going outside the team and needs a short source note and limitation. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a metrics-table and data-analysis context: the abstract gives a sample size but no comparison-group description, and limitations are stated in one sentence."
+          "content": "This is a metrics/analysis item. From the abstract only, list the sample, independent variable, outcome, and limitations. There is no comparison-group description, so do not call it causal or fill the missing design. For this case, the result is going outside the team and needs a short source note and limitation. So make the evidence visible in a shareable format."
         },
         {
           "role": "user",
-          "content": "extract the sample, independent variable, outcome, and limitations from the abstract."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }

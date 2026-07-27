@@ -2,11 +2,11 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.extraction_parsing.boundary_ambiguity.0001",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.boundary_ambiguity.0001",
   "title": {
-    "ko": "회의 액션 아이템 · 경계가 모호한 요청",
-    "en": "Meeting action items · boundary-ambiguous request"
+    "ko": "회의 액션 아이템 — 정규·특별 적용 경계",
+    "en": "Meeting action items — Regular versus special scope"
   },
   "task": {
     "primary_intent": "extraction_parsing",
@@ -18,8 +18,8 @@
       "office_admin"
     ],
     "user_goal": {
-      "ko": "회의 기록에서 결정, 할 일, 담당자, 기한을 추출해줘 (경계가 모호한 요청)",
-      "en": "extract decisions, actions, owners, and deadlines from the meeting record (boundary-ambiguous request)"
+      "ko": "회의 액션 아이템의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해",
+      "en": "Work out the applicable scope for Meeting action items; Compare exactly when the exception applies."
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 회의 기록에서 결정, 할 일, 담당자, 기한을 추출해줘. 입력 상황: 기록에는 결정된 항목 두 개, 담당자 없는 할 일 하나, 다음 회의에서 정할 질문 두 개가 섞여 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 회의 액션 아이템의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해. 입력 상황: 정규 절차와 이번 한시 예외가 같은 화면에 보여. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 회의 기록에서 결정, 할 일, 담당자, 기한을 추출해줘. 기록에는 결정된 항목 두 개, 담당자 없는 할 일 하나, 다음 회의에서 정할 질문 두 개가 섞여 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "이거 핵심만 좀 봐줘, 팀 회의/커뮤니케이션 건이야. 범위가 헷갈리는 회의 액션 아이템 건이야. 정규 절차와 이번 한시 예외가 같은 화면에 보여. 어느 조건에서 예외로 넘어가는지 비교해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, extract decisions, actions, owners, and deadlines from the meeting record. Input context: the record mixes two decisions, one action without an owner, and two questions deferred to the next meeting. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a team-meeting and work-communication context, Work out the applicable scope for Meeting action items; Compare exactly when the exception applies.. Input context: the ordinary procedure and a temporary exception appear on the same screen. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: in a team-meeting and work-communication context, extract decisions, actions, owners, and deadlines from the meeting record. the record mixes two decisions, one action without an owner, and two questions deferred to the next meeting. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Can you take a quick look at this: This is a team-communication item. The scope is fuzzy for Meeting action items. The ordinary procedure and a temporary exception appear on the same screen. Compare exactly when the exception applies. If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }

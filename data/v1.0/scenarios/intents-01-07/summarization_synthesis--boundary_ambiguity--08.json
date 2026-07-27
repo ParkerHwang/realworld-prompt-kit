@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.summarization_synthesis.boundary_ambiguity.0008",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.boundary_ambiguity.0008",
   "title": {
-    "ko": "서로 다른 기사 · 경계가 모호한 요청",
-    "en": "Conflicting news reports · boundary-ambiguous request"
+    "ko": "서로 다른 기사 — 초보·전문가 독자",
+    "en": "Conflicting news reports — Beginner versus specialist reader"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
     "secondary_intents": [
       "extraction_parsing"
     ],
-    "primary_domain": "customer_support_success",
+    "primary_domain": "strategy_business_operations",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "서로 다른 기사들을 공통 사실, 차이점, 확인이 필요한 주장으로 종합해줘 (경계가 모호한 요청)",
-      "en": "synthesize multiple articles into common facts, differences, and claims needing verification (boundary-ambiguous request)"
+      "ko": "서로 다른 기사의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해",
+      "en": "Work out the applicable scope for Conflicting news reports; Propose an output that respects both audiences."
     },
     "expected_artifact": "A concise synthesis that preserves decisions, evidence, and open questions."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "고객 문의와 지원 운영을 처리하는 상황에서 서로 다른 기사들을 공통 사실, 차이점, 확인이 필요한 주장으로 종합해줘. 입력 상황: 기사마다 발표 시각과 인용한 관계자가 다르고 후속 정정 기사가 하나 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 서로 다른 기사의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 입력 상황: 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일단 초안으로, 고객 문의와 지원 운영을 처리하는 상황에서 서로 다른 기사들을 공통 사실, 차이점, 확인이 필요한 주장으로 종합해줘. 기사마다 발표 시각과 인용한 관계자가 다르고 후속 정정 기사가 하나 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "일단 초안으로, 사업 운영 자료야. 범위가 헷갈리는 서로 다른 기사 건이야. 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a customer-support and success context, synthesize multiple articles into common facts, differences, and claims needing verification. Input context: the articles have different publication times and quoted officials, and one follow-up correction is present. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a business-operations context where options and execution conditions matter, Work out the applicable scope for Conflicting news reports; Propose an output that respects both audiences.. Input context: the same facts must be explained differently to a beginner and a specialist. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "A draft is fine for now: in a customer-support and success context, synthesize multiple articles into common facts, differences, and claims needing verification. the articles have different publication times and quoted officials, and one follow-up correction is present. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "A draft is fine for now: This is a business-operations item. The scope is fuzzy for Conflicting news reports. The same facts must be explained differently to a beginner and a specialist. Propose an output that respects both audiences. If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }

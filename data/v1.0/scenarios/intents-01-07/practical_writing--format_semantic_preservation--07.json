@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.format_semantic_preservation.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.format_semantic_preservation.0007",
   "title": {
-    "ko": "운영 장애 공지 · 형식 보존 변환",
-    "en": "Operations-incident notice · format-preserving transformation"
+    "ko": "운영 장애 공지 — 복습 카드",
+    "en": "Operations-incident notice — Review cards"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "office_admin",
+    "primary_domain": "software_it",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "내부 장애 공지를 영향, 현재 조치, 다음 업데이트 시각이 분명하게 보이도록 써줘 (형식 보존 변환)",
-      "en": "write an internal incident notice with impact, current action, and next update time (format-preserving transformation)"
+      "ko": "운영 장애 공지 자료를 지정 형식으로 바꿔줘. 자료 밖의 정답은 채우지 말고 빈 부분을 표시해",
+      "en": "Convert the Operations-incident notice material to the requested format; mark gaps rather than filling unsupported answers."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 내부 장애 공지를 영향, 현재 조치, 다음 업데이트 시각이 분명하게 보이도록 써줘. 입력 상황: 문제는 일부 사용자 로그인이고 원인은 확인 전이며 다음 업데이트는 16시로 예정돼 있어. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "내부 소프트웨어·IT 운영 자료를 확인하는 상황에서 운영 장애 공지 자료를 지정 형식으로 바꿔줘. 자료 밖의 정답은 채우지 말고 빈 부분을 표시해. 입력 상황: 수업 자료를 질문·답·주의 카드 세 종류로 바꿔야 해. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황 관련 건이야. 문제는 일부 사용자 로그인이고 원인은 확인 전이며 다음 업데이트는 16시로 예정돼 있어."
+          "content": "내부 IT 쪽이야. 모양을 바꿔야 하는 운영 장애 공지 건이야. 수업 자료를 질문·답·주의 카드 세 종류로 바꿔야 해. 자료 밖의 정답은 채우지 말고 빈 부분을 표시해."
         },
         {
           "role": "user",
-          "content": "내부 장애 공지를 영향, 현재 조치, 다음 업데이트 시각이 분명하게 보이도록 써줘."
-        },
-        {
-          "role": "user",
-          "content": "지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "모양은 바꿔도 숫자·날짜·조건은 건드리지 마."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, write an internal incident notice with impact, current action, and next update time. Input context: the issue affects login for some users, the cause is unconfirmed, and the next update is scheduled for 16:00. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "In an internal software or IT operations context, Convert the Operations-incident notice material to the requested format; mark gaps rather than filling unsupported answers.. Input context: lesson material must become question, answer, and warning cards. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about an internal office-administration and document-operations context: the issue affects login for some users, the cause is unconfirmed, and the next update is scheduled for 16:00."
+          "content": "This is an internal IT item. The format needs changing for Operations-incident notice. Lesson material must become question, answer, and warning cards. Mark gaps rather than filling unsupported answers."
         },
         {
           "role": "user",
-          "content": "write an internal incident notice with impact, current action, and next update time."
-        },
-        {
-          "role": "user",
-          "content": "Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "Change the shape, not the numbers, dates, or conditions."
         }
       ]
     }

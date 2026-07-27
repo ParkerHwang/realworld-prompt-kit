@@ -2,24 +2,22 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.extraction_parsing.input_robustness.0003",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.input_robustness.0003",
   "title": {
-    "ko": "지원서 정보 · 불완전·노이즈 입력",
-    "en": "Application details · incomplete or noisy input"
+    "ko": "지원서 정보 — 복붙 표",
+    "en": "Application details — Pasted table"
   },
   "task": {
     "primary_intent": "extraction_parsing",
     "secondary_intents": [
       "classification_organization"
     ],
-    "primary_domain": "education_research",
-    "domain_tags": [
-      "office_admin"
-    ],
+    "primary_domain": "office_admin",
+    "domain_tags": [],
     "user_goal": {
-      "ko": "지원서 묶음에서 경력 연수, 희망 근무 형태, 시작 가능일을 표로 뽑아줘 (불완전·노이즈 입력)",
-      "en": "extract years of experience, preferred work mode, and availability date into a table (incomplete or noisy input)"
+      "ko": "지원서 정보 작업에 필요한 내용을 깨진 입력에서 복원해줘. 열을 복원할 수 있는 범위만 구조화해",
+      "en": "Recover what the Application details task needs from the damaged input; structure only what can be safely restored."
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -50,7 +48,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "수업·학습·연구 자료를 다루는 상황에서 지원서 묶음에서 경력 연수, 희망 근무 형태, 시작 가능일을 표로 뽑아줘. 입력 상황: 지원서마다 같은 정보가 다른 순서로 적혀 있고 일부는 시작 가능일 대신 '협의 가능'이라고 써 있어. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해."
+          "content": "사내 행정과 문서 운영을 처리하는 상황에서 지원서 정보 작업에 필요한 내용을 깨진 입력에서 복원해줘. 열을 복원할 수 있는 범위만 구조화해. 입력 상황: 스프레드시트에서 복사한 행이 열 순서를 잃고 붙어 있어. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해."
         }
       ]
     },
@@ -66,15 +64,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "수업·학습·연구 자료를 다루는 상황 관련 건이야. 지원서마다 같은 정보가 다른 순서로 적혀 있고 일부는 시작 가능일 대신 '협의 가능'이라고 써 있어."
+          "content": "회사 행정 쪽이야. 입력이 좀 깨진 지원서 정보 건이야. 스프레드시트에서 복사한 행이 열 순서를 잃고 붙어 있어. 열을 복원할 수 있는 범위만 구조화해."
         },
         {
           "role": "user",
-          "content": "지원서 묶음에서 경력 연수, 희망 근무 형태, 시작 가능일을 표로 뽑아줘."
-        },
-        {
-          "role": "user",
-          "content": "오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해."
+          "content": "깨진 부분은 추측하지 말고 확인 필요로 남겨줘."
         }
       ]
     },
@@ -87,7 +81,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an education, learning, or research context, extract years of experience, preferred work mode, and availability date into a table. Input context: each application presents the fields in a different order, and some say 'negotiable' instead of a start date. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation."
+          "content": "In an internal office-administration and document-operations context, Recover what the Application details task needs from the damaged input; structure only what can be safely restored.. Input context: rows copied from a spreadsheet lost their column order. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation."
         }
       ]
     },
@@ -103,15 +97,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about an education, learning, or research context: each application presents the fields in a different order, and some say 'negotiable' instead of a start date."
+          "content": "This is an office-admin item. The input is messy for Application details. Rows copied from a spreadsheet lost their column order. Structure only what can be safely restored."
         },
         {
           "role": "user",
-          "content": "extract years of experience, preferred work mode, and availability date into a table."
-        },
-        {
-          "role": "user",
-          "content": "Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation."
+          "content": "Do not repair broken bits by guessing; mark what needs checking."
         }
       ]
     }

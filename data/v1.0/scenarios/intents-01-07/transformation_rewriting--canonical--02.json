@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.transformation_rewriting.canonical.0002",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.canonical.0002",
   "title": {
-    "ko": "문단의 표 변환 · 기본 요청",
-    "en": "Paragraph-to-table conversion · ordinary request"
+    "ko": "문단의 표 변환 — 승인본과 내부 메모",
+    "en": "Paragraph-to-table conversion — Approved copy and internal note"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
     "secondary_intents": [
       "practical_writing"
     ],
-    "primary_domain": "personal_everyday",
+    "primary_domain": "project_product_management",
     "domain_tags": [
       "education_research"
     ],
     "user_goal": {
-      "ko": "긴 설명 문단을 항목, 담당, 기한, 상태 표로 변환해줘 (기본 요청)",
-      "en": "convert the long paragraph into an item, owner, deadline, status table (ordinary request)"
+      "ko": "긴 설명 문단을 항목, 담당, 기한, 상태 표로 변환해줘 승인된 문서만 근거로 삼아",
+      "en": "convert the long paragraph into an item, owner, deadline, status table; use only the approved document as evidence"
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 긴 설명 문단을 항목, 담당, 기한, 상태 표로 변환해줘. 입력 상황: 한 문장에 두 담당자가 나오고 한 항목은 기한이 '다음 주 중'으로만 적혀 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 긴 설명 문단을 항목, 담당, 기한, 상태 표로 변환해줘 승인된 문서만 근거로 삼아. 입력 상황: 한 문장에 두 담당자가 나오고 한 항목은 기한이 '다음 주 중'으로만 적혀 있어. 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황 관련 건이야. 한 문장에 두 담당자가 나오고 한 항목은 기한이 '다음 주 중'으로만 적혀 있어."
+          "content": "프로젝트·제품 일정 쪽이야. 긴 문단을 항목/담당/기한/상태 표로 바꿔줘. 한 일에 담당자가 둘이고 날짜는 '다음 주 중'이라 그 애매함도 그대로 보여줘. 참고로 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 그래서 승인된 문서만 근거로 삼아."
         },
         {
           "role": "user",
-          "content": "긴 설명 문단을 항목, 담당, 기한, 상태 표로 변환해줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, convert the long paragraph into an item, owner, deadline, status table. Input context: one sentence names two owners and one item has only 'sometime next week' as its deadline. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a product or project schedule-and-requirements context, convert the long paragraph into an item, owner, deadline, status table; use only the approved document as evidence. Input context: one sentence names two owners and one item has only 'sometime next week' as its deadline. an approved PDF arrives with an internal reference note. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a personal scheduling and everyday-life context: one sentence names two owners and one item has only 'sometime next week' as its deadline."
+          "content": "This is a project/product item. Put the long paragraph into item, owner, deadline, and status columns. One item has two owners and its deadline is only 'sometime next week'; preserve that wording. For this case, an approved PDF arrives with an internal reference note. So use only the approved document as evidence."
         },
         {
           "role": "user",
-          "content": "convert the long paragraph into an item, owner, deadline, status table."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }

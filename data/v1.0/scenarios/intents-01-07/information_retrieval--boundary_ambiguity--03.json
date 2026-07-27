@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.information_retrieval.boundary_ambiguity.0003",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.boundary_ambiguity.0003",
   "title": {
-    "ko": "계약 갱신 통지 · 경계가 모호한 요청",
-    "en": "Contract-renewal notice · boundary-ambiguous request"
+    "ko": "계약 갱신 통지 — 본문·별첨 우선순위",
+    "en": "Contract-renewal notice — Body versus exhibit"
   },
   "task": {
     "primary_intent": "information_retrieval",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "strategy_business_operations",
+    "primary_domain": "legal_compliance",
     "domain_tags": [
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "계약 갱신 통지 기한이 며칠인지 확인해줘 (경계가 모호한 요청)",
-      "en": "find the contract-renewal notice period (boundary-ambiguous request)"
+      "ko": "계약 갱신 통지의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘",
+      "en": "Work out the applicable scope for Contract-renewal notice; Show which gap prevents a conclusion."
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 계약 갱신 통지 기한이 며칠인지 확인해줘. 입력 상황: 요약표에는 30일, 본문 조항에는 60일이라고 적혀 있고 부속합의서의 우선순위가 불명확해. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "계약·컴플라이언스 자료의 적용 범위를 검토하는 상황에서 계약 갱신 통지의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘. 입력 상황: 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황 관련 건이야. 요약표에는 30일, 본문 조항에는 60일이라고 적혀 있고 부속합의서의 우선순위가 불명확해."
+          "content": "계약·준수 자료야. 범위가 헷갈리는 계약 갱신 통지 건이야. 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 어느 공백이 결론을 막는지 보여줘."
         },
         {
           "role": "user",
-          "content": "계약 갱신 통지 기한이 며칠인지 확인해줘."
-        },
-        {
-          "role": "user",
-          "content": "비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘."
+          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a business-operations context where options and execution conditions matter, find the contract-renewal notice period. Input context: the summary says 30 days while the clause says 60, and the addendum's precedence is unclear. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a contract or compliance context where the applicable scope must be verified, Work out the applicable scope for Contract-renewal notice; Show which gap prevents a conclusion.. Input context: the body, summary table, and exhibit use different wording with no precedence rule. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date. Make the boundary for official or professional review explicit."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a business-operations context where options and execution conditions matter: the summary says 30 days while the clause says 60, and the addendum's precedence is unclear."
+          "content": "This is a contract/compliance item. The scope is fuzzy for Contract-renewal notice. The body, summary table, and exhibit use different wording with no precedence rule. Show which gap prevents a conclusion."
         },
         {
           "role": "user",
-          "content": "find the contract-renewal notice period."
-        },
-        {
-          "role": "user",
-          "content": "Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. If brevity and completeness conflict, call that out."
+          "content": "If the boundary is fuzzy, ask one question before deciding. If brevity and completeness conflict, call that out. Do not make a professional determination; state what needs official review. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
         }
       ]
     }
@@ -123,7 +115,8 @@
     },
     "invariants": [
       "Report the conflicting values and identify which document controls.",
-      "Do not choose a deadline silently."
+      "Do not choose a deadline silently.",
+      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
     ],
     "rubric_dimensions": [
       "conflict_detection",
@@ -132,7 +125,8 @@
     ],
     "failure_signals": [
       "Collapsing 30 and 60 days into one number.",
-      "Giving a legal conclusion without the controlling document."
+      "Giving a legal conclusion without the controlling document.",
+      "Giving definitive professional advice without the stated source or escalation boundary."
     ]
   },
   "provenance": {

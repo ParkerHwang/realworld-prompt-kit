@@ -2,24 +2,22 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.format_semantic_preservation.0001",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.format_semantic_preservation.0001",
   "title": {
-    "ko": "회의 후속 메일 · 형식 보존 변환",
-    "en": "Meeting follow-up email · format-preserving transformation"
+    "ko": "회의 후속 메일 — 모바일 알림",
+    "en": "Meeting follow-up email — Mobile notification"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "strategy_business_operations",
-    "domain_tags": [
-      "communication_meetings"
-    ],
+    "primary_domain": "communication_meetings",
+    "domain_tags": [],
     "user_goal": {
-      "ko": "회의 후속 메일을 결정, 할 일, 미결 사항이 분명하게 보이도록 작성해줘 (형식 보존 변환)",
-      "en": "write a meeting follow-up email that clearly separates decisions, actions, and open items (format-preserving transformation)"
+      "ko": "회의 후속 메일 자료를 지정 형식으로 바꿔줘. 짧게 줄이되 날짜와 선택지는 살아 있게 해",
+      "en": "Convert the Meeting follow-up email material to the requested format; shorten it while keeping dates and options."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +48,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 회의 후속 메일을 결정, 할 일, 미결 사항이 분명하게 보이도록 작성해줘. 입력 상황: 출시 목표일은 9월 14일이고 디자인·법무·FAQ 담당자의 기한이 있지만 가격은 아직 미정이야. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 회의 후속 메일 자료를 지정 형식으로 바꿔줘. 짧게 줄이되 날짜와 선택지는 살아 있게 해. 입력 상황: 긴 안내를 모바일 알림 세 줄로 줄여야 해. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
         }
       ]
     },
@@ -66,7 +64,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 사업 운영의 선택지와 실행 조건을 검토하는 상황에서 회의 후속 메일을 결정, 할 일, 미결 사항이 분명하게 보이도록 작성해줘. 출시 목표일은 9월 14일이고 디자인·법무·FAQ 담당자의 기한이 있지만 가격은 아직 미정이야. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "이거 핵심만 좀 봐줘, 팀 회의/커뮤니케이션 건이야. 모양을 바꿔야 하는 회의 후속 메일 건이야. 긴 안내를 모바일 알림 세 줄로 줄여야 해. 짧게 줄이되 날짜와 선택지는 살아 있게 해. 모양은 바꿔도 숫자·날짜·조건은 건드리지 마."
         }
       ]
     },
@@ -79,7 +77,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a business-operations context where options and execution conditions matter, write a meeting follow-up email that clearly separates decisions, actions, and open items. Input context: the target launch date is September 14, with deadlines for design, legal, and the FAQ, while pricing is unresolved. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "In a team-meeting and work-communication context, Convert the Meeting follow-up email material to the requested format; shorten it while keeping dates and options.. Input context: a long notice must become a three-line mobile notification. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
         }
       ]
     },
@@ -95,7 +93,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: in a business-operations context where options and execution conditions matter, write a meeting follow-up email that clearly separates decisions, actions, and open items. the target launch date is September 14, with deadlines for design, legal, and the FAQ, while pricing is unresolved. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "Can you take a quick look at this: This is a team-communication item. The format needs changing for Meeting follow-up email. A long notice must become a three-line mobile notification. Shorten it while keeping dates and options. Change the shape, not the numbers, dates, or conditions."
         }
       ]
     }

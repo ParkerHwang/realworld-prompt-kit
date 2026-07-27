@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.boundary_ambiguity.0002",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.boundary_ambiguity.0002",
   "title": {
-    "ko": "임원 상태 업데이트 · 경계가 모호한 요청",
-    "en": "Executive status update · boundary-ambiguous request"
+    "ko": "임원 상태 업데이트 — 직원·계약자 경계",
+    "en": "Executive status update — Employee versus contractor"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "data_analytics",
+    "primary_domain": "strategy_business_operations",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "임원에게 보낼 짧은 상태 업데이트를 현재 상태, 위험, 의사결정 요청으로 작성해줘 (경계가 모호한 요청)",
-      "en": "write a short executive update with status, risks, and decisions needed (boundary-ambiguous request)"
+      "ko": "임원 상태 업데이트의 적용 범위를 가려줘. 대상별로 적용 범위를 나눠",
+      "en": "Work out the applicable scope for Executive status update; Split the applicable scope by audience."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지표 표와 분석 메모를 검토하는 상황에서 임원에게 보낼 짧은 상태 업데이트를 현재 상태, 위험, 의사결정 요청으로 작성해줘. 입력 상황: 일정은 녹색이지만 범위가 줄었고, 예산 승인 한 건과 외부 공급 일정 확인 한 건이 남아 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 임원 상태 업데이트의 적용 범위를 가려줘. 대상별로 적용 범위를 나눠. 입력 상황: 직원 안내와 계약자 안내가 한 문서에 섞여 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "지표 표와 분석 메모를 검토하는 상황 관련 건이야. 일정은 녹색이지만 범위가 줄었고, 예산 승인 한 건과 외부 공급 일정 확인 한 건이 남아 있어."
+          "content": "사업 운영 자료야. 범위가 헷갈리는 임원 상태 업데이트 건이야. 직원 안내와 계약자 안내가 한 문서에 섞여 있어. 대상별로 적용 범위를 나눠."
         },
         {
           "role": "user",
-          "content": "임원에게 보낼 짧은 상태 업데이트를 현재 상태, 위험, 의사결정 요청으로 작성해줘."
-        },
-        {
-          "role": "user",
-          "content": "비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a metrics-table and data-analysis context, write a short executive update with status, risks, and decisions needed. Input context: the schedule is green but scope was reduced, with one budget approval and one external-supplier date still open. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a business-operations context where options and execution conditions matter, Work out the applicable scope for Executive status update; Split the applicable scope by audience.. Input context: employee and contractor guidance is combined in one document. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a metrics-table and data-analysis context: the schedule is green but scope was reduced, with one budget approval and one external-supplier date still open."
+          "content": "This is a business-operations item. The scope is fuzzy for Executive status update. Employee and contractor guidance is combined in one document. Split the applicable scope by audience."
         },
         {
           "role": "user",
-          "content": "write a short executive update with status, risks, and decisions needed."
-        },
-        {
-          "role": "user",
-          "content": "Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }

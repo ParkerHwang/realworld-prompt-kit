@@ -2,24 +2,22 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.summarization_synthesis.boundary_ambiguity.0006",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.boundary_ambiguity.0006",
   "title": {
-    "ko": "회의 메모 · 경계가 모호한 요청",
-    "en": "Meeting notes · boundary-ambiguous request"
+    "ko": "회의 메모 — 성인·청소년 대상",
+    "en": "Meeting notes — Adult versus youth eligibility"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
     "secondary_intents": [
       "extraction_parsing"
     ],
-    "primary_domain": "project_product_management",
-    "domain_tags": [
-      "communication_meetings"
-    ],
+    "primary_domain": "communication_meetings",
+    "domain_tags": [],
     "user_goal": {
-      "ko": "회의 메모를 참석자에게 공유할 수 있는 짧은 요약으로 바꿔줘 (경계가 모호한 요청)",
-      "en": "turn the meeting notes into a short shareable summary for attendees (boundary-ambiguous request)"
+      "ko": "회의 메모의 적용 범위를 가려줘. 어느 조건이 누구에게 해당하는지 비교해",
+      "en": "Work out the applicable scope for Meeting notes; Compare which condition applies to whom."
     },
     "expected_artifact": "A concise synthesis that preserves decisions, evidence, and open questions."
   },
@@ -50,7 +48,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 회의 메모를 참석자에게 공유할 수 있는 짧은 요약으로 바꿔줘. 입력 상황: 메모에는 말한 사람 없이 의견이 나열되고, 확정된 다음 단계와 브레인스토밍 아이디어가 섞여 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 회의 메모의 적용 범위를 가려줘. 어느 조건이 누구에게 해당하는지 비교해. 입력 상황: 성인 조건과 청소년 조건이 다른 안내 두 장으로 나뉘어 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,15 +64,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황 관련 건이야. 메모에는 말한 사람 없이 의견이 나열되고, 확정된 다음 단계와 브레인스토밍 아이디어가 섞여 있어."
+          "content": "팀 회의/커뮤니케이션 건이야. 범위가 헷갈리는 회의 메모 건이야. 성인 조건과 청소년 조건이 다른 안내 두 장으로 나뉘어 있어. 어느 조건이 누구에게 해당하는지 비교해."
         },
         {
           "role": "user",
-          "content": "회의 메모를 참석자에게 공유할 수 있는 짧은 요약으로 바꿔줘."
-        },
-        {
-          "role": "user",
-          "content": "비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -87,7 +81,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a product or project schedule-and-requirements context, turn the meeting notes into a short shareable summary for attendees. Input context: the notes list opinions without speakers and mix confirmed next steps with brainstorming ideas. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a team-meeting and work-communication context, Work out the applicable scope for Meeting notes; Compare which condition applies to whom.. Input context: adult and youth conditions are in two different notices. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -103,15 +97,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a product or project schedule-and-requirements context: the notes list opinions without speakers and mix confirmed next steps with brainstorming ideas."
+          "content": "This is a team-communication item. The scope is fuzzy for Meeting notes. Adult and youth conditions are in two different notices. Compare which condition applies to whom."
         },
         {
           "role": "user",
-          "content": "turn the meeting notes into a short shareable summary for attendees."
-        },
-        {
-          "role": "user",
-          "content": "Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }

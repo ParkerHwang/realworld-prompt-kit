@@ -2,25 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.summarization_synthesis.input_robustness.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.input_robustness.0007",
   "title": {
-    "ko": "가족 일정 · 불완전·노이즈 입력",
-    "en": "Family schedule · incomplete or noisy input"
+    "ko": "가족 일정 — 오탈자 입력",
+    "en": "Family schedule — Typo-heavy input"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
     "secondary_intents": [
       "extraction_parsing"
     ],
-    "primary_domain": "finance_accounting_tax",
+    "primary_domain": "personal_everyday",
     "domain_tags": [
-      "communication_meetings",
-      "general_knowledge"
+      "communication_meetings"
     ],
     "user_goal": {
-      "ko": "여러 가족 메시지를 이번 주 일정과 미정 사항으로 요약해줘 (불완전·노이즈 입력)",
-      "en": "summarize the family messages into this week's schedule and undecided items (incomplete or noisy input)"
+      "ko": "가족 일정 작업에 필요한 내용을 깨진 입력에서 복원해줘. 확실한 값과 추정값을 나눠",
+      "en": "Recover what the Family schedule task needs from the damaged input; separate confirmed values from guesses."
     },
     "expected_artifact": "A concise synthesis that preserves decisions, evidence, and open questions."
   },
@@ -51,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "재무·세무 자료를 정리하되 전문 확인 경계를 지켜야 하는 상황에서 여러 가족 메시지를 이번 주 일정과 미정 사항으로 요약해줘. 입력 상황: 병원 예약, 학교 행사, 장보기 요청이 시간순이 아니고 한 일정은 날짜가 빠져 있어. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "개인 일정과 생활 결정을 정리하는 상황에서 가족 일정 작업에 필요한 내용을 깨진 입력에서 복원해줘. 확실한 값과 추정값을 나눠. 입력 상황: 고유명사와 숫자에 오탈자가 두 개 있고 원문은 하나뿐이야. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해."
         }
       ]
     },
@@ -67,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "재무·세무 자료를 정리하되 전문 확인 경계를 지켜야 하는 상황 관련 건이야. 병원 예약, 학교 행사, 장보기 요청이 시간순이 아니고 한 일정은 날짜가 빠져 있어."
+          "content": "내 일정·생활 건이야. 입력이 좀 깨진 가족 일정 건이야. 고유명사와 숫자에 오탈자가 두 개 있고 원문은 하나뿐이야. 확실한 값과 추정값을 나눠."
         },
         {
           "role": "user",
-          "content": "여러 가족 메시지를 이번 주 일정과 미정 사항으로 요약해줘."
-        },
-        {
-          "role": "user",
-          "content": "오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "깨진 부분은 추측하지 말고 확인 필요로 남겨줘."
         }
       ]
     },
@@ -88,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a finance or tax context where assumptions and professional review must be explicit, summarize the family messages into this week's schedule and undecided items. Input context: medical appointment, school event, and grocery requests are not chronological, and one event lacks a date. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation. Make the boundary for official or professional review explicit."
+          "content": "In a personal scheduling and everyday-life context, Recover what the Family schedule task needs from the damaged input; separate confirmed values from guesses.. Input context: two proper names and a number contain typos while only one source exists. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation."
         }
       ]
     },
@@ -104,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a finance or tax context where assumptions and professional review must be explicit: medical appointment, school event, and grocery requests are not chronological, and one event lacks a date."
+          "content": "This is a personal-life item. The input is messy for Family schedule. Two proper names and a number contain typos while only one source exists. Separate confirmed values from guesses."
         },
         {
           "role": "user",
-          "content": "summarize the family messages into this week's schedule and undecided items."
-        },
-        {
-          "role": "user",
-          "content": "Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation. Do not make a professional determination; state what needs official review."
+          "content": "Do not repair broken bits by guessing; mark what needs checking."
         }
       ]
     }
@@ -124,8 +115,7 @@
     },
     "invariants": [
       "Preserve the missing date and avoid filling it from context.",
-      "Keep personal details minimal and task-relevant.",
-      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
+      "Keep personal details minimal and task-relevant."
     ],
     "rubric_dimensions": [
       "timeline_reconstruction",
@@ -134,8 +124,7 @@
     ],
     "failure_signals": [
       "Inventing a date.",
-      "Adding unnecessary personal detail.",
-      "Giving definitive professional advice without the stated source or escalation boundary."
+      "Adding unnecessary personal detail."
     ]
   },
   "provenance": {

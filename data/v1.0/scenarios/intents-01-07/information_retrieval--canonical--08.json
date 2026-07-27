@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.information_retrieval.canonical.0008",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.canonical.0008",
   "title": {
-    "ko": "주장 원출처 찾기 · 기본 요청",
-    "en": "Primary source for a claim · ordinary request"
+    "ko": "주장 원출처 찾기 — 외부 공유 전",
+    "en": "Primary source for a claim — Before external sharing"
   },
   "task": {
     "primary_intent": "information_retrieval",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "project_product_management",
+    "primary_domain": "nonprofit_social_impact",
     "domain_tags": [
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "이 주장에 대한 가장 가까운 원출처를 찾아줘 (기본 요청)",
-      "en": "find the closest primary source for this claim (ordinary request)"
+      "ko": "이 주장에 대한 가장 가까운 원출처를 찾아줘 공유 가능한 형식으로 근거를 함께 제시해",
+      "en": "find the closest primary source for this claim; make the evidence visible in a shareable format"
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 이 주장에 대한 가장 가까운 원출처를 찾아줘. 입력 상황: 블로그 두 개가 같은 문장을 인용하지만 원문 링크가 없고 발표 연도만 2019년으로 알려져 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "비영리 활동과 사회적 영향 자료를 정리하는 상황에서 이 주장에 대한 가장 가까운 원출처를 찾아줘 공유 가능한 형식으로 근거를 함께 제시해. 입력 상황: 블로그 두 개가 같은 문장을 인용하지만 원문 링크가 없고 발표 연도만 2019년으로 알려져 있어. 외부 공유 직전이라 원문 근거와 제한을 짧게 붙여야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황 관련 건이야. 블로그 두 개가 같은 문장을 인용하지만 원문 링크가 없고 발표 연도만 2019년으로 알려져 있어."
+          "content": "비영리 활동 자료야. 이 문장 원출처 찾아줘. 블로그 둘이 똑같이 인용하는데 링크가 없고 2019년쯤이라는 것만 알아. 검색으로 확인이 안 되면 반복된 2차 글이라고 밝혀줘. 참고로 외부 공유 직전이라 원문 근거와 제한을 짧게 붙여야 해. 그래서 공유 가능한 형식으로 근거를 함께 제시해."
         },
         {
           "role": "user",
-          "content": "이 주장에 대한 가장 가까운 원출처를 찾아줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a product or project schedule-and-requirements context, find the closest primary source for this claim. Input context: two blogs repeat the same sentence without an original link, and only the publication year 2019 is known. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a nonprofit or social-impact operations context, find the closest primary source for this claim; make the evidence visible in a shareable format. Input context: two blogs repeat the same sentence without an original link, and only the publication year 2019 is known. the result is going outside the team and needs a short source note and limitation. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a product or project schedule-and-requirements context: two blogs repeat the same sentence without an original link, and only the publication year 2019 is known."
+          "content": "This is a nonprofit/social-impact item. Please trace this sentence to its original source. Two blogs repeat it without a link and all I know is that it was around 2019. If a primary source cannot be found, label the blogs as repeated secondary claims. For this case, the result is going outside the team and needs a short source note and limitation. So make the evidence visible in a shareable format."
         },
         {
           "role": "user",
-          "content": "find the closest primary source for this claim."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
         }
       ]
     }

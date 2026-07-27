@@ -2,24 +2,25 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.transformation_rewriting.audience_context_shift.0006",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.audience_context_shift.0006",
   "title": {
-    "ko": "조항의 쉬운 말 · 독자·맥락 전환",
-    "en": "Plain-language clause · audience and context shift"
+    "ko": "조항의 쉬운 말 — 초보 학습자",
+    "en": "Plain-language clause — Beginner learner"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
     "secondary_intents": [
       "practical_writing"
     ],
-    "primary_domain": "personal_everyday",
+    "primary_domain": "legal_compliance",
     "domain_tags": [
-      "education_research"
+      "education_research",
+      "general_knowledge"
     ],
     "user_goal": {
-      "ko": "계약 조항을 비법률 담당자가 이해할 수 있게 풀어쓰되 법적 의미를 단정하지 않게 해줘 (독자·맥락 전환)",
-      "en": "rewrite the contract clause in plain language without asserting a legal conclusion (audience and context shift)"
+      "ko": "조항의 쉬운 말 내용을 지정 독자에게 맞춰 다시 써줘. 예시와 한계를 같이 넣어",
+      "en": "Adapt the Plain-language clause material for the specified reader; include an example and a limitation."
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -50,7 +51,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 계약 조항을 비법률 담당자가 이해할 수 있게 풀어쓰되 법적 의미를 단정하지 않게 해줘. 입력 상황: 조항에는 자동 갱신과 해지 통지 기간이 있고 관할 법률은 명시되지 않았어. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "계약·컴플라이언스 자료의 적용 범위를 검토하는 상황에서 조항의 쉬운 말 내용을 지정 독자에게 맞춰 다시 써줘. 예시와 한계를 같이 넣어. 입력 상황: 전문가용 자료를 배경지식 없는 학습자가 따라갈 설명으로 바꿔야 해. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
         }
       ]
     },
@@ -66,15 +67,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황 관련 건이야. 조항에는 자동 갱신과 해지 통지 기간이 있고 관할 법률은 명시되지 않았어."
+          "content": "계약·준수 자료야. 읽는 사람이 달라진 조항의 쉬운 말 건이야. 전문가용 자료를 배경지식 없는 학습자가 따라갈 설명으로 바꿔야 해. 예시와 한계를 같이 넣어."
         },
         {
           "role": "user",
-          "content": "계약 조항을 비법률 담당자가 이해할 수 있게 풀어쓰되 법적 의미를 단정하지 않게 해줘."
-        },
-        {
-          "role": "user",
-          "content": "지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
         }
       ]
     },
@@ -87,7 +84,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, rewrite the contract clause in plain language without asserting a legal conclusion. Input context: the clause covers auto-renewal and termination notice, but governing law is not specified. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "In a contract or compliance context where the applicable scope must be verified, Adapt the Plain-language clause material for the specified reader; include an example and a limitation.. Input context: expert material must become an explanation for a learner with no background. Adapt tone and explanation level to the specified audience and context without changing the core facts. Make the boundary for official or professional review explicit."
         }
       ]
     },
@@ -103,27 +100,24 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a personal scheduling and everyday-life context: the clause covers auto-renewal and termination notice, but governing law is not specified."
+          "content": "This is a contract/compliance item. The reader has changed for Plain-language clause. Expert material must become an explanation for a learner with no background. Include an example and a limitation."
         },
         {
           "role": "user",
-          "content": "rewrite the contract clause in plain language without asserting a legal conclusion."
-        },
-        {
-          "role": "user",
-          "content": "Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "Make it fit the reader without changing the substance. Do not make a professional determination; state what needs official review."
         }
       ]
     }
   ],
   "evaluation": {
     "response_mode": {
-      "canonical": "answer_directly",
+      "canonical": "state_assumptions_and_answer",
       "naturalistic": "infer_and_answer"
     },
     "invariants": [
       "Preserve the conditions and flag the missing governing-law context.",
-      "Label the rewrite as an explanation, not legal advice."
+      "Label the rewrite as an explanation, not legal advice.",
+      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
     ],
     "rubric_dimensions": [
       "semantic_fidelity",
@@ -132,7 +126,8 @@
     ],
     "failure_signals": [
       "Adding a legal conclusion.",
-      "Omitting the termination condition."
+      "Omitting the termination condition.",
+      "Giving definitive professional advice without the stated source or escalation boundary."
     ]
   },
   "provenance": {

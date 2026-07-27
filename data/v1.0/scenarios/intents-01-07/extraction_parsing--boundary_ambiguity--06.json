@@ -2,22 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.extraction_parsing.boundary_ambiguity.0006",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.boundary_ambiguity.0006",
   "title": {
-    "ko": "설문 응답 코딩 · 경계가 모호한 요청",
-    "en": "Survey-response coding · boundary-ambiguous request"
+    "ko": "설문 응답 코딩 — 성인·청소년 대상",
+    "en": "Survey-response coding — Adult versus youth eligibility"
   },
   "task": {
     "primary_intent": "extraction_parsing",
     "secondary_intents": [
       "classification_organization"
     ],
-    "primary_domain": "office_admin",
-    "domain_tags": [],
+    "primary_domain": "education_research",
+    "domain_tags": [
+      "office_admin"
+    ],
     "user_goal": {
-      "ko": "자유응답에서 반복 주제와 대표 문장을 추출해줘 (경계가 모호한 요청)",
-      "en": "extract recurring themes and representative quotes from free-text survey responses (boundary-ambiguous request)"
+      "ko": "설문 응답 코딩의 적용 범위를 가려줘. 어느 조건이 누구에게 해당하는지 비교해",
+      "en": "Work out the applicable scope for Survey-response coding; Compare which condition applies to whom."
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -48,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 자유응답에서 반복 주제와 대표 문장을 추출해줘. 입력 상황: 응답에는 비슷한 불만이 다른 표현으로 반복되고, 한 문장은 두 주제에 걸쳐 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "수업·학습·연구 자료를 다루는 상황에서 설문 응답 코딩의 적용 범위를 가려줘. 어느 조건이 누구에게 해당하는지 비교해. 입력 상황: 성인 조건과 청소년 조건이 다른 안내 두 장으로 나뉘어 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -64,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황 관련 건이야. 응답에는 비슷한 불만이 다른 표현으로 반복되고, 한 문장은 두 주제에 걸쳐 있어."
+          "content": "수업·연구 자료야. 범위가 헷갈리는 설문 응답 코딩 건이야. 성인 조건과 청소년 조건이 다른 안내 두 장으로 나뉘어 있어. 어느 조건이 누구에게 해당하는지 비교해."
         },
         {
           "role": "user",
-          "content": "자유응답에서 반복 주제와 대표 문장을 추출해줘."
-        },
-        {
-          "role": "user",
-          "content": "비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -85,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, extract recurring themes and representative quotes from free-text survey responses. Input context: responses repeat a similar complaint in different wording, and one sentence spans two themes. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In an education, learning, or research context, Work out the applicable scope for Survey-response coding; Compare which condition applies to whom.. Input context: adult and youth conditions are in two different notices. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -101,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about an internal office-administration and document-operations context: responses repeat a similar complaint in different wording, and one sentence spans two themes."
+          "content": "This is an education/research item. The scope is fuzzy for Survey-response coding. Adult and youth conditions are in two different notices. Compare which condition applies to whom."
         },
         {
           "role": "user",
-          "content": "extract recurring themes and representative quotes from free-text survey responses."
-        },
-        {
-          "role": "user",
-          "content": "Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }

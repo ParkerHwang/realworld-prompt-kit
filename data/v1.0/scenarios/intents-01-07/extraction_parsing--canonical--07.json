@@ -2,22 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.extraction_parsing.canonical.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.canonical.0007",
   "title": {
-    "ko": "계약 의무 조항 · 기본 요청",
-    "en": "Contract obligations · ordinary request"
+    "ko": "계약 의무 조항 — 소수 기록 묶음",
+    "en": "Contract obligations — Small record set"
   },
   "task": {
     "primary_intent": "extraction_parsing",
     "secondary_intents": [
       "classification_organization"
     ],
-    "primary_domain": "office_admin",
-    "domain_tags": [],
+    "primary_domain": "project_product_management",
+    "domain_tags": [
+      "office_admin"
+    ],
     "user_goal": {
-      "ko": "계약서에서 의무, 예외, 통지 기한을 추출해줘 (기본 요청)",
-      "en": "extract obligations, exceptions, and notice periods from the contract (ordinary request)"
+      "ko": "계약서에서 의무, 예외, 통지 기한을 추출해줘 작은 표본에서 확인되는 내용만 말해",
+      "en": "extract obligations, exceptions, and notice periods from the contract; state only what this small set supports"
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -48,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 계약서에서 의무, 예외, 통지 기한을 추출해줘. 입력 상황: 본문과 별표에 같은 의무가 다르게 표현되고, 별표가 우선한다는 문구는 없어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 계약서에서 의무, 예외, 통지 기한을 추출해줘 작은 표본에서 확인되는 내용만 말해. 입력 상황: 본문과 별표에 같은 의무가 다르게 표현되고, 별표가 우선한다는 문구는 없어. 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -64,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황 관련 건이야. 본문과 별표에 같은 의무가 다르게 표현되고, 별표가 우선한다는 문구는 없어."
+          "content": "프로젝트·제품 일정 쪽이야. 계약서에서 의무/예외/통지 기간을 추출해줘. 본문이랑 별표 표현이 달라서 어느 쪽이 우선인지 모르니 두 조항과 그 공백을 같이 보여줘. 참고로 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 그래서 작은 표본에서 확인되는 내용만 말해."
         },
         {
           "role": "user",
-          "content": "계약서에서 의무, 예외, 통지 기한을 추출해줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -85,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, extract obligations, exceptions, and notice periods from the contract. Input context: the body and an exhibit phrase the same obligation differently, with no stated precedence for the exhibit. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a product or project schedule-and-requirements context, extract obligations, exceptions, and notice periods from the contract; state only what this small set supports. Input context: the body and an exhibit phrase the same obligation differently, with no stated precedence for the exhibit. there are only five records and one has a blank field. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -101,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about an internal office-administration and document-operations context: the body and an exhibit phrase the same obligation differently, with no stated precedence for the exhibit."
+          "content": "This is a project/product item. Extract obligations, exceptions, and notice periods from the contract. The body and exhibit differ, so show both provisions and the missing precedence rule rather than deciding the legal meaning. For this case, there are only five records and one has a blank field. So state only what this small set supports."
         },
         {
           "role": "user",
-          "content": "extract obligations, exceptions, and notice periods from the contract."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }

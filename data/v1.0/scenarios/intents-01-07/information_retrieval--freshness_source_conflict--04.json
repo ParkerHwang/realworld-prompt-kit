@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.information_retrieval.freshness_source_conflict.0004",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.freshness_source_conflict.0004",
   "title": {
-    "ko": "도서관 강좌 접수 · 최신성·출처 충돌",
-    "en": "Library-class registration · freshness and source conflict"
+    "ko": "도서관 강좌 접수 — 판매자·제조사 원문",
+    "en": "Library-class registration — Seller versus manufacturer source"
   },
   "task": {
     "primary_intent": "information_retrieval",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "privacy_security",
+    "primary_domain": "office_admin",
     "domain_tags": [
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "강좌 접수 시작일과 대기 등록 방법을 찾아줘 (최신성·출처 충돌)",
-      "en": "find the class-registration opening date and waitlist process (freshness and source conflict)"
+      "ko": "도서관 강좌 접수에 관한 현재 근거를 대조해줘. 각 주장의 출처와 현재성을 따로 표시해",
+      "en": "Reconcile the current evidence for Library-class registration; label the source and freshness of each claim."
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인정보·보안 절차를 검토하는 상황에서 강좌 접수 시작일과 대기 등록 방법을 찾아줘. 입력 상황: 웹페이지에는 올해 공지와 지난해 공지가 함께 검색되고, 접수 페이지에는 대기 버튼이 따로 있어. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "사내 행정과 문서 운영을 처리하는 상황에서 도서관 강좌 접수에 관한 현재 근거를 대조해줘. 각 주장의 출처와 현재성을 따로 표시해. 입력 상황: 판매자 표가 어제 바뀌었고 제조사 보증서는 지난달 버전이야. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건 😣, 개인정보·보안 절차를 검토하는 상황에서 강좌 접수 시작일과 대기 등록 방법을 찾아줘. 웹페이지에는 올해 공지와 지난해 공지가 함께 검색되고, 접수 페이지에는 대기 버튼이 따로 있어. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "어 그러니까 내가 말한 건 😣, 회사 행정 쪽이야. 자료가 엇갈린 도서관 강좌 접수 건이야. 판매자 표가 어제 바뀌었고 제조사 보증서는 지난달 버전이야. 각 주장의 출처와 현재성을 따로 표시해. 새 자료인지, 어느 출처인지 나눠서 보여줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a privacy or security-procedure context, find the class-registration opening date and waitlist process. Input context: the page search returns this year's notice and last year's notice, and the registration page has a separate waitlist button. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary. Make the boundary for official or professional review explicit."
+          "content": "In an internal office-administration and document-operations context, Reconcile the current evidence for Library-class registration; label the source and freshness of each claim.. Input context: the seller table changed yesterday while the manufacturer warranty is last month's version. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is — this is getting urgent: in a privacy or security-procedure context, find the class-registration opening date and waitlist process. the page search returns this year's notice and last year's notice, and the registration page has a separate waitlist button. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary. Do not make a professional determination; state what needs official review."
+          "content": "Actually, what I mean is — this is getting urgent: This is an office-admin item. The sources disagree for Library-class registration. The seller table changed yesterday while the manufacturer warranty is last month's version. Label the source and freshness of each claim. Show which source and date each answer comes from. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
         }
       ]
     }
@@ -107,8 +107,7 @@
     },
     "invariants": [
       "Use the current notice and separate registration from waitlisting.",
-      "Flag any date that cannot be confirmed.",
-      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
+      "Flag any date that cannot be confirmed."
     ],
     "rubric_dimensions": [
       "recency_filter",
@@ -117,8 +116,7 @@
     ],
     "failure_signals": [
       "Using last year's opening date.",
-      "Treating a waitlist as a confirmed seat.",
-      "Giving definitive professional advice without the stated source or escalation boundary."
+      "Treating a waitlist as a confirmed seat."
     ]
   },
   "provenance": {

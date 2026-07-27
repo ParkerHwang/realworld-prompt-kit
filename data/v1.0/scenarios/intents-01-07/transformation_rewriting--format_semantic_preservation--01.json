@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.transformation_rewriting.format_semantic_preservation.0001",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.format_semantic_preservation.0001",
   "title": {
-    "ko": "격식 메일의 친근한 버전 · 형식 보존 변환",
-    "en": "Friendly version of a formal email · format-preserving transformation"
+    "ko": "격식 메일의 친근한 버전 — 모바일 알림",
+    "en": "Friendly version of a formal email — Mobile notification"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
     "secondary_intents": [
       "practical_writing"
     ],
-    "primary_domain": "strategy_business_operations",
+    "primary_domain": "communication_meetings",
     "domain_tags": [
       "education_research"
     ],
     "user_goal": {
-      "ko": "격식 있는 안내 메일을 고객에게 보낼 친근하지만 정확한 말투로 바꿔줘 (형식 보존 변환)",
-      "en": "rewrite a formal notice in a friendly but accurate tone for customers (format-preserving transformation)"
+      "ko": "격식 메일의 친근한 버전 자료를 지정 형식으로 바꿔줘. 짧게 줄이되 날짜와 선택지는 살아 있게 해",
+      "en": "Convert the Friendly version of a formal email material to the requested format; shorten it while keeping dates and options."
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 격식 있는 안내 메일을 고객에게 보낼 친근하지만 정확한 말투로 바꿔줘. 입력 상황: 원문에는 배송 지연 사유, 새 예상일, 환불 선택지가 있고 사과 표현은 과하지 않게 하라고 되어 있어. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 격식 메일의 친근한 버전 자료를 지정 형식으로 바꿔줘. 짧게 줄이되 날짜와 선택지는 살아 있게 해. 입력 상황: 긴 안내를 모바일 알림 세 줄로 줄여야 해. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 사업 운영의 선택지와 실행 조건을 검토하는 상황에서 격식 있는 안내 메일을 고객에게 보낼 친근하지만 정확한 말투로 바꿔줘. 원문에는 배송 지연 사유, 새 예상일, 환불 선택지가 있고 사과 표현은 과하지 않게 하라고 되어 있어. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "이거 핵심만 좀 봐줘, 팀 회의/커뮤니케이션 건이야. 모양을 바꿔야 하는 격식 메일의 친근한 버전 건이야. 긴 안내를 모바일 알림 세 줄로 줄여야 해. 짧게 줄이되 날짜와 선택지는 살아 있게 해. 모양은 바꿔도 숫자·날짜·조건은 건드리지 마."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a business-operations context where options and execution conditions matter, rewrite a formal notice in a friendly but accurate tone for customers. Input context: the source includes the reason for a delivery delay, a new estimate, and refund options, with a request not to over-apologize. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "In a team-meeting and work-communication context, Convert the Friendly version of a formal email material to the requested format; shorten it while keeping dates and options.. Input context: a long notice must become a three-line mobile notification. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: in a business-operations context where options and execution conditions matter, rewrite a formal notice in a friendly but accurate tone for customers. the source includes the reason for a delivery delay, a new estimate, and refund options, with a request not to over-apologize. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "Can you take a quick look at this: This is a team-communication item. The format needs changing for Friendly version of a formal email. A long notice must become a three-line mobile notification. Shorten it while keeping dates and options. Change the shape, not the numbers, dates, or conditions."
         }
       ]
     }

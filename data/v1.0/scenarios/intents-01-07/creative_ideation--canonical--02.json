@@ -2,11 +2,11 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.creative_ideation.canonical.0002",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.canonical.0002",
   "title": {
-    "ko": "팀 협업 의식 · 기본 요청",
-    "en": "Team-collaboration ritual · ordinary request"
+    "ko": "팀 협업 의식 — 승인본과 내부 메모",
+    "en": "Team-collaboration ritual — Approved copy and internal note"
   },
   "task": {
     "primary_intent": "creative_ideation",
@@ -18,8 +18,8 @@
       "creative_media"
     ],
     "user_goal": {
-      "ko": "원격 팀이 부담 없이 할 수 있는 주간 협업 의식 아이디어를 내줘 (기본 요청)",
-      "en": "generate low-pressure weekly collaboration rituals for a remote team (ordinary request)"
+      "ko": "원격 팀이 부담 없이 할 수 있는 주간 협업 의식 아이디어를 내줘 승인된 문서만 근거로 삼아",
+      "en": "generate low-pressure weekly collaboration rituals for a remote team; use only the approved document as evidence"
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 원격 팀이 부담 없이 할 수 있는 주간 협업 의식 아이디어를 내줘. 입력 상황: 참여는 선택이고 20분 안에 끝나야 하며, 업무 성과를 공개 순위로 매기면 안 돼. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 원격 팀이 부담 없이 할 수 있는 주간 협업 의식 아이디어를 내줘 승인된 문서만 근거로 삼아. 입력 상황: 참여는 선택이고 20분 안에 끝나야 하며, 업무 성과를 공개 순위로 매기면 안 돼. 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황 관련 건이야. 참여는 선택이고 20분 안에 끝나야 하며, 업무 성과를 공개 순위로 매기면 안 돼."
+          "content": "팀 회의/커뮤니케이션 건이야. 원격 팀에서 20분 안에 끝나는 가벼운 주간 의식 아이디어 줘. 참여는 선택이고 사람 성과를 공개 순위로 매기면 안 돼. 참고로 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 그래서 승인된 문서만 근거로 삼아."
         },
         {
           "role": "user",
-          "content": "원격 팀이 부담 없이 할 수 있는 주간 협업 의식 아이디어를 내줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, generate low-pressure weekly collaboration rituals for a remote team. Input context: participation must be optional, each ritual must fit within 20 minutes, and work performance must not be publicly ranked. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a team-meeting and work-communication context, generate low-pressure weekly collaboration rituals for a remote team; use only the approved document as evidence. Input context: participation must be optional, each ritual must fit within 20 minutes, and work performance must not be publicly ranked. an approved PDF arrives with an internal reference note. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a team-meeting and work-communication context: participation must be optional, each ritual must fit within 20 minutes, and work performance must not be publicly ranked."
+          "content": "This is a team-communication item. Suggest low-pressure weekly rituals for a remote team that fit in 20 minutes. Attendance is optional and no one should be publicly ranked on performance. For this case, an approved PDF arrives with an internal reference note. So use only the approved document as evidence."
         },
         {
           "role": "user",
-          "content": "generate low-pressure weekly collaboration rituals for a remote team."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }

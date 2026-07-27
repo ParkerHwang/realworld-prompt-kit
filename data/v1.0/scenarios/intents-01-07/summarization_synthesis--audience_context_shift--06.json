@@ -2,24 +2,22 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.summarization_synthesis.audience_context_shift.0006",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.audience_context_shift.0006",
   "title": {
-    "ko": "회의 메모 · 독자·맥락 전환",
-    "en": "Meeting notes · audience and context shift"
+    "ko": "회의 메모 — 초보 학습자",
+    "en": "Meeting notes — Beginner learner"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
     "secondary_intents": [
       "extraction_parsing"
     ],
-    "primary_domain": "project_product_management",
-    "domain_tags": [
-      "communication_meetings"
-    ],
+    "primary_domain": "communication_meetings",
+    "domain_tags": [],
     "user_goal": {
-      "ko": "회의 메모를 참석자에게 공유할 수 있는 짧은 요약으로 바꿔줘 (독자·맥락 전환)",
-      "en": "turn the meeting notes into a short shareable summary for attendees (audience and context shift)"
+      "ko": "회의 메모 내용을 지정 독자에게 맞춰 다시 써줘. 예시와 한계를 같이 넣어",
+      "en": "Adapt the Meeting notes material for the specified reader; include an example and a limitation."
     },
     "expected_artifact": "A concise synthesis that preserves decisions, evidence, and open questions."
   },
@@ -50,7 +48,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 회의 메모를 참석자에게 공유할 수 있는 짧은 요약으로 바꿔줘. 입력 상황: 메모에는 말한 사람 없이 의견이 나열되고, 확정된 다음 단계와 브레인스토밍 아이디어가 섞여 있어. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 회의 메모 내용을 지정 독자에게 맞춰 다시 써줘. 예시와 한계를 같이 넣어. 입력 상황: 전문가용 자료를 배경지식 없는 학습자가 따라갈 설명으로 바꿔야 해. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
         }
       ]
     },
@@ -66,15 +64,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황 관련 건이야. 메모에는 말한 사람 없이 의견이 나열되고, 확정된 다음 단계와 브레인스토밍 아이디어가 섞여 있어."
+          "content": "팀 회의/커뮤니케이션 건이야. 읽는 사람이 달라진 회의 메모 건이야. 전문가용 자료를 배경지식 없는 학습자가 따라갈 설명으로 바꿔야 해. 예시와 한계를 같이 넣어."
         },
         {
           "role": "user",
-          "content": "회의 메모를 참석자에게 공유할 수 있는 짧은 요약으로 바꿔줘."
-        },
-        {
-          "role": "user",
-          "content": "지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬."
         }
       ]
     },
@@ -87,7 +81,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a product or project schedule-and-requirements context, turn the meeting notes into a short shareable summary for attendees. Input context: the notes list opinions without speakers and mix confirmed next steps with brainstorming ideas. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "In a team-meeting and work-communication context, Adapt the Meeting notes material for the specified reader; include an example and a limitation.. Input context: expert material must become an explanation for a learner with no background. Adapt tone and explanation level to the specified audience and context without changing the core facts."
         }
       ]
     },
@@ -103,15 +97,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a product or project schedule-and-requirements context: the notes list opinions without speakers and mix confirmed next steps with brainstorming ideas."
+          "content": "This is a team-communication item. The reader has changed for Meeting notes. Expert material must become an explanation for a learner with no background. Include an example and a limitation."
         },
         {
           "role": "user",
-          "content": "turn the meeting notes into a short shareable summary for attendees."
-        },
-        {
-          "role": "user",
-          "content": "Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "Make it fit the reader without changing the substance."
         }
       ]
     }

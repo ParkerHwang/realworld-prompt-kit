@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.canonical.0002",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.canonical.0002",
   "title": {
-    "ko": "임원 상태 업데이트 · 기본 요청",
-    "en": "Executive status update · ordinary request"
+    "ko": "임원 상태 업데이트 — 승인본과 내부 메모",
+    "en": "Executive status update — Approved copy and internal note"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "software_it",
+    "primary_domain": "strategy_business_operations",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "임원에게 보낼 짧은 상태 업데이트를 현재 상태, 위험, 의사결정 요청으로 작성해줘 (기본 요청)",
-      "en": "write a short executive update with status, risks, and decisions needed (ordinary request)"
+      "ko": "임원에게 보낼 짧은 상태 업데이트를 현재 상태, 위험, 의사결정 요청으로 작성해줘 승인된 문서만 근거로 삼아",
+      "en": "write a short executive update with status, risks, and decisions needed; use only the approved document as evidence"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "내부 소프트웨어·IT 운영 자료를 확인하는 상황에서 임원에게 보낼 짧은 상태 업데이트를 현재 상태, 위험, 의사결정 요청으로 작성해줘. 입력 상황: 일정은 녹색이지만 범위가 줄었고, 예산 승인 한 건과 외부 공급 일정 확인 한 건이 남아 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 임원에게 보낼 짧은 상태 업데이트를 현재 상태, 위험, 의사결정 요청으로 작성해줘 승인된 문서만 근거로 삼아. 입력 상황: 일정은 녹색이지만 범위가 줄었고, 예산 승인 한 건과 외부 공급 일정 확인 한 건이 남아 있어. 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "내부 소프트웨어·IT 운영 자료를 확인하는 상황 관련 건이야. 일정은 녹색이지만 범위가 줄었고, 예산 승인 한 건과 외부 공급 일정 확인 한 건이 남아 있어."
+          "content": "사업 운영 자료야. 임원용 상태 한 문단이랑 결정 요청만 짧게. 일정은 green인데 범위는 줄었고 예산 승인/외부 공급 날짜 확인이 남아 있어. 참고로 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 그래서 승인된 문서만 근거로 삼아."
         },
         {
           "role": "user",
-          "content": "임원에게 보낼 짧은 상태 업데이트를 현재 상태, 위험, 의사결정 요청으로 작성해줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal software or IT operations context, write a short executive update with status, risks, and decisions needed. Input context: the schedule is green but scope was reduced, with one budget approval and one external-supplier date still open. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a business-operations context where options and execution conditions matter, write a short executive update with status, risks, and decisions needed; use only the approved document as evidence. Input context: the schedule is green but scope was reduced, with one budget approval and one external-supplier date still open. an approved PDF arrives with an internal reference note. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about an internal software or IT operations context: the schedule is green but scope was reduced, with one budget approval and one external-supplier date still open."
+          "content": "This is a business-operations item. I need a short executive paragraph plus the decisions requested. Schedule is green, scope is reduced, and budget approval plus an outside-supplier date are still open. For this case, an approved PDF arrives with an internal reference note. So use only the approved document as evidence."
         },
         {
           "role": "user",
-          "content": "write a short executive update with status, risks, and decisions needed."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }

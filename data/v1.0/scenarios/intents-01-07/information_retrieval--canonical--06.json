@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.information_retrieval.canonical.0006",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.canonical.0006",
   "title": {
-    "ko": "공공 건강 서비스 자격 · 기본 요청",
-    "en": "Public health-service eligibility · ordinary request"
+    "ko": "공공 건강 서비스 자격 — 인수인계 자료",
+    "en": "Public health-service eligibility — Handoff packet"
   },
   "task": {
     "primary_intent": "information_retrieval",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "finance_accounting_tax",
+    "primary_domain": "government_public_policy",
     "domain_tags": [
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "공공 건강 서비스의 대상 조건을 확인해줘 (기본 요청)",
-      "en": "find the eligibility conditions for a public health service (ordinary request)"
+      "ko": "공공 건강 서비스의 대상 조건을 확인해줘 출처와 미확인 부분을 표시해",
+      "en": "find the eligibility conditions for a public health service; mark sources and anything not yet confirmed"
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "재무·세무 자료를 정리하되 전문 확인 경계를 지켜야 하는 상황에서 공공 건강 서비스의 대상 조건을 확인해줘. 입력 상황: 공식 안내에는 연령·거주지·신청 기간 조건이 있고 개인의 증상이나 진단을 판단하라는 요청은 아니야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "정부·공공기관 공고의 조건과 기준일을 확인하는 상황에서 공공 건강 서비스의 대상 조건을 확인해줘 출처와 미확인 부분을 표시해. 입력 상황: 공식 안내에는 연령·거주지·신청 기간 조건이 있고 개인의 증상이나 진단을 판단하라는 요청은 아니야. 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "재무·세무 자료를 정리하되 전문 확인 경계를 지켜야 하는 상황 관련 건이야. 공식 안내에는 연령·거주지·신청 기간 조건이 있고 개인의 증상이나 진단을 판단하라는 요청은 아니야."
+          "content": "공공기관 공고야. 공공 건강 서비스 대상인지 공식 조건만 확인해줘. 연령·거주지·신청 기간 기준이고 증상 진단을 해달라는 건 아니야. 개인 상황을 판단할 수 없으면 기관에 물어볼 질문으로 바꿔줘. 참고로 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 그래서 출처와 미확인 부분을 표시해."
         },
         {
           "role": "user",
-          "content": "공공 건강 서비스의 대상 조건을 확인해줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a finance or tax context where assumptions and professional review must be explicit, find the eligibility conditions for a public health service. Input context: the official notice lists age, residency, and application-window conditions; this is not a request to diagnose symptoms. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. Make the boundary for official or professional review explicit."
+          "content": "In a government or public-policy notice context where dates and eligibility matter, find the eligibility conditions for a public health service; mark sources and anything not yet confirmed. Input context: the official notice lists age, residency, and application-window conditions; this is not a request to diagnose symptoms. the owner is changing and the next owner must use the result immediately. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date. Make the boundary for official or professional review explicit."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a finance or tax context where assumptions and professional review must be explicit: the official notice lists age, residency, and application-window conditions; this is not a request to diagnose symptoms."
+          "content": "This is a public-notice item. I only need the official eligibility rules for the public health service: age, residency, and application window. This is not a diagnosis request; turn any personal-specific uncertainty into questions for the provider. For this case, the owner is changing and the next owner must use the result immediately. So mark sources and anything not yet confirmed."
         },
         {
           "role": "user",
-          "content": "find the eligibility conditions for a public health service."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input. Do not make a professional determination; state what needs official review."
+          "content": "Use what can actually be checked; say when something is unknown. Do not make a professional determination; state what needs official review. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
         }
       ]
     }

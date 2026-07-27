@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.extraction_parsing.boundary_ambiguity.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.boundary_ambiguity.0007",
   "title": {
-    "ko": "계약 의무 조항 · 경계가 모호한 요청",
-    "en": "Contract obligations · boundary-ambiguous request"
+    "ko": "계약 의무 조항 — 현재·보관 문서",
+    "en": "Contract obligations — Current versus archived"
   },
   "task": {
     "primary_intent": "extraction_parsing",
     "secondary_intents": [
       "classification_organization"
     ],
-    "primary_domain": "strategy_business_operations",
+    "primary_domain": "project_product_management",
     "domain_tags": [
       "office_admin"
     ],
     "user_goal": {
-      "ko": "계약서에서 의무, 예외, 통지 기한을 추출해줘 (경계가 모호한 요청)",
-      "en": "extract obligations, exceptions, and notice periods from the contract (boundary-ambiguous request)"
+      "ko": "계약 의무 조항의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해",
+      "en": "Work out the applicable scope for Contract obligations; State the rule for choosing the current document."
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 계약서에서 의무, 예외, 통지 기한을 추출해줘. 입력 상황: 본문과 별표에 같은 의무가 다르게 표현되고, 별표가 우선한다는 문구는 없어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 계약 의무 조항의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해. 입력 상황: 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황 관련 건이야. 본문과 별표에 같은 의무가 다르게 표현되고, 별표가 우선한다는 문구는 없어."
+          "content": "프로젝트·제품 일정 쪽이야. 범위가 헷갈리는 계약 의무 조항 건이야. 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 현재 문서를 고르는 기준을 한 문장으로 정리해."
         },
         {
           "role": "user",
-          "content": "계약서에서 의무, 예외, 통지 기한을 추출해줘."
-        },
-        {
-          "role": "user",
-          "content": "비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a business-operations context where options and execution conditions matter, extract obligations, exceptions, and notice periods from the contract. Input context: the body and an exhibit phrase the same obligation differently, with no stated precedence for the exhibit. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a product or project schedule-and-requirements context, Work out the applicable scope for Contract obligations; State the rule for choosing the current document.. Input context: search results show a current document alongside an archived one. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a business-operations context where options and execution conditions matter: the body and an exhibit phrase the same obligation differently, with no stated precedence for the exhibit."
+          "content": "This is a project/product item. The scope is fuzzy for Contract obligations. Search results show a current document alongside an archived one. State the rule for choosing the current document."
         },
         {
           "role": "user",
-          "content": "extract obligations, exceptions, and notice periods from the contract."
-        },
-        {
-          "role": "user",
-          "content": "Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }

@@ -2,11 +2,11 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.summarization_synthesis.boundary_ambiguity.0005",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.boundary_ambiguity.0005",
   "title": {
-    "ko": "연구 논문 · 경계가 모호한 요청",
-    "en": "Research paper · boundary-ambiguous request"
+    "ko": "연구 논문 — 정기·일회성 항목",
+    "en": "Research paper — Recurring versus one-off"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
@@ -18,8 +18,8 @@
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "연구 논문을 연구 질문, 방법, 결과, 한계, 실무적 의미로 요약해줘 (경계가 모호한 요청)",
-      "en": "summarize the paper by question, method, results, limitations, and practical meaning (boundary-ambiguous request)"
+      "ko": "연구 논문의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해",
+      "en": "Work out the applicable scope for Research paper; Classify the two kinds without conflating them."
     },
     "expected_artifact": "A concise synthesis that preserves decisions, evidence, and open questions."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "수업·학습·연구 자료를 다루는 상황에서 연구 논문을 연구 질문, 방법, 결과, 한계, 실무적 의미로 요약해줘. 입력 상황: 결과는 통계적으로 유의하지만 표본이 한 지역에 한정되고 저자도 일반화에 주의하라고 적었어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "수업·학습·연구 자료를 다루는 상황에서 연구 논문의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해. 입력 상황: 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한 내용이 좀 깨졌는데, 수업·학습·연구 자료를 다루는 상황에서 연구 논문을 연구 질문, 방법, 결과, 한계, 실무적 의미로 요약해줘. 결과는 통계적으로 유의하지만 표본이 한 지역에 한정되고 저자도 일반화에 주의하라고 적었어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 바로 보내거나 바꾸지는 말고 검토용 초안으로 줘."
+          "content": "복붙한 내용이 좀 깨졌는데, 수업·연구 자료야. 범위가 헷갈리는 연구 논문 건이야. 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 두 종류를 섞지 않고 분류해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 바로 보내거나 바꾸지는 말고 검토용 초안으로 줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an education, learning, or research context, summarize the paper by question, method, results, limitations, and practical meaning. Input context: the result is statistically significant, but the sample is limited to one region and the authors caution against generalization. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In an education, learning, or research context, Work out the applicable scope for Research paper; Classify the two kinds without conflating them.. Input context: recurring work and one-off requests use the same form. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "The pasted text is a bit messy: in an education, learning, or research context, summarize the paper by question, method, results, limitations, and practical meaning. the result is statistically significant, but the sample is limited to one region and the authors caution against generalization. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. Do not send or change anything; make it a review draft."
+          "content": "The pasted text is a bit messy: This is an education/research item. The scope is fuzzy for Research paper. Recurring work and one-off requests use the same form. Classify the two kinds without conflating them. If the boundary is fuzzy, ask one question before deciding. Do not send or change anything; make it a review draft."
         }
       ]
     }

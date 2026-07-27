@@ -2,24 +2,25 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.transformation_rewriting.format_semantic_preservation.0006",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.format_semantic_preservation.0006",
   "title": {
-    "ko": "조항의 쉬운 말 · 형식 보존 변환",
-    "en": "Plain-language clause · format-preserving transformation"
+    "ko": "조항의 쉬운 말 — 비법무 설명",
+    "en": "Plain-language clause — Plain-language explanation"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
     "secondary_intents": [
       "practical_writing"
     ],
-    "primary_domain": "data_analytics",
+    "primary_domain": "government_public_policy",
     "domain_tags": [
-      "education_research"
+      "education_research",
+      "general_knowledge"
     ],
     "user_goal": {
-      "ko": "계약 조항을 비법률 담당자가 이해할 수 있게 풀어쓰되 법적 의미를 단정하지 않게 해줘 (형식 보존 변환)",
-      "en": "rewrite the contract clause in plain language without asserting a legal conclusion (format-preserving transformation)"
+      "ko": "조항의 쉬운 말 자료를 지정 형식으로 바꿔줘. 읽기 쉽게 하되 법률 결론을 추가하지 마",
+      "en": "Convert the Plain-language clause material to the requested format; make it readable without adding a legal conclusion."
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -50,7 +51,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지표 표와 분석 메모를 검토하는 상황에서 계약 조항을 비법률 담당자가 이해할 수 있게 풀어쓰되 법적 의미를 단정하지 않게 해줘. 입력 상황: 조항에는 자동 갱신과 해지 통지 기간이 있고 관할 법률은 명시되지 않았어. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "정부·공공기관 공고의 조건과 기준일을 확인하는 상황에서 조항의 쉬운 말 자료를 지정 형식으로 바꿔줘. 읽기 쉽게 하되 법률 결론을 추가하지 마. 입력 상황: 법무 문장을 비법무 담당자가 읽는 설명문으로 바꿔야 해. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
         }
       ]
     },
@@ -66,15 +67,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "지표 표와 분석 메모를 검토하는 상황 관련 건이야. 조항에는 자동 갱신과 해지 통지 기간이 있고 관할 법률은 명시되지 않았어."
+          "content": "공공기관 공고야. 모양을 바꿔야 하는 조항의 쉬운 말 건이야. 법무 문장을 비법무 담당자가 읽는 설명문으로 바꿔야 해. 읽기 쉽게 하되 법률 결론을 추가하지 마."
         },
         {
           "role": "user",
-          "content": "계약 조항을 비법률 담당자가 이해할 수 있게 풀어쓰되 법적 의미를 단정하지 않게 해줘."
-        },
-        {
-          "role": "user",
-          "content": "지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘."
+          "content": "모양은 바꿔도 숫자·날짜·조건은 건드리지 마. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
         }
       ]
     },
@@ -87,7 +84,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a metrics-table and data-analysis context, rewrite the contract clause in plain language without asserting a legal conclusion. Input context: the clause covers auto-renewal and termination notice, but governing law is not specified. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "In a government or public-policy notice context where dates and eligibility matter, Convert the Plain-language clause material to the requested format; make it readable without adding a legal conclusion.. Input context: legal wording must become an explanation for a non-legal colleague. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors. Make the boundary for official or professional review explicit."
         }
       ]
     },
@@ -103,27 +100,24 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a metrics-table and data-analysis context: the clause covers auto-renewal and termination notice, but governing law is not specified."
+          "content": "This is a public-notice item. The format needs changing for Plain-language clause. Legal wording must become an explanation for a non-legal colleague. Make it readable without adding a legal conclusion."
         },
         {
           "role": "user",
-          "content": "rewrite the contract clause in plain language without asserting a legal conclusion."
-        },
-        {
-          "role": "user",
-          "content": "Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors. If brevity and completeness conflict, call that out."
+          "content": "Change the shape, not the numbers, dates, or conditions. If brevity and completeness conflict, call that out. Do not make a professional determination; state what needs official review."
         }
       ]
     }
   ],
   "evaluation": {
     "response_mode": {
-      "canonical": "answer_directly",
+      "canonical": "state_assumptions_and_answer",
       "naturalistic": "infer_and_answer"
     },
     "invariants": [
       "Preserve the conditions and flag the missing governing-law context.",
-      "Label the rewrite as an explanation, not legal advice."
+      "Label the rewrite as an explanation, not legal advice.",
+      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
     ],
     "rubric_dimensions": [
       "semantic_fidelity",
@@ -132,7 +126,8 @@
     ],
     "failure_signals": [
       "Adding a legal conclusion.",
-      "Omitting the termination condition."
+      "Omitting the termination condition.",
+      "Giving definitive professional advice without the stated source or escalation boundary."
     ]
   },
   "provenance": {

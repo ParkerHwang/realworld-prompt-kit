@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.audience_context_shift.0006",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.audience_context_shift.0006",
   "title": {
-    "ko": "학습 계획 · 독자·맥락 전환",
-    "en": "Study plan · audience and context shift"
+    "ko": "학습 계획 — 초보 학습자",
+    "en": "Study plan — Beginner learner"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "project_product_management",
+    "primary_domain": "personal_everyday",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "시험까지 4주 남은 학습 계획을 주차별 목표와 복습 시점이 보이게 작성해줘 (독자·맥락 전환)",
-      "en": "write a four-week study plan with weekly goals and review points (audience and context shift)"
+      "ko": "학습 계획 내용을 지정 독자에게 맞춰 다시 써줘. 예시와 한계를 같이 넣어",
+      "en": "Adapt the Study plan material for the specified reader; include an example and a limitation."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 시험까지 4주 남은 학습 계획을 주차별 목표와 복습 시점이 보이게 작성해줘. 입력 상황: 주당 평일 40분, 주말 90분만 가능하고 마지막 주에는 새 단원을 추가하지 않기로 했어. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "개인 일정과 생활 결정을 정리하는 상황에서 학습 계획 내용을 지정 독자에게 맞춰 다시 써줘. 예시와 한계를 같이 넣어. 입력 상황: 전문가용 자료를 배경지식 없는 학습자가 따라갈 설명으로 바꿔야 해. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황 관련 건이야. 주당 평일 40분, 주말 90분만 가능하고 마지막 주에는 새 단원을 추가하지 않기로 했어."
+          "content": "내 일정·생활 건이야. 읽는 사람이 달라진 학습 계획 건이야. 전문가용 자료를 배경지식 없는 학습자가 따라갈 설명으로 바꿔야 해. 예시와 한계를 같이 넣어."
         },
         {
           "role": "user",
-          "content": "시험까지 4주 남은 학습 계획을 주차별 목표와 복습 시점이 보이게 작성해줘."
-        },
-        {
-          "role": "user",
-          "content": "지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a product or project schedule-and-requirements context, write a four-week study plan with weekly goals and review points. Input context: only 40 minutes on weekdays and 90 minutes on weekends are available, and no new unit should be added in the final week. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "In a personal scheduling and everyday-life context, Adapt the Study plan material for the specified reader; include an example and a limitation.. Input context: expert material must become an explanation for a learner with no background. Adapt tone and explanation level to the specified audience and context without changing the core facts."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a product or project schedule-and-requirements context: only 40 minutes on weekdays and 90 minutes on weekends are available, and no new unit should be added in the final week."
+          "content": "This is a personal-life item. The reader has changed for Study plan. Expert material must become an explanation for a learner with no background. Include an example and a limitation."
         },
         {
           "role": "user",
-          "content": "write a four-week study plan with weekly goals and review points."
-        },
-        {
-          "role": "user",
-          "content": "Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "Make it fit the reader without changing the substance."
         }
       ]
     }

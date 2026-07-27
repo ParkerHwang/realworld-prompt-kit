@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.explanation_teaching.audience_context_shift.0006",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.audience_context_shift.0006",
   "title": {
-    "ko": "학교 개념 비교 · 독자·맥락 전환",
-    "en": "School-concept comparison · audience and context shift"
+    "ko": "학교 개념 비교 — 초보 학습자",
+    "en": "School-concept comparison — Beginner learner"
   },
   "task": {
     "primary_intent": "explanation_teaching",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "creative_media",
+    "primary_domain": "general_knowledge",
     "domain_tags": [
       "education_research"
     ],
     "user_goal": {
-      "ko": "두 과학 개념의 차이를 중학생이 이해할 수 있게 표와 예시로 설명해줘 (독자·맥락 전환)",
-      "en": "explain the difference between two science concepts to a middle-school student with a table and examples (audience and context shift)"
+      "ko": "학교 개념 비교 내용을 지정 독자에게 맞춰 다시 써줘. 예시와 한계를 같이 넣어",
+      "en": "Adapt the School-concept comparison material for the specified reader; include an example and a limitation."
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "창작·미디어 프로젝트의 자료를 발전시키는 상황에서 두 과학 개념의 차이를 중학생이 이해할 수 있게 표와 예시로 설명해줘. 입력 상황: 교과서 정의는 비슷한 단어를 쓰지만 관찰 가능한 예시는 서로 달라. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "일반 정보와 상식을 확인하는 상황에서 학교 개념 비교 내용을 지정 독자에게 맞춰 다시 써줘. 예시와 한계를 같이 넣어. 입력 상황: 전문가용 자료를 배경지식 없는 학습자가 따라갈 설명으로 바꿔야 해. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "창작·미디어 프로젝트의 자료를 발전시키는 상황 관련 건이야. 교과서 정의는 비슷한 단어를 쓰지만 관찰 가능한 예시는 서로 달라."
+          "content": "일반 정보 조회 건이야. 읽는 사람이 달라진 학교 개념 비교 건이야. 전문가용 자료를 배경지식 없는 학습자가 따라갈 설명으로 바꿔야 해. 예시와 한계를 같이 넣어."
         },
         {
           "role": "user",
-          "content": "두 과학 개념의 차이를 중학생이 이해할 수 있게 표와 예시로 설명해줘."
-        },
-        {
-          "role": "user",
-          "content": "지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a creative or media-project context, explain the difference between two science concepts to a middle-school student with a table and examples. Input context: the textbook definitions use similar words, but their observable examples differ. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "In a general-information and everyday-knowledge context, Adapt the School-concept comparison material for the specified reader; include an example and a limitation.. Input context: expert material must become an explanation for a learner with no background. Adapt tone and explanation level to the specified audience and context without changing the core facts."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a creative or media-project context: the textbook definitions use similar words, but their observable examples differ."
+          "content": "This is a general-information lookup. The reader has changed for School-concept comparison. Expert material must become an explanation for a learner with no background. Include an example and a limitation."
         },
         {
           "role": "user",
-          "content": "explain the difference between two science concepts to a middle-school student with a table and examples."
-        },
-        {
-          "role": "user",
-          "content": "Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "Make it fit the reader without changing the substance."
         }
       ]
     }

@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.transformation_rewriting.input_robustness.0002",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.input_robustness.0002",
   "title": {
-    "ko": "문단의 표 변환 · 불완전·노이즈 입력",
-    "en": "Paragraph-to-table conversion · incomplete or noisy input"
+    "ko": "문단의 표 변환 — 음성 메모",
+    "en": "Paragraph-to-table conversion — Voice-note input"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
     "secondary_intents": [
       "practical_writing"
     ],
-    "primary_domain": "customer_support_success",
+    "primary_domain": "project_product_management",
     "domain_tags": [
       "education_research"
     ],
     "user_goal": {
-      "ko": "긴 설명 문단을 항목, 담당, 기한, 상태 표로 변환해줘 (불완전·노이즈 입력)",
-      "en": "convert the long paragraph into an item, owner, deadline, status table (incomplete or noisy input)"
+      "ko": "문단의 표 변환 작업에 필요한 내용을 깨진 입력에서 복원해줘. 최종 의도만 추려서 불확실한 말은 표시해",
+      "en": "Recover what the Paragraph-to-table conversion task needs from the damaged input; recover the final intent and mark uncertain wording."
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "고객 문의와 지원 운영을 처리하는 상황에서 긴 설명 문단을 항목, 담당, 기한, 상태 표로 변환해줘. 입력 상황: 한 문장에 두 담당자가 나오고 한 항목은 기한이 '다음 주 중'으로만 적혀 있어. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해."
+          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 문단의 표 변환 작업에 필요한 내용을 깨진 입력에서 복원해줘. 최종 의도만 추려서 불확실한 말은 표시해. 입력 상황: 음성 받아쓰기에 중간 수정과 반복 말이 섞여 있어. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "고객 문의와 지원 운영을 처리하는 상황 관련 건이야. 한 문장에 두 담당자가 나오고 한 항목은 기한이 '다음 주 중'으로만 적혀 있어."
+          "content": "프로젝트·제품 일정 쪽이야. 입력이 좀 깨진 문단의 표 변환 건이야. 음성 받아쓰기에 중간 수정과 반복 말이 섞여 있어. 최종 의도만 추려서 불확실한 말은 표시해."
         },
         {
           "role": "user",
-          "content": "긴 설명 문단을 항목, 담당, 기한, 상태 표로 변환해줘."
-        },
-        {
-          "role": "user",
-          "content": "오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해."
+          "content": "깨진 부분은 추측하지 말고 확인 필요로 남겨줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a customer-support and success context, convert the long paragraph into an item, owner, deadline, status table. Input context: one sentence names two owners and one item has only 'sometime next week' as its deadline. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation."
+          "content": "In a product or project schedule-and-requirements context, Recover what the Paragraph-to-table conversion task needs from the damaged input; recover the final intent and mark uncertain wording.. Input context: a dictated voice note contains repetitions and a mid-sentence correction. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a customer-support and success context: one sentence names two owners and one item has only 'sometime next week' as its deadline."
+          "content": "This is a project/product item. The input is messy for Paragraph-to-table conversion. A dictated voice note contains repetitions and a mid-sentence correction. Recover the final intent and mark uncertain wording."
         },
         {
           "role": "user",
-          "content": "convert the long paragraph into an item, owner, deadline, status table."
-        },
-        {
-          "role": "user",
-          "content": "Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation."
+          "content": "Do not repair broken bits by guessing; mark what needs checking."
         }
       ]
     }

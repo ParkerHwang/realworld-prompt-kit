@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.information_retrieval.canonical.0003",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.canonical.0003",
   "title": {
-    "ko": "계약 갱신 통지 · 기본 요청",
-    "en": "Contract-renewal notice · ordinary request"
+    "ko": "계약 갱신 통지 — 월말 운영자료",
+    "en": "Contract-renewal notice — Month-end operations set"
   },
   "task": {
     "primary_intent": "information_retrieval",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "project_product_management",
+    "primary_domain": "construction_real_estate",
     "domain_tags": [
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "계약 갱신 통지 기한이 며칠인지 확인해줘 (기본 요청)",
-      "en": "find the contract-renewal notice period (ordinary request)"
+      "ko": "계약 갱신 통지 기한이 며칠인지 확인해줘 두 표의 공통값과 주의점을 구분해",
+      "en": "find the contract-renewal notice period; separate common values from cautions"
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 계약 갱신 통지 기한이 며칠인지 확인해줘. 입력 상황: 요약표에는 30일, 본문 조항에는 60일이라고 적혀 있고 부속합의서의 우선순위가 불명확해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "건설·부동산 운영 자료를 검토하는 상황에서 계약 갱신 통지 기한이 며칠인지 확인해줘 두 표의 공통값과 주의점을 구분해. 입력 상황: 요약표에는 30일, 본문 조항에는 60일이라고 적혀 있고 부속합의서의 우선순위가 불명확해. 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황 관련 건이야. 요약표에는 30일, 본문 조항에는 60일이라고 적혀 있고 부속합의서의 우선순위가 불명확해."
+          "content": "건설·부동산 자료야. 갱신 통지가 30일인지 60일인지 헷갈려. 요약표랑 본문이 달라서 부속합의서 우선인지도 확인해야 해. 근거가 없으면 어느 문서를 더 받아야 하는지 말해줘. 참고로 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 그래서 두 표의 공통값과 주의점을 구분해."
         },
         {
           "role": "user",
-          "content": "계약 갱신 통지 기한이 며칠인지 확인해줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a product or project schedule-and-requirements context, find the contract-renewal notice period. Input context: the summary says 30 days while the clause says 60, and the addendum's precedence is unclear. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a construction or real-estate operations context, find the contract-renewal notice period; separate common values from cautions. Input context: the summary says 30 days while the clause says 60, and the addendum's precedence is unclear. two teams supplied updated tables before month-end close. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a product or project schedule-and-requirements context: the summary says 30 days while the clause says 60, and the addendum's precedence is unclear."
+          "content": "This is a construction/real-estate item. Is the renewal notice 30 or 60 days? The summary and clause disagree, so check whether the addendum controls. If that cannot be established, say which document is still needed instead of picking a number. For this case, two teams supplied updated tables before month-end close. So separate common values from cautions."
         },
         {
           "role": "user",
-          "content": "find the contract-renewal notice period."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
         }
       ]
     }

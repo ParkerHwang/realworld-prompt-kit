@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.explanation_teaching.boundary_ambiguity.0005",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.boundary_ambiguity.0005",
   "title": {
-    "ko": "관용 표현의 맥락 · 경계가 모호한 요청",
-    "en": "Idiom in context · boundary-ambiguous request"
+    "ko": "관용 표현의 맥락 — 정기·일회성 항목",
+    "en": "Idiom in context — Recurring versus one-off"
   },
   "task": {
     "primary_intent": "explanation_teaching",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "general_knowledge",
+    "primary_domain": "communication_meetings",
     "domain_tags": [
       "education_research"
     ],
     "user_goal": {
-      "ko": "관용 표현의 뜻과 상황별 뉘앙스를 학습자에게 설명해줘 (경계가 모호한 요청)",
-      "en": "explain the meaning and situational nuance of an idiom to a learner (boundary-ambiguous request)"
+      "ko": "관용 표현의 맥락의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해",
+      "en": "Work out the applicable scope for Idiom in context; Classify the two kinds without conflating them."
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지역 생활 정보와 공공 안내를 확인하는 상황에서 관용 표현의 뜻과 상황별 뉘앙스를 학습자에게 설명해줘. 입력 상황: 직역하면 오해할 수 있고, 공식 메일에서는 덜 적절한 표현이라는 맥락이 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 관용 표현의 맥락의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해. 입력 상황: 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한 내용이 좀 깨졌는데, 지역 생활 정보와 공공 안내를 확인하는 상황에서 관용 표현의 뜻과 상황별 뉘앙스를 학습자에게 설명해줘. 직역하면 오해할 수 있고, 공식 메일에서는 덜 적절한 표현이라는 맥락이 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 바로 보내거나 바꾸지는 말고 검토용 초안으로 줘."
+          "content": "복붙한 내용이 좀 깨졌는데, 팀 회의/커뮤니케이션 건이야. 범위가 헷갈리는 관용 표현의 맥락 건이야. 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 두 종류를 섞지 않고 분류해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 바로 보내거나 바꾸지는 말고 검토용 초안으로 줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a local-life information and public-notice context, explain the meaning and situational nuance of an idiom to a learner. Input context: a literal translation could mislead, and the expression is less suitable for a formal email. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a team-meeting and work-communication context, Work out the applicable scope for Idiom in context; Classify the two kinds without conflating them.. Input context: recurring work and one-off requests use the same form. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "The pasted text is a bit messy: in a local-life information and public-notice context, explain the meaning and situational nuance of an idiom to a learner. a literal translation could mislead, and the expression is less suitable for a formal email. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. Do not send or change anything; make it a review draft."
+          "content": "The pasted text is a bit messy: This is a team-communication item. The scope is fuzzy for Idiom in context. Recurring work and one-off requests use the same form. Classify the two kinds without conflating them. If the boundary is fuzzy, ask one question before deciding. Do not send or change anything; make it a review draft."
         }
       ]
     }

@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.creative_ideation.creativity_diversity.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.creativity_diversity.0007",
   "title": {
-    "ko": "여행 경험 아이디어 · 창의성·다양성",
-    "en": "Travel-experience ideas · creative diversity"
+    "ko": "여행 경험 아이디어 — 반나절 지역 여행",
+    "en": "Travel-experience ideas — Half-day local trip"
   },
   "task": {
     "primary_intent": "creative_ideation",
     "secondary_intents": [
       "planning_strategy_design"
     ],
-    "primary_domain": "office_admin",
+    "primary_domain": "general_knowledge",
     "domain_tags": [
       "creative_media"
     ],
     "user_goal": {
-      "ko": "짧은 도시 여행에서 지역 주민과 자연스럽게 만날 수 있는 경험 아이디어를 내줘 (창의성·다양성)",
-      "en": "generate travel experiences that help visitors meet local residents naturally on a short city trip (creative diversity)"
+      "ko": "여행 경험 아이디어를 주제로 서로 다른 아이디어를 내줘. 걷기·만남·관찰처럼 서로 다른 경험 축을 써",
+      "en": "Generate genuinely different ideas around Travel-experience ideas; use different experience modes such as walking, meeting, and observing."
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 짧은 도시 여행에서 지역 주민과 자연스럽게 만날 수 있는 경험 아이디어를 내줘. 입력 상황: 하루 반나절 일정이고 대규모 단체 관광은 피하며, 지역 문화를 소비품처럼 다루지 않는 방식이어야 해. 서로 다른 방향의 아이디어를 내고, 각 아이디어가 제약을 어떻게 만족하는지 짧게 설명해."
+          "content": "일반 정보와 상식을 확인하는 상황에서 여행 경험 아이디어를 주제로 서로 다른 아이디어를 내줘. 걷기·만남·관찰처럼 서로 다른 경험 축을 써. 입력 상황: 대형 관광 없이 반나절에 끝나는 도시 경험을 설계해야 해. 서로 다른 방향의 아이디어를 내고, 각 아이디어가 제약을 어떻게 만족하는지 짧게 설명해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황 관련 건이야. 하루 반나절 일정이고 대규모 단체 관광은 피하며, 지역 문화를 소비품처럼 다루지 않는 방식이어야 해."
+          "content": "일반 정보 조회 건이야. 방향을 여러 개로 열어야 하는 여행 경험 아이디어 건이야. 대형 관광 없이 반나절에 끝나는 도시 경험을 설계해야 해. 걷기·만남·관찰처럼 서로 다른 경험 축을 써."
         },
         {
           "role": "user",
-          "content": "짧은 도시 여행에서 지역 주민과 자연스럽게 만날 수 있는 경험 아이디어를 내줘."
-        },
-        {
-          "role": "user",
-          "content": "서로 다른 방향의 아이디어를 내고, 각 아이디어가 제약을 어떻게 만족하는지 짧게 설명해."
+          "content": "서로 결이 다른 안으로 내고, 왜 괜찮은지도 한 줄씩 붙여줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, generate travel experiences that help visitors meet local residents naturally on a short city trip. Input context: the schedule is half a day, large group tourism should be avoided, and local culture should not be treated as a commodity. Offer ideas from genuinely different directions and briefly explain how each satisfies the constraints."
+          "content": "In a general-information and everyday-knowledge context, Generate genuinely different ideas around Travel-experience ideas; use different experience modes such as walking, meeting, and observing.. Input context: the city experience must fit half a day without large-group tourism. Offer ideas from genuinely different directions and briefly explain how each satisfies the constraints."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about an internal office-administration and document-operations context: the schedule is half a day, large group tourism should be avoided, and local culture should not be treated as a commodity."
+          "content": "This is a general-information lookup. The directions need to stay diverse for Travel-experience ideas. The city experience must fit half a day without large-group tourism. Use different experience modes such as walking, meeting, and observing."
         },
         {
           "role": "user",
-          "content": "generate travel experiences that help visitors meet local residents naturally on a short city trip."
-        },
-        {
-          "role": "user",
-          "content": "Offer ideas from genuinely different directions and briefly explain how each satisfies the constraints."
+          "content": "Give genuinely different options and one line on why each works."
         }
       ]
     }

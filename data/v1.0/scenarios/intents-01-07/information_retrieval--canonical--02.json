@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.information_retrieval.canonical.0002",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.canonical.0002",
   "title": {
-    "ko": "경비 규정 버전 · 기본 요청",
-    "en": "Expense-policy version · ordinary request"
+    "ko": "경비 규정 버전 — 승인본과 내부 메모",
+    "en": "Expense-policy version — Approved copy and internal note"
   },
   "task": {
     "primary_intent": "information_retrieval",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "office_admin",
+    "primary_domain": "finance_accounting_tax",
     "domain_tags": [
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "최신 경비 규정에서 식비 한도와 예외를 찾아줘 (기본 요청)",
-      "en": "find the meal limit and exceptions in the latest expense policy (ordinary request)"
+      "ko": "최신 경비 규정에서 식비 한도와 예외를 찾아줘 승인된 문서만 근거로 삼아",
+      "en": "find the meal limit and exceptions in the latest expense policy; use only the approved document as evidence"
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 최신 경비 규정에서 식비 한도와 예외를 찾아줘. 입력 상황: 2026년 2분기 초안과 승인본이 함께 있고 승인본만 적용된다는 메모가 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "재무·세무 자료를 정리하되 전문 확인 경계를 지켜야 하는 상황에서 최신 경비 규정에서 식비 한도와 예외를 찾아줘 승인된 문서만 근거로 삼아. 입력 상황: 2026년 2분기 초안과 승인본이 함께 있고 승인본만 적용된다는 메모가 있어. 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황 관련 건이야. 2026년 2분기 초안과 승인본이 함께 있고 승인본만 적용된다는 메모가 있어."
+          "content": "재무·세무 쪽이야. 회사 경비 규정은 Q2 초안 말고 승인본으로 봐줘. 식비 한도랑 예외만 찾아서 적어주면 되고, 두 버전이 같이 있으니 실제 적용 문서부터 구분해. 참고로 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 그래서 승인된 문서만 근거로 삼아."
         },
         {
           "role": "user",
-          "content": "최신 경비 규정에서 식비 한도와 예외를 찾아줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, find the meal limit and exceptions in the latest expense policy. Input context: a Q2 2026 draft and an approved copy are both present, with a note that only the approved copy applies. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a finance or tax context where assumptions and professional review must be explicit, find the meal limit and exceptions in the latest expense policy; use only the approved document as evidence. Input context: a Q2 2026 draft and an approved copy are both present, with a note that only the approved copy applies. an approved PDF arrives with an internal reference note. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date. Make the boundary for official or professional review explicit."
         }
       ]
     },
@@ -103,27 +99,24 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about an internal office-administration and document-operations context: a Q2 2026 draft and an approved copy are both present, with a note that only the approved copy applies."
+          "content": "This is a finance/tax item. For the company expense policy, use the approved Q2 copy, not the draft. I only need the meal cap and exceptions, with the operative version clearly separated from the other file. For this case, an approved PDF arrives with an internal reference note. So use only the approved document as evidence."
         },
         {
           "role": "user",
-          "content": "find the meal limit and exceptions in the latest expense policy."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown. Do not make a professional determination; state what needs official review. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
         }
       ]
     }
   ],
   "evaluation": {
     "response_mode": {
-      "canonical": "answer_directly",
+      "canonical": "state_assumptions_and_answer",
       "naturalistic": "infer_and_answer"
     },
     "invariants": [
       "Use the approved version as the operative policy.",
-      "Do not infer an exception that is not stated."
+      "Do not infer an exception that is not stated.",
+      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
     ],
     "rubric_dimensions": [
       "version_selection",
@@ -132,7 +125,8 @@
     ],
     "failure_signals": [
       "Mixing draft and approved rules.",
-      "Inventing a reimbursement exception."
+      "Inventing a reimbursement exception.",
+      "Giving definitive professional advice without the stated source or escalation boundary."
     ]
   },
   "provenance": {

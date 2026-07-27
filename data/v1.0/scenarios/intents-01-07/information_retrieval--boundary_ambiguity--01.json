@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.information_retrieval.boundary_ambiguity.0001",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.boundary_ambiguity.0001",
   "title": {
-    "ko": "공휴일 교통 시간표 · 경계가 모호한 요청",
-    "en": "Holiday transit timetable · boundary-ambiguous request"
+    "ko": "공휴일 교통 시간표 — 정규·특별 적용 경계",
+    "en": "Holiday transit timetable — Regular versus special scope"
   },
   "task": {
     "primary_intent": "information_retrieval",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "science_rd",
+    "primary_domain": "personal_everyday",
     "domain_tags": [
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "공휴일 버스의 막차 시간을 확인해줘 (경계가 모호한 요청)",
-      "en": "find the last bus times for a public holiday (boundary-ambiguous request)"
+      "ko": "공휴일 교통 시간표의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해",
+      "en": "Work out the applicable scope for Holiday transit timetable; Compare exactly when the exception applies."
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "과학·R&D 실험 자료와 연구 기록을 다루는 상황에서 공휴일 버스의 막차 시간을 확인해줘. 입력 상황: 시청 공지에는 평일표와 공휴일표가 따로 있고 날짜는 다음 달 첫 월요일이야. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "개인 일정과 생활 결정을 정리하는 상황에서 공휴일 교통 시간표의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해. 입력 상황: 정규 절차와 이번 한시 예외가 같은 화면에 보여. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 과학·R&D 실험 자료와 연구 기록을 다루는 상황에서 공휴일 버스의 막차 시간을 확인해줘. 시청 공지에는 평일표와 공휴일표가 따로 있고 날짜는 다음 달 첫 월요일이야. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "이거 핵심만 좀 봐줘, 내 일정·생활 건이야. 범위가 헷갈리는 공휴일 교통 시간표 건이야. 정규 절차와 이번 한시 예외가 같은 화면에 보여. 어느 조건에서 예외로 넘어가는지 비교해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a science or R&D experiment-and-records context, find the last bus times for a public holiday. Input context: the city notice has separate weekday and holiday tables, and the date is the first Monday next month. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a personal scheduling and everyday-life context, Work out the applicable scope for Holiday transit timetable; Compare exactly when the exception applies.. Input context: the ordinary procedure and a temporary exception appear on the same screen. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: in a science or R&D experiment-and-records context, find the last bus times for a public holiday. the city notice has separate weekday and holiday tables, and the date is the first Monday next month. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Can you take a quick look at this: This is a personal-life item. The scope is fuzzy for Holiday transit timetable. The ordinary procedure and a temporary exception appear on the same screen. Compare exactly when the exception applies. If the boundary is fuzzy, ask one question before deciding. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
         }
       ]
     }

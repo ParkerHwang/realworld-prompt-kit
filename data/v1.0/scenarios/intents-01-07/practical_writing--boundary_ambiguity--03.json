@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.boundary_ambiguity.0003",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.boundary_ambiguity.0003",
   "title": {
-    "ko": "공급업체 협의 메시지 · 경계가 모호한 요청",
-    "en": "Vendor negotiation message · boundary-ambiguous request"
+    "ko": "공급업체 협의 메시지 — 본문·별첨 우선순위",
+    "en": "Vendor negotiation message — Body versus exhibit"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "customer_support_success",
+    "primary_domain": "strategy_business_operations",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "공급업체에 일정과 가격을 다시 확인하는 협의 메시지를 써줘 (경계가 모호한 요청)",
-      "en": "write a vendor message asking to reconfirm schedule and pricing (boundary-ambiguous request)"
+      "ko": "공급업체 협의 메시지의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘",
+      "en": "Work out the applicable scope for Vendor negotiation message; Show which gap prevents a conclusion."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "고객 문의와 지원 운영을 처리하는 상황에서 공급업체에 일정과 가격을 다시 확인하는 협의 메시지를 써줘. 입력 상황: 원하는 납기는 10월 10일이고 예산 상한은 8천이지만, 대체 납기나 분할 납품도 제안받고 싶어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 공급업체 협의 메시지의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘. 입력 상황: 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "고객 문의와 지원 운영을 처리하는 상황 관련 건이야. 원하는 납기는 10월 10일이고 예산 상한은 8천이지만, 대체 납기나 분할 납품도 제안받고 싶어."
+          "content": "사업 운영 자료야. 범위가 헷갈리는 공급업체 협의 메시지 건이야. 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 어느 공백이 결론을 막는지 보여줘."
         },
         {
           "role": "user",
-          "content": "공급업체에 일정과 가격을 다시 확인하는 협의 메시지를 써줘."
-        },
-        {
-          "role": "user",
-          "content": "비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘."
+          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a customer-support and success context, write a vendor message asking to reconfirm schedule and pricing. Input context: the desired delivery date is October 10 and the budget cap is 8,000, but alternative dates or split delivery are welcome. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a business-operations context where options and execution conditions matter, Work out the applicable scope for Vendor negotiation message; Show which gap prevents a conclusion.. Input context: the body, summary table, and exhibit use different wording with no precedence rule. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a customer-support and success context: the desired delivery date is October 10 and the budget cap is 8,000, but alternative dates or split delivery are welcome."
+          "content": "This is a business-operations item. The scope is fuzzy for Vendor negotiation message. The body, summary table, and exhibit use different wording with no precedence rule. Show which gap prevents a conclusion."
         },
         {
           "role": "user",
-          "content": "write a vendor message asking to reconfirm schedule and pricing."
-        },
-        {
-          "role": "user",
-          "content": "Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. If brevity and completeness conflict, call that out."
+          "content": "If the boundary is fuzzy, ask one question before deciding. If brevity and completeness conflict, call that out."
         }
       ]
     }

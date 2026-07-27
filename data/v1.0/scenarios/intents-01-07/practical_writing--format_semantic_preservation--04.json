@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.format_semantic_preservation.0004",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.format_semantic_preservation.0004",
   "title": {
-    "ko": "고객 사과 답변 · 형식 보존 변환",
-    "en": "Customer apology reply · format-preserving transformation"
+    "ko": "고객 사과 답변 — 승인 게이트 SOP",
+    "en": "Customer apology reply — Approval-gated SOP"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "data_analytics",
+    "primary_domain": "customer_support_success",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "고객에게 보낼 사과 답변을 사실, 해결 방법, 다음 안내 순서로 작성해줘 (형식 보존 변환)",
-      "en": "write a customer apology reply in the order of facts, remedy, and next update (format-preserving transformation)"
+      "ko": "고객 사과 답변 자료를 지정 형식으로 바꿔줘. 순서와 예외를 만들되 없는 단계는 발명하지 마",
+      "en": "Convert the Customer apology reply material to the requested format; order steps and exceptions without inventing steps."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지표 표와 분석 메모를 검토하는 상황에서 고객에게 보낼 사과 답변을 사실, 해결 방법, 다음 안내 순서로 작성해줘. 입력 상황: 주문 지연은 확인됐지만 원인은 아직 조사 중이고 48시간 안에 다시 안내하기로 했어. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "고객 문의와 지원 운영을 처리하는 상황에서 고객 사과 답변 자료를 지정 형식으로 바꿔줘. 순서와 예외를 만들되 없는 단계는 발명하지 마. 입력 상황: 현장 메모를 승인 전 실행 금지가 포함된 절차로 바꿔야 해. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 지표 표와 분석 메모를 검토하는 상황에서 고객에게 보낼 사과 답변을 사실, 해결 방법, 다음 안내 순서로 작성해줘. 주문 지연은 확인됐지만 원인은 아직 조사 중이고 48시간 안에 다시 안내하기로 했어. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해. 아, 대상은 전체가 아니라 위에 적은 범위만이야."
+          "content": "어 그러니까 내가 말한 건, 고객 문의 건이야. 모양을 바꿔야 하는 고객 사과 답변 건이야. 현장 메모를 승인 전 실행 금지가 포함된 절차로 바꿔야 해. 순서와 예외를 만들되 없는 단계는 발명하지 마. 모양은 바꿔도 숫자·날짜·조건은 건드리지 마. 아, 대상은 전체가 아니라 위에 적은 범위만이야."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a metrics-table and data-analysis context, write a customer apology reply in the order of facts, remedy, and next update. Input context: the order delay is confirmed but the cause is still under investigation, with a new update promised within 48 hours. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "In a customer-support and success context, Convert the Customer apology reply material to the requested format; order steps and exceptions without inventing steps.. Input context: field notes must become a procedure with a do-not-run-before-approval gate. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is: in a metrics-table and data-analysis context, write a customer apology reply in the order of facts, remedy, and next update. the order delay is confirmed but the cause is still under investigation, with a new update promised within 48 hours. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors. Actually, use only the scope stated above, not the broader one."
+          "content": "Actually, what I mean is: This is a customer-support item. The format needs changing for Customer apology reply. Field notes must become a procedure with a do-not-run-before-approval gate. Order steps and exceptions without inventing steps. Change the shape, not the numbers, dates, or conditions. Actually, use only the scope stated above, not the broader one."
         }
       ]
     }

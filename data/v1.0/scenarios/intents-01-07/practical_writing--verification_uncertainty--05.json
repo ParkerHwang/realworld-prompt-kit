@@ -2,24 +2,25 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.verification_uncertainty.0005",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.verification_uncertainty.0005",
   "title": {
-    "ko": "지원금 신청 요약 · 검증·불확실성",
-    "en": "Grant-application summary · verification and uncertainty"
+    "ko": "지원금 신청 요약 — 초안 지표",
+    "en": "Grant-application summary — Draft metric"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "customer_support_success",
+    "primary_domain": "government_public_policy",
     "domain_tags": [
-      "communication_meetings"
+      "communication_meetings",
+      "general_knowledge"
     ],
     "user_goal": {
-      "ko": "지원금 신청서의 사업 목적, 대상, 예산, 성과 지표를 짧은 요약으로 작성해줘 (검증·불확실성)",
-      "en": "write a concise grant-application summary covering purpose, audience, budget, and outcomes (verification and uncertainty)"
+      "ko": "지원금 신청 요약 자료의 근거와 미확인 부분을 나눠줘. 계산 전제와 보류 조건을 먼저 드러내",
+      "en": "Separate evidence and unknowns in the Grant-application summary material; surface assumptions and hold conditions before calculating."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +51,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "고객 문의와 지원 운영을 처리하는 상황에서 지원금 신청서의 사업 목적, 대상, 예산, 성과 지표를 짧은 요약으로 작성해줘. 입력 상황: 대상은 지역 청년이고 예산은 1천2백만 원이며 성과 지표 초안은 참여자 수와 완료율이야. 검증된 사실, 가정, 불확실성, 다음 확인 단계를 분리해서 제시해."
+          "content": "정부·공공기관 공고의 조건과 기준일을 확인하는 상황에서 지원금 신청 요약 자료의 근거와 미확인 부분을 나눠줘. 계산 전제와 보류 조건을 먼저 드러내. 입력 상황: 성공 지표는 초안이고 분모와 기준일이 아직 합의되지 않았어. 검증된 사실, 가정, 불확실성, 다음 확인 단계를 분리해서 제시해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
         }
       ]
     },
@@ -66,7 +67,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한 내용이 좀 깨졌는데 😣, 고객 문의와 지원 운영을 처리하는 상황에서 지원금 신청서의 사업 목적, 대상, 예산, 성과 지표를 짧은 요약으로 작성해줘. 대상은 지역 청년이고 예산은 1천2백만 원이며 성과 지표 초안은 참여자 수와 완료율이야. 검증된 사실, 가정, 불확실성, 다음 확인 단계를 분리해서 제시해."
+          "content": "복붙한 내용이 좀 깨졌는데 😣, 공공기관 공고야. 근거를 다시 봐야 하는 지원금 신청 요약 건이야. 성공 지표는 초안이고 분모와 기준일이 아직 합의되지 않았어. 계산 전제와 보류 조건을 먼저 드러내. 확정·추정·아직 모르는 것·다음 체크를 따로 적어줘. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
         }
       ]
     },
@@ -79,7 +80,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a customer-support and success context, write a concise grant-application summary covering purpose, audience, budget, and outcomes. Input context: the audience is local young adults, the budget is 12 million won, and draft metrics are participant count and completion rate. Separate verified facts, assumptions, uncertainty, and the next verification step."
+          "content": "In a government or public-policy notice context where dates and eligibility matter, Separate evidence and unknowns in the Grant-application summary material; surface assumptions and hold conditions before calculating.. Input context: the success metric is a draft and its denominator and as-of date are not agreed. Separate verified facts, assumptions, uncertainty, and the next verification step. Make the boundary for official or professional review explicit."
         }
       ]
     },
@@ -95,7 +96,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "The pasted text is a bit messy — this is getting urgent: in a customer-support and success context, write a concise grant-application summary covering purpose, audience, budget, and outcomes. the audience is local young adults, the budget is 12 million won, and draft metrics are participant count and completion rate. Separate verified facts, assumptions, uncertainty, and the next verification step."
+          "content": "The pasted text is a bit messy — this is getting urgent: This is a public-notice item. The evidence needs checking for Grant-application summary. The success metric is a draft and its denominator and as-of date are not agreed. Surface assumptions and hold conditions before calculating. Keep confirmed, guessed, unknown, and next-check items separate. Do not make a professional determination; state what needs official review."
         }
       ]
     }
@@ -107,7 +108,8 @@
     },
     "invariants": [
       "Keep the target group, budget, and draft status of metrics.",
-      "Do not claim funding approval."
+      "Do not claim funding approval.",
+      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
     ],
     "rubric_dimensions": [
       "content_coverage",
@@ -116,7 +118,8 @@
     ],
     "failure_signals": [
       "Changing the budget.",
-      "Calling draft metrics final or funding approved."
+      "Calling draft metrics final or funding approved.",
+      "Giving definitive professional advice without the stated source or escalation boundary."
     ]
   },
   "provenance": {

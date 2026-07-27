@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.information_retrieval.freshness_source_conflict.0008",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.freshness_source_conflict.0008",
   "title": {
-    "ko": "주장 원출처 찾기 · 최신성·출처 충돌",
-    "en": "Primary source for a claim · freshness and source conflict"
+    "ko": "주장 원출처 찾기 — 번역본·원문",
+    "en": "Primary source for a claim — Translation versus original"
   },
   "task": {
     "primary_intent": "information_retrieval",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "supply_chain_logistics",
+    "primary_domain": "education_research",
     "domain_tags": [
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "이 주장에 대한 가장 가까운 원출처를 찾아줘 (최신성·출처 충돌)",
-      "en": "find the closest primary source for this claim (freshness and source conflict)"
+      "ko": "주장 원출처 찾기에 관한 현재 근거를 대조해줘. 원문과 번역의 차이를 확인하고 확정하지 못한 부분을 남겨",
+      "en": "Reconcile the current evidence for Primary source for a claim; compare original and translation and retain unresolved differences."
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "공급망·물류 일정과 예외를 조정하는 상황에서 이 주장에 대한 가장 가까운 원출처를 찾아줘. 입력 상황: 블로그 두 개가 같은 문장을 인용하지만 원문 링크가 없고 발표 연도만 2019년으로 알려져 있어. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨."
+          "content": "수업·학습·연구 자료를 다루는 상황에서 주장 원출처 찾기에 관한 현재 근거를 대조해줘. 원문과 번역의 차이를 확인하고 확정하지 못한 부분을 남겨. 입력 상황: 번역된 안내와 원문 개정일이 달라서 표현 하나가 바뀌었어. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일단 초안으로, 공급망·물류 일정과 예외를 조정하는 상황에서 이 주장에 대한 가장 가까운 원출처를 찾아줘. 블로그 두 개가 같은 문장을 인용하지만 원문 링크가 없고 발표 연도만 2019년으로 알려져 있어. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨."
+          "content": "일단 초안으로, 수업·연구 자료야. 자료가 엇갈린 주장 원출처 찾기 건이야. 번역된 안내와 원문 개정일이 달라서 표현 하나가 바뀌었어. 원문과 번역의 차이를 확인하고 확정하지 못한 부분을 남겨. 새 자료인지, 어느 출처인지 나눠서 보여줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a supply-chain and logistics scheduling context, find the closest primary source for this claim. Input context: two blogs repeat the same sentence without an original link, and only the publication year 2019 is known. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary."
+          "content": "In an education, learning, or research context, Reconcile the current evidence for Primary source for a claim; compare original and translation and retain unresolved differences.. Input context: the translated notice and original have different revision dates and one changed phrase. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "A draft is fine for now: in a supply-chain and logistics scheduling context, find the closest primary source for this claim. two blogs repeat the same sentence without an original link, and only the publication year 2019 is known. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary."
+          "content": "A draft is fine for now: This is an education/research item. The sources disagree for Primary source for a claim. The translated notice and original have different revision dates and one changed phrase. Compare original and translation and retain unresolved differences. Show which source and date each answer comes from. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
         }
       ]
     }

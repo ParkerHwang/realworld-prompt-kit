@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.creative_ideation.audience_context_shift.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.audience_context_shift.0007",
   "title": {
-    "ko": "여행 경험 아이디어 · 독자·맥락 전환",
-    "en": "Travel-experience ideas · audience and context shift"
+    "ko": "여행 경험 아이디어 — 혼합 언어 수업",
+    "en": "Travel-experience ideas — Mixed-language classroom"
   },
   "task": {
     "primary_intent": "creative_ideation",
     "secondary_intents": [
       "planning_strategy_design"
     ],
-    "primary_domain": "strategy_business_operations",
+    "primary_domain": "travel_hospitality",
     "domain_tags": [
       "creative_media"
     ],
     "user_goal": {
-      "ko": "짧은 도시 여행에서 지역 주민과 자연스럽게 만날 수 있는 경험 아이디어를 내줘 (독자·맥락 전환)",
-      "en": "generate travel experiences that help visitors meet local residents naturally on a short city trip (audience and context shift)"
+      "ko": "여행 경험 아이디어 내용을 지정 독자에게 맞춰 다시 써줘. 표현을 단순하게 하고 문화적 전제를 설명해",
+      "en": "Adapt the Travel-experience ideas material for the specified reader; simplify wording and explain cultural assumptions."
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 짧은 도시 여행에서 지역 주민과 자연스럽게 만날 수 있는 경험 아이디어를 내줘. 입력 상황: 하루 반나절 일정이고 대규모 단체 관광은 피하며, 지역 문화를 소비품처럼 다루지 않는 방식이어야 해. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "출장·여행·호스피탈리티 일정을 조율하는 상황에서 여행 경험 아이디어 내용을 지정 독자에게 맞춰 다시 써줘. 표현을 단순하게 하고 문화적 전제를 설명해. 입력 상황: 서로 다른 언어 배경의 학생이 함께 읽을 자료야. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황 관련 건이야. 하루 반나절 일정이고 대규모 단체 관광은 피하며, 지역 문화를 소비품처럼 다루지 않는 방식이어야 해."
+          "content": "여행·출장 일정이야. 읽는 사람이 달라진 여행 경험 아이디어 건이야. 서로 다른 언어 배경의 학생이 함께 읽을 자료야. 표현을 단순하게 하고 문화적 전제를 설명해."
         },
         {
           "role": "user",
-          "content": "짧은 도시 여행에서 지역 주민과 자연스럽게 만날 수 있는 경험 아이디어를 내줘."
-        },
-        {
-          "role": "user",
-          "content": "지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a business-operations context where options and execution conditions matter, generate travel experiences that help visitors meet local residents naturally on a short city trip. Input context: the schedule is half a day, large group tourism should be avoided, and local culture should not be treated as a commodity. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "In a travel or hospitality scheduling context, Adapt the Travel-experience ideas material for the specified reader; simplify wording and explain cultural assumptions.. Input context: students with different language backgrounds will read the material together. Adapt tone and explanation level to the specified audience and context without changing the core facts."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a business-operations context where options and execution conditions matter: the schedule is half a day, large group tourism should be avoided, and local culture should not be treated as a commodity."
+          "content": "This is a travel/hospitality item. The reader has changed for Travel-experience ideas. Students with different language backgrounds will read the material together. Simplify wording and explain cultural assumptions."
         },
         {
           "role": "user",
-          "content": "generate travel experiences that help visitors meet local residents naturally on a short city trip."
-        },
-        {
-          "role": "user",
-          "content": "Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "Make it fit the reader without changing the substance."
         }
       ]
     }

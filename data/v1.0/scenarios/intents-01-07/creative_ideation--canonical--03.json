@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.creative_ideation.canonical.0003",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.canonical.0003",
   "title": {
-    "ko": "동네 가게 캠페인 · 기본 요청",
-    "en": "Local-store campaign · ordinary request"
+    "ko": "동네 가게 캠페인 — 월말 운영자료",
+    "en": "Local-store campaign — Month-end operations set"
   },
   "task": {
     "primary_intent": "creative_ideation",
     "secondary_intents": [
       "planning_strategy_design"
     ],
-    "primary_domain": "communication_meetings",
+    "primary_domain": "sales_marketing",
     "domain_tags": [
       "creative_media"
     ],
     "user_goal": {
-      "ko": "동네 가게의 재방문을 늘릴 캠페인 아이디어를 내줘 (기본 요청)",
-      "en": "generate campaign ideas to increase repeat visits for a local store (ordinary request)"
+      "ko": "동네 가게의 재방문을 늘릴 캠페인 아이디어를 내줘 두 표의 공통값과 주의점을 구분해",
+      "en": "generate campaign ideas to increase repeat visits for a local store; separate common values from cautions"
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 동네 가게의 재방문을 늘릴 캠페인 아이디어를 내줘. 입력 상황: 광고 예산은 작고 기존 고객에게 과도한 개인정보를 요구하지 않으며, 할인만 반복하는 방식은 피하려 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "영업·마케팅 캠페인 자료를 준비하는 상황에서 동네 가게의 재방문을 늘릴 캠페인 아이디어를 내줘 두 표의 공통값과 주의점을 구분해. 입력 상황: 광고 예산은 작고 기존 고객에게 과도한 개인정보를 요구하지 않으며, 할인만 반복하는 방식은 피하려 해. 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황 관련 건이야. 광고 예산은 작고 기존 고객에게 과도한 개인정보를 요구하지 않으며, 할인만 반복하는 방식은 피하려 해."
+          "content": "영업·캠페인 자료야. 작은 동네 가게 재방문 캠페인 뭐가 있을까? 예산 작고 개인정보를 많이 받으면 안 되며 할인만 돌려쓰는 안은 빼줘. 참고로 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 그래서 두 표의 공통값과 주의점을 구분해."
         },
         {
           "role": "user",
-          "content": "동네 가게의 재방문을 늘릴 캠페인 아이디어를 내줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, generate campaign ideas to increase repeat visits for a local store. Input context: the ad budget is small, customers should not be asked for excessive personal data, and repeated discounting should be avoided. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a sales or marketing-campaign context, generate campaign ideas to increase repeat visits for a local store; separate common values from cautions. Input context: the ad budget is small, customers should not be asked for excessive personal data, and repeated discounting should be avoided. two teams supplied updated tables before month-end close. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a team-meeting and work-communication context: the ad budget is small, customers should not be asked for excessive personal data, and repeated discounting should be avoided."
+          "content": "This is a sales/marketing item. What could bring people back to a small local shop? Keep the budget low, avoid collecting extra personal data, and skip ideas that are only repeated discounts. For this case, two teams supplied updated tables before month-end close. So separate common values from cautions."
         },
         {
           "role": "user",
-          "content": "generate campaign ideas to increase repeat visits for a local store."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }

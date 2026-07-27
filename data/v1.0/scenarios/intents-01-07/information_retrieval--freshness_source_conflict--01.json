@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.information_retrieval.freshness_source_conflict.0001",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.freshness_source_conflict.0001",
   "title": {
-    "ko": "공휴일 교통 시간표 · 최신성·출처 충돌",
-    "en": "Holiday transit timetable · freshness and source conflict"
+    "ko": "공휴일 교통 시간표 — 작년·올해 공지",
+    "en": "Holiday transit timetable — Last year's versus this year's notice"
   },
   "task": {
     "primary_intent": "information_retrieval",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "travel_hospitality",
+    "primary_domain": "personal_everyday",
     "domain_tags": [
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "공휴일 버스의 막차 시간을 확인해줘 (최신성·출처 충돌)",
-      "en": "find the last bus times for a public holiday (freshness and source conflict)"
+      "ko": "공휴일 교통 시간표에 관한 현재 근거를 대조해줘. 기준일이 가장 최근인 공식 원문을 확인해",
+      "en": "Reconcile the current evidence for Holiday transit timetable; verify the latest official source by as-of date."
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "출장·여행·호스피탈리티 일정을 조율하는 상황에서 공휴일 버스의 막차 시간을 확인해줘. 입력 상황: 시청 공지에는 평일표와 공휴일표가 따로 있고 날짜는 다음 달 첫 월요일이야. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨."
+          "content": "개인 일정과 생활 결정을 정리하는 상황에서 공휴일 교통 시간표에 관한 현재 근거를 대조해줘. 기준일이 가장 최근인 공식 원문을 확인해. 입력 상황: 작년 공지와 올해 개정 공지가 검색 결과에 함께 남아 있어. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 출장·여행·호스피탈리티 일정을 조율하는 상황의 그 자료 시청 공지에는 평일표와 공휴일표가 따로 있고 날짜는 다음 달 첫 월요일이야."
+          "content": "이거 핵심만 좀 봐줘, 내 일정·생활 건이야: 자료가 엇갈린 공휴일 교통 시간표 건이야. 작년 공지와 올해 개정 공지가 검색 결과에 함께 남아 있어. 기준일이 가장 최근인 공식 원문을 확인해."
         },
         {
           "role": "user",
-          "content": "위 건 공휴일 버스의 막차 시간을 확인해줘. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨."
+          "content": "위 건은 새 자료인지, 어느 출처인지 나눠서 보여줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a travel or hospitality scheduling context, find the last bus times for a public holiday. Input context: the city notice has separate weekday and holiday tables, and the date is the first Monday next month. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary."
+          "content": "In a personal scheduling and everyday-life context, Reconcile the current evidence for Holiday transit timetable; verify the latest official source by as-of date.. Input context: last year's notice remains in search results beside this year's revision. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this, the same a travel or hospitality scheduling context item: the city notice has separate weekday and holiday tables, and the date is the first Monday next month."
+          "content": "Can you take a quick look at this, This is a personal-life item: The sources disagree for Holiday transit timetable. Last year's notice remains in search results beside this year's revision. Verify the latest official source by as-of date."
         },
         {
           "role": "user",
-          "content": "For that, find the last bus times for a public holiday. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary."
+          "content": "For that item: Show which source and date each answer comes from. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
         }
       ]
     }

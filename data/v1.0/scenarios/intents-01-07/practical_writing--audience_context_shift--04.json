@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.audience_context_shift.0004",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.audience_context_shift.0004",
   "title": {
-    "ko": "고객 사과 답변 · 독자·맥락 전환",
-    "en": "Customer apology reply · audience and context shift"
+    "ko": "고객 사과 답변 — 공개 게시물",
+    "en": "Customer apology reply — Public post"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "project_product_management",
+    "primary_domain": "customer_support_success",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "고객에게 보낼 사과 답변을 사실, 해결 방법, 다음 안내 순서로 작성해줘 (독자·맥락 전환)",
-      "en": "write a customer apology reply in the order of facts, remedy, and next update (audience and context shift)"
+      "ko": "고객 사과 답변 내용을 지정 독자에게 맞춰 다시 써줘. 공개해도 되는 사실만 남겨",
+      "en": "Adapt the Customer apology reply material for the specified reader; keep only facts safe to publish."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 고객에게 보낼 사과 답변을 사실, 해결 방법, 다음 안내 순서로 작성해줘. 입력 상황: 주문 지연은 확인됐지만 원인은 아직 조사 중이고 48시간 안에 다시 안내하기로 했어. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "고객 문의와 지원 운영을 처리하는 상황에서 고객 사과 답변 내용을 지정 독자에게 맞춰 다시 써줘. 공개해도 되는 사실만 남겨. 입력 상황: 내부 메모를 일반 공개 게시물로 바꾸되 내부 이름과 가정은 빼야 해. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건 😣 🙏, 제품·프로젝트 일정과 요구사항을 다루는 상황에서 고객에게 보낼 사과 답변을 사실, 해결 방법, 다음 안내 순서로 작성해줘. 주문 지연은 확인됐지만 원인은 아직 조사 중이고 48시간 안에 다시 안내하기로 했어. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "어 그러니까 내가 말한 건 😣 🙏, 고객 문의 건이야. 읽는 사람이 달라진 고객 사과 답변 건이야. 내부 메모를 일반 공개 게시물로 바꾸되 내부 이름과 가정은 빼야 해. 공개해도 되는 사실만 남겨. 읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a product or project schedule-and-requirements context, write a customer apology reply in the order of facts, remedy, and next update. Input context: the order delay is confirmed but the cause is still under investigation, with a new update promised within 48 hours. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "In a customer-support and success context, Adapt the Customer apology reply material for the specified reader; keep only facts safe to publish.. Input context: an internal note must become a public post without names or internal assumptions. Adapt tone and explanation level to the specified audience and context without changing the core facts."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is — this is getting urgent 🙏: in a product or project schedule-and-requirements context, write a customer apology reply in the order of facts, remedy, and next update. the order delay is confirmed but the cause is still under investigation, with a new update promised within 48 hours. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "Actually, what I mean is — this is getting urgent 🙏: This is a customer-support item. The reader has changed for Customer apology reply. An internal note must become a public post without names or internal assumptions. Keep only facts safe to publish. Make it fit the reader without changing the substance."
         }
       ]
     }

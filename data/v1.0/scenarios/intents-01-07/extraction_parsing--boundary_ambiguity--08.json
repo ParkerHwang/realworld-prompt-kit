@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.extraction_parsing.boundary_ambiguity.0008",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.boundary_ambiguity.0008",
   "title": {
-    "ko": "연구 변수 · 경계가 모호한 요청",
-    "en": "Research variables · boundary-ambiguous request"
+    "ko": "연구 변수 — 초보·전문가 독자",
+    "en": "Research variables — Beginner versus specialist reader"
   },
   "task": {
     "primary_intent": "extraction_parsing",
     "secondary_intents": [
       "classification_organization"
     ],
-    "primary_domain": "personal_everyday",
+    "primary_domain": "education_research",
     "domain_tags": [
       "office_admin"
     ],
     "user_goal": {
-      "ko": "연구 초록에서 표본, 독립변수, 결과변수, 제한점을 추출해줘 (경계가 모호한 요청)",
-      "en": "extract the sample, independent variable, outcome, and limitations from the abstract (boundary-ambiguous request)"
+      "ko": "연구 변수의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해",
+      "en": "Work out the applicable scope for Research variables; Propose an output that respects both audiences."
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 연구 초록에서 표본, 독립변수, 결과변수, 제한점을 추출해줘. 입력 상황: 초록에는 표본 수는 있지만 비교군 설명이 없고 제한점은 한 문장으로만 적혀 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "수업·학습·연구 자료를 다루는 상황에서 연구 변수의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 입력 상황: 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일단 초안으로, 개인 일정과 생활 결정을 정리하는 상황에서 연구 초록에서 표본, 독립변수, 결과변수, 제한점을 추출해줘. 초록에는 표본 수는 있지만 비교군 설명이 없고 제한점은 한 문장으로만 적혀 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "일단 초안으로, 수업·연구 자료야. 범위가 헷갈리는 연구 변수 건이야. 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, extract the sample, independent variable, outcome, and limitations from the abstract. Input context: the abstract gives a sample size but no comparison-group description, and limitations are stated in one sentence. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In an education, learning, or research context, Work out the applicable scope for Research variables; Propose an output that respects both audiences.. Input context: the same facts must be explained differently to a beginner and a specialist. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "A draft is fine for now: in a personal scheduling and everyday-life context, extract the sample, independent variable, outcome, and limitations from the abstract. the abstract gives a sample size but no comparison-group description, and limitations are stated in one sentence. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "A draft is fine for now: This is an education/research item. The scope is fuzzy for Research variables. The same facts must be explained differently to a beginner and a specialist. Propose an output that respects both audiences. If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }

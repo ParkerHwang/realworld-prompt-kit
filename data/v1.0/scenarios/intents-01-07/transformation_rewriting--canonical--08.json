@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.transformation_rewriting.canonical.0008",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.canonical.0008",
   "title": {
-    "ko": "경비 메모의 양식화 · 기본 요청",
-    "en": "Expense note to form · ordinary request"
+    "ko": "경비 메모의 양식화 — 외부 공유 전",
+    "en": "Expense note to form — Before external sharing"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
     "secondary_intents": [
       "practical_writing"
     ],
-    "primary_domain": "personal_everyday",
+    "primary_domain": "office_admin",
     "domain_tags": [
       "education_research"
     ],
     "user_goal": {
-      "ko": "경비 메모를 제출 양식의 항목으로 정리해줘 (기본 요청)",
-      "en": "turn the expense note into the fields of a submission form (ordinary request)"
+      "ko": "경비 메모를 제출 양식의 항목으로 정리해줘 공유 가능한 형식으로 근거를 함께 제시해",
+      "en": "turn the expense note into the fields of a submission form; make the evidence visible in a shareable format"
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 경비 메모를 제출 양식의 항목으로 정리해줘. 입력 상황: 메모에는 날짜·목적·금액은 있지만 영수증 번호와 비용 센터는 없어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "사내 행정과 문서 운영을 처리하는 상황에서 경비 메모를 제출 양식의 항목으로 정리해줘 공유 가능한 형식으로 근거를 함께 제시해. 입력 상황: 메모에는 날짜·목적·금액은 있지만 영수증 번호와 비용 센터는 없어. 외부 공유 직전이라 원문 근거와 제한을 짧게 붙여야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황 관련 건이야. 메모에는 날짜·목적·금액은 있지만 영수증 번호와 비용 센터는 없어."
+          "content": "회사 행정 쪽이야. 경비 메모를 제출 양식 필드로 옮겨줘. 날짜·목적·금액만 있고 영수증 번호/비용 센터는 없으니 빈칸이나 null로 남겨. 참고로 외부 공유 직전이라 원문 근거와 제한을 짧게 붙여야 해. 그래서 공유 가능한 형식으로 근거를 함께 제시해."
         },
         {
           "role": "user",
-          "content": "경비 메모를 제출 양식의 항목으로 정리해줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, turn the expense note into the fields of a submission form. Input context: the note has date, purpose, and amount but no receipt number or cost center. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In an internal office-administration and document-operations context, turn the expense note into the fields of a submission form; make the evidence visible in a shareable format. Input context: the note has date, purpose, and amount but no receipt number or cost center. the result is going outside the team and needs a short source note and limitation. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a personal scheduling and everyday-life context: the note has date, purpose, and amount but no receipt number or cost center."
+          "content": "This is an office-admin item. Map the expense note into the submission-form fields. It has date, purpose, and amount but no receipt number or cost center, so leave those blank or null. For this case, the result is going outside the team and needs a short source note and limitation. So make the evidence visible in a shareable format."
         },
         {
           "role": "user",
-          "content": "turn the expense note into the fields of a submission form."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }

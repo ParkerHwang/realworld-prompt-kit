@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.creative_ideation.boundary_ambiguity.0001",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.boundary_ambiguity.0001",
   "title": {
-    "ko": "지역 행사 이름 · 경계가 모호한 요청",
-    "en": "Community-event names · boundary-ambiguous request"
+    "ko": "지역 행사 이름 — 정규·특별 적용 경계",
+    "en": "Community-event names — Regular versus special scope"
   },
   "task": {
     "primary_intent": "creative_ideation",
     "secondary_intents": [
       "planning_strategy_design"
     ],
-    "primary_domain": "construction_real_estate",
+    "primary_domain": "personal_everyday",
     "domain_tags": [
       "creative_media"
     ],
     "user_goal": {
-      "ko": "지역 주민 행사의 이름과 짧은 설명 아이디어를 다양하게 내줘 (경계가 모호한 요청)",
-      "en": "generate diverse names and short descriptions for a community event (boundary-ambiguous request)"
+      "ko": "지역 행사 이름의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해",
+      "en": "Work out the applicable scope for Community-event names; Compare exactly when the exception applies."
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "건설·부동산 운영 자료를 검토하는 상황에서 지역 주민 행사의 이름과 짧은 설명 아이디어를 다양하게 내줘. 입력 상황: 가족·청년·상인이 함께 참여하고, 과장된 경쟁 표현이나 특정 집단을 배제하는 말은 피해야 해. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "개인 일정과 생활 결정을 정리하는 상황에서 지역 행사 이름의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해. 입력 상황: 정규 절차와 이번 한시 예외가 같은 화면에 보여. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 건설·부동산 운영 자료를 검토하는 상황에서 지역 주민 행사의 이름과 짧은 설명 아이디어를 다양하게 내줘. 가족·청년·상인이 함께 참여하고, 과장된 경쟁 표현이나 특정 집단을 배제하는 말은 피해야 해. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "이거 핵심만 좀 봐줘, 내 일정·생활 건이야. 범위가 헷갈리는 지역 행사 이름 건이야. 정규 절차와 이번 한시 예외가 같은 화면에 보여. 어느 조건에서 예외로 넘어가는지 비교해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a construction or real-estate operations context, generate diverse names and short descriptions for a community event. Input context: families, young adults, and local merchants should all feel included; avoid exaggerated competition or exclusionary wording. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a personal scheduling and everyday-life context, Work out the applicable scope for Community-event names; Compare exactly when the exception applies.. Input context: the ordinary procedure and a temporary exception appear on the same screen. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: in a construction or real-estate operations context, generate diverse names and short descriptions for a community event. families, young adults, and local merchants should all feel included; avoid exaggerated competition or exclusionary wording. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Can you take a quick look at this: This is a personal-life item. The scope is fuzzy for Community-event names. The ordinary procedure and a temporary exception appear on the same screen. Compare exactly when the exception applies. If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }

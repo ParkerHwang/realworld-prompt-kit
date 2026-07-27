@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.creative_ideation.canonical.0006",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.canonical.0006",
   "title": {
-    "ko": "제품 기능 발상 · 기본 요청",
-    "en": "Product-feature ideas · ordinary request"
+    "ko": "제품 기능 발상 — 인수인계 자료",
+    "en": "Product-feature ideas — Handoff packet"
   },
   "task": {
     "primary_intent": "creative_ideation",
     "secondary_intents": [
       "planning_strategy_design"
     ],
-    "primary_domain": "office_admin",
+    "primary_domain": "data_analytics",
     "domain_tags": [
       "creative_media"
     ],
     "user_goal": {
-      "ko": "승인 대기 시간을 줄이는 제품 기능 아이디어를 서로 다른 방향으로 내줘 (기본 요청)",
-      "en": "generate product-feature ideas from different directions to reduce approval waiting time (ordinary request)"
+      "ko": "승인 대기 시간을 줄이는 제품 기능 아이디어를 서로 다른 방향으로 내줘 출처와 미확인 부분을 표시해",
+      "en": "generate product-feature ideas from different directions to reduce approval waiting time; mark sources and anything not yet confirmed"
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 승인 대기 시간을 줄이는 제품 기능 아이디어를 서로 다른 방향으로 내줘. 입력 상황: 작은 팀이 쓸 수 있어야 하고 관리자 권한을 우회하는 기능은 허용되지 않으며, 성공 신호는 처리 시간과 재작업률이야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "지표 표와 분석 메모를 검토하는 상황에서 승인 대기 시간을 줄이는 제품 기능 아이디어를 서로 다른 방향으로 내줘 출처와 미확인 부분을 표시해. 입력 상황: 작은 팀이 쓸 수 있어야 하고 관리자 권한을 우회하는 기능은 허용되지 않으며, 성공 신호는 처리 시간과 재작업률이야. 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황 관련 건이야. 작은 팀이 쓸 수 있어야 하고 관리자 권한을 우회하는 기능은 허용되지 않으며, 성공 신호는 처리 시간과 재작업률이야."
+          "content": "지표·분석 메모야. 승인 대기 시간을 줄일 제품 기능을 서로 다른 방향으로 생각해줘. 관리자 권한 우회는 안 되고 처리시간/재작업률과 연결돼야 해. 참고로 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 그래서 출처와 미확인 부분을 표시해."
         },
         {
           "role": "user",
-          "content": "승인 대기 시간을 줄이는 제품 기능 아이디어를 서로 다른 방향으로 내줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, generate product-feature ideas from different directions to reduce approval waiting time. Input context: the ideas must fit small teams, may not bypass admin authority, and should relate to processing time and rework rate. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a metrics-table and data-analysis context, generate product-feature ideas from different directions to reduce approval waiting time; mark sources and anything not yet confirmed. Input context: the ideas must fit small teams, may not bypass admin authority, and should relate to processing time and rework rate. the owner is changing and the next owner must use the result immediately. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about an internal office-administration and document-operations context: the ideas must fit small teams, may not bypass admin authority, and should relate to processing time and rework rate."
+          "content": "This is a metrics/analysis item. Think of product features from different angles to reduce approval waiting. Do not bypass admin authority, and connect each idea to processing time or rework. For this case, the owner is changing and the next owner must use the result immediately. So mark sources and anything not yet confirmed."
         },
         {
           "role": "user",
-          "content": "generate product-feature ideas from different directions to reduce approval waiting time."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }

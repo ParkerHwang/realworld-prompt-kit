@@ -2,22 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.transformation_rewriting.canonical.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.canonical.0007",
   "title": {
-    "ko": "수업 노트의 복습 카드 · 기본 요청",
-    "en": "Lesson notes to flashcards · ordinary request"
+    "ko": "수업 노트의 복습 카드 — 소수 기록 묶음",
+    "en": "Lesson notes to flashcards — Small record set"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
     "secondary_intents": [
       "practical_writing"
     ],
-    "primary_domain": "education_research",
-    "domain_tags": [],
+    "primary_domain": "general_knowledge",
+    "domain_tags": [
+      "education_research"
+    ],
     "user_goal": {
-      "ko": "수업 노트를 핵심 개념, 질문, 답, 오개념 주의 카드로 바꿔줘 (기본 요청)",
-      "en": "turn lesson notes into concept, question, answer, and misconception-warning cards (ordinary request)"
+      "ko": "수업 노트를 핵심 개념, 질문, 답, 오개념 주의 카드로 바꿔줘 작은 표본에서 확인되는 내용만 말해",
+      "en": "turn lesson notes into concept, question, answer, and misconception-warning cards; state only what this small set supports"
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -48,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "수업·학습·연구 자료를 다루는 상황에서 수업 노트를 핵심 개념, 질문, 답, 오개념 주의 카드로 바꿔줘. 입력 상황: 노트에는 핵심 용어 세 개와 아직 설명이 부족한 예시 하나가 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "일반 정보와 상식을 확인하는 상황에서 수업 노트를 핵심 개념, 질문, 답, 오개념 주의 카드로 바꿔줘 작은 표본에서 확인되는 내용만 말해. 입력 상황: 노트에는 핵심 용어 세 개와 아직 설명이 부족한 예시 하나가 있어. 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -64,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "수업·학습·연구 자료를 다루는 상황 관련 건이야. 노트에는 핵심 용어 세 개와 아직 설명이 부족한 예시 하나가 있어."
+          "content": "일반 정보 조회 건이야. 수업 노트를 복습 카드로 바꿔줘. 용어 세 개는 질문·답으로 만들고, 설명 부족한 예시는 답을 지어내지 말고 표시해. 참고로 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 그래서 작은 표본에서 확인되는 내용만 말해."
         },
         {
           "role": "user",
-          "content": "수업 노트를 핵심 개념, 질문, 답, 오개념 주의 카드로 바꿔줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -85,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an education, learning, or research context, turn lesson notes into concept, question, answer, and misconception-warning cards. Input context: the notes contain three key terms and one example whose explanation is incomplete. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a general-information and everyday-knowledge context, turn lesson notes into concept, question, answer, and misconception-warning cards; state only what this small set supports. Input context: the notes contain three key terms and one example whose explanation is incomplete. there are only five records and one has a blank field. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -101,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about an education, learning, or research context: the notes contain three key terms and one example whose explanation is incomplete."
+          "content": "This is a general-information lookup. Make review cards from the lesson notes. Turn the three terms into questions and answers, and flag the under-explained example instead of filling it in. For this case, there are only five records and one has a blank field. So state only what this small set supports."
         },
         {
           "role": "user",
-          "content": "turn lesson notes into concept, question, answer, and misconception-warning cards."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }

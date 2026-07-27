@@ -2,24 +2,25 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.extraction_parsing.boundary_ambiguity.0005",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.boundary_ambiguity.0005",
   "title": {
-    "ko": "안전 사고 타임라인 · 경계가 모호한 요청",
-    "en": "Safety-incident timeline · boundary-ambiguous request"
+    "ko": "안전 사고 타임라인 — 정기·일회성 항목",
+    "en": "Safety-incident timeline — Recurring versus one-off"
   },
   "task": {
     "primary_intent": "extraction_parsing",
     "secondary_intents": [
       "classification_organization"
     ],
-    "primary_domain": "creative_media",
+    "primary_domain": "safety_emergency",
     "domain_tags": [
-      "office_admin"
+      "office_admin",
+      "general_knowledge"
     ],
     "user_goal": {
-      "ko": "사고 보고서에서 시간순 사건, 조치, 미확인 사실을 추출해줘 (경계가 모호한 요청)",
-      "en": "extract the chronological events, actions, and unconfirmed facts from the incident report (boundary-ambiguous request)"
+      "ko": "안전 사고 타임라인의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해",
+      "en": "Work out the applicable scope for Safety-incident timeline; Classify the two kinds without conflating them."
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -50,7 +51,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "창작·미디어 프로젝트의 자료를 발전시키는 상황에서 사고 보고서에서 시간순 사건, 조치, 미확인 사실을 추출해줘. 입력 상황: 보고서의 일부 시각은 '경'으로만 적혀 있고 목격자 진술과 CCTV 기록의 순서가 다르게 보이네. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "안전·비상 대응 안내를 확인하는 상황에서 안전 사고 타임라인의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해. 입력 상황: 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
         }
       ]
     },
@@ -66,7 +67,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한 내용이 좀 깨졌는데, 창작·미디어 프로젝트의 자료를 발전시키는 상황에서 사고 보고서에서 시간순 사건, 조치, 미확인 사실을 추출해줘. 보고서의 일부 시각은 '경'으로만 적혀 있고 목격자 진술과 CCTV 기록의 순서가 다르게 보이네. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 바로 보내거나 바꾸지는 말고 검토용 초안으로 줘."
+          "content": "복붙한 내용이 좀 깨졌는데, 안전 대응 안내야. 범위가 헷갈리는 안전 사고 타임라인 건이야. 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 두 종류를 섞지 않고 분류해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 바로 보내거나 바꾸지는 말고 검토용 초안으로 줘. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
         }
       ]
     },
@@ -79,7 +80,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a creative or media-project context, extract the chronological events, actions, and unconfirmed facts from the incident report. Input context: some timestamps are approximate and the witness statement and CCTV log appear to differ in order. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a safety or emergency-response context where official guidance takes priority, Work out the applicable scope for Safety-incident timeline; Classify the two kinds without conflating them.. Input context: recurring work and one-off requests use the same form. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. Make the boundary for official or professional review explicit."
         }
       ]
     },
@@ -95,7 +96,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "The pasted text is a bit messy: in a creative or media-project context, extract the chronological events, actions, and unconfirmed facts from the incident report. some timestamps are approximate and the witness statement and CCTV log appear to differ in order. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. Do not send or change anything; make it a review draft."
+          "content": "The pasted text is a bit messy: This is a safety-response item. The scope is fuzzy for Safety-incident timeline. Recurring work and one-off requests use the same form. Classify the two kinds without conflating them. If the boundary is fuzzy, ask one question before deciding. Do not send or change anything; make it a review draft. Do not make a professional determination; state what needs official review."
         }
       ]
     }
@@ -107,7 +108,8 @@
     },
     "invariants": [
       "Preserve approximate times and conflicting accounts.",
-      "Mark unconfirmed facts rather than resolving them."
+      "Mark unconfirmed facts rather than resolving them.",
+      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
     ],
     "rubric_dimensions": [
       "timeline_order",
@@ -116,7 +118,8 @@
     ],
     "failure_signals": [
       "Turning approximate time into an exact time.",
-      "Choosing one account without noting conflict."
+      "Choosing one account without noting conflict.",
+      "Giving definitive professional advice without the stated source or escalation boundary."
     ]
   },
   "provenance": {

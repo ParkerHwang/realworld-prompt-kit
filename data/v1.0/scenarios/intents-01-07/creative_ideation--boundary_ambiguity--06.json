@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.creative_ideation.boundary_ambiguity.0006",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.boundary_ambiguity.0006",
   "title": {
-    "ko": "제품 기능 발상 · 경계가 모호한 요청",
-    "en": "Product-feature ideas · boundary-ambiguous request"
+    "ko": "제품 기능 발상 — 성인·청소년 대상",
+    "en": "Product-feature ideas — Adult versus youth eligibility"
   },
   "task": {
     "primary_intent": "creative_ideation",
     "secondary_intents": [
       "planning_strategy_design"
     ],
-    "primary_domain": "strategy_business_operations",
+    "primary_domain": "customer_support_success",
     "domain_tags": [
       "creative_media"
     ],
     "user_goal": {
-      "ko": "승인 대기 시간을 줄이는 제품 기능 아이디어를 서로 다른 방향으로 내줘 (경계가 모호한 요청)",
-      "en": "generate product-feature ideas from different directions to reduce approval waiting time (boundary-ambiguous request)"
+      "ko": "제품 기능 발상의 적용 범위를 가려줘. 어느 조건이 누구에게 해당하는지 비교해",
+      "en": "Work out the applicable scope for Product-feature ideas; Compare which condition applies to whom."
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 승인 대기 시간을 줄이는 제품 기능 아이디어를 서로 다른 방향으로 내줘. 입력 상황: 작은 팀이 쓸 수 있어야 하고 관리자 권한을 우회하는 기능은 허용되지 않으며, 성공 신호는 처리 시간과 재작업률이야. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "고객 문의와 지원 운영을 처리하는 상황에서 제품 기능 발상의 적용 범위를 가려줘. 어느 조건이 누구에게 해당하는지 비교해. 입력 상황: 성인 조건과 청소년 조건이 다른 안내 두 장으로 나뉘어 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황 관련 건이야. 작은 팀이 쓸 수 있어야 하고 관리자 권한을 우회하는 기능은 허용되지 않으며, 성공 신호는 처리 시간과 재작업률이야."
+          "content": "고객 문의 건이야. 범위가 헷갈리는 제품 기능 발상 건이야. 성인 조건과 청소년 조건이 다른 안내 두 장으로 나뉘어 있어. 어느 조건이 누구에게 해당하는지 비교해."
         },
         {
           "role": "user",
-          "content": "승인 대기 시간을 줄이는 제품 기능 아이디어를 서로 다른 방향으로 내줘."
-        },
-        {
-          "role": "user",
-          "content": "비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a business-operations context where options and execution conditions matter, generate product-feature ideas from different directions to reduce approval waiting time. Input context: the ideas must fit small teams, may not bypass admin authority, and should relate to processing time and rework rate. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a customer-support and success context, Work out the applicable scope for Product-feature ideas; Compare which condition applies to whom.. Input context: adult and youth conditions are in two different notices. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a business-operations context where options and execution conditions matter: the ideas must fit small teams, may not bypass admin authority, and should relate to processing time and rework rate."
+          "content": "This is a customer-support item. The scope is fuzzy for Product-feature ideas. Adult and youth conditions are in two different notices. Compare which condition applies to whom."
         },
         {
           "role": "user",
-          "content": "generate product-feature ideas from different directions to reduce approval waiting time."
-        },
-        {
-          "role": "user",
-          "content": "Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }

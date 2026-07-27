@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.boundary_ambiguity.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.boundary_ambiguity.0007",
   "title": {
-    "ko": "운영 장애 공지 · 경계가 모호한 요청",
-    "en": "Operations-incident notice · boundary-ambiguous request"
+    "ko": "운영 장애 공지 — 현재·보관 문서",
+    "en": "Operations-incident notice — Current versus archived"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "data_analytics",
+    "primary_domain": "software_it",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "내부 장애 공지를 영향, 현재 조치, 다음 업데이트 시각이 분명하게 보이도록 써줘 (경계가 모호한 요청)",
-      "en": "write an internal incident notice with impact, current action, and next update time (boundary-ambiguous request)"
+      "ko": "운영 장애 공지의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해",
+      "en": "Work out the applicable scope for Operations-incident notice; State the rule for choosing the current document."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지표 표와 분석 메모를 검토하는 상황에서 내부 장애 공지를 영향, 현재 조치, 다음 업데이트 시각이 분명하게 보이도록 써줘. 입력 상황: 문제는 일부 사용자 로그인이고 원인은 확인 전이며 다음 업데이트는 16시로 예정돼 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "내부 소프트웨어·IT 운영 자료를 확인하는 상황에서 운영 장애 공지의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해. 입력 상황: 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "지표 표와 분석 메모를 검토하는 상황 관련 건이야. 문제는 일부 사용자 로그인이고 원인은 확인 전이며 다음 업데이트는 16시로 예정돼 있어."
+          "content": "내부 IT 쪽이야. 범위가 헷갈리는 운영 장애 공지 건이야. 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 현재 문서를 고르는 기준을 한 문장으로 정리해."
         },
         {
           "role": "user",
-          "content": "내부 장애 공지를 영향, 현재 조치, 다음 업데이트 시각이 분명하게 보이도록 써줘."
-        },
-        {
-          "role": "user",
-          "content": "비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a metrics-table and data-analysis context, write an internal incident notice with impact, current action, and next update time. Input context: the issue affects login for some users, the cause is unconfirmed, and the next update is scheduled for 16:00. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In an internal software or IT operations context, Work out the applicable scope for Operations-incident notice; State the rule for choosing the current document.. Input context: search results show a current document alongside an archived one. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a metrics-table and data-analysis context: the issue affects login for some users, the cause is unconfirmed, and the next update is scheduled for 16:00."
+          "content": "This is an internal IT item. The scope is fuzzy for Operations-incident notice. Search results show a current document alongside an archived one. State the rule for choosing the current document."
         },
         {
           "role": "user",
-          "content": "write an internal incident notice with impact, current action, and next update time."
-        },
-        {
-          "role": "user",
-          "content": "Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }

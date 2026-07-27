@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.explanation_teaching.canonical.0002",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.canonical.0002",
   "title": {
-    "ko": "휴가 신청 절차 · 기본 요청",
-    "en": "Leave-request process · ordinary request"
+    "ko": "휴가 신청 절차 — 승인본과 내부 메모",
+    "en": "Leave-request process — Approved copy and internal note"
   },
   "task": {
     "primary_intent": "explanation_teaching",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "sales_marketing",
+    "primary_domain": "office_admin",
     "domain_tags": [
       "education_research"
     ],
     "user_goal": {
-      "ko": "휴가 신청 절차를 신입 직원이 따라 할 수 있게 설명해줘 (기본 요청)",
-      "en": "explain the leave-request process so a new employee can follow it (ordinary request)"
+      "ko": "휴가 신청 절차를 신입 직원이 따라 할 수 있게 설명해줘 승인된 문서만 근거로 삼아",
+      "en": "explain the leave-request process so a new employee can follow it; use only the approved document as evidence"
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "영업·마케팅 캠페인 자료를 준비하는 상황에서 휴가 신청 절차를 신입 직원이 따라 할 수 있게 설명해줘. 입력 상황: 사내 안내에는 신청, 팀장 확인, 인사 시스템 반영 순서가 있지만 긴급 휴가 예외는 담당자 확인이 필요해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "사내 행정과 문서 운영을 처리하는 상황에서 휴가 신청 절차를 신입 직원이 따라 할 수 있게 설명해줘 승인된 문서만 근거로 삼아. 입력 상황: 사내 안내에는 신청, 팀장 확인, 인사 시스템 반영 순서가 있지만 긴급 휴가 예외는 담당자 확인이 필요해. 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "영업·마케팅 캠페인 자료를 준비하는 상황 관련 건이야. 사내 안내에는 신청, 팀장 확인, 인사 시스템 반영 순서가 있지만 긴급 휴가 예외는 담당자 확인이 필요해."
+          "content": "회사 행정 쪽이야. 신입이 휴가 신청할 때 순서가 뭐야? 신청→팀장 확인→인사 반영이고, 긴급 휴가는 담당자 확인이 필요하다고 같이 적어줘. 참고로 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 그래서 승인된 문서만 근거로 삼아."
         },
         {
           "role": "user",
-          "content": "휴가 신청 절차를 신입 직원이 따라 할 수 있게 설명해줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a sales or marketing-campaign context, explain the leave-request process so a new employee can follow it. Input context: the internal guide lists request, manager confirmation, and HR-system recording, while emergency leave needs a staff check. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In an internal office-administration and document-operations context, explain the leave-request process so a new employee can follow it; use only the approved document as evidence. Input context: the internal guide lists request, manager confirmation, and HR-system recording, while emergency leave needs a staff check. an approved PDF arrives with an internal reference note. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a sales or marketing-campaign context: the internal guide lists request, manager confirmation, and HR-system recording, while emergency leave needs a staff check."
+          "content": "This is an office-admin item. What does a new employee do to request leave? Keep the order request, manager check, HR recording, and note that emergency leave needs staff confirmation. For this case, an approved PDF arrives with an internal reference note. So use only the approved document as evidence."
         },
         {
           "role": "user",
-          "content": "explain the leave-request process so a new employee can follow it."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }

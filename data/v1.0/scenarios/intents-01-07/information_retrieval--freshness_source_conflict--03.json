@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.information_retrieval.freshness_source_conflict.0003",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.freshness_source_conflict.0003",
   "title": {
-    "ko": "계약 갱신 통지 · 최신성·출처 충돌",
-    "en": "Contract-renewal notice · freshness and source conflict"
+    "ko": "계약 갱신 통지 — 캐시된 검색결과",
+    "en": "Contract-renewal notice — Cached search result"
   },
   "task": {
     "primary_intent": "information_retrieval",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "education_research",
+    "primary_domain": "office_admin",
     "domain_tags": [
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "계약 갱신 통지 기한이 며칠인지 확인해줘 (최신성·출처 충돌)",
-      "en": "find the contract-renewal notice period (freshness and source conflict)"
+      "ko": "계약 갱신 통지에 관한 현재 근거를 대조해줘. 미리보기보다 원문을 기준으로 답해",
+      "en": "Reconcile the current evidence for Contract-renewal notice; use the page rather than the stale preview."
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "수업·학습·연구 자료를 다루는 상황에서 계약 갱신 통지 기한이 며칠인지 확인해줘. 입력 상황: 요약표에는 30일, 본문 조항에는 60일이라고 적혀 있고 부속합의서의 우선순위가 불명확해. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨."
+          "content": "사내 행정과 문서 운영을 처리하는 상황에서 계약 갱신 통지에 관한 현재 근거를 대조해줘. 미리보기보다 원문을 기준으로 답해. 입력 상황: 검색 미리보기는 예전 문장을 보여주지만 본문에는 업데이트 시각이 있어. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "수업·학습·연구 자료를 다루는 상황 관련 건이야. 요약표에는 30일, 본문 조항에는 60일이라고 적혀 있고 부속합의서의 우선순위가 불명확해."
+          "content": "회사 행정 쪽이야. 자료가 엇갈린 계약 갱신 통지 건이야. 검색 미리보기는 예전 문장을 보여주지만 본문에는 업데이트 시각이 있어. 미리보기보다 원문을 기준으로 답해."
         },
         {
           "role": "user",
-          "content": "계약 갱신 통지 기한이 며칠인지 확인해줘."
-        },
-        {
-          "role": "user",
-          "content": "기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨. 바로 보내거나 바꾸지는 말고 검토용 초안으로 줘."
+          "content": "새 자료인지, 어느 출처인지 나눠서 보여줘. 바로 보내거나 바꾸지는 말고 검토용 초안으로 줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an education, learning, or research context, find the contract-renewal notice period. Input context: the summary says 30 days while the clause says 60, and the addendum's precedence is unclear. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary."
+          "content": "In an internal office-administration and document-operations context, Reconcile the current evidence for Contract-renewal notice; use the page rather than the stale preview.. Input context: the search preview shows old wording while the page has an update timestamp. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about an education, learning, or research context: the summary says 30 days while the clause says 60, and the addendum's precedence is unclear."
+          "content": "This is an office-admin item. The sources disagree for Contract-renewal notice. The search preview shows old wording while the page has an update timestamp. Use the page rather than the stale preview."
         },
         {
           "role": "user",
-          "content": "find the contract-renewal notice period."
-        },
-        {
-          "role": "user",
-          "content": "State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary. Do not send or change anything; make it a review draft."
+          "content": "Show which source and date each answer comes from. Do not send or change anything; make it a review draft. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
         }
       ]
     }

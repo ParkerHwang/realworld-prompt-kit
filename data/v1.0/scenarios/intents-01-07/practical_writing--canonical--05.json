@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.canonical.0005",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.canonical.0005",
   "title": {
-    "ko": "지원금 신청 요약 · 기본 요청",
-    "en": "Grant-application summary · ordinary request"
+    "ko": "지원금 신청 요약 — 지역별 두 버전",
+    "en": "Grant-application summary — Two regional versions"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "creative_media",
+    "primary_domain": "education_research",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "지원금 신청서의 사업 목적, 대상, 예산, 성과 지표를 짧은 요약으로 작성해줘 (기본 요청)",
-      "en": "write a concise grant-application summary covering purpose, audience, budget, and outcomes (ordinary request)"
+      "ko": "지원금 신청서의 사업 목적, 대상, 예산, 성과 지표를 짧은 요약으로 작성해줘 지역 조건을 섞지 않고 해당 지역만 답해",
+      "en": "write a concise grant-application summary covering purpose, audience, budget, and outcomes; answer for the requested region without mixing conditions"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "창작·미디어 프로젝트의 자료를 발전시키는 상황에서 지원금 신청서의 사업 목적, 대상, 예산, 성과 지표를 짧은 요약으로 작성해줘. 입력 상황: 대상은 지역 청년이고 예산은 1천2백만 원이며 성과 지표 초안은 참여자 수와 완료율이야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "수업·학습·연구 자료를 다루는 상황에서 지원금 신청서의 사업 목적, 대상, 예산, 성과 지표를 짧은 요약으로 작성해줘 지역 조건을 섞지 않고 해당 지역만 답해. 입력 상황: 대상은 지역 청년이고 예산은 1천2백만 원이며 성과 지표 초안은 참여자 수와 완료율이야. 서울용과 부산용 안내가 한 파일에 섞여 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한내용이 좀 깨졌는데, 창작·미디어 프로젝트의 자료를 발전시키는 상황에서 지원금 신청서의 사업 목적, 대상, 예산, 성과 지표를 짧은 요약으로 작성해줘;. 대상은 지역 청년이고 예산은 1천2백만 원이며 성과 지표 초안은 참여자 수와 완료율이야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "복붙한내용이 좀 깨졌는데, 수업·연구 자료야. 지역 청년 대상 지원금 신청 요약을 짧게 써줘. 예산 1천2백만 원, 지표는 참여자 수/완료율 초안이고 아직 선정된 건 아니야. 참고로 서울용과 부산용 안내가 한 파일에 섞여 있어. 그래서 지역 조건을 섞지 않고 해당 지역만 답해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘;."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a creative or media-project context, write a concise grant-application summary covering purpose, audience, budget, and outcomes. Input context: the audience is local young adults, the budget is 12 million won, and draft metrics are participant count and completion rate. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In an education, learning, or research context, write a concise grant-application summary covering purpose, audience, budget, and outcomes; answer for the requested region without mixing conditions. Input context: the audience is local young adults, the budget is 12 million won, and draft metrics are participant count and completion rate. Seoul and Busan notices are mixed in one file. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Thepasted text is a bit messy: in a creative or media-project context, write a concise grant-application summary covering purpose, audience, budget, and outcomes.. the audience is local young adults, the budget is 12 million won, and draft metrics are participant count and completion rate. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Thepasted text is a bit messy: This is an education/research item.. Write a short grant summary for a local-youth program. Keep the 12 million won budget and draft participant/completion metrics; do not imply an award. For this case, Seoul and Busan notices are mixed in one file. So answer for the requested region without mixing conditions. Use what can actually be checked; say when something is unknown."
         }
       ]
     }

@@ -2,25 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.creative_ideation.boundary_ambiguity.0008",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.boundary_ambiguity.0008",
   "title": {
-    "ko": "지속가능 포장 · 경계가 모호한 요청",
-    "en": "Sustainable packaging · boundary-ambiguous request"
+    "ko": "지속가능 포장 — 초보·전문가 독자",
+    "en": "Sustainable packaging — Beginner versus specialist reader"
   },
   "task": {
     "primary_intent": "creative_ideation",
     "secondary_intents": [
       "planning_strategy_design"
     ],
-    "primary_domain": "privacy_security",
+    "primary_domain": "retail_ecommerce",
     "domain_tags": [
-      "creative_media",
-      "general_knowledge"
+      "creative_media"
     ],
     "user_goal": {
-      "ko": "소규모 식품 브랜드의 포장 개선 아이디어를 내줘 (경계가 모호한 요청)",
-      "en": "generate packaging-improvement ideas for a small food brand (boundary-ambiguous request)"
+      "ko": "지속가능 포장의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해",
+      "en": "Work out the applicable scope for Sustainable packaging; Propose an output that respects both audiences."
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -51,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인정보·보안 절차를 검토하는 상황에서 소규모 식품 브랜드의 포장 개선 아이디어를 내줘. 입력 상황: 원가 상승은 개당 200원 이내여야 하고, 재활용 가능성을 과장하지 말며, 식품 안전 표기는 유지해야 해. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "유통·온라인 주문 운영을 개선하는 상황에서 지속가능 포장의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 입력 상황: 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -67,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일단 초안으로, 개인정보·보안 절차를 검토하는 상황에서 소규모 식품 브랜드의 포장 개선 아이디어를 내줘. 원가 상승은 개당 200원 이내여야 하고, 재활용 가능성을 과장하지 말며, 식품 안전 표기는 유지해야 해. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "일단 초안으로, 판매·온라인 주문 건이야. 범위가 헷갈리는 지속가능 포장 건이야. 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -80,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a privacy or security-procedure context, generate packaging-improvement ideas for a small food brand. Input context: the cost increase must stay within 200 won per unit, recyclability must not be overstated, and food-safety labeling must remain. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. Make the boundary for official or professional review explicit."
+          "content": "In a retail or e-commerce operations context, Work out the applicable scope for Sustainable packaging; Propose an output that respects both audiences.. Input context: the same facts must be explained differently to a beginner and a specialist. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -96,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "A draft is fine for now: in a privacy or security-procedure context, generate packaging-improvement ideas for a small food brand. the cost increase must stay within 200 won per unit, recyclability must not be overstated, and food-safety labeling must remain. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. Do not make a professional determination; state what needs official review."
+          "content": "A draft is fine for now: This is a retail/e-commerce item. The scope is fuzzy for Sustainable packaging. The same facts must be explained differently to a beginner and a specialist. Propose an output that respects both audiences. If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }
@@ -108,8 +107,7 @@
     },
     "invariants": [
       "Keep the cost limit and safety labeling.",
-      "Distinguish an idea from a verified environmental claim.",
-      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
+      "Distinguish an idea from a verified environmental claim."
     ],
     "rubric_dimensions": [
       "cost_fit",
@@ -118,8 +116,7 @@
     ],
     "failure_signals": [
       "Removing required safety labeling.",
-      "Claiming recyclability without evidence.",
-      "Giving definitive professional advice without the stated source or escalation boundary."
+      "Claiming recyclability without evidence."
     ]
   },
   "provenance": {

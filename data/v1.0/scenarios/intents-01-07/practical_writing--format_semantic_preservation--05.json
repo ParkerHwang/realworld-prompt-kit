@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.format_semantic_preservation.0005",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.format_semantic_preservation.0005",
   "title": {
-    "ko": "지원금 신청 요약 · 형식 보존 변환",
-    "en": "Grant-application summary · format-preserving transformation"
+    "ko": "지원금 신청 요약 — 스키마 JSON",
+    "en": "Grant-application summary — Schema-constrained JSON"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "office_admin",
+    "primary_domain": "science_rd",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "지원금 신청서의 사업 목적, 대상, 예산, 성과 지표를 짧은 요약으로 작성해줘 (형식 보존 변환)",
-      "en": "write a concise grant-application summary covering purpose, audience, budget, and outcomes (format-preserving transformation)"
+      "ko": "지원금 신청 요약 자료를 지정 형식으로 바꿔줘. JSON 외 말은 내지 말고 값의 출처를 보존해",
+      "en": "Convert the Grant-application summary material to the requested format; return only json and preserve value provenance."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 지원금 신청서의 사업 목적, 대상, 예산, 성과 지표를 짧은 요약으로 작성해줘. 입력 상황: 대상은 지역 청년이고 예산은 1천2백만 원이며 성과 지표 초안은 참여자 수와 완료율이야. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "과학·R&D 실험 자료와 연구 기록을 다루는 상황에서 지원금 신청 요약 자료를 지정 형식으로 바꿔줘. JSON 외 말은 내지 말고 값의 출처를 보존해. 입력 상황: 출력 스키마는 네 필드만 허용하고 빠진 값은 null이야. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황 관련 건이야. 대상은 지역 청년이고 예산은 1천2백만 원이며 성과 지표 초안은 참여자 수와 완료율이야."
+          "content": "실험·연구 기록이야. 모양을 바꿔야 하는 지원금 신청 요약 건이야. 출력 스키마는 네 필드만 허용하고 빠진 값은 null이야. JSON 외 말은 내지 말고 값의 출처를 보존해."
         },
         {
           "role": "user",
-          "content": "지원금 신청서의 사업 목적, 대상, 예산, 성과 지표를 짧은 요약으로 작성해줘."
-        },
-        {
-          "role": "user",
-          "content": "지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "모양은 바꿔도 숫자·날짜·조건은 건드리지 마."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, write a concise grant-application summary covering purpose, audience, budget, and outcomes. Input context: the audience is local young adults, the budget is 12 million won, and draft metrics are participant count and completion rate. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "In a science or R&D experiment-and-records context, Convert the Grant-application summary material to the requested format; return only json and preserve value provenance.. Input context: the output schema allows four fields only and absent values must be null. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about an internal office-administration and document-operations context: the audience is local young adults, the budget is 12 million won, and draft metrics are participant count and completion rate."
+          "content": "This is a science/R&D item. The format needs changing for Grant-application summary. The output schema allows four fields only and absent values must be null. Return only json and preserve value provenance."
         },
         {
           "role": "user",
-          "content": "write a concise grant-application summary covering purpose, audience, budget, and outcomes."
-        },
-        {
-          "role": "user",
-          "content": "Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "Change the shape, not the numbers, dates, or conditions."
         }
       ]
     }

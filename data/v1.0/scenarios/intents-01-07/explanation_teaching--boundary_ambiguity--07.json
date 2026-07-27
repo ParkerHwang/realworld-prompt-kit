@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.explanation_teaching.boundary_ambiguity.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.boundary_ambiguity.0007",
   "title": {
-    "ko": "가전 안전 안내 · 경계가 모호한 요청",
-    "en": "Appliance-safety explanation · boundary-ambiguous request"
+    "ko": "가전 안전 안내 — 현재·보관 문서",
+    "en": "Appliance-safety explanation — Current versus archived"
   },
   "task": {
     "primary_intent": "explanation_teaching",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "office_admin",
+    "primary_domain": "personal_everyday",
     "domain_tags": [
       "education_research"
     ],
     "user_goal": {
-      "ko": "가전제품 안전 안내를 사용자가 해야 할 일과 하지 말아야 할 일로 설명해줘 (경계가 모호한 요청)",
-      "en": "explain the appliance-safety notice as do and do-not actions for users (boundary-ambiguous request)"
+      "ko": "가전 안전 안내의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해",
+      "en": "Work out the applicable scope for Appliance-safety explanation; State the rule for choosing the current document."
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 가전제품 안전 안내를 사용자가 해야 할 일과 하지 말아야 할 일로 설명해줘. 입력 상황: 안내에는 물기 있는 손 금지, 이상 소음 시 전원 차단, 내부 수리는 서비스센터 문의가 적혀 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "개인 일정과 생활 결정을 정리하는 상황에서 가전 안전 안내의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해. 입력 상황: 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황 관련 건이야. 안내에는 물기 있는 손 금지, 이상 소음 시 전원 차단, 내부 수리는 서비스센터 문의가 적혀 있어."
+          "content": "내 일정·생활 건이야. 범위가 헷갈리는 가전 안전 안내 건이야. 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 현재 문서를 고르는 기준을 한 문장으로 정리해."
         },
         {
           "role": "user",
-          "content": "가전제품 안전 안내를 사용자가 해야 할 일과 하지 말아야 할 일로 설명해줘."
-        },
-        {
-          "role": "user",
-          "content": "비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, explain the appliance-safety notice as do and do-not actions for users. Input context: the notice says not to use wet hands, to disconnect power after unusual noise, and to contact service for internal repair. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In a personal scheduling and everyday-life context, Work out the applicable scope for Appliance-safety explanation; State the rule for choosing the current document.. Input context: search results show a current document alongside an archived one. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about an internal office-administration and document-operations context: the notice says not to use wet hands, to disconnect power after unusual noise, and to contact service for internal repair."
+          "content": "This is a personal-life item. The scope is fuzzy for Appliance-safety explanation. Search results show a current document alongside an archived one. State the rule for choosing the current document."
         },
         {
           "role": "user",
-          "content": "explain the appliance-safety notice as do and do-not actions for users."
-        },
-        {
-          "role": "user",
-          "content": "Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "If the boundary is fuzzy, ask one question before deciding."
         }
       ]
     }

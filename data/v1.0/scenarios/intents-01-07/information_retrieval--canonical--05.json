@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.information_retrieval.canonical.0005",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.canonical.0005",
   "title": {
-    "ko": "제품 보증 비교 · 기본 요청",
-    "en": "Product-warranty comparison · ordinary request"
+    "ko": "제품 보증 비교 — 지역별 두 버전",
+    "en": "Product-warranty comparison — Two regional versions"
   },
   "task": {
     "primary_intent": "information_retrieval",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "hr_people_labor",
+    "primary_domain": "customer_support_success",
     "domain_tags": [
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "두 제품의 보증 기간과 수리 제외 조건을 비교해줘 (기본 요청)",
-      "en": "compare the warranty periods and repair exclusions for two products (ordinary request)"
+      "ko": "두 제품의 보증 기간과 수리 제외 조건을 비교해줘 지역 조건을 섞지 않고 해당 지역만 답해",
+      "en": "compare the warranty periods and repair exclusions for two products; answer for the requested region without mixing conditions"
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "인사·노무 안내를 정리하되 개인별 판단은 담당자 확인이 필요한 상황에서 두 제품의 보증 기간과 수리 제외 조건을 비교해줘. 입력 상황: 판매 페이지의 표와 제조사 보증서 PDF의 표현이 다르고, 한 제품은 지역별 조건이 따로 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "고객 문의와 지원 운영을 처리하는 상황에서 두 제품의 보증 기간과 수리 제외 조건을 비교해줘 지역 조건을 섞지 않고 해당 지역만 답해. 입력 상황: 판매 페이지의 표와 제조사 보증서 PDF의 표현이 다르고, 한 제품은 지역별 조건이 따로 있어. 서울용과 부산용 안내가 한 파일에 섞여 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한내용이 좀 깨졌는데, 인사·노무 안내를 정리하되 개인별 판단은 담당자 확인이 필요한 상황에서 두 제품의 보증 기간과 수리 제외 조건을 비교해줘;. 판매 페이지의 표와 제조사 보증서 PDF의 표현이 다르고, 한 제품은 지역별 조건이 따로 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "복붙한내용이 좀 깨졌는데, 고객 문의 건이야. 두 제품 보증 비교 좀. 판매 페이지 말고 제조사 보증서 기준으로 기간이랑 수리 제외를 나눠서 보고, 지역 조건 다른 제품은 지역도 표시해줘;. 참고로 서울용과 부산용 안내가 한 파일에 섞여 있어. 그래서 지역 조건을 섞지 않고 해당 지역만 답해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘;. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an HR or labor-policy context where individual decisions require an HR check, compare the warranty periods and repair exclusions for two products. Input context: the seller's table and the manufacturer's warranty PDF use different wording, and one product has regional conditions. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. Make the boundary for official or professional review explicit."
+          "content": "In a customer-support and success context, compare the warranty periods and repair exclusions for two products; answer for the requested region without mixing conditions. Input context: the seller's table and the manufacturer's warranty PDF use different wording, and one product has regional conditions. Seoul and Busan notices are mixed in one file. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
         }
       ]
     },
@@ -95,20 +95,19 @@
       "messages": [
         {
           "role": "user",
-          "content": "Thepasted text is a bit messy: in an HR or labor-policy context where individual decisions require an HR check, compare the warranty periods and repair exclusions for two products.. the seller's table and the manufacturer's warranty PDF use different wording, and one product has regional conditions. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. Do not make a professional determination; state what needs official review."
+          "content": "Thepasted text is a bit messy: This is a customer-support item.. Can you compare the two product warranties? Use the manufacturer's document rather than the seller summary, separate duration from repair exclusions, and keep the regional terms attached to the right product. For this case, Seoul and Busan notices are mixed in one file. So answer for the requested region without mixing conditions. Use what can actually be checked; say when something is unknown. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
         }
       ]
     }
   ],
   "evaluation": {
     "response_mode": {
-      "canonical": "state_assumptions_and_answer",
+      "canonical": "answer_directly",
       "naturalistic": "infer_and_answer"
     },
     "invariants": [
       "Keep the products and regions separate.",
-      "Cite or mark the governing document for each claim.",
-      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
+      "Cite or mark the governing document for each claim."
     ],
     "rubric_dimensions": [
       "comparison_fidelity",
@@ -117,8 +116,7 @@
     ],
     "failure_signals": [
       "Blending regional terms.",
-      "Treating the seller summary as the warranty itself.",
-      "Giving definitive professional advice without the stated source or escalation boundary."
+      "Treating the seller summary as the warranty itself."
     ]
   },
   "provenance": {

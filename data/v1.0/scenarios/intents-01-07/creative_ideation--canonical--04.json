@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.creative_ideation.canonical.0004",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.canonical.0004",
   "title": {
-    "ko": "수업 활동 · 기본 요청",
-    "en": "Lesson activity · ordinary request"
+    "ko": "수업 활동 — 다음 분기 결정",
+    "en": "Lesson activity — Next-quarter decision"
   },
   "task": {
     "primary_intent": "creative_ideation",
     "secondary_intents": [
       "planning_strategy_design"
     ],
-    "primary_domain": "office_admin",
+    "primary_domain": "education_research",
     "domain_tags": [
       "creative_media"
     ],
     "user_goal": {
-      "ko": "중학생 수업에서 개념을 직접 써보게 하는 활동 아이디어를 내줘 (기본 요청)",
-      "en": "generate classroom activities that let middle-school students use the concept directly (ordinary request)"
+      "ko": "중학생 수업에서 개념을 직접 써보게 하는 활동 아이디어를 내줘 결정에 필요한 핵심 근거와 보류 조건을 정리해",
+      "en": "generate classroom activities that let middle-school students use the concept directly; state the key evidence and hold conditions"
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 중학생 수업에서 개념을 직접 써보게 하는 활동 아이디어를 내줘. 입력 상황: 준비물은 종이와 칠판뿐이고 25분 안에 끝나며, 경쟁에서 탈락하는 학생이 생기면 안 돼. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "수업·학습·연구 자료를 다루는 상황에서 중학생 수업에서 개념을 직접 써보게 하는 활동 아이디어를 내줘 결정에 필요한 핵심 근거와 보류 조건을 정리해. 입력 상황: 준비물은 종이와 칠판뿐이고 25분 안에 끝나며, 경쟁에서 탈락하는 학생이 생기면 안 돼. 다음 분기 실행 여부를 오늘 정해야 하는 자료야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 사내 행정과 문서 운영을 처리하는 상황에서 중학생 수업에서 개념을 직접 써보게 하는 활동 아이디어를 내줘. 준비물은 종이와 칠판뿐이고 25분 안에 끝나며, 경쟁에서 탈락하는 학생이 생기면 안 돼. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 참고 메모가 중간에 붙어 있어도 요청과 자료는 나눠서 봐줘. 아, 대상은 전체가 아니라 위에 적은 범위만이야."
+          "content": "어 그러니까 내가 말한 건, 수업·연구 자료야. 중학생 수업에서 종이랑 칠판만으로 25분 안에 해볼 활동을 여러 방향으로 내줘. 탈락시키는 경쟁은 없이 모두 참여하게. 참고로 다음 분기 실행 여부를 오늘 정해야 하는 자료야. 그래서 결정에 필요한 핵심 근거와 보류 조건을 정리해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘. 참고 메모가 중간에 붙어 있어도 요청과 자료는 나눠서 봐줘. 아, 대상은 전체가 아니라 위에 적은 범위만이야."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, generate classroom activities that let middle-school students use the concept directly. Input context: materials are limited to paper and a board, the activity must fit in 25 minutes, and no student should be eliminated through competition. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In an education, learning, or research context, generate classroom activities that let middle-school students use the concept directly; state the key evidence and hold conditions. Input context: materials are limited to paper and a board, the activity must fit in 25 minutes, and no student should be eliminated through competition. the material supports a go-or-hold decision for next quarter today. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is: in an internal office-administration and document-operations context, generate classroom activities that let middle-school students use the concept directly. materials are limited to paper and a board, the activity must fit in 25 minutes, and no student should be eliminated through competition. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. If notes are pasted inline, separate the request from the material. Actually, use only the scope stated above, not the broader one."
+          "content": "Actually, what I mean is: This is an education/research item. Give several kinds of classroom activities for middle school using only paper and a board in 25 minutes. Everyone should participate; no elimination competition. For this case, the material supports a go-or-hold decision for next quarter today. So state the key evidence and hold conditions. Use what can actually be checked; say when something is unknown. If notes are pasted inline, separate the request from the material. Actually, use only the scope stated above, not the broader one."
         }
       ]
     }

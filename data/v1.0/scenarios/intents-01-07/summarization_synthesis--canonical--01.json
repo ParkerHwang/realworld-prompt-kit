@@ -2,24 +2,22 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.summarization_synthesis.canonical.0001",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.canonical.0001",
   "title": {
-    "ko": "이메일 스레드 · 기본 요청",
-    "en": "Email thread · ordinary request"
+    "ko": "이메일 스레드 — 이번 주 기준표",
+    "en": "Email thread — This week's baseline"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
     "secondary_intents": [
       "extraction_parsing"
     ],
-    "primary_domain": "general_knowledge",
-    "domain_tags": [
-      "communication_meetings"
-    ],
+    "primary_domain": "communication_meetings",
+    "domain_tags": [],
     "user_goal": {
-      "ko": "긴 이메일 스레드를 결정, 할 일, 쟁점 중심으로 요약해줘 (기본 요청)",
-      "en": "summarize the long email thread around decisions, actions, and open issues (ordinary request)"
+      "ko": "긴 이메일 스레드를 결정, 할 일, 쟁점 중심으로 요약해줘 현재 바로 쓸 수 있는 답 한 가지를 정리해",
+      "en": "summarize the long email thread around decisions, actions, and open issues; give one answer that can be used now"
     },
     "expected_artifact": "A concise synthesis that preserves decisions, evidence, and open questions."
   },
@@ -50,7 +48,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지역 생활 정보와 공공 안내를 확인하는 상황에서 긴 이메일 스레드를 결정, 할 일, 쟁점 중심으로 요약해줘. 입력 상황: 초반 합의가 후반 메일에서 수정됐고 마지막 메일에는 회신이 필요한 질문이 남아 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 긴 이메일 스레드를 결정, 할 일, 쟁점 중심으로 요약해줘 현재 바로 쓸 수 있는 답 한 가지를 정리해. 입력 상황: 초반 합의가 후반 메일에서 수정됐고 마지막 메일에는 회신이 필요한 질문이 남아 있어. 이번 건은 이번 주 월요일에 배포된 한 장짜리 공지를 기준으로 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,7 +64,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 지역 생활 정보와 공공 안내를 확인하는 상황에서 긴 이메일 스레드를 결정, 할 일, 쟁점 중심으로 요약해줘. 초반 합의가 후반 메일에서 수정됐고 마지막 메일에는 회신이 필요한 질문이 남아 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "이거 핵심만 좀 봐줘, 팀 회의/커뮤니케이션 건이야. 긴 메일 스레드에서 최신 결정, 할 일, 아직 답 안 난 질문만 추려줘. 초반 합의가 뒤에서 바뀌었으니 마지막 입장을 기준으로 봐. 참고로 이번 건은 이번 주 월요일에 배포된 한 장짜리 공지를 기준으로 해. 그래서 현재 바로 쓸 수 있는 답 한 가지를 정리해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -79,7 +77,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a local-life information and public-notice context, summarize the long email thread around decisions, actions, and open issues. Input context: an early agreement was revised later in the thread, and the last message leaves questions that need a reply. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a team-meeting and work-communication context, summarize the long email thread around decisions, actions, and open issues; give one answer that can be used now. Input context: an early agreement was revised later in the thread, and the last message leaves questions that need a reply. this case uses a one-page notice issued on Monday this week. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -95,7 +93,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: in a local-life information and public-notice context, summarize the long email thread around decisions, actions, and open issues. an early agreement was revised later in the thread, and the last message leaves questions that need a reply. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Can you take a quick look at this: This is a team-communication item. From the long email thread, keep the latest decision, actions, and unanswered questions. The early agreement changed later, so follow the final position. For this case, this case uses a one-page notice issued on Monday this week. So give one answer that can be used now. Use what can actually be checked; say when something is unknown."
         }
       ]
     }

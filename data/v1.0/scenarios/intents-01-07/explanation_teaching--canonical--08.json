@@ -2,25 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.explanation_teaching.canonical.0008",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.canonical.0008",
   "title": {
-    "ko": "고객 지표 설명 · 기본 요청",
-    "en": "Customer metric · ordinary request"
+    "ko": "고객 지표 설명 — 외부 공유 전",
+    "en": "Customer metric — Before external sharing"
   },
   "task": {
     "primary_intent": "explanation_teaching",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "privacy_security",
+    "primary_domain": "strategy_business_operations",
     "domain_tags": [
-      "education_research",
-      "general_knowledge"
+      "education_research"
     ],
     "user_goal": {
-      "ko": "고객 유지율 지표가 무엇을 의미하는지 계산식과 한계까지 설명해줘 (기본 요청)",
-      "en": "explain what a customer-retention metric means, including its formula and limitations (ordinary request)"
+      "ko": "고객 유지율 지표가 무엇을 의미하는지 계산식과 한계까지 설명해줘 공유 가능한 형식으로 근거를 함께 제시해",
+      "en": "explain what a customer-retention metric means, including its formula and limitations; make the evidence visible in a shareable format"
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -51,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인정보·보안 절차를 검토하는 상황에서 고객 유지율 지표가 무엇을 의미하는지 계산식과 한계까지 설명해줘. 입력 상황: 분모는 월초 활성 고객이고, 중간에 새로 가입한 고객은 이번 계산에서 제외하기로 했어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 고객 유지율 지표가 무엇을 의미하는지 계산식과 한계까지 설명해줘 공유 가능한 형식으로 근거를 함께 제시해. 입력 상황: 분모는 월초 활성 고객이고, 중간에 새로 가입한 고객은 이번 계산에서 제외하기로 했어. 외부 공유 직전이라 원문 근거와 제한을 짧게 붙여야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -67,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인정보·보안 절차를 검토하는 상황 관련 건이야. 분모는 월초 활성 고객이고, 중간에 새로 가입한 고객은 이번 계산에서 제외하기로 했어."
+          "content": "사업 운영 자료야. 고객 유지율 계산을 설명해줘. 월초 활성 고객이 분모고 중간 신규 가입자는 빼는 방식이야. 만족도랑 같은 지표는 아니라고도 해줘. 참고로 외부 공유 직전이라 원문 근거와 제한을 짧게 붙여야 해. 그래서 공유 가능한 형식으로 근거를 함께 제시해."
         },
         {
           "role": "user",
-          "content": "고객 유지율 지표가 무엇을 의미하는지 계산식과 한계까지 설명해줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -88,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a privacy or security-procedure context, explain what a customer-retention metric means, including its formula and limitations. Input context: the denominator is active customers at the start of the month, and mid-month signups are excluded from this calculation. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. Make the boundary for official or professional review explicit."
+          "content": "In a business-operations context where options and execution conditions matter, explain what a customer-retention metric means, including its formula and limitations; make the evidence visible in a shareable format. Input context: the denominator is active customers at the start of the month, and mid-month signups are excluded from this calculation. the result is going outside the team and needs a short source note and limitation. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -104,28 +99,23 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a privacy or security-procedure context: the denominator is active customers at the start of the month, and mid-month signups are excluded from this calculation."
+          "content": "This is a business-operations item. Explain the retention calculation: starting active customers are the denominator and mid-month signups are excluded. Also say that retention is not customer satisfaction. For this case, the result is going outside the team and needs a short source note and limitation. So make the evidence visible in a shareable format."
         },
         {
           "role": "user",
-          "content": "explain what a customer-retention metric means, including its formula and limitations."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input. Do not make a professional determination; state what needs official review."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }
   ],
   "evaluation": {
     "response_mode": {
-      "canonical": "state_assumptions_and_answer",
+      "canonical": "answer_directly",
       "naturalistic": "infer_and_answer"
     },
     "invariants": [
       "Use the stated denominator and exclusion.",
-      "Explain that the metric is not the same as customer satisfaction.",
-      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
+      "Explain that the metric is not the same as customer satisfaction."
     ],
     "rubric_dimensions": [
       "formula_accuracy",
@@ -134,8 +124,7 @@
     ],
     "failure_signals": [
       "Including mid-month signups.",
-      "Equating retention with satisfaction.",
-      "Giving definitive professional advice without the stated source or escalation boundary."
+      "Equating retention with satisfaction."
     ]
   },
   "provenance": {

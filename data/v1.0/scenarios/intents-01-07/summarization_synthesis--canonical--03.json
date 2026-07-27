@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.summarization_synthesis.canonical.0003",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.canonical.0003",
   "title": {
-    "ko": "정책 개정 공지 · 기본 요청",
-    "en": "Policy revision notice · ordinary request"
+    "ko": "정책 개정 공지 — 월말 운영자료",
+    "en": "Policy revision notice — Month-end operations set"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
     "secondary_intents": [
       "extraction_parsing"
     ],
-    "primary_domain": "project_product_management",
+    "primary_domain": "office_admin",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "정책 개정 문서를 핵심 변경, 적용일, 영향을 받는 사람으로 요약해줘 (기본 요청)",
-      "en": "summarize the policy revision by key changes, effective date, and affected people (ordinary request)"
+      "ko": "정책 개정 문서를 핵심 변경, 적용일, 영향을 받는 사람으로 요약해줘 두 표의 공통값과 주의점을 구분해",
+      "en": "summarize the policy revision by key changes, effective date, and affected people; separate common values from cautions"
     },
     "expected_artifact": "A concise synthesis that preserves decisions, evidence, and open questions."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 정책 개정 문서를 핵심 변경, 적용일, 영향을 받는 사람으로 요약해줘. 입력 상황: 초안에는 7월 1일, 최종본에는 7월 15일이 적혀 있고 적용 대상에 계약직 포함 여부가 불분명해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "사내 행정과 문서 운영을 처리하는 상황에서 정책 개정 문서를 핵심 변경, 적용일, 영향을 받는 사람으로 요약해줘 두 표의 공통값과 주의점을 구분해. 입력 상황: 초안에는 7월 1일, 최종본에는 7월 15일이 적혀 있고 적용 대상에 계약직 포함 여부가 불분명해. 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황 관련 건이야. 초안에는 7월 1일, 최종본에는 7월 15일이 적혀 있고 적용 대상에 계약직 포함 여부가 불분명해."
+          "content": "회사 행정 쪽이야. 정책 개정에서 최종 변경사항이랑 적용일, 누가 영향받는지만 요약해줘. 초안 7/1, 최종 7/15이고 계약직 포함은 애매하니 그건 질문으로 남겨. 참고로 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 그래서 두 표의 공통값과 주의점을 구분해."
         },
         {
           "role": "user",
-          "content": "정책 개정 문서를 핵심 변경, 적용일, 영향을 받는 사람으로 요약해줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a product or project schedule-and-requirements context, summarize the policy revision by key changes, effective date, and affected people. Input context: the draft says July 1, the final says July 15, and inclusion of contractors is unclear. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In an internal office-administration and document-operations context, summarize the policy revision by key changes, effective date, and affected people; separate common values from cautions. Input context: the draft says July 1, the final says July 15, and inclusion of contractors is unclear. two teams supplied updated tables before month-end close. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a product or project schedule-and-requirements context: the draft says July 1, the final says July 15, and inclusion of contractors is unclear."
+          "content": "This is an office-admin item. Summarize the final policy changes, effective date, and affected people. The draft says July 1 and the final says July 15; contractor coverage is unclear, so leave it as an implementation question. For this case, two teams supplied updated tables before month-end close. So separate common values from cautions."
         },
         {
           "role": "user",
-          "content": "summarize the policy revision by key changes, effective date, and affected people."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }

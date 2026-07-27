@@ -2,25 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.verification_uncertainty.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.verification_uncertainty.0007",
   "title": {
-    "ko": "운영 장애 공지 · 검증·불확실성",
-    "en": "Operations-incident notice · verification and uncertainty"
+    "ko": "운영 장애 공지 — 출처 연결",
+    "en": "Operations-incident notice — Source chain"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "finance_accounting_tax",
+    "primary_domain": "software_it",
     "domain_tags": [
-      "communication_meetings",
-      "general_knowledge"
+      "communication_meetings"
     ],
     "user_goal": {
-      "ko": "내부 장애 공지를 영향, 현재 조치, 다음 업데이트 시각이 분명하게 보이도록 써줘 (검증·불확실성)",
-      "en": "write an internal incident notice with impact, current action, and next update time (verification and uncertainty)"
+      "ko": "운영 장애 공지 자료의 근거와 미확인 부분을 나눠줘. 주장을 원문까지 추적할 수 있게 해",
+      "en": "Separate evidence and unknowns in the Operations-incident notice material; make claims traceable to the originals."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -51,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "재무·세무 자료를 정리하되 전문 확인 경계를 지켜야 하는 상황에서 내부 장애 공지를 영향, 현재 조치, 다음 업데이트 시각이 분명하게 보이도록 써줘. 입력 상황: 문제는 일부 사용자 로그인이고 원인은 확인 전이며 다음 업데이트는 16시로 예정돼 있어. 검증된 사실, 가정, 불확실성, 다음 확인 단계를 분리해서 제시해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "내부 소프트웨어·IT 운영 자료를 확인하는 상황에서 운영 장애 공지 자료의 근거와 미확인 부분을 나눠줘. 주장을 원문까지 추적할 수 있게 해. 입력 상황: 요약이 원문 두 개와 인용문 하나를 거쳐 만들어졌어. 검증된 사실, 가정, 불확실성, 다음 확인 단계를 분리해서 제시해."
         }
       ]
     },
@@ -67,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "재무·세무 자료를 정리하되 전문 확인 경계를 지켜야 하는 상황 관련 건이야. 문제는 일부 사용자 로그인이고 원인은 확인 전이며 다음 업데이트는 16시로 예정돼 있어."
+          "content": "내부 IT 쪽이야. 근거를 다시 봐야 하는 운영 장애 공지 건이야. 요약이 원문 두 개와 인용문 하나를 거쳐 만들어졌어. 주장을 원문까지 추적할 수 있게 해."
         },
         {
           "role": "user",
-          "content": "내부 장애 공지를 영향, 현재 조치, 다음 업데이트 시각이 분명하게 보이도록 써줘."
-        },
-        {
-          "role": "user",
-          "content": "검증된 사실, 가정, 불확실성, 다음 확인 단계를 분리해서 제시해. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "확정·추정·아직 모르는 것·다음 체크를 따로 적어줘."
         }
       ]
     },
@@ -88,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a finance or tax context where assumptions and professional review must be explicit, write an internal incident notice with impact, current action, and next update time. Input context: the issue affects login for some users, the cause is unconfirmed, and the next update is scheduled for 16:00. Separate verified facts, assumptions, uncertainty, and the next verification step. Make the boundary for official or professional review explicit."
+          "content": "In an internal software or IT operations context, Separate evidence and unknowns in the Operations-incident notice material; make claims traceable to the originals.. Input context: the summary passes through two originals and one quotation. Separate verified facts, assumptions, uncertainty, and the next verification step."
         }
       ]
     },
@@ -104,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a finance or tax context where assumptions and professional review must be explicit: the issue affects login for some users, the cause is unconfirmed, and the next update is scheduled for 16:00."
+          "content": "This is an internal IT item. The evidence needs checking for Operations-incident notice. The summary passes through two originals and one quotation. Make claims traceable to the originals."
         },
         {
           "role": "user",
-          "content": "write an internal incident notice with impact, current action, and next update time."
-        },
-        {
-          "role": "user",
-          "content": "Separate verified facts, assumptions, uncertainty, and the next verification step. Do not make a professional determination; state what needs official review."
+          "content": "Keep confirmed, guessed, unknown, and next-check items separate."
         }
       ]
     }
@@ -124,8 +115,7 @@
     },
     "invariants": [
       "State the unconfirmed cause as unconfirmed.",
-      "Keep the 16:00 next-update time.",
-      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
+      "Keep the 16:00 next-update time."
     ],
     "rubric_dimensions": [
       "impact_clarity",
@@ -134,8 +124,7 @@
     ],
     "failure_signals": [
       "Naming an unconfirmed root cause.",
-      "Omitting the next update time.",
-      "Giving definitive professional advice without the stated source or escalation boundary."
+      "Omitting the next update time."
     ]
   },
   "provenance": {

@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.information_retrieval.freshness_source_conflict.0002",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.freshness_source_conflict.0002",
   "title": {
-    "ko": "경비 규정 버전 · 최신성·출처 충돌",
-    "en": "Expense-policy version · freshness and source conflict"
+    "ko": "경비 규정 버전 — 초안·승인 시각",
+    "en": "Expense-policy version — Draft versus approval time"
   },
   "task": {
     "primary_intent": "information_retrieval",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "sales_marketing",
+    "primary_domain": "office_admin",
     "domain_tags": [
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "최신 경비 규정에서 식비 한도와 예외를 찾아줘 (최신성·출처 충돌)",
-      "en": "find the meal limit and exceptions in the latest expense policy (freshness and source conflict)"
+      "ko": "경비 규정 버전에 관한 현재 근거를 대조해줘. 승인 시각과 적용 값을 함께 확인해",
+      "en": "Reconcile the current evidence for Expense-policy version; verify the approval time alongside the operative value."
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "영업·마케팅 캠페인 자료를 준비하는 상황에서 최신 경비 규정에서 식비 한도와 예외를 찾아줘. 입력 상황: 2026년 2분기 초안과 승인본이 함께 있고 승인본만 적용된다는 메모가 있어. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨."
+          "content": "사내 행정과 문서 운영을 처리하는 상황에서 경비 규정 버전에 관한 현재 근거를 대조해줘. 승인 시각과 적용 값을 함께 확인해. 입력 상황: 초안은 오전에, 승인본은 오후에 올라왔고 두 파일의 숫자가 달라. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "영업·마케팅 캠페인 자료를 준비하는 상황 관련 건이야. 2026년 2분기 초안과 승인본이 함께 있고 승인본만 적용된다는 메모가 있어."
+          "content": "회사 행정 쪽이야. 자료가 엇갈린 경비 규정 버전 건이야. 초안은 오전에, 승인본은 오후에 올라왔고 두 파일의 숫자가 달라. 승인 시각과 적용 값을 함께 확인해."
         },
         {
           "role": "user",
-          "content": "최신 경비 규정에서 식비 한도와 예외를 찾아줘."
-        },
-        {
-          "role": "user",
-          "content": "기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘."
+          "content": "새 자료인지, 어느 출처인지 나눠서 보여줘. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a sales or marketing-campaign context, find the meal limit and exceptions in the latest expense policy. Input context: a Q2 2026 draft and an approved copy are both present, with a note that only the approved copy applies. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary."
+          "content": "In an internal office-administration and document-operations context, Reconcile the current evidence for Expense-policy version; verify the approval time alongside the operative value.. Input context: the draft was posted in the morning and the approved copy in the afternoon with different numbers. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a sales or marketing-campaign context: a Q2 2026 draft and an approved copy are both present, with a note that only the approved copy applies."
+          "content": "This is an office-admin item. The sources disagree for Expense-policy version. The draft was posted in the morning and the approved copy in the afternoon with different numbers. Verify the approval time alongside the operative value."
         },
         {
           "role": "user",
-          "content": "find the meal limit and exceptions in the latest expense policy."
-        },
-        {
-          "role": "user",
-          "content": "State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary. If brevity and completeness conflict, call that out."
+          "content": "Show which source and date each answer comes from. If brevity and completeness conflict, call that out. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
         }
       ]
     }

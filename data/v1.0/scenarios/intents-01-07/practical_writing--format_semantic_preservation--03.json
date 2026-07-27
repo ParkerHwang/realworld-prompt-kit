@@ -2,22 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.format_semantic_preservation.0003",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.format_semantic_preservation.0003",
   "title": {
-    "ko": "공급업체 협의 메시지 · 형식 보존 변환",
-    "en": "Vendor negotiation message · format-preserving transformation"
+    "ko": "공급업체 협의 메시지 — 지역화 카피",
+    "en": "Vendor negotiation message — Localized copy"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "communication_meetings",
-    "domain_tags": [],
+    "primary_domain": "strategy_business_operations",
+    "domain_tags": [
+      "communication_meetings"
+    ],
     "user_goal": {
-      "ko": "공급업체에 일정과 가격을 다시 확인하는 협의 메시지를 써줘 (형식 보존 변환)",
-      "en": "write a vendor message asking to reconfirm schedule and pricing (format-preserving transformation)"
+      "ko": "공급업체 협의 메시지 자료를 지정 형식으로 바꿔줘. 지역 표현만 바꾸고 정책 문장은 보존해",
+      "en": "Convert the Vendor negotiation message material to the requested format; change conventions but preserve the policy."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -48,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 공급업체에 일정과 가격을 다시 확인하는 협의 메시지를 써줘. 입력 상황: 원하는 납기는 10월 10일이고 예산 상한은 8천이지만, 대체 납기나 분할 납품도 제안받고 싶어. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 공급업체 협의 메시지 자료를 지정 형식으로 바꿔줘. 지역 표현만 바꾸고 정책 문장은 보존해. 입력 상황: 같은 정책을 두 지역의 결제·날짜 형식으로 내보내야 해. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
         }
       ]
     },
@@ -64,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황 관련 건이야. 원하는 납기는 10월 10일이고 예산 상한은 8천이지만, 대체 납기나 분할 납품도 제안받고 싶어."
+          "content": "사업 운영 자료야. 모양을 바꿔야 하는 공급업체 협의 메시지 건이야. 같은 정책을 두 지역의 결제·날짜 형식으로 내보내야 해. 지역 표현만 바꾸고 정책 문장은 보존해."
         },
         {
           "role": "user",
-          "content": "공급업체에 일정과 가격을 다시 확인하는 협의 메시지를 써줘."
-        },
-        {
-          "role": "user",
-          "content": "지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "모양은 바꿔도 숫자·날짜·조건은 건드리지 마."
         }
       ]
     },
@@ -85,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, write a vendor message asking to reconfirm schedule and pricing. Input context: the desired delivery date is October 10 and the budget cap is 8,000, but alternative dates or split delivery are welcome. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "In a business-operations context where options and execution conditions matter, Convert the Vendor negotiation message material to the requested format; change conventions but preserve the policy.. Input context: the same policy must be rendered in two regional currency and date conventions. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
         }
       ]
     },
@@ -101,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a team-meeting and work-communication context: the desired delivery date is October 10 and the budget cap is 8,000, but alternative dates or split delivery are welcome."
+          "content": "This is a business-operations item. The format needs changing for Vendor negotiation message. The same policy must be rendered in two regional currency and date conventions. Change conventions but preserve the policy."
         },
         {
           "role": "user",
-          "content": "write a vendor message asking to reconfirm schedule and pricing."
-        },
-        {
-          "role": "user",
-          "content": "Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "Change the shape, not the numbers, dates, or conditions."
         }
       ]
     }

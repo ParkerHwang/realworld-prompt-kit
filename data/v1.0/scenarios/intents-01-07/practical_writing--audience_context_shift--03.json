@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.audience_context_shift.0003",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.audience_context_shift.0003",
   "title": {
-    "ko": "공급업체 협의 메시지 · 독자·맥락 전환",
-    "en": "Vendor negotiation message · audience and context shift"
+    "ko": "공급업체 협의 메시지 — 신입 온보딩",
+    "en": "Vendor negotiation message — New-hire onboarding"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "personal_everyday",
+    "primary_domain": "strategy_business_operations",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "공급업체에 일정과 가격을 다시 확인하는 협의 메시지를 써줘 (독자·맥락 전환)",
-      "en": "write a vendor message asking to reconfirm schedule and pricing (audience and context shift)"
+      "ko": "공급업체 협의 메시지 내용을 지정 독자에게 맞춰 다시 써줘. 단계와 예외를 쉽게 보여줘",
+      "en": "Adapt the Vendor negotiation message material for the specified reader; make steps and exceptions easy to follow."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 공급업체에 일정과 가격을 다시 확인하는 협의 메시지를 써줘. 입력 상황: 원하는 납기는 10월 10일이고 예산 상한은 8천이지만, 대체 납기나 분할 납품도 제안받고 싶어. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 공급업체 협의 메시지 내용을 지정 독자에게 맞춰 다시 써줘. 단계와 예외를 쉽게 보여줘. 입력 상황: 전문 용어가 많은 절차를 첫 주 신입에게 설명해야 해. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황 관련 건이야. 원하는 납기는 10월 10일이고 예산 상한은 8천이지만, 대체 납기나 분할 납품도 제안받고 싶어."
+          "content": "사업 운영 자료야. 읽는 사람이 달라진 공급업체 협의 메시지 건이야. 전문 용어가 많은 절차를 첫 주 신입에게 설명해야 해. 단계와 예외를 쉽게 보여줘."
         },
         {
           "role": "user",
-          "content": "공급업체에 일정과 가격을 다시 확인하는 협의 메시지를 써줘."
-        },
-        {
-          "role": "user",
-          "content": "지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, write a vendor message asking to reconfirm schedule and pricing. Input context: the desired delivery date is October 10 and the budget cap is 8,000, but alternative dates or split delivery are welcome. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "In a business-operations context where options and execution conditions matter, Adapt the Vendor negotiation message material for the specified reader; make steps and exceptions easy to follow.. Input context: a jargon-heavy procedure must be explained to a new hire in week one. Adapt tone and explanation level to the specified audience and context without changing the core facts."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a personal scheduling and everyday-life context: the desired delivery date is October 10 and the budget cap is 8,000, but alternative dates or split delivery are welcome."
+          "content": "This is a business-operations item. The reader has changed for Vendor negotiation message. A jargon-heavy procedure must be explained to a new hire in week one. Make steps and exceptions easy to follow."
         },
         {
           "role": "user",
-          "content": "write a vendor message asking to reconfirm schedule and pricing."
-        },
-        {
-          "role": "user",
-          "content": "Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "Make it fit the reader without changing the substance."
         }
       ]
     }

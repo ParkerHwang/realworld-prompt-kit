@@ -2,25 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.summarization_synthesis.canonical.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.canonical.0007",
   "title": {
-    "ko": "가족 일정 · 기본 요청",
-    "en": "Family schedule · ordinary request"
+    "ko": "가족 일정 — 소수 기록 묶음",
+    "en": "Family schedule — Small record set"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
     "secondary_intents": [
       "extraction_parsing"
     ],
-    "primary_domain": "legal_compliance",
+    "primary_domain": "personal_everyday",
     "domain_tags": [
-      "communication_meetings",
-      "general_knowledge"
+      "communication_meetings"
     ],
     "user_goal": {
-      "ko": "여러 가족 메시지를 이번 주 일정과 미정 사항으로 요약해줘 (기본 요청)",
-      "en": "summarize the family messages into this week's schedule and undecided items (ordinary request)"
+      "ko": "여러 가족 메시지를 이번 주 일정과 미정 사항으로 요약해줘 작은 표본에서 확인되는 내용만 말해",
+      "en": "summarize the family messages into this week's schedule and undecided items; state only what this small set supports"
     },
     "expected_artifact": "A concise synthesis that preserves decisions, evidence, and open questions."
   },
@@ -51,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "계약·컴플라이언스 자료의 적용 범위를 검토하는 상황에서 여러 가족 메시지를 이번 주 일정과 미정 사항으로 요약해줘. 입력 상황: 병원 예약, 학교 행사, 장보기 요청이 시간순이 아니고 한 일정은 날짜가 빠져 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "개인 일정과 생활 결정을 정리하는 상황에서 여러 가족 메시지를 이번 주 일정과 미정 사항으로 요약해줘 작은 표본에서 확인되는 내용만 말해. 입력 상황: 병원 예약, 학교 행사, 장보기 요청이 시간순이 아니고 한 일정은 날짜가 빠져 있어. 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -67,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "계약·컴플라이언스 자료의 적용 범위를 검토하는 상황 관련 건이야. 병원 예약, 학교 행사, 장보기 요청이 시간순이 아니고 한 일정은 날짜가 빠져 있어."
+          "content": "내 일정·생활 건이야. 가족 메시지들을 이번 주 일정과 날짜 미정으로 정리해줘. 병원·학교·장보기 얘기가 섞였고 날짜 없는 일정은 추측하지 말아줘. 참고로 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 그래서 작은 표본에서 확인되는 내용만 말해."
         },
         {
           "role": "user",
-          "content": "여러 가족 메시지를 이번 주 일정과 미정 사항으로 요약해줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -88,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a contract or compliance context where the applicable scope must be verified, summarize the family messages into this week's schedule and undecided items. Input context: medical appointment, school event, and grocery requests are not chronological, and one event lacks a date. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. Make the boundary for official or professional review explicit."
+          "content": "In a personal scheduling and everyday-life context, summarize the family messages into this week's schedule and undecided items; state only what this small set supports. Input context: medical appointment, school event, and grocery requests are not chronological, and one event lacks a date. there are only five records and one has a blank field. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -104,28 +99,23 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a contract or compliance context where the applicable scope must be verified: medical appointment, school event, and grocery requests are not chronological, and one event lacks a date."
+          "content": "This is a personal-life item. Make a this-week schedule from the family messages and a separate list of dates still missing. Medical, school, and grocery messages are mixed, so do not infer the absent date. For this case, there are only five records and one has a blank field. So state only what this small set supports."
         },
         {
           "role": "user",
-          "content": "summarize the family messages into this week's schedule and undecided items."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input. Do not make a professional determination; state what needs official review."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }
   ],
   "evaluation": {
     "response_mode": {
-      "canonical": "state_assumptions_and_answer",
+      "canonical": "answer_directly",
       "naturalistic": "infer_and_answer"
     },
     "invariants": [
       "Preserve the missing date and avoid filling it from context.",
-      "Keep personal details minimal and task-relevant.",
-      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
+      "Keep personal details minimal and task-relevant."
     ],
     "rubric_dimensions": [
       "timeline_reconstruction",
@@ -134,8 +124,7 @@
     ],
     "failure_signals": [
       "Inventing a date.",
-      "Adding unnecessary personal detail.",
-      "Giving definitive professional advice without the stated source or escalation boundary."
+      "Adding unnecessary personal detail."
     ]
   },
   "provenance": {

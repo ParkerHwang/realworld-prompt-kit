@@ -2,11 +2,11 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.information_retrieval.canonical.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.canonical.0007",
   "title": {
-    "ko": "재활용 배출 일정 · 기본 요청",
-    "en": "Recycling schedule · ordinary request"
+    "ko": "재활용 배출 일정 — 소수 기록 묶음",
+    "en": "Recycling schedule — Small record set"
   },
   "task": {
     "primary_intent": "information_retrieval",
@@ -18,8 +18,8 @@
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "우리 동네 재활용 배출 요일을 확인해줘 (기본 요청)",
-      "en": "find the recycling collection day for the neighborhood (ordinary request)"
+      "ko": "우리 동네 재활용 배출 요일을 확인해줘 작은 표본에서 확인되는 내용만 말해",
+      "en": "find the recycling collection day for the neighborhood; state only what this small set supports"
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "농업·식품 운영 기록과 안내를 검토하는 상황에서 우리 동네 재활용 배출 요일을 확인해줘. 입력 상황: 구청 공지와 아파트 안내문이 다르고 이번 달에 임시 휴무일이 하나 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "농업·식품 운영 기록과 안내를 검토하는 상황에서 우리 동네 재활용 배출 요일을 확인해줘 작은 표본에서 확인되는 내용만 말해. 입력 상황: 구청 공지와 아파트 안내문이 다르고 이번 달에 임시 휴무일이 하나 있어. 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "농업·식품 운영 기록과 안내를 검토하는 상황 관련 건이야. 구청 공지와 아파트 안내문이 다르고 이번 달에 임시 휴무일이 하나 있어."
+          "content": "농장·식품 운영 건이야. 재활용은 무슨 요일에 내놓는지 찾아줘. 구청 공지랑 아파트 안내가 다르고 이번 달 임시 휴무도 하나 있으니 둘을 섞지 말고 공식 범위를 설명해줘. 참고로 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 그래서 작은 표본에서 확인되는 내용만 말해."
         },
         {
           "role": "user",
-          "content": "우리 동네 재활용 배출 요일을 확인해줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an agriculture or food-operations context, find the recycling collection day for the neighborhood. Input context: the district notice and building notice disagree, and there is one temporary holiday change this month. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In an agriculture or food-operations context, find the recycling collection day for the neighborhood; state only what this small set supports. Input context: the district notice and building notice disagree, and there is one temporary holiday change this month. there are only five records and one has a blank field. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about an agriculture or food-operations context: the district notice and building notice disagree, and there is one temporary holiday change this month."
+          "content": "This is an agriculture/food item. Which day is recycling collected? The district notice and the building notice differ, and there is one temporary closure this month. Keep the official district schedule separate from the building-specific exception. For this case, there are only five records and one has a blank field. So state only what this small set supports."
         },
         {
           "role": "user",
-          "content": "find the recycling collection day for the neighborhood."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
         }
       ]
     }

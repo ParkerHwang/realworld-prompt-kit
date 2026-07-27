@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.summarization_synthesis.canonical.0002",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.canonical.0002",
   "title": {
-    "ko": "프로젝트 상태 · 기본 요청",
-    "en": "Project status · ordinary request"
+    "ko": "프로젝트 상태 — 승인본과 내부 메모",
+    "en": "Project status — Approved copy and internal note"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
     "secondary_intents": [
       "extraction_parsing"
     ],
-    "primary_domain": "data_analytics",
+    "primary_domain": "project_product_management",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "프로젝트 업데이트를 임원용 한 단락과 실무용 액션 목록으로 요약해줘 (기본 요청)",
-      "en": "summarize the project update as an executive paragraph and a working action list (ordinary request)"
+      "ko": "프로젝트 업데이트를 임원용 한 단락과 실무용 액션 목록으로 요약해줘 승인된 문서만 근거로 삼아",
+      "en": "summarize the project update as an executive paragraph and a working action list; use only the approved document as evidence"
     },
     "expected_artifact": "A concise synthesis that preserves decisions, evidence, and open questions."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지표 표와 분석 메모를 검토하는 상황에서 프로젝트 업데이트를 임원용 한 단락과 실무용 액션 목록으로 요약해줘. 입력 상황: 일정은 유지됐지만 범위가 줄었고, 위험 두 개에는 아직 완화 담당자가 없어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 프로젝트 업데이트를 임원용 한 단락과 실무용 액션 목록으로 요약해줘 승인된 문서만 근거로 삼아. 입력 상황: 일정은 유지됐지만 범위가 줄었고, 위험 두 개에는 아직 완화 담당자가 없어. 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "지표 표와 분석 메모를 검토하는 상황 관련 건이야. 일정은 유지됐지만 범위가 줄었고, 위험 두 개에는 아직 완화 담당자가 없어."
+          "content": "프로젝트·제품 일정 쪽이야. 프로젝트 업데이트를 임원용 한 문단이랑 실무 액션 목록으로 나눠줘. 일정은 지켰지만 범위가 줄었고 위험 두 개는 담당자가 없어. 참고로 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 그래서 승인된 문서만 근거로 삼아."
         },
         {
           "role": "user",
-          "content": "프로젝트 업데이트를 임원용 한 단락과 실무용 액션 목록으로 요약해줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a metrics-table and data-analysis context, summarize the project update as an executive paragraph and a working action list. Input context: the schedule held but scope was reduced, and two risks still have no mitigation owner. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a product or project schedule-and-requirements context, summarize the project update as an executive paragraph and a working action list; use only the approved document as evidence. Input context: the schedule held but scope was reduced, and two risks still have no mitigation owner. an approved PDF arrives with an internal reference note. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a metrics-table and data-analysis context: the schedule held but scope was reduced, and two risks still have no mitigation owner."
+          "content": "This is a project/product item. Turn the project update into one executive paragraph plus a working action list. The schedule held, but scope shrank and two risks still have no owner. For this case, an approved PDF arrives with an internal reference note. So use only the approved document as evidence."
         },
         {
           "role": "user",
-          "content": "summarize the project update as an executive paragraph and a working action list."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }

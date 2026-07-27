@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.canonical.0001",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.canonical.0001",
   "title": {
-    "ko": "회의 후속 메일 · 기본 요청",
-    "en": "Meeting follow-up email · ordinary request"
+    "ko": "회의 후속 메일 — 이번 주 기준표",
+    "en": "Meeting follow-up email — This week's baseline"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "data_analytics",
+    "primary_domain": "project_product_management",
     "domain_tags": [
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "회의 후속 메일을 결정, 할 일, 미결 사항이 분명하게 보이도록 작성해줘 (기본 요청)",
-      "en": "write a meeting follow-up email that clearly separates decisions, actions, and open items (ordinary request)"
+      "ko": "회의 후속 메일을 결정, 할 일, 미결 사항이 분명하게 보이도록 작성해줘 현재 바로 쓸 수 있는 답 한 가지를 정리해",
+      "en": "write a meeting follow-up email that clearly separates decisions, actions, and open items; give one answer that can be used now"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지표 표와 분석 메모를 검토하는 상황에서 회의 후속 메일을 결정, 할 일, 미결 사항이 분명하게 보이도록 작성해줘. 입력 상황: 출시 목표일은 9월 14일이고 디자인·법무·FAQ 담당자의 기한이 있지만 가격은 아직 미정이야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 회의 후속 메일을 결정, 할 일, 미결 사항이 분명하게 보이도록 작성해줘 현재 바로 쓸 수 있는 답 한 가지를 정리해. 입력 상황: 출시 목표일은 9월 14일이고 디자인·법무·FAQ 담당자의 기한이 있지만 가격은 아직 미정이야. 이번 건은 이번 주 월요일에 배포된 한 장짜리 공지를 기준으로 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 지표 표와 분석 메모를 검토하는 상황에서 회의 후속 메일을 결정, 할 일, 미결 사항이 분명하게 보이도록 작성해줘. 출시 목표일은 9월 14일이고 디자인·법무·FAQ 담당자의 기한이 있지만 가격은 아직 미정이야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "이거 핵심만 좀 봐줘, 프로젝트·제품 일정 쪽이야. 출시 회의 follow-up 메일 초안 써줘. 9/14 목표, 디자인·법무·FAQ 일정은 넣고 가격은 아직 안 정해졌다고 분명히 해. 참고로 이번 건은 이번 주 월요일에 배포된 한 장짜리 공지를 기준으로 해. 그래서 현재 바로 쓸 수 있는 답 한 가지를 정리해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a metrics-table and data-analysis context, write a meeting follow-up email that clearly separates decisions, actions, and open items. Input context: the target launch date is September 14, with deadlines for design, legal, and the FAQ, while pricing is unresolved. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a product or project schedule-and-requirements context, write a meeting follow-up email that clearly separates decisions, actions, and open items; give one answer that can be used now. Input context: the target launch date is September 14, with deadlines for design, legal, and the FAQ, while pricing is unresolved. this case uses a one-page notice issued on Monday this week. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: in a metrics-table and data-analysis context, write a meeting follow-up email that clearly separates decisions, actions, and open items. the target launch date is September 14, with deadlines for design, legal, and the FAQ, while pricing is unresolved. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Can you take a quick look at this: This is a project/product item. Draft the launch follow-up email. Keep the September 14 target and the design, legal, and FAQ deadlines, and make it clear that pricing is still open. For this case, this case uses a one-page notice issued on Monday this week. So give one answer that can be used now. Use what can actually be checked; say when something is unknown."
         }
       ]
     }

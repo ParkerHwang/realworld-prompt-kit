@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.explanation_teaching.audience_context_shift.0003",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.audience_context_shift.0003",
   "title": {
-    "ko": "앱 권한 설명 · 독자·맥락 전환",
-    "en": "App permissions · audience and context shift"
+    "ko": "앱 권한 설명 — 신입 온보딩",
+    "en": "App permissions — New-hire onboarding"
   },
   "task": {
     "primary_intent": "explanation_teaching",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "project_product_management",
+    "primary_domain": "customer_support_success",
     "domain_tags": [
       "education_research"
     ],
     "user_goal": {
-      "ko": "앱 권한 안내를 비개발자에게 어떤 데이터에 접근하는지 중심으로 설명해줘 (독자·맥락 전환)",
-      "en": "explain app permissions to a non-developer in terms of what data is accessed (audience and context shift)"
+      "ko": "앱 권한 설명 내용을 지정 독자에게 맞춰 다시 써줘. 단계와 예외를 쉽게 보여줘",
+      "en": "Adapt the App permissions material for the specified reader; make steps and exceptions easy to follow."
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 앱 권한 안내를 비개발자에게 어떤 데이터에 접근하는지 중심으로 설명해줘. 입력 상황: 권한 목록에는 사진, 위치, 알림이 있고 위치는 사용 중일 때만이라고 적혀 있어. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "고객 문의와 지원 운영을 처리하는 상황에서 앱 권한 설명 내용을 지정 독자에게 맞춰 다시 써줘. 단계와 예외를 쉽게 보여줘. 입력 상황: 전문 용어가 많은 절차를 첫 주 신입에게 설명해야 해. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황 관련 건이야. 권한 목록에는 사진, 위치, 알림이 있고 위치는 사용 중일 때만이라고 적혀 있어."
+          "content": "고객 문의 건이야. 읽는 사람이 달라진 앱 권한 설명 건이야. 전문 용어가 많은 절차를 첫 주 신입에게 설명해야 해. 단계와 예외를 쉽게 보여줘."
         },
         {
           "role": "user",
-          "content": "앱 권한 안내를 비개발자에게 어떤 데이터에 접근하는지 중심으로 설명해줘."
-        },
-        {
-          "role": "user",
-          "content": "지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a product or project schedule-and-requirements context, explain app permissions to a non-developer in terms of what data is accessed. Input context: the permission list includes photos, location, and notifications, with location limited to while the app is in use. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "In a customer-support and success context, Adapt the App permissions material for the specified reader; make steps and exceptions easy to follow.. Input context: a jargon-heavy procedure must be explained to a new hire in week one. Adapt tone and explanation level to the specified audience and context without changing the core facts."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a product or project schedule-and-requirements context: the permission list includes photos, location, and notifications, with location limited to while the app is in use."
+          "content": "This is a customer-support item. The reader has changed for App permissions. A jargon-heavy procedure must be explained to a new hire in week one. Make steps and exceptions easy to follow."
         },
         {
           "role": "user",
-          "content": "explain app permissions to a non-developer in terms of what data is accessed."
-        },
-        {
-          "role": "user",
-          "content": "Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "Make it fit the reader without changing the substance."
         }
       ]
     }

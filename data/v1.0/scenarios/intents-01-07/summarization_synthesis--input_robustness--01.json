@@ -2,24 +2,22 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.summarization_synthesis.input_robustness.0001",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.input_robustness.0001",
   "title": {
-    "ko": "이메일 스레드 · 불완전·노이즈 입력",
-    "en": "Email thread · incomplete or noisy input"
+    "ko": "이메일 스레드 — 사진 OCR 입력",
+    "en": "Email thread — Photographed OCR input"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
     "secondary_intents": [
       "extraction_parsing"
     ],
-    "primary_domain": "software_it",
-    "domain_tags": [
-      "communication_meetings"
-    ],
+    "primary_domain": "communication_meetings",
+    "domain_tags": [],
     "user_goal": {
-      "ko": "긴 이메일 스레드를 결정, 할 일, 쟁점 중심으로 요약해줘 (불완전·노이즈 입력)",
-      "en": "summarize the long email thread around decisions, actions, and open issues (incomplete or noisy input)"
+      "ko": "이메일 스레드 작업에 필요한 내용을 깨진 입력에서 복원해줘. 읽히는 값과 확인할 값을 나눠 추출해",
+      "en": "Recover what the Email thread task needs from the damaged input; extract legible values separately from checks needed."
     },
     "expected_artifact": "A concise synthesis that preserves decisions, evidence, and open questions."
   },
@@ -50,7 +48,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "내부 소프트웨어·IT 운영 자료를 확인하는 상황에서 긴 이메일 스레드를 결정, 할 일, 쟁점 중심으로 요약해줘. 입력 상황: 초반 합의가 후반 메일에서 수정됐고 마지막 메일에는 회신이 필요한 질문이 남아 있어. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해."
+          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 이메일 스레드 작업에 필요한 내용을 깨진 입력에서 복원해줘. 읽히는 값과 확인할 값을 나눠 추출해. 입력 상황: 시간표 사진에서 숫자와 줄바꿈이 일부 깨져 있어. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해."
         }
       ]
     },
@@ -66,7 +64,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거핵심만 좀 봐줘, 내부 소프트웨어·IT 운영 자료를 확인하는 상황에서 긴 이메일 스레드를 결정, 할 일, 쟁점 중심으로 요약해줘;. 초반 합의가 후반 메일에서 수정됐고 마지막 메일에는 회신이 필요한 질문이 남아 있어. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해. [복붙: 일부 숫자/줄바꿈 확인 필요]"
+          "content": "이거핵심만 좀 봐줘, 팀 회의/커뮤니케이션 건이야. 입력이 좀 깨진 이메일 스레드 건이야. 시간표 사진에서 숫자와 줄바꿈이 일부 깨져 있어. 읽히는 값과 확인할 값을 나눠 추출해. 깨진 부분은 추측하지 말고 확인 필요로 남겨줘. [복붙: 일부 숫자/줄바꿈 확인 필요]"
         }
       ]
     },
@@ -79,7 +77,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal software or IT operations context, summarize the long email thread around decisions, actions, and open issues. Input context: an early agreement was revised later in the thread, and the last message leaves questions that need a reply. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation."
+          "content": "In a team-meeting and work-communication context, Recover what the Email thread task needs from the damaged input; extract legible values separately from checks needed.. Input context: a photographed table has damaged numbers and line breaks. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation."
         }
       ]
     },
@@ -95,7 +93,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Canyou take a quick look at this: in an internal software or IT operations context, summarize the long email thread around decisions, actions, and open issues.. an early agreement was revised later in the thread, and the last message leaves questions that need a reply. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation. [pasted: some numbers/line breaks need checking]"
+          "content": "Canyou take a quick look at this: This is a team-communication item.. The input is messy for Email thread. A photographed table has damaged numbers and line breaks. Extract legible values separately from checks needed. Do not repair broken bits by guessing; mark what needs checking. [pasted: some numbers/line breaks need checking]"
         }
       ]
     }

@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.creative_ideation.canonical.0001",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.canonical.0001",
   "title": {
-    "ko": "지역 행사 이름 · 기본 요청",
-    "en": "Community-event names · ordinary request"
+    "ko": "지역 행사 이름 — 이번 주 기준표",
+    "en": "Community-event names — This week's baseline"
   },
   "task": {
     "primary_intent": "creative_ideation",
     "secondary_intents": [
       "planning_strategy_design"
     ],
-    "primary_domain": "nonprofit_social_impact",
+    "primary_domain": "general_knowledge",
     "domain_tags": [
       "creative_media"
     ],
     "user_goal": {
-      "ko": "지역 주민 행사의 이름과 짧은 설명 아이디어를 다양하게 내줘 (기본 요청)",
-      "en": "generate diverse names and short descriptions for a community event (ordinary request)"
+      "ko": "지역 주민 행사의 이름과 짧은 설명 아이디어를 다양하게 내줘 현재 바로 쓸 수 있는 답 한 가지를 정리해",
+      "en": "generate diverse names and short descriptions for a community event; give one answer that can be used now"
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "비영리 활동과 사회적 영향 자료를 정리하는 상황에서 지역 주민 행사의 이름과 짧은 설명 아이디어를 다양하게 내줘. 입력 상황: 가족·청년·상인이 함께 참여하고, 과장된 경쟁 표현이나 특정 집단을 배제하는 말은 피해야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "일반 정보와 상식을 확인하는 상황에서 지역 주민 행사의 이름과 짧은 설명 아이디어를 다양하게 내줘 현재 바로 쓸 수 있는 답 한 가지를 정리해. 입력 상황: 가족·청년·상인이 함께 참여하고, 과장된 경쟁 표현이나 특정 집단을 배제하는 말은 피해야 해. 이번 건은 이번 주 월요일에 배포된 한 장짜리 공지를 기준으로 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 비영리 활동과 사회적 영향 자료를 정리하는 상황에서 지역 주민 행사의 이름과 짧은 설명 아이디어를 다양하게 내줘. 가족·청년·상인이 함께 참여하고, 과장된 경쟁 표현이나 특정 집단을 배제하는 말은 피해야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "이거 핵심만 좀 봐줘, 일반 정보 조회 건이야. 가족·청년·동네 상인이 다 같이 들어올 수 있는 행사 이름 아이디어 여러 결로 내줘. 경쟁에서 누굴 밀어내는 말은 빼고 비슷한 이름 반복은 말고. 참고로 이번 건은 이번 주 월요일에 배포된 한 장짜리 공지를 기준으로 해. 그래서 현재 바로 쓸 수 있는 답 한 가지를 정리해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a nonprofit or social-impact operations context, generate diverse names and short descriptions for a community event. Input context: families, young adults, and local merchants should all feel included; avoid exaggerated competition or exclusionary wording. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a general-information and everyday-knowledge context, generate diverse names and short descriptions for a community event; give one answer that can be used now. Input context: families, young adults, and local merchants should all feel included; avoid exaggerated competition or exclusionary wording. this case uses a one-page notice issued on Monday this week. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: in a nonprofit or social-impact operations context, generate diverse names and short descriptions for a community event. families, young adults, and local merchants should all feel included; avoid exaggerated competition or exclusionary wording. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Can you take a quick look at this: This is a general-information lookup. Give varied name ideas for an event that families, young adults, and local merchants can all join. Avoid exclusionary competition language and near-duplicate names. For this case, this case uses a one-page notice issued on Monday this week. So give one answer that can be used now. Use what can actually be checked; say when something is unknown."
         }
       ]
     }

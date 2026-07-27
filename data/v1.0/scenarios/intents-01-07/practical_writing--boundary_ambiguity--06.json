@@ -2,24 +2,25 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.boundary_ambiguity.0006",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.boundary_ambiguity.0006",
   "title": {
-    "ko": "학습 계획 · 경계가 모호한 요청",
-    "en": "Study plan · boundary-ambiguous request"
+    "ko": "학습 계획 — 성인·청소년 대상",
+    "en": "Study plan — Adult versus youth eligibility"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "software_it",
+    "primary_domain": "hr_people_labor",
     "domain_tags": [
-      "communication_meetings"
+      "communication_meetings",
+      "general_knowledge"
     ],
     "user_goal": {
-      "ko": "시험까지 4주 남은 학습 계획을 주차별 목표와 복습 시점이 보이게 작성해줘 (경계가 모호한 요청)",
-      "en": "write a four-week study plan with weekly goals and review points (boundary-ambiguous request)"
+      "ko": "학습 계획의 적용 범위를 가려줘. 어느 조건이 누구에게 해당하는지 비교해",
+      "en": "Work out the applicable scope for Study plan; Compare which condition applies to whom."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +51,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "내부 소프트웨어·IT 운영 자료를 확인하는 상황에서 시험까지 4주 남은 학습 계획을 주차별 목표와 복습 시점이 보이게 작성해줘. 입력 상황: 주당 평일 40분, 주말 90분만 가능하고 마지막 주에는 새 단원을 추가하지 않기로 했어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "인사·노무 안내를 정리하되 개인별 판단은 담당자 확인이 필요한 상황에서 학습 계획의 적용 범위를 가려줘. 어느 조건이 누구에게 해당하는지 비교해. 입력 상황: 성인 조건과 청소년 조건이 다른 안내 두 장으로 나뉘어 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
         }
       ]
     },
@@ -66,15 +67,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "내부 소프트웨어·IT 운영 자료를 확인하는 상황 관련 건이야. 주당 평일 40분, 주말 90분만 가능하고 마지막 주에는 새 단원을 추가하지 않기로 했어."
+          "content": "인사 정책 건이야. 범위가 헷갈리는 학습 계획 건이야. 성인 조건과 청소년 조건이 다른 안내 두 장으로 나뉘어 있어. 어느 조건이 누구에게 해당하는지 비교해."
         },
         {
           "role": "user",
-          "content": "시험까지 4주 남은 학습 계획을 주차별 목표와 복습 시점이 보이게 작성해줘."
-        },
-        {
-          "role": "user",
-          "content": "비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
         }
       ]
     },
@@ -87,7 +84,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal software or IT operations context, write a four-week study plan with weekly goals and review points. Input context: only 40 minutes on weekdays and 90 minutes on weekends are available, and no new unit should be added in the final week. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "In an HR or labor-policy context where individual decisions require an HR check, Work out the applicable scope for Study plan; Compare which condition applies to whom.. Input context: adult and youth conditions are in two different notices. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. Make the boundary for official or professional review explicit."
         }
       ]
     },
@@ -103,15 +100,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about an internal software or IT operations context: only 40 minutes on weekdays and 90 minutes on weekends are available, and no new unit should be added in the final week."
+          "content": "This is an HR/policy item. The scope is fuzzy for Study plan. Adult and youth conditions are in two different notices. Compare which condition applies to whom."
         },
         {
           "role": "user",
-          "content": "write a four-week study plan with weekly goals and review points."
-        },
-        {
-          "role": "user",
-          "content": "Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "If the boundary is fuzzy, ask one question before deciding. Do not make a professional determination; state what needs official review."
         }
       ]
     }
@@ -123,7 +116,8 @@
     },
     "invariants": [
       "Respect the available time and reserve the final week for review.",
-      "Do not promise mastery."
+      "Do not promise mastery.",
+      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
     ],
     "rubric_dimensions": [
       "schedule_feasibility",
@@ -132,7 +126,8 @@
     ],
     "failure_signals": [
       "Overloading the time budget.",
-      "Adding new material in the final week."
+      "Adding new material in the final week.",
+      "Giving definitive professional advice without the stated source or escalation boundary."
     ]
   },
   "provenance": {

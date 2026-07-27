@@ -2,25 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.practical_writing.format_semantic_preservation.0006",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.format_semantic_preservation.0006",
   "title": {
-    "ko": "학습 계획 · 형식 보존 변환",
-    "en": "Study plan · format-preserving transformation"
+    "ko": "학습 계획 — 비법무 설명",
+    "en": "Study plan — Plain-language explanation"
   },
   "task": {
     "primary_intent": "practical_writing",
     "secondary_intents": [
       "communication_collaboration_negotiation"
     ],
-    "primary_domain": "government_public_policy",
+    "primary_domain": "general_knowledge",
     "domain_tags": [
-      "communication_meetings",
-      "general_knowledge"
+      "communication_meetings"
     ],
     "user_goal": {
-      "ko": "시험까지 4주 남은 학습 계획을 주차별 목표와 복습 시점이 보이게 작성해줘 (형식 보존 변환)",
-      "en": "write a four-week study plan with weekly goals and review points (format-preserving transformation)"
+      "ko": "학습 계획 자료를 지정 형식으로 바꿔줘. 읽기 쉽게 하되 법률 결론을 추가하지 마",
+      "en": "Convert the Study plan material to the requested format; make it readable without adding a legal conclusion."
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -51,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "정부·공공기관 공고의 조건과 기준일을 확인하는 상황에서 시험까지 4주 남은 학습 계획을 주차별 목표와 복습 시점이 보이게 작성해줘. 입력 상황: 주당 평일 40분, 주말 90분만 가능하고 마지막 주에는 새 단원을 추가하지 않기로 했어. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "일반 정보와 상식을 확인하는 상황에서 학습 계획 자료를 지정 형식으로 바꿔줘. 읽기 쉽게 하되 법률 결론을 추가하지 마. 입력 상황: 법무 문장을 비법무 담당자가 읽는 설명문으로 바꿔야 해. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
         }
       ]
     },
@@ -67,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "정부·공공기관 공고의 조건과 기준일을 확인하는 상황 관련 건이야. 주당 평일 40분, 주말 90분만 가능하고 마지막 주에는 새 단원을 추가하지 않기로 했어."
+          "content": "일반 정보 조회 건이야. 모양을 바꿔야 하는 학습 계획 건이야. 법무 문장을 비법무 담당자가 읽는 설명문으로 바꿔야 해. 읽기 쉽게 하되 법률 결론을 추가하지 마."
         },
         {
           "role": "user",
-          "content": "시험까지 4주 남은 학습 계획을 주차별 목표와 복습 시점이 보이게 작성해줘."
-        },
-        {
-          "role": "user",
-          "content": "지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "모양은 바꿔도 숫자·날짜·조건은 건드리지 마. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘."
         }
       ]
     },
@@ -88,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a government or public-policy notice context where dates and eligibility matter, write a four-week study plan with weekly goals and review points. Input context: only 40 minutes on weekdays and 90 minutes on weekends are available, and no new unit should be added in the final week. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors. Make the boundary for official or professional review explicit."
+          "content": "In a general-information and everyday-knowledge context, Convert the Study plan material to the requested format; make it readable without adding a legal conclusion.. Input context: legal wording must become an explanation for a non-legal colleague. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
         }
       ]
     },
@@ -104,28 +99,23 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a government or public-policy notice context where dates and eligibility matter: only 40 minutes on weekdays and 90 minutes on weekends are available, and no new unit should be added in the final week."
+          "content": "This is a general-information lookup. The format needs changing for Study plan. Legal wording must become an explanation for a non-legal colleague. Make it readable without adding a legal conclusion."
         },
         {
           "role": "user",
-          "content": "write a four-week study plan with weekly goals and review points."
-        },
-        {
-          "role": "user",
-          "content": "Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors. If brevity and completeness conflict, call that out. Do not make a professional determination; state what needs official review."
+          "content": "Change the shape, not the numbers, dates, or conditions. If brevity and completeness conflict, call that out."
         }
       ]
     }
   ],
   "evaluation": {
     "response_mode": {
-      "canonical": "state_assumptions_and_answer",
+      "canonical": "answer_directly",
       "naturalistic": "infer_and_answer"
     },
     "invariants": [
       "Respect the available time and reserve the final week for review.",
-      "Do not promise mastery.",
-      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
+      "Do not promise mastery."
     ],
     "rubric_dimensions": [
       "schedule_feasibility",
@@ -134,8 +124,7 @@
     ],
     "failure_signals": [
       "Overloading the time budget.",
-      "Adding new material in the final week.",
-      "Giving definitive professional advice without the stated source or escalation boundary."
+      "Adding new material in the final week."
     ]
   },
   "provenance": {

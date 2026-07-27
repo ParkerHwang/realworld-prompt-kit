@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.explanation_teaching.audience_context_shift.0004",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.audience_context_shift.0004",
   "title": {
-    "ko": "실험 결과 설명 · 독자·맥락 전환",
-    "en": "Experiment result · audience and context shift"
+    "ko": "실험 결과 설명 — 공개 게시물",
+    "en": "Experiment result — Public post"
   },
   "task": {
     "primary_intent": "explanation_teaching",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "communication_meetings",
+    "primary_domain": "data_analytics",
     "domain_tags": [
       "education_research"
     ],
     "user_goal": {
-      "ko": "실험 결과를 비전문가에게 결과, 불확실성, 다음 확인 단계로 나눠 설명해줘 (독자·맥락 전환)",
-      "en": "explain the experiment to a non-specialist as result, uncertainty, and next check (audience and context shift)"
+      "ko": "실험 결과 설명 내용을 지정 독자에게 맞춰 다시 써줘. 공개해도 되는 사실만 남겨",
+      "en": "Adapt the Experiment result material for the specified reader; keep only facts safe to publish."
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 실험 결과를 비전문가에게 결과, 불확실성, 다음 확인 단계로 나눠 설명해줘. 입력 상황: 표본이 작고 두 조건의 차이는 관찰됐지만 반복 실험은 아직 없어. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "지표 표와 분석 메모를 검토하는 상황에서 실험 결과 설명 내용을 지정 독자에게 맞춰 다시 써줘. 공개해도 되는 사실만 남겨. 입력 상황: 내부 메모를 일반 공개 게시물로 바꾸되 내부 이름과 가정은 빼야 해. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건 😣 🙏, 팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 실험 결과를 비전문가에게 결과, 불확실성, 다음 확인 단계로 나눠 설명해줘. 표본이 작고 두 조건의 차이는 관찰됐지만 반복 실험은 아직 없어. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "어 그러니까 내가 말한 건 😣 🙏, 지표·분석 메모야. 읽는 사람이 달라진 실험 결과 설명 건이야. 내부 메모를 일반 공개 게시물로 바꾸되 내부 이름과 가정은 빼야 해. 공개해도 되는 사실만 남겨. 읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, explain the experiment to a non-specialist as result, uncertainty, and next check. Input context: the sample is small and a difference was observed between conditions, but there has been no replication. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "In a metrics-table and data-analysis context, Adapt the Experiment result material for the specified reader; keep only facts safe to publish.. Input context: an internal note must become a public post without names or internal assumptions. Adapt tone and explanation level to the specified audience and context without changing the core facts."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is — this is getting urgent 🙏: in a team-meeting and work-communication context, explain the experiment to a non-specialist as result, uncertainty, and next check. the sample is small and a difference was observed between conditions, but there has been no replication. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "Actually, what I mean is — this is getting urgent 🙏: This is a metrics/analysis item. The reader has changed for Experiment result. An internal note must become a public post without names or internal assumptions. Keep only facts safe to publish. Make it fit the reader without changing the substance."
         }
       ]
     }

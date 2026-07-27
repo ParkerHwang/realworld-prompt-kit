@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.extraction_parsing.input_robustness.0007",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.input_robustness.0007",
   "title": {
-    "ko": "계약 의무 조항 · 불완전·노이즈 입력",
-    "en": "Contract obligations · incomplete or noisy input"
+    "ko": "계약 의무 조항 — 오탈자 입력",
+    "en": "Contract obligations — Typo-heavy input"
   },
   "task": {
     "primary_intent": "extraction_parsing",
     "secondary_intents": [
       "classification_organization"
     ],
-    "primary_domain": "creative_media",
+    "primary_domain": "project_product_management",
     "domain_tags": [
       "office_admin"
     ],
     "user_goal": {
-      "ko": "계약서에서 의무, 예외, 통지 기한을 추출해줘 (불완전·노이즈 입력)",
-      "en": "extract obligations, exceptions, and notice periods from the contract (incomplete or noisy input)"
+      "ko": "계약 의무 조항 작업에 필요한 내용을 깨진 입력에서 복원해줘. 확실한 값과 추정값을 나눠",
+      "en": "Recover what the Contract obligations task needs from the damaged input; separate confirmed values from guesses."
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "창작·미디어 프로젝트의 자료를 발전시키는 상황에서 계약서에서 의무, 예외, 통지 기한을 추출해줘. 입력 상황: 본문과 별표에 같은 의무가 다르게 표현되고, 별표가 우선한다는 문구는 없어. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해."
+          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 계약 의무 조항 작업에 필요한 내용을 깨진 입력에서 복원해줘. 확실한 값과 추정값을 나눠. 입력 상황: 고유명사와 숫자에 오탈자가 두 개 있고 원문은 하나뿐이야. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "창작·미디어 프로젝트의 자료를 발전시키는 상황 관련 건이야. 본문과 별표에 같은 의무가 다르게 표현되고, 별표가 우선한다는 문구는 없어."
+          "content": "프로젝트·제품 일정 쪽이야. 입력이 좀 깨진 계약 의무 조항 건이야. 고유명사와 숫자에 오탈자가 두 개 있고 원문은 하나뿐이야. 확실한 값과 추정값을 나눠."
         },
         {
           "role": "user",
-          "content": "계약서에서 의무, 예외, 통지 기한을 추출해줘."
-        },
-        {
-          "role": "user",
-          "content": "오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해."
+          "content": "깨진 부분은 추측하지 말고 확인 필요로 남겨줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a creative or media-project context, extract obligations, exceptions, and notice periods from the contract. Input context: the body and an exhibit phrase the same obligation differently, with no stated precedence for the exhibit. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation."
+          "content": "In a product or project schedule-and-requirements context, Recover what the Contract obligations task needs from the damaged input; separate confirmed values from guesses.. Input context: two proper names and a number contain typos while only one source exists. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about a creative or media-project context: the body and an exhibit phrase the same obligation differently, with no stated precedence for the exhibit."
+          "content": "This is a project/product item. The input is messy for Contract obligations. Two proper names and a number contain typos while only one source exists. Separate confirmed values from guesses."
         },
         {
           "role": "user",
-          "content": "extract obligations, exceptions, and notice periods from the contract."
-        },
-        {
-          "role": "user",
-          "content": "Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation."
+          "content": "Do not repair broken bits by guessing; mark what needs checking."
         }
       ]
     }

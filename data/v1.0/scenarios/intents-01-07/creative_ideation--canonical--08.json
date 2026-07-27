@@ -2,24 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.creative_ideation.canonical.0008",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.canonical.0008",
   "title": {
-    "ko": "지속가능 포장 · 기본 요청",
-    "en": "Sustainable packaging · ordinary request"
+    "ko": "지속가능 포장 — 외부 공유 전",
+    "en": "Sustainable packaging — Before external sharing"
   },
   "task": {
     "primary_intent": "creative_ideation",
     "secondary_intents": [
       "planning_strategy_design"
     ],
-    "primary_domain": "education_research",
+    "primary_domain": "retail_ecommerce",
     "domain_tags": [
       "creative_media"
     ],
     "user_goal": {
-      "ko": "소규모 식품 브랜드의 포장 개선 아이디어를 내줘 (기본 요청)",
-      "en": "generate packaging-improvement ideas for a small food brand (ordinary request)"
+      "ko": "소규모 식품 브랜드의 포장 개선 아이디어를 내줘 공유 가능한 형식으로 근거를 함께 제시해",
+      "en": "generate packaging-improvement ideas for a small food brand; make the evidence visible in a shareable format"
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "수업·학습·연구 자료를 다루는 상황에서 소규모 식품 브랜드의 포장 개선 아이디어를 내줘. 입력 상황: 원가 상승은 개당 200원 이내여야 하고, 재활용 가능성을 과장하지 말며, 식품 안전 표기는 유지해야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "유통·온라인 주문 운영을 개선하는 상황에서 소규모 식품 브랜드의 포장 개선 아이디어를 내줘 공유 가능한 형식으로 근거를 함께 제시해. 입력 상황: 원가 상승은 개당 200원 이내여야 하고, 재활용 가능성을 과장하지 말며, 식품 안전 표기는 유지해야 해. 외부 공유 직전이라 원문 근거와 제한을 짧게 붙여야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
         }
       ]
     },
@@ -66,15 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "수업·학습·연구 자료를 다루는 상황 관련 건이야. 원가 상승은 개당 200원 이내여야 하고, 재활용 가능성을 과장하지 말며, 식품 안전 표기는 유지해야 해."
+          "content": "판매·온라인 주문 건이야. 소규모 식품 브랜드 포장을 바꿀 아이디어를 내줘. 개당 200원 안에서, 안전 표기는 유지하고 재활용된다고 근거 없이 말하면 안 돼. 참고로 외부 공유 직전이라 원문 근거와 제한을 짧게 붙여야 해. 그래서 공유 가능한 형식으로 근거를 함께 제시해."
         },
         {
           "role": "user",
-          "content": "소규모 식품 브랜드의 포장 개선 아이디어를 내줘."
-        },
-        {
-          "role": "user",
-          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
         }
       ]
     },
@@ -87,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an education, learning, or research context, generate packaging-improvement ideas for a small food brand. Input context: the cost increase must stay within 200 won per unit, recyclability must not be overstated, and food-safety labeling must remain. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "In a retail or e-commerce operations context, generate packaging-improvement ideas for a small food brand; make the evidence visible in a shareable format. Input context: the cost increase must stay within 200 won per unit, recyclability must not be overstated, and food-safety labeling must remain. the result is going outside the team and needs a short source note and limitation. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
         }
       ]
     },
@@ -103,15 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is about an education, learning, or research context: the cost increase must stay within 200 won per unit, recyclability must not be overstated, and food-safety labeling must remain."
+          "content": "This is a retail/e-commerce item. Suggest packaging changes for a small food brand within 200 won per unit. Keep safety labeling and do not make an unsupported recyclability claim. For this case, the result is going outside the team and needs a short source note and limitation. So make the evidence visible in a shareable format."
         },
         {
           "role": "user",
-          "content": "generate packaging-improvement ideas for a small food brand."
-        },
-        {
-          "role": "user",
-          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use what can actually be checked; say when something is unknown."
         }
       ]
     }

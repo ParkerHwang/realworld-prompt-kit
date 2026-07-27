@@ -2,22 +2,24 @@
   "schema": "realworld-prompt-kit.scenario/1.0.0",
   "scenario_id": "rwpk.extraction_parsing.input_robustness.0001",
   "revision": 1,
-  "status": "draft",
+  "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.input_robustness.0001",
   "title": {
-    "ko": "회의 액션 아이템 · 불완전·노이즈 입력",
-    "en": "Meeting action items · incomplete or noisy input"
+    "ko": "회의 액션 아이템 — 사진 OCR 입력",
+    "en": "Meeting action items — Photographed OCR input"
   },
   "task": {
     "primary_intent": "extraction_parsing",
     "secondary_intents": [
       "classification_organization"
     ],
-    "primary_domain": "office_admin",
-    "domain_tags": [],
+    "primary_domain": "communication_meetings",
+    "domain_tags": [
+      "office_admin"
+    ],
     "user_goal": {
-      "ko": "회의 기록에서 결정, 할 일, 담당자, 기한을 추출해줘 (불완전·노이즈 입력)",
-      "en": "extract decisions, actions, owners, and deadlines from the meeting record (incomplete or noisy input)"
+      "ko": "회의 액션 아이템 작업에 필요한 내용을 깨진 입력에서 복원해줘. 읽히는 값과 확인할 값을 나눠 추출해",
+      "en": "Recover what the Meeting action items task needs from the damaged input; extract legible values separately from checks needed."
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -48,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 회의 기록에서 결정, 할 일, 담당자, 기한을 추출해줘. 입력 상황: 기록에는 결정된 항목 두 개, 담당자 없는 할 일 하나, 다음 회의에서 정할 질문 두 개가 섞여 있어. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해."
+          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 회의 액션 아이템 작업에 필요한 내용을 깨진 입력에서 복원해줘. 읽히는 값과 확인할 값을 나눠 추출해. 입력 상황: 시간표 사진에서 숫자와 줄바꿈이 일부 깨져 있어. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해."
         }
       ]
     },
@@ -64,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거핵심만 좀 봐줘, 사내 행정과 문서 운영을 처리하는 상황에서 회의 기록에서 결정, 할 일, 담당자, 기한을 추출해줘;. 기록에는 결정된 항목 두 개, 담당자 없는 할 일 하나, 다음 회의에서 정할 질문 두 개가 섞여 있어. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해. [복붙: 일부 숫자/줄바꿈 확인 필요]"
+          "content": "이거핵심만 좀 봐줘, 팀 회의/커뮤니케이션 건이야. 입력이 좀 깨진 회의 액션 아이템 건이야. 시간표 사진에서 숫자와 줄바꿈이 일부 깨져 있어. 읽히는 값과 확인할 값을 나눠 추출해. 깨진 부분은 추측하지 말고 확인 필요로 남겨줘. [복붙: 일부 숫자/줄바꿈 확인 필요]"
         }
       ]
     },
@@ -77,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, extract decisions, actions, owners, and deadlines from the meeting record. Input context: the record mixes two decisions, one action without an owner, and two questions deferred to the next meeting. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation."
+          "content": "In a team-meeting and work-communication context, Recover what the Meeting action items task needs from the damaged input; extract legible values separately from checks needed.. Input context: a photographed table has damaged numbers and line breaks. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation."
         }
       ]
     },
@@ -93,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Canyou take a quick look at this: in an internal office-administration and document-operations context, extract decisions, actions, owners, and deadlines from the meeting record.. the record mixes two decisions, one action without an owner, and two questions deferred to the next meeting. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation. [pasted: some numbers/line breaks need checking]"
+          "content": "Canyou take a quick look at this: This is a team-communication item.. The input is messy for Meeting action items. A photographed table has damaged numbers and line breaks. Extract legible values separately from checks needed. Do not repair broken bits by guessing; mark what needs checking. [pasted: some numbers/line breaks need checking]"
         }
       ]
     }
