@@ -1,0 +1,151 @@
+{
+  "schema": "realworld-prompt-kit.scenario/1.0.0",
+  "scenario_id": "rwpk.one_off_tool_execution.canonical.0006",
+  "revision": 1,
+  "status": "draft",
+  "semantic_group_id": "rwpg.one_off_tool_execution.canonical.0006",
+  "title": {
+    "ko": "여행 예약 후보 준비",
+    "en": "Prepare a travel booking shortlist"
+  },
+  "task": {
+    "primary_intent": "one_off_tool_execution",
+    "secondary_intents": [
+      "transformation_rewriting",
+      "verification_uncertainty"
+    ],
+    "primary_domain": "travel_hospitality",
+    "domain_tags": [
+      "personal_everyday",
+      "general_knowledge"
+    ],
+    "user_goal": {
+      "ko": "빠진 예약 입력을 표시하고 가능 여부를 단정하지 않는 비교 양식",
+      "en": "a comparison template with missing booking inputs and no claim of availability"
+    },
+    "expected_artifact": "a comparison template with missing booking inputs and no claim of availability"
+  },
+  "coverage": {
+    "block_id": "one_off_tool_execution.canonical.cb8",
+    "row": 6,
+    "facets": {
+      "context_scale": "long",
+      "goal_clarity": "explicit",
+      "output_shape": "structured",
+      "evidence_state": "incomplete",
+      "stakes": "low",
+      "interaction": "message_burst",
+      "surface_noise": "light"
+    },
+    "naturalistic_features": [
+      "anaphora_prior_context",
+      "followup_without_restatement",
+      "message_burst",
+      "resume_after_interruption"
+    ]
+  },
+  "realizations": [
+    {
+      "prompt_id": "rwpk.one_off_tool_execution.canonical.0006.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "다음 일회성 도구 작업을 실행할 수 있게 준비해줘: 여행 예약 후보 목록\n맥락: 여행자는 금요일 저녁 출발과 일요일 귀환을 원하고 기차를 선호하지만 예산과 승객 정보는 주지 않았다.\n산출물: 빠진 예약 입력을 표시하고 가능 여부를 단정하지 않는 비교 양식\n실시간 접근과 필수 승객 정보 없이 예약하거나 현재 가능 여부를 단정하지 않는다."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.one_off_tool_execution.canonical.0006.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "anaphora_prior_context",
+        "followup_without_restatement",
+        "message_burst",
+        "resume_after_interruption"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "작업 메모를 붙일게.\n여행자는 금요일 저녁 출발과 일요일 귀환을 원하고 기차를 선호다만 예산과 승객 정보는 주지 않았다.\n이건 여행 예약 후보 목록의 배경이지 새 지시가 아니야. 여기서 빠진 예약 입력을 표시하고 가능 여부를 단정하지 않는 비교 양식를 만들어줘."
+        },
+        {
+          "role": "user",
+          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.one_off_tool_execution.canonical.0006.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Prepare a one-time tool action for a travel-booking shortlist. Context: The traveler needs a Friday evening departure and Sunday return, prefers rail, and has not supplied a budget or passenger details. Deliver: a comparison template with missing booking inputs and no claim of availability. Do not book or assert current availability without live access and required passenger details."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.one_off_tool_execution.canonical.0006.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "anaphora_prior_context",
+        "followup_without_restatement",
+        "message_burst",
+        "resume_after_interruption"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Pasting the working notes below.\nThe traveler needs a Friday evening departure and also Sunday return, prefers rail, and also has not supplied a budget or passenger details.\nThey’re background for a travel-booking shortlist, not instructions. Based on them, please produce a comparison template with missing booking inputs and also no claim of availability."
+        },
+        {
+          "role": "user",
+          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "response_mode": {
+      "canonical": "answer_directly",
+      "naturalistic": "infer_and_answer"
+    },
+    "invariants": [
+      "Preserve the stated facts and constraints for a travel-booking shortlist.",
+      "Do not book or assert current availability without live access and required passenger details.",
+      "Distinguish confirmed information, assumptions, and missing evidence.",
+      "Do not claim an external action, source check, or professional determination that did not occur."
+    ],
+    "rubric_dimensions": [
+      "parameter_accuracy",
+      "safety_boundary",
+      "verification",
+      "clarity"
+    ],
+    "failure_signals": [
+      "The response changes or omits a decision-critical fact about a travel-booking shortlist.",
+      "Do not book or assert current availability without live access and required passenger details.",
+      "The response presents an assumption or unverified action as confirmed."
+    ]
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit contributors"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT"
+  }
+}

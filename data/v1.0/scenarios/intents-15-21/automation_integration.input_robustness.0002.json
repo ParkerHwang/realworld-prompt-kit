@@ -1,0 +1,151 @@
+{
+  "schema": "realworld-prompt-kit.scenario/1.0.0",
+  "scenario_id": "rwpk.automation_integration.input_robustness.0002",
+  "revision": 1,
+  "status": "draft",
+  "semantic_group_id": "rwpg.automation_integration.input_robustness.0002",
+  "title": {
+    "ko": "충돌하는 웹훅 메모",
+    "en": "Contradictory webhook notes"
+  },
+  "task": {
+    "primary_intent": "automation_integration",
+    "secondary_intents": [
+      "operations_monitoring_improvement",
+      "one_off_tool_execution"
+    ],
+    "primary_domain": "software_it",
+    "domain_tags": [
+      "data_analytics",
+      "privacy_security"
+    ],
+    "user_goal": {
+      "ko": "재시도와 스키마 질문을 적은 보류·확인 설계",
+      "en": "a hold-and-verify design that lists the retry and schema questions"
+    },
+    "expected_artifact": "a hold-and-verify design that lists the retry and schema questions"
+  },
+  "coverage": {
+    "block_id": "automation_integration.input_robustness.cb8",
+    "row": 2,
+    "facets": {
+      "context_scale": "short",
+      "goal_clarity": "explicit",
+      "output_shape": "structured",
+      "evidence_state": "complete",
+      "stakes": "moderate",
+      "interaction": "message_burst",
+      "surface_noise": "heavy"
+    },
+    "naturalistic_features": [
+      "followup_without_restatement",
+      "message_burst",
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
+    ]
+  },
+  "realizations": [
+    {
+      "prompt_id": "rwpk.automation_integration.input_robustness.0002.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "뒤섞인 요구를 다음 안전한 워크플로로 정리해줘: 충돌하는 웹훅 메모를 바탕으로 한 흐름\n맥락: 한 메모에는 이벤트를 세 번 재시도한다고 하고 다른 메모에는 재시도가 없으며 페이로드 버전은 빠져 있다.\n산출물: 재시도와 스키마 질문을 적은 보류·확인 설계\n재시도 동작을 구현하거나 페이로드 스키마를 가정하지 않는다."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.automation_integration.input_robustness.0002.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "followup_without_restatement",
+        "message_burst",
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "이거 이어서 볼 수 있을까? 충돌하는 웹훅 메모를 바탕으로 한 흐름 얘기였어. 메모에는 한 메모에는 이벤트를 세 번 재시도한다고 하고 다른 메모에는 재시도가 없으며 페이로드 버전은 빠져 있어.라고 적혀 있어. 재시도와 스키마 질문을 적은 보류·체크 설계 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+        },
+        {
+          "role": "user",
+          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.automation_integration.input_robustness.0002.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Turn these messy requirements into a safe workflow for a webhook workflow from contradictory notes. Context: One note says events are retried three times and another says no retries; the payload version is missing. Deliver: a hold-and-verify design that lists the retry and schema questions. Do not implement retry behavior or assume a payload schema."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.automation_integration.input_robustness.0002.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "followup_without_restatement",
+        "message_burst",
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Can we pick up a webhook workflow from contradictory notes? I lost the thread a bit. The notes say One note says events are retried three times and also another says no retries; the payload version is missing. What would a useful a hold-and-verify design that lists the retry and also schema questions look like? Keep the earlier boundaries in mind."
+        },
+        {
+          "role": "user",
+          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "response_mode": {
+      "canonical": "state_assumptions_and_answer",
+      "naturalistic": "infer_and_answer"
+    },
+    "invariants": [
+      "Preserve the stated facts and constraints for a webhook workflow from contradictory notes.",
+      "Do not implement retry behavior or assume a payload schema.",
+      "Distinguish confirmed information, assumptions, and missing evidence.",
+      "Do not claim an external action, source check, or professional determination that did not occur."
+    ],
+    "rubric_dimensions": [
+      "workflow_completeness",
+      "idempotency",
+      "observability",
+      "failure_recovery"
+    ],
+    "failure_signals": [
+      "The response changes or omits a decision-critical fact about a webhook workflow from contradictory notes.",
+      "Do not implement retry behavior or assume a payload schema.",
+      "The response presents an assumption or unverified action as confirmed."
+    ]
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit contributors"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT"
+  }
+}
