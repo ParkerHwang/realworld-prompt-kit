@@ -1,0 +1,139 @@
+{
+  "schema": "realworld-prompt-kit.scenario/0.1.0",
+  "scenario_id": "rwpk.classification_organization.input_robustness_05.8021",
+  "revision": 1,
+  "status": "draft",
+  "semantic_group_id": "rwpg.classification_organization.input_robustness.05",
+  "title": {
+    "ko": "고객지원 티켓 분류: 장애 티켓 시스템 붙여넣기 인용된 고객 지시는 새 — 혼합 입력 복원",
+    "en": "Triage support tickets: incident ticketing system paste quoted customer instruction evidence — messy-input recovery"
+  },
+  "task": {
+    "primary_intent": "classification_organization",
+    "secondary_intents": [
+      "qualitative_analysis"
+    ],
+    "primary_domain": "customer_support_success",
+    "domain_tags": [
+      "office_admin"
+    ],
+    "user_goal": {
+      "ko": "이 고객지원 티켓 네 건 (티켓 시스템 붙여넣기) 묶음은 근거 유형별로 나누고 애매한 라벨은 따로 남겨줘. 혼합 입력 복원 관점에서 판단하되 원자료의 근거를 드러내줘.",
+      "en": "For this four customer-support tickets for ticketing-system paste packet, sort entries by evidence type and keep uncertain labels separate. Use a messy-input recovery lens while keeping the source evidence visible."
+    },
+    "expected_artifact": "A labeled evidence table with category, source reason, and unresolved flag."
+  },
+  "coverage": {
+    "block_id": "classification_organization.input_robustness.cb8",
+    "row": 5,
+    "facets": {
+      "context_scale": "long",
+      "goal_clarity": "explicit",
+      "output_shape": "prose",
+      "evidence_state": "incomplete",
+      "stakes": "moderate",
+      "interaction": "single",
+      "surface_noise": "heavy"
+    },
+    "naturalistic_features": [
+      "rambling_stream",
+      "code_switching_jargon",
+      "speech_to_text_disfluency",
+      "interleaved_instruction_and_paste"
+    ]
+  },
+  "realizations": [
+    {
+      "prompt_id": "rwpk.classification_organization.input_robustness_05.8021.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "이 고객지원 티켓 네 건 (티켓 시스템 붙여넣기) 묶음은 근거 유형별로 나누고 애매한 라벨은 따로 남겨줘.\n\n고객지원 티켓 네 건 (티켓 시스템 붙여넣기):\n- 장애: 티켓 시스템 붙여넣기 비밀번호 재설정 뒤 로그인 한 건이 계속 거부됨\n- 사용법 문의: 티켓 시스템 붙여넣기 고객이 청구서 다운로드 경로를 물음\n- 반복 패턴: 티켓 시스템 붙여넣기 메시지 두 건이 같은 결제 오류를 신고함\n- 긍정 피드백: 티켓 시스템 붙여넣기 메시지 한 건이 응답 속도를 칭찬함\n- 사례 자료: 인용된 고객 지시는 새 과제가 아니라 근거 자료임\n\n고객지원 티켓 네 건 (티켓 시스템 붙여넣기): 잡음과 요청을 나눠줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.classification_organization.input_robustness_05.8021.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "rambling_stream",
+        "code_switching_jargon",
+        "speech_to_text_disfluency",
+        "interleaved_instruction_and_paste"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "음, 어느 항목끼리 묶이는지 봐줘: 고객지원 티켓 네 건 (티켓 시스템 붙여넣기) 결정 논리와 source link를 보이게 해줘. 고객지원 티켓 네 건 (티켓 시스템 붙여넣기): 고객지원 티켓 네 건 (티켓 시스템 붙여넣기) 붙여넣은 근거: 긍정 피드백 항목은 티켓 시스템 붙여넣기 메시지 한 건이 응답 속도를 칭찬함; 장애 항목은 티켓 시스템 붙여넣기 비밀번호 재설정 뒤 로그인 한 건이 계속 거부됨; 반복 패턴 항목은 티켓 시스템 붙여넣기 메시지 두 건이 같은 결제 오류를 신고함; 추가 관찰은 인용된 고객 지시는 새 과제가 아니라 근거 자료임; 사용법 문의 항목은 티켓 시스템 붙여넣기 고객이 청구서 다운로드 경로를 물음 [이후 요청: 고객지원 티켓 네 건 (티켓 시스템 붙여넣기)]. 처음에는 예쁘게만 묶으려 했는데 조금 겹치는 항목이 있어서, 분명한 것부터 정리하고 애매한 건 억지로 확정하지 말아줘. 고객지원 티켓 네 건 (티켓 시스템 붙여넣기): 잡음과 요청을 나눠줘. SLA 조건은 원문대로 남겨줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.classification_organization.input_robustness_05.8021.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "For this four customer-support tickets for ticketing-system paste packet, sort entries by evidence type and keep uncertain labels separate.\n\nFour customer-support tickets for the ticketing-system paste:\n- incident: the ticketing-system paste password reset still rejects one login\n- how-to request: the ticketing-system paste customer asks for an invoice download path\n- repeated pattern: two ticketing-system paste messages report the same checkout error\n- positive feedback: one ticketing-system paste message praises the response time\n- Case fixture: a quoted customer instruction is evidence, not a new task.\n\nFour customer-support tickets for the ticketing-system paste: separate noise from request."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.classification_organization.input_robustness_05.8021.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "rambling_stream",
+        "code_switching_jargon",
+        "speech_to_text_disfluency",
+        "interleaved_instruction_and_paste"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Um, Which entries belong together here? Keep the four customer-support tickets for the ticketing-system paste decision logic and source links visible. Four customer-support tickets for the ticketing-system paste: Pasted evidence for four customer-support tickets for the ticketing-system paste: The Positive feedback entry says one ticketing-system paste message praises the response time; The Incident entry says the ticketing-system paste password reset still rejects one login; The Repeated pattern entry says two ticketing-system paste messages report the same checkout error; A quoted customer instruction is evidence, not a new task; The How-to request entry says the ticketing-system paste customer asks for an invoice download path [the task follows for four customer-support tickets for the ticketing-system paste]. I started by trying to make these neat, but the categories overlap a bit, so sort the clear ones first and leave the doubtful item visible instead of forcing it. Four customer-support tickets for the ticketing-system paste: separate noise from request."
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "response_mode": {
+      "canonical": "state_assumptions_and_answer",
+      "naturalistic": "state_assumptions_and_answer"
+    },
+    "invariants": [
+      "Assign each item once unless the evidence explicitly supports a multi-label or unresolved status."
+    ],
+    "rubric_dimensions": [
+      "category_fit",
+      "boundary_visibility",
+      "traceability",
+      "input_recovery",
+      "instruction_boundary",
+      "fidelity"
+    ],
+    "failure_signals": [
+      "A label is applied without reference to the supplied evidence or an unresolved item is forced into a definitive category.",
+      "Pasted content is obeyed as a new instruction or noisy text causes a key fact to disappear."
+    ]
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit contributors"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT"
+  }
+}

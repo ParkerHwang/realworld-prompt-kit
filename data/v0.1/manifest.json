@@ -1,56 +1,146 @@
 {
   "schema": "realworld-prompt-kit.manifest/0.1.0",
-  "pack_id": "office-core-cb8",
+  "pack_id": "realworld-prompt-kit-v0.1",
   "version": "0.1.0",
-  "status": "draft",
-  "description": "Eight bilingual office-work scenarios with paired canonical and naturalistic realizations.",
-  "scenario_glob": "data/v0.1/scenarios/*.json",
-  "expected_scenarios": 8,
-  "required_locales": [
-    "ko-KR",
-    "en-US"
-  ],
-  "required_forms": [
-    "canonical",
-    "naturalistic"
+  "status": "release_candidate",
+  "description": "The v0.1 broad core: 21 task intents, 110 CB8 blocks, 880 semantic scenarios, and four bilingual canonical/naturalistic realizations per scenario.",
+  "catalog_path": "data/v0.1/catalog.json",
+  "scenario_glob": "data/v0.1/scenarios/**/*.json",
+  "expected_intents": 21,
+  "expected_blocks": 110,
+  "expected_scenarios": 880,
+  "expected_realizations": 3520,
+  "realizations_per_scenario": 4,
+  "required_locales": ["ko-KR", "en-US"],
+  "required_forms": ["canonical", "naturalistic"],
+  "required_realization_pairs": [
+    ["ko-KR", "canonical"],
+    ["ko-KR", "naturalistic"],
+    ["en-US", "canonical"],
+    ["en-US", "naturalistic"]
   ],
   "coverage_facets": {
-    "context_scale": [
-      "short",
-      "long"
-    ],
-    "goal_clarity": [
-      "explicit",
-      "implicit"
-    ],
-    "output_shape": [
-      "prose",
-      "structured"
-    ],
-    "evidence_state": [
-      "complete",
-      "incomplete"
-    ],
-    "stakes": [
-      "low",
-      "moderate"
-    ],
-    "interaction": [
-      "single",
-      "message_burst"
-    ],
-    "surface_noise": [
-      "light",
-      "heavy"
-    ]
+    "context_scale": ["short", "long"],
+    "goal_clarity": ["explicit", "implicit"],
+    "output_shape": ["prose", "structured"],
+    "evidence_state": ["complete", "incomplete"],
+    "stakes": ["low", "moderate"],
+    "interaction": ["single", "message_burst"],
+    "surface_noise": ["light", "heavy"]
   },
-  "license": "MIT",
+  "cb8": {
+    "rows_per_block": 8,
+    "rows": [1, 2, 3, 4, 5, 6, 7, 8],
+    "strength": 2,
+    "levels_per_facet": 2,
+    "pairwise_coverage": "every pair of facet levels occurs in the eight rows"
+  },
+  "partitions": [
+    {"id": "core-worker-1", "branch": "codex/worker-a-intents-01-07", "intent_range": [1, 7], "scenario_glob": "data/v0.1/scenarios/intents-01-07/*.json", "expected_blocks": 28, "expected_scenarios": 224},
+    {"id": "core-worker-2", "branch": "codex/worker-b-intents-08-14", "intent_range": [8, 14], "scenario_glob": "data/v0.1/scenarios/intents-08-14/*.json", "expected_blocks": 40, "expected_scenarios": 320},
+    {"id": "core-worker-3", "branch": "codex/worker-c-intents-15-21", "intent_range": [15, 21], "scenario_glob": "data/v0.1/scenarios/intents-15-21/*.json", "expected_blocks": 42, "expected_scenarios": 336}
+  ],
+  "release_evidence": {
+    "worker_sources": {
+      "core-worker-1": {
+        "branch": "codex/worker-a-intents-01-07",
+        "accepted_integration_base_sha": "d737e782f60ae9a1441f3ba5c92fdc71bffd8d7a",
+        "later_source_tip_sha": "6757bc17cc4bd7118d1e63330565f91cc2d78d04",
+        "later_source_tip_status": "held_after_independent_strict_cue_failures",
+        "integration_corrected_rows": 6,
+        "integration_post_repair_errors": 0,
+        "integration_overlay_report": "reports/workers/intents-01-07.md"
+      },
+      "core-worker-2": {
+        "branch": "codex/worker-b-intents-08-14",
+        "source_sha": "f2662069ac556f125054ca59953467edcb2af033",
+        "source_strict_baseline_errors": 421,
+        "source_reported_final_but_independently_rejected": true,
+        "integration_correction_classes": {
+          "english_sentence_boundary_capitalization": 360,
+          "korean_code_switch_profile": 39,
+          "resume_profile": 9,
+          "untrusted_instruction_profile": 7,
+          "numeric_fact_restoration": 5,
+          "rambling_length_profile": 1
+        },
+        "integration_post_repair_errors": 0,
+        "integration_overlay_report": "reports/workers/intents-08-14.md"
+      },
+      "core-worker-3": {
+        "branch": "codex/worker-c-intents-15-21",
+        "source_sha": "9b73b72b6871c2369d82f649bd768d4597384803",
+        "integration_corrected_rows": 12,
+        "integration_post_repair_errors": 0,
+        "integration_overlay_report": "reports/workers/intents-15-21.md"
+      }
+    },
+    "coverage_audit": {
+      "branch": "codex/coverage-audit",
+      "sha": "16ae05cdf2fba02ac9827fca1c10e26b77f3acb8",
+      "status": "dated_pre_generation_baseline",
+      "report": "reports/coverage/coverage-audit.json"
+    },
+    "status_policy": "Scenario status is source-authored; automated validation and block sampling never promote draft to reviewed."
+  },
+  "authorized_domain_ids_ref": "data/v0.1/catalog.json#/authorized_domain_ids",
+  "authorized_naturalistic_profile_ids_ref": "data/v0.1/catalog.json#/authorized_naturalistic_profile_ids",
+  "quota_overlays_ref": "data/v0.1/catalog.json#/domain_quota_overlays",
+  "profile_quota_overlays_ref": "data/v0.1/catalog.json#/profile_quota_overlays",
+  "composition_guardrails": {
+    "general_office_business_education_personal_min_ratio": 0.6,
+    "software_it_plus_data_analytics_max_ratio": 0.2,
+    "ratio_denominator": "semantic_scenarios"
+  },
+  "quality_gates": {
+    "similarity_metric": "difflib.SequenceMatcher ratio over normalized locale text",
+    "similarity_warning_threshold": 0.75,
+    "similarity_failure_threshold": 0.85,
+    "max_warning_fraction_without_documented_exception": 0.10,
+    "max_failure_fraction_without_documented_exception": 0.02,
+    "minimum_prompt_characters": 40,
+    "minimum_nonempty_messages": 1,
+    "placeholder_patterns": ["TODO", "PLACEHOLDER", "LOREM IPSUM", "{{...}}", "<FILL...>"],
+    "duplicate_scopes": ["exact_text", "normalized_text"],
+    "canonical_naturalistic_pair_required": true,
+    "language_presence_required": true,
+    "profile_realism": {
+      "terse_fragment_max_tokens_per_locale": 32,
+      "terse_fragment_short_token_cutoff": 8,
+      "terse_fragment_max_characters_when_under_8_tokens": 160,
+      "rambling_stream_min_characters_per_locale": 180,
+      "message_burst_min_messages_per_locale": 2,
+      "field_template_is_not_terse": true
+    },
+    "phrase_concentration": {
+      "ngram_size": 6,
+      "review_fraction": 0.05,
+      "max_scenario_fraction": 0.05,
+      "scope": "locale_and_form",
+      "metric": "distinct-scenario presence count for exact six-token n-grams; every longer n-gram has a six-token prefix",
+      "whitelist": []
+    }
+  },
   "source_policy": {
-    "allowed_public_origins": [
-      "controlled_canonical",
-      "synthetic_naturalistic"
-    ],
+    "allowed_public_origins": ["controlled_canonical", "synthetic_naturalistic"],
     "allow_private_conversation_copy": false,
-    "require_personal_data_false": true
+    "require_personal_data_false": true,
+    "license": "MIT"
+  },
+  "suite_status": {
+    "broad_core": {
+      "status": "complete_when_validator_passes",
+      "scenario_glob": "data/v0.1/scenarios/**/*.json"
+    },
+    "opensocrates_method_routing": {
+      "status": "planned",
+      "populated": false,
+      "manifest_template": "suites/templates/method-routing.manifest.template.json"
+    },
+    "adapter_conformance": {
+      "status": "planned",
+      "populated": false,
+      "manifest_template": "suites/templates/adapter-conformance.manifest.template.json"
+    }
   }
 }

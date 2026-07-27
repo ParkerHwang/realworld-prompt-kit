@@ -1,0 +1,139 @@
+{
+  "schema": "realworld-prompt-kit.scenario/0.1.0",
+  "scenario_id": "rwpk.classification_organization.boundary_ambiguity_01.8009",
+  "revision": 1,
+  "status": "draft",
+  "semantic_group_id": "rwpg.classification_organization.boundary_ambiguity.01",
+  "title": {
+    "ko": "출시 회의 메모 분류: 결정 휴일 예외 사례 항목이 정해진 기준선 바로 — 경계 사례 판단",
+    "en": "Sort launch meeting notes: decision holiday exception launch one entry falls just — borderline-case reasoning"
+  },
+  "task": {
+    "primary_intent": "classification_organization",
+    "secondary_intents": [
+      "qualitative_analysis"
+    ],
+    "primary_domain": "office_admin",
+    "domain_tags": [
+      "communication_meetings"
+    ],
+    "user_goal": {
+      "ko": "이 출시 회의 메모 (휴일 예외 사례) 묶음은 근거 유형별로 나누고 애매한 라벨은 따로 남겨줘. 경계 사례 판단 관점에서 판단하되 원자료의 근거를 드러내줘.",
+      "en": "For this launch meeting note set for holiday exception packet, sort entries by evidence type and keep uncertain labels separate. Use a borderline-case reasoning lens while keeping the source evidence visible."
+    },
+    "expected_artifact": "A labeled evidence table with category, source reason, and unresolved flag."
+  },
+  "coverage": {
+    "block_id": "classification_organization.boundary_ambiguity.cb8",
+    "row": 1,
+    "facets": {
+      "context_scale": "short",
+      "goal_clarity": "explicit",
+      "output_shape": "prose",
+      "evidence_state": "complete",
+      "stakes": "low",
+      "interaction": "single",
+      "surface_noise": "light"
+    },
+    "naturalistic_features": [
+      "terse_fragment",
+      "implicit_goal_or_output",
+      "missing_decisive_detail",
+      "hedged_exploratory_request"
+    ]
+  },
+  "realizations": [
+    {
+      "prompt_id": "rwpk.classification_organization.boundary_ambiguity_01.8009.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "이 출시 회의 메모 (휴일 예외 사례) 묶음은 근거 유형별로 나누고 애매한 라벨은 따로 남겨줘.\n\n출시 회의 메모 (휴일 예외 사례):\n- 결정: 휴일 예외 사례 출시 검토가 9월 13일로 변경됨\n- 할 일: 휴일 예외 사례 디자인 담당자가 8월 21일까지 수정 화면을 보냄\n- 질문: 휴일 예외 사례 가격 선택은 아직 미정\n- 위험: 휴일 예외 사례 분석 이벤트 이름 담당자가 없음\n- 사례 자료: 한 항목이 정해진 기준선 바로 안쪽에 있음\n\n출시 회의 메모 (휴일 예외 사례): 경계 사례를 표시해줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.classification_organization.boundary_ambiguity_01.8009.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "terse_fragment",
+        "implicit_goal_or_output",
+        "missing_decisive_detail",
+        "hedged_exploratory_request"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "태그? 질문은 미정, 안쪽에 항목이, 할 일은 담당자 8월21일, 위험은 담당자 없음, 결정은 9월13일 빠진 건? 아마? 원문 수치 13과 21은 그대로 보존해줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.classification_organization.boundary_ambiguity_01.8009.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "For this launch meeting note set for holiday exception packet, sort entries by evidence type and keep uncertain labels separate.\n\nA launch meeting note set for the holiday exception case:\n- decision: the holiday exception launch review moves to 13 September\n- action: the holiday exception design owner sends revised screens by 21 August\n- question: the holiday exception pricing choice is still open\n- risk: the holiday exception analytics event names have no owner\n- Case fixture: one entry falls just inside the stated cutoff.\n\nLaunch meeting note set for the holiday exception case: flag the edge case."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.classification_organization.boundary_ambiguity_01.8009.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "terse_fragment",
+        "implicit_goal_or_output",
+        "missing_decisive_detail",
+        "hedged_exploratory_request"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Tag? Question remains open, cutoff entry, action due owner 21 Aug, risk has owner none, decision stays 13 Sep What's missing? Maybe?"
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "response_mode": {
+      "canonical": "state_assumptions_and_answer",
+      "naturalistic": "state_assumptions_and_answer"
+    },
+    "invariants": [
+      "Assign each item once unless the evidence explicitly supports a multi-label or unresolved status."
+    ],
+    "rubric_dimensions": [
+      "category_fit",
+      "boundary_visibility",
+      "traceability",
+      "boundary_handling",
+      "assumption_visibility",
+      "scope_discipline"
+    ],
+    "failure_signals": [
+      "A label is applied without reference to the supplied evidence or an unresolved item is forced into a definitive category.",
+      "An ambiguous condition is presented as settled without an assumption or question."
+    ]
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit contributors"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT"
+  }
+}

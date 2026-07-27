@@ -1,19 +1,19 @@
 {
-  "schema": "realworld-prompt-kit.coverage-plan/1.0.0",
-  "version": "1.0.0",
+  "schema": "realworld-prompt-kit.coverage-plan/0.1.0",
+  "version": "0.1.0",
   "audit_status": "pre_generation_baseline",
   "observation_phase": "pre_generation",
   "observed_at": "2026-07-27",
-  "superseded_by_current_release_report": "reports/coverage/v1-coverage.json",
-  "coverage_claim_policy": "No v1 scenario or prompt coverage is claimed unless committed artifacts, manifests, and validation evidence prove it.",
+  "superseded_by_current_release_report": "reports/coverage/coverage.json",
+  "coverage_claim_policy": "No v0.1 scenario or prompt coverage is claimed unless committed artifacts, manifests, and validation evidence prove it.",
   "source_basis": {
-    "catalog_path": "data/v1.0/catalog.json",
-    "method_catalog_path": "data/v1.0/catalog.json#planned_extensions.opensocrates_method_routing",
+    "catalog_path": "data/v0.1/catalog.json",
+    "method_catalog_path": "data/v0.1/catalog.json#planned_extensions.opensocrates_method_routing",
     "source_reference": "Pre-generation audit of origin/main at f8dc8d9ba376c64e44613ebcc0b9119a2530064f (2026-07-27); task-thread identifiers intentionally omitted from public metadata.",
     "authoritative_basis_available": true,
     "local_catalog_available": false,
     "schemas_available_locally": false,
-    "origin_main_contains_v1_catalog": false
+    "origin_main_contains_v0.1_catalog": false
   },
   "counting_unit": {
     "id": "CB8",
@@ -968,8 +968,8 @@
     }
   ],
   "opensocrates_coverage": {
-    "source_path": "data/v1.0/catalog.json#planned_extensions.opensocrates_method_routing",
-    "catalog_reference": "data/v1.0/catalog.json#planned_extensions.opensocrates_method_routing",
+    "source_path": "data/v0.1/catalog.json#planned_extensions.opensocrates_method_routing",
+    "catalog_reference": "data/v0.1/catalog.json#planned_extensions.opensocrates_method_routing",
     "top_level_keys": [
       "schema",
       "content_revision",
@@ -1345,7 +1345,7 @@
     },
     {
       "id": "GATE-02-core-count",
-      "pass_condition": "Exactly 880 unique v1 scenario IDs across exactly 110 CB8 blocks.",
+      "pass_condition": "Exactly 880 unique v0.1 scenario IDs across exactly 110 CB8 blocks.",
       "status": "not_met"
     },
     {

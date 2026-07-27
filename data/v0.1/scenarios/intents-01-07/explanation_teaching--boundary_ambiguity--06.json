@@ -1,0 +1,137 @@
+{
+  "schema": "realworld-prompt-kit.scenario/0.1.0",
+  "scenario_id": "rwpk.explanation_teaching.boundary_ambiguity.0006",
+  "revision": 1,
+  "status": "reviewed",
+  "semantic_group_id": "rwpg.explanation_teaching.boundary_ambiguity.0006",
+  "title": {
+    "ko": "학교 개념 비교 성인 청소년 대상",
+    "en": "School concept comparison Adult versus youth eligibility"
+  },
+  "task": {
+    "primary_intent": "explanation_teaching",
+    "secondary_intents": [
+      "summarization_synthesis"
+    ],
+    "primary_domain": "education_research",
+    "domain_tags": [],
+    "user_goal": {
+      "ko": "학교 개념 비교 성인 청소년 대상의 적용 범위를 가려줘. 어느 조건이 누구에게 해당하는지 비교해",
+      "en": "For School concept comparison Adult versus youth eligibility, determine the applicable scope; compare which condition applies to whom"
+    },
+    "expected_artifact": "An audience-appropriate explanation with examples and caveats."
+  },
+  "coverage": {
+    "block_id": "explanation_teaching.boundary_ambiguity.cb8",
+    "row": 6,
+    "facets": {
+      "context_scale": "long",
+      "goal_clarity": "explicit",
+      "output_shape": "structured",
+      "evidence_state": "incomplete",
+      "stakes": "low",
+      "interaction": "message_burst",
+      "surface_noise": "light"
+    },
+    "naturalistic_features": [
+      "frustration_urgency_emotion",
+      "indirect_polite_request"
+    ]
+  },
+  "realizations": [
+    {
+      "prompt_id": "rwpk.explanation_teaching.boundary_ambiguity.0006.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "학교 개념 비교 성인 청소년 대상 건의 배경은 수업·연구 자료야. 학교 개념 비교 성인 청소년 대상의 적용 범위를 가려줘. 어느 조건이 누구에게 해당하는지 비교해. 입력 상황: 성인 조건과 청소년 조건이 다른 안내 두 장으로 나뉘어 있어. 학교 개념 비교 성인 청소년 대상: 적용 범위를 먼저 나누고, 결론을 바꿀 빈칸은 질문으로 돌려줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.explanation_teaching.boundary_ambiguity.0006.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "frustration_urgency_emotion",
+        "indirect_polite_request"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "급해 — 먼저 학교 개념 비교 성인 청소년 대상을 봐줘. 분류는 수업·연구 자료야. 학교 개념 비교 성인 청소년 대상에서 적용 범위가 충돌해 학교 개념 비교 성인 청소년 대상 건이야. 성인용과 청소년용 안내를 비교해 실제 해당되는 사람을 골라줘."
+        },
+        {
+          "role": "user",
+          "content": "학교 개념 비교 성인 청소년 대상 기준으로 예외가 시작되는 조건과 빠지는 조건을 따로 보여줘. 바쁘시겠지만 학교 개념 비교 성인 청소년 대상에서 확인할 점만 알려주세요."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.explanation_teaching.boundary_ambiguity.0006.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "The relevant education/research case is School concept comparison Adult versus youth eligibility. For School concept comparison Adult versus youth eligibility, determine the applicable scope; compare which condition applies to whom. Input context: Adult and youth conditions are in two different notices. School concept comparison Adult versus youth eligibility: Split the applicable scope first and turn decision-changing gaps into questions."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.explanation_teaching.boundary_ambiguity.0006.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "frustration_urgency_emotion",
+        "indirect_polite_request"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Need this now — For School concept comparison Adult versus youth eligibility, the working area is education/research. The applicable boundary for School concept comparison Adult versus youth eligibility is in dispute. School concept comparison Adult versus youth eligibility. Compare the adult and youth notices and identify who each one actually covers."
+        },
+        {
+          "role": "user",
+          "content": "For School concept comparison Adult versus youth eligibility, Show what triggers the exception and what remains outside it. Would you mind checking School concept comparison Adult versus youth eligibility first?"
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "response_mode": {
+      "canonical": "ask_one_clarifying_question",
+      "naturalistic": "clarification_dialogue"
+    },
+    "invariants": [
+      "Keep the concepts distinct and use one example for each.",
+      "Avoid an oversimplification that erases the boundary."
+    ],
+    "rubric_dimensions": [
+      "distinction",
+      "age_appropriateness",
+      "example_quality"
+    ],
+    "failure_signals": [
+      "Treating the concepts as synonyms.",
+      "Using examples outside the stated level."
+    ]
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit contributors"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT"
+  }
+}

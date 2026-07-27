@@ -1,23 +1,22 @@
 {
-  "schema": "realworld-prompt-kit.coverage-audit/1.0.0",
-  "version": "1.0.0",
+  "schema": "realworld-prompt-kit.coverage-audit/0.1.0",
+  "version": "0.1.0",
   "audit_status": "pre_generation_baseline",
   "observation_phase": "pre_generation",
   "observed_at": "2026-07-27",
-  "superseded_by_current_release_report": "reports/coverage/v1-coverage.json",
-  "coverage_claim_policy": "No v1 scenario or prompt coverage is claimed unless committed artifacts, manifests, and validation evidence prove it.",
+  "superseded_by_current_release_report": "reports/coverage/coverage.json",
+  "coverage_claim_policy": "No broad-core scenario or prompt coverage is claimed unless committed artifacts, manifests, and validation evidence prove it.",
   "repository_observation": {
     "repository": "ParkerHwang/realworld-prompt-kit",
     "base_branch": "origin/main",
     "base_commit": "f8dc8d9ba376c64e44613ebcc0b9119a2530064f",
     "audit_branch": "codex/coverage-audit",
-    "v1_catalog_in_repo": false,
-    "v1_manifest_in_repo": false,
-    "v1_scenario_directory_in_repo": false,
-    "existing_v0_1_semantic_scenario_files": 8,
-    "existing_v0_1_is_not_v1_evidence": true
+    "broad_core_catalog_in_repo": false,
+    "broad_core_manifest_in_repo": false,
+    "broad_core_scenario_directory_in_repo": false,
+    "pre_generation_snapshot_is_not_release_evidence": true
   },
-  "observed_v1_coverage": {
+  "observed_broad_core_coverage": {
     "semantic_scenarios": 0,
     "cb8_blocks": 0,
     "prompt_realizations": 0,
@@ -62,7 +61,7 @@
       "required": 880,
       "observed": 0,
       "status": "not_met",
-      "note": "origin/main has only the earlier v0.1 eight-scenario pack; it is not v1 evidence."
+      "note": "origin/main was audited before broad-core artifacts existed; the historical seed snapshot was not release evidence."
     },
     {
       "id": "GAP-CORE-3520",
@@ -72,7 +71,7 @@
       "required": 3520,
       "observed": 0,
       "status": "not_met",
-      "note": "No v1 canonical/naturalistic realization artifacts are present."
+      "note": "No broad-core canonical/naturalistic realization artifacts are present."
     },
     {
       "id": "GAP-NATURALISTIC-24",
@@ -82,7 +81,7 @@
       "required_profiles": 24,
       "observed_profiles": 0,
       "status": "not_met",
-      "note": "Profiles are requirements only; no v1 scenarios are present."
+      "note": "Profiles are requirements only; no broad-core scenarios are present."
     },
     {
       "id": "GAP-ROUTING-METHOD",
@@ -244,7 +243,7 @@
     },
     {
       "id": "GATE-02-core-count",
-      "pass_condition": "Exactly 880 unique v1 scenario IDs across exactly 110 CB8 blocks.",
+      "pass_condition": "Exactly 880 unique v0.1 scenario IDs across exactly 110 CB8 blocks.",
       "status": "not_met"
     },
     {

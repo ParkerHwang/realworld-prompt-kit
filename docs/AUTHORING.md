@@ -42,7 +42,7 @@ corresponding cue. Ambiguous discourse labels such as an implicit goal or
 polite request are reviewed from the complete utterance; generic FOCUS,
 boundary, safety, or a literal word such as `jargon` alone does not satisfy
 them; code-switching should use a task-specific field or technical term in the
-localized message. The v1 validator checks
+localized message. The v0.1 validator checks
 the objective cues and the release review records the softer judgments.
 
 Do not reuse a latent topic across blocks and call the condition new breadth.

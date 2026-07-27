@@ -1,0 +1,134 @@
+{
+  "schema": "realworld-prompt-kit.scenario/0.1.0",
+  "scenario_id": "rwpk.diagnosis_root_cause.canonical_04.8132",
+  "revision": 1,
+  "status": "draft",
+  "semantic_group_id": "rwpg.diagnosis_root_cause.canonical.04",
+  "title": {
+    "ko": "식물 성장 편차 진단: 줄은 직사광 6 시간 시장 개장 전에 재입고 — 근거 중심 정리",
+    "en": "Diagnose uneven plant growth: row received 6 hours restock list was written — direct evidence organization"
+  },
+  "task": {
+    "primary_intent": "diagnosis_root_cause",
+    "secondary_intents": [
+      "quantitative_formal_analysis",
+      "qualitative_analysis"
+    ],
+    "primary_domain": "personal_everyday",
+    "domain_tags": [
+      "science_rd"
+    ],
+    "user_goal": {
+      "ko": "빛, 물, 토양, 공기 흐름을 가능한 원인으로 순위화하되 상관을 증명으로 취급하지 말고 다음 측정을 제안해줘. 토요일 재입고 실행 기록을 고정된 자료로 보고 필요한 가정은 밝혀줘. 근거 중심 정리 관점에서 판단하되 원자료의 근거를 드러내줘.",
+      "en": "Rank light, water, soil, and airflow as possible causes without treating correlation as proof; recommend the next measurement. Treat the Saturday restock run record as a closed fixture; state any necessary assumption. Use a direct evidence organization lens while keeping the source evidence visible."
+    },
+    "expected_artifact": "A cautious hypothesis ranking and measurement plan. for this Saturday restock run case."
+  },
+  "coverage": {
+    "block_id": "diagnosis_root_cause.canonical.cb8",
+    "row": 4,
+    "facets": {
+      "context_scale": "short",
+      "goal_clarity": "implicit",
+      "output_shape": "structured",
+      "evidence_state": "incomplete",
+      "stakes": "moderate",
+      "interaction": "single",
+      "surface_noise": "light"
+    },
+    "naturalistic_features": [
+      "multi_intent_mixed_priority",
+      "self_correction_scope_shift"
+    ]
+  },
+  "realizations": [
+    {
+      "prompt_id": "rwpk.diagnosis_root_cause.canonical_04.8132.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "빛, 물, 토양, 공기 흐름을 가능한 원인으로 순위화하되 상관을 증명으로 취급하지 말고 다음 측정을 제안해줘. 토요일 재입고 실행 기록을 고정된 자료로 보고 필요한 가정은 밝혀줘.\n\n성장이 다른 온실 두 줄 (토요일 재입고 실행):\n- A 줄은 직사광 6시간, 12센티미터 성장\n- B 줄은 3시간, 7센티미터 성장\n- 급수는 줄별 기록이 있지만 토양 수치는 없음\n- B 줄은 환기구 가까이 있고 공기 흐름은 측정하지 않음\n- 사례 자료: 시장 개장 전에 재입고 목록을 작성함\n\n성장이 다른 온실 두 줄 (토요일 재입고 실행): 확인이 쉽게 정리해줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.diagnosis_root_cause.canonical_04.8132.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "multi_intent_mixed_priority",
+        "self_correction_scope_shift"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "무엇이 바뀌었고 다른 설명은 뭘까? 성장이 다른 온실 두 줄 (토요일 재입고 실행): 확인한 줄은 B 줄은 환기구 가까이 있고 공기 흐름은 측정하지 않음; 원문에는 다음 문구가 있어: A 줄은 직사광 6시간, 12센티미터 성장; 자료상 표현은 급수는 줄별 기록이 있지만 토양 수치는 없음; 추가 관찰은 시장 개장 전에 재입고 목록을 작성함; 적어 둔 내용은 B 줄은 3시간, 7센티미터 성장. 처음엔 한 원인으로 봤는데, 아 아니다. 다른 가능성도 놓고 비교해줘. 그리고 성장이 다른 온실 두 줄 (토요일 재입고 실행)의 다음 단계 중 가장 중요한 것을 표시해줘. 성장이 다른 온실 두 줄 (토요일 재입고 실행): 검산이 쉽게 해줘. 성장이 다른 온실 두 줄 (토요일 재입고 실행): 확인이 쉽게 정리해줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.diagnosis_root_cause.canonical_04.8132.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Rank light, water, soil, and airflow as possible causes without treating correlation as proof; recommend the next measurement. Treat the Saturday restock run record as a closed fixture; state any necessary assumption.\n\nTwo greenhouse rows with different growth for the Saturday restock run:\n- row A received 6 hours of direct light and grew 12 centimeters\n- row B received 3 hours and grew 7 centimeters\n- watering was logged by row but soil readings are missing\n- row B is closer to a vent, and airflow was not measured\n- Case fixture: the restock list was written before the market opened.\n\nTwo greenhouse rows with different growth for the Saturday restock run: make checks easy."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.diagnosis_root_cause.canonical_04.8132.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "multi_intent_mixed_priority",
+        "self_correction_scope_shift"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "What changed, and what else could explain it? Two greenhouse rows with different growth for the Saturday restock run: The entry records row B is closer to a vent, and airflow was not measured; Note: row A received 6 hours of direct light and grew 12 centimeters; Listed item: watering was logged by row but soil readings are missing; The restock list was written before the market opened; Source note: row B received 3 hours and grew 7 centimeters. I suspected one cause at first, but actually lay out the alternatives before calling anything a root cause. And mark the highest-priority next step for two greenhouse rows with different growth for the saturday restock run. Two greenhouse rows with different growth for the saturday restock run: make it auditable. Two greenhouse rows with different growth for the Saturday restock run: make checks easy."
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "response_mode": {
+      "canonical": "answer_directly",
+      "naturalistic": "state_assumptions_and_answer"
+    },
+    "invariants": [
+      "Separate observed facts, plausible explanations, and diagnostic next steps."
+    ],
+    "rubric_dimensions": [
+      "cause_evidence",
+      "hypothesis_separation",
+      "next_step_quality",
+      "evidence_fidelity",
+      "organization",
+      "clarity"
+    ],
+    "failure_signals": [
+      "Timing or correlation alone is treated as proof of a root cause.",
+      "A supplied fact or qualifier is dropped or silently changed."
+    ]
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit contributors"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT"
+  }
+}

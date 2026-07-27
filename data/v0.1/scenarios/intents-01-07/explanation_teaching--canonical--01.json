@@ -1,0 +1,131 @@
+{
+  "schema": "realworld-prompt-kit.scenario/0.1.0",
+  "scenario_id": "rwpk.explanation_teaching.canonical.0001",
+  "revision": 1,
+  "status": "reviewed",
+  "semantic_group_id": "rwpg.explanation_teaching.canonical.0001",
+  "title": {
+    "ko": "복리 설명 이번 주 기준표",
+    "en": "Compound interest This week's baseline"
+  },
+  "task": {
+    "primary_intent": "explanation_teaching",
+    "secondary_intents": [
+      "summarization_synthesis"
+    ],
+    "primary_domain": "personal_everyday",
+    "domain_tags": [
+      "education_research"
+    ],
+    "user_goal": {
+      "ko": "복리를 초보자에게 원금·이자·기간의 관계가 보이게 설명해줘 현재 바로 쓸 수 있는 답 한 가지를 정리해",
+      "en": "explain compound interest to a beginner so the relationship among principal, interest, and time is visible; give one answer that can be used now"
+    },
+    "expected_artifact": "An audience-appropriate explanation with examples and caveats."
+  },
+  "coverage": {
+    "block_id": "explanation_teaching.canonical.cb8",
+    "row": 1,
+    "facets": {
+      "context_scale": "short",
+      "goal_clarity": "explicit",
+      "output_shape": "prose",
+      "evidence_state": "complete",
+      "stakes": "low",
+      "interaction": "single",
+      "surface_noise": "light"
+    },
+    "naturalistic_features": [
+      "terse_fragment",
+      "implicit_goal_or_output"
+    ]
+  },
+  "realizations": [
+    {
+      "prompt_id": "rwpk.explanation_teaching.canonical.0001.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "복리 설명 이번 주 기준표 건의 배경은 내 일정·생활 건이야. 복리를 초보자에게 원금·이자·기간의 관계가 보이게 설명해줘 현재 바로 쓸 수 있는 답 한 가지를 정리해. 입력 상황: 숫자 예시는 원금 100, 연 5%, 2년으로 하고 투자 추천은 하지 말아줘. 이번 건은 이번 주 월요일에 배포된 한 장짜리 공지를 기준으로 해. 복리 설명 이번 주 기준표: 답에 쓸 수 있는 근거와 보류할 부분을 나눠줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.explanation_teaching.canonical.0001.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "terse_fragment",
+        "implicit_goal_or_output"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "복리 설명 이번 주 기준표: 복리; 원금 100·연 5%·2년 예시, 투자추천 금지. 초보용 설명 하나. 초안이면 돼?"
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.explanation_teaching.canonical.0001.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Use the personal-life context for Compound interest This week's baseline. Explain compound interest to a beginner so the relationship among principal, interest, and time is visible; give one answer that can be used now. Input context: Use principal 100, 5% annually, and two years for the example, without making an investment recommendation. This case uses a one-page notice issued on Monday this week. Compound interest This week's baseline: Show what can be used now and what must wait for proof."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.explanation_teaching.canonical.0001.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "terse_fragment",
+        "implicit_goal_or_output"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Compound interest This week's baseline: Compound interest; principal 100, 5% yearly, two-year example; no investment advice. One beginner explanation. A usable draft?"
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "response_mode": {
+      "canonical": "answer_directly",
+      "naturalistic": "infer_and_answer"
+    },
+    "invariants": [
+      "Use the supplied example and show the calculation steps.",
+      "Separate explanation from financial advice."
+    ],
+    "rubric_dimensions": [
+      "concept_accuracy",
+      "example_quality",
+      "financial_boundary"
+    ],
+    "failure_signals": [
+      "Using simple rather than compound interest.",
+      "Turning the example into a recommendation."
+    ]
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit contributors"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT"
+  }
+}

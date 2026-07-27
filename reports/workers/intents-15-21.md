@@ -1,6 +1,6 @@
 # Worker report: intents 15–21
 
-Generated against the authoritative v1.0 prompt-kit catalog recovered from the orchestrator handoff.
+Generated against the authoritative v0.1 prompt-kit catalog recovered from the orchestrator handoff.
 
 ## Deliverable
 
@@ -8,7 +8,7 @@ Generated against the authoritative v1.0 prompt-kit catalog recovered from the o
 - Prompt realizations: **1344** (ko/en canonical/naturalistic per scenario)
 - Coverage blocks: **42**, each with exactly 8 rows
 - Primary intents: planning_strategy_design=48, communication_collaboration_negotiation=40, one_off_tool_execution=56, automation_integration=56, operations_monitoring_improvement=48, coaching_conversational_support=40, ai_agent_meta=48
-- Schema: `realworld-prompt-kit.scenario/1.0.0`
+- Schema: `realworld-prompt-kit.scenario/0.1.0`
 - Provenance: synthetic; `contains_personal_data=false`; MIT
 
 ## Block quota

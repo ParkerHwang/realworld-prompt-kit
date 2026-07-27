@@ -1,7 +1,7 @@
 # Worker B — intents 08–14 scenario delivery
 
-- Schema: `realworld-prompt-kit.scenario/1.0.0`
-- Scope: `data/v1.0/scenarios/intents-08-14/`
+- Schema: `realworld-prompt-kit.scenario/0.1.0`
+- Scope: `data/v0.1/scenarios/intents-08-14/`
 - Semantic scenarios: 320
 - Prompt realizations: 1,280 (four per scenario: ko/en × canonical/naturalistic)
 - Source policy: synthetic prompts only; `contains_personal_data=false`

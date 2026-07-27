@@ -1,6 +1,6 @@
-# v1 Release Criteria
+# v0.1 Release Criteria
 
-The v1 release counts semantic breadth separately from prompt realizations.
+The v0.1 release counts semantic breadth separately from prompt realizations.
 The broad core is complete only when the checked-in artifacts and the
 dependency-free validator agree on every gate below:
 
@@ -12,7 +12,7 @@ dependency-free validator agree on every gate below:
 - globally unique `scenario_id`, `semantic_group_id`, and `prompt_id` values;
 - only the 28 catalog domain IDs and 24 naturalistic profile IDs;
 - domain and profile minimum-presence overlays plus the broad composition
-  ratios in `data/v1.0/manifest.json`;
+  ratios in `data/v0.1/manifest.json`;
 - synthetic provenance, MIT rights basis, and
   `contains_personal_data=false` on every public scenario;
 - no exact or normalized prompt duplicates, placeholder leakage, missing
@@ -48,7 +48,7 @@ dependency-free validator agree on every gate below:
   evidence recorded in the release review report.
 
 `status=reviewed` means a row-level human or named review pass has been
-recorded; it is not a synonym for “the automated validator passed.” The v1
+recorded; it is not a synonym for “the automated validator passed.” The v0.1
 manifest remains `release_candidate` while any rows are still `draft`, and the
 coverage report must publish the full status distribution. A block sample does
 not authorize bulk promotion of its other seven rows. Only a separately
@@ -63,9 +63,8 @@ Run the release checks from the repository root:
 
 ```bash
 python3 tools/validate.py --manifest data/v0.1/manifest.json
-python3 tools/validate.py --manifest data/v1.0/manifest.json
 python3 -m unittest discover -s tests
-python3 tools/export_jsonl.py --manifest data/v1.0/manifest.json --output build/realworld-prompt-kit-v1.jsonl
+python3 tools/export_jsonl.py --output build/realworld-prompt-kit.jsonl
 python3 tools/coverage_report.py
 ```
 
@@ -82,5 +81,6 @@ instruction cues, 5 numeric fact losses, and 1 rambling-length failure); the
 path-restricted integration repair reduced every class to zero without adding
 a phrase whitelist or promoting scenario status.
 
-The v0.1 manifest and validator remain supported. A v1 release may add files
-under `data/v1.0/` without rewriting or reinterpreting the v0.1 pack.
+The v0.1 manifest and validator are the sole release contract. Future suites
+must remain separately planned and must not change the broad-core counts or
+silently acquire release coverage without their own artifacts and evidence.

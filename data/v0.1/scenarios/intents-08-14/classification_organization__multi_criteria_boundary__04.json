@@ -1,0 +1,137 @@
+{
+  "schema": "realworld-prompt-kit.scenario/0.1.0",
+  "scenario_id": "rwpk.classification_organization.multi_criteria_boundary_04.8028",
+  "revision": 1,
+  "status": "draft",
+  "semantic_group_id": "rwpg.classification_organization.multi_criteria_boundary.04",
+  "title": {
+    "ko": "식료품 목록 정리: 빨리 사용 신선도와 비용 식품 안전 정보가 필수이고 — 하드·소프트 기준 구분",
+    "en": "Organize a pantry list: use soon freshness cost food safety information required — hard and soft criteria"
+  },
+  "task": {
+    "primary_intent": "classification_organization",
+    "secondary_intents": [
+      "qualitative_analysis"
+    ],
+    "primary_domain": "personal_everyday",
+    "domain_tags": [
+      "personal_everyday",
+      "retail_ecommerce"
+    ],
+    "user_goal": {
+      "ko": "장보기 메모에서 옮긴 식료품 재고 (신선도와 비용 사례) 증거를 쓸 만한 그룹으로 묶고 질문이 필요한 항목을 표시해줘. 하드·소프트 기준 구분 관점에서 판단하되 원자료의 근거를 드러내줘.",
+      "en": "Organize the pantry inventory copied from a shopping note for freshness-and-cost evidence into useful groups and mark any item that needs a question. Use a hard and soft criteria lens while keeping the source evidence visible."
+    },
+    "expected_artifact": "A labeled evidence table with category, source reason, and unresolved flag."
+  },
+  "coverage": {
+    "block_id": "classification_organization.multi_criteria_boundary.cb8",
+    "row": 4,
+    "facets": {
+      "context_scale": "short",
+      "goal_clarity": "implicit",
+      "output_shape": "structured",
+      "evidence_state": "incomplete",
+      "stakes": "moderate",
+      "interaction": "single",
+      "surface_noise": "light"
+    },
+    "naturalistic_features": [
+      "multi_intent_mixed_priority",
+      "self_correction_scope_shift",
+      "contradictory_constraints"
+    ]
+  },
+  "realizations": [
+    {
+      "prompt_id": "rwpk.classification_organization.multi_criteria_boundary_04.8028.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "장보기 메모에서 옮긴 식료품 재고 (신선도와 비용 사례) 증거를 쓸 만한 그룹으로 묶고 질문이 필요한 항목을 표시해줘.\n\n장보기 메모에서 옮긴 식료품 재고 (신선도와 비용 사례):\n- 빨리 사용: 신선도와 비용 사례 시금치는 어제 개봉됨\n- 재구매: 신선도와 비용 사례 쌀은 미개봉 2봉 남음\n- 보관: 신선도와 비용 사례 콩은 당장 날짜 문제가 없는 8캔\n- 날짜 확인: 신선도와 비용 사례 귀리는 6주 뒤 날짜를 확인해야 함\n- 사례 자료: 식품 안전 정보가 필수이고 다양성은 선호 기준임\n\n장보기 메모에서 옮긴 식료품 재고 (신선도와 비용 사례): 제약을 모두 남겨줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.classification_organization.multi_criteria_boundary_04.8028.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "multi_intent_mixed_priority",
+        "self_correction_scope_shift",
+        "contradictory_constraints"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "근거를 남긴 분류가 필요해: 장보기 메모에서 옮긴 식료품 재고 (신선도와 비용 사례): 추가 관찰은 식품 안전 정보가 필수이고 다양성은 선호 기준임; 재구매 항목은 신선도와 비용 사례 쌀은 미개봉 2봉 남음; 날짜 확인 항목은 신선도와 비용 사례 귀리는 6주 뒤 날짜를 확인해야 함; 빨리 사용 항목은 신선도와 비용 사례 시금치는 어제 개봉됨; 보관 항목은 신선도와 비용 사례 콩은 당장 날짜 문제가 없는 8캔. 간단한 라벨만 원했는데, 아 아니다. 애매한 항목은 따로 두고 원문 표현을 보존해줘. 다른 요청은 장보기 메모에서 옮긴 식료품 재고 (신선도와 비용 사례)의 다음 행동 하나만 골라줘. 장보기 메모에서 옮긴 식료품 재고 (신선도와 비용 사례)을 간단히 정리해도 예외를 지우지는 말아줘. 장보기 메모에서 옮긴 식료품 재고 (신선도와 비용 사례): 목록으로 보여줘. 장보기 메모에서 옮긴 식료품 재고 (신선도와 비용 사례): 제약을 모두 남겨줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.classification_organization.multi_criteria_boundary_04.8028.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Organize the pantry inventory copied from a shopping note for freshness-and-cost evidence into useful groups and mark any item that needs a question.\n\nA pantry inventory copied from a shopping note for the freshness-and-cost case:\n- use soon: the freshness-and-cost spinach was opened yesterday\n- restock: the freshness-and-cost rice has 2 unopened bags left\n- store: the freshness-and-cost beans have 8 cans with no immediate date concern\n- monitor date: the freshness-and-cost oats are due for a date check in 6 weeks\n- Case fixture: food safety information is required; variety is a preference.\n\nPantry inventory copied from a shopping note for the freshness-and-cost case: keep every constraint visible."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.classification_organization.multi_criteria_boundary_04.8028.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "multi_intent_mixed_priority",
+        "self_correction_scope_shift",
+        "contradictory_constraints"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "I need a clean classification, with evidence: A pantry inventory copied from a shopping note for the freshness-and-cost case: Food safety information is required; variety is a preference; The Restock entry says the freshness-and-cost rice has 2 unopened bags left; The Monitor date entry says the freshness-and-cost oats are due for a date check in 6 weeks; The Use soon entry says the freshness-and-cost spinach was opened yesterday; The Store entry says the freshness-and-cost beans have 8 cans with no immediate date concern. At first I wanted a simple set of labels—actually, keep the uncertain cases separate and preserve the source wording. I have another ask: identify the next action for pantry inventory copied from a shopping note for the freshness-and-cost case. Be brief on pantry inventory copied from a shopping note for the freshness-and-cost case; do not flatten the important exception. Pantry inventory copied from a shopping note for the freshness-and-cost case: bullets are fine. Pantry inventory copied from a shopping note for the freshness-and-cost case: keep every constraint visible."
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "response_mode": {
+      "canonical": "state_assumptions_and_answer",
+      "naturalistic": "state_assumptions_and_answer"
+    },
+    "invariants": [
+      "Assign each item once unless the evidence explicitly supports a multi-label or unresolved status."
+    ],
+    "rubric_dimensions": [
+      "category_fit",
+      "boundary_visibility",
+      "traceability",
+      "criteria_separation",
+      "tradeoff_reasoning",
+      "decision_traceability"
+    ],
+    "failure_signals": [
+      "A label is applied without reference to the supplied evidence or an unresolved item is forced into a definitive category.",
+      "A soft preference overrides a hard constraint without acknowledgement."
+    ]
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit contributors"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT"
+  }
+}

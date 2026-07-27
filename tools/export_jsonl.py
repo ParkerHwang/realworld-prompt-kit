@@ -9,17 +9,16 @@ from pathlib import Path
 from typing import Any
 
 try:
-    from .validate import DEFAULT_MANIFEST, ROOT, load_json, scenario_paths, validate_repository
-    from .v1_validation import validate_v1_repository
+    from .validation import DEFAULT_MANIFEST, ROOT, load_json, scenario_paths, validate_repository
 except ImportError:  # pragma: no cover - direct script execution
-    from validate import DEFAULT_MANIFEST, ROOT, load_json, scenario_paths, validate_repository
-    from v1_validation import validate_v1_repository
+    from validation import validate_repository
+    from validation import DEFAULT_MANIFEST, ROOT, load_json, scenario_paths
 
 
 def flatten(document: dict[str, Any]) -> list[dict[str, Any]]:
     sample_schema = (
-        "realworld-prompt-kit.sample/1.0.0"
-        if document.get("schema") == "realworld-prompt-kit.scenario/1.0.0"
+        "realworld-prompt-kit.sample/0.1.0"
+        if document.get("schema") == "realworld-prompt-kit.scenario/0.1.0"
         else "realworld-prompt-kit.sample/0.1.0"
     )
     rows: list[dict[str, Any]] = []
@@ -52,19 +51,12 @@ def main() -> int:
     args = parser.parse_args()
 
     manifest = load_json(args.manifest)
-    v1_report = None
-    if manifest.get("schema") == "realworld-prompt-kit.manifest/1.0.0":
-        v1_report = validate_v1_repository(args.manifest)
-        errors = v1_report.errors
-    else:
-        errors = validate_repository(args.manifest)
-    if errors:
+    report = validate_repository(args.manifest)
+    if report.errors:
         raise SystemExit("validation failed; run tools/validate.py for details")
 
     rows: list[dict[str, Any]] = []
-    paths = scenario_paths(manifest)
-    if v1_report is not None:
-        paths = sorted(ROOT.glob(manifest["scenario_glob"]))
+    paths = scenario_paths(manifest, ROOT)
     for path in paths:
         rows.extend(flatten(load_json(path)))
 

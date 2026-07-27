@@ -6,7 +6,7 @@ This worker owns the first seven catalog task intents. The files are synthetic, 
 
 - Semantic scenarios: **224**
 - Prompt realizations: **896**
-- Schema: `realworld-prompt-kit.scenario/1.0.0`
+- Schema: `realworld-prompt-kit.scenario/0.1.0`
 - Each block has exactly 8 rows and uses a strength-2 pairwise CB8 design over the seven binary coverage facets.
 - All 224 rows were revised and inspected in this pass; all are marked `reviewed`.
 
@@ -153,7 +153,7 @@ All profile ids used below come from the catalog naturalistic profile list. Cano
 ## Validation performed
 
 - JSON parsing for every scenario file.
-- Required v1.0.0 top-level shape, locale/form pair, synthetic provenance, scenario/prompt identity, catalog intent/domain/profile ids, and high-stakes boundary checks.
+- Required v0.1.0 top-level shape, locale/form pair, synthetic provenance, scenario/prompt identity, catalog intent/domain/profile ids, and high-stakes boundary checks.
 - Exact per-block count (8), exact declared block set for intents 01–07, unique scenario and prompt ids, and pairwise CB8 coverage.
 - Domain-composition guardrails: general/office/business/education/personal at least 60%; software/data below 20%.
 - Theme/domain alignment checked against the candidate-domain map, and retrieval rows explicitly require official-source lookup or clarification when evidence is absent.

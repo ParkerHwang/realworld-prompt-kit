@@ -1,14 +1,14 @@
-# v1.0 pre-generation coverage baseline
+# v0.1 pre-generation coverage baseline
 
 Status: **dated pre-generation baseline** (2026-07-27). This audit records the
-requirements-only state of origin/main before v1 artifacts were generated; it
+requirements-only state of origin/main before v0.1 artifacts were generated; it
 is not the current release report and its zero observations must not be used to
-describe the checked-in v1 package. Current evidence is generated at
-`reports/coverage/v1-coverage.json` and `reports/coverage/v1-coverage.md`.
+describe the checked-in v0.1 package. Current evidence is generated at
+`reports/coverage/coverage.json` and `reports/coverage/coverage.md`.
 
 ## Bottom line
 
-The requested v1.0 basis is 21 task intents, 110 CB8 blocks, 880 semantic scenarios, and four realizations per scenario (3,520 prompt realizations). The three core worker partitions can be planned to produce the 880-scenario broad core:
+The requested v0.1 basis is 21 task intents, 110 CB8 blocks, 880 semantic scenarios, and four realizations per scenario (3,520 prompt realizations). The three core worker partitions can be planned to produce the 880-scenario broad core:
 
 | partition | intent range | semantic scenarios |
 | --- | ---: | ---: |
@@ -17,7 +17,7 @@ The requested v1.0 basis is 21 task intents, 110 CB8 blocks, 880 semantic scenar
 | core-worker-3 | 15–21 | 336 |
 | **total** | **1–21** | **880** |
 
-origin/main at commit f8dc8d9ba376c64e44613ebcc0b9119a2530064f contains the earlier v0.1 pack (8 scenario files), not v1.0 catalog/scenario artifacts. Observed v1 coverage is therefore zero.
+origin/main at commit f8dc8d9ba376c64e44613ebcc0b9119a2530064f was audited before the broad-core catalog and scenario artifacts existed. The historical seed snapshot was not treated as release evidence, so observed broad-core coverage was zero.
 
 ## Coverage planes
 
@@ -51,7 +51,7 @@ These may reuse semantic scenario IDs, but they do not inherit release credit fr
 ## Exact release gates
 
 1. Pin catalog/schema/method revisions and an external confusable-edge registry if edge coverage is claimed.
-2. Prove 880 unique v1 scenario IDs in 110 disjoint CB8 blocks.
+2. Prove 880 unique v0.1 scenario IDs in 110 disjoint CB8 blocks.
 3. Prove the three partition union is disjoint and complete (224 + 320 + 336).
 4. Prove exactly four realizations per core scenario (3,520 total).
 5. Pass all 21 intent quotas, 28 domain quotas, 24 naturalistic profile quotas, and composition guardrails.
@@ -61,7 +61,7 @@ These may reuse semantic scenario IDs, but they do not inherit release credit fr
 9. Pass schema, identity, hash, split, leakage, privacy, and deterministic-scoring checks.
 10. Publish only a manifest whose counts match present artifacts.
 
-At the audit timestamp these gates were **not met** because origin/main held
-only v0.1. The baseline is retained for evidence separation; after generation,
-the current release status comes only from the v1 manifest, scenario files, and
+At the audit timestamp these gates were **not met** because origin/main held no
+broad-core artifacts. The baseline is retained for evidence separation; after
+generation, the current release status comes only from the v0.1 manifest, scenario files, and
 the current coverage report.

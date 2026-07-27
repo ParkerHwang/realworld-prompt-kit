@@ -1,0 +1,157 @@
+{
+  "schema": "realworld-prompt-kit.scenario/0.1.0",
+  "scenario_id": "rwpk.evaluation_review_audit.boundary_ambiguity_07.8239",
+  "revision": 1,
+  "status": "draft",
+  "semantic_group_id": "rwpg.evaluation_review_audit.boundary_ambiguity.07",
+  "title": {
+    "ko": "개인정보 보호 통제 검토: 출처 경계 사례 서비스 라벨 하나가 확인된 사실이 — 경계 사례 판단",
+    "en": "Review privacy controls: access provenance edge service one label interpretation rather — borderline-case reasoning"
+  },
+  "task": {
+    "primary_intent": "evaluation_review_audit",
+    "secondary_intents": [
+      "classification_organization",
+      "qualitative_analysis"
+    ],
+    "primary_domain": "office_admin",
+    "domain_tags": [
+      "software_it",
+      "legal_compliance"
+    ],
+    "user_goal": {
+      "ko": "소규모 서비스의 개인정보 보호 통제 설명 (출처 경계 사례) 근거에서 결과에 영향을 줄 공백을 감사하되 법적 준수 결론을 만들지는 마. 경계 사례 판단 관점에서 판단하되 원자료의 근거를 드러내줘.",
+      "en": "Audit the small service's stated privacy controls for provenance edge evidence for gaps that could affect the result, without inventing a compliance verdict. Use a borderline-case reasoning lens while keeping the source evidence visible."
+    },
+    "expected_artifact": "An evidence-aware review table with findings, gaps, and minimum corrections."
+  },
+  "coverage": {
+    "block_id": "evaluation_review_audit.boundary_ambiguity.cb8",
+    "row": 7,
+    "facets": {
+      "context_scale": "long",
+      "goal_clarity": "implicit",
+      "output_shape": "prose",
+      "evidence_state": "complete",
+      "stakes": "moderate",
+      "interaction": "message_burst",
+      "surface_noise": "light"
+    },
+    "naturalistic_features": [
+      "followup_without_restatement",
+      "anaphora_prior_context",
+      "resume_after_interruption",
+      "missing_decisive_detail"
+    ]
+  },
+  "realizations": [
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.boundary_ambiguity_07.8239.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "소규모 서비스의 개인정보 보호 통제 설명 (출처 경계 사례) 근거에서 결과에 영향을 줄 공백을 감사하되 법적 준수 결론을 만들지는 마.\n\n소규모 서비스의 개인정보 보호 통제 설명 (출처 경계 사례):\n- 출처 경계 사례 서비스 접근은 지정된 팀 계정으로 제한\n- 출처 경계 사례 서비스 내보내기 파일은 95일 보관\n- 출처 경계 사례 삭제 절차는 설명됐지만 테스트되지 않음\n- 출처 경계 사례 자료에는 적용 관할이 식별되지 않음\n- 사례 자료: 라벨 하나가 확인된 사실이 아니라 해석임\n\n소규모 서비스의 개인정보 보호 통제 설명 (출처 경계 사례): 경계를 설명해줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.boundary_ambiguity_07.8239.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "followup_without_restatement",
+        "anaphora_prior_context",
+        "resume_after_interruption",
+        "missing_decisive_detail"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "소규모 서비스의 개인정보 보호 통제 설명 (출처 경계 사례) 이야기를 이어서 보면: 소규모 서비스의 개인정보 보호 통제 설명 (출처 경계 사례): 추가 관찰은 라벨 하나가 확인된 사실이 아니라 해석임; 확인한 줄은 출처 경계 사례 서비스 내보내기 파일은 95일 보관"
+        },
+        {
+          "role": "user",
+          "content": "붙여 둔 문구는 출처 경계 사례 자료에는 적용 관할이 식별되지 않음; 자료상 표현은 출처 경계 사례 서비스 접근은 지정된 팀 계정으로 제한; 이 기록의 문장은 출처 경계 사례 삭제 절차는 설명됐지만 테스트되지 않음."
+        },
+        {
+          "role": "user",
+          "content": "그 자료 기준으로 소규모 서비스의 개인정보 보호 통제 설명 (출처 경계 사례)의 감사 흔적을 남겨줘. 발견, 근거, 가장 작은 수정 순서로. 소규모 서비스의 개인정보 보호 통제 설명 (출처 경계 사례)에서 빠진 근거 중 결과를 바꿀 것은 뭐야? 소규모 서비스의 개인정보 보호 통제 설명 (출처 경계 사례): 경계를 설명해줘. 그리고 뭐를 확인해야 해?"
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.boundary_ambiguity_07.8239.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Audit the small service's stated privacy controls for provenance edge evidence for gaps that could affect the result, without inventing a compliance verdict.\n\nA small service's stated privacy controls for the provenance edge case:\n- access in the provenance edge service is limited to named team accounts\n- exports in the provenance edge service are retained for 95 days\n- the provenance edge deletion workflow is described but not tested\n- the provenance edge material does not identify the applicable jurisdiction\n- Case fixture: one label is an interpretation rather than a confirmed fact.\n\nSmall service's stated privacy controls for the provenance edge case: explain the boundary."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.boundary_ambiguity_07.8239.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "followup_without_restatement",
+        "anaphora_prior_context",
+        "resume_after_interruption",
+        "missing_decisive_detail"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Picking up the small service's stated privacy controls for the provenance edge case thread: A small service's stated privacy controls for the provenance edge case: One label is an interpretation rather than a confirmed fact; Source line—exports in the provenance edge service are retained for 95 days"
+        },
+        {
+          "role": "user",
+          "content": "The source line is the provenance edge material does not identify the applicable jurisdiction; Observed: access in the provenance edge service is limited to named team accounts; One note: the provenance edge deletion workflow is described but not tested."
+        },
+        {
+          "role": "user",
+          "content": "Based on that, I need an audit trail here: finding, evidence, and the smallest useful correction. What missing evidence in the small service's stated privacy controls for the provenance edge case would change the call? Small service's stated privacy controls for the provenance edge case: explain the boundary. And what needs checking?"
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "response_mode": {
+      "canonical": "state_assumptions_and_answer",
+      "naturalistic": "state_assumptions_and_answer"
+    },
+    "invariants": [
+      "Distinguish a control or criterion that is present, absent, and merely described but untested."
+    ],
+    "rubric_dimensions": [
+      "audit_completeness",
+      "evidence_traceability",
+      "prioritization",
+      "boundary_handling",
+      "assumption_visibility",
+      "scope_discipline"
+    ],
+    "failure_signals": [
+      "A review claims compliance or success from a description that was not tested.",
+      "An ambiguous condition is presented as settled without an assumption or question."
+    ]
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit contributors"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT"
+  }
+}

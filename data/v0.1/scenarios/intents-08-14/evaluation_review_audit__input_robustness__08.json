@@ -1,0 +1,141 @@
+{
+  "schema": "realworld-prompt-kit.scenario/0.1.0",
+  "scenario_id": "rwpk.evaluation_review_audit.input_robustness_08.8248",
+  "revision": 1,
+  "status": "draft",
+  "semantic_group_id": "rwpg.evaluation_review_audit.input_robustness.08",
+  "title": {
+    "ko": "성과 대시보드 감사: 제목이 잘린 스프레드시트 추출 열 제목 하나가 잘렸지만 — 혼합 입력 복원",
+    "en": "Audit a performance dashboard: orders spreadsheet export clipped one column header — messy-input recovery"
+  },
+  "task": {
+    "primary_intent": "evaluation_review_audit",
+    "secondary_intents": [
+      "classification_organization",
+      "qualitative_analysis"
+    ],
+    "primary_domain": "office_admin",
+    "domain_tags": [
+      "software_it",
+      "strategy_business_operations"
+    ],
+    "user_goal": {
+      "ko": "주간 운영 대시보드 (제목이 잘린 스프레드시트 추출) 검토를 발견, 근거, 불확실성, 다음 수정 우선순위가 보이게 해줘. 혼합 입력 복원 관점에서 판단하되 원자료의 근거를 드러내줘.",
+      "en": "Make this weekly operations dashboard for spreadsheet export with clipped headers inspectable: finding, evidence, uncertainty, and priority for the next fix. Use a messy-input recovery lens while keeping the source evidence visible."
+    },
+    "expected_artifact": "An evidence-aware review table with findings, gaps, and minimum corrections."
+  },
+  "coverage": {
+    "block_id": "evaluation_review_audit.input_robustness.cb8",
+    "row": 8,
+    "facets": {
+      "context_scale": "long",
+      "goal_clarity": "implicit",
+      "output_shape": "structured",
+      "evidence_state": "complete",
+      "stakes": "low",
+      "interaction": "single",
+      "surface_noise": "heavy"
+    },
+    "naturalistic_features": [
+      "frustration_urgency_emotion",
+      "indirect_polite_request",
+      "contradictory_constraints",
+      "interleaved_instruction_and_paste"
+    ]
+  },
+  "realizations": [
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.input_robustness_08.8248.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "주간 운영 대시보드 (제목이 잘린 스프레드시트 추출) 검토를 발견, 근거, 불확실성, 다음 수정 우선순위가 보이게 해줘.\n\n주간 운영 대시보드 (제목이 잘린 스프레드시트 추출):\n- 제목이 잘린 스프레드시트 추출 대시보드 주문은 생성일 기준으로 집계\n- 환불은 제목이 잘린 스프레드시트 추출 매출에서 빠지지만 주문 건수에서는 빠지지 않음\n- 제목이 잘린 스프레드시트 추출 대시보드 담당자는 적혀 있지 않음\n- 제목이 잘린 스프레드시트 추출 지역 필터가 월중 변경됐지만 변경 기록이 없음\n- 사례 자료: 열 제목 하나가 잘렸지만 원래 건수는 보임\n\n주간 운영 대시보드 (제목이 잘린 스프레드시트 추출): 잡음이 바꾼 것을 보여줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.input_robustness_08.8248.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "frustration_urgency_emotion",
+        "indirect_polite_request",
+        "contradictory_constraints",
+        "interleaved_instruction_and_paste"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "이 메모의 완전성을 꼼꼼히 봐줘: 주간 운영 대시보드 (제목이 잘린 스프레드시트 추출): 주간 운영 대시보드 (제목이 잘린 스프레드시트 추출) 붙여넣은 근거: 자료상 표현은 환불은 제목이 잘린 스프레드시트 추출 매출에서 빠지지만 주문 건수에서는 빠지지 않음; 이 기록의 문장은 제목이 잘린 스프레드시트 추출 지역 필터가 월중 변경됐지만 변경 기록이 없음; 적어 둔 내용은 제목이 잘린 스프레드시트 추출 대시보드 주문은 생성일 기준으로 집계; 확인한 줄은 제목이 잘린 스프레드시트 추출 대시보드 담당자는 적혀 있지 않음; 추가 관찰은 열 제목 하나가 잘렸지만 원래 건수는 보임 [이후 요청: 주간 운영 대시보드 (제목이 잘린 스프레드시트 추출)]. 오늘 안에 주간 운영 대시보드 (제목이 잘린 스프레드시트 추출)을 결정해야 해: 주간 운영 대시보드 (제목이 잘린 스프레드시트 추출)에 대해 조심스럽게 읽어줄 수 있을까? 통과, 미완료, 테스트나 담당자가 더 필요한 부분을 나눠줘. 주간 운영 대시보드 (제목이 잘린 스프레드시트 추출)의 핵심은 압축하되 불확실성은 보이게 해줘. 주간 운영 대시보드 (제목이 잘린 스프레드시트 추출): 필드를 나눠줘. 주간 운영 대시보드 (제목이 잘린 스프레드시트 추출): 잡음이 바꾼 것을 보여줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.input_robustness_08.8248.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Make this weekly operations dashboard for spreadsheet export with clipped headers inspectable: finding, evidence, uncertainty, and priority for the next fix.\n\nA weekly operations dashboard for the spreadsheet export with clipped headers:\n- orders in the spreadsheet export with clipped headers dashboard are counted by created date\n- refunds are removed from spreadsheet export with clipped headers revenue but not from order count\n- the spreadsheet export with clipped headers dashboard owner is not named\n- the spreadsheet export with clipped headers region filter changed mid-month without a change note\n- Case fixture: one column header is clipped and the original counts remain visible.\n\nWeekly operations dashboard for the spreadsheet export with clipped headers: show what the noise changed."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.input_robustness_08.8248.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "frustration_urgency_emotion",
+        "indirect_polite_request",
+        "contradictory_constraints",
+        "interleaved_instruction_and_paste"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "A careful completeness review of these notes, please: A weekly operations dashboard for the spreadsheet export with clipped headers: Pasted evidence for a weekly operations dashboard for the spreadsheet export with clipped headers: The evidence line says refunds are removed from spreadsheet export with clipped headers revenue but not from order count; Memo line: the spreadsheet export with clipped headers region filter changed mid-month without a change note; The written detail is orders in the spreadsheet export with clipped headers dashboard are counted by created date; Record: the spreadsheet export with clipped headers dashboard owner is not named; One column header is clipped and the original counts remain visible [the task follows for a weekly operations dashboard for the spreadsheet export with clipped headers]. I am under a deadline on the weekly operations dashboard for the spreadsheet export with clipped headers; Would you mind taking a careful look at this weekly operations dashboard for the spreadsheet export with clipped headers? What passes, what is incomplete, and what would need a test or owner before I call it done? Summarize weekly operations dashboard for the spreadsheet export with clipped headers tightly while keeping the uncertainty visible. Weekly operations dashboard for the spreadsheet export with clipped headers: keep fields separate. Weekly operations dashboard for the spreadsheet export with clipped headers: show what the noise changed."
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "response_mode": {
+      "canonical": "state_assumptions_and_answer",
+      "naturalistic": "state_assumptions_and_answer"
+    },
+    "invariants": [
+      "Distinguish a control or criterion that is present, absent, and merely described but untested."
+    ],
+    "rubric_dimensions": [
+      "audit_completeness",
+      "evidence_traceability",
+      "prioritization",
+      "input_recovery",
+      "instruction_boundary",
+      "fidelity"
+    ],
+    "failure_signals": [
+      "A review claims compliance or success from a description that was not tested.",
+      "Pasted content is obeyed as a new instruction or noisy text causes a key fact to disappear."
+    ]
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit contributors"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT"
+  }
+}

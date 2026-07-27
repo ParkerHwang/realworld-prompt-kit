@@ -1,0 +1,140 @@
+{
+  "schema": "realworld-prompt-kit.scenario/0.1.0",
+  "scenario_id": "rwpk.diagnosis_root_cause.tradeoff_stakes_04.8172",
+  "revision": 1,
+  "status": "draft",
+  "semantic_group_id": "rwpg.diagnosis_root_cause.tradeoff_stakes.04",
+  "title": {
+    "ko": "식물 성장 편차 진단: 상하기 쉬운 재고 결정 과다 주문은 폐기 위험 — 위험을 고려한 트레이드오프",
+    "en": "Diagnose uneven plant growth: row perishable stock decision over ordering risks waste — stakes-aware tradeoff"
+  },
+  "task": {
+    "primary_intent": "diagnosis_root_cause",
+    "secondary_intents": [
+      "quantitative_formal_analysis",
+      "qualitative_analysis"
+    ],
+    "primary_domain": "personal_everyday",
+    "domain_tags": [
+      "science_rd"
+    ],
+    "user_goal": {
+      "ko": "성장이 다른 온실 두 줄 (상하기 쉬운 재고 결정) 기록의 경쟁 설명을 비교하되 시점만으로 범인을 정하지 마. 위험을 고려한 트레이드오프 관점에서 판단하되 원자료의 근거를 드러내줘.",
+      "en": "Compare the competing explanations in the two greenhouse rows with different growth for perishable-stock decision record without naming a culprit from timing alone. Use a stakes-aware tradeoff lens while keeping the source evidence visible."
+    },
+    "expected_artifact": "A ranked cause matrix with evidence, uncertainty, and next checks."
+  },
+  "coverage": {
+    "block_id": "diagnosis_root_cause.tradeoff_stakes.cb8",
+    "row": 4,
+    "facets": {
+      "context_scale": "short",
+      "goal_clarity": "implicit",
+      "output_shape": "structured",
+      "evidence_state": "incomplete",
+      "stakes": "moderate",
+      "interaction": "single",
+      "surface_noise": "light"
+    },
+    "naturalistic_features": [
+      "multi_intent_mixed_priority",
+      "self_correction_scope_shift",
+      "frustration_urgency_emotion",
+      "indirect_polite_request"
+    ]
+  },
+  "realizations": [
+    {
+      "prompt_id": "rwpk.diagnosis_root_cause.tradeoff_stakes_04.8172.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "성장이 다른 온실 두 줄 (상하기 쉬운 재고 결정) 기록의 경쟁 설명을 비교하되 시점만으로 범인을 정하지 마.\n\n성장이 다른 온실 두 줄 (상하기 쉬운 재고 결정):\n- 상하기 쉬운 재고 결정 온실 A 줄은 직사광 6시간에 14센티미터 성장\n- 상하기 쉬운 재고 결정 온실 B 줄은 2시간에 10센티미터 성장\n- 상하기 쉬운 재고 결정 줄별 급수는 기록됐지만 토양 수치는 없음\n- 상하기 쉬운 재고 결정 온실 B 줄은 환기구 가까이 있고 공기 흐름은 미측정\n- 사례 자료: 과다 주문은 폐기 위험, 부족 주문은 빈 진열 위험이 있음\n\n성장이 다른 온실 두 줄 (상하기 쉬운 재고 결정): 위험 표현을 조절해줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.diagnosis_root_cause.tradeoff_stakes_04.8172.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "multi_intent_mixed_priority",
+        "self_correction_scope_shift",
+        "frustration_urgency_emotion",
+        "indirect_polite_request"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "무엇이 바뀌었고 다른 설명은 뭘까? 성장이 다른 온실 두 줄 (상하기 쉬운 재고 결정): 보이는 사실은 상하기 쉬운 재고 결정 온실 B 줄은 2시간에 10센티미터 성장; 메모에는 이렇게 남아 있어: 상하기 쉬운 재고 결정 온실 B 줄은 환기구 가까이 있고 공기 흐름은 미측정; 노트 한 줄에는 상하기 쉬운 재고 결정 온실 A 줄은 직사광 6시간에 14센티미터 성장; 해당 항목은 상하기 쉬운 재고 결정 줄별 급수는 기록됐지만 토양 수치는 없음; 추가 관찰은 과다 주문은 폐기 위험, 부족 주문은 빈 진열 위험이 있음. 성장이 다른 온실 두 줄 (상하기 쉬운 재고 결정)가 급한 상황이라서, 시간 되면 성장이 다른 온실 두 줄 (상하기 쉬운 재고 결정)를 같이 검토해줄래? 처음엔 한 원인으로 봤는데, 아 아니다. 다른 가능성도 놓고 비교해줘. 다른 요청은 성장이 다른 온실 두 줄 (상하기 쉬운 재고 결정)의 다음 행동 하나만 골라줘. 성장이 다른 온실 두 줄 (상하기 쉬운 재고 결정): 목록으로 보여줘. 성장이 다른 온실 두 줄 (상하기 쉬운 재고 결정): 위험 표현을 조절해줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.diagnosis_root_cause.tradeoff_stakes_04.8172.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Compare the competing explanations in the two greenhouse rows with different growth for perishable-stock decision record without naming a culprit from timing alone.\n\nTwo greenhouse rows with different growth for the perishable-stock decision:\n- row A in the perishable-stock decision greenhouse received 6 hours of direct light and grew 14 centimeters\n- row B in the perishable-stock decision greenhouse received 2 hours and grew 10 centimeters\n- watering for the perishable-stock decision rows was logged but soil readings are missing\n- row B in the perishable-stock decision greenhouse is nearer a vent with unmeasured airflow\n- Case fixture: over-ordering risks waste while under-ordering risks an empty shelf.\n\nTwo greenhouse rows with different growth for the perishable-stock decision: keep risk language calibrated."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.diagnosis_root_cause.tradeoff_stakes_04.8172.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "multi_intent_mixed_priority",
+        "self_correction_scope_shift",
+        "frustration_urgency_emotion",
+        "indirect_polite_request"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "What changed, and what else could explain it? Two greenhouse rows with different growth for the perishable-stock decision: Written: row B in the perishable-stock decision greenhouse received 2 hours and grew 10 centimeters; Record: row B in the perishable-stock decision greenhouse is nearer a vent with unmeasured airflow; On the page: row A in the perishable-stock decision greenhouse received 6 hours of direct light and grew 14 centimeters; Written: watering for the perishable-stock decision rows was logged but soil readings are missing; Over-ordering risks waste while under-ordering risks an empty shelf. This two greenhouse rows with different growth for the perishable-stock decision is time-sensitive; When you get a chance, could you help with the two greenhouse rows with different growth for the perishable-stock decision? I suspected one cause at first, but actually lay out the alternatives before calling anything a root cause. I have another ask: identify the next action for two greenhouse rows with different growth for the perishable-stock decision. Two greenhouse rows with different growth for the perishable-stock decision: bullets are fine. Two greenhouse rows with different growth for the perishable-stock decision: keep risk language calibrated."
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "response_mode": {
+      "canonical": "state_assumptions_and_answer",
+      "naturalistic": "state_assumptions_and_answer"
+    },
+    "invariants": [
+      "Separate observed facts, plausible explanations, and diagnostic next steps."
+    ],
+    "rubric_dimensions": [
+      "cause_evidence",
+      "hypothesis_separation",
+      "next_step_quality",
+      "tradeoff_balance",
+      "risk_calibration",
+      "escalation_boundary"
+    ],
+    "failure_signals": [
+      "Timing or correlation alone is treated as proof of a root cause.",
+      "A material downside or escalation boundary is hidden to make the answer sound decisive."
+    ]
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit contributors"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT"
+  }
+}

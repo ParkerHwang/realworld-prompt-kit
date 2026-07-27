@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Write a machine-readable and human-readable v1 coverage report."""
+"""Write a machine-readable and human-readable v0.1 coverage report."""
 
 from __future__ import annotations
 
@@ -9,9 +9,9 @@ from pathlib import Path
 from typing import Any
 
 try:
-    from .v1_validation import DEFAULT_V1_MANIFEST, ROOT, load_json, validate_v1_repository
+    from .validation import DEFAULT_MANIFEST, ROOT, load_json, validate_repository
 except ImportError:  # pragma: no cover - direct script execution
-    from v1_validation import DEFAULT_V1_MANIFEST, ROOT, load_json, validate_v1_repository
+    from validation import DEFAULT_MANIFEST, ROOT, load_json, validate_repository
 
 
 def markdown_report(report: Any, manifest_path: Path) -> str:
@@ -26,7 +26,7 @@ def markdown_report(report: Any, manifest_path: Path) -> str:
     except ValueError:
         manifest_label = str(manifest_path)
     lines = [
-        "# v1 Coverage Report",
+        "# v0.1 Coverage Report",
         "",
         f"- Manifest: `{manifest_label}`",
         f"- Validation: **{'PASS' if report.ok else 'FAIL'}**",
@@ -149,18 +149,18 @@ def markdown_report(report: Any, manifest_path: Path) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--manifest", type=Path, default=DEFAULT_V1_MANIFEST)
-    parser.add_argument("--json-output", type=Path, default=ROOT / "reports" / "coverage" / "v1-coverage.json")
-    parser.add_argument("--markdown-output", type=Path, default=ROOT / "reports" / "coverage" / "v1-coverage.md")
+    parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
+    parser.add_argument("--json-output", type=Path, default=ROOT / "reports" / "coverage" / "coverage.json")
+    parser.add_argument("--markdown-output", type=Path, default=ROOT / "reports" / "coverage" / "coverage.md")
     args = parser.parse_args()
 
-    report = validate_v1_repository(args.manifest)
+    report = validate_repository(args.manifest)
     try:
         manifest_label = str(args.manifest.relative_to(ROOT))
     except ValueError:
         manifest_label = str(args.manifest)
     payload = {
-        "schema": "realworld-prompt-kit.coverage-report/1.0.0",
+        "schema": "realworld-prompt-kit.coverage-report/0.1.0",
         "manifest": manifest_label,
         "status": "pass" if report.ok else "fail",
         "stats": report.stats,

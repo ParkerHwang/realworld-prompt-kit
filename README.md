@@ -1,182 +1,108 @@
 # RealWorld Prompt Kit
 
 RealWorld Prompt Kit is an open, bilingual benchmark source for the way people
-actually talk to AI systems.
+actually talk to AI systems. It pairs a controlled prompt with an independently
+authored naturalistic version of the same semantic situation so capability and
+real-world utterance robustness can be measured separately.
 
-Most prompt sets are cleaner than real messages. Users send fragments, paste
-notes into instructions, change their mind mid-sentence, mix languages, omit
-context, and split one request across several messages. This project pairs a
-controlled prompt with a naturalistic version of the same semantic scenario so
-model capability and real-world utterance robustness can be measured separately.
+## The v0.1 broad core
 
-## What is in v0.1
+The repository has one initial validation release: the `v0.1` broad core.
+It is a `release_candidate`, not a production-stable benchmark claim.
 
-- One complete `CB8` office-work coverage block
-- 8 semantic scenarios
-- 4 prompt realizations per scenario:
-  - Korean canonical
-  - Korean naturalistic
-  - English canonical
-  - English naturalistic
-- 32 runnable prompt realizations
-- Expected response behavior, invariants, rubric dimensions, and failure signals
-- A dependency-free validator and JSONL exporter
-- A JSON Schema and a GitHub Actions validation workflow
+- 21 task intents
+- 110 disjoint `CB8` blocks
+- 880 genuinely distinct semantic scenarios
+- 3,520 prompt realizations, exactly four per scenario:
+  Korean/English × canonical/naturalistic
+- 224 scenarios marked `reviewed` and 656 kept `draft`
+- 28 authorized primary-domain IDs and 24 authorized naturalistic profiles
+- synthetic, rights-cleared project-authored content with no personal data
 
-This is a seed release, not a claim that the full benchmark is complete.
+The release contract lives in [data/v0.1/catalog.json](data/v0.1/catalog.json)
+and [data/v0.1/manifest.json](data/v0.1/manifest.json). Translations,
+paraphrases, and coverage conditions do not add semantic breadth: each latent
+situation, evidence fixture, and goal is counted once by `scenario_id`.
 
-## What is in v1.0
+OpenSocrates method-routing and adapter-conformance suites are planned-only
+extensions. They are not populated and receive no coverage credit in this
+release.
 
-The v1 broad core is a separately versioned catalog with 21 task intents, 110
-disjoint CB8 blocks, and 880 semantic scenarios. Each scenario has exactly four
-realizations—Korean/English × canonical/naturalistic—for 3,520 prompt
-realizations. Translations, paraphrases, and block conditions do not add
-semantic breadth; `semantic_group_id` identifies the latent situation.
+## Quality gates
 
-The release contract is defined by [data/v1.0/catalog.json](data/v1.0/catalog.json)
-and [data/v1.0/manifest.json](data/v1.0/manifest.json). The broad core is the
-completed 880-scenario suite. OpenSocrates method routing and adapter-conformance
-artifacts remain planned extension suites and are not represented as populated
-coverage here.
+The dependency-free validator checks exact counts, CB8 rows and pairwise facet
+coverage, globally unique IDs, authorized domains and profiles, quota overlays,
+composition ratios, synthetic provenance, exact/normalized duplicates,
+placeholder leakage, language presence, canonical/naturalistic identity,
+similarity, semantic reuse, rendered Korean/English grammar, response
+boundaries, profile realization, critical fact preservation, and minimum prompt
+substance.
 
-The manifest status is `release_candidate` until every row has a row-level
-review status. Automated validation and a one-row-per-block sample do not
-promote the remaining `draft` rows; the current status distribution is reported
-in [reports/coverage/v1-coverage.md](reports/coverage/v1-coverage.md).
-
-Naturalistic profiles are checked against rendered messages: `terse_fragment`
-is capped at 32 whitespace tokens, overlong very-short serialized messages and
-delimited topic/context/result field strings are rejected, and retrieval tails
-such as city/route/service-day instructions must fit the scenario's transport
-context. Korean particle/ending and English punctuation defects are release
-errors.
-
-## Why scenario count and prompt count differ
-
-A translated, paraphrased, or A/B-tested prompt is not a new semantic task.
-
-```text
-semantic breadth = unique scenario_id values
-prompt instances = sum of localized and naturalistic realizations
-executions       = prompt instances × models × conditions × repeat policy
-```
-
-The v0.1 pack therefore contains 8 scenarios and 32 prompt instances. Reporting
-only "32 tests" would overstate its semantic breadth.
+Naturalistic pair similarity at or above 0.75 is reviewed and at or above 0.85
+fails. The exact six-token phrase gate runs by locale/form over the full 880-row
+union and independently over the 224/320/336 partitions; any non-whitelisted
+phrase above 5% fails. A six-token presence scan also catches every longer
+n-gram because every longer phrase has a six-token prefix. No generic task,
+boundary, or safety boilerplate is whitelisted.
 
 ## Quick start
 
-Validate the repository:
+Validate the sole release, run tests, create reports, and export one JSONL file:
 
 ```bash
 python3 tools/validate.py
 python3 -m unittest discover -s tests
-```
-
-Validate v1 explicitly and generate its coverage report:
-
-```bash
-python3 tools/validate.py --manifest data/v1.0/manifest.json
 python3 tools/coverage_report.py
+python3 tools/review.py
+python3 tools/export_jsonl.py --output build/realworld-prompt-kit.jsonl
 ```
 
-Export flattened JSONL for a harness:
-
-```bash
-python3 tools/export_jsonl.py --output build/office-core-cb8.jsonl
-```
-
-Each exported row is one prompt realization and retains its parent
-`scenario_id`, coverage metadata, and evaluation contract.
-
-The v1 export is:
-
-```bash
-python3 tools/export_jsonl.py \
-  --manifest data/v1.0/manifest.json \
-  --output build/realworld-prompt-kit-v1.jsonl
-```
+Every exported row retains its parent `scenario_id`, coverage metadata, and
+evaluation contract. The status report records the candid `reviewed=224` /
+`draft=656` distribution; automated validation and one sample per block never
+promote unsampled rows.
 
 ## Repository layout
 
 ```text
 data/v0.1/
-├── manifest.json
-└── scenarios/
-    └── *.json
-data/v1.0/
 ├── catalog.json
 ├── manifest.json
 └── scenarios/
     ├── intents-01-07/
     ├── intents-08-14/
     └── intents-15-21/
-docs/
-├── AUTHORING.md
-├── DESIGN.md
-└── PRIVACY.md
 schemas/
-├── scenario.schema.json
-└── scenario.v1.schema.json
+└── scenario.schema.json
 tools/
-├── export_jsonl.py
+├── validation.py
+├── validate.py
 ├── coverage_report.py
-├── v1_validation.py
-└── validate.py
+├── review.py
+└── export_jsonl.py
+reports/
+├── coverage/
+└── review/
+build/
+└── realworld-prompt-kit.jsonl
 ```
 
-## Design principles
+## Authoring principles
 
-1. The semantic scenario is independent of language, model, and harness.
-2. Canonical and naturalistic realizations stay paired.
-3. Messy wording is not automatically adversarial wording.
-4. The expected behavior may be to infer, state assumptions, clarify, or hold.
-5. Objective invariants and anchored rubrics are preferred over one global score.
-6. Public data must be synthetic or rights-cleared and privacy-reviewed.
-7. New packs are added as coverage blocks, not by chasing a headline total.
+Write the latent situation before its prompt text. Keep canonical and
+naturalistic realizations semantically paired, author the naturalistic forms
+independently in each language, preserve decision-critical facts, and make
+declared profile evidence observable in the rendered messages. Do not multiply
+one topic across blocks by changing only a condition label or adding a wrapper.
 
-See [DESIGN.md](docs/DESIGN.md) for the full model.
+See [docs/DESIGN.md](docs/DESIGN.md), [docs/AUTHORING.md](docs/AUTHORING.md),
+and [docs/RELEASE.md](docs/RELEASE.md) for the contract and review policy.
 
-## Current coverage
+## Privacy and license
 
-The first block focuses on ordinary office work:
-
-- meeting follow-up
-- vendor selection
-- expense-policy interpretation
-- project status synthesis
-- customer complaint response
-- schedule planning
-- invoice discrepancy diagnosis
-- onboarding checklist organization
-
-The roadmap expands into general knowledge, education, personal tasks,
-professional domains, creative work, tool use, multimodal input, and plugin or
-agent conformance.
-
-The v1 broad core now supplies the first text-only expansion across those task
-and domain families. Its naturalistic prompts are independently authored,
-synthetic, and checked for exact/normalized duplicates, placeholder leakage,
-language presence, canonical/naturalistic identity, similarity, semantic reuse,
-and corpus-level phrase concentration. The phrase gate counts exact six-token
-presence by locale/form; any non-whitelisted phrase over 5% is a release error,
-both in the 880-scenario union and separately in each 224/320/336 worker
-partition. There is currently no generic phrase whitelist.
-
-## Privacy
-
-This repository does not accept copied private conversations, secrets, or
-personal data. Synthetic naturalistic prompts are labeled as synthetic. Real or
-real-derived samples require a documented rights basis, de-identification, and
-privacy review, and verbatim raw messages must not be published in the public
-suite. See [PRIVACY.md](docs/PRIVACY.md).
-
-## Contributing
-
-Start with [CONTRIBUTING.md](CONTRIBUTING.md). A contribution should add or
-complete a named coverage cell, include both Korean and English when applicable,
-and ship its evaluation contract with the prompt.
-
-## License
+Private conversations, secrets, and personal data are not accepted. Synthetic
+naturalistic prompts are labeled as synthetic. Real or derived samples require
+a documented rights basis, de-identification, and privacy review. See
+[docs/PRIVACY.md](docs/PRIVACY.md).
 
 MIT. See [LICENSE](LICENSE).

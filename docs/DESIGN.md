@@ -40,9 +40,9 @@ CB8 is a coverage primitive, not a universal claim that eight examples are
 enough for every risk. High-stakes, multi-level, tool-mutating, or known failure
 interactions require additional blocks.
 
-## v1 broad-core contract
+## v0.1 broad-core contract
 
-The v1 catalog contains 21 intents and 110 disjoint CB8 blocks. Every block has
+The v0.1 catalog contains 21 intents and 110 disjoint CB8 blocks. Every block has
 rows 1–8 and uses the same seven two-level facets above. The 880 semantic
 scenarios are the counting unit; each is rendered as four prompt realizations:
 `ko-KR`/`en-US` × `canonical`/`naturalistic`. A translation, paraphrase, or
@@ -73,7 +73,7 @@ Rendered-message gates also reject malformed Korean particles/endings, English
 punctuation defects, overlong serialized terse prompts, and transport-specific
 retrieval tails whose title and goal have no transport context.
 
-The public v1 core is synthetic and declares no personal data. Its expected
+The public v0.1 core is synthetic and declares no personal data. Its expected
 response mode, invariants, and failure signals are part of each scenario. A
 benign support request must not be labeled `refuse_or_escalate` merely because
 it is emotionally sensitive; that mode is reserved for an actual safety or

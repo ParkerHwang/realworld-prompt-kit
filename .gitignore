@@ -1,6 +1,5 @@
 build/*
-!build/realworld-prompt-kit-v1.jsonl
-!build/office-core-cb8.jsonl
+!build/realworld-prompt-kit.jsonl
 __pycache__/
 *.py[cod]
 .DS_Store

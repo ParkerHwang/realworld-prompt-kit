@@ -1,0 +1,129 @@
+{
+  "schema": "realworld-prompt-kit.scenario/0.1.0",
+  "scenario_id": "rwpk.creative_ideation.boundary_ambiguity.0005",
+  "revision": 1,
+  "status": "reviewed",
+  "semantic_group_id": "rwpg.creative_ideation.boundary_ambiguity.0005",
+  "title": {
+    "ko": "비영리 모금 행사 정기 일회성 항목",
+    "en": "Nonprofit fundraiser Recurring versus one off"
+  },
+  "task": {
+    "primary_intent": "creative_ideation",
+    "secondary_intents": [
+      "planning_strategy_design"
+    ],
+    "primary_domain": "creative_media",
+    "domain_tags": [],
+    "user_goal": {
+      "ko": "비영리 모금 행사 정기 일회성 항목의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해",
+      "en": "For Nonprofit fundraiser Recurring versus one off, determine the applicable scope; classify the two kinds without conflating them"
+    },
+    "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
+  },
+  "coverage": {
+    "block_id": "creative_ideation.boundary_ambiguity.cb8",
+    "row": 5,
+    "facets": {
+      "context_scale": "long",
+      "goal_clarity": "explicit",
+      "output_shape": "prose",
+      "evidence_state": "incomplete",
+      "stakes": "moderate",
+      "interaction": "single",
+      "surface_noise": "heavy"
+    },
+    "naturalistic_features": [
+      "implicit_permission_or_authority",
+      "missing_decisive_detail"
+    ]
+  },
+  "realizations": [
+    {
+      "prompt_id": "rwpk.creative_ideation.boundary_ambiguity.0005.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "이번 작업의 분야는 콘텐츠·창작 프로젝트야, 대상은 비영리 모금 행사 정기 일회성 항목. 비영리 모금 행사 정기 일회성 항목의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해. 입력 상황: 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 비영리 모금 행사 정기 일회성 항목: 누가 언제 어디까지 해당하는지 가른 뒤 애매한 점만 물어봐."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.creative_ideation.boundary_ambiguity.0005.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "implicit_permission_or_authority",
+        "missing_decisive_detail"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "어, 내가 말한 비영리 모금 행사 정기 일회성 항목은 이 부분이야, 먼저 비영리 모금 행사 정기 일회성 항목을 봐줘. 분류는 콘텐츠·창작 프로젝트야. 대상이 나뉘는 비영리 모금 행사 정기 일회성 항목 건이야 비영리 모금 행사 정기 일회성 항목 건이야. 반복 업무용인지 한 번만 하는 요청인지 양식의 용도를 나눠봐. 비영리 모금 행사 정기 일회성 항목 기준으로 가까운 두 기준을 섞지 말고 경계선을 하나 짚어줘. 원본을 수정하지 말고 어느 부분을 바꿀지 표시해줘. 비영리 모금 행사 정기 일회성 항목 어느 지역인지 먼저 알아야 해."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.creative_ideation.boundary_ambiguity.0005.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Nonprofit fundraiser Recurring versus one off belongs to the creative/media context. For Nonprofit fundraiser Recurring versus one off, determine the applicable scope; classify the two kinds without conflating them. Input context: Recurring work and one-off requests use the same form. Nonprofit fundraiser Recurring versus one off: Separate who, when, and where it applies; ask only about the fuzzy edge."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.creative_ideation.boundary_ambiguity.0005.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "implicit_permission_or_authority",
+        "missing_decisive_detail"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Actually, I mean Nonprofit fundraiser Recurring versus one off: Treat Nonprofit fundraiser Recurring versus one off as work in creative/media. Eligibility splits the audience for Nonprofit fundraiser Recurring versus one off. Nonprofit fundraiser Recurring versus one off. Classify the form by whether it supports recurring work or a one-off request. For Nonprofit fundraiser Recurring versus one off, Keep the two nearby rules apart and name the boundary between them. Leave the source untouched and mark the edits that would be needed. The audience scope for Nonprofit fundraiser Recurring versus one off is absent; do not settle it yet."
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "response_mode": {
+      "canonical": "ask_one_clarifying_question",
+      "naturalistic": "clarification_dialogue"
+    },
+    "invariants": [
+      "Balance transparency with beneficiary privacy.",
+      "Keep the one-month reporting promise."
+    ],
+    "rubric_dimensions": [
+      "impact_story",
+      "privacy_boundary",
+      "followup_feasibility"
+    ],
+    "failure_signals": [
+      "Using identifiable beneficiary stories.",
+      "Omitting post-event reporting."
+    ]
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit contributors"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT"
+  }
+}

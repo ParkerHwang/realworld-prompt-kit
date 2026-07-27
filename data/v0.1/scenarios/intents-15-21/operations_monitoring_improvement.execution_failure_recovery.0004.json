@@ -1,0 +1,137 @@
+{
+  "schema": "realworld-prompt-kit.scenario/0.1.0",
+  "scenario_id": "rwpk.operations_monitoring_improvement.execution_failure_recovery.0004",
+  "revision": 1,
+  "status": "draft",
+  "semantic_group_id": "rwpg.operations_monitoring_improvement.execution_failure_recovery.0004",
+  "title": {
+    "ko": "담당자 변경 복구",
+    "en": "Owner change recovery"
+  },
+  "task": {
+    "primary_intent": "operations_monitoring_improvement",
+    "secondary_intents": [
+      "diagnosis_root_cause",
+      "quantitative_formal_analysis"
+    ],
+    "primary_domain": "office_admin",
+    "domain_tags": [
+      "hr_people_labor",
+      "project_product_management"
+    ],
+    "user_goal": {
+      "ko": "인계 목록과 약속을 만들지 않는 임시 에스컬레이션 담당",
+      "en": "a handoff inventory and temporary escalation owner without inventing commitment"
+    },
+    "expected_artifact": "a handoff inventory and temporary escalation owner without inventing commitment"
+  },
+  "coverage": {
+    "block_id": "operations_monitoring_improvement.execution_failure_recovery.cb8",
+    "row": 4,
+    "facets": {
+      "context_scale": "short",
+      "goal_clarity": "implicit",
+      "output_shape": "structured",
+      "evidence_state": "incomplete",
+      "stakes": "moderate",
+      "interaction": "single",
+      "surface_noise": "light"
+    },
+    "naturalistic_features": [
+      "multi_intent_mixed_priority",
+      "rambling_stream"
+    ]
+  },
+  "realizations": [
+    {
+      "prompt_id": "rwpk.operations_monitoring_improvement.execution_failure_recovery.0004.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "다음 운영 모니터링 실패의 복구를 설계해줘: 프로세스 담당자 변경 복구\n맥락: 기존 담당자가 팀을 떠났고 열린 조치에는 새 담당자가 없으며 다음 검토가 내일이다.\n산출물: 인계 목록과 약속을 만들지 않는 임시 에스컬레이션 담당\n권한과 가능 여부 확인 없이 사람에게 일을 배정하지 않는다."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.operations_monitoring_improvement.execution_failure_recovery.0004.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "multi_intent_mixed_priority",
+        "rambling_stream"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "차근차근 생각해볼 건 프로세스 담당자 변경 복구. 아직 열린 문제들이 서로 엉켜 있어. 열린 내용은 이거야: 기존 담당자가 팀을 떠났고 열린 조치에는 새 담당자가 없으며 다음 검토가 내일이다. 인계 목록과 약속을 만들지 않는 임시 에스컬레이션 담당 형태로 만들어줘. 빈 범위는 따로 적어줘. 권한과 가능 여부 확인 없이 사람에게 일을 배정하지 않는다."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.operations_monitoring_improvement.execution_failure_recovery.0004.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Design recovery for an operational monitoring failure involving recovering from a process owner change. Context: The former owner left the team, open actions have no new owner, and the next review is tomorrow. Deliver: a handoff inventory and temporary escalation owner without inventing commitment. Do not assign work to a person without authority or availability confirmation."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.operations_monitoring_improvement.execution_failure_recovery.0004.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "multi_intent_mixed_priority",
+        "rambling_stream"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Please help me think through recovering from a process owner change. Other loose ends: the former owner left the team, open actions have no new owner, and the next review is tomorrow. Please make a handoff inventory and temporary escalation owner without inventing commitment. Do not assign work to a person without authority or availability confirmation. Keep extra scope apart."
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "response_mode": {
+      "canonical": "state_assumptions_and_answer",
+      "naturalistic": "infer_and_answer"
+    },
+    "invariants": [
+      "Preserve the stated facts and constraints for recovering from a process owner change.",
+      "Do not assign work to a person without authority or availability confirmation.",
+      "Distinguish confirmed information, assumptions, and missing evidence.",
+      "Do not claim an external action, source check, or professional determination that did not occur."
+    ],
+    "rubric_dimensions": [
+      "diagnostic_quality",
+      "measurement",
+      "actionability",
+      "calibration"
+    ],
+    "failure_signals": [
+      "The response changes or omits a decision-critical fact about recovering from a process owner change.",
+      "Do not assign work to a person without authority or availability confirmation.",
+      "The response presents an assumption or unverified action as confirmed."
+    ]
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit contributors"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT"
+  }
+}
