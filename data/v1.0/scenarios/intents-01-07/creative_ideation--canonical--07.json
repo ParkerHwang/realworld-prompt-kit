@@ -1,0 +1,147 @@
+{
+  "schema": "realworld-prompt-kit.scenario/1.0.0",
+  "scenario_id": "rwpk.creative_ideation.canonical.0007",
+  "revision": 1,
+  "status": "draft",
+  "semantic_group_id": "rwpg.creative_ideation.canonical.0007",
+  "title": {
+    "ko": "여행 경험 아이디어 · 기본 요청",
+    "en": "Travel-experience ideas · ordinary request"
+  },
+  "task": {
+    "primary_intent": "creative_ideation",
+    "secondary_intents": [
+      "planning_strategy_design"
+    ],
+    "primary_domain": "project_product_management",
+    "domain_tags": [
+      "creative_media"
+    ],
+    "user_goal": {
+      "ko": "짧은 도시 여행에서 지역 주민과 자연스럽게 만날 수 있는 경험 아이디어를 내줘 (기본 요청)",
+      "en": "generate travel experiences that help visitors meet local residents naturally on a short city trip (ordinary request)"
+    },
+    "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
+  },
+  "coverage": {
+    "block_id": "creative_ideation.canonical.cb8",
+    "row": 7,
+    "facets": {
+      "context_scale": "long",
+      "goal_clarity": "implicit",
+      "output_shape": "prose",
+      "evidence_state": "complete",
+      "stakes": "moderate",
+      "interaction": "message_burst",
+      "surface_noise": "light"
+    },
+    "naturalistic_features": [
+      "ocr_copy_format_noise",
+      "emoji_shorthand"
+    ]
+  },
+  "realizations": [
+    {
+      "prompt_id": "rwpk.creative_ideation.canonical.0007.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 짧은 도시 여행에서 지역 주민과 자연스럽게 만날 수 있는 경험 아이디어를 내줘. 입력 상황: 하루 반나절 일정이고 대규모 단체 관광은 피하며, 지역 문화를 소비품처럼 다루지 않는 방식이어야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.creative_ideation.canonical.0007.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "ocr_copy_format_noise",
+        "emoji_shorthand"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황 관련 건이야. 하루 반나절 일정이고 대규모 단체 관광은 피하며, 지역 문화를 소비품처럼 다루지 않는 방식이어야 해."
+        },
+        {
+          "role": "user",
+          "content": "짧은 도시 여행에서 지역 주민과 자연스럽게 만날 수 있는 경험 아이디어를 내줘."
+        },
+        {
+          "role": "user",
+          "content": "요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.creative_ideation.canonical.0007.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "In a product or project schedule-and-requirements context, generate travel experiences that help visitors meet local residents naturally on a short city trip. Input context: the schedule is half a day, large group tourism should be avoided, and local culture should not be treated as a commodity. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.creative_ideation.canonical.0007.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "ocr_copy_format_noise",
+        "emoji_shorthand"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "This is about a product or project schedule-and-requirements context: the schedule is half a day, large group tourism should be avoided, and local culture should not be treated as a commodity."
+        },
+        {
+          "role": "user",
+          "content": "generate travel experiences that help visitors meet local residents naturally on a short city trip."
+        },
+        {
+          "role": "user",
+          "content": "Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "response_mode": {
+      "canonical": "answer_directly",
+      "naturalistic": "infer_and_answer"
+    },
+    "invariants": [
+      "Keep the half-day and small-group constraints.",
+      "Avoid extractive or stereotyped cultural framing."
+    ],
+    "rubric_dimensions": [
+      "experience_fit",
+      "cultural_respect",
+      "schedule_feasibility"
+    ],
+    "failure_signals": [
+      "Designing a large tour.",
+      "Using stereotypes or treating residents as props."
+    ]
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit contributors"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT"
+  }
+}
