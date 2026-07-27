@@ -165,7 +165,7 @@ All profile ids used below come from the catalog naturalistic profile list. Cano
 
 ## Integration-owned acceptance overlay
 
-The source snapshot was fetched from `codex/worker-a-intents-01-07` at
+The source snapshot for partition `core-worker-1` was fetched at
 `d737e782f60ae9a1441f3ba5c92fdc71bffd8d7a`. The source path audit was clean:
 224 scenario JSON files plus this worker report, with no unrelated files.
 Before union acceptance, the integration branch independently rendered every

@@ -10,7 +10,7 @@
     "repository": "ParkerHwang/realworld-prompt-kit",
     "base_branch": "origin/main",
     "base_commit": "f8dc8d9ba376c64e44613ebcc0b9119a2530064f",
-    "audit_branch": "codex/coverage-audit",
+    "audit_snapshot_sha": "16ae05cdf2fba02ac9827fca1c10e26b77f3acb8",
     "broad_core_catalog_in_repo": false,
     "broad_core_manifest_in_repo": false,
     "broad_core_scenario_directory_in_repo": false,

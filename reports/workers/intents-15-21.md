@@ -266,7 +266,7 @@ Counts are distinct documents rather than raw occurrences. The whitelist is empt
 
 ## Integration-owned acceptance overlay
 
-The source snapshot was fetched from `codex/worker-c-intents-15-21` at
+The source snapshot for partition `core-worker-3` was fetched at
 `9b73b72b6871c2369d82f649bd768d4597384803`. Before union acceptance, the
 integration branch independently rendered every message and corrected 12
 C-owned rows: two remaining semicolon field-template fragments, three Korean

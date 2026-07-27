@@ -60,6 +60,26 @@ class ReleaseNamingTests(unittest.TestCase):
                 failures.append(f"{path.relative_to(ROOT)}: {hits}")
         self.assertEqual(failures, [], "release-version residue found:\n" + "\n".join(failures))
 
+    def test_release_surface_has_no_live_branch_refs(self) -> None:
+        # Build the branch marker dynamically so this regression test does not
+        # become a false positive in the repository-wide tracked-text scan.
+        branch_prefix = "co" + "dex/"
+        legacy_release = "v" + "1"
+        forbidden = (
+            branch_prefix,
+            branch_prefix + "worker-",
+            branch_prefix + "coverage-audit",
+            branch_prefix + "v0.1-full-core-consolidation",
+            branch_prefix + legacy_release + "-full-kit-integration",
+        )
+        failures = []
+        for path in _release_surface_files():
+            text = path.read_text(encoding="utf-8")
+            hits = [term for term in forbidden if term.casefold() in text.casefold()]
+            if hits:
+                failures.append(f"{path.relative_to(ROOT)}: {hits}")
+        self.assertEqual(failures, [], "live branch reference found:\n" + "\n".join(failures))
+
     def test_only_v0_1_data_root_and_scenario_schema(self) -> None:
         data_dirs = sorted(path.name for path in (ROOT / "data").iterdir() if path.is_dir())
         self.assertEqual(data_dirs, ["v0.1"])

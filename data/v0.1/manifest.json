@@ -36,14 +36,13 @@
     "pairwise_coverage": "every pair of facet levels occurs in the eight rows"
   },
   "partitions": [
-    {"id": "core-worker-1", "branch": "codex/worker-a-intents-01-07", "intent_range": [1, 7], "scenario_glob": "data/v0.1/scenarios/intents-01-07/*.json", "expected_blocks": 28, "expected_scenarios": 224},
-    {"id": "core-worker-2", "branch": "codex/worker-b-intents-08-14", "intent_range": [8, 14], "scenario_glob": "data/v0.1/scenarios/intents-08-14/*.json", "expected_blocks": 40, "expected_scenarios": 320},
-    {"id": "core-worker-3", "branch": "codex/worker-c-intents-15-21", "intent_range": [15, 21], "scenario_glob": "data/v0.1/scenarios/intents-15-21/*.json", "expected_blocks": 42, "expected_scenarios": 336}
+    {"id": "core-worker-1", "intent_range": [1, 7], "scenario_glob": "data/v0.1/scenarios/intents-01-07/*.json", "expected_blocks": 28, "expected_scenarios": 224},
+    {"id": "core-worker-2", "intent_range": [8, 14], "scenario_glob": "data/v0.1/scenarios/intents-08-14/*.json", "expected_blocks": 40, "expected_scenarios": 320},
+    {"id": "core-worker-3", "intent_range": [15, 21], "scenario_glob": "data/v0.1/scenarios/intents-15-21/*.json", "expected_blocks": 42, "expected_scenarios": 336}
   ],
   "release_evidence": {
     "worker_sources": {
       "core-worker-1": {
-        "branch": "codex/worker-a-intents-01-07",
         "accepted_integration_base_sha": "d737e782f60ae9a1441f3ba5c92fdc71bffd8d7a",
         "later_source_tip_sha": "6757bc17cc4bd7118d1e63330565f91cc2d78d04",
         "later_source_tip_status": "held_after_independent_strict_cue_failures",
@@ -52,7 +51,6 @@
         "integration_overlay_report": "reports/workers/intents-01-07.md"
       },
       "core-worker-2": {
-        "branch": "codex/worker-b-intents-08-14",
         "source_sha": "f2662069ac556f125054ca59953467edcb2af033",
         "source_strict_baseline_errors": 421,
         "source_reported_final_but_independently_rejected": true,
@@ -68,7 +66,6 @@
         "integration_overlay_report": "reports/workers/intents-08-14.md"
       },
       "core-worker-3": {
-        "branch": "codex/worker-c-intents-15-21",
         "source_sha": "9b73b72b6871c2369d82f649bd768d4597384803",
         "integration_corrected_rows": 12,
         "integration_post_repair_errors": 0,
@@ -76,7 +73,6 @@
       }
     },
     "coverage_audit": {
-      "branch": "codex/coverage-audit",
       "sha": "16ae05cdf2fba02ac9827fca1c10e26b77f3acb8",
       "status": "dated_pre_generation_baseline",
       "report": "reports/coverage/coverage-audit.json"

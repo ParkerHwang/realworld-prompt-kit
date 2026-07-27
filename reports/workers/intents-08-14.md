@@ -144,7 +144,7 @@ Each row below is the full naturalistic user message rendered from the owned JSO
 
 ## Integration-owned strict baseline and correction ledger
 
-The source snapshot was fetched from `codex/worker-b-intents-08-14` at
+The source snapshot for partition `core-worker-2` was fetched at
 `f2662069ac556f125054ca59953467edcb2af033`. The path audit was clean: 320
 scenario JSON files plus this report, with no unrelated files. The following
 baseline was captured by the integration validator against the fully rendered
