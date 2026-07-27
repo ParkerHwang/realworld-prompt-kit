@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 콘텐츠 승인 흐름에서 쓸 수 있는 건 초안, 법무 검토, 승인 상태는 있지만 승인자와 반려 후 처리 방식은 없어.야. 승인 권한 질문 하나와 반려 분기가 있는 흐름로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "말로 설명하면, 콘텐츠 승인 흐름에서 쓸 수 있는 건 초안, 법무 검토, 승인 상태는 있지만 승인자와 반려 후 처리 방식은 없어야. 승인 권한 질문 하나와 반려 분기가 있는 흐름로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for a content approval workflow, the useful pieces are Draft, legal review, and also approved states are named,, but approvers and also what happens after a rejection are not.. Could you make one question about approval authority and also a workflow with a rejection branch? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m saying this out loud: for a content approval workflow, the useful pieces are Draft, legal review, and approved states are named, but approvers and what happens after a rejection are not.. Could you make one question about approval authority and a workflow with a rejection branch? If I’m missing a key input, stop and tell me. 👍"
         }
       ]
     }

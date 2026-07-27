@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 병원 프로그램 자원봉사 교대 설계이랑 아직 열린 문제가 엉켜 있어. 코디네이터는 저녁 보장을 원하고 자원봉사자는 예측 가능한 교대를 원하며 임상 직원은 역할 경계를 요구한다. 일단 안전한 역할 경계와 상충하는 가능 시간을 조정하는 교대 설계로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 자원봉사자에게 임상 업무를 배정하거나 제공되지 않은 가능 시간을 가정하지 않는다."
+          "content": "지금 병원 프로그램 자원봉사 교대 설계이랑 아직 열린 문제가 엉켜 있어. 코디네이터는 저녁 보장을 원하고 자원봉사자는 예측 가능한 교대를 원하며 임상 직원은 역할 경계를 요구한다 일단 안전한 역할 경계와 상충하는 가능 시간을 조정하는 교대 설계로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 자원봉사자에게 임상 업무를 배정하거나 제공되지 않은 가능 시간을 가정하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a volunteer-shift design for a hospital program, plus some unresolved details. The coordinator needs evening coverage, volunteers want predictable shifts, and also clinical staff require role boundaries. Please make a shift design with safe role boundaries and also a way to resolve competing availability; if the second issue is out of scope, separate it. Do not assign volunteers clinical duties or assume availability not provided."
+          "content": "There are two things tangled together here: a volunteer-shift design for a hospital program, plus some unresolved details. The coordinator needs evening coverage, volunteers want predictable shifts, and clinical staff require role boundaries. Please make a shift design with safe role boundaries and a way to resolve competing availability; if the second issue is out of scope, separate it. Do not assign volunteers clinical duties or assume availability not provided."
         }
       ]
     }

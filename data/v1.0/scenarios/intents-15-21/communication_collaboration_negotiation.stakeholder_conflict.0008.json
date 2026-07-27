@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 연구 저자 간 이견 조정 메시지에서 쓸 수 있는 건 저자들이 결과를 초록에 넣을지 의견이 다르지만 분석은 바꾸지 않으며 제출 마감은 임박했다.야. 판단 기준과 이견 기록을 제안하는 중립적 메시지로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "말로 설명하면, 연구 저자 간 이견 조정 메시지에서 쓸 수 있는 건 저자들이 결과를 초록에 넣을지 의견이 다르지만 분석은 바꾸지 않으며 제출 마감은 임박했다야. 판단 기준과 이견 기록을 제안하는 중립적 메시지로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for a message resolving a research author disagreement, the useful pieces are Authors disagree about whether a result belongs in the abstract; the analysis still is not being changed and also the submission deadline is near.. Could you make a neutral message that proposes a decision rule and also records dissent? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m saying this out loud: for a message resolving a research author disagreement, the useful pieces are Authors disagree about whether a result belongs in the abstract; the analysis still is not being changed and the submission deadline is near.. Could you make a neutral message that proposes a decision rule and records dissent? If I’m missing a key input, stop and tell me. 👍"
         }
       ]
     }

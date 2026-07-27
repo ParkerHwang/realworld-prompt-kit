@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 수동 집안일 목록으로 알림 흐름 만들기에서 쓸 수 있는 건 리스트에는 매일·매주·가끔 할 일이 섞였지만 선호 알림 시간과 공동 담당이 없어.야. 담당과 시간을 설정 가능하게 둔 분류된 알림 초안로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "말로 설명하면, 수동 집안일 목록으로 알림 흐름 만들기에서 쓸 수 있는 건 리스트에는 매일·매주·가끔 할 일이 섞였지만 선호 알림 시간과 공동 담당이 없어야. 담당과 시간을 설정 가능하게 둔 분류된 알림 초안로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for a reminder workflow from a manual chores list, the useful pieces are The list includes daily, weekly, and also occasional tasks,, but no preferred reminder times or shared ownership.. Could you make a categorized reminder draft with ownership and also timing left configurable? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m saying this out loud: for a reminder workflow from a manual chores list, the useful pieces are The list includes daily, weekly, and occasional tasks, but no preferred reminder times or shared ownership.. Could you make a categorized reminder draft with ownership and timing left configurable? If I’m missing a key input, stop and tell me. 👍"
         }
       ]
     }

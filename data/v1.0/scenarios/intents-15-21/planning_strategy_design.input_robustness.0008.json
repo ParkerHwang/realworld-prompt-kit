@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 잡음 있는 사고 메모를 바탕으로 한 대응 계획에서 쓸 수 있는 건 메모에는 경보 시각, 의심되는 접근 문제, 나중의 관련 없는 배포, 체크되지 않은 영향 범위가 있어.야. 근거, 가설, 필요한 에스컬레이션을 분리한 시간순 대응 안로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "말로 설명하면, 잡음 있는 사고 메모를 바탕으로 한 대응 계획에서 쓸 수 있는 건 메모에는 경보 시각, 의심되는 접근 문제, 나중의 관련 없는 배포, 체크되지 않은 영향 범위가 있어야. 근거, 가설, 필요한 에스컬레이션을 분리한 시간순 대응 안로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for an incident response plan from noisy notes, the useful pieces are The notes include an alert time, a suspected access issue, a later unrelated deployment, and also no confirmed impact scope.. Could you make a time-ordered response plan that separates evidence, hypotheses, and also required escalation? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m saying this out loud: for an incident response plan from noisy notes, the useful pieces are The notes include an alert time, a suspected access issue, a later unrelated deployment, and no confirmed impact scope.. Could you make a time-ordered response plan that separates evidence, hypotheses, and required escalation? If I’m missing a key input, stop and tell me. 👍"
         }
       ]
     }

@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 정책 FAQ에서 쓸 수 있는 건 정책은 비용 승인과 영수증을 정다만 예외는 관리자 검토가 필요하고 자동 승인되지 않는다.야. 예외 시 명확한 문의 경로가 있는 쉬운 말의 FAQ로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "말로 설명하면, 정책 FAQ에서 쓸 수 있는 건 정책은 비용 승인과 영수증을 정다만 예외는 관리자 검토가 필요하고 자동 승인되지 않는다야. 예외 시 명확한 문의 경로가 있는 쉬운 말의 FAQ로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for a policy FAQ, the useful pieces are The current rule defines expense approval and also receipts,, but exceptions require manager review and also are not automatic.. Could you make a plain-language FAQ with a clear escalation route for exceptions? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m saying this out loud: for a policy FAQ, the useful pieces are The current rule defines expense approval and receipts, but exceptions require manager review and are not automatic.. Could you make a plain-language FAQ with a clear escalation route for exceptions? If I’m missing a key input, stop and tell me. 👍"
         }
       ]
     }

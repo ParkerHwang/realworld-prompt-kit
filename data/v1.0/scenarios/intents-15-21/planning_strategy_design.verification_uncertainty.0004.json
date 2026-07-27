@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 최신 사실 확인을 포함한 여행 예비 계획이랑 아직 열린 문제가 엉켜 있어. 경로가 계절 운항 페리와 날씨 영향을 받는 환승에 의존다만 실시간 일정은 제공되지 않았다. 일단 예약 전 체크할 사실 리스트과 주·예비 일정을 들어간 안로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 실시간 일정이나 날씨를 확인된 사실처럼 제시하지 않는다."
+          "content": "지금 최신 사실 확인을 포함한 여행 예비 계획이랑 아직 열린 문제가 엉켜 있어. 경로가 계절 운항 페리와 날씨 영향을 받는 환승에 의존다만 실시간 일정은 제공되지 않았다 일단 예약 전 체크할 사실 리스트과 주·예비 일정을 들어간 안로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 실시간 일정이나 날씨를 확인된 사실처럼 제시하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a travel contingency plan with current-fact checks, plus some unresolved details. The route depends on a seasonal ferry and also a weather-sensitive connection; no live schedule is provided. Please make a primary and also backup itinerary with a checklist of facts to verify before booking; if the second issue is out of scope, separate it. Do not present the live schedule or weather as verified."
+          "content": "There are two things tangled together here: a travel contingency plan with current-fact checks, plus some unresolved details. The route depends on a seasonal ferry and a weather-sensitive connection; no live schedule is provided. Please make a primary and backup itinerary with a checklist of facts to verify before booking; if the second issue is out of scope, separate it. Do not present the live schedule or weather as verified."
         }
       ]
     }

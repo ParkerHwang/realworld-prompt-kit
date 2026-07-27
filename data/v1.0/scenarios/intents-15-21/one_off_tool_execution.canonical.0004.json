@@ -67,7 +67,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 표를 CSV로 내보내기이랑 아직 열린 문제가 엉켜 있어. 열은 project_id, status, owner_role, due_date이며 날짜는 ISO 형식을 유지하고 빈 담당자는 빈 값으로 둬야 한다. 일단 따옴표, 인코딩, 빈 값 규칙을 들어간 CSV 내보내기 명세로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 열 순서를 보존하고 담당자 값을 만들지 않는다."
+          "content": "지금 표를 CSV로 내보내기이랑 아직 열린 문제가 엉켜 있어. 열은 project_id, status, owner_role, due_date이며 날짜는 ISO 형식을 유지하고 빈 담당자는 빈 값으로 둬야 한다 일단 따옴표, 인코딩, 빈 값 규칙을 들어간 CSV 내보내기 명세로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 열 순서를 보존하고 담당자 값을 만들지 않는다."
         }
       ]
     },
@@ -96,7 +96,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: exporting a table as CSV, plus some unresolved details. Columns are project_id, status, owner_role, and also due_date; dates must remain ISO format and also empty owners remain empty. Please make a CSV export specification with quoting, encoding, and also empty-value rules; if the second issue is out of scope, separate it. Preserve column order and do not invent owner values."
+          "content": "There are two things tangled together here: exporting a table as CSV, plus some unresolved details. Columns are project_id, status, owner_role, and due_date; dates must remain ISO format and empty owners remain empty. Please make a CSV export specification with quoting, encoding, and empty-value rules; if the second issue is out of scope, separate it. Preserve column order and do not invent owner values."
         }
       ]
     }

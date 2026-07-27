@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 공급업체 지연 안내 이메일 얘기였어. 메모에는 배송이 이틀 늦었고 공급업체는 새 날짜를 체크하지 않았으며 내부 팀은 내일까지 결정이 필요해.라고 적혀 있어. 사실, 영향, 복구 안을 요청하는 단호하고 전문적인 이메일 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "이거 이어서 볼 수 있을까? 공급업체 지연 안내 이메일 얘기였어. 메모에는 배송이 이틀 늦었고 공급업체는 새 날짜를 체크하지 않았으며 내부 팀은 내일까지 결정이 필요해라고 적혀 있어. 사실, 영향, 복구 안을 요청하는 단호하고 전문적인 이메일 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up an email about a vendor delay? I lost the thread a bit. The notes say The shipment is two days late, the vendor has not confirmed a new date, and also the internal team needs a decision by tomorrow. What would a useful a firm, but professional email requesting facts, impact, and also a recovery plan look like? Keep the earlier boundaries in mind."
+          "content": "Can we pick up an email about a vendor delay? I lost the thread a bit. The notes say The shipment is two days late, the vendor has not confirmed a new date, and the internal team needs a decision by tomorrow. What would a firm but professional email requesting facts, impact, and a recovery plan look like? Keep the earlier boundaries in mind."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If one missing detail would change the call, ask for it or label your assumption."
         }
       ]
     }

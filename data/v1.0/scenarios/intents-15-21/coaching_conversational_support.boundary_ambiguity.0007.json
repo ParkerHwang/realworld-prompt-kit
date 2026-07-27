@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 우려를 에스컬레이션할지 판단 — 메모는 사용자는 불편한 상호작용을 말다만 안전, 정책, 즉각 위험의 세부는 없어., 결과는 안전을 중심으로 한 체크 질문 하나와 비공개 지원 경로 선택지. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "빠르게 부탁: 우려를 에스컬레이션할지 판단 — 메모는 사용자는 불편한 상호작용을 말다만 안전, 정책, 즉각 위험의 세부는 없어, 결과는 안전을 중심으로 한 체크 질문 하나와 비공개 지원 경로 선택지. 없는 정보는 추정하지 말고 표시해줘"
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "quick one: deciding whether a concern needs escalation — I’ve got The person asking describes an uncomfortable interaction, but gives no details about safety, policy, or immediate risk.; can you give me one safety-oriented clarifying question and also a choice of confidential support routes? no invented details pls"
+          "content": "quick one: deciding whether a concern needs escalation — I’ve got The person asking describes an uncomfortable interaction but gives no details about safety, policy, or immediate risk.; can you give me one safety-oriented clarifying question and a choice of confidential support routes? no invented details pls"
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
         }
       ]
     }

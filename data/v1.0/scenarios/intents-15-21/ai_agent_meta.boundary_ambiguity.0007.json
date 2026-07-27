@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 에이전트가 무엇을 기억할지 정의 — 메모는 에이전트는 프로젝트 맥락과 사용자 선호를 보지만 보존 기간, 삭제 통제, 민감도는 아직 안 정해졌어., 결과는 보존 목적 질문 하나와 최소 메모리 정책. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "빠르게 부탁: 에이전트가 무엇을 기억할지 정의 — 메모는 에이전트는 프로젝트 맥락과 사용자 선호를 보지만 보존 기간, 삭제 통제, 민감도는 아직 안 정해졌어, 결과는 보존 목적 질문 하나와 최소 메모리 정책. 없는 정보는 추정하지 말고 표시해줘"
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "quick one: defining what an agent should remember — I’ve got The agent sees project context and also user preferences,, but retention period, deletion control, and also sensitivity are not specified.; can you give me one question about retention purpose and also a minimal-memory policy? no invented details pls"
+          "content": "quick one: defining what an agent should remember — I’ve got The agent sees project context and user preferences, but retention period, deletion control, and sensitivity are not specified.; can you give me one question about retention purpose and a minimal-memory policy? no invented details pls"
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
         }
       ]
     }

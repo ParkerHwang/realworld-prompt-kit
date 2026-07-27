@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 주말 여행 일정 얘기였어. 메모에는 여행자는 하루 종일과 반나절 두 번을 쓸 수 있지만 음식, 박물관, 휴식 중 무엇이 우선인지 말하지 않았다.라고 적혀 있어. 가장 큰 영향을 주는 우선순위 질문 하나와 임시 일정 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "이거 이어서 볼 수 있을까? 주말 여행 일정 얘기였어. 메모에는 여행자는 하루 종일과 반나절 두 번을 쓸 수 있지만 음식, 박물관, 휴식 중 무엇이 우선인지 말하지 않았다라고 적혀 있어. 가장 큰 영향을 주는 우선순위 질문 하나와 임시 일정 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up a weekend trip itinerary? I lost the thread a bit. The notes say The traveler has one full day and also two half-days,, but has not said whether food, museums, or rest is the priority. What would a useful a useful provisional itinerary plus one question about the priority that changes it most look like? Keep the earlier boundaries in mind."
+          "content": "Can we pick up a weekend trip itinerary? I lost the thread a bit. The notes say The traveler has one full day and two half-days, but has not said whether food, museums, or rest is the priority. What would a useful provisional itinerary plus one question about the priority that changes it most look like? Keep the earlier boundaries in mind."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If one missing detail would change the call, ask for it or label your assumption."
         }
       ]
     }

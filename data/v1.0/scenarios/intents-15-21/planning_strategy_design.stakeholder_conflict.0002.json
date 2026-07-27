@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 가격 변경 출시 계획 얘기였어. 메모에는 영업은 빠른 출시를 원하고 지원팀은 유예 기간을 원하며 재무팀은 공개 전에 마진 가시성을 요구한다.라고 적혀 있어. 이해관계자 결정, 고객 안내, 롤백 조건을 들어간 단계적 출시 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "이거 이어서 볼 수 있을까? 가격 변경 출시 계획 얘기였어. 메모에는 영업은 빠른 출시를 원하고 지원팀은 유예 기간을 원하며 재무팀은 공개 전에 마진 가시성을 요구한다라고 적혀 있어. 이해관계자 결정, 고객 안내, 롤백 조건을 들어간 단계적 출시 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up a pricing-change rollout plan? I lost the thread a bit. The notes say Sales wants a fast launch, support wants a grace period, and also finance requires margin visibility before publishing. What would a useful a staged rollout with stakeholder decisions, customer messaging, and also a rollback trigger look like? Keep the earlier boundaries in mind."
+          "content": "Can we pick up a pricing-change rollout plan? I lost the thread a bit. The notes say Sales wants a fast launch, support wants a grace period, and finance requires margin visibility before publishing. What would a staged rollout with stakeholder decisions, customer messaging, and a rollback trigger look like? Keep the earlier boundaries in mind."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If one missing detail would change the call, ask for it or label your assumption."
         }
       ]
     }

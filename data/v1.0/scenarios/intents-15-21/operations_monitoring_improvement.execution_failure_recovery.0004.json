@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 프로세스 담당자 변경 복구이랑 아직 열린 문제가 엉켜 있어. 기존 담당자가 팀을 떠났고 열린 조치에는 새 담당자가 없으며 다음 검토가 내일이다. 일단 인계 리스트과 약속을 만들지 않는 임시 에스컬레이션 담당로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 권한과 가능 여부 확인 없이 사람에게 일을 배정하지 않는다."
+          "content": "지금 프로세스 담당자 변경 복구이랑 아직 열린 문제가 엉켜 있어. 기존 담당자가 팀을 떠났고 열린 조치에는 새 담당자가 없으며 다음 검토가 내일이다 일단 인계 리스트과 약속을 만들지 않는 임시 에스컬레이션 담당로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 권한과 가능 여부 확인 없이 사람에게 일을 배정하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: recovering from a process owner change, plus some unresolved details. The former owner left the team, open actions have no new owner, and also the next review is tomorrow. Please make a handoff inventory and also temporary escalation owner without inventing commitment; if the second issue is out of scope, separate it. Do not assign work to a person without authority or availability confirmation."
+          "content": "There are two things tangled together here: recovering from a process owner change, plus some unresolved details. The former owner left the team, open actions have no new owner, and the next review is tomorrow. Please make a handoff inventory and temporary escalation owner without inventing commitment; if the second issue is out of scope, separate it. Do not assign work to a person without authority or availability confirmation."
         }
       ]
     }

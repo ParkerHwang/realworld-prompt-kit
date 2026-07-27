@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 근거 점검을 포함한 연구 프로젝트 계획에서 쓸 수 있는 건 연구 질문은 정해졌지만 표본 출처, 측정 프로토콜, 분석 안은 검토 중이다.야. 프로토콜과 데이터를 체크하기 전 결론을 막는 단계별 안로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "말로 설명하면, 근거 점검을 포함한 연구 프로젝트 계획에서 쓸 수 있는 건 연구 질문은 정해졌지만 표본 출처, 측정 프로토콜, 분석 안은 검토 중이다야. 프로토콜과 데이터를 체크하기 전 결론을 막는 단계별 안로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for a research project plan with evidence checkpoints, the useful pieces are The research question is stable,, but the sample source, measurement protocol, and also analysis plan are still being reviewed.. Could you make a staged plan that prevents conclusions before the protocol and also data are checked? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m saying this out loud: for a research project plan with evidence checkpoints, the useful pieces are The research question is stable, but the sample source, measurement protocol, and analysis plan are still being reviewed.. Could you make a staged plan that prevents conclusions before the protocol and data are checked? If I’m missing a key input, stop and tell me. 👍"
         }
       ]
     }

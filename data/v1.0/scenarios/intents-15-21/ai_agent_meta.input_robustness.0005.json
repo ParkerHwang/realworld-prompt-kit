@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 두 기록을 모두 보존하고 식별 체크을 기다리는 중복 대기열로 좁히자. 큰 주제는 중복 평가 기록 정리이고 믿을 수 있는 메모는 두 결과 행이 같은 task ID를 공유다만 시각과 기준 메모가 다르다.야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "잠깐, 범위를 두 기록을 모두 보존하고 식별 체크을 기다리는 중복 대기열로 좁히자. 큰 주제는 중복 평가 기록 정리이고 믿을 수 있는 메모는 두 결과 행이 같은 task ID를 공유다만 시각과 기준 메모가 다르다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a deduplication queue that keeps both records pending identity resolution. The broader issue is an evaluation cleanup from duplicate records, and the notes I can stand behind are Two result rows share a task ID, but have different timestamps and also rubric notes.. Mark assumptions instead of filling blanks."
+          "content": "Actually, let’s narrow this to a deduplication queue that keeps both records pending identity resolution. The broader issue is an evaluation cleanup from duplicate records, and the notes I can stand behind are Two result rows share a task ID but have different timestamps and rubric notes.. Mark assumptions instead of filling blanks."
         }
       ]
     }

@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "어려운 업무 대화 준비 정리하려는데, 확실히 아는 건 사용자는 기대 미충족을 논의하면서 관계를 지키고 싶고 구체적인 사례 하나가 있어.야. 이걸 관찰, 영향, 질문, 다음 단계가 있는 대화 개요로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "어려운 업무 대화 준비 정리하려는데, 확실히 아는 건 사용자는 기대 미충족을 논의하면서 관계를 지키고 싶고 구체적인 사례 하나가 있어야. 이걸 관찰, 영향, 질문, 다음 단계가 있는 대화 개요로 만들어줘. 빈칸은 숨기지 말아줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out preparing for a difficult work conversation, but here’s what I actually know: The person asking needs to discuss missed expectations, wants to preserve the relationship, and also has one concrete example. Could you turn that into a conversation outline with observation, impact, question, and also next step, without papering over the gaps?"
+          "content": "I’m trying to sort out preparing for a difficult work conversation, but here’s what I actually know: The person asking needs to discuss missed expectations, wants to preserve the relationship, and has one concrete example. Could you turn that into a conversation outline with observation, impact, question, and next step, without papering over the gaps?"
         }
       ]
     }

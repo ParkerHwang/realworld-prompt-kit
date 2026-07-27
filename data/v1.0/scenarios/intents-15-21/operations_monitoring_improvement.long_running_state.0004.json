@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 반복 고객지원 문제의 장기 모니터링 계획이랑 아직 열린 문제가 엉켜 있어. 같은 문제가 여러 릴리스에서 반복되고 우회책이 바뀌며 영구 수정 날짜는 아직 체크 안 됐어. 일단 추세와 우회책을 추적하고 에스컬레이션 상태를 명시한 추적기로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 우회책을 영구 수정처럼 제시하지 않는다."
+          "content": "지금 반복 고객지원 문제의 장기 모니터링 계획이랑 아직 열린 문제가 엉켜 있어. 같은 문제가 여러 릴리스에서 반복되고 우회책이 바뀌며 영구 수정 날짜는 아직 체크 안 됐어 일단 추세와 우회책을 추적하고 에스컬레이션 상태를 명시한 추적기로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 우회책을 영구 수정처럼 제시하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a long-running monitoring plan for a chronic support issue, plus some unresolved details. The same issue recurs across releases, workarounds change, and also a permanent fix has no confirmed date. Please make a trend and also workaround tracker with explicit escalation state; if the second issue is out of scope, separate it. Do not present a workaround as a permanent fix."
+          "content": "There are two things tangled together here: a long-running monitoring plan for a chronic support issue, plus some unresolved details. The same issue recurs across releases, workarounds change, and a permanent fix has no confirmed date. Please make a trend and workaround tracker with explicit escalation state; if the second issue is out of scope, separate it. Do not present a workaround as a permanent fix."
         }
       ]
     }

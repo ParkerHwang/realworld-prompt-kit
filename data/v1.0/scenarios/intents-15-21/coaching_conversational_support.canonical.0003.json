@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "두 직장 제안 중 선택 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 제안 A는 급여가 높고 B는 학습과 유연성이 좋지만 사용자의 우선순위 순서는 아직 안 정해졌어.고, 원하는 건 가치 기준 비교와 선택을 돕는 질문야. 답을 바꿀 빠진 정보는 따로 알려줘."
+          "content": "두 직장 제안 중 선택 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 제안 A는 급여가 높고 B는 학습과 유연성이 좋지만 사용자의 우선순위 순서는 아직 안 정해졌어고, 원하는 건 가치 기준 비교와 선택을 돕는 질문야. 답을 바꿀 빠진 정보는 따로 알려줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "없는 입력은 맥락으로 채우지 말고 그대로 보이게 해줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Before we go too far on deciding between two job offers, can you sketch a first pass? My evidence is Offer One pays more, Offer B offers learning and also flexibility, and also the user's priorities are not ranked.; I need a values-based comparison and also questions that help the user choose. Call out anything that would change the answer."
+          "content": "Before we go too far on deciding between two job offers, can you sketch a first pass? My evidence is Offer One pays more, Offer B offers learning and flexibility, and the user's priorities are not ranked.; I need a values-based comparison and questions that help the user choose. Call out anything that would change the answer."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "Please leave unknown inputs visible rather than filling them in from context."
         }
       ]
     }

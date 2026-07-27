@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 개인 가치에 따른 직장 선택 코칭 얘기였어. 메모에는 한 역할은 안정성을, 다른 역할은 성장을 제공하며 사용자는 가족을 지원하고 시간과 소득 모두를 중시한다.라고 적혀 있어. 사용자 대신 결정하지 않는 가중 성찰과 질문 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "이거 이어서 볼 수 있을까? 개인 가치에 따른 직장 선택 코칭 얘기였어. 메모에는 한 역할은 안정성을, 다른 역할은 성장을 제공하며 사용자는 가족을 지원하고 시간과 소득 모두를 중시한다라고 적혀 있어. 사용자 대신 결정하지 않는 가중 성찰과 질문 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up coaching a job decision through personal values? I lost the thread a bit. The notes say One role offers stability and also one offers growth; the user is supporting a family member and also values time as well as income. What would a useful a weighted reflection with questions rather than a decision made on the user's behalf look like? Keep the earlier boundaries in mind."
+          "content": "Can we pick up coaching a job decision through personal values? I lost the thread a bit. The notes say One role offers stability and one offers growth; the user is supporting a family member and values time as well as income. What would a weighted reflection with questions rather than a decision made on the user's behalf look like? Keep the earlier boundaries in mind."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If one missing detail would change the call, ask for it or label your assumption."
         }
       ]
     }

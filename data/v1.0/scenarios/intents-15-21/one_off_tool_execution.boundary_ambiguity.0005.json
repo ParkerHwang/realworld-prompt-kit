@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 권한을 묻는 질문 하나와 최소 권한 공유 점검 리스트로 좁히자. 큰 주제는 문서를 외부 수신자와 공유하기이고 믿을 수 있는 메모는 파트너에게 링크를 보내고 싶지만 문서 민감도와 수신자 신원은 아직 안 정해졌어.야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "잠깐, 범위를 권한을 묻는 질문 하나와 최소 권한 공유 점검 리스트로 좁히자. 큰 주제는 문서를 외부 수신자와 공유하기이고 믿을 수 있는 메모는 파트너에게 링크를 보내고 싶지만 문서 민감도와 수신자 신원은 아직 안 정해졌어야. 빈 내용을 지어내지 말고 가정이라고 써줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to one question about authorization and also a least-privilege sharing checklist. The broader issue is sharing a document with an external recipient, and the notes I can stand behind are The person asking wants a link sent to a partner,, but the document sensitivity and also recipient identity are not specified.. Mark assumptions instead of filling blanks."
+          "content": "Actually, let’s narrow this to one question about authorization and a least-privilege sharing checklist. The broader issue is sharing a document with an external recipient, and the notes I can stand behind are The person asking wants a link sent to a partner, but the document sensitivity and recipient identity are not specified.. Mark assumptions instead of filling blanks."
         }
       ]
     }

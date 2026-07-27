@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 잘못된 데이터 매핑 복구 — 메모는 필드 매핑 때문에 소규모 배치의 상태 값이 잘못된 대상 열로 들어갔지만 원본은 intact 상태다., 결과는 범위를 제한한 롤백, 영향 행 감사, 수정 드라이런. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "빠르게 부탁: 잘못된 데이터 매핑 복구 — 메모는 필드 매핑 때문에 소규모 배치의 상태 값이 잘못된 대상 열로 들어갔지만 원본은 intact 상태다, 결과는 범위를 제한한 롤백, 영향 행 감사, 수정 드라이런. 없는 정보는 추정하지 말고 표시해줘"
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "quick one: recovering from a wrong data mapping — I’ve got One field mapping sent status values into the wrong target column for a small batch; the source remains intact.; can you give me a contained rollback, affected-row audit, and also corrected dry run? no invented details pls"
+          "content": "quick one: recovering from a wrong data mapping — I’ve got One field mapping sent status values into the wrong target column for a small batch; the source remains intact.; can you give me a contained rollback, affected-row audit, and corrected dry run? no invented details pls"
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
         }
       ]
     }

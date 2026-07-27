@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 불일치 분석과 정책 명확화 제안로 좁히자. 큰 주제는 평가자 불일치 분석이고 믿을 수 있는 메모는 두 평가자는 사실에는 동의다만 답이 질문해야 하는지 가정해야 하는지 다르고 응답 정책은 불충분하다.야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "잠깐, 범위를 불일치 분석과 정책 명확화 제안로 좁히자. 큰 주제는 평가자 불일치 분석이고 믿을 수 있는 메모는 두 평가자는 사실에는 동의다만 답이 질문해야 하는지 가정해야 하는지 다르고 응답 정책은 불충분하다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a disagreement analysis and also a policy clarification proposal. The broader issue is an analysis of grader disagreement, and the notes I can stand behind are Two graders agree on facts, but disagree about whether the answer should ask or assume; the response policy is underspecified.. Mark assumptions instead of filling blanks."
+          "content": "Actually, let’s narrow this to a disagreement analysis and a policy clarification proposal. The broader issue is an analysis of grader disagreement, and the notes I can stand behind are Two graders agree on facts but disagree about whether the answer should ask or assume; the response policy is underspecified.. Mark assumptions instead of filling blanks."
         }
       ]
     }

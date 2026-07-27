@@ -20,7 +20,7 @@
       "strategy_business_operations"
     ],
     "user_goal": {
-      "ko": "발생주의 주의, 지연 항목 대기열, 검토 담당이 있는 체크포인트 보기",
+      "ko": "발생주의 반영 여부와 지연 항목 대기열, 검토 담당이 있는 체크포인트 보기",
       "en": "a checkpointed view with accrual caveat, late-item queue, and review owner"
     },
     "expected_artifact": "a checkpointed view with accrual caveat, late-item queue, and review owner"
@@ -54,7 +54,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "체크포인트가 있는 장기 모니터링·개선 루프를 다음에 대해 설계해줘: 분기 비용 모니터링 계획\n맥락: 비용은 매달 게시되고 송장 하나가 늦게 오며 리더십은 차이 설명이 있는 분기 보기를 원한다.\n산출물: 발생주의 주의, 지연 항목 대기열, 검토 담당이 있는 체크포인트 보기\n중요한 송장이 대기 중이면 분기 결과를 최종이라고 하지 않는다."
+          "content": "체크포인트가 있는 장기 모니터링·개선 루프를 다음에 대해 설계해줘: 분기 비용 모니터링 계획\n맥락: 비용은 매달 게시되고 송장 하나가 늦게 오며 리더십은 차이 설명이 있는 분기 보기를 원한다.\n산출물: 발생주의 반영 여부와 지연 항목 대기열, 검토 담당이 있는 체크포인트 보기\n중요한 송장이 대기 중이면 분기 결과를 최종이라고 하지 않는다."
         }
       ]
     },
@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 분기 비용 모니터링 계획 얘기였어. 메모에는 비용은 매달 게시되고 송장 하나가 늦게 오며 리더십은 차이 설명이 있는 분기 보기를 원한다.라고 적혀 있어. 발생주의 주의, 지연 항목 대기열, 검토 담당이 있는 체크포인트 보기 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "이거 이어서 볼 수 있을까? 분기 비용 모니터링 계획 얘기였어. 메모에는 비용은 매달 게시되고 송장 하나가 늦게 오며 리더십은 차이 설명이 있는 분기 보기를 원한다라고 적혀 있어. 발생주의 반영 여부와 지연 항목 대기열, 검토 담당이 있는 체크포인트 보기 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up a quarterly cost monitoring plan? I lost the thread a bit. The notes say Costs are posted monthly, one invoice arrives late, and also leadership wants a quarterly view with variance explanations. What would a useful a checkpointed view with accrual caveat, late-item queue, and also review owner look like? Keep the earlier boundaries in mind."
+          "content": "Can we pick up a quarterly cost monitoring plan? I lost the thread a bit. The notes say Costs are posted monthly, one invoice arrives late, and leadership wants a quarterly view with variance explanations. What would a checkpointed view with accrual caveat, late-item queue, and review owner look like? Keep the earlier boundaries in mind."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If one missing detail would change the call, ask for it or label your assumption."
         }
       ]
     }

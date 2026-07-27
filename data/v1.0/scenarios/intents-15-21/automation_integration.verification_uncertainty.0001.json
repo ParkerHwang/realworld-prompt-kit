@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이중 쓰기 동기화 흐름 정리하려는데, 확실히 아는 건 레코드는 주 저장소와 보고용 저장소에 쓰이며 지연과 부분 실패가 가능하다.야. 이걸 일관성 점검, 대조 대기열, 근거 기반 완료 규칙로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "이중 쓰기 동기화 흐름 정리하려는데, 확실히 아는 건 레코드는 주 저장소와 보고용 저장소에 쓰이며 지연과 부분 실패가 가능하다야. 이걸 일관성 점검, 대조 대기열, 근거 기반 완료 규칙로 만들어줘. 빈칸은 숨기지 말아줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out a dual-write synchronization workflow, but here’s what I actually know: Records are written to a primary and also reporting store; lag and also partial failures are possible. Could you turn that into a consistency check, reconciliation queue, and also evidence-backed completion rule, without papering over the gaps?"
+          "content": "I’m trying to sort out a dual-write synchronization workflow, but here’s what I actually know: Records are written to a primary and reporting store; lag and partial failures are possible. Could you turn that into a consistency check, reconciliation queue, and evidence-backed completion rule, without papering over the gaps?"
         }
       ]
     }

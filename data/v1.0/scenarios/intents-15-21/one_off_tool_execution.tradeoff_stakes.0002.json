@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 고객 이메일을 초안으로 둘지 발송할지 선택 얘기였어. 메모에는 문안은 승인됐지만 고객 영향과 수신자 리스트은 아직 체크 안 됐어.라고 적혀 있어. 발송 조건이 있는 초안·검토 단계 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "이거 이어서 볼 수 있을까? 고객 이메일을 초안으로 둘지 발송할지 선택 얘기였어. 메모에는 문안은 승인됐지만 고객 영향과 수신자 리스트은 아직 체크 안 됐어라고 적혀 있어. 발송 조건이 있는 초안·검토 단계 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up choosing between drafting and sending a customer email? I lost the thread a bit. The notes say The copy is approved,, but the customer impact and also recipient list have not been verified. What would a useful a staged draft-and-review action with a send gate look like? Keep the earlier boundaries in mind."
+          "content": "Can we pick up choosing between drafting and sending a customer email? I lost the thread a bit. The notes say The copy is approved, but the customer impact and recipient list have not been verified. What would a staged draft-and-review action with a send gate look like? Keep the earlier boundaries in mind."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If one missing detail would change the call, ask for it or label your assumption."
         }
       ]
     }

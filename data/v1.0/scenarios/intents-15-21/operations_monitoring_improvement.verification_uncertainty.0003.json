@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "예측과 실제 비교 검토 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 예측은 두 번 수정됐고 실제 값은 늦게 들어왔으며 비교 기간은 동결되지 않았다.고, 원하는 건 각 체크포인트의 예측 버전을 식별한 비교야. 답을 바꿀 빠진 정보는 따로 알려줘."
+          "content": "예측과 실제 비교 검토 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 예측은 두 번 수정됐고 실제 값은 늦게 들어왔으며 비교 기간은 동결되지 않았다고, 원하는 건 각 체크포인트의 예측 버전을 식별한 비교야. 답을 바꿀 빠진 정보는 따로 알려줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "없는 입력은 맥락으로 채우지 말고 그대로 보이게 해줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Before we go too far on a forecast-versus-actual review, can you sketch a first pass? My evidence is The forecast was revised twice, actuals arrived late, and also the comparison period was not frozen.; I need a versioned comparison that identifies the forecast used at each checkpoint. Call out anything that would change the answer."
+          "content": "Before we go too far on a forecast-versus-actual review, can you sketch a first pass? My evidence is The forecast was revised twice, actuals arrived late, and the comparison period was not frozen.; I need a versioned comparison that identifies the forecast used at each checkpoint. Call out anything that would change the answer."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "Please leave unknown inputs visible rather than filling them in from context."
         }
       ]
     }

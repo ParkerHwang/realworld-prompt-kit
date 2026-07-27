@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 탭이 모호한 스프레드시트 업데이트이랑 아직 열린 문제가 엉켜 있어. 통합 문서에 Current, Archive, Draft 탭이 있지만 요청에는 합계를 업데이트하라고만 되어 있어. 일단 기준 탭을 묻는 질문 하나와 안전한 미리보기 안로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 이름만 보고 Archive나 Draft를 수정하지 않는다."
+          "content": "지금 탭이 모호한 스프레드시트 업데이트이랑 아직 열린 문제가 엉켜 있어. 통합 문서에 Current, Archive, Draft 탭이 있지만 요청에는 합계를 업데이트하라고만 되어 있어 일단 기준 탭을 묻는 질문 하나와 안전한 미리보기 안로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 이름만 보고 Archive나 Draft를 수정하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: updating an ambiguous spreadsheet tab, plus some unresolved details. The workbook has tabs named Current, Archive, and also Draft; the request only says update the totals. Please make one question identifying the source-of-truth tab and also a safe preview plan; if the second issue is out of scope, separate it. Do not edit Archive or Draft based on naming alone."
+          "content": "There are two things tangled together here: updating an ambiguous spreadsheet tab, plus some unresolved details. The workbook has tabs named Current, Archive, and Draft; the request only says update the totals. Please make one question identifying the source-of-truth tab and a safe preview plan; if the second issue is out of scope, separate it. Do not edit Archive or Draft based on naming alone."
         }
       ]
     }

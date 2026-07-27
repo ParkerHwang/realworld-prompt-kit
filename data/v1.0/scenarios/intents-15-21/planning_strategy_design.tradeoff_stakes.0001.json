@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "원격·하이브리드 근무 정책 선택지 정리하려는데, 확실히 아는 건 팀은 유연성, 온보딩 품질, 제한 자료의 안전한 처리를 중시하며 사무 공간 예산은 고정돼 있어.야. 이걸 장점과 위험, 되돌릴 수 있는 파일럿 추천을 들어간 세 정책 선택지로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "원격·하이브리드 근무 정책 선택지 정리하려는데, 확실히 아는 건 팀은 유연성, 온보딩 품질, 제한 자료의 안전한 처리를 중시하며 사무 공간 예산은 고정돼 있어야. 이걸 장점과 위험, 되돌릴 수 있는 파일럿 추천을 들어간 세 정책 선택지로 만들어줘. 빈칸은 숨기지 말아줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out remote and hybrid work policy options, but here’s what I actually know: Our team values flexibility, onboarding quality, and also secure handling of restricted material; budget for office space is fixed. Could you turn that into three policy options with benefits, risks, and also a reversible pilot recommendation, without papering over the gaps?"
+          "content": "I’m trying to sort out remote and hybrid work policy options, but here’s what I actually know: Our team values flexibility, onboarding quality, and secure handling of restricted material; budget for office space is fixed. Could you turn that into three policy options with benefits, risks, and a reversible pilot recommendation, without papering over the gaps?"
         }
       ]
     }

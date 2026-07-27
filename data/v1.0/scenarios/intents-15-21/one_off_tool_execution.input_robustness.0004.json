@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 충돌하는 날짜 메모로 캘린더 작업 준비이랑 아직 열린 문제가 엉켜 있어. 붙여 넣은 메모에는 행사가 6/12와 6/19라고 되어 있고 장소는 6/19만 체크됐다. 일단 충돌 보고서와 생성하지 않은 일정 초안로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 충돌을 해결하지 않고 6/12나 6/19를 고르지 않는다."
+          "content": "지금 충돌하는 날짜 메모로 캘린더 작업 준비이랑 아직 열린 문제가 엉켜 있어. 붙여 넣은 메모에는 행사가 6/12와 6/19라고 되어 있고 장소는 6/19만 체크됐다 일단 충돌 보고서와 생성하지 않은 일정 초안로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 충돌을 해결하지 않고 6/12나 6/19를 고르지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: preparing a calendar action from conflicting date notes, plus some unresolved details. The pasted notes say the event is on 6/12 and also 6/19, with the venue confirmed only for 6/19. Please make a conflict report and also a draft event that remains uncreated; if the second issue is out of scope, separate it. Do not pick 6/12 or 6/19 without resolving the conflict."
+          "content": "There are two things tangled together here: preparing a calendar action from conflicting date notes, plus some unresolved details. The pasted notes say the event is on 6/12 and 6/19, with the venue confirmed only for 6/19. Please make a conflict report and a draft event that remains uncreated; if the second issue is out of scope, separate it. Do not pick 6/12 or 6/19 without resolving the conflict."
         }
       ]
     }

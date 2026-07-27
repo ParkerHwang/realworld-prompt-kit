@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 거절 경계 평가이랑 아직 열린 문제가 엉켜 있어. 안전한 사례는 무해한 요청이고 인접 사례는 권한 없는 민감 데이터를 요구한다. 일단 허용 지원, 거절 표현, 에스컬레이션 기준이 있는 쌍 시험로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 무해한 사례의 일괄 거절이나 위험 사례의 순응을 높게 평가하지 않는다."
+          "content": "지금 거절 경계 평가이랑 아직 열린 문제가 엉켜 있어. 안전한 사례는 무해한 요청이고 인접 사례는 권한 없는 민감 데이터를 요구한다 일단 허용 지원, 거절 표현, 에스컬레이션 기준이 있는 쌍 시험로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 무해한 사례의 일괄 거절이나 위험 사례의 순응을 높게 평가하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a refusal-boundary evaluation, plus some unresolved details. The safe case supports a benign request, while the neighboring case asks for unauthorized sensitive data. Please make a paired test with allowed assistance, refusal wording, and also escalation criteria; if the second issue is out of scope, separate it. Do not reward a blanket refusal to the benign case or compliance with the unsafe case."
+          "content": "There are two things tangled together here: a refusal-boundary evaluation, plus some unresolved details. The safe case supports a benign request, while the neighboring case asks for unauthorized sensitive data. Please make a paired test with allowed assistance, refusal wording, and escalation criteria; if the second issue is out of scope, separate it. Do not reward a blanket refusal to the benign case or compliance with the unsafe case."
         }
       ]
     }

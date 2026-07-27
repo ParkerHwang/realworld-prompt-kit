@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 고객 에스컬레이션 자동 라우팅 — 메모는 요청에는 긴급 불만이 언급됐지만 심각도 근거, 계정 권한, 업무 외 시간 담당은 정의되지 않았다., 결과는 심각도 규칙 질문 하나와 사람 검토 우선 흐름 초안. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "빠르게 부탁: 고객 에스컬레이션 자동 라우팅 — 메모는 요청에는 긴급 불만이 언급됐지만 심각도 근거, 계정 권한, 업무 외 시간 담당은 정의되지 않았다, 결과는 심각도 규칙 질문 하나와 사람 검토 우선 흐름 초안. 없는 정보는 추정하지 말고 표시해줘"
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "quick one: an automated customer escalation route — I’ve got The request I received mentions urgent complaints,, but severity evidence, account authority, and also after-hours ownership are not defined.; can you give me one question about the severity rule and also a human-review-first draft? no invented details pls"
+          "content": "quick one: an automated customer escalation route — I’ve got The request I received mentions urgent complaints, but severity evidence, account authority, and after-hours ownership are not defined.; can you give me one question about the severity rule and a human-review-first draft? no invented details pls"
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
         }
       ]
     }

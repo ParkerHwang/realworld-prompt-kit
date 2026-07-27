@@ -67,7 +67,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 송장 열을 재무 템플릿에 매핑이랑 아직 열린 문제가 엉켜 있어. 원본은 vendor_total, tax_value, invoice_date를 쓰고 대상은 supplier_amount, tax, date를 요구하며 환전은 하지 않는다. 일단 미매칭 필드와 통화를 보존한 손실 없는 열 매핑로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 통화를 바꾸거나 미매칭 필드를 조용히 버리지 않는다."
+          "content": "지금 송장 열을 재무 템플릿에 매핑이랑 아직 열린 문제가 엉켜 있어. 원본은 vendor_total, tax_value, invoice_date를 쓰고 대상은 supplier_amount, tax, date를 요구하며 환전은 하지 않는다 일단 미매칭 필드와 통화를 보존한 손실 없는 열 매핑로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 통화를 바꾸거나 미매칭 필드를 조용히 버리지 않는다."
         }
       ]
     },
@@ -96,7 +96,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: mapping invoice columns into a finance template, plus some unresolved details. The source uses vendor_total, tax_value, and also invoice_date; the target requires supplier_amount, tax, and also date with no currency conversion. Please make a lossless column mapping with unmatched fields and also currency preserved; if the second issue is out of scope, separate it. Do not convert currency or discard an unmatched field silently."
+          "content": "There are two things tangled together here: mapping invoice columns into a finance template, plus some unresolved details. The source uses vendor_total, tax_value, and invoice_date; the target requires supplier_amount, tax, and date with no currency conversion. Please make a lossless column mapping with unmatched fields and currency preserved; if the second issue is out of scope, separate it. Do not convert currency or discard an unmatched field silently."
         }
       ]
     }

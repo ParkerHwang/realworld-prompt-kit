@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 에이전트 오류 분류에서 쓸 수 있는 건 관찰된 실패에는 누락, 근거 없는 확신, 잘못된 도구 매개변수, 에스컬레이션 실패가 있어.야. 예와 라우팅 용도가 있는 겹치지 않는 분류 체계로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "말로 설명하면, 에이전트 오류 분류에서 쓸 수 있는 건 관찰된 실패에는 누락, 근거 없는 확신, 잘못된 도구 매개변수, 에스컬레이션 실패가 있어야. 예와 라우팅 용도가 있는 겹치지 않는 분류 체계로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for an error taxonomy for an agent, the useful pieces are Observed failures include omission, unsupported certainty, wrong tool parameters, and also failure to escalate.. Could you make a non-overlapping taxonomy with examples and also routing use? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m saying this out loud: for an error taxonomy for an agent, the useful pieces are Observed failures include omission, unsupported certainty, wrong tool parameters, and failure to escalate.. Could you make a non-overlapping taxonomy with examples and routing use? If I’m missing a key input, stop and tell me. 👍"
         }
       ]
     }

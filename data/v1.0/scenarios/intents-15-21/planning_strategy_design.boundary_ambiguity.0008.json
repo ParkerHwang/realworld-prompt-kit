@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 분기 우선순위 제안에서 쓸 수 있는 건 리더들은 성장, 안정성, 팀 건강을 언급했지만 우선순위나 가용량 한도는 제시하지 않았다.야. 지배 제약을 묻는 질문 하나와 임시 우선순위 리스트로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "말로 설명하면, 분기 우선순위 제안에서 쓸 수 있는 건 리더들은 성장, 안정성, 팀 건강을 언급했지만 우선순위나 가용량 한도는 제시하지 않았다야. 지배 제약을 묻는 질문 하나와 임시 우선순위 리스트로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for a quarterly priority proposal, the useful pieces are Leaders mention growth, reliability, and also team health,, but no ranking or capacity envelope is provided.. Could you make a provisional priority stack and also one question about the governing constraint? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m saying this out loud: for a quarterly priority proposal, the useful pieces are Leaders mention growth, reliability, and team health, but no ranking or capacity envelope is provided.. Could you make a provisional priority stack and one question about the governing constraint? If I’m missing a key input, stop and tell me. 👍"
         }
       ]
     }

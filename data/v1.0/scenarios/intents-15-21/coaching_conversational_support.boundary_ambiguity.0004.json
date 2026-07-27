@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 학습자 지원 방식 선택이랑 아직 열린 문제가 엉켜 있어. 학습자는 어려운 주제 도움을 원다만 수준, 시간, 선호 설명 방식은 모른다. 일단 수준이나 형식 질문 하나와 부담 없는 짧은 시작 설명로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 사전 지식을 가정하거나 전체 수업을 한꺼번에 쏟지 않는다."
+          "content": "지금 학습자 지원 방식 선택이랑 아직 열린 문제가 엉켜 있어. 학습자는 어려운 주제 도움을 원다만 수준, 시간, 선호 설명 방식은 모른다 일단 수준이나 형식 질문 하나와 부담 없는 짧은 시작 설명로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 사전 지식을 가정하거나 전체 수업을 한꺼번에 쏟지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: choosing a support style for a learner, plus some unresolved details. The learner asks for help with a difficult topic,, but their level, time, and also preferred explanation style are unknown. Please make one question about level or format and also a small low-risk starting explanation; if the second issue is out of scope, separate it. Do not assume prior knowledge or overwhelm with a full lesson."
+          "content": "There are two things tangled together here: choosing a support style for a learner, plus some unresolved details. The learner asks for help with a difficult topic, but their level, time, and preferred explanation style are unknown. Please make one question about level or format and a small low-risk starting explanation; if the second issue is out of scope, separate it. Do not assume prior knowledge or overwhelm with a full lesson."
         }
       ]
     }

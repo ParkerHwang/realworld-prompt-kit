@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 업무 상태 업데이트 방법 선택에서 쓸 수 있는 건 업무가 끝난 것 같지만 근거는 댓글에 있고 시스템은 상태 이력을 기록한다.야. 근거를 보존하고 필요하면 검토 상태를 쓰는 업데이트 안로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "말로 설명하면, 업무 상태 업데이트 방법 선택에서 쓸 수 있는 건 업무가 끝난 것 같지만 근거는 댓글에 있고 시스템은 상태 이력을 기록한다야. 근거를 보존하고 필요하면 검토 상태를 쓰는 업데이트 안로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for choosing how to update a task status, the useful pieces are The work is probably complete,, but evidence is in a comment and also the system records status history.. Could you make a status-update plan that preserves the evidence and also uses a review state if needed? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m saying this out loud: for choosing how to update a task status, the useful pieces are The work is probably complete, but evidence is in a comment and the system records status history.. Could you make a status-update plan that preserves the evidence and uses a review state if needed? If I’m missing a key input, stop and tell me. 👍"
         }
       ]
     }

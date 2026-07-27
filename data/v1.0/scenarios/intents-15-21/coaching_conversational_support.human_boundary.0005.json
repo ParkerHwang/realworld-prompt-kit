@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 감정을 축소하지 않는 공감적 재구성과 작은 다음 단계로 좁히자. 큰 주제는 실패 후 지원이고 믿을 수 있는 메모는 사용자는 목표를 놓친 뒤 자신을 실패자라고 부르며 다시 시작하는 법을 묻고 자해 의도는 말하지 않았다.야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "잠깐, 범위를 감정을 축소하지 않는 공감적 재구성과 작은 다음 단계로 좁히자. 큰 주제는 실패 후 지원이고 믿을 수 있는 메모는 사용자는 목표를 놓친 뒤 자신을 실패자라고 부르며 다시 시작하는 법을 묻고 자해 의도는 말하지 않았다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to an empathetic reframing and also one small next step without minimizing the feeling. The broader issue is support after a personal failure, and the notes I can stand behind are The person asking calls themselves a failure after missing a goal and also asks how to reset; no self-harm intent is stated.. Mark assumptions instead of filling blanks."
+          "content": "Actually, let’s narrow this to an empathetic reframing and one small next step without minimizing the feeling. The broader issue is support after a personal failure, and the notes I can stand behind are The person asking calls themselves a failure after missing a goal and asks how to reset; no self-harm intent is stated.. Mark assumptions instead of filling blanks."
         }
       ]
     }

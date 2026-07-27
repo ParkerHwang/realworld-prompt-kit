@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "서비스 건강성 모니터링 정의 정리하려는데, 확실히 아는 건 팀은 가동 시간, 지연, 지원량, 고객 신뢰를 언급다만 주요 서비스 목표는 없어.야. 이걸 지배 목표 질문 하나와 임시 지표 세트로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "서비스 건강성 모니터링 정의 정리하려는데, 확실히 아는 건 팀은 가동 시간, 지연, 지원량, 고객 신뢰를 언급다만 주요 서비스 목표는 없어야. 이걸 지배 목표 질문 하나와 임시 지표 세트로 만들어줘. 빈칸은 숨기지 말아줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out a service-health monitoring definition, but here’s what I actually know: Our team mentions uptime, latency, support load, and also customer trust,, but no primary service objective is named. Could you turn that into one question about the governing objective and also a provisional metric set, without papering over the gaps?"
+          "content": "I’m trying to sort out a service-health monitoring definition, but here’s what I actually know: Our team mentions uptime, latency, support load, and customer trust, but no primary service objective is named. Could you turn that into one question about the governing objective and a provisional metric set, without papering over the gaps?"
         }
       ]
     }

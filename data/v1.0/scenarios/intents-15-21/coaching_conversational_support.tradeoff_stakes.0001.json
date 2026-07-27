@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "공감과 책임을 조율하는 코칭 정리하려는데, 확실히 아는 건 사용자는 약속을 지키지 못한 것에 사과하면서 실제 제약도 설명하고 싶다.야. 이걸 영향을 인정하고 제약을 짧게 말하며 회복을 제안하는 메시지로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "공감과 책임을 조율하는 코칭 정리하려는데, 확실히 아는 건 사용자는 약속을 지키지 못한 것에 사과하면서 실제 제약도 설명하고 싶다야. 이걸 영향을 인정하고 제약을 짧게 말하며 회복을 제안하는 메시지로 만들어줘. 빈칸은 숨기지 말아줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out coaching that balances empathy and accountability, but here’s what I actually know: The person asking wants to apologize for a missed commitment while still explaining a real constraint. Could you turn that into a message that owns the impact, names the constraint briefly, and also proposes repair, without papering over the gaps?"
+          "content": "I’m trying to sort out coaching that balances empathy and accountability, but here’s what I actually know: The person asking wants to apologize for a missed commitment while still explaining a real constraint. Could you turn that into a message that owns the impact, names the constraint briefly, and proposes repair, without papering over the gaps?"
         }
       ]
     }

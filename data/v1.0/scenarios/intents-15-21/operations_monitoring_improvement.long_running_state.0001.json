@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "90일 출시 모니터링 계획 정리하려는데, 확실히 아는 건 출시는 주간 체크포인트, 단계별 대상, 지원 범위, 90일째 최종 검토가 있어.야. 이걸 단계 이력을 보존하는 상태 기반 대시보드와 에스컬레이션 주기로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "90일 출시 모니터링 계획 정리하려는데, 확실히 아는 건 출시는 주간 체크포인트, 단계별 대상, 지원 범위, 90일째 최종 검토가 있어야. 이걸 단계 이력을 보존하는 상태 기반 대시보드와 에스컬레이션 주기로 만들어줘. 빈칸은 숨기지 말아줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out a 90-day rollout monitoring plan, but here’s what I actually know: The rollout has weekly checkpoints, a phased audience, support coverage, and also a final review on day 90. Could you turn that into a stateful dashboard and also escalation cadence that preserves phase history, without papering over the gaps?"
+          "content": "I’m trying to sort out a 90-day rollout monitoring plan, but here’s what I actually know: The rollout has weekly checkpoints, a phased audience, support coverage, and a final review on day 90. Could you turn that into a stateful dashboard and escalation cadence that preserves phase history, without papering over the gaps?"
         }
       ]
     }

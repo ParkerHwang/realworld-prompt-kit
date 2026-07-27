@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 고객 사과 메시지이랑 아직 열린 문제가 엉켜 있어. 배송 예상이 지켜지지 않았고 원인을 조사 중이며 교환 옵션은 가능다만 아직 승인되지 않았다. 일단 체크된 사실, 다음 안내 시점, 승인되지 않은 약속 금지를 담은 진정성 있는 사과로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 승인 전에 교환이나 환불을 약속하지 않는다."
+          "content": "지금 고객 사과 메시지이랑 아직 열린 문제가 엉켜 있어. 배송 예상이 지켜지지 않았고 원인을 조사 중이며 교환 옵션은 가능다만 아직 승인되지 않았다 일단 체크된 사실, 다음 안내 시점, 승인되지 않은 약속 금지를 담은 진정성 있는 사과로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 승인 전에 교환이나 환불을 약속하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a customer apology message, plus some unresolved details. One delivery estimate was missed; the cause is being investigated, and also a replacement option is available, but not yet approved. Please make a sincere apology that states what is known, the next update, and also no unapproved promise; if the second issue is out of scope, separate it. Do not promise the replacement or a refund before approval."
+          "content": "There are two things tangled together here: a customer apology message, plus some unresolved details. One delivery estimate was missed; the cause is being investigated, and a replacement option is available but not yet approved. Please make a sincere apology that states what is known, the next update, and no unapproved promise; if the second issue is out of scope, separate it. Do not promise the replacement or a refund before approval."
         }
       ]
     }

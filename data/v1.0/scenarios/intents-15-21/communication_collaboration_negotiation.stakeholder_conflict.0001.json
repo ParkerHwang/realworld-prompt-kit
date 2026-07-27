@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 간 마감일 협상 정리하려는데, 확실히 아는 건 디자인에는 사흘이 더 필요하고 영업에는 고객 데모가 잡혀 있으며 제품팀은 품질 검토를 지키고 싶어 한다.야. 이걸 선택지, 트레이드오프, 결정 요청이 담긴 협상 메시지로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "팀 간 마감일 협상 정리하려는데, 확실히 아는 건 디자인에는 사흘이 더 필요하고 영업에는 고객 데모가 잡혀 있으며 제품팀은 품질 검토를 지키고 싶어 한다야. 이걸 선택지, 트레이드오프, 결정 요청이 담긴 협상 메시지로 만들어줘. 빈칸은 숨기지 말아줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out a cross-team deadline negotiation, but here’s what I actually know: Design needs three more days, sales has a customer demo booked, and also product wants to preserve quality review. Could you turn that into a negotiation note with options, tradeoffs, and also a decision request, without papering over the gaps?"
+          "content": "I’m trying to sort out a cross-team deadline negotiation, but here’s what I actually know: Design needs three more days, sales has a customer demo booked, and product wants to preserve quality review. Could you turn that into a negotiation note with options, tradeoffs, and a decision request, without papering over the gaps?"
         }
       ]
     }

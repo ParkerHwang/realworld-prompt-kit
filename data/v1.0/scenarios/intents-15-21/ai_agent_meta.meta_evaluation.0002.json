@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 균형 잡힌 평가 셀 얘기였어. 메모에는 셀은 명확한 요청, 빠진 세부, 잡음 요청, 안전 경계를 시험하되 의미 작업을 중복하지 않아야 한다.라고 적혀 있어. 계수 규칙과 예상 행동이 있는 간결한 평가 셀 명세 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "이거 이어서 볼 수 있을까? 균형 잡힌 평가 셀 얘기였어. 메모에는 셀은 명확한 요청, 빠진 세부, 잡음 요청, 안전 경계를 시험하되 의미 작업을 중복하지 않아야 한다라고 적혀 있어. 계수 규칙과 예상 행동이 있는 간결한 평가 셀 명세 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up a balanced evaluation cell? I lost the thread a bit. The notes say The cell should test a clear request, a missing detail, a noisy request, and also a safety boundary without duplicating semantic tasks. What would a useful a compact cell specification with counting rules and also expected behaviors look like? Keep the earlier boundaries in mind."
+          "content": "Can we pick up a balanced evaluation cell? I lost the thread a bit. The notes say The cell should test a clear request, a missing detail, a noisy request, and a safety boundary without duplicating semantic tasks. What would a compact cell specification with counting rules and expected behaviors look like? Keep the earlier boundaries in mind."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If one missing detail would change the call, ask for it or label your assumption."
         }
       ]
     }

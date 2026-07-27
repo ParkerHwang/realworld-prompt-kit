@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 이중언어 여행 안내이랑 아직 열린 문제가 엉켜 있어. 그룹은 역에서 만나고 출발 시각은 고정됐지만 환승 안내 하나는 체크 중이다. 일단 체크 중인 환승 정보를 표시한 명확한 한국어·영어 안내로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 확인되지 않은 안내를 확정된 방향으로 번역하지 않는다."
+          "content": "지금 이중언어 여행 안내이랑 아직 열린 문제가 엉켜 있어. 그룹은 역에서 만나고 출발 시각은 고정됐지만 환승 안내 하나는 체크 중이다 일단 체크 중인 환승 정보를 표시한 명확한 한국어·영어 안내로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 확인되지 않은 안내를 확정된 방향으로 번역하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a bilingual travel notice, plus some unresolved details. Our group meets at a station, the departure time is fixed, and also one transfer instruction is still awaiting confirmation. Please make clear Korean and also English notices that flag the unconfirmed transfer detail; if the second issue is out of scope, separate it. Do not translate the unconfirmed instruction into a definite direction."
+          "content": "There are two things tangled together here: a bilingual travel notice, plus some unresolved details. Our group meets at a station, the departure time is fixed, and one transfer instruction is still awaiting confirmation. Please make clear Korean and English notices that flag the unconfirmed transfer detail; if the second issue is out of scope, separate it. Do not translate the unconfirmed instruction into a definite direction."
         }
       ]
     }

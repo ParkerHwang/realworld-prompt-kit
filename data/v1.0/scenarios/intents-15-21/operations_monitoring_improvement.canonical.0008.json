@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 개인정보 접근 검토에서 쓸 수 있는 건 시스템에는 역할 그룹, 최근 이동, 예외 계정이 있지만 한 달치 접근 로그가 빠져 있어.야. 누락 근거를 표시하고 시정과 승인을 구분한 검토 안로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "말로 설명하면, 개인정보 접근 검토에서 쓸 수 있는 건 시스템에는 역할 그룹, 최근 이동, 예외 계정이 있지만 한 달치 접근 로그가 빠져 있어야. 누락 근거를 표시하고 시정과 승인을 구분한 검토 안로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for a privacy access review, the useful pieces are The system has role groups, recent transfers, and also an exception account; access logs for one month are missing.. Could you make a review plan that flags the missing evidence and also separates remediation from approval? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m saying this out loud: for a privacy access review, the useful pieces are The system has role groups, recent transfers, and an exception account; access logs for one month are missing.. Could you make a review plan that flags the missing evidence and separates remediation from approval? If I’m missing a key input, stop and tell me. 👍"
         }
       ]
     }

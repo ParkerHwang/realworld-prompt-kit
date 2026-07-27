@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 진료 예약 알림 흐름이랑 아직 열린 문제가 엉켜 있어. 병원은 예약 부도를 줄이고 싶지만 동의, 선호 채널, 취소 처리는 아직 안 정해졌어. 일단 동의를 묻는 질문 하나와 개인정보 보호형 알림 설계로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 동의와 채널 규칙 없이 건강 관련 알림을 보내지 않는다."
+          "content": "지금 진료 예약 알림 흐름이랑 아직 열린 문제가 엉켜 있어. 병원은 예약 부도를 줄이고 싶지만 동의, 선호 채널, 취소 처리는 아직 안 정해졌어 일단 동의를 묻는 질문 하나와 개인정보 보호형 알림 설계로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 동의와 채널 규칙 없이 건강 관련 알림을 보내지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: an appointment reminder workflow, plus some unresolved details. The clinic wants fewer missed appointments,, but consent, preferred channel, and also cancellation handling are not stated. Please make one question about consent and also a privacy-safe reminder design; if the second issue is out of scope, separate it. Do not send health-related reminders without a consent and channel rule."
+          "content": "There are two things tangled together here: an appointment reminder workflow, plus some unresolved details. The clinic wants fewer missed appointments, but consent, preferred channel, and cancellation handling are not stated. Please make one question about consent and a privacy-safe reminder design; if the second issue is out of scope, separate it. Do not send health-related reminders without a consent and channel rule."
         }
       ]
     }

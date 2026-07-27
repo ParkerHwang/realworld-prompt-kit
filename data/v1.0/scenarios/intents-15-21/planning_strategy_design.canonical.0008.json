@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 박물관 전시 인력 계획에서 쓸 수 있는 건 전시에 오전 학교 단체, 오후 일반 공개 일정, 훈련된 안내자 두 명, 오리엔테이션이 필요한 자원봉사자 한 명이 있어.야. 배치, 휴식, 오리엔테이션, 한 명 결원 시 대안을 들어간 근무 안로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "말로 설명하면, 박물관 전시 인력 계획에서 쓸 수 있는 건 전시에 오전 학교 단체, 오후 일반 공개 일정, 훈련된 안내자 두 명, 오리엔테이션이 필요한 자원봉사자 한 명이 있어야. 배치, 휴식, 오리엔테이션, 한 명 결원 시 대안을 들어간 근무 안로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for a museum exhibit staffing plan, the useful pieces are The exhibit has a school-group morning, a public opening in the afternoon, two trained guides, and also one volunteer who needs orientation.. Could you make a shift plan with coverage, breaks, orientation, and also a contingency for one absence? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m saying this out loud: for a museum exhibit staffing plan, the useful pieces are The exhibit has a school-group morning, a public opening in the afternoon, two trained guides, and one volunteer who needs orientation.. Could you make a shift plan with coverage, breaks, orientation, and a contingency for one absence? If I’m missing a key input, stop and tell me. 👍"
         }
       ]
     }

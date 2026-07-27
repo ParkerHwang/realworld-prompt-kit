@@ -67,7 +67,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 품질 트레이드오프를 고려한 이미지 업로드이랑 아직 열린 문제가 엉켜 있어. 포털에는 용량 제한이 있고 이미지에는 작은 글씨가 있지만 최소 가독성 기준은 없어. 일단 미리보기 체크이 있는 두 압축 선택지로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 정해지지 않은 가독성 기준 아래로 품질을 낮추지 않는다."
+          "content": "지금 품질 트레이드오프를 고려한 이미지 업로드이랑 아직 열린 문제가 엉켜 있어. 포털에는 용량 제한이 있고 이미지에는 작은 글씨가 있지만 최소 가독성 기준은 없어 일단 미리보기 체크이 있는 두 압축 선택지로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 정해지지 않은 가독성 기준 아래로 품질을 낮추지 않는다."
         }
       ]
     },
@@ -96,7 +96,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: preparing an image upload with quality tradeoffs, plus some unresolved details. The portal has a size limit, the image contains small text, and also the required minimum readability still is not specified. Please make two compression options and also a preview check rather than an irreversible overwrite; if the second issue is out of scope, separate it. Do not reduce quality below an unstated readability requirement."
+          "content": "There are two things tangled together here: preparing an image upload with quality tradeoffs, plus some unresolved details. The portal has a size limit, the image contains small text, and the required minimum readability still is not specified. Please make two compression options and a preview check rather than an irreversible overwrite; if the second issue is out of scope, separate it. Do not reduce quality below an unstated readability requirement."
         }
       ]
     }

@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 속도와 감사 가능성을 조율한 승인 자동화 얘기였어. 메모에는 재무팀은 빠른 처리를 원하고 감사 담당은 근거가 필요하며 예외가 잦아 사람 검토가 필요해.라고 적혀 있어. 예외 경로와 근거 보존이 있는 두 흐름 선택지 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "이거 이어서 볼 수 있을까? 속도와 감사 가능성을 조율한 승인 자동화 얘기였어. 메모에는 재무팀은 빠른 처리를 원하고 감사 담당은 근거가 필요하며 예외가 잦아 사람 검토가 필요해라고 적혀 있어. 예외 경로와 근거 보존이 있는 두 흐름 선택지 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up an approval automation balancing speed and auditability? I lost the thread a bit. The notes say Finance wants faster processing, auditors need evidence, and also exceptions are common enough to need human review. What would a useful two workflow options with an exception path and also evidence retention look like? Keep the earlier boundaries in mind."
+          "content": "Can we pick up an approval automation balancing speed and auditability? I lost the thread a bit. The notes say Finance wants faster processing, auditors need evidence, and exceptions are common enough to need human review. What would two workflow options with an exception path and evidence retention look like? Keep the earlier boundaries in mind."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If one missing detail would change the call, ask for it or label your assumption."
         }
       ]
     }

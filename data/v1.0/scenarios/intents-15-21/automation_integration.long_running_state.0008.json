@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 고객 온보딩 생애주기에서 쓸 수 있는 건 생애주기에는 환영, 설정, 교육, 사용 점검이 있고 비활성은 자동 종료가 아니라 검토를 만들어야 한다.야. 상태 이력, 알림, 사람 검토 분기가 있는 재개 가능한 생애주기로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "말로 설명하면, 고객 온보딩 생애주기에서 쓸 수 있는 건 생애주기에는 환영, 설정, 교육, 사용 점검이 있고 비활성은 자동 종료가 아니라 검토를 만들어야 한다야. 상태 이력, 알림, 사람 검토 분기가 있는 재개 가능한 생애주기로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for a customer onboarding lifecycle, the useful pieces are The lifecycle includes welcome, setup, training, and also adoption checks; inactivity should create a review, not an automatic closure.. Could you make a resumable lifecycle with state history, reminders, and also a human review branch? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m saying this out loud: for a customer onboarding lifecycle, the useful pieces are The lifecycle includes welcome, setup, training, and adoption checks; inactivity should create a review, not an automatic closure.. Could you make a resumable lifecycle with state history, reminders, and a human review branch? If I’m missing a key input, stop and tell me. 👍"
         }
       ]
     }

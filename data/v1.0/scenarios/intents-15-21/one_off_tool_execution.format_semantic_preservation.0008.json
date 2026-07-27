@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, OCR 형식 영수증 텍스트를 필드로 변환에서 쓸 수 있는 건 텍스트에는 상점 표기, 총액, 숫자 하나가 흐린 날짜, 읽기 어려운 세금 줄이 있어.야. 신뢰도와 미확정 값을 표시한 추출 필드 표로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "말로 설명하면, OCR 형식 영수증 텍스트를 필드로 변환에서 쓸 수 있는 건 텍스트에는 상점 표기, 총액, 숫자 하나가 흐린 날짜, 읽기 어려운 세금 줄이 있어야. 신뢰도와 미확정 값을 표시한 추출 필드 표로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for turning OCR-like receipt text into fields, the useful pieces are The text contains a merchant label, a total, a date with a smudged digit, and also a tax line that is hard to read.. Could you make an extracted field table with confidence and also unresolved values marked? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m saying this out loud: for turning OCR-like receipt text into fields, the useful pieces are The text contains a merchant label, a total, a date with a smudged digit, and a tax line that is hard to read.. Could you make an extracted field table with confidence and unresolved values marked? If I’m missing a key input, stop and tell me. 👍"
         }
       ]
     }

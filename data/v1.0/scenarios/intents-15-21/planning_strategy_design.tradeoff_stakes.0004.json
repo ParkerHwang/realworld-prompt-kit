@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 시간 제약이 있는 교육과정 선택지이랑 아직 열린 문제가 엉켜 있어. 프로그램은 한 과목을 깊게 하거나 두 과목을 넓게 다룰 수 있지만 강사와 평가 시간은 고정돼 있어. 일단 학습 목표, 위험, 선택 기준을 명시한 비교표로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 한 형식이 항상 낫다고 하지 말고 제시된 목표에 맞춰 추천한다."
+          "content": "지금 시간 제약이 있는 교육과정 선택지이랑 아직 열린 문제가 엉켜 있어. 프로그램은 한 과목을 깊게 하거나 두 과목을 넓게 다룰 수 있지만 강사와 평가 시간은 고정돼 있어 일단 학습 목표, 위험, 선택 기준을 명시한 비교표로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 한 형식이 항상 낫다고 하지 말고 제시된 목표에 맞춰 추천한다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: curriculum options under time constraints, plus some unresolved details. The program we are running can deepen one subject or cover two subjects broadly; instructors and also assessment time are fixed. Please make a comparison that makes learning goals, risks, and also selection criteria explicit; if the second issue is out of scope, separate it. Do not call one format universally better; tie the recommendation to the stated goal."
+          "content": "There are two things tangled together here: curriculum options under time constraints, plus some unresolved details. The program we are running can deepen one subject or cover two subjects broadly; instructors and assessment time are fixed. Please make a comparison that makes learning goals, risks, and selection criteria explicit; if the second issue is out of scope, separate it. Do not call one format universally better; tie the recommendation to the stated goal."
         }
       ]
     }

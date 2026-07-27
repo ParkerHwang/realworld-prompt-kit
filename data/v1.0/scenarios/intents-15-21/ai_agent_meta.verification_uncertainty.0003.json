@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "추적 주장을 근거와 대조 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 추적 요약에는 정책을 불러왔다고 다만 불러온 문서는 첨부되지 않았다.고, 원하는 건 검색을 미검증으로 표시한 범위 제한 감사야. 답을 바꿀 빠진 정보는 따로 알려줘."
+          "content": "추적 주장을 근거와 대조 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 추적 요약에는 정책을 불러왔다고 다만 불러온 문서는 첨부되지 않았다고, 원하는 건 검색을 미검증으로 표시한 범위 제한 감사야. 답을 바꿀 빠진 정보는 따로 알려줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "없는 입력은 맥락으로 채우지 말고 그대로 보이게 해줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Before we go too far on checking a trace claim against evidence, can you sketch a first pass? My evidence is The trace summary says a policy was retrieved,, but the retrieved document still is not attached.; I need a bounded audit that marks retrieval as unverified. Call out anything that would change the answer."
+          "content": "Before we go too far on checking a trace claim against evidence, can you sketch a first pass? My evidence is The trace summary says a policy was retrieved, but the retrieved document still is not attached.; I need a bounded audit that marks retrieval as unverified. Call out anything that would change the answer."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "Please leave unknown inputs visible rather than filling them in from context."
         }
       ]
     }

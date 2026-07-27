@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "양식 접수 후 확인 자동화 정리하려는데, 확실히 아는 건 워크숍 양식은 등록부에 쓰고 체크을 보내야 하며 중복 제출은 검토해야 한다.야. 이걸 중복 제거와 예외 담당이 있는 트리거-조치 업무 흐름로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "양식 접수 후 확인 자동화 정리하려는데, 확실히 아는 건 워크숍 양식은 등록부에 쓰고 체크을 보내야 하며 중복 제출은 검토해야 한다야. 이걸 중복 제거와 예외 담당이 있는 트리거-조치 업무 흐름로 만들어줘. 빈칸은 숨기지 말아줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out a form-to-acknowledgement workflow, but here’s what I actually know: One workshop form should write to a register and also send a confirmation; duplicate submissions need review. Could you turn that into a trigger-to-action workflow with deduplication and also an owner for exceptions, without papering over the gaps?"
+          "content": "I’m trying to sort out a form-to-acknowledgement workflow, but here’s what I actually know: One workshop form should write to a register and send a confirmation; duplicate submissions need review. Could you turn that into a trigger-to-action workflow with deduplication and an owner for exceptions, without papering over the gaps?"
         }
       ]
     }

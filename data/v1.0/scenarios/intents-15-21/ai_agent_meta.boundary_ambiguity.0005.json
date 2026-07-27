@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 근거 질문 하나와 원인 감별 안로 좁히자. 큰 주제는 에이전트 실패가 프롬프트인지 도구인지 판단이고 믿을 수 있는 메모는 도구가 빈 페이지를 반환한 뒤 에이전트가 기록을 누락했지만 추적은 불완전하다.야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "잠깐, 범위를 근거 질문 하나와 원인 감별 안로 좁히자. 큰 주제는 에이전트 실패가 프롬프트인지 도구인지 판단이고 믿을 수 있는 메모는 도구가 빈 페이지를 반환한 뒤 에이전트가 기록을 누락했지만 추적은 불완전하다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to one evidence question and also a differential diagnosis plan. The broader issue is deciding whether an agent failure is prompt or tool related, and the notes I can stand behind are The agent omitted a record after a tool returned an empty page,, but the trace is incomplete.. Mark assumptions instead of filling blanks."
+          "content": "Actually, let’s narrow this to one evidence question and a differential diagnosis plan. The broader issue is deciding whether an agent failure is prompt or tool related, and the notes I can stand behind are The agent omitted a record after a tool returned an empty page, but the trace is incomplete.. Mark assumptions instead of filling blanks."
         }
       ]
     }

@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 에이전트 확신 표현 보정 얘기였어. 메모에는 에이전트는 완전한 사례에는 높은 확신, 불완전한 사례에는 낮은 확신을 보이지만 보정 예시가 적다.라고 적혀 있어. 확신을 근거에 연결하는 보정 세트와 검토 규칙 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "이거 이어서 볼 수 있을까? 에이전트 확신 표현 보정 얘기였어. 메모에는 에이전트는 완전한 사례에는 높은 확신, 불완전한 사례에는 낮은 확신을 보이지만 보정 예시가 적다라고 적혀 있어. 확신을 근거에 연결하는 보정 세트와 검토 규칙 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up calibrating an agent's confidence language? I lost the thread a bit. The notes say The agent gives high-confidence answers on complete cases and also low-confidence answers on incomplete cases,, but calibration examples are sparse. What would a useful a calibration set and also a review rule that ties confidence to evidence look like? Keep the earlier boundaries in mind."
+          "content": "Can we pick up calibrating an agent's confidence language? I lost the thread a bit. The notes say The agent gives high-confidence answers on complete cases and low-confidence answers on incomplete cases, but calibration examples are sparse. What would a calibration set and a review rule that ties confidence to evidence look like? Keep the earlier boundaries in mind."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If one missing detail would change the call, ask for it or label your assumption."
         }
       ]
     }

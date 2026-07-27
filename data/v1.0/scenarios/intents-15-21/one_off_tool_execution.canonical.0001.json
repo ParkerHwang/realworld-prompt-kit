@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "디자인 리뷰 캘린더 일정 만들기 정리하려는데, 확실히 아는 건 회의는 목요일 14시부터 45분이고 장소는 Studio B이며 참석자는 디자인·제품 리드다.야. 이걸 제목, 시간, 장소, 참석자, 안건이 있는 도구 실행용 일정 명세로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "디자인 리뷰 캘린더 일정 만들기 정리하려는데, 확실히 아는 건 회의는 목요일 14시부터 45분이고 장소는 Studio B이며 참석자는 디자인·제품 리드다야. 이걸 제목, 시간, 장소, 참석자, 안건이 있는 도구 실행용 일정 명세로 만들어줘. 빈칸은 숨기지 말아줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out creating a calendar event for a design review, but here’s what I actually know: The meeting is Thursday at 14:00 for 45 minutes, the room is Studio B, and also the attendees are the design and also product leads. Could you turn that into a tool-ready event specification with title, time, location, attendees, and also agenda, without papering over the gaps?"
+          "content": "I’m trying to sort out creating a calendar event for a design review, but here’s what I actually know: The meeting is Thursday at 14:00 for 45 minutes, the room is Studio B, and the attendees are the design and product leads. Could you turn that into a tool-ready event specification with title, time, location, attendees, and agenda, without papering over the gaps?"
         }
       ]
     }

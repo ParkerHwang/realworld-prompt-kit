@@ -126,8 +126,8 @@ Canonical↔naturalistic similarity was measured independently for each locale u
 
 | Locale | Sequence ratio | Token Jaccard |
 | --- | --- | --- |
-| `ko-KR` | min=0.062, mean=0.598, max=0.808 | min=0.242, mean=0.390, max=0.593 |
-| `en-US` | min=0.003, mean=0.160, max=0.790 | min=0.278, mean=0.435, max=0.625 |
+| `ko-KR` | min=0.072, mean=0.615, max=0.800 | min=0.254, mean=0.388, max=0.593 |
+| `en-US` | min=0.003, mean=0.178, max=0.799 | min=0.333, mean=0.455, max=0.635 |
 - High-similarity pairs investigated: **0**.
 
 ## Per-block semantic-fit samples
@@ -178,6 +178,30 @@ One first-row scenario from every declared block was inspected for task/domain f
 | `planning_strategy_design.stakeholder_conflict.cb8` | 1 | `office_admin` | an office-relocation decision plan | `strategy_business_operations`, `construction_real_estate` |
 | `planning_strategy_design.tradeoff_stakes.cb8` | 1 | `hr_people_labor` | remote and hybrid work policy options | `office_admin`, `privacy_security` |
 | `planning_strategy_design.verification_uncertainty.cb8` | 1 | `supply_chain_logistics` | a vendor proposal plan with evidence checks | `manufacturing_quality`, `strategy_business_operations` |
+
+## Corpus phrase concentration and language scan
+
+Distinct-document counts for normalized 6-, 7-, and 8-token n-grams were checked separately by locale and form. No repeated naturalistic phrase may exceed 20% of the 336 rows.
+
+| Locale | Form | N | Most common n-gram | Rows | Share |
+| --- | --- | ---: | --- | ---: | ---: |
+| `en-US` | `canonical` | 6 | prepare a one time tool action | 16 | 4.8% |
+| `en-US` | `canonical` | 7 | messy planning inputs into a workable plan | 8 | 2.4% |
+| `en-US` | `canonical` | 8 | turn these messy planning inputs into a workable | 8 | 2.4% |
+| `en-US` | `naturalistic` | 6 | i m trying to sort out | 42 | 12.5% |
+| `en-US` | `naturalistic` | 7 | but here s what i actually know | 42 | 12.5% |
+| `en-US` | `naturalistic` | 8 | in mind if one missing detail would change | 42 | 12.5% |
+| `ko-KR` | `canonical` | 6 | 범위가 덜 정해진 다음 계획을 임시안으로 | 8 | 2.4% |
+| `ko-KR` | `canonical` | 7 | 범위가 덜 정해진 다음 계획을 임시안으로 잡아줘 | 8 | 2.4% |
+| `ko-KR` | `canonical` | 8 | 다음 일회성 도구 작업을 실행할 수 있게 준비해줘 | 8 | 2.4% |
+| `ko-KR` | `naturalistic` | 6 | 앞서 정한 범위는 유지해줘 결정을 바꿀 | 42 | 12.5% |
+| `ko-KR` | `naturalistic` | 7 | 정한 범위는 유지해줘 결정을 바꿀 정보가 빠졌다면 | 42 | 12.5% |
+| `ko-KR` | `naturalistic` | 8 | 좋겠어 앞서 정한 범위는 유지해줘 결정을 바꿀 정보가 | 42 | 12.5% |
+
+- Concentration violations: **0**.
+- Naturalistic grammar-duplication hits: **0**.
+- Generated-label leakage hits in naturalistic messages: **0**.
+- The word `canonical`, when present in a message, is treated as task content only when it is part of a scenario fact; schema/form labels are not inserted into naturalistic message text.
 
 ## Validation performed
 

@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "CSV 내보내기를 JSON으로 변환 정리하려는데, 확실히 아는 건 원본에는 project_id, status, due_date 열이 있고 빈 셀은 null로, 날짜는 문자열로 남겨야 한다.야. 이걸 키, null, 순서, 날짜 의미를 보존한 JSON 매핑로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "CSV 내보내기를 JSON으로 변환 정리하려는데, 확실히 아는 건 원본에는 project_id, status, due_date 열이 있고 빈 셀은 null로, 날짜는 문자열로 남겨야 한다야. 이걸 키, null, 순서, 날짜 의미를 보존한 JSON 매핑로 만들어줘. 빈칸은 숨기지 말아줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out converting a CSV export to JSON, but here’s what I actually know: The source has project_id, status, and also due_date columns; empty cells must stay null and also dates must remain strings. Could you turn that into a JSON mapping that preserves keys, nulls, order, and also date meaning, without papering over the gaps?"
+          "content": "I’m trying to sort out converting a CSV export to JSON, but here’s what I actually know: The source has project_id, status, and due_date columns; empty cells must stay null and dates must remain strings. Could you turn that into a JSON mapping that preserves keys, nulls, order, and date meaning, without papering over the gaps?"
         }
       ]
     }

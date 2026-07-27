@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 확정 정보와 검토 중인 보상 정보를 구분한 명확한 초대문로 좁히자. 큰 주제는 연구 참여 초대이고 믿을 수 있는 메모는 연구는 30분 인터뷰이고 참여는 자발적이며 보상은 검토 중이다.야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "잠깐, 범위를 확정 정보와 검토 중인 보상 정보를 구분한 명확한 초대문로 좁히자. 큰 주제는 연구 참여 초대이고 믿을 수 있는 메모는 연구는 30분 인터뷰이고 참여는 자발적이며 보상은 검토 중이다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a clear invitation that separates confirmed details from pending compensation information. The broader issue is an invitation to join a research study, and the notes I can stand behind are The study involves a 30-minute interview, participation is voluntary, and also compensation is still under review.. Mark assumptions instead of filling blanks."
+          "content": "Actually, let’s narrow this to a clear invitation that separates confirmed details from pending compensation information. The broader issue is an invitation to join a research study, and the notes I can stand behind are The study involves a 30-minute interview, participation is voluntary, and compensation is still under review.. Mark assumptions instead of filling blanks."
         }
       ]
     }

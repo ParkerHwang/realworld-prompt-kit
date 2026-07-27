@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 회의 메모를 캘린더 형식으로 변환 얘기였어. 메모에는 메모에는 제목, 30분 소요, 현지 시간 표시, 빠진 시간대가 있어.라고 적혀 있어. 빠진 시간대를 필수 필드로 남기는 일정 매핑 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "이거 이어서 볼 수 있을까? 회의 메모를 캘린더 형식으로 변환 얘기였어. 메모에는 제목, 30분 소요, 현지 시간 표시, 빠진 시간대가 있어라고 적혀 있어. 빠진 시간대를 필수 필드로 남기는 일정 매핑 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up converting meeting notes into a calendar format? I lost the thread a bit. The notes say The notes include a title, a 30-minute duration, a local-time label, and also a missing timezone. What would a useful a calendar-event mapping that preserves the missing timezone as a required field look like? Keep the earlier boundaries in mind."
+          "content": "Can we pick up converting meeting notes into a calendar format? I lost the thread a bit. The notes say The notes include a title, a 30-minute duration, a local-time label, and a missing timezone. What would a calendar-event mapping that preserves the missing timezone as a required field look like? Keep the earlier boundaries in mind."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If one missing detail would change the call, ask for it or label your assumption."
         }
       ]
     }

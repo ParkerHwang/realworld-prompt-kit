@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "프로젝트 지연 공개 여부 정리하려는데, 확실히 아는 건 의존 항목 때문에 날짜가 밀릴 수 있지만 가능성과 고객 영향은 아직 체크 안 됐어.야. 이걸 대상 또는 필요한 근거를 묻는 질문 하나와 짧은 의사결정 틀로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "프로젝트 지연 공개 여부 정리하려는데, 확실히 아는 건 의존 항목 때문에 날짜가 밀릴 수 있지만 가능성과 고객 영향은 아직 체크 안 됐어야. 이걸 대상 또는 필요한 근거를 묻는 질문 하나와 짧은 의사결정 틀로 만들어줘. 빈칸은 숨기지 말아줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out whether to announce a project delay, but here’s what I actually know: One dependency may push the date,, but the probability and also customer impact are not confirmed. Could you turn that into a short decision frame and also one question about the audience or evidence needed, without papering over the gaps?"
+          "content": "I’m trying to sort out whether to announce a project delay, but here’s what I actually know: One dependency may push the date, but the probability and customer impact are not confirmed. Could you turn that into a short decision frame and one question about the audience or evidence needed, without papering over the gaps?"
         }
       ]
     }

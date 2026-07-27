@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 에이전트의 방법·도구 라우팅 감사 — 메모는 에이전트는 정책 질문에 데이터 도구를 골랐고 작업과 라우팅 이유는 기록됐지만 카탈로그 경계는 없어., 결과는 근거와 가장 가까운 대안을 들어간 라우팅 감사. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "빠르게 부탁: 에이전트의 방법·도구 라우팅 감사 — 메모는 에이전트는 정책 질문에 데이터 도구를 골랐고 작업과 라우팅 이유는 기록됐지만 카탈로그 경계는 없어, 결과는 근거와 가장 가까운 대안을 들어간 라우팅 감사. 없는 정보는 추정하지 말고 표시해줘"
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "quick one: auditing an agent's method or tool routing — I’ve got The agent chose a data tool for a policy question; the task and also route rationale are recorded, but the catalog boundary is not.; can you give me a routing audit with evidence and also a nearest alternative? no invented details pls"
+          "content": "quick one: auditing an agent's method or tool routing — I’ve got The agent chose a data tool for a policy question; the task and route rationale are recorded but the catalog boundary is not.; can you give me a routing audit with evidence and a nearest alternative? no invented details pls"
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
         }
       ]
     }

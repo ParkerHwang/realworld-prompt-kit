@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 미정 입장을 위한 자리표시자가 있는 언어 연습 대본로 좁히자. 큰 주제는 비원어민을 위한 협상 연습이고 믿을 수 있는 메모는 학습자는 명확한 영어 표현과 자신감을 원다만 사업상 입장과 최저선은 아직 안 정해졌어.야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "잠깐, 범위를 미정 입장을 위한 자리표시자가 있는 언어 연습 대본로 좁히자. 큰 주제는 비원어민을 위한 협상 연습이고 믿을 수 있는 메모는 학습자는 명확한 영어 표현과 자신감을 원다만 사업상 입장과 최저선은 아직 안 정해졌어야. 빈 내용을 지어내지 말고 가정이라고 써줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a language practice script with placeholders for the unresolved position. The broader issue is negotiation practice for a non-native speaker, and the notes I can stand behind are The learner wants clear English phrases and also confidence,, but the business position and also walk-away point are not fixed.. Mark assumptions instead of filling blanks."
+          "content": "Actually, let’s narrow this to a language practice script with placeholders for the unresolved position. The broader issue is negotiation practice for a non-native speaker, and the notes I can stand behind are The learner wants clear English phrases and confidence, but the business position and walk-away point are not fixed.. Mark assumptions instead of filling blanks."
         }
       ]
     }

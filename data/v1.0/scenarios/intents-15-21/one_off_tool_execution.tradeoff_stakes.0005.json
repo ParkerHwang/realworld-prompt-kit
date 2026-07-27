@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 최소 권한 보관 위치와 접근 체크 추천로 좁히자. 큰 주제는 작업 문서를 둘 위치 선택이고 믿을 수 있는 메모는 공유 폴더는 협업에 좋지만 문서에 계약 초안이 있고 접근 그룹은 아직 체크 안 됐어.야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "잠깐, 범위를 최소 권한 보관 위치와 접근 체크 추천로 좁히자. 큰 주제는 작업 문서를 둘 위치 선택이고 믿을 수 있는 메모는 공유 폴더는 협업에 좋지만 문서에 계약 초안이 있고 접근 그룹은 아직 체크 안 됐어야. 빈 내용을 지어내지 말고 가정이라고 써줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a least-privilege placement recommendation with an access check. The broader issue is choosing where to place a working document, and the notes I can stand behind are One shared folder improves collaboration,, but the document contains a draft contract and also access groups are not checked.. Mark assumptions instead of filling blanks."
+          "content": "Actually, let’s narrow this to a least-privilege placement recommendation with an access check. The broader issue is choosing where to place a working document, and the notes I can stand behind are One shared folder improves collaboration, but the document contains a draft contract and access groups are not checked.. Mark assumptions instead of filling blanks."
         }
       ]
     }

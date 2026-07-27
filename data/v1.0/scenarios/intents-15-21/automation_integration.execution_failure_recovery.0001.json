@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "중복 웹훅 전달 복구 정리하려는데, 확실히 아는 건 같은 이벤트 ID가 두 번 왔고 하위 조치가 한 번 또는 두 번 실행됐을 수 있어.야. 이걸 중복 조회와 보정 조치 안로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "중복 웹훅 전달 복구 정리하려는데, 확실히 아는 건 같은 이벤트 ID가 두 번 왔고 하위 조치가 한 번 또는 두 번 실행됐을 수 있어야. 이걸 중복 조회와 보정 조치 안로 만들어줘. 빈칸은 숨기지 말아줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out recovering from duplicate webhook delivery, but here’s what I actually know: The same event ID arrived twice and also the downstream action may have run once or twice. Could you turn that into a deduplication lookup and also compensating-action plan, without papering over the gaps?"
+          "content": "I’m trying to sort out recovering from duplicate webhook delivery, but here’s what I actually know: The same event ID arrived twice and the downstream action may have run once or twice. Could you turn that into a deduplication lookup and compensating-action plan, without papering over the gaps?"
         }
       ]
     }

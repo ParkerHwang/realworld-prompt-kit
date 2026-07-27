@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 만료된 연동 토큰 복구 얘기였어. 메모에는 권한 실패 전에 흐름이 열 개 기록을 읽었지만 체크포인트는 쓰이지 않았다.라고 적혀 있어. 재인증, 제한된 재개, 읽기·쓰기 감사 안 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "이거 이어서 볼 수 있을까? 만료된 연동 토큰 복구 얘기였어. 메모에는 권한 실패 전에 흐름이 열 개 기록을 읽었지만 체크포인트는 쓰이지 않았다라고 적혀 있어. 재인증, 제한된 재개, 읽기·쓰기 감사 안 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up recovering from an expired integration token? I lost the thread a bit. The notes say This flow read ten records before authorization failed, and also the checkpoint was not written. What would a useful a reauthorization, bounded resume, and also read-versus-write audit plan look like? Keep the earlier boundaries in mind."
+          "content": "Can we pick up recovering from an expired integration token? I lost the thread a bit. The notes say This flow read ten records before authorization failed, and the checkpoint was not written. What would a reauthorization, bounded resume, and read-versus-write audit plan look like? Keep the earlier boundaries in mind."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If one missing detail would change the call, ask for it or label your assumption."
         }
       ]
     }

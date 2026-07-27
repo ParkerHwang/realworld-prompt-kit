@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 콘텐츠 성과 내보내기 검토 — 메모는 내보내기에는 자연 유입과 유료 조회가 섞였고 캠페인 라벨 하나가 빠졌으며 날짜 행이 중복됐다., 결과는 모든 지표의 출처를 표시한 정리·검토 안. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "빠르게 부탁: 콘텐츠 성과 내보내기 검토 — 메모는 내보내기에는 자연 유입과 유료 조회가 섞였고 캠페인 라벨 하나가 빠졌으며 날짜 행이 중복됐다, 결과는 모든 지표의 출처를 표시한 정리·검토 안. 없는 정보는 추정하지 말고 표시해줘"
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "quick one: a content-performance review from an export — I’ve got The export mixes organic and also paid views, includes a missing campaign label, and also has a duplicate date row.; can you give me a clean-up and also review plan with provenance for every metric? no invented details pls"
+          "content": "quick one: a content-performance review from an export — I’ve got The export mixes organic and paid views, includes a missing campaign label, and has a duplicate date row.; can you give me a clean-up and review plan with provenance for every metric? no invented details pls"
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
         }
       ]
     }

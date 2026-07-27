@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "KPI 정의 감사 정리하려는데, 확실히 아는 건 세 팀이 active user를 서로 다르게 정의하고 대시보드에는 쿼리 버전이 없어.야. 이걸 정의, 담당, 쿼리 버전, 대조 조치가 있는 감사표로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "KPI 정의 감사 정리하려는데, 확실히 아는 건 세 팀이 active user를 서로 다르게 정의하고 대시보드에는 쿼리 버전이 없어야. 이걸 정의, 담당, 쿼리 버전, 대조 조치가 있는 감사표로 만들어줘. 빈칸은 숨기지 말아줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out a KPI definition audit, but here’s what I actually know: Three teams use 'active user' differently and also the dashboard does not show its query version. Could you turn that into an audit table with definitions, owners, query versions, and also a reconciliation action, without papering over the gaps?"
+          "content": "I’m trying to sort out a KPI definition audit, but here’s what I actually know: Three teams use 'active user' differently and the dashboard does not show its query version. Could you turn that into an audit table with definitions, owners, query versions, and a reconciliation action, without papering over the gaps?"
         }
       ]
     }

@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 교대근무와 사무근무에 맞는 루틴이랑 아직 열린 문제가 엉켜 있어. 목표는 규칙적인 식사와 회복이지만 일정이 다르고 건강 필요는 제공되지 않았다. 일단 의료 주장 없이 두 가지 유연한 틀로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 건강 처방을 하거나 같은 수면 일정을 가정하지 않는다."
+          "content": "지금 교대근무와 사무근무에 맞는 루틴이랑 아직 열린 문제가 엉켜 있어. 목표는 규칙적인 식사와 회복이지만 일정이 다르고 건강 필요는 제공되지 않았다 일단 의료 주장 없이 두 가지 유연한 틀로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 건강 처방을 하거나 같은 수면 일정을 가정하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: adapting a routine for shift and office work, plus some unresolved details. The goal is regular meals and also recovery,, but schedules differ and also health needs are not provided. Please make two flexible frameworks without medical claims; if the second issue is out of scope, separate it. Do not prescribe a health regimen or assume identical sleep schedules."
+          "content": "There are two things tangled together here: adapting a routine for shift and office work, plus some unresolved details. The goal is regular meals and recovery, but schedules differ and health needs are not provided. Please make two flexible frameworks without medical claims; if the second issue is out of scope, separate it. Do not prescribe a health regimen or assume identical sleep schedules."
         }
       ]
     }

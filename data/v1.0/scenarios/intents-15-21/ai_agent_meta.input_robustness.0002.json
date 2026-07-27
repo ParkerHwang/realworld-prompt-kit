@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 잡음 있는 도구 로그를 바탕으로 한 추적 검토 얘기였어. 메모에는 로그에는 요청 ID가 반복되고 응답 페이로드 하나가 빠졌으며 두 실행이 섞여 있어.라고 적혀 있어. 실행 분리와 누락 근거 보고서 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "이거 이어서 볼 수 있을까? 잡음 있는 도구 로그를 바탕으로 한 추적 검토 얘기였어. 메모에는 로그에는 요청 ID가 반복되고 응답 페이로드 하나가 빠졌으며 두 실행이 섞여 있어라고 적혀 있어. 실행 분리와 누락 근거 보고서 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up an agent trace review from noisy tool logs? I lost the thread a bit. The notes say Logs repeat request IDs, omit one response payload, and also interleave two runs. What would a useful a run-separation and also missing-evidence report look like? Keep the earlier boundaries in mind."
+          "content": "Can we pick up an agent trace review from noisy tool logs? I lost the thread a bit. The notes say Logs repeat request IDs, omit one response payload, and interleave two runs. What would a run-separation and missing-evidence report look like? Keep the earlier boundaries in mind."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If one missing detail would change the call, ask for it or label your assumption."
         }
       ]
     }

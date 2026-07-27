@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "관리자 면담 시간 요청 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 직원은 업무량을 논의하고 싶지만 긴급도, 원하는 결과, 관리자가 선호하는 채널은 아직 안 정해졌어.고, 원하는 건 불필요하게 긴급해 보이지 않도록 하는 질문 하나와 정중한 짧은 요청야. 답을 바꿀 빠진 정보는 따로 알려줘."
+          "content": "관리자 면담 시간 요청 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 직원은 업무량을 논의하고 싶지만 긴급도, 원하는 결과, 관리자가 선호하는 채널은 아직 안 정해졌어고, 원하는 건 불필요하게 긴급해 보이지 않도록 하는 질문 하나와 정중한 짧은 요청야. 답을 바꿀 빠진 정보는 따로 알려줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "없는 입력은 맥락으로 채우지 말고 그대로 보이게 해줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Before we go too far on a request for time with a manager, can you sketch a first pass? My evidence is The employee needs to discuss workload,, but urgency, desired outcome, and also the manager's available channel are unspecified.; I need a respectful short request and also one question that prevents the message from sounding urgent by accident. Call out anything that would change the answer."
+          "content": "Before we go too far on a request for time with a manager, can you sketch a first pass? My evidence is The employee needs to discuss workload, but urgency, desired outcome, and the manager's available channel are unspecified.; I need a respectful short request and one question that prevents the message from sounding urgent by accident. Call out anything that would change the answer."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "Please leave unknown inputs visible rather than filling them in from context."
         }
       ]
     }

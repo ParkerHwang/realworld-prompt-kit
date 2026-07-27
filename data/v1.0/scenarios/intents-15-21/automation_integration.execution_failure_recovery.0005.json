@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 억제, 제한된 재시도, 복구 관찰 안로 좁히자. 큰 주제는 재시도 폭주 복구이고 믿을 수 있는 메모는 하위 시스템 장애로 작업자가 재시도하고 대기열이 늘고 있으며 백오프 제한은 문서화되지 않았다.야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "잠깐, 범위를 억제, 제한된 재시도, 복구 관찰 안로 좁히자. 큰 주제는 재시도 폭주 복구이고 믿을 수 있는 메모는 하위 시스템 장애로 작업자가 재시도하고 대기열이 늘고 있으며 백오프 제한은 문서화되지 않았다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a containment, bounded retry, and also recovery-observation plan. The broader issue is recovering from a retry storm, and the notes I can stand behind are One downstream outage caused workers to retry, queue depth is rising, and also no backoff limit is documented.. Mark assumptions instead of filling blanks."
+          "content": "Actually, let’s narrow this to a containment, bounded retry, and recovery-observation plan. The broader issue is recovering from a retry storm, and the notes I can stand behind are One downstream outage caused workers to retry, queue depth is rising, and no backoff limit is documented.. Mark assumptions instead of filling blanks."
         }
       ]
     }

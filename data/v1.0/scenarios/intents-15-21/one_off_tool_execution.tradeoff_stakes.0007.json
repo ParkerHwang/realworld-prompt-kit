@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 긴급 구매 요청 준비 — 메모는 생산 품목이 이번 주에 소진될 수 있고 선호 공급업체에 긴급 옵션이 있지만 승인 한도는 없어., 결과는 명확한 승인 절차가 있는 긴급 요청과 무단 주문 금지. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "빠르게 부탁: 긴급 구매 요청 준비 — 메모는 생산 품목이 이번 주에 소진될 수 있고 선호 공급업체에 긴급 옵션이 있지만 승인 한도는 없어, 결과는 명확한 승인 절차가 있는 긴급 요청과 무단 주문 금지. 없는 정보는 추정하지 말고 표시해줘"
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "quick one: preparing an urgent purchase request — I’ve got One production item may run out this week, the preferred supplier has a rush option, and also approval limits are not supplied.; can you give me an expedited request with a clear approval gate and also no unauthorized order? no invented details pls"
+          "content": "quick one: preparing an urgent purchase request — I’ve got One production item may run out this week, the preferred supplier has a rush option, and approval limits are not supplied.; can you give me an expedited request with a clear approval gate and no unauthorized order? no invented details pls"
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
         }
       ]
     }

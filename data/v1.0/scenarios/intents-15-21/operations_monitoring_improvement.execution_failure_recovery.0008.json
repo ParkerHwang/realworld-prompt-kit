@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 중복 작업지시 복구에서 쓸 수 있는 건 두 작업지시가 같은 자산과 날짜를 가리키지만 완료 근거는 하나에만 있어.야. 식별 체크, 근거 대조, 안전한 취소 경로로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "말로 설명하면, 중복 작업지시 복구에서 쓸 수 있는 건 두 작업지시가 같은 자산과 날짜를 가리키지만 완료 근거는 하나에만 있어야. 식별 체크, 근거 대조, 안전한 취소 경로로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for recovering from a duplicate work order, the useful pieces are Two work orders reference the same asset and also date,, but completion evidence exists for only one.. Could you make an identity check, evidence reconciliation, and also safe cancellation path? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m saying this out loud: for recovering from a duplicate work order, the useful pieces are Two work orders reference the same asset and date, but completion evidence exists for only one.. Could you make an identity check, evidence reconciliation, and safe cancellation path? If I’m missing a key input, stop and tell me. 👍"
         }
       ]
     }

@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 일관성과 유연성을 조율하는 루틴 코칭 — 메모는 사용자는 루틴을 원다만 돌봄과 업무가 예측 불가능하다., 결과는 최소 실행 루틴과 대안 단계를 죄책감 없이 제시. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "빠르게 부탁: 일관성과 유연성을 조율하는 루틴 코칭 — 메모는 사용자는 루틴을 원다만 돌봄과 업무가 예측 불가능하다, 결과는 최소 실행 루틴과 대안 단계를 죄책감 없이 제시. 없는 정보는 추정하지 말고 표시해줘"
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "quick one: coaching a routine that balances consistency and flexibility — I’ve got The person asking wants a routine, but has unpredictable caregiving and also work demands.; can you give me a minimum viable routine with fallback levels and also no guilt framing? no invented details pls"
+          "content": "quick one: coaching a routine that balances consistency and flexibility — I’ve got The person asking wants a routine but has unpredictable caregiving and work demands.; can you give me a minimum viable routine with fallback levels and no guilt framing? no invented details pls"
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
         }
       ]
     }

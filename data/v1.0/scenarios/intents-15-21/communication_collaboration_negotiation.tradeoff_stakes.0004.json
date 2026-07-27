@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 공감과 법적 주의를 조율한 사과이랑 아직 열린 문제가 엉켜 있어. 고객이 피해를 호소하고 사실은 검토 중이며 팀은 책임을 단정하지 않고 경험을 인정하고 싶다. 일단 근거 없는 책임 인정이나 약속 없이 공감하는 임시 메시지로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 고객을 무시하거나 신고만으로 법적 결론을 내리지 않는다."
+          "content": "지금 공감과 법적 주의를 조율한 사과이랑 아직 열린 문제가 엉켜 있어. 고객이 피해를 호소하고 사실은 검토 중이며 팀은 책임을 단정하지 않고 경험을 인정하고 싶다 일단 근거 없는 책임 인정이나 약속 없이 공감하는 임시 메시지로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 고객을 무시하거나 신고만으로 법적 결론을 내리지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: an apology that balances empathy and legal caution, plus some unresolved details. One customer reports harm, facts are being reviewed, and also the team wants to acknowledge the experience without assigning liability. Please make an empathetic holding message with no unsupported admission or promise; if the second issue is out of scope, separate it. Do not dismiss the customer or make a legal conclusion from the report."
+          "content": "There are two things tangled together here: an apology that balances empathy and legal caution, plus some unresolved details. One customer reports harm, facts are being reviewed, and the team wants to acknowledge the experience without assigning liability. Please make an empathetic holding message with no unsupported admission or promise; if the second issue is out of scope, separate it. Do not dismiss the customer or make a legal conclusion from the report."
         }
       ]
     }

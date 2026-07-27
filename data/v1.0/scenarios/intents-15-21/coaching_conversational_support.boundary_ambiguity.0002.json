@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 조언과 경청 중 원하는 지원 얘기였어. 메모에는 사용자는 실망스러운 업무 일을 말다만 직접 질문하지 않았다.라고 적혀 있어. 경청, 정리, 선택지 중 무엇을 원하는지 묻는 짧은 질문 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "이거 이어서 볼 수 있을까? 조언과 경청 중 원하는 지원 얘기였어. 메모에는 사용자는 실망스러운 업무 일을 말다만 직접 질문하지 않았다라고 적혀 있어. 경청, 정리, 선택지 중 무엇을 원하는지 묻는 짧은 질문 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up a conversation where the user may want advice or listening? I lost the thread a bit. The notes say The person asking shares a disappointing work event, but does not ask a direct question. What would a useful one short question about whether they want listening, reflection, or options look like? Keep the earlier boundaries in mind."
+          "content": "Can we pick up a conversation where the user may want advice or listening? I lost the thread a bit. The notes say The person asking shares a disappointing work event but does not ask a direct question. What would one short question about whether they want listening, reflection, or options look like? Keep the earlier boundaries in mind."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If one missing detail would change the call, ask for it or label your assumption."
         }
       ]
     }

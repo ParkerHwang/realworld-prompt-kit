@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 에이전트 스키마 준수 시험이랑 아직 열린 문제가 엉켜 있어. 출력에는 필수 키가 모두 있지만 한 필드가 정수 대신 문자열이다. 일단 의미 품질 판단과 분리된 구조 시험 결과로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 타입이 잘못된 출력은 스키마 유효라고 하지 않는다."
+          "content": "지금 에이전트 스키마 준수 시험이랑 아직 열린 문제가 엉켜 있어. 출력에는 필수 키가 모두 있지만 한 필드가 정수 대신 문자열이다 일단 의미 품질 판단과 분리된 구조 시험 결과로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 타입이 잘못된 출력은 스키마 유효라고 하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: testing an agent's schema compliance, plus some unresolved details. The output has all required keys, but one field uses a string where an integer is required. Please make a structural test result separate from any semantic-quality judgment; if the second issue is out of scope, separate it. Do not call the output schema-valid when its type is invalid."
+          "content": "There are two things tangled together here: testing an agent's schema compliance, plus some unresolved details. The output has all required keys but one field uses a string where an integer is required. Please make a structural test result separate from any semantic-quality judgment; if the second issue is out of scope, separate it. Do not call the output schema-valid when its type is invalid."
         }
       ]
     }

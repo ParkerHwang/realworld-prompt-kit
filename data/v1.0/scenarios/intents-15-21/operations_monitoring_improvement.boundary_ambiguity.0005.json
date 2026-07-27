@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 결정 질문 하나와 후보 준비도 점검 리스트로 좁히자. 큰 주제는 연구 진행 기준이고 믿을 수 있는 메모는 프로젝트는 기록 수집과 검토를 진행했지만 분석으로 넘어갈 기준은 합의되지 않았다.야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "잠깐, 범위를 결정 질문 하나와 후보 준비도 점검 리스트로 좁히자. 큰 주제는 연구 진행 기준이고 믿을 수 있는 메모는 프로젝트는 기록 수집과 검토를 진행했지만 분석으로 넘어갈 기준은 합의되지 않았다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to one decision question and also a candidate readiness checklist. The broader issue is a research progress threshold, and the notes I can stand behind are The work has collected records and also completed reviews,, but the threshold for moving to analysis still is not agreed.. Mark assumptions instead of filling blanks."
+          "content": "Actually, let’s narrow this to one decision question and a candidate readiness checklist. The broader issue is a research progress threshold, and the notes I can stand behind are The work has collected records and completed reviews, but the threshold for moving to analysis still is not agreed.. Mark assumptions instead of filling blanks."
         }
       ]
     }

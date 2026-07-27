@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 동의 게이트, 품질 보류, 분석 동결 체크포인트가 있는 상태 머신로 좁히자. 큰 주제는 수 주 연구 데이터 수집 흐름이고 믿을 수 있는 메모는 수집에는 동의, 입력, 품질 검토, 분석 동결 일정이 있고 늦은 입력의 상태 정의가 필요해.야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "잠깐, 범위를 동의 게이트, 품질 보류, 분석 동결 체크포인트가 있는 상태 머신로 좁히자. 큰 주제는 수 주 연구 데이터 수집 흐름이고 믿을 수 있는 메모는 수집에는 동의, 입력, 품질 검토, 분석 동결 일정이 있고 늦은 입력의 상태 정의가 필요해야. 빈 내용을 지어내지 말고 가정이라고 써줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a state machine with consent gates, quality holds, and also an analysis-freeze checkpoint. The broader issue is a multi-week research data-collection workflow, and the notes I can stand behind are Collection has consent, intake, quality review, and also a scheduled analysis freeze; late entries need a defined state.. Mark assumptions instead of filling blanks."
+          "content": "Actually, let’s narrow this to a state machine with consent gates, quality holds, and an analysis-freeze checkpoint. The broader issue is a multi-week research data-collection workflow, and the notes I can stand behind are Collection has consent, intake, quality review, and a scheduled analysis freeze; late entries need a defined state.. Mark assumptions instead of filling blanks."
         }
       ]
     }

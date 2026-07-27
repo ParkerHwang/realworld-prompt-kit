@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 뒤섞인 가정 에너지 로그를 바탕으로 한 개선 검토에서 쓸 수 있는 건 로그에는 월별 요금, 계량기 수치, 날씨 메모가 섞였고 한 달이 빠졌다.야. 빠진 달과 비교 한계를 드러낸 정규화 검토로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "말로 설명하면, 뒤섞인 가정 에너지 로그를 바탕으로 한 개선 검토에서 쓸 수 있는 건 로그에는 월별 요금, 계량기 수치, 날씨 메모가 섞였고 한 달이 빠졌다야. 빠진 달과 비교 한계를 드러낸 정규화 검토로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for a home energy-improvement review from messy logs, the useful pieces are The logs mix monthly bills, meter readings, and also weather notes; one month is missing.. Could you make a normalized review with the missing month and also comparison limits visible? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m saying this out loud: for a home energy-improvement review from messy logs, the useful pieces are The logs mix monthly bills, meter readings, and weather notes; one month is missing.. Could you make a normalized review with the missing month and comparison limits visible? If I’m missing a key input, stop and tell me. 👍"
         }
       ]
     }

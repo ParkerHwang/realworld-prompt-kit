@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 하위 시스템 스키마 변경 복구이랑 아직 열린 문제가 엉켜 있어. 필수 필드 이름이 바뀌었고 예전 기록은 남아 있으며 마이그레이션 매핑은 아직 체크 안 됐어. 일단 버전 감지, 매핑 검토, 단계적 재개 안로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 예전 필드를 버리거나 매핑을 확인하지 않고 운영 쓰기를 재개하지 않는다."
+          "content": "지금 하위 시스템 스키마 변경 복구이랑 아직 열린 문제가 엉켜 있어. 필수 필드 이름이 바뀌었고 예전 기록은 남아 있으며 마이그레이션 매핑은 아직 체크 안 됐어 일단 버전 감지, 매핑 검토, 단계적 재개 안로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 예전 필드를 버리거나 매핑을 확인하지 않고 운영 쓰기를 재개하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: recovering from a downstream schema change, plus some unresolved details. One required field was renamed, old records remain, and also the migration mapping still is not confirmed. Please make a version-detection, mapping review, and also staged resume plan; if the second issue is out of scope, separate it. Do not drop the old field or resume production writes with an unverified mapping."
+          "content": "There are two things tangled together here: recovering from a downstream schema change, plus some unresolved details. One required field was renamed, old records remain, and the migration mapping still is not confirmed. Please make a version-detection, mapping review, and staged resume plan; if the second issue is out of scope, separate it. Do not drop the old field or resume production writes with an unverified mapping."
         }
       ]
     }

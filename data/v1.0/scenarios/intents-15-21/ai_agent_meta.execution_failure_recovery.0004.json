@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 잘못된 도구 결과 스키마 복구이랑 아직 열린 문제가 엉켜 있어. 도구가 알 수 없는 상태 값과 빠진 오류 세부를 반환했다. 일단 스키마 오류 보고와 수정 결과를 요청하는 안전한 응답로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 유효하지 않은 도구 결과로 라우팅하거나 실행하지 않는다."
+          "content": "지금 잘못된 도구 결과 스키마 복구이랑 아직 열린 문제가 엉켜 있어. 도구가 알 수 없는 상태 값과 빠진 오류 세부를 반환했다 일단 스키마 오류 보고와 수정 결과를 요청하는 안전한 응답로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 유효하지 않은 도구 결과로 라우팅하거나 실행하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: recovering from an invalid tool-result schema, plus some unresolved details. The tool returned a result with an unknown status value and also missing error details. Please make a schema-error report and also a safe request for a corrected result; if the second issue is out of scope, separate it. Do not route or execute from an invalid tool result."
+          "content": "There are two things tangled together here: recovering from an invalid tool-result schema, plus some unresolved details. The tool returned a result with an unknown status value and missing error details. Please make a schema-error report and a safe request for a corrected result; if the second issue is out of scope, separate it. Do not route or execute from an invalid tool result."
         }
       ]
     }

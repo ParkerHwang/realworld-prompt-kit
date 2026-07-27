@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 빠진 실행 메타데이터를 표시한 재현 점검 리스트로 좁히자. 큰 주제는 간헐적으로 달라지는 에이전트 결과 재현이고 믿을 수 있는 메모는 같은 사례에서 두 번 다른 출력이 나왔지만 한 실행의 모델 설정과 도구 상태가 기록되지 않았다.야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "잠깐, 범위를 빠진 실행 메타데이터를 표시한 재현 점검 리스트로 좁히자. 큰 주제는 간헐적으로 달라지는 에이전트 결과 재현이고 믿을 수 있는 메모는 같은 사례에서 두 번 다른 출력이 나왔지만 한 실행의 모델 설정과 도구 상태가 기록되지 않았다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a reproduction checklist and also an uncertainty note about the missing run metadata. The broader issue is reproducing a flaky agent result, and the notes I can stand behind are The same case produced different outputs twice,, but model settings and also tool state were not recorded for one run.. Mark assumptions instead of filling blanks."
+          "content": "Actually, let’s narrow this to a reproduction checklist and an uncertainty note about the missing run metadata. The broader issue is reproducing a flaky agent result, and the notes I can stand behind are The same case produced different outputs twice, but model settings and tool state were not recorded for one run.. Mark assumptions instead of filling blanks."
         }
       ]
     }

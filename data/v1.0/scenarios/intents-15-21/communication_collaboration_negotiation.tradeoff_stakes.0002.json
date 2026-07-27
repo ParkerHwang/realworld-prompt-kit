@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 단호함과 따뜻함을 조율한 피드백 얘기였어. 메모에는 동료가 합의한 마감 두 개를 지키지 못했고 원인은 불명확하며 다음 마일스톤이 중요하다.라고 적혀 있어. 영향을 말하고 상황을 듣고 다음 단계를 정하는 메시지 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "이거 이어서 볼 수 있을까? 단호함과 따뜻함을 조율한 피드백 얘기였어. 메모에는 동료가 합의한 마감 두 개를 지키지 못했고 원인은 불명확하며 다음 마일스톤이 중요하다라고 적혀 있어. 영향을 말하고 상황을 듣고 다음 단계를 정하는 메시지 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up feedback that balances firmness and warmth? I lost the thread a bit. The notes say One teammate missed two agreed deadlines, the cause is unclear, and also the next milestone is important. What would a useful a message that names the impact, invites context, and also sets a clear next step look like? Keep the earlier boundaries in mind."
+          "content": "Can we pick up feedback that balances firmness and warmth? I lost the thread a bit. The notes say One teammate missed two agreed deadlines, the cause is unclear, and the next milestone is important. What would a message that names the impact, invites context, and sets a clear next step look like? Keep the earlier boundaries in mind."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If one missing detail would change the call, ask for it or label your assumption."
         }
       ]
     }

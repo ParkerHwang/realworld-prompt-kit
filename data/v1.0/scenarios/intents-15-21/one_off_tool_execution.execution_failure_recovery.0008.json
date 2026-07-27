@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 문서 작업 권한 거부 복구에서 쓸 수 있는 건 사용자는 문서를 볼 수 있지만 편집할 수 없고 소유자나 승인 절차는 아직 체크 안 됐어.야. 접근 요청 경로와 덮어쓰기 없는 대안로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "말로 설명하면, 문서 작업 권한 거부 복구에서 쓸 수 있는 건 사용자는 문서를 볼 수 있지만 편집할 수 없고 소유자나 승인 절차는 아직 체크 안 됐어야. 접근 요청 경로와 덮어쓰기 없는 대안로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for recovering from a permission-denied document action, the useful pieces are The person asking can view the document, but cannot edit it, and also the owner or approval process still is not identified.. Could you make a request-access path with a no-overwrite fallback? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m saying this out loud: for recovering from a permission-denied document action, the useful pieces are The person asking can view the document but cannot edit it, and the owner or approval process still is not identified.. Could you make a request-access path with a no-overwrite fallback? If I’m missing a key input, stop and tell me. 👍"
         }
       ]
     }

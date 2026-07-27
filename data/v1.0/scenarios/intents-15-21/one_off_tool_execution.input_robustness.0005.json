@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 필수 필드와 거래 미게시를 표시한 보류 보고서로 좁히자. 큰 주제는 송장 기록 작업 준비이고 믿을 수 있는 메모는 송장에는 공급업체 이름과 총액이 있지만 발주서 참조와 세금 처리가 없어.야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "잠깐, 범위를 필수 필드와 거래 미게시를 표시한 보류 보고서로 좁히자. 큰 주제는 송장 기록 작업 준비이고 믿을 수 있는 메모는 송장에는 공급업체 이름과 총액이 있지만 발주서 참조와 세금 처리가 없어야. 빈 내용을 지어내지 말고 가정이라고 써줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a hold report with required fields and also no posted transaction. The broader issue is preparing an invoice-record action, and the notes I can stand behind are The invoice has a supplier name and also total, but lacks a purchase-order reference and also tax treatment.. Mark assumptions instead of filling blanks."
+          "content": "Actually, let’s narrow this to a hold report with required fields and no posted transaction. The broader issue is preparing an invoice-record action, and the notes I can stand behind are The invoice has a supplier name and total but lacks a purchase-order reference and tax treatment.. Mark assumptions instead of filling blanks."
         }
       ]
     }

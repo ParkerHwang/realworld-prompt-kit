@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 안건이 있는 회의 초대 준비에서 쓸 수 있는 건 목적은 3분기 연구 범위를 결정하는 것이고 30분이며 결정 담당자는 리서치 리드지만 시간은 아직 안 정해졌어.야. 시간 자리를 남기고 집중된 안건을 들어간 초대문 초안로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "말로 설명하면, 안건이 있는 회의 초대 준비에서 쓸 수 있는 건 목적은 3분기 연구 범위를 결정하는 것이고 30분이며 결정 담당자는 리서치 리드지만 시간은 아직 안 정해졌어야. 시간 자리를 남기고 집중된 안건을 들어간 초대문 초안로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for preparing a meeting invitation with an agenda, the useful pieces are The purpose is to decide the Q3 research scope, duration is 30 minutes, and also the decision owner is the research lead; time still is not set.. Could you make an invitation draft with a time placeholder and also a focused agenda? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m saying this out loud: for preparing a meeting invitation with an agenda, the useful pieces are The purpose is to decide the Q3 research scope, duration is 30 minutes, and the decision owner is the research lead; time still is not set.. Could you make an invitation draft with a time placeholder and a focused agenda? If I’m missing a key input, stop and tell me. 👍"
         }
       ]
     }

@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 계절 재고 흐름 — 메모는 수요는 몇 주 동안 변하고 공급업체 납기는 달라지며 재주문 결정은 각 점검 시 검토된다., 결과는 예측 버전 관리와 승인 상태가 있는 체크포인트 흐름. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "빠르게 부탁: 계절 재고 흐름 — 메모는 수요는 몇 주 동안 변하고 공급업체 납기는 달라지며 재주문 결정은 각 점검 시 검토된다, 결과는 예측 버전 관리와 승인 상태가 있는 체크포인트 흐름. 없는 정보는 추정하지 말고 표시해줘"
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "quick one: a seasonal inventory workflow — I’ve got Demand changes over several weeks, supplier lead time varies, and also a reorder decision is reviewed at each checkpoint.; can you give me a checkpointed workflow with forecast versioning and also approval state? no invented details pls"
+          "content": "quick one: a seasonal inventory workflow — I’ve got Demand changes over several weeks, supplier lead time varies, and a reorder decision is reviewed at each checkpoint.; can you give me a checkpointed workflow with forecast versioning and approval state? no invented details pls"
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
         }
       ]
     }

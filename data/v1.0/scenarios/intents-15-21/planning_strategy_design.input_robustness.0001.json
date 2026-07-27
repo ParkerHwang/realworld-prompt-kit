@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "서로 다른 회의 메모를 바탕으로 한 계획 정리하려는데, 확실히 아는 건 한 메모에는 파일럿이 5월, 다른 메모에는 6월에 시작한다고 되어 있고 승인 단계 담당자는 빠져 있어.야. 이걸 충돌을 보존하고 체크할 담당자를 적은 정리된 안로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "서로 다른 회의 메모를 바탕으로 한 계획 정리하려는데, 확실히 아는 건 한 메모에는 파일럿이 5월, 다른 메모에는 6월에 시작한다고 되어 있고 승인 단계 담당자는 빠져 있어야. 이걸 충돌을 보존하고 체크할 담당자를 적은 정리된 안로 만들어줘. 빈칸은 숨기지 말아줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out a plan from conflicting meeting notes, but here’s what I actually know: One note says the pilot starts in May and also another says June; ownership is missing for the approval step. Could you turn that into a reconciled plan that preserves the conflict and also lists the owner to confirm, without papering over the gaps?"
+          "content": "I’m trying to sort out a plan from conflicting meeting notes, but here’s what I actually know: One note says the pilot starts in May and another says June; ownership is missing for the approval step. Could you turn that into a reconciled plan that preserves the conflict and lists the owner to confirm, without papering over the gaps?"
         }
       ]
     }

@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 발신 계정이 모호한 고객 메시지 얘기였어. 메모에는 승인된 답변을 보내라고 다만 지원 받은편지함이 두 개이고 고객 구분이 없어.라고 적혀 있어. 승인된 발신 계정을 묻는 질문 하나와 발송하지 않는 초안 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "이거 이어서 볼 수 있을까? 발신 계정이 모호한 고객 메시지 얘기였어. 메모에는 승인된 답변을 보내라고 다만 지원 받은편지함이 두 개이고 고객 구분이 없어라고 적혀 있어. 승인된 발신 계정을 묻는 질문 하나와 발송하지 않는 초안 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up sending a customer message from an ambiguous account? I lost the thread a bit. The notes say The person asking says send the approved response,, but two support inboxes exist and also the customer segment still is not identified. What would a useful one question about the authorized sender and also a draft that still is not sent look like? Keep the earlier boundaries in mind."
+          "content": "Can we pick up sending a customer message from an ambiguous account? I lost the thread a bit. The notes say The person asking says send the approved response, but two support inboxes exist and the customer segment still is not identified. What would one question about the authorized sender and a draft that still is not sent look like? Keep the earlier boundaries in mind."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If one missing detail would change the call, ask for it or label your assumption."
         }
       ]
     }

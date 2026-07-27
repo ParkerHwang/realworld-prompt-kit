@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 멱등 재시도 흐름이랑 아직 열린 문제가 엉켜 있어. 시간 초과 뒤 하위 작업을 재시도할 수 있지만 멱등 키와 결과 조회 방식은 아직 안 정해졌어. 일단 키 생성, 재시도 전 조회, 제한된 횟수가 있는 재시도 설계로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 멱등 전략 없이 부작용 있는 작업을 재시도하지 않는다."
+          "content": "지금 멱등 재시도 흐름이랑 아직 열린 문제가 엉켜 있어. 시간 초과 뒤 하위 작업을 재시도할 수 있지만 멱등 키와 결과 조회 방식은 아직 안 정해졌어 일단 키 생성, 재시도 전 조회, 제한된 횟수가 있는 재시도 설계로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 멱등 전략 없이 부작용 있는 작업을 재시도하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: an idempotent retry workflow, plus some unresolved details. One downstream action may be retried after a timeout,, but the idempotency key and also result lookup are not defined. Please make a retry design with key generation, lookup-before-retry, and also bounded attempts; if the second issue is out of scope, separate it. Do not retry a side effect without an idempotency strategy."
+          "content": "There are two things tangled together here: an idempotent retry workflow, plus some unresolved details. One downstream action may be retried after a timeout, but the idempotency key and result lookup are not defined. Please make a retry design with key generation, lookup-before-retry, and bounded attempts; if the second issue is out of scope, separate it. Do not retry a side effect without an idempotency strategy."
         }
       ]
     }

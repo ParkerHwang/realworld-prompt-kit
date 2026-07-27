@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 무해한 작업과 신뢰할 수 없는 문구를 분리하는 안전한 처리로 좁히자. 큰 주제는 에이전트가 필요한 단계를 거절할 때 복구이고 믿을 수 있는 메모는 사용자는 무해한 요약을 요청했지만 인용 문서의 의심스러운 문구 때문에 에이전트가 거절했다.야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "잠깐, 범위를 무해한 작업과 신뢰할 수 없는 문구를 분리하는 안전한 처리로 좁히자. 큰 주제는 에이전트가 필요한 단계를 거절할 때 복구이고 믿을 수 있는 메모는 사용자는 무해한 요약을 요청했지만 인용 문서의 의심스러운 문구 때문에 에이전트가 거절했다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a safe separation of the benign task from the untrusted text. The broader issue is recovering when an agent refuses a needed step, and the notes I can stand behind are The person asking asks for a harmless summary,, but the agent refuses because a quoted document contains a suspicious phrase.. Mark assumptions instead of filling blanks."
+          "content": "Actually, let’s narrow this to a safe separation of the benign task from the untrusted text. The broader issue is recovering when an agent refuses a needed step, and the notes I can stand behind are The person asking asks for a harmless summary, but the agent refuses because a quoted document contains a suspicious phrase.. Mark assumptions instead of filling blanks."
         }
       ]
     }

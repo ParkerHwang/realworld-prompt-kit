@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 구매 주문서 준비 — 메모는 요청에는 표준 부품 20개, 선호 공급업체, 배송 월이 있지만 승인 여부는 없어., 결과는 승인 보류와 미체크 항목을 표시한 구매 주문서 초안. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "빠르게 부탁: 구매 주문서 준비 — 메모는 요청에는 표준 부품 20개, 선호 공급업체, 배송 월이 있지만 승인 여부는 없어, 결과는 승인 보류와 미체크 항목을 표시한 구매 주문서 초안. 없는 정보는 추정하지 말고 표시해줘"
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "quick one: preparing a purchase order — I’ve got The request I received names 20 units of a standard part, a preferred supplier, and also a delivery month,, but approval still is not shown.; can you give me a purchase-order draft with an approval hold and also explicit unknown fields? no invented details pls"
+          "content": "quick one: preparing a purchase order — I’ve got The request I received names 20 units of a standard part, a preferred supplier, and a delivery month, but approval still is not shown.; can you give me a purchase-order draft with an approval hold and explicit unknown fields? no invented details pls"
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
         }
       ]
     }

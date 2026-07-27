@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "간결함과 완전성을 조율한 고객 답변 정리하려는데, 확실히 아는 건 고객은 다음 단계를 빨리 알아야 다만 이슈에는 예외 하나와 미해결 사실 하나가 있어.야. 이걸 예외와 미해결 사실을 보존하면서 짧게 쓴 답변로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "간결함과 완전성을 조율한 고객 답변 정리하려는데, 확실히 아는 건 고객은 다음 단계를 빨리 알아야 다만 이슈에는 예외 하나와 미해결 사실 하나가 있어야. 이걸 예외와 미해결 사실을 보존하면서 짧게 쓴 답변로 만들어줘. 빈칸은 숨기지 말아줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out a customer reply balancing brevity and completeness, but here’s what I actually know: The person who contacted us needs the next step quickly,, but the issue has one exception and also one unresolved fact. Could you turn that into a short reply that still preserves the exception and also unresolved fact, without papering over the gaps?"
+          "content": "I’m trying to sort out a customer reply balancing brevity and completeness, but here’s what I actually know: The person who contacted us needs the next step quickly, but the issue has one exception and one unresolved fact. Could you turn that into a short reply that still preserves the exception and unresolved fact, without papering over the gaps?"
         }
       ]
     }

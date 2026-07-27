@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 공개 양식 제출 준비에서 쓸 수 있는 건 신청서를 제출하라고 다만 대상, 권한, 마감, 최종 검토 상태가 불명확하다.야. 권한 질문 하나와 제출 전 검토 리스트로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "말로 설명하면, 공개 양식 제출 준비에서 쓸 수 있는 건 신청서를 제출하라고 다만 대상, 권한, 마감, 최종 검토 상태가 불명확하다야. 권한 질문 하나와 제출 전 검토 리스트로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for preparing a public form submission, the useful pieces are The person asking says submit the application,, but the destination, authorization, deadline, and also final review state are unclear.. Could you make one authorization question and also a review-before-submit checklist? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m saying this out loud: for preparing a public form submission, the useful pieces are The person asking says submit the application, but the destination, authorization, deadline, and final review state are unclear.. Could you make one authorization question and a review-before-submit checklist? If I’m missing a key input, stop and tell me. 👍"
         }
       ]
     }

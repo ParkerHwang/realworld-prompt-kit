@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 잠재적으로 위험한 에이전트 지시 분류이랑 아직 열린 문제가 엉켜 있어. 지시는 민감한 조치를 요구다만 사용자의 권한, 대상, 정당한 목적은 말하지 않는다. 일단 권한 있는 목적 질문 하나와 신중한 분류 경계로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 목적이 모호한 민감한 조치를 승인하지 않는다."
+          "content": "지금 잠재적으로 위험한 에이전트 지시 분류이랑 아직 열린 문제가 엉켜 있어. 지시는 민감한 조치를 요구다만 사용자의 권한, 대상, 정당한 목적은 말하지 않는다 일단 권한 있는 목적 질문 하나와 신중한 분류 경계로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 목적이 모호한 민감한 조치를 승인하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: classifying a potentially unsafe agent instruction, plus some unresolved details. The instruction asks for a sensitive action, but does not state the user's authority, target, or legitimate purpose. Please make one question about authorized purpose and also a cautious classification boundary; if the second issue is out of scope, separate it. Do not approve a sensitive action from an ambiguous purpose."
+          "content": "There are two things tangled together here: classifying a potentially unsafe agent instruction, plus some unresolved details. The instruction asks for a sensitive action but does not state the user's authority, target, or legitimate purpose. Please make one question about authorized purpose and a cautious classification boundary; if the second issue is out of scope, separate it. Do not approve a sensitive action from an ambiguous purpose."
         }
       ]
     }

@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 부분 에이전트 추적 검토이랑 아직 열린 문제가 엉켜 있어. 추적에는 사용자 요청과 최종 답만 있고 중간 도구 호출과 시스템 메시지 하나가 빠졌다. 일단 결론 가능한 것과 불가능한 것을 적은 범위 제한 리뷰로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 빠진 도구 호출이나 숨은 지시를 안다고 주장하지 않는다."
+          "content": "지금 부분 에이전트 추적 검토이랑 아직 열린 문제가 엉켜 있어. 추적에는 사용자 요청과 최종 답만 있고 중간 도구 호출과 시스템 메시지 하나가 빠졌다 일단 결론 가능한 것과 불가능한 것을 적은 범위 제한 리뷰로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 빠진 도구 호출이나 숨은 지시를 안다고 주장하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a review from a partial agent trace, plus some unresolved details. The trace has the user request and also final answer, but omits intermediate tool calls and also one system message. Please make a bounded review that lists what can and also cannot be concluded; if the second issue is out of scope, separate it. Do not claim to know an omitted tool call or hidden instruction."
+          "content": "There are two things tangled together here: a review from a partial agent trace, plus some unresolved details. The trace has the user request and final answer but omits intermediate tool calls and one system message. Please make a bounded review that lists what can and cannot be concluded; if the second issue is out of scope, separate it. Do not claim to know an omitted tool call or hidden instruction."
         }
       ]
     }

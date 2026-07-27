@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 참석과 학습 근거를 구분한 진행 모델로 좁히자. 큰 주제는 수개월 교육 모니터링 계획이고 믿을 수 있는 메모는 프로그램에는 참석, 연습, 평가 체크포인트가 있고 참여는 자발적이며 성과는 정해지는 중이다.야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "잠깐, 범위를 참석과 학습 근거를 구분한 진행 모델로 좁히자. 큰 주제는 수개월 교육 모니터링 계획이고 믿을 수 있는 메모는 프로그램에는 참석, 연습, 평가 체크포인트가 있고 참여는 자발적이며 성과는 정해지는 중이다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a progress model that keeps attendance separate from learning evidence. The broader issue is a multi-month training monitoring plan, and the notes I can stand behind are The program we are running has attendance, practice, and also assessment checkpoints; participation is voluntary and also outcomes are still being defined.. Mark assumptions instead of filling blanks."
+          "content": "Actually, let’s narrow this to a progress model that keeps attendance separate from learning evidence. The broader issue is a multi-month training monitoring plan, and the notes I can stand behind are The program we are running has attendance, practice, and assessment checkpoints; participation is voluntary and outcomes are still being defined.. Mark assumptions instead of filling blanks."
         }
       ]
     }

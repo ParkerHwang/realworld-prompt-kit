@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 등록 메모를 바탕으로 한 워크숍 준비 계획이랑 아직 열린 문제가 엉켜 있어. 붙여 넣은 메모에는 등록자 18명, 식이 관련 질문, 취소 2건이 있지만 세션 선택은 없어. 일단 참석 정보와 식이 정보를 가정과 분리한 준비 체크리스트로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 세션 배정을 추정하거나 불필요한 개인정보를 노출하지 않는다."
+          "content": "지금 등록 메모를 바탕으로 한 워크숍 준비 계획이랑 아직 열린 문제가 엉켜 있어. 붙여 넣은 메모에는 등록자 18명, 식이 관련 질문, 취소 2건이 있지만 세션 선택은 없어 일단 참석 정보와 식이 정보를 가정과 분리한 준비 체크리스트로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 세션 배정을 추정하거나 불필요한 개인정보를 노출하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a workshop preparation plan from registration notes, plus some unresolved details. The pasted notes list 18 registrants, a dietary question, and also two cancellations, but do not say which session each person chose. Please make a preparation checklist that keeps attendance and also dietary information separate from assumptions; if the second issue is out of scope, separate it. Do not infer session assignments or expose unnecessary personal details."
+          "content": "There are two things tangled together here: a workshop preparation plan from registration notes, plus some unresolved details. The pasted notes list 18 registrants, a dietary question, and two cancellations but do not say which session each person chose. Please make a preparation checklist that keeps attendance and dietary information separate from assumptions; if the second issue is out of scope, separate it. Do not infer session assignments or expose unnecessary personal details."
         }
       ]
     }

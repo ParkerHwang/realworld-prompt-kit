@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "작업 시나리오에 맞춰 프롬프트 평가 정리하려는데, 확실히 아는 건 프롬프트에는 명확한 목표와 출력 요건이 있지만 빠진 사실을 만들 위험이 있어.야. 이걸 강점, 위험, 구체적 수정이 있는 기준 기반 리뷰로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "작업 시나리오에 맞춰 프롬프트 평가 정리하려는데, 확실히 아는 건 프롬프트에는 명확한 목표와 출력 요건이 있지만 빠진 사실을 만들 위험이 있어야. 이걸 강점, 위험, 구체적 수정이 있는 기준 기반 리뷰로 만들어줘. 빈칸은 숨기지 말아줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out evaluating a prompt against a task scenario, but here’s what I actually know: The prompt has a clear goal, required output, and also a risk of inventing missing facts. Could you turn that into a criterion-based review with strengths, risks, and also a concrete revision, without papering over the gaps?"
+          "content": "I’m trying to sort out evaluating a prompt against a task scenario, but here’s what I actually know: The prompt has a clear goal, required output, and a risk of inventing missing facts. Could you turn that into a criterion-based review with strengths, risks, and a concrete revision, without papering over the gaps?"
         }
       ]
     }

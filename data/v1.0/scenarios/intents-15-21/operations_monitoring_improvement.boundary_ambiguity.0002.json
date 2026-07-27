@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 지연 배송 모니터링 정의 얘기였어. 메모에는 팀은 약속 날짜, 운송사 예상, 고객 기대를 같은 뜻으로 사용한다.라고 적혀 있어. 날짜를 구분하는 지표 제안과 정의 질문 하나 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "이거 이어서 볼 수 있을까? 지연 배송 모니터링 정의 얘기였어. 메모에는 팀은 약속 날짜, 운송사 예상, 고객 기대를 같은 뜻으로 사용한다라고 적혀 있어. 날짜를 구분하는 지표 제안과 정의 질문 하나 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up a late-shipment monitoring definition? I lost the thread a bit. The notes say Our team uses promised date, carrier estimate, and also customer expectation interchangeably. What would a useful one definition question and also a metric proposal that keeps the dates separate look like? Keep the earlier boundaries in mind."
+          "content": "Can we pick up a late-shipment monitoring definition? I lost the thread a bit. The notes say Our team uses promised date, carrier estimate, and customer expectation interchangeably. What would one definition question and a metric proposal that keeps the dates separate look like? Keep the earlier boundaries in mind."
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If one missing detail would change the call, ask for it or label your assumption."
         }
       ]
     }

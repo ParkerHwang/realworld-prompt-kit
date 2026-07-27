@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "근거 확인을 포함한 공급업체 제안 계획 정리하려는데, 확실히 아는 건 제안 A는 빠른 납기, 제안 B는 높은 품질을 주장다만 어느 쪽도 독립적으로 체크된 서비스 수준을 제시하지 않는다.야. 이걸 주장, 근거 요청, 의사결정 기준을 정리한 비교 안로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "근거 확인을 포함한 공급업체 제안 계획 정리하려는데, 확실히 아는 건 제안 A는 빠른 납기, 제안 B는 높은 품질을 주장다만 어느 쪽도 독립적으로 체크된 서비스 수준을 제시하지 않는다야. 이걸 주장, 근거 요청, 의사결정 기준을 정리한 비교 안로 만들어줘. 빈칸은 숨기지 말아줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out a vendor proposal plan with evidence checks, but here’s what I actually know: Proposal One claims faster delivery, Proposal B claims higher quality, and also neither includes independently checked service levels. Could you turn that into a comparison plan that lists claims, evidence requests, and also a decision threshold, without papering over the gaps?"
+          "content": "I’m trying to sort out a vendor proposal plan with evidence checks, but here’s what I actually know: Proposal One claims faster delivery, Proposal B claims higher quality, and neither includes independently checked service levels. Could you turn that into a comparison plan that lists claims, evidence requests, and a decision threshold, without papering over the gaps?"
         }
       ]
     }

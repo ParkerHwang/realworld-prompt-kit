@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 가족 돌봄 일정에서 쓸 수 있는 건 세 가족 구성원이 서로 다른 날 도울 수 있고 한 번의 진료 일정은 고정됐지만 긴급 돌봄은 불확실하다.야. 각자의 한계와 비상 연락 담당을 표시한 공정한 일정로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "말로 설명하면, 가족 돌봄 일정에서 쓸 수 있는 건 세 가족 구성원이 서로 다른 날 도울 수 있고 한 번의 진료 일정은 고정됐지만 긴급 돌봄은 불확실하다야. 각자의 한계와 비상 연락 담당을 표시한 공정한 일정로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for a family caregiving schedule, the useful pieces are Three relatives can help on different days, one appointment is fixed, and also emergency coverage is still uncertain.. Could you make a fair schedule with a backup contact and also visible limits on each person's commitment? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m saying this out loud: for a family caregiving schedule, the useful pieces are Three relatives can help on different days, one appointment is fixed, and emergency coverage is still uncertain.. Could you make a fair schedule with a backup contact and visible limits on each person's commitment? If I’m missing a key input, stop and tell me. 👍"
         }
       ]
     }

@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "백업 확인을 포함한 아카이브 작업 준비 정리하려는데, 확실히 아는 건 아카이브에는 오래된 프로젝트 초안이 있고 백업 상태는 지난주이며 복원 테스트 기록은 없어.야. 이걸 백업과 복원 근거가 생길 때까지 아카이브를 보류하는 사전 점검 리스트로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "백업 확인을 포함한 아카이브 작업 준비 정리하려는데, 확실히 아는 건 아카이브에는 오래된 프로젝트 초안이 있고 백업 상태는 지난주이며 복원 테스트 기록은 없어야. 이걸 백업과 복원 근거가 생길 때까지 아카이브를 보류하는 사전 점검 리스트로 만들어줘. 빈칸은 숨기지 말아줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out preparing an archive action with a backup check, but here’s what I actually know: The archive contains old project drafts, the backup status is last week's, and also restore testing still is not recorded. Could you turn that into a preflight checklist that holds the archive until backup and also restore evidence exists, without papering over the gaps?"
+          "content": "I’m trying to sort out preparing an archive action with a backup check, but here’s what I actually know: The archive contains old project drafts, the backup status is last week's, and restore testing still is not recorded. Could you turn that into a preflight checklist that holds the archive until backup and restore evidence exists, without papering over the gaps?"
         }
       ]
     }

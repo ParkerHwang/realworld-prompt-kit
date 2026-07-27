@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 출시 준비 기준 — 메모는 팀은 테스트, 지원 준비, 법무 검토, 문서를 언급다만 차단 규칙은 없어., 결과는 차단 기준 질문 하나와 임시 준비도 체크리스트. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "빠르게 부탁: 출시 준비 기준 — 메모는 팀은 테스트, 지원 준비, 법무 검토, 문서를 언급다만 차단 규칙은 없어, 결과는 차단 기준 질문 하나와 임시 준비도 체크리스트. 없는 정보는 추정하지 말고 표시해줘"
         },
         {
           "role": "user",
-          "content": "추가로, 결정에 중요한 정보가 빠졌으면 만들지 말고 질문하거나 가정을 표시해줘."
+          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "quick one: launch-readiness criteria — I’ve got Our team mentions tests, support readiness, legal review, and also documentation,, but no blocking rule is named.; can you give me one question about what is blocking and also a provisional readiness checklist? no invented details pls"
+          "content": "quick one: launch-readiness criteria — I’ve got Our team mentions tests, support readiness, legal review, and documentation, but no blocking rule is named.; can you give me one question about what is blocking and a provisional readiness checklist? no invented details pls"
         },
         {
           "role": "user",
-          "content": "One more thing: if a decision-critical detail is missing, ask or state the assumption instead of inventing it."
+          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
         }
       ]
     }

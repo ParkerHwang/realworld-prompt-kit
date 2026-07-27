@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 일상 루틴 만들기이랑 아직 열린 문제가 엉켜 있어. 사용자는 운동, 식사, 집중 업무, 휴식 시간을 원다만 아침 일정은 변동적이다. 일단 고정 기준, 대안, 의료 주장 없이 유연한 루틴로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 루틴을 의료 치료처럼 말하거나 완벽한 준수를 요구하지 않는다."
+          "content": "지금 일상 루틴 만들기이랑 아직 열린 문제가 엉켜 있어. 사용자는 운동, 식사, 집중 업무, 휴식 시간을 원다만 아침 일정은 변동적이다 일단 고정 기준, 대안, 의료 주장 없이 유연한 루틴로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 루틴을 의료 치료처럼 말하거나 완벽한 준수를 요구하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: building a daily routine, plus some unresolved details. The person asking wants time for movement, meals, focused work, and also rest, but has variable mornings. Please make a flexible routine with anchors, fallback options, and also no medical claims; if the second issue is out of scope, separate it. Do not frame the routine as medical treatment or require perfect adherence."
+          "content": "There are two things tangled together here: building a daily routine, plus some unresolved details. The person asking wants time for movement, meals, focused work, and rest but has variable mornings. Please make a flexible routine with anchors, fallback options, and no medical claims; if the second issue is out of scope, separate it. Do not frame the routine as medical treatment or require perfect adherence."
         }
       ]
     }

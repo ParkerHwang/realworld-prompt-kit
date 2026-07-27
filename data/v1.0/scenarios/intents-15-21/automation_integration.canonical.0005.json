@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 사람 검토와 억제 규칙이 있는 동의 기반 흐름로 좁히자. 큰 주제는 영업 리드 후속 자동화이고 믿을 수 있는 메모는 새 리드는 CRM에 들어오고 동의 표시가 연락을 통제하며 고가치 리드는 사람 검토가 필요해.야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "잠깐, 범위를 사람 검토와 억제 규칙이 있는 동의 기반 흐름로 좁히자. 큰 주제는 영업 리드 후속 자동화이고 믿을 수 있는 메모는 새 리드는 CRM에 들어오고 동의 표시가 연락을 통제하며 고가치 리드는 사람 검토가 필요해야. 빈 내용을 지어내지 말고 가정이라고 써줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a consent-aware workflow with human review and also suppression rules. The broader issue is a sales-lead follow-up automation, and the notes I can stand behind are New leads enter a CRM, a consent flag controls contact, and also high-value leads need human review.. Mark assumptions instead of filling blanks."
+          "content": "Actually, let’s narrow this to a consent-aware workflow with human review and suppression rules. The broader issue is a sales-lead follow-up automation, and the notes I can stand behind are New leads enter a CRM, a consent flag controls contact, and high-value leads need human review.. Mark assumptions instead of filling blanks."
         }
       ]
     }

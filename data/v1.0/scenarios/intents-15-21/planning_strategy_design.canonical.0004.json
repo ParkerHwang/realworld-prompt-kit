@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 가정 이사 일정이랑 아직 열린 문제가 엉켜 있어. 계약 만료일은 28일이고 이사업체는 25일 또는 27일에 가능하며 인터넷 설치에는 영업일 며칠이 걸린다. 일단 퇴거 기한과 예비 날짜를 반영한 의존관계 기반 일정로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 설치 예약을 임의로 만들지 말고 확인이 필요한 날짜를 표시한다."
+          "content": "지금 가정 이사 일정이랑 아직 열린 문제가 엉켜 있어. 계약 만료일은 28일이고 이사업체는 25일 또는 27일에 가능하며 인터넷 설치에는 영업일 며칠이 걸린다 일단 퇴거 기한과 예비 날짜를 반영한 의존관계 기반 일정로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 설치 예약을 임의로 만들지 말고 확인이 필요한 날짜를 표시한다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a household move timeline, plus some unresolved details. The lease ends on the 28th, movers are available on the 25th or 27th, and also internet installation needs several business days. Please make a dependency-aware timeline that protects the move-out deadline and also a backup date; if the second issue is out of scope, separate it. Do not invent an installation appointment; flag any date that still needs confirmation."
+          "content": "There are two things tangled together here: a household move timeline, plus some unresolved details. The lease ends on the 28th, movers are available on the 25th or 27th, and internet installation needs several business days. Please make a dependency-aware timeline that protects the move-out deadline and a backup date; if the second issue is out of scope, separate it. Do not invent an installation appointment; flag any date that still needs confirmation."
         }
       ]
     }

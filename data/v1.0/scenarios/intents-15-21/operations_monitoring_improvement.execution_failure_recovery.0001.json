@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "오래된 운영 대시보드 복구 정리하려는데, 확실히 아는 건 대시보드가 어제 이후 갱신되지 않았고 원본 작업 상태는 모르며 리더는 현황을 기다린다.야. 이걸 최신성 표시, 원본 작업 체크, 데이터 없음 대안로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "오래된 운영 대시보드 복구 정리하려는데, 확실히 아는 건 대시보드가 어제 이후 갱신되지 않았고 원본 작업 상태는 모르며 리더는 현황을 기다린다야. 이걸 최신성 표시, 원본 작업 체크, 데이터 없음 대안로 만들어줘. 빈칸은 숨기지 말아줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out recovering from a stale operations dashboard, but here’s what I actually know: The dashboard has not refreshed since yesterday, the source job status is unknown, and also leaders are waiting for a view. Could you turn that into a freshness banner, source-job check, and also no-data fallback, without papering over the gaps?"
+          "content": "I’m trying to sort out recovering from a stale operations dashboard, but here’s what I actually know: The dashboard has not refreshed since yesterday, the source job status is unknown, and leaders are waiting for a view. Could you turn that into a freshness banner, source-job check, and no-data fallback, without papering over the gaps?"
         }
       ]
     }

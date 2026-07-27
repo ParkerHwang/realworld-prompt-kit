@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 진행 정의와 자기 보고 불확실성을 표시한 추적표로 좁히자. 큰 주제는 학습 진행 추적기이고 믿을 수 있는 메모는 과정에는 네 모듈, 주간 연습, 최종 프로젝트가 있고 완료 데이터는 자기 보고다.야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "잠깐, 범위를 진행 정의와 자기 보고 불확실성을 표시한 추적표로 좁히자. 큰 주제는 학습 진행 추적기이고 믿을 수 있는 메모는 과정에는 네 모듈, 주간 연습, 최종 프로젝트가 있고 완료 데이터는 자기 보고다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a tracker with progress definitions and also a note about self-report uncertainty. The broader issue is a study progress tracker, and the notes I can stand behind are The course has four modules, a weekly practice task, and also a final project; completion data is self-reported.. Mark assumptions instead of filling blanks."
+          "content": "Actually, let’s narrow this to a tracker with progress definitions and a note about self-report uncertainty. The broader issue is a study progress tracker, and the notes I can stand behind are The course has four modules, a weekly practice task, and a final project; completion data is self-reported.. Mark assumptions instead of filling blanks."
         }
       ]
     }

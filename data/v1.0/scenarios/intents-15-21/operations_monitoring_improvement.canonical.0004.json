@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 품질 검사 주기이랑 아직 열린 문제가 엉켜 있어. 라인의 기준 품질은 안정적이지만 반복 결함 하나가 있고 두 교대에 검사 인력이 제한돼 있어. 일단 샘플링, 담당자, 에스컬레이션 기준이 있는 위험 기반 주기로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 반복 결함 신호를 보존하지 않고 라인이 안정적이라고 말하지 않는다."
+          "content": "지금 품질 검사 주기이랑 아직 열린 문제가 엉켜 있어. 라인의 기준 품질은 안정적이지만 반복 결함 하나가 있고 두 교대에 검사 인력이 제한돼 있어 일단 샘플링, 담당자, 에스컬레이션 기준이 있는 위험 기반 주기로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 반복 결함 신호를 보존하지 않고 라인이 안정적이라고 말하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a quality inspection cadence, plus some unresolved details. The line has a stable baseline, one recurring defect, and also limited inspection staff across two shifts. Please make a risk-based cadence with sampling, owner, and also escalation threshold; if the second issue is out of scope, separate it. Do not call the line stable without preserving the recurring-defect signal."
+          "content": "There are two things tangled together here: a quality inspection cadence, plus some unresolved details. The line has a stable baseline, one recurring defect, and limited inspection staff across two shifts. Please make a risk-based cadence with sampling, owner, and escalation threshold; if the second issue is out of scope, separate it. Do not call the line stable without preserving the recurring-defect signal."
         }
       ]
     }
