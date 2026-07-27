@@ -1,0 +1,137 @@
+{
+  "schema": "realworld-prompt-kit.scenario/0.1.0",
+  "scenario_id": "rwpk.office.project_status.0001",
+  "revision": 1,
+  "status": "draft",
+  "semantic_group_id": "rwpg.office.project_status",
+  "title": {
+    "ko": "계정 이전 프로젝트 상태 보고",
+    "en": "Account migration project status update"
+  },
+  "task": {
+    "primary_intent": "summarization_synthesis",
+    "secondary_intents": [
+      "practical_writing"
+    ],
+    "primary_domain": "project_product_management",
+    "domain_tags": [
+      "strategy_business_operations"
+    ],
+    "user_goal": {
+      "ko": "운영 메모를 임원용 상태 업데이트로 압축한다.",
+      "en": "Compress operational notes into an executive project update."
+    },
+    "expected_artifact": "Five labeled bullets covering status, metrics, risk, dependency, and next step."
+  },
+  "coverage": {
+    "block_id": "office-core-cb8",
+    "row": 4,
+    "facets": {
+      "context_scale": "short",
+      "goal_clarity": "implicit",
+      "output_shape": "structured",
+      "evidence_state": "incomplete",
+      "stakes": "moderate",
+      "interaction": "single",
+      "surface_noise": "light"
+    },
+    "naturalistic_features": [
+      "rambling_stream",
+      "implicit_goal_or_output"
+    ]
+  },
+  "realizations": [
+    {
+      "prompt_id": "rwpk.office.project_status.0001.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "다음 계정 이전 메모를 임원용 상태 업데이트 다섯 항목으로 정리해줘: 현재 상태, 핵심 수치, 주요 위험, 외부 의존성, 다음 행동.\\n\\n- 목표 120개 계정 중 87개 이전 완료\\n- 인증 오류로 5개 계정 rollback\\n- 아직 시작하지 않은 계정 28개\\n- 주간 지원 티켓 12건에서 4건으로 감소\\n- 공급업체 인증 패치는 금요일 예정이나 담당자는 메모에 없음\\n- 패치가 늦으면 다음 주 수요일 완료 목표가 위험"
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.office.project_status.0001.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "rambling_stream",
+        "implicit_goal_or_output"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "임원한테 migration 상황 올려야됨. 총120개 중 87 끝났고 auth 오류로 5개는 롤백, 28개 아직 시작전. support ticket은 주12에서4로 줄었음. vendor auth patch 금요일 예정인데 누가 owner인진 메모에 없고 이거 밀리면 담주 수요일 완료도 위험. 길게말고 status 숫자 risk dependency next step 보이게 5개로"
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.office.project_status.0001.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Turn these account migration notes into five labeled bullets for an executive update: current status, key metrics, main risk, external dependency, and next action.\\n\\n- 87 of 120 accounts migrated\\n- 5 accounts rolled back because of authentication errors\\n- 28 accounts not yet started\\n- Weekly support tickets decreased from 12 to 4\\n- Vendor authentication patch is expected Friday, but the notes do not name an owner\\n- If the patch slips, next Wednesday's completion target is at risk"
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.office.project_status.0001.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "rambling_stream",
+        "implicit_goal_or_output"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "need to update execs on migration. 87/120 done, 5 rolled back bc auth errors, 28 not started. support tickets went 12/wk to 4. vendor auth patch supposed to land friday but my notes dont say who owns it, if it slips the finish target next wed is at risk. can you make this 5 quick bullets like status numbers risk dependency next step"
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "response_mode": {
+      "canonical": "state_assumptions_and_answer",
+      "naturalistic": "state_assumptions_and_answer"
+    },
+    "invariants": [
+      "Preserve 87 completed, 5 rolled back, 28 not started, and the 12-to-4 ticket reduction.",
+      "Do not count rolled-back accounts as completed.",
+      "Identify the Friday vendor patch as an external dependency.",
+      "Flag the missing dependency owner rather than inventing one.",
+      "Connect patch delay to the next-Wednesday target risk."
+    ],
+    "rubric_dimensions": [
+      "numeric_fidelity",
+      "executive_relevance",
+      "risk_visibility",
+      "brevity"
+    ],
+    "failure_signals": [
+      "The account totals are recomputed incorrectly.",
+      "An owner is fabricated.",
+      "The Wednesday target is presented as certain.",
+      "The requested five-part structure is ignored."
+    ]
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit contributors"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT"
+  }
+}

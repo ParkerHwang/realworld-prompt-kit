@@ -1,0 +1,56 @@
+{
+  "schema": "realworld-prompt-kit.manifest/0.1.0",
+  "pack_id": "office-core-cb8",
+  "version": "0.1.0",
+  "status": "draft",
+  "description": "Eight bilingual office-work scenarios with paired canonical and naturalistic realizations.",
+  "scenario_glob": "data/v0.1/scenarios/*.json",
+  "expected_scenarios": 8,
+  "required_locales": [
+    "ko-KR",
+    "en-US"
+  ],
+  "required_forms": [
+    "canonical",
+    "naturalistic"
+  ],
+  "coverage_facets": {
+    "context_scale": [
+      "short",
+      "long"
+    ],
+    "goal_clarity": [
+      "explicit",
+      "implicit"
+    ],
+    "output_shape": [
+      "prose",
+      "structured"
+    ],
+    "evidence_state": [
+      "complete",
+      "incomplete"
+    ],
+    "stakes": [
+      "low",
+      "moderate"
+    ],
+    "interaction": [
+      "single",
+      "message_burst"
+    ],
+    "surface_noise": [
+      "light",
+      "heavy"
+    ]
+  },
+  "license": "MIT",
+  "source_policy": {
+    "allowed_public_origins": [
+      "controlled_canonical",
+      "synthetic_naturalistic"
+    ],
+    "allow_private_conversation_copy": false,
+    "require_personal_data_false": true
+  }
+}

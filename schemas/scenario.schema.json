@@ -1,0 +1,390 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/ParkerHwang/realworld-prompt-kit/main/schemas/scenario.schema.json",
+  "title": "RealWorld Prompt Kit Scenario",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "scenario_id",
+    "revision",
+    "status",
+    "semantic_group_id",
+    "title",
+    "task",
+    "coverage",
+    "realizations",
+    "evaluation",
+    "provenance"
+  ],
+  "properties": {
+    "schema": {
+      "const": "realworld-prompt-kit.scenario/0.1.0"
+    },
+    "scenario_id": {
+      "type": "string",
+      "pattern": "^rwpk\\.[a-z0-9_]+\\.[a-z0-9_]+\\.[0-9]{4}$"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "reviewed",
+        "frozen",
+        "retired"
+      ]
+    },
+    "semantic_group_id": {
+      "type": "string",
+      "pattern": "^rwpg\\.[a-z0-9_.]+$"
+    },
+    "title": {
+      "$ref": "#/$defs/localized"
+    },
+    "task": {
+      "$ref": "#/$defs/task"
+    },
+    "coverage": {
+      "$ref": "#/$defs/coverage"
+    },
+    "realizations": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "$ref": "#/$defs/realization"
+      }
+    },
+    "evaluation": {
+      "$ref": "#/$defs/evaluation"
+    },
+    "provenance": {
+      "$ref": "#/$defs/provenance"
+    }
+  },
+  "$defs": {
+    "localized": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ko",
+        "en"
+      ],
+      "properties": {
+        "ko": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "task": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "primary_intent",
+        "secondary_intents",
+        "primary_domain",
+        "domain_tags",
+        "user_goal",
+        "expected_artifact"
+      ],
+      "properties": {
+        "primary_intent": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "secondary_intents": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "uniqueItems": true
+        },
+        "primary_domain": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "domain_tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "uniqueItems": true
+        },
+        "user_goal": {
+          "$ref": "#/$defs/localized"
+        },
+        "expected_artifact": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "block_id",
+        "row",
+        "facets",
+        "naturalistic_features"
+      ],
+      "properties": {
+        "block_id": {
+          "const": "office-core-cb8"
+        },
+        "row": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8
+        },
+        "facets": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "context_scale",
+            "goal_clarity",
+            "output_shape",
+            "evidence_state",
+            "stakes",
+            "interaction",
+            "surface_noise"
+          ],
+          "properties": {
+            "context_scale": {
+              "enum": [
+                "short",
+                "long"
+              ]
+            },
+            "goal_clarity": {
+              "enum": [
+                "explicit",
+                "implicit"
+              ]
+            },
+            "output_shape": {
+              "enum": [
+                "prose",
+                "structured"
+              ]
+            },
+            "evidence_state": {
+              "enum": [
+                "complete",
+                "incomplete"
+              ]
+            },
+            "stakes": {
+              "enum": [
+                "low",
+                "moderate"
+              ]
+            },
+            "interaction": {
+              "enum": [
+                "single",
+                "message_burst"
+              ]
+            },
+            "surface_noise": {
+              "enum": [
+                "light",
+                "heavy"
+              ]
+            }
+          }
+        },
+        "naturalistic_features": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "message": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "role",
+        "content"
+      ],
+      "properties": {
+        "role": {
+          "enum": [
+            "system",
+            "developer",
+            "user",
+            "assistant",
+            "tool"
+          ]
+        },
+        "content": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "realization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prompt_id",
+        "locale",
+        "form",
+        "origin",
+        "features",
+        "messages"
+      ],
+      "properties": {
+        "prompt_id": {
+          "type": "string",
+          "pattern": "^rwpk\\.[A-Za-z0-9_.-]+$"
+        },
+        "locale": {
+          "enum": [
+            "ko-KR",
+            "en-US"
+          ]
+        },
+        "form": {
+          "enum": [
+            "canonical",
+            "naturalistic"
+          ]
+        },
+        "origin": {
+          "enum": [
+            "controlled_canonical",
+            "synthetic_naturalistic",
+            "rights_cleared_real_derived"
+          ]
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "uniqueItems": true
+        },
+        "messages": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/message"
+          }
+        }
+      }
+    },
+    "evaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "response_mode",
+        "invariants",
+        "rubric_dimensions",
+        "failure_signals"
+      ],
+      "properties": {
+        "response_mode": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "canonical",
+            "naturalistic"
+          ],
+          "properties": {
+            "canonical": {
+              "$ref": "#/$defs/responseMode"
+            },
+            "naturalistic": {
+              "$ref": "#/$defs/responseMode"
+            }
+          }
+        },
+        "invariants": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "rubric_dimensions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "uniqueItems": true
+        },
+        "failure_signals": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "responseMode": {
+      "enum": [
+        "answer_directly",
+        "infer_and_answer",
+        "state_assumptions_and_answer",
+        "ask_one_clarifying_question",
+        "clarification_dialogue",
+        "hold",
+        "refuse_or_escalate"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "origin",
+        "authors",
+        "contains_personal_data",
+        "rights_basis",
+        "license"
+      ],
+      "properties": {
+        "origin": {
+          "const": "synthetic"
+        },
+        "authors": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "contains_personal_data": {
+          "const": false
+        },
+        "rights_basis": {
+          "const": "original_project_authorship"
+        },
+        "license": {
+          "const": "MIT"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use RealWorld Prompt Kit, please cite this repository."
+title: "RealWorld Prompt Kit"
+type: dataset
+authors:
+  - family-names: "Hwang"
+    given-names: "Parker"
+repository-code: "https://github.com/ParkerHwang/realworld-prompt-kit"
+license: MIT
+version: 0.1.0
+date-released: 2026-07-27
