@@ -1,0 +1,179 @@
+{
+  "schema": "realworld-prompt-kit.suite-manifest-template/1.0.0",
+  "template": true,
+  "suite_id": "suite.method-routing.v1",
+  "version": "1.0.0",
+  "status": "planned",
+  "suite_type": "rotating_challenge",
+  "coverage_plane": "method_routing",
+  "visibility": "${public_or_private}",
+  "coverage_claim": "none_until_artifacts_present",
+  "purpose": "Separate OpenSocrates routing/effect suite. Semantic scenario IDs may overlap broad core, but routing evidence never transfers automatically.",
+  "source_catalog": "/Users/parker/Documents/OpenSocrates/evaluation/test-prompt-kit/catalog.json",
+  "method_catalog": "/Users/parker/Documents/OpenSocrates/content/catalog.yaml",
+  "method_catalog_revision": "${PIN_CONTENT_REVISION}",
+  "method_ids": [
+    "boundary-critique",
+    "conceptual-analysis",
+    "first-principles",
+    "socratic-questioning",
+    "argument-mapping",
+    "logic-tree",
+    "mece",
+    "pyramid-principle",
+    "abduction",
+    "deduction",
+    "defeasible-reasoning",
+    "induction",
+    "bayesian-updating",
+    "evidence-hierarchy",
+    "falsificationism",
+    "triangulation",
+    "causal-reasoning",
+    "root-cause-analysis",
+    "systems-thinking",
+    "causal-loop-diagramming",
+    "critical-thinking",
+    "failure-mode-effects-analysis",
+    "premortem-analysis",
+    "steelman-reasoning",
+    "design-thinking",
+    "lateral-thinking",
+    "morphological-analysis",
+    "triz",
+    "deontic-reasoning",
+    "jobs-to-be-done",
+    "pragmatism",
+    "reflective-equilibrium",
+    "cost-benefit-analysis",
+    "decision-tree-analysis",
+    "trade-off-analysis",
+    "value-of-information",
+    "reference-class-forecasting",
+    "robust-decision-making",
+    "scenario-planning",
+    "sensitivity-analysis",
+    "assumption-mapping",
+    "double-loop-learning",
+    "lean-startup",
+    "pdca-cycle",
+    "cynefin-framework",
+    "game-theory",
+    "pestel-analysis",
+    "stakeholder-analysis"
+  ],
+  "family_ids": [
+    "framing",
+    "structuring",
+    "logical_reasoning",
+    "evidence_verification",
+    "causal_systems",
+    "critical_counterexample",
+    "creative_reframing",
+    "values_purpose",
+    "decision_optimization",
+    "future_uncertainty",
+    "experiment_learning",
+    "strategy_actors"
+  ],
+  "confusable_edge_registry": "${PIN_EXTERNAL_EDGE_REGISTRY_OR_LEAVE_UNCLAIMED}",
+  "requirements": {
+    "per_method": {
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "blocks": [
+        {
+          "id": "explicit_positive",
+          "cb8": 1,
+          "semantic_scenarios": 8
+        },
+        {
+          "id": "implicit_naturalistic_positive",
+          "cb8": 1,
+          "semantic_scenarios": 8
+        },
+        {
+          "id": "nearest_neighbor_negative",
+          "cb8": 1,
+          "semantic_scenarios": 8
+        },
+        {
+          "id": "contraindicated",
+          "cb8": 1,
+          "semantic_scenarios": 8
+        },
+        {
+          "id": "insufficient_evidence_hold_or_clarify",
+          "cb8": 1,
+          "semantic_scenarios": 8
+        },
+        {
+          "id": "complement_handoff_multimethod",
+          "cb8": 1,
+          "semantic_scenarios": 8
+        }
+      ]
+    },
+    "per_family": {
+      "coverage_blocks": 3,
+      "semantic_scenario_assignments": 24,
+      "blocks": [
+        {
+          "id": "family_only_routing",
+          "cb8": 1,
+          "semantic_scenarios": 8
+        },
+        {
+          "id": "primary_secondary_handoff",
+          "cb8": 1,
+          "semantic_scenarios": 8
+        },
+        {
+          "id": "multistage_completion",
+          "cb8": 1,
+          "semantic_scenarios": 8
+        }
+      ]
+    },
+    "per_documented_confusable_edge": {
+      "coverage_blocks": 1,
+      "semantic_scenario_assignments": 8,
+      "edge_count": null
+    },
+    "no_route_general": {
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48
+    }
+  },
+  "expected_counts": {
+    "semantic_scenarios": "${48 * method_count + 24 * family_count + 8 * edge_count + 48}",
+    "cb8_blocks": "${6 * method_count + 3 * family_count + edge_count + 6}",
+    "prompt_realizations": "${DERIVE_FROM_SCENARIO_FILES_NOT_THIS_TEMPLATE}"
+  },
+  "required_receipts": [
+    "expected_method_ids",
+    "expected_family_ids",
+    "actual_route_receipt",
+    "abstention_or_hold_reason",
+    "handoff_receipt"
+  ],
+  "scoring_contracts": [
+    "task_success",
+    "routing_behavior",
+    "route_precision",
+    "route_recall",
+    "abstention_quality",
+    "no_route_non_inferiority",
+    "latency_and_cost_tax"
+  ],
+  "overlap_policy": {
+    "semantic_scenario_ids_may_be_reused": true,
+    "broad_core_credit": false,
+    "required_separate_suite_membership": true
+  },
+  "release_gates": [
+    "GATE-01-source-pinned",
+    "GATE-08-routing",
+    "GATE-11-integrity"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "realworld-prompt-kit.suite-manifest-template/1.0.0",
+  "template": true,
+  "suite_id": "suite.broad-core.v1",
+  "version": "1.0.0",
+  "status": "planned",
+  "suite_type": "stable_core",
+  "coverage_plane": "broad_core",
+  "visibility": "public",
+  "coverage_claim": "none_until_artifacts_present",
+  "purpose": "Harness-neutral 880-scenario broad core with overlapping task-intent, domain, and naturalistic requirements.",
+  "source_catalog": "/Users/parker/Documents/OpenSocrates/evaluation/test-prompt-kit/catalog.json",
+  "scenario_source": "${REPOSITORY_ROOT}/data/v1.0/scenarios/**/*.json",
+  "expected_counts": {
+    "semantic_scenarios": 880,
+    "cb8_blocks": 110,
+    "prompt_realizations": 3520
+  },
+  "required_realization_pairs": [
+    "ko-KR.canonical",
+    "ko-KR.naturalistic_freeform",
+    "en-US.canonical",
+    "en-US.naturalistic_freeform"
+  ],
+  "selectors": {
+    "primary_intents": "${ALL_21_TASK_INTENTS}",
+    "domains": "${ALL_28_DOMAINS_WITH_PRIMARY_AND_SECONDARY_TAGS}",
+    "naturalistic_profiles": "${ALL_24_NATURALISTIC_PROFILES}"
+  },
+  "counting_rules": {
+    "scenario_id_is_semantic_unit": true,
+    "translations_count_as_new_scenarios": false,
+    "naturalistic_realizations_count_as_new_scenarios": false,
+    "intent_domain_method_assignments_are_overlays": true
+  },
+  "composition_guardrails": {
+    "minimum_non_technical_general_office_business_education_personal_ratio": 0.6,
+    "maximum_software_it_plus_data_analytics_ratio": 0.2,
+    "excluded_suite_types": [
+      "adapter_conformance",
+      "security_adversarial"
+    ]
+  },
+  "separate_planes_not_credited": [
+    "method_routing",
+    "adapter_conformance",
+    "dynamic_live",
+    "external_side_effect",
+    "additional_locale",
+    "additional_modality"
+  ],
+  "release_gates": [
+    "GATE-01-source-pinned",
+    "GATE-02-core-count",
+    "GATE-03-core-partitions",
+    "GATE-04-realizations",
+    "GATE-05-intent-quotas",
+    "GATE-06-domain-quotas",
+    "GATE-07-naturalistic",
+    "GATE-10-high-stakes",
+    "GATE-11-integrity",
+    "GATE-12-release-manifest"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema": "realworld-prompt-kit.suite-manifest-template/1.0.0",
+  "template": true,
+  "suite_id": "suite.adapter-conformance.${ADAPTER_ID}.v1",
+  "version": "1.0.0",
+  "status": "planned",
+  "suite_type": "adapter_conformance",
+  "coverage_plane": "adapter_conformance",
+  "visibility": "${public_or_private}",
+  "coverage_claim": "none_until_artifacts_present",
+  "purpose": "Harness-neutral adapter/plugin/tool conformance suite; never counted as broad-core task coverage.",
+  "source_catalog": "/Users/parker/Documents/OpenSocrates/evaluation/test-prompt-kit/catalog.json",
+  "adapter": {
+    "id": "${ADAPTER_ID}",
+    "version": "${ADAPTER_VERSION}",
+    "host": "${HARNESS_OR_PLUGIN_HOST}",
+    "source_revision": "${ADAPTER_SOURCE_REVISION}"
+  },
+  "expected_counts": {
+    "per_adapter": {
+      "cb8_blocks": 12,
+      "semantic_scenario_assignments": 96
+    },
+    "tools": "${8 * read_only_tools + 8 * reversible_mutating_tools + 8 * external_or_destructive_tools}",
+    "workflows": "${32 * multi_tool_workflow_families}",
+    "modalities": "${16 * modality_adapters}",
+    "total_formula": "96*adapter_count + 8*read_only_tools + 8*reversible_mutating_tools + 8*external_or_destructive_tools + 32*multi_tool_workflow_families + 16*modality_adapters"
+  },
+  "contracts": [
+    "discovery_install",
+    "activation_identity_receipt",
+    "routing_participation",
+    "request_response_schema",
+    "permission_approval",
+    "filesystem_data_boundary",
+    "state_resume",
+    "timeout_retry_idempotency",
+    "concurrency_cancel",
+    "observability_privacy",
+    "version_compatibility",
+    "uninstall_rollback"
+  ],
+  "tool_quotas": {
+    "read_only": {
+      "cb8_blocks": 1,
+      "semantic_scenario_assignments": 8
+    },
+    "reversible_mutating": {
+      "additional_cb8_blocks": 1,
+      "semantic_scenario_assignments": 8
+    },
+    "external_or_destructive": {
+      "additional_cb8_blocks": 1,
+      "semantic_scenario_assignments": 8
+    }
+  },
+  "workflow_quota": {
+    "cb8_blocks": 4,
+    "semantic_scenario_assignments": 32
+  },
+  "modality_quota": {
+    "cb8_blocks": 2,
+    "semantic_scenario_assignments": 16
+  },
+  "sandbox_policy": {
+    "required": true,
+    "approval_required_for_mutations": true,
+    "rollback_or_disposable_fixture_required": true,
+    "no_unexpected_external_side_effects": true
+  },
+  "round_trip_contract": {
+    "canonical_scenario_preserved": true,
+    "request_response_schema_preserved": true,
+    "adaptation_log_required_on_transform": true,
+    "run_record_required": true
+  },
+  "overlap_policy": {
+    "semantic_scenario_ids_may_be_reused": false,
+    "broad_core_credit": false,
+    "required_separate_suite_membership": true
+  },
+  "release_gates": [
+    "GATE-01-source-pinned",
+    "GATE-09-adapter",
+    "GATE-11-integrity"
+  ]
+}

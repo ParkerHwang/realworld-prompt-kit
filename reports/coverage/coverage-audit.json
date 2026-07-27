@@ -1,0 +1,298 @@
+{
+  "schema": "realworld-prompt-kit.coverage-audit/1.0.0",
+  "version": "1.0.0",
+  "audit_status": "requirements_only_unverified",
+  "coverage_claim_policy": "No v1 scenario or prompt coverage is claimed unless committed artifacts, manifests, and validation evidence prove it.",
+  "repository_observation": {
+    "repository": "ParkerHwang/realworld-prompt-kit",
+    "base_branch": "origin/main",
+    "base_commit": "f8dc8d9ba376c64e44613ebcc0b9119a2530064f",
+    "audit_branch": "codex/coverage-audit",
+    "v1_catalog_in_repo": false,
+    "v1_manifest_in_repo": false,
+    "v1_scenario_directory_in_repo": false,
+    "existing_v0_1_semantic_scenario_files": 8,
+    "existing_v0_1_is_not_v1_evidence": true
+  },
+  "observed_v1_coverage": {
+    "semantic_scenarios": 0,
+    "cb8_blocks": 0,
+    "prompt_realizations": 0,
+    "task_intent_quota_rows": 0,
+    "domain_quota_rows": 0,
+    "naturalistic_profile_rows": 0,
+    "method_routing_rows": 0,
+    "adapter_conformance_rows": 0,
+    "claimable_coverage": false
+  },
+  "planned_core": {
+    "semantic_scenarios": 880,
+    "cb8_blocks": 110,
+    "prompt_realizations": 3520,
+    "worker_partition_scenarios": [
+      {
+        "partition_id": "core-worker-1",
+        "required_semantic_scenarios": 224,
+        "observed_semantic_scenarios": 0,
+        "status": "not_met"
+      },
+      {
+        "partition_id": "core-worker-2",
+        "required_semantic_scenarios": 320,
+        "observed_semantic_scenarios": 0,
+        "status": "not_met"
+      },
+      {
+        "partition_id": "core-worker-3",
+        "required_semantic_scenarios": 336,
+        "observed_semantic_scenarios": 0,
+        "status": "not_met"
+      }
+    ]
+  },
+  "quota_findings": [
+    {
+      "id": "GAP-CORE-880",
+      "severity": "blocker",
+      "scope": "broad_core",
+      "requirement": "880 semantic scenarios in 110 CB8 blocks",
+      "required": 880,
+      "observed": 0,
+      "status": "not_met",
+      "note": "origin/main has only the earlier v0.1 eight-scenario pack; it is not v1 evidence."
+    },
+    {
+      "id": "GAP-CORE-3520",
+      "severity": "blocker",
+      "scope": "broad_core",
+      "requirement": "four realizations per core scenario",
+      "required": 3520,
+      "observed": 0,
+      "status": "not_met",
+      "note": "No v1 canonical/naturalistic realization artifacts are present."
+    },
+    {
+      "id": "GAP-NATURALISTIC-24",
+      "severity": "blocker",
+      "scope": "broad_core_overlay",
+      "requirement": "24 naturalistic profiles with exact 16/8 assignment quotas",
+      "required_profiles": 24,
+      "observed_profiles": 0,
+      "status": "not_met",
+      "note": "Profiles are requirements only; no v1 scenarios are present."
+    },
+    {
+      "id": "GAP-ROUTING-METHOD",
+      "severity": "blocker",
+      "scope": "method_routing",
+      "requirement": "48 methods × 6 CB8 = 2,304 assignment cells",
+      "required_methods": 48,
+      "required_assignment_cells": 2304,
+      "observed": 0,
+      "status": "not_met",
+      "note": "Method routing is a separate suite; broad core overlap is not routing evidence."
+    },
+    {
+      "id": "GAP-ROUTING-FAMILY",
+      "severity": "blocker",
+      "scope": "method_routing",
+      "requirement": "12 families × 3 CB8 = 288 assignment cells",
+      "required_families": 12,
+      "required_assignment_cells": 288,
+      "observed": 0,
+      "status": "not_met",
+      "note": "Family-level routing/handoff evidence is not in the broad core."
+    },
+    {
+      "id": "GAP-ROUTING-EDGE",
+      "severity": "blocker",
+      "scope": "method_routing",
+      "requirement": "One CB8 per documented confusable edge",
+      "required_edges": null,
+      "observed": 0,
+      "status": "unresolved",
+      "note": "The verified method catalog has no documented edge list. Do not claim edge coverage; resolve an external edge registry first."
+    },
+    {
+      "id": "GAP-ROUTING-NOROUTE",
+      "severity": "blocker",
+      "scope": "method_routing",
+      "requirement": "6 CB8 / 48 assignments for no-route general questions",
+      "required": 48,
+      "observed": 0,
+      "status": "not_met",
+      "note": "No-route is a separate non-overrouting release gate."
+    },
+    {
+      "id": "GAP-ADAPTER-CONTRACTS",
+      "severity": "blocker",
+      "scope": "adapter_conformance",
+      "requirement": "96 assignments per adapter across 12 contracts",
+      "required_formula": "96 × adapter_count",
+      "observed": 0,
+      "status": "not_met",
+      "note": "Adapter IDs and harness evidence are absent from origin/main."
+    },
+    {
+      "id": "GAP-ADAPTER-TOOLS",
+      "severity": "blocker",
+      "scope": "adapter_conformance",
+      "requirement": "8 additional assignments per applicable tool plus 32 per multi-tool workflow family",
+      "required_formula": "8×read_only + 8×reversible_mutating + 8×external_or_destructive + 32×workflow_family + 16×modality_adapter",
+      "observed": 0,
+      "status": "not_met",
+      "note": "Tool/workflow/modality inventory is unresolved."
+    },
+    {
+      "id": "GAP-HIGH-STAKES-REVIEW",
+      "severity": "high",
+      "scope": "regulated_domains",
+      "requirement": "Reviewer, evidence, uncertainty, escalation/refusal gates for seven regulated domains",
+      "required": 7,
+      "observed": 0,
+      "status": "not_met",
+      "note": "Three authoring partitions can draft these cases but cannot by themselves provide independent domain review."
+    }
+  ],
+  "three_core_worker_partition_limits": [
+    {
+      "requirement": "task_intent_and_base_domain_assignments",
+      "can_be_authored_by_three_partitions": true,
+      "needs_separate_suite": false,
+      "condition": "Partition union must be disjoint, exact, and validated."
+    },
+    {
+      "requirement": "naturalistic_synthetic_overlay",
+      "can_be_authored_by_three_partitions": true,
+      "needs_separate_suite": false,
+      "condition": "Profile quotas and four-realization contracts must be validated."
+    },
+    {
+      "requirement": "opensocrates_per_method",
+      "can_be_satisfied_solely_by_three_partitions": false,
+      "needs_separate_suite": true,
+      "reason": "Requires per-method routing receipts and positive/negative/contraindicated/hold/handoff blocks."
+    },
+    {
+      "requirement": "opensocrates_per_family",
+      "can_be_satisfied_solely_by_three_partitions": false,
+      "needs_separate_suite": true,
+      "reason": "Requires family-level routing and handoff evidence."
+    },
+    {
+      "requirement": "opensocrates_confusable_edges",
+      "can_be_satisfied_solely_by_three_partitions": false,
+      "needs_separate_suite": true,
+      "reason": "No edge registry is present; external registry and edge-specific CB8s are required."
+    },
+    {
+      "requirement": "opensocrates_no_route_general",
+      "can_be_satisfied_solely_by_three_partitions": false,
+      "needs_separate_suite": true,
+      "reason": "Requires a no-route/non-overrouting control pack."
+    },
+    {
+      "requirement": "adapter_contracts",
+      "can_be_satisfied_solely_by_three_partitions": false,
+      "needs_separate_suite": true,
+      "reason": "Requires real adapter/harness behavior, receipts, run records, and rollback evidence."
+    },
+    {
+      "requirement": "tool_and_workflow_contracts",
+      "can_be_satisfied_solely_by_three_partitions": false,
+      "needs_separate_suite": true,
+      "reason": "Requires tool inventory, sandboxed side effects, concurrency/cancel, and multi-tool workflow evidence."
+    },
+    {
+      "requirement": "dynamic_live_and_external_side_effect_overlays",
+      "can_be_satisfied_solely_by_three_partitions": false,
+      "needs_separate_suite": true,
+      "reason": "Requires live provenance or sandboxed external-state evidence."
+    },
+    {
+      "requirement": "regulated_domain_release_review",
+      "can_be_satisfied_solely_by_three_partitions": false,
+      "needs_separate_suite": false,
+      "reason": "Authoring can be partitioned, but independent domain review is a release gate."
+    }
+  ],
+  "unresolved_inputs": [
+    {
+      "id": "UNRESOLVED-CATALOG-REVISION",
+      "status": "required",
+      "note": "Record exact catalog content_revision and schema hashes used for release."
+    },
+    {
+      "id": "UNRESOLVED-EDGE-REGISTRY",
+      "status": "required_if_edge_coverage_claimed",
+      "note": "No confusable-edge list is documented in the verified method catalog."
+    },
+    {
+      "id": "UNRESOLVED-ADAPTER-INVENTORY",
+      "status": "required",
+      "note": "Resolve adapter IDs, tool classes, workflow families, and modality adapters before calculating conformance totals."
+    }
+  ],
+  "release_gates": [
+    {
+      "id": "GATE-01-source-pinned",
+      "pass_condition": "Pin catalog, schemas, method catalog revision, and an edge registry if edge coverage is claimed.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-02-core-count",
+      "pass_condition": "Exactly 880 unique v1 scenario IDs across exactly 110 CB8 blocks.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-03-core-partitions",
+      "pass_condition": "Three partitions are disjoint and complete: 224 + 320 + 336 = 880.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-04-realizations",
+      "pass_condition": "Every core scenario has four realizations; total is 3,520.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-05-intent-quotas",
+      "pass_condition": "All 21 task-intent quotas and CB8 block sets pass exact-count and uniqueness checks.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-06-domain-quotas",
+      "pass_condition": "All 28 domain assignments and composition guardrails pass with explicit primary/secondary tags.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-07-naturalistic",
+      "pass_condition": "All 24 profiles pass exact 16/8 quotas, source policy, and semantic-equivalence checks.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-08-routing",
+      "pass_condition": "All 48 methods and 12 families pass; no-route passes; edge coverage is unclaimed without a registry.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-09-adapter",
+      "pass_condition": "Every adapter/tool/workflow/modality quota and all 12 named contracts pass.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-10-high-stakes",
+      "pass_condition": "Seven regulated domains have reviewer, evidence, uncertainty, and escalation/refusal evidence.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-11-integrity",
+      "pass_condition": "Schema, identity, hash, split, leakage, privacy, and deterministic-scoring checks pass.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-12-release-manifest",
+      "pass_condition": "Stable-core manifest points only to present artifacts and reports observed counts.",
+      "status": "not_met"
+    }
+  ]
+}

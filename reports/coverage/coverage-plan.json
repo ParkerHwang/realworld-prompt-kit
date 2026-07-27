@@ -1,0 +1,1399 @@
+{
+  "schema": "realworld-prompt-kit.coverage-plan/1.0.0",
+  "version": "1.0.0",
+  "audit_status": "requirements_only_unverified",
+  "coverage_claim_policy": "No v1 scenario or prompt coverage is claimed unless committed artifacts, manifests, and validation evidence prove it.",
+  "source_basis": {
+    "catalog_path": "/Users/parker/Documents/OpenSocrates/evaluation/test-prompt-kit/catalog.json",
+    "method_catalog_path": "/Users/parker/Documents/OpenSocrates/content/catalog.yaml",
+    "source_thread_id": "019f9d99-7fd5-7230-831a-a90e902429c2",
+    "authoritative_basis_available": true,
+    "local_catalog_available": false,
+    "schemas_available_locally": false,
+    "origin_main_contains_v1_catalog": false
+  },
+  "counting_unit": {
+    "id": "CB8",
+    "scenarios_per_block": 8,
+    "core_semantic_scenarios": 880,
+    "core_cb8_blocks": 110,
+    "prompt_realizations_per_core_scenario": 4,
+    "core_prompt_realizations": 3520,
+    "realization_pairs": [
+      "ko-KR.canonical",
+      "ko-KR.naturalistic_freeform",
+      "en-US.canonical",
+      "en-US.naturalistic_freeform"
+    ],
+    "translations_count_as_new_scenarios": false,
+    "naturalistic_realizations_count_as_new_scenarios": false,
+    "intent_domain_method_assignments_are_overlays": true
+  },
+  "core_worker_partitions": [
+    {
+      "partition_id": "core-worker-1",
+      "ordinal": 1,
+      "intent_index_range": "1-7",
+      "intent_ids": [
+        "information_retrieval",
+        "extraction_parsing",
+        "summarization_synthesis",
+        "transformation_rewriting",
+        "explanation_teaching",
+        "practical_writing",
+        "creative_ideation"
+      ],
+      "required_cb8_blocks": 28,
+      "required_semantic_scenarios": 224,
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "partition_id": "core-worker-2",
+      "ordinal": 2,
+      "intent_index_range": "8-14",
+      "intent_ids": [
+        "classification_organization",
+        "qualitative_analysis",
+        "quantitative_formal_analysis",
+        "diagnosis_root_cause",
+        "forecasting_scenario_risk",
+        "evaluation_review_audit",
+        "decision_recommendation"
+      ],
+      "required_cb8_blocks": 40,
+      "required_semantic_scenarios": 320,
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "partition_id": "core-worker-3",
+      "ordinal": 3,
+      "intent_index_range": "15-21",
+      "intent_ids": [
+        "planning_strategy_design",
+        "communication_collaboration_negotiation",
+        "one_off_tool_execution",
+        "automation_integration",
+        "operations_monitoring_improvement",
+        "coaching_conversational_support",
+        "ai_agent_meta"
+      ],
+      "required_cb8_blocks": 42,
+      "required_semantic_scenarios": 336,
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    }
+  ],
+  "task_intents": [
+    {
+      "id": "information_retrieval",
+      "display_name_ko": "정보 검색·회수",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "input_robustness",
+        "freshness_source_conflict"
+      ],
+      "coverage_blocks": 4,
+      "semantic_scenario_assignments": 32,
+      "ordinal": 1,
+      "partition_id": "core-worker-1",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "extraction_parsing",
+      "display_name_ko": "추출·파싱",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "input_robustness"
+      ],
+      "coverage_blocks": 3,
+      "semantic_scenario_assignments": 24,
+      "ordinal": 2,
+      "partition_id": "core-worker-1",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "summarization_synthesis",
+      "display_name_ko": "요약·종합",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "input_robustness",
+        "audience_context_shift"
+      ],
+      "coverage_blocks": 4,
+      "semantic_scenario_assignments": 32,
+      "ordinal": 3,
+      "partition_id": "core-worker-1",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "transformation_rewriting",
+      "display_name_ko": "변환·재작성",
+      "blocks": [
+        "canonical",
+        "format_semantic_preservation",
+        "input_robustness",
+        "audience_context_shift"
+      ],
+      "coverage_blocks": 4,
+      "semantic_scenario_assignments": 32,
+      "ordinal": 4,
+      "partition_id": "core-worker-1",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "explanation_teaching",
+      "display_name_ko": "설명·교육",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "input_robustness",
+        "audience_context_shift"
+      ],
+      "coverage_blocks": 4,
+      "semantic_scenario_assignments": 32,
+      "ordinal": 5,
+      "partition_id": "core-worker-1",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "practical_writing",
+      "display_name_ko": "실무 문서 작성",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "format_semantic_preservation",
+        "audience_context_shift",
+        "verification_uncertainty"
+      ],
+      "coverage_blocks": 5,
+      "semantic_scenario_assignments": 40,
+      "ordinal": 6,
+      "partition_id": "core-worker-1",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "creative_ideation",
+      "display_name_ko": "창의적 발상",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "creativity_diversity",
+        "audience_context_shift"
+      ],
+      "coverage_blocks": 4,
+      "semantic_scenario_assignments": 32,
+      "ordinal": 7,
+      "partition_id": "core-worker-1",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "classification_organization",
+      "display_name_ko": "분류·정리",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "input_robustness",
+        "multi_criteria_boundary",
+        "verification_uncertainty"
+      ],
+      "coverage_blocks": 5,
+      "semantic_scenario_assignments": 40,
+      "ordinal": 8,
+      "partition_id": "core-worker-2",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "qualitative_analysis",
+      "display_name_ko": "정성 분석",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "input_robustness",
+        "verification_uncertainty",
+        "tradeoff_stakes"
+      ],
+      "coverage_blocks": 5,
+      "semantic_scenario_assignments": 40,
+      "ordinal": 9,
+      "partition_id": "core-worker-2",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "quantitative_formal_analysis",
+      "display_name_ko": "정량·형식 분석",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "input_robustness",
+        "format_semantic_preservation",
+        "verification_uncertainty",
+        "tradeoff_stakes"
+      ],
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "ordinal": 10,
+      "partition_id": "core-worker-2",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "diagnosis_root_cause",
+      "display_name_ko": "진단·근본원인",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "input_robustness",
+        "competing_hypotheses",
+        "verification_uncertainty",
+        "tradeoff_stakes"
+      ],
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "ordinal": 11,
+      "partition_id": "core-worker-2",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "forecasting_scenario_risk",
+      "display_name_ko": "예측·시나리오·위험",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "input_robustness",
+        "forecast_reference_class",
+        "verification_uncertainty",
+        "tradeoff_stakes"
+      ],
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "ordinal": 12,
+      "partition_id": "core-worker-2",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "evaluation_review_audit",
+      "display_name_ko": "평가·리뷰·감사",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "input_robustness",
+        "multi_criteria_boundary",
+        "verification_uncertainty",
+        "tradeoff_stakes"
+      ],
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "ordinal": 13,
+      "partition_id": "core-worker-2",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "decision_recommendation",
+      "display_name_ko": "의사결정·추천",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "input_robustness",
+        "audience_context_shift",
+        "verification_uncertainty",
+        "tradeoff_stakes"
+      ],
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "ordinal": 14,
+      "partition_id": "core-worker-2",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "planning_strategy_design",
+      "display_name_ko": "계획·전략·설계",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "input_robustness",
+        "stakeholder_conflict",
+        "verification_uncertainty",
+        "tradeoff_stakes"
+      ],
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "ordinal": 15,
+      "partition_id": "core-worker-3",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "communication_collaboration_negotiation",
+      "display_name_ko": "소통·협업·협상",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "audience_context_shift",
+        "stakeholder_conflict",
+        "tradeoff_stakes"
+      ],
+      "coverage_blocks": 5,
+      "semantic_scenario_assignments": 40,
+      "ordinal": 16,
+      "partition_id": "core-worker-3",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "one_off_tool_execution",
+      "display_name_ko": "일회성 도구 실행",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "input_robustness",
+        "format_semantic_preservation",
+        "verification_uncertainty",
+        "tradeoff_stakes",
+        "execution_failure_recovery"
+      ],
+      "coverage_blocks": 7,
+      "semantic_scenario_assignments": 56,
+      "ordinal": 17,
+      "partition_id": "core-worker-3",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "automation_integration",
+      "display_name_ko": "자동화·통합",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "input_robustness",
+        "long_running_state",
+        "verification_uncertainty",
+        "tradeoff_stakes",
+        "execution_failure_recovery"
+      ],
+      "coverage_blocks": 7,
+      "semantic_scenario_assignments": 56,
+      "ordinal": 18,
+      "partition_id": "core-worker-3",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "operations_monitoring_improvement",
+      "display_name_ko": "운영·모니터링·개선",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "input_robustness",
+        "long_running_state",
+        "verification_uncertainty",
+        "execution_failure_recovery"
+      ],
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "ordinal": 19,
+      "partition_id": "core-worker-3",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "coaching_conversational_support",
+      "display_name_ko": "대화·코칭·지원",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "audience_context_shift",
+        "human_boundary",
+        "tradeoff_stakes"
+      ],
+      "coverage_blocks": 5,
+      "semantic_scenario_assignments": 40,
+      "ordinal": 20,
+      "partition_id": "core-worker-3",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "ai_agent_meta",
+      "display_name_ko": "AI·agent meta-work",
+      "blocks": [
+        "canonical",
+        "boundary_ambiguity",
+        "input_robustness",
+        "meta_evaluation",
+        "verification_uncertainty",
+        "execution_failure_recovery"
+      ],
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "ordinal": 21,
+      "partition_id": "core-worker-3",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    }
+  ],
+  "domains": [
+    {
+      "id": "general_knowledge",
+      "class": "broad_common",
+      "display_name_ko": "일반 지식·생활 정보",
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "office_admin",
+      "class": "broad_common",
+      "display_name_ko": "사무·행정",
+      "coverage_blocks": 8,
+      "semantic_scenario_assignments": 64,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "communication_meetings",
+      "class": "broad_common",
+      "display_name_ko": "회의·업무 커뮤니케이션",
+      "coverage_blocks": 8,
+      "semantic_scenario_assignments": 64,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "project_product_management",
+      "class": "broad_common",
+      "display_name_ko": "프로젝트·제품 관리",
+      "coverage_blocks": 8,
+      "semantic_scenario_assignments": 64,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "strategy_business_operations",
+      "class": "broad_common",
+      "display_name_ko": "전략·사업 운영",
+      "coverage_blocks": 8,
+      "semantic_scenario_assignments": 64,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "sales_marketing",
+      "class": "broad_common",
+      "display_name_ko": "영업·마케팅",
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "customer_support_success",
+      "class": "broad_common",
+      "display_name_ko": "고객 지원·성공",
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "education_research",
+      "class": "broad_common",
+      "display_name_ko": "교육·학습·연구",
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "personal_everyday",
+      "class": "broad_common",
+      "display_name_ko": "개인·일상",
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "software_it",
+      "class": "broad_common",
+      "display_name_ko": "소프트웨어·IT",
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "data_analytics",
+      "class": "broad_common",
+      "display_name_ko": "데이터·분석",
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "creative_media",
+      "class": "broad_common",
+      "display_name_ko": "창작·미디어",
+      "coverage_blocks": 4,
+      "semantic_scenario_assignments": 32,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "health_care",
+      "class": "regulated_high_stakes",
+      "display_name_ko": "건강·의료",
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "legal_compliance",
+      "class": "regulated_high_stakes",
+      "display_name_ko": "법률·컴플라이언스",
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "finance_accounting_tax",
+      "class": "regulated_high_stakes",
+      "display_name_ko": "재무·회계·세무",
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "hr_people_labor",
+      "class": "regulated_high_stakes",
+      "display_name_ko": "인사·노무",
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "privacy_security",
+      "class": "regulated_high_stakes",
+      "display_name_ko": "개인정보·보안",
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "government_public_policy",
+      "class": "regulated_high_stakes",
+      "display_name_ko": "정부·공공정책",
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "safety_emergency",
+      "class": "regulated_high_stakes",
+      "display_name_ko": "안전·비상 대응",
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "manufacturing_quality",
+      "class": "industry_specialist",
+      "display_name_ko": "제조·품질",
+      "coverage_blocks": 3,
+      "semantic_scenario_assignments": 24,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "supply_chain_logistics",
+      "class": "industry_specialist",
+      "display_name_ko": "공급망·물류",
+      "coverage_blocks": 3,
+      "semantic_scenario_assignments": 24,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "construction_real_estate",
+      "class": "industry_specialist",
+      "display_name_ko": "건설·부동산",
+      "coverage_blocks": 3,
+      "semantic_scenario_assignments": 24,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "energy_environment",
+      "class": "industry_specialist",
+      "display_name_ko": "에너지·환경",
+      "coverage_blocks": 3,
+      "semantic_scenario_assignments": 24,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "retail_ecommerce",
+      "class": "industry_specialist",
+      "display_name_ko": "유통·이커머스",
+      "coverage_blocks": 3,
+      "semantic_scenario_assignments": 24,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "travel_hospitality",
+      "class": "industry_specialist",
+      "display_name_ko": "여행·호스피탈리티",
+      "coverage_blocks": 3,
+      "semantic_scenario_assignments": 24,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "science_rd",
+      "class": "industry_specialist",
+      "display_name_ko": "과학·R&D",
+      "coverage_blocks": 3,
+      "semantic_scenario_assignments": 24,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "nonprofit_social_impact",
+      "class": "industry_specialist",
+      "display_name_ko": "비영리·사회적 영향",
+      "coverage_blocks": 3,
+      "semantic_scenario_assignments": 24,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    },
+    {
+      "id": "agriculture_food",
+      "class": "industry_specialist",
+      "display_name_ko": "농업·식품",
+      "coverage_blocks": 3,
+      "semantic_scenario_assignments": 24,
+      "counting_mode": "overlay_assignment",
+      "observed_semantic_scenarios": 0,
+      "status": "not_met"
+    }
+  ],
+  "naturalistic_profiles": {
+    "counting_rule": "Naturalistic realizations share scenario_id with the canonical pair and do not increase semantic scenario breadth.",
+    "per_task_intent": {
+      "coverage_blocks": 2,
+      "semantic_scenario_assignments": 16,
+      "blocks": [
+        "inferable_freeform",
+        "clarification_boundary"
+      ]
+    },
+    "profiles": [
+      {
+        "id": "terse_fragment",
+        "family": "compression_omission",
+        "coverage_blocks": 2,
+        "semantic_scenario_assignments": 16
+      },
+      {
+        "id": "implicit_goal_or_output",
+        "family": "compression_omission",
+        "coverage_blocks": 2,
+        "semantic_scenario_assignments": 16
+      },
+      {
+        "id": "anaphora_prior_context",
+        "family": "compression_omission",
+        "coverage_blocks": 2,
+        "semantic_scenario_assignments": 16
+      },
+      {
+        "id": "missing_decisive_detail",
+        "family": "compression_omission",
+        "coverage_blocks": 2,
+        "semantic_scenario_assignments": 16
+      },
+      {
+        "id": "rambling_stream",
+        "family": "discourse_structure",
+        "coverage_blocks": 2,
+        "semantic_scenario_assignments": 16
+      },
+      {
+        "id": "multi_intent_mixed_priority",
+        "family": "discourse_structure",
+        "coverage_blocks": 2,
+        "semantic_scenario_assignments": 16
+      },
+      {
+        "id": "self_correction_scope_shift",
+        "family": "discourse_structure",
+        "coverage_blocks": 2,
+        "semantic_scenario_assignments": 16
+      },
+      {
+        "id": "interleaved_instruction_and_paste",
+        "family": "discourse_structure",
+        "coverage_blocks": 2,
+        "semantic_scenario_assignments": 16
+      },
+      {
+        "id": "typo_spacing_punctuation",
+        "family": "surface_language",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      },
+      {
+        "id": "colloquial_slang_dialect",
+        "family": "surface_language",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      },
+      {
+        "id": "code_switching_jargon",
+        "family": "surface_language",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      },
+      {
+        "id": "speech_to_text_disfluency",
+        "family": "surface_language",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      },
+      {
+        "id": "ocr_copy_format_noise",
+        "family": "surface_language",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      },
+      {
+        "id": "emoji_shorthand",
+        "family": "surface_language",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      },
+      {
+        "id": "message_burst",
+        "family": "conversation_state",
+        "coverage_blocks": 2,
+        "semantic_scenario_assignments": 16
+      },
+      {
+        "id": "followup_without_restatement",
+        "family": "conversation_state",
+        "coverage_blocks": 2,
+        "semantic_scenario_assignments": 16
+      },
+      {
+        "id": "mid_task_change",
+        "family": "conversation_state",
+        "coverage_blocks": 2,
+        "semantic_scenario_assignments": 16
+      },
+      {
+        "id": "resume_after_interruption",
+        "family": "conversation_state",
+        "coverage_blocks": 2,
+        "semantic_scenario_assignments": 16
+      },
+      {
+        "id": "indirect_polite_request",
+        "family": "social_affective",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      },
+      {
+        "id": "frustration_urgency_emotion",
+        "family": "social_affective",
+        "coverage_blocks": 2,
+        "semantic_scenario_assignments": 16
+      },
+      {
+        "id": "hedged_exploratory_request",
+        "family": "social_affective",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      },
+      {
+        "id": "contradictory_constraints",
+        "family": "conflict_safety",
+        "coverage_blocks": 2,
+        "semantic_scenario_assignments": 16
+      },
+      {
+        "id": "implicit_permission_or_authority",
+        "family": "conflict_safety",
+        "coverage_blocks": 2,
+        "semantic_scenario_assignments": 16
+      },
+      {
+        "id": "untrusted_embedded_instruction",
+        "family": "conflict_safety",
+        "coverage_blocks": 2,
+        "semantic_scenario_assignments": 16
+      }
+    ],
+    "source_policy": {
+      "controlled_block": "controlled_synthetic_naturalistic",
+      "authentic_block": "private_rights_verified_authentic_or_real_derived",
+      "verbatim_real_visibility": [
+        "private",
+        "restricted"
+      ],
+      "require_rights_record_for_real_or_real_derived": true,
+      "require_privacy_review_for_real_or_real_derived": true,
+      "allow_unconsented_product_conversation_ingestion": false
+    }
+  },
+  "suite_types": [
+    {
+      "id": "authoring_dev",
+      "role": "drafting, fixture construction, and linter feedback",
+      "coverage_plane": "authoring",
+      "counts_toward_stable_core": false,
+      "separate_release_gate": true
+    },
+    {
+      "id": "stable_core",
+      "role": "versioned broad user-value release",
+      "coverage_plane": "broad_core",
+      "counts_toward_stable_core": true,
+      "separate_release_gate": true
+    },
+    {
+      "id": "private_holdout",
+      "role": "hidden or rights-restricted evaluation",
+      "coverage_plane": "holdout",
+      "counts_toward_stable_core": false,
+      "separate_release_gate": true
+    },
+    {
+      "id": "rotating_challenge",
+      "role": "rotating challenge and method-routing evaluation",
+      "coverage_plane": "method_routing",
+      "counts_toward_stable_core": false,
+      "separate_release_gate": true
+    },
+    {
+      "id": "dynamic_live",
+      "role": "freshness- or external-state-dependent evaluation",
+      "coverage_plane": "dynamic_live",
+      "counts_toward_stable_core": false,
+      "separate_release_gate": true
+    },
+    {
+      "id": "adapter_conformance",
+      "role": "harness/plugin/tool adapter contract evaluation",
+      "coverage_plane": "adapter_conformance",
+      "counts_toward_stable_core": false,
+      "separate_release_gate": true
+    },
+    {
+      "id": "security_adversarial",
+      "role": "prompt-injection, unsafe-action, and boundary adversarial evaluation",
+      "coverage_plane": "security",
+      "counts_toward_stable_core": false,
+      "separate_release_gate": true
+    },
+    {
+      "id": "contamination_canary",
+      "role": "contamination and memorization detection",
+      "coverage_plane": "contamination",
+      "counts_toward_stable_core": false,
+      "separate_release_gate": true
+    },
+    {
+      "id": "retired_archive",
+      "role": "immutable retired material for audit history",
+      "coverage_plane": "archive",
+      "counts_toward_stable_core": false,
+      "separate_release_gate": false
+    }
+  ],
+  "opensocrates_coverage": {
+    "source_path": "/Users/parker/Documents/OpenSocrates/content/catalog.yaml",
+    "catalog_reference": "../../content/catalog.yaml",
+    "top_level_keys": [
+      "schema",
+      "content_revision",
+      "families",
+      "methods"
+    ],
+    "content_revision": null,
+    "method_count": 48,
+    "method_ids": [
+      "boundary-critique",
+      "conceptual-analysis",
+      "first-principles",
+      "socratic-questioning",
+      "argument-mapping",
+      "logic-tree",
+      "mece",
+      "pyramid-principle",
+      "abduction",
+      "deduction",
+      "defeasible-reasoning",
+      "induction",
+      "bayesian-updating",
+      "evidence-hierarchy",
+      "falsificationism",
+      "triangulation",
+      "causal-reasoning",
+      "root-cause-analysis",
+      "systems-thinking",
+      "causal-loop-diagramming",
+      "critical-thinking",
+      "failure-mode-effects-analysis",
+      "premortem-analysis",
+      "steelman-reasoning",
+      "design-thinking",
+      "lateral-thinking",
+      "morphological-analysis",
+      "triz",
+      "deontic-reasoning",
+      "jobs-to-be-done",
+      "pragmatism",
+      "reflective-equilibrium",
+      "cost-benefit-analysis",
+      "decision-tree-analysis",
+      "trade-off-analysis",
+      "value-of-information",
+      "reference-class-forecasting",
+      "robust-decision-making",
+      "scenario-planning",
+      "sensitivity-analysis",
+      "assumption-mapping",
+      "double-loop-learning",
+      "lean-startup",
+      "pdca-cycle",
+      "cynefin-framework",
+      "game-theory",
+      "pestel-analysis",
+      "stakeholder-analysis"
+    ],
+    "family_count": 12,
+    "family_ids": [
+      "framing",
+      "structuring",
+      "logical_reasoning",
+      "evidence_verification",
+      "causal_systems",
+      "critical_counterexample",
+      "creative_reframing",
+      "values_purpose",
+      "decision_optimization",
+      "future_uncertainty",
+      "experiment_learning",
+      "strategy_actors"
+    ],
+    "confusable_edge_registry": {
+      "present": false,
+      "edge_ids": null,
+      "edge_count": null,
+      "release_gate": "Resolve and pin an external documented confusable-edge registry before claiming edge coverage."
+    },
+    "per_method": {
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48,
+      "blocks": [
+        {
+          "id": "explicit_positive",
+          "cb8": 1,
+          "semantic_scenarios": 8
+        },
+        {
+          "id": "implicit_naturalistic_positive",
+          "cb8": 1,
+          "semantic_scenarios": 8
+        },
+        {
+          "id": "nearest_neighbor_negative",
+          "cb8": 1,
+          "semantic_scenarios": 8
+        },
+        {
+          "id": "contraindicated",
+          "cb8": 1,
+          "semantic_scenarios": 8
+        },
+        {
+          "id": "insufficient_evidence_hold_or_clarify",
+          "cb8": 1,
+          "semantic_scenarios": 8
+        },
+        {
+          "id": "complement_handoff_multimethod",
+          "cb8": 1,
+          "semantic_scenarios": 8
+        }
+      ]
+    },
+    "per_family": {
+      "coverage_blocks": 3,
+      "semantic_scenario_assignments": 24,
+      "blocks": [
+        {
+          "id": "family_only_routing",
+          "cb8": 1,
+          "semantic_scenarios": 8
+        },
+        {
+          "id": "primary_secondary_handoff",
+          "cb8": 1,
+          "semantic_scenarios": 8
+        },
+        {
+          "id": "multistage_completion",
+          "cb8": 1,
+          "semantic_scenarios": 8
+        }
+      ]
+    },
+    "per_documented_confusable_edge": {
+      "coverage_blocks": 1,
+      "semantic_scenario_assignments": 8,
+      "edge_count": null
+    },
+    "no_route_general": {
+      "coverage_blocks": 6,
+      "semantic_scenario_assignments": 48
+    },
+    "assignment_math": {
+      "per_method_assignment_cells": 2304,
+      "per_family_assignment_cells": 288,
+      "no_route_assignment_cells": 48,
+      "additive_to_880": false
+    }
+  },
+  "adapter_conformance": {
+    "contract_count": 12,
+    "contracts": [
+      {
+        "id": "discovery_install",
+        "minimum_behavior": "discover and install the adapter",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      },
+      {
+        "id": "activation_identity_receipt",
+        "minimum_behavior": "activate the adapter and emit an identity/activation receipt",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      },
+      {
+        "id": "routing_participation",
+        "minimum_behavior": "participate in routing without hiding route or abstention state",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      },
+      {
+        "id": "request_response_schema",
+        "minimum_behavior": "round-trip the canonical request and common response record",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      },
+      {
+        "id": "permission_approval",
+        "minimum_behavior": "enforce permission boundaries and explicit approval",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      },
+      {
+        "id": "filesystem_data_boundary",
+        "minimum_behavior": "preserve filesystem/data scope and boundary declarations",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      },
+      {
+        "id": "state_resume",
+        "minimum_behavior": "persist and resume resumable work",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      },
+      {
+        "id": "timeout_retry_idempotency",
+        "minimum_behavior": "make timeout, retry, and idempotency behavior observable",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      },
+      {
+        "id": "concurrency_cancel",
+        "minimum_behavior": "handle concurrency and cancellation without unsafe residue",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      },
+      {
+        "id": "observability_privacy",
+        "minimum_behavior": "emit useful, privacy-safe observability",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      },
+      {
+        "id": "version_compatibility",
+        "minimum_behavior": "declare and enforce version compatibility",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      },
+      {
+        "id": "uninstall_rollback",
+        "minimum_behavior": "uninstall or roll back without corrupting the host",
+        "coverage_blocks": 1,
+        "semantic_scenario_assignments": 8
+      }
+    ],
+    "per_adapter": {
+      "coverage_blocks": 12,
+      "semantic_scenario_assignments": 96
+    },
+    "per_read_only_tool": {
+      "coverage_blocks": 1,
+      "semantic_scenario_assignments": 8
+    },
+    "additional_per_reversible_mutating_tool": {
+      "coverage_blocks": 1,
+      "semantic_scenario_assignments": 8
+    },
+    "additional_per_external_or_destructive_tool": {
+      "coverage_blocks": 1,
+      "semantic_scenario_assignments": 8
+    },
+    "per_multi_tool_workflow_family": {
+      "coverage_blocks": 4,
+      "semantic_scenario_assignments": 32
+    },
+    "additional_per_modality_adapter": {
+      "coverage_blocks": 2,
+      "semantic_scenario_assignments": 16
+    },
+    "adapter_count": null,
+    "tool_counts": {
+      "read_only": null,
+      "reversible_mutating": null,
+      "external_or_destructive": null,
+      "multi_tool_workflow_families": null,
+      "modality_adapters": null
+    },
+    "total_formula": "96*adapter_count + 8*read_only_tools + 8*reversible_mutating_tools + 8*external_or_destructive_tools + 32*multi_tool_workflow_families + 16*modality_adapters",
+    "additive_to_880": false
+  },
+  "overlay_quotas": [
+    {
+      "id": "dynamic_live",
+      "coverage_blocks_per_applicable_domain": 2,
+      "semantic_scenario_assignments": 16,
+      "suite_routing": "separate_dynamic_live_plane"
+    },
+    {
+      "id": "external_side_effect",
+      "coverage_blocks_per_applicable_domain": 2,
+      "semantic_scenario_assignments": 16,
+      "suite_routing": "separate_external_side_effect_plane"
+    },
+    {
+      "id": "additional_locale",
+      "coverage_blocks_per_locale_sensitive_domain": 1,
+      "semantic_scenario_assignments": 8,
+      "suite_routing": "separate_locale_sensitive_plane"
+    },
+    {
+      "id": "additional_modality",
+      "coverage_blocks_per_modality_adapter": 2,
+      "semantic_scenario_assignments": 16,
+      "suite_routing": "separate_modality_adapter_plane"
+    }
+  ],
+  "composition_guardrails": {
+    "broad_user_value": {
+      "minimum_non_technical_general_office_business_education_personal_ratio": 0.6,
+      "maximum_software_it_plus_data_analytics_ratio": 0.2,
+      "excluded_suite_types": [
+        "adapter_conformance",
+        "security_adversarial"
+      ]
+    }
+  },
+  "coverage_separation": [
+    {
+      "requirement": "task_intent",
+      "broad_core_can_cover": true,
+      "semantic_scenario_ids_may_overlap": true,
+      "release_credit_condition": "Exact 21 primary_intent quotas and CB8 membership."
+    },
+    {
+      "requirement": "domain",
+      "broad_core_can_cover": true,
+      "semantic_scenario_ids_may_overlap": true,
+      "release_credit_condition": "Exact 28-domain quotas, primary/secondary tags, and composition guardrails."
+    },
+    {
+      "requirement": "naturalistic_profile",
+      "broad_core_can_cover": true,
+      "semantic_scenario_ids_may_overlap": true,
+      "release_credit_condition": "Four realizations per scenario, profile quotas, semantic equivalence, and source policy."
+    },
+    {
+      "requirement": "dynamic_live_overlay",
+      "broad_core_can_cover": false,
+      "semantic_scenario_ids_may_overlap": true,
+      "release_credit_condition": "Dedicated dynamic_live suite with pinned retrieval time, provenance, and drift policy."
+    },
+    {
+      "requirement": "external_side_effect_overlay",
+      "broad_core_can_cover": false,
+      "semantic_scenario_ids_may_overlap": true,
+      "release_credit_condition": "Dedicated sandbox/approved fixture and side-effect evidence."
+    },
+    {
+      "requirement": "additional_locale_or_modality",
+      "broad_core_can_cover": false,
+      "semantic_scenario_ids_may_overlap": true,
+      "release_credit_condition": "Locale/modality adapter and additional CB8 quota."
+    },
+    {
+      "requirement": "opensocrates_per_method",
+      "broad_core_can_cover": false,
+      "semantic_scenario_ids_may_overlap": true,
+      "release_credit_condition": "Separate routing receipts plus positive/negative/contraindicated/hold/handoff blocks."
+    },
+    {
+      "requirement": "opensocrates_per_family",
+      "broad_core_can_cover": false,
+      "semantic_scenario_ids_may_overlap": true,
+      "release_credit_condition": "Separate family-level routing and handoff evidence."
+    },
+    {
+      "requirement": "opensocrates_confusable_edge",
+      "broad_core_can_cover": false,
+      "semantic_scenario_ids_may_overlap": true,
+      "release_credit_condition": "External edge registry plus one CB8 per documented edge."
+    },
+    {
+      "requirement": "opensocrates_no_route_general",
+      "broad_core_can_cover": false,
+      "semantic_scenario_ids_may_overlap": true,
+      "release_credit_condition": "Separate no-route/non-overrouting control pack."
+    },
+    {
+      "requirement": "adapter_contracts_and_tools",
+      "broad_core_can_cover": false,
+      "semantic_scenario_ids_may_overlap": false,
+      "release_credit_condition": "Adapter-conformance runs, run records, sandbox, and rollback evidence."
+    }
+  ],
+  "release_gates": [
+    {
+      "id": "GATE-01-source-pinned",
+      "pass_condition": "Pin catalog, schemas, method catalog revision, and an edge registry if edge coverage is claimed.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-02-core-count",
+      "pass_condition": "Exactly 880 unique v1 scenario IDs across exactly 110 CB8 blocks.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-03-core-partitions",
+      "pass_condition": "Three partitions are disjoint and complete: 224 + 320 + 336 = 880.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-04-realizations",
+      "pass_condition": "Every core scenario has four realizations; total is 3,520.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-05-intent-quotas",
+      "pass_condition": "All 21 task-intent quotas and CB8 block sets pass exact-count and uniqueness checks.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-06-domain-quotas",
+      "pass_condition": "All 28 domain assignments and composition guardrails pass with explicit primary/secondary tags.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-07-naturalistic",
+      "pass_condition": "All 24 profiles pass exact 16/8 quotas, source policy, and semantic-equivalence checks.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-08-routing",
+      "pass_condition": "All 48 methods and 12 families pass; no-route passes; edge coverage is unclaimed without a registry.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-09-adapter",
+      "pass_condition": "Every adapter/tool/workflow/modality quota and all 12 named contracts pass.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-10-high-stakes",
+      "pass_condition": "Seven regulated domains have reviewer, evidence, uncertainty, and escalation/refusal evidence.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-11-integrity",
+      "pass_condition": "Schema, identity, hash, split, leakage, privacy, and deterministic-scoring checks pass.",
+      "status": "not_met"
+    },
+    {
+      "id": "GATE-12-release-manifest",
+      "pass_condition": "Stable-core manifest points only to present artifacts and reports observed counts.",
+      "status": "not_met"
+    }
+  ]
+}
