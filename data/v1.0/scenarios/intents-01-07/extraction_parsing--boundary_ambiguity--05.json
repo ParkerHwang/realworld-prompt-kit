@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.boundary_ambiguity.0005",
   "title": {
-    "ko": "안전 사고 타임라인 — 정기·일회성 항목",
-    "en": "Safety-incident timeline — Recurring versus one-off"
+    "ko": "안전 사고 타임라인 정기 일회성 항목",
+    "en": "Safety incident timeline Recurring versus one off"
   },
   "task": {
     "primary_intent": "extraction_parsing",
@@ -19,8 +19,8 @@
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "안전 사고 타임라인의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해",
-      "en": "Work out the applicable scope for Safety-incident timeline; Classify the two kinds without conflating them."
+      "ko": "안전 사고 타임라인 정기 일회성 항목의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해",
+      "en": "For Safety incident timeline Recurring versus one off, determine the applicable scope; classify the two kinds without conflating them"
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -51,7 +51,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "안전·비상 대응 안내를 확인하는 상황에서 안전 사고 타임라인의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해. 입력 상황: 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "분류는 안전 대응 안내야; 대상은 안전 사고 타임라인 정기 일회성 항목. 안전 사고 타임라인 정기 일회성 항목의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해. 입력 상황: 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 안전 사고 타임라인 정기 일회성 항목: 범위가 겹치는 곳은 임의로 고르지 말고 확인점을 세워줘. 확인되지 않은 결론 대신 기관이나 전문가에게 물을 지점을 적어줘."
         }
       ]
     },
@@ -67,7 +67,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한 내용이 좀 깨졌는데, 안전 대응 안내야. 범위가 헷갈리는 안전 사고 타임라인 건이야. 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 두 종류를 섞지 않고 분류해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 바로 보내거나 바꾸지는 말고 검토용 초안으로 줘. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "이 안전 사고 타임라인 정기 일회성 항목 건 핵심만 먼저 봐줘, 상황 설명은 안전 대응 안내야. 대상은 안전 사고 타임라인 정기 일회성 항목. 대상이 나뉘는 안전 사고 타임라인 정기 일회성 항목 건이야 안전 사고 타임라인 정기 일회성 항목 건이야. 반복 업무용인지 한 번만 하는 요청인지 양식의 용도를 나눠봐. 안전 사고 타임라인 정기 일회성 항목 기준으로 정규 규칙과 이번 예외를 구분해 다음 질문 하나를 제시해줘. 원본을 수정하지 말고 어느 부분을 바꿀지 표시해줘. 전문 판단이 필요한 대목은 공식 확인 경계를 붙여줘. 안전 사고 타임라인 정기 일회성 항목 대상 범위가 빠졌어; 여기서 확정은 말아줘."
         }
       ]
     },
@@ -80,7 +80,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a safety or emergency-response context where official guidance takes priority, Work out the applicable scope for Safety-incident timeline; Classify the two kinds without conflating them.. Input context: recurring work and one-off requests use the same form. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. Make the boundary for official or professional review explicit."
+          "content": "Safety incident timeline Recurring versus one off is handled in safety-response. For Safety incident timeline Recurring versus one off, determine the applicable scope; classify the two kinds without conflating them. Input context: Recurring work and one-off requests use the same form. Safety incident timeline Recurring versus one off: When scopes overlap, do not pick one silently; state the check needed. Instead of an unverified conclusion, name the point for an agency or expert."
         }
       ]
     },
@@ -96,7 +96,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "The pasted text is a bit messy: This is a safety-response item. The scope is fuzzy for Safety-incident timeline. Recurring work and one-off requests use the same form. Classify the two kinds without conflating them. If the boundary is fuzzy, ask one question before deciding. Do not send or change anything; make it a review draft. Do not make a professional determination; state what needs official review."
+          "content": "Could you start with Safety incident timeline Recurring versus one off: For the safety-response context, use Safety incident timeline Recurring versus one off. Eligibility splits the audience for Safety incident timeline Recurring versus one off. Safety incident timeline Recurring versus one off. Classify the form by whether it supports recurring work or a one-off request. For Safety incident timeline Recurring versus one off, Contrast the normal rule with this exception and ask one next question. Leave the source untouched and mark the edits that would be needed. Do not make a safety, legal, or finance determination; route it to the owner. An exception condition is missing from Safety incident timeline Recurring versus one off."
         }
       ]
     }

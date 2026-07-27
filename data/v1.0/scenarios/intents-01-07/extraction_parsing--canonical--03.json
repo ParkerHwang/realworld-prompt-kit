@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.canonical.0003",
   "title": {
-    "ko": "지원서 정보 — 월말 운영자료",
-    "en": "Application details — Month-end operations set"
+    "ko": "지원서 정보 월말 운영자료",
+    "en": "Application details Month end operations set"
   },
   "task": {
     "primary_intent": "extraction_parsing",
@@ -48,7 +48,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 지원서 묶음에서 경력 연수, 희망 근무 형태, 시작 가능일을 표로 뽑아줘 두 표의 공통값과 주의점을 구분해. 입력 상황: 지원서마다 같은 정보가 다른 순서로 적혀 있고 일부는 시작 가능일 대신 '협의 가능'이라고 써 있어. 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "분류는 회사 행정 쪽이야; 대상은 지원서 정보 월말 운영자료. 지원서 묶음에서 경력 연수, 희망 근무 형태, 시작 가능일을 표로 뽑아줘 두 표의 공통값과 주의점을 구분해. 입력 상황: 지원서마다 같은 정보가 다른 순서로 적혀 있고 일부는 시작 가능일 대신 '협의 가능'이라고 써 있어. 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 지원서 정보 월말 운영자료: 모호한 값은 채우지 말고 다음에 볼 자료를 적어줘."
         }
       ]
     },
@@ -64,11 +64,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "회사 행정 쪽이야. 지원서 여러 장에서 경력 연수/근무 형태/시작 가능일만 한 표로 모아줘. 날짜 대신 협의 가능이라고 쓴 사람은 그 말 그대로 두고 평가나 순위는 빼. 참고로 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 그래서 두 표의 공통값과 주의점을 구분해."
+          "content": "이번 지원서 정보 월말 운영자료 요청은 회사 행정 쪽이야. 지원서 여러 장에서 경력 연수/근무 형태/시작 가능일만 한 표로 모아줘. 날짜 대신 협의 가능이라고 쓴 사람은 그 말 그대로 두고 평가나 순위는 빼. 월말에 두 팀이 올린 표를 나란히 보고 겹치는 값과 주의 신호를 갈라줘."
         },
         {
           "role": "user",
-          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
+          "content": "지원서 정보 월말 운영자료 기준으로 자료에 없는 말은 보태지 말고 확인할 곳을 표시해줘. 지원서 정보 월말 운영자료를 빨리 말하려다 길어졌네; 핵심 뒤에 부수적인 것도 남겨줘. 주요 답과 선택적인 다음 단계를 두 묶음으로 나눠줘."
         }
       ]
     },
@@ -81,7 +81,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, extract years of experience, preferred work mode, and availability date into a table; separate common values from cautions. Input context: each application presents the fields in a different order, and some say 'negotiable' instead of a start date. two teams supplied updated tables before month-end close. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Place Application details Month end operations set in the office-admin lane. Extract years of experience, preferred work mode, and availability date into a table; separate common values from cautions. Input context: Each application presents the fields in a different order, and some say 'negotiable' instead of a start date. Two teams supplied updated tables before month-end close. Application details Month end operations set: Leave uncertain values open and name the next useful source."
         }
       ]
     },
@@ -97,11 +97,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is an office-admin item. Make one table of years of experience, work mode, and availability from the applications. Keep 'negotiable' as written when there is no date, and do not add a candidate ranking. For this case, two teams supplied updated tables before month-end close. So separate common values from cautions."
+          "content": "Application details Month end operations set falls under the office-admin desk. Make one table of years of experience, work mode, and availability from the applications. Keep 'negotiable' as written when there is no date, and do not add a candidate ranking. Set the two teams' month-end tables side by side and separate shared values from warning signs."
         },
         {
           "role": "user",
-          "content": "Use what can actually be checked; say when something is unknown."
+          "content": "For Application details Month end operations set, Do not add unsupported wording; point to what needs checking. The Application details Month end operations set request got long; I need both the answer and the next step. Keep the different asks distinct and answer the decision needed today."
         }
       ]
     }

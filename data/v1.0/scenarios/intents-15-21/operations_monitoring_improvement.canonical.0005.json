@@ -38,8 +38,8 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "ocr_copy_format_noise",
-      "typo_spacing_punctuation"
+      "mid_task_change",
+      "self_correction_scope_shift"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 진행 정의와 자기 보고 불확실성을 표시한 추적표로 좁히자. 큰 주제는 학습 진행 추적기이고 믿을 수 있는 메모는 과정에는 네 모듈, 주간 연습, 최종 프로젝트가 있고 완료 데이터는 자기 보고다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "안전한 다음 단계가 필요한 건 학습 진행 추적기. 잠깐, 원하는 결과는 진행 정의와 자기 보고 불확실성을 표시한 추적표. 메모는 다음이야: 과정에는 네 모듈, 주간 연습, 최종 프로젝트가 있고 완료 데이터는 자기 보고다. 없는 건 가정으로 적어줘."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a tracker with progress definitions and a note about self-report uncertainty. The broader issue is a study progress tracker, and the notes I can stand behind are The course has four modules, a weekly practice task, and a final project; completion data is self-reported.. Mark assumptions instead of filling blanks."
+          "content": "I’m looking for a safe way to approach a study progress tracker. Actually, focus on a tracker with progress definitions and a note about self-report uncertainty. I noted this: The course has four modules, a weekly practice task, and a final project; completion data is self-reported. For a study progress tracker, mark assumptions; gaps stay open."
         }
       ]
     }

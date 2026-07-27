@@ -39,9 +39,9 @@
     },
     "naturalistic_features": [
       "followup_without_restatement",
+      "hedged_exploratory_request",
       "message_burst",
-      "mid_task_change",
-      "self_correction_scope_shift"
+      "missing_decisive_detail"
     ]
   },
   "realizations": [
@@ -65,18 +65,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
+        "hedged_exploratory_request",
         "message_burst",
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "부작용 가능성이 있는 에이전트 작업 복구 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 업무 상태를 바꿨을 수 있는 도구 호출이 영수증 없이 반환됐다고, 원하는 건 재시도 전 상태 조회, 멱등 체크, 사람 승인야. 답을 바꿀 빠진 정보는 따로 알려줘."
+          "content": "여기서 막힌 건 부작용 가능성이 있는 에이전트 작업 복구. 초안부터 보자. 근거 메모는 이거야: 업무 상태를 바꿨을 수 있는 도구 호출이 영수증 없이 반환됐다. 재시도 전 상태 조회, 멱등 확인, 사람 승인 형태를 제안해도 되는지 먼저 확인해줘."
         },
         {
           "role": "user",
-          "content": "없는 입력은 맥락으로 채우지 말고 그대로 보이게 해줘."
+          "content": "빠진 내용을 표시하고 조용히 추론하지 말아줘."
         }
       ]
     },
@@ -100,18 +100,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
+        "hedged_exploratory_request",
         "message_burst",
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Before we go too far on recovering after a possible agent side effect, can you sketch a first pass? My evidence is One tool call returned no receipt after changing a task status may have occurred.; I need a state lookup, idempotency check, and human approval before retry. Call out anything that would change the answer."
+          "content": "I want to get unstuck on recovering after a possible agent side effect. Before going further, evidence: one tool call returned no receipt after changing a task status may have occurred. Tentative first pass: a state lookup, idempotency check, and human approval before retry; for recovering after a possible agent side effect, flag answer-changing gaps."
         },
         {
           "role": "user",
-          "content": "Please leave unknown inputs visible rather than filling them in from context."
+          "content": "Mark the missing piece that limits the answer; do not infer it silently."
         }
       ]
     }

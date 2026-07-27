@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "implicit_goal_or_output",
-      "terse_fragment"
+      "multi_intent_mixed_priority",
+      "rambling_stream"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "implicit_goal_or_output",
-        "terse_fragment"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "지금 에이전트가 언제 확인할지 선택이랑 아직 열린 문제가 엉켜 있어. 일부 누락은 안전한 가정이 가능다만 다른 누락은 거래나 안전 판단을 바꾼다 일단 추론, 가정 표기, 질문, 에스컬레이션의 예가 있는 판단 규칙로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 단순 누락이 아니라 판단을 바꾸는 불확실성에 확인 질문을 연결한다."
+          "content": "함께 판단할 쟁점은 에이전트가 언제 확인할지 선택. 아직 열린 문제들이 서로 엉켜 있어. 열린 내용은 이거야: 일부 누락은 안전한 가정이 가능하지만 다른 누락은 거래나 안전 판단을 바꾼다. 추론, 가정 표기, 질문, 에스컬레이션의 예가 있는 판단 규칙 형태로 만들어줘. 빈 범위는 따로 적어줘. 단순 누락이 아니라 판단을 바꾸는 불확실성에 확인 질문을 연결한다."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "implicit_goal_or_output",
-        "terse_fragment"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: choosing when an agent should clarify, plus some unresolved details. Some missing details are harmless assumptions, while others change a transaction or safety decision. Please make a decision rule with examples for infer, state, ask, and escalate; if the second issue is out of scope, separate it. Tie clarification to decision-changing uncertainty rather than mere incompleteness."
+          "content": "Could we reason through choosing when an agent should clarify. Other loose ends: some missing details are harmless assumptions, while others change a transaction or safety decision. Please make a decision rule with examples for infer, state, ask, and escalate. Tie clarification to decision-changing uncertainty rather than mere incompleteness. Keep extra scope apart."
         }
       ]
     }

@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.canonical.0002",
   "title": {
-    "ko": "프로젝트 상태 — 승인본과 내부 메모",
-    "en": "Project status — Approved copy and internal note"
+    "ko": "프로젝트 상태 승인본과 내부 메모",
+    "en": "Project status Approved copy and internal note"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 프로젝트 업데이트를 임원용 한 단락과 실무용 액션 목록으로 요약해줘 승인된 문서만 근거로 삼아. 입력 상황: 일정은 유지됐지만 범위가 줄었고, 위험 두 개에는 아직 완화 담당자가 없어. 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "이번 작업의 분야는 프로젝트·제품 일정 쪽이야, 대상은 프로젝트 상태 승인본과 내부 메모. 프로젝트 업데이트를 임원용 한 단락과 실무용 액션 목록으로 요약해줘 승인된 문서만 근거로 삼아. 입력 상황: 일정은 유지됐지만 범위가 줄었고, 위험 두 개에는 아직 완화 담당자가 없어. 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 프로젝트 상태 승인본과 내부 메모: 답에 쓸 수 있는 근거와 보류할 부분을 나눠줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "프로젝트·제품 일정 쪽이야. 프로젝트 업데이트를 임원용 한 문단이랑 실무 액션 목록으로 나눠줘. 일정은 지켰지만 범위가 줄었고 위험 두 개는 담당자가 없어. 참고로 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 그래서 승인된 문서만 근거로 삼아."
+          "content": "프로젝트 상태 승인본과 내부 메모 건부터 볼게. 분야는 프로젝트·제품 일정 쪽이야. 프로젝트 업데이트를 임원용 한 문단이랑 실무 액션 목록으로 나눠줘. 일정은 지켰지만 범위가 줄었고 위험 두 개는 담당자가 없어. 2026년 2분기 승인 서명된 PDF만 근거로 삼고 옆 메모는 참고로만 남겨줘."
         },
         {
           "role": "user",
-          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
+          "content": "프로젝트 상태 승인본과 내부 메모 기준으로 지금 확인할 수 있는 사실부터 적고 추측은 구분해줘. 그 얘기한 프로젝트 상태 승인본과 내부 메모 부분만. 프로젝트 상태 승인본과 내부 메모 원문 링크가 비었어."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a product or project schedule-and-requirements context, summarize the project update as an executive paragraph and a working action list; use only the approved document as evidence. Input context: the schedule held but scope was reduced, and two risks still have no mitigation owner. an approved PDF arrives with an internal reference note. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Read Project status Approved copy and internal note against the project/product context. Summarize the project update as an executive paragraph and a working action list; use only the approved document as evidence. Input context: The schedule held but scope was reduced, and two risks still have no mitigation owner. An approved PDF arrives with an internal reference note. Project status Approved copy and internal note: Show what can be used now and what must wait for proof."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a project/product item. Turn the project update into one executive paragraph plus a working action list. The schedule held, but scope shrank and two risks still have no owner. For this case, an approved PDF arrives with an internal reference note. So use only the approved document as evidence."
+          "content": "For the project/product context, use Project status Approved copy and internal note. Turn the project update into one executive paragraph plus a working action list. The schedule held, but scope shrank and two risks still have no owner. Use the approved 2026 Q2 PDF as evidence and keep the accompanying memo as background only."
         },
         {
           "role": "user",
-          "content": "Use what can actually be checked; say when something is unknown."
+          "content": "For Project status Approved copy and internal note, Lead with checkable facts and label every inference. Pick up the Project status Approved copy and internal note document from before. The denominator for Project status Approved copy and internal note is not stated."
         }
       ]
     }

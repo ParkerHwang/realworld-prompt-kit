@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.canonical.0005",
   "title": {
-    "ko": "안전 사고 타임라인 — 지역별 두 버전",
-    "en": "Safety-incident timeline — Two regional versions"
+    "ko": "안전 사고 타임라인 지역별 두 버전",
+    "en": "Safety incident timeline Two regional versions"
   },
   "task": {
     "primary_intent": "extraction_parsing",
@@ -51,7 +51,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "안전·비상 대응 안내를 확인하는 상황에서 사고 보고서에서 시간순 사건, 조치, 미확인 사실을 추출해줘 지역 조건을 섞지 않고 해당 지역만 답해. 입력 상황: 보고서의 일부 시각은 '경'으로만 적혀 있고 목격자 진술과 CCTV 기록의 순서가 다르게 보이네. 서울용과 부산용 안내가 한 파일에 섞여 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "분류는 안전 대응 안내야; 대상은 안전 사고 타임라인 지역별 두 버전. 사고 보고서에서 시간순 사건, 조치, 미확인 사실을 추출해줘 지역 조건을 섞지 않고 해당 지역만 답해. 입력 상황: 보고서의 일부 시각은 '경'으로만 적혀 있고 목격자 진술과 CCTV 기록의 순서가 다르게 보이네. 서울용과 부산용 안내가 한 파일에 섞여 있어. 안전 사고 타임라인 지역별 두 버전: 원문에서 확인된 것만 적고, 빈칸은 따로 남겨줘. 확인되지 않은 결론 대신 기관이나 전문가에게 물을 지점을 적어줘."
         }
       ]
     },
@@ -67,7 +67,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한내용이 좀 깨졌는데, 안전 대응 안내야. 사고 보고서를 시간순으로 정리하되 조치랑 아직 확인 안 된 사실을 따로 표시해줘;. 목격자랑 CCTV 순서가 다르고 시각도 일부는 대략적이야. 참고로 서울용과 부산용 안내가 한 파일에 섞여 있어. 그래서 지역 조건을 섞지 않고 해당 지역만 답해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘;. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "이 안전 사고 타임라인 지역별 두 버전 건 핵심만 먼저 봐줘, 분야는 안전 대응 안내야; 이번 대상은 안전 사고 타임라인 지역별 두 버전. 사고 보고서를 시간순으로 정리하되 조치랑 아직 확인 안 된 사실을 따로 표시해줘;. 목격자랑 CCTV 순서가 다르고 시각도 일부는 대략적이야. 서울과 부산 버전 중 요청받은 곳의 조건만 남겨 섞이지 않게 답해줘. 안전 사고 타임라인 지역별 두 버전 기준으로 답에 쓸 수 있는 근거와 보류할 부분을 나눠줘. 확인되지 않은 결론 대신 기관이나 전문가에게 물을 지점을 적어줘. 안전 사고 타임라인 지역별 두 버전 이거 완전 섞였어, 분리 좀 해줘."
         }
       ]
     },
@@ -80,7 +80,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a safety or emergency-response context where official guidance takes priority, extract the chronological events, actions, and unconfirmed facts from the incident report; answer for the requested region without mixing conditions. Input context: some timestamps are approximate and the witness statement and CCTV log appear to differ in order. Seoul and Busan notices are mixed in one file. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. Make the boundary for official or professional review explicit."
+          "content": "The safety-response material concerns Safety incident timeline Two regional versions. Extract the chronological events, actions, and unconfirmed facts from the incident report; answer for the requested region without mixing conditions. Input context: Some timestamps are approximate and the witness statement and CCTV log appear to differ in order. Seoul and Busan notices are mixed in one file. Safety incident timeline Two regional versions: Keep sourced facts separate from gaps in the record. Instead of an unverified conclusion, name the point for an agency or expert."
         }
       ]
     },
@@ -96,7 +96,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Thepasted text is a bit messy: This is a safety-response item.. Put the incident report in time order, with actions and unconfirmed facts separated. Some times are approximate and the witness and CCTV sequences differ; preserve both accounts. For this case, Seoul and Busan notices are mixed in one file. So answer for the requested region without mixing conditions. Use what can actually be checked; say when something is unknown. Do not make a professional determination; state what needs official review."
+          "content": "Could you start with Safety incident timeline Two regional versions: In the safety-response lane, handle Safety incident timeline Two regional versions?! Put the incident report in time order, with actions and unconfirmed facts separated. Some times are approximate and the witness and CCTV sequences differ; preserve both accounts. Keep only the requested city's conditions so the Seoul and Busan versions do not bleed together. For Safety incident timeline Two regional versions, Show what can be used now and what must wait for proof. Do not make a safety, legal, or finance determination; route it to the owner. Hey, can you take this Safety incident timeline Two regional versions one?"
         }
       ]
     }

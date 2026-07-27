@@ -37,8 +37,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "emoji_shorthand",
-      "speech_to_text_disfluency"
+      "multi_intent_mixed_priority",
+      "rambling_stream"
     ]
   },
   "realizations": [
@@ -61,13 +61,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "지금 표를 CSV로 내보내기이랑 아직 열린 문제가 엉켜 있어. 열은 project_id, status, owner_role, due_date이며 날짜는 ISO 형식을 유지하고 빈 담당자는 빈 값으로 둬야 한다 일단 따옴표, 인코딩, 빈 값 규칙을 들어간 CSV 내보내기 명세로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 열 순서를 보존하고 담당자 값을 만들지 않는다."
+          "content": "여기서 판단할 건 표를 CSV로 내보내기. 결정 전까지 남겨둘 질문들이 있어. 열린 내용은 이거야: 열은 project_id, status, owner_role, due_date이며 날짜는 ISO 형식을 유지하고 빈 담당자는 빈 값으로 둬야 한다. 따옴표, 인코딩, 빈 값 규칙을 들어간 CSV 내보내기 명세 형태로 만들어줘. 산출물 범위를 넘는 내용은 분리해줘. 열 순서를 보존하고 담당자 값을 만들지 않는다."
         }
       ]
     },
@@ -90,13 +90,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: exporting a table as CSV, plus some unresolved details. Columns are project_id, status, owner_role, and due_date; dates must remain ISO format and empty owners remain empty. Please make a CSV export specification with quoting, encoding, and empty-value rules; if the second issue is out of scope, separate it. Preserve column order and do not invent owner values."
+          "content": "I’m stuck on exporting a table as CSV. Other loose ends: columns are project_id, status, owner_role, and due_date; dates must remain ISO format and empty owners remain empty. Please make a CSV export specification with quoting, encoding, and empty-value rules. Preserve column order and do not invent owner values. Keep extra scope apart."
         }
       ]
     }

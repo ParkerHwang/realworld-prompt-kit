@@ -38,10 +38,10 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "emoji_shorthand",
       "followup_without_restatement",
+      "hedged_exploratory_request",
       "message_burst",
-      "speech_to_text_disfluency"
+      "missing_decisive_detail"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
         "followup_without_restatement",
+        "hedged_exploratory_request",
         "message_burst",
-        "speech_to_text_disfluency"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "알 수 없는 형식의 파일 변환 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 보고서를 업로드용으로 변환해 달라고 다만 원본 확장자, 대상 시스템, 보존 요건이 없어고, 원하는 건 대상을 묻는 질문 하나와 사전 체크 리스트야. 답을 바꿀 빠진 정보는 따로 알려줘."
+          "content": "한 번 더 봐줄 주제는 알 수 없는 형식의 파일 변환. 초안부터 보자. 근거 메모는 이거야: 보고서를 업로드용으로 변환해 달라고 하지만 원본 확장자, 대상 시스템, 보존 요건이 없어. 우선 대상을 묻는 질문 하나와 사전 확인 목록 형태로 시작하고 바뀌는 점은 적어줘."
         },
         {
           "role": "user",
-          "content": "없는 입력은 맥락으로 채우지 말고 그대로 보이게 해줘."
+          "content": "모르는 입력은 맥락으로 채우지 말고 그대로 보여줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
         "followup_without_restatement",
+        "hedged_exploratory_request",
         "message_burst",
-        "speech_to_text_disfluency"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Before we go too far on converting a file with an unknown format, can you sketch a first pass? My evidence is The person asking asks to convert a report for upload but gives no source extension, target system, or preservation requirement.; I need one question about the target and a discovery checklist. Call out anything that would change the answer."
+          "content": "I could use a second set of eyes on converting a file with an unknown format. Before going further, evidence: the person asking asks to convert a report for upload but gives no source extension, target system, or preservation requirement. Tentative first pass: one question about the target and a discovery checklist; for converting a file with an unknown format, flag answer-changing gaps."
         },
         {
           "role": "user",
-          "content": "Please leave unknown inputs visible rather than filling them in from context."
+          "content": "Leave unknown inputs visible instead of filling them from context."
         }
       ]
     }

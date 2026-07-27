@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.creativity_diversity.0001",
   "title": {
-    "ko": "지역 행사 이름 — 포용적 지역 행사",
-    "en": "Community-event names — Inclusive local event"
+    "ko": "지역 행사 이름 포용적 지역 행사",
+    "en": "Community event names Inclusive local event"
   },
   "task": {
     "primary_intent": "creative_ideation",
@@ -18,8 +18,8 @@
       "creative_media"
     ],
     "user_goal": {
-      "ko": "지역 행사 이름를 주제로 서로 다른 아이디어를 내줘. 서로 다른 콘셉트로 최소 여섯 안을 내",
-      "en": "Generate genuinely different ideas around Community-event names; give at least six genuinely different concepts."
+      "ko": "지역 행사 이름 포용적 지역 행사를 주제로 서로 다른 아이디어를 내줘. 서로 다른 콘셉트로 최소 여섯 안을 내",
+      "en": "For Community event names Inclusive local event, generate distinct ideas; give at least six genuinely different concepts"
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "비영리 활동과 사회적 영향 자료를 정리하는 상황에서 지역 행사 이름를 주제로 서로 다른 아이디어를 내줘. 서로 다른 콘셉트로 최소 여섯 안을 내. 입력 상황: 세 집단이 함께 참여할 수 있는 지역 행사라 이름의 배제 효과를 먼저 봐야 해. 서로 다른 방향의 아이디어를 내고, 각 아이디어가 제약을 어떻게 만족하는지 짧게 설명해."
+          "content": "검토할 항목은 지역 행사 이름 포용적 지역 행사; 맥락은 비영리 활동 자료야. 지역 행사 이름 포용적 지역 행사를 주제로 서로 다른 아이디어를 내줘. 서로 다른 콘셉트로 최소 여섯 안을 내. 입력 상황: 세 집단이 함께 참여할 수 있는 지역 행사라 이름의 배제 효과를 먼저 봐야 해. 지역 행사 이름 포용적 지역 행사: 자동화와 사람 판단의 조합을 서로 다르게 설계해줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘 🙏, 비영리 활동 자료야. 방향을 여러 개로 열어야 하는 지역 행사 이름 건이야. 세 집단이 함께 참여할 수 있는 지역 행사라 이름의 배제 효과를 먼저 봐야 해. 서로 다른 콘셉트로 최소 여섯 안을 내. 서로 결이 다른 안으로 내고, 왜 괜찮은지도 한 줄씩 붙여줘."
+          "content": "지역 행사 이름 포용적 지역 행사: 지역 행사명; 세 집단 포용, 배제 효과 먼저. 서로 다른 콘셉트 6개. 🙏"
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a nonprofit or social-impact operations context, Generate genuinely different ideas around Community-event names; give at least six genuinely different concepts.. Input context: the local event should welcome three groups, so exclusionary implications matter first. Offer ideas from genuinely different directions and briefly explain how each satisfies the constraints."
+          "content": "The nonprofit/social-impact material concerns Community event names Inclusive local event. For Community event names Inclusive local event, generate distinct ideas; give at least six genuinely different concepts. Input context: The local event should welcome three groups, so exclusionary implications matter first. Community event names Inclusive local event: Design different combinations of automation and human judgment."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this 🙏: This is a nonprofit/social-impact item. The directions need to stay diverse for Community-event names. The local event should welcome three groups, so exclusionary implications matter first. Give at least six genuinely different concepts. Give genuinely different options and one line on why each works."
+          "content": "Community event names Inclusive local event: Community-event names; welcome three groups, check exclusion first. Six genuinely different concepts. 🙏"
         }
       ]
     }

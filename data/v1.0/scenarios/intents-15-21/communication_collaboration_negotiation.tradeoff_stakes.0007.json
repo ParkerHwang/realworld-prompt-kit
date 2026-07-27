@@ -38,10 +38,10 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "anaphora_prior_context",
       "followup_without_restatement",
       "message_burst",
-      "resume_after_interruption"
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
         "followup_without_restatement",
         "message_burst",
-        "resume_after_interruption"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 공급업체 에스컬레이션 메시지 — 메모는 반복되는 문제가 생산에 영향을 주고 거래 관계도 중요다만 공식 검토를 요청할 근거는 충분하다, 결과는 관계를 유지하면서 책임 있는 조치를 요구하는 단호한 에스컬레이션. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "일단 설명할 상황은 공급업체 에스컬레이션 메시지 - 줄바꿈 섞임: 메모 반복되는 문제가 생산에 영향을 주고 거래 관계도 중요하지만 공식 검토를 요청할 근거는 충분하다 / 결과 관계를 유지하면서 책임 있는 조치를 요구하는 단호한 에스컬레이션 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "원본이 불완전하면 보류 지점을 표시해줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
         "followup_without_restatement",
         "message_burst",
-        "resume_after_interruption"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: a vendor escalation message — I’ve got One recurring issue affects production, the account relationship matters, and the evidence is sufficient to request a formal review.; can you give me a firm escalation that preserves a workable relationship and asks for accountable action? no invented details pls"
+          "content": "quick context on a vendor escalation message - messy paste: one recurring issue affects production, the account relationship matters, and the evidence is sufficient to request a formal review / need: a firm escalation that preserves a workable relationship and asks for accountable action / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "If the source is incomplete, show the hold point."
         }
       ]
     }

@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.audience_context_shift.0005",
   "title": {
-    "ko": "메모의 구조화 — 심사자용 요약",
-    "en": "Structured data from notes — Reviewer summary"
+    "ko": "메모의 구조화 심사자용 요약",
+    "en": "Structured data from notes Reviewer summary"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
@@ -18,8 +18,8 @@
       "education_research"
     ],
     "user_goal": {
-      "ko": "메모의 구조화 내용을 지정 독자에게 맞춰 다시 써줘. 목적·대상·예산·성과를 한눈에 보이게 해",
-      "en": "Adapt the Structured data from notes material for the specified reader; make purpose, audience, budget, and outcomes easy to compare."
+      "ko": "메모의 구조화 심사자용 요약을 독자에 맞게 다시 써줘. 목적·대상·예산·성과를 한눈에 보이게 해",
+      "en": "For Structured data from notes Reviewer summary, rewrite for its reader; make purpose, audience, budget, and outcomes easy to compare"
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지표 표와 분석 메모를 검토하는 상황에서 메모의 구조화 내용을 지정 독자에게 맞춰 다시 써줘. 목적·대상·예산·성과를 한눈에 보이게 해. 입력 상황: 지원서 내용을 처음 보는 심사자가 비교할 수 있는 요약으로 써야 해. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "검토할 항목은 메모의 구조화 심사자용 요약; 맥락은 지표·분석 메모야. 메모의 구조화 심사자용 요약을 독자에 맞게 다시 써줘. 목적·대상·예산·성과를 한눈에 보이게 해. 입력 상황: 지원서 내용을 처음 보는 심사자가 비교할 수 있는 요약으로 써야 해. 메모의 구조화 심사자용 요약: 독자가 비교할 기준과 판단 근거를 같은 틀에 넣어줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한 내용이 좀 깨졌는데, 지표·분석 메모야. 읽는 사람이 달라진 메모의 구조화 건이야. 지원서 내용을 처음 보는 심사자가 비교할 수 있는 요약으로 써야 해. 목적·대상·예산·성과를 한눈에 보이게 해. 읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬. 가능하면 관련해서 다음 확인할 것도 한 줄만 덧붙여줘. 아, 대상은 전체가 아니라 위에 적은 범위만이야."
+          "content": "회의 전에 메모의 구조화 심사자용 요약부터 빠르게 잡아줘, 대상은 메모의 구조화 심사자용 요약. 맥락은 지표·분석 메모야. 메모의 구조화 심사자용 요약을 처음 보는 심사자에게 보여줘야 해 메모의 구조화 심사자용 요약 건이야. 지원서를 처음 보는 심사자가 비교할 수 있게 목적·대상·예산·성과를 같은 틀에 넣어줘. 메모의 구조화 심사자용 요약 기준으로 핵심을 앞세우되 근거와 세부는 뒤에서 찾게 해줘. 서로 다른 요구를 묶지 말고 오늘 결정할 부분부터 답해줘. 정정할게—아, 위 제목에 적은 범위만 봐줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a metrics-table and data-analysis context, Adapt the Structured data from notes material for the specified reader; make purpose, audience, budget, and outcomes easy to compare.. Input context: a reviewer unfamiliar with the application needs a comparable summary. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "Structured data from notes Reviewer summary is handled in metrics/analysis. For Structured data from notes Reviewer summary, rewrite for its reader; make purpose, audience, budget, and outcomes easy to compare. Input context: A reviewer unfamiliar with the application needs a comparable summary. Structured data from notes Reviewer summary: Put comparison criteria and supporting reasons into one frame."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "The pasted text is a bit messy: This is a metrics/analysis item. The reader has changed for Structured data from notes. A reviewer unfamiliar with the application needs a comparable summary. Make purpose, audience, budget, and outcomes easy to compare. Make it fit the reader without changing the substance. If possible, add one brief next-check item. Actually, use only the scope stated above, not the broader one."
+          "content": "Before the meeting, check Structured data from notes Reviewer summary: For the metrics/analysis context, use Structured data from notes Reviewer summary. An unfamiliar reviewer will compare the Structured data from notes Reviewer summary material. Structured data from notes Reviewer summary. Give an unfamiliar reviewer a comparable frame for purpose, audience, budget, and outcomes. For Structured data from notes Reviewer summary, Lead with the core and keep supporting detail available behind it. Put the central deliverable first and add optional checks afterward. Do not generalize to the full set; follow the final range."
         }
       ]
     }

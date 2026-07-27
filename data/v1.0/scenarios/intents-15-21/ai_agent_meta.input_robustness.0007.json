@@ -38,10 +38,10 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "code_switching_jargon",
       "followup_without_restatement",
-      "interleaved_instruction_and_paste",
-      "message_burst"
+      "message_burst",
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
         "followup_without_restatement",
-        "interleaved_instruction_and_paste",
-        "message_burst"
+        "message_burst",
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 충돌하는 평가 기준 의견 검토 — 메모는 한 검토자는 간결한 답을 높게 보고 다른 검토자는 명시적 주의를 요구다만 우선순위는 없어, 결과는 트레이드오프를 명시한 충돌표와 기준 규칙 제안. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "성급한 추측을 피할 건 충돌하는 평가 기준 의견 검토 - [raw]: 메모 한 검토자는 간결한 답을 높게 보고 다른 검토자는 명시적 주의를 요구하지만 우선순위는 없어 / 결과 트레이드오프를 명시한 충돌표와 기준 규칙 제안 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "빠진 사실이 있으면 초안을 되돌릴 수 있게 남겨줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
         "followup_without_restatement",
-        "interleaved_instruction_and_paste",
-        "message_burst"
+        "message_burst",
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: a rubric review from conflicting comments — I’ve got One reviewer rewards concise answers and another requires explicit caveats; the priority order still is not stated.; can you give me a conflict matrix and a proposed rubric rule that makes the tradeoff explicit? no invented details pls"
+          "content": "i’m trying to avoid a bad guess on a rubric review from conflicting comments - raw text: one reviewer rewards concise answers and another requires explicit caveats; the priority order still is not stated / need: a conflict matrix and a proposed rubric rule that makes the tradeoff explicit / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "Keep the quick draft reversible when a fact is missing."
         }
       ]
     }

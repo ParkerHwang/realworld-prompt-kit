@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.format_semantic_preservation.0007",
   "title": {
-    "ko": "수업 노트의 복습 카드 — 복습 카드",
-    "en": "Lesson notes to flashcards — Review cards"
+    "ko": "수업 노트의 복습 카드 복습 카드",
+    "en": "Lesson notes to flashcards Review cards"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
@@ -18,8 +18,8 @@
       "education_research"
     ],
     "user_goal": {
-      "ko": "수업 노트의 복습 카드 자료를 지정 형식으로 바꿔줘. 자료 밖의 정답은 채우지 말고 빈 부분을 표시해",
-      "en": "Convert the Lesson notes to flashcards material to the requested format; mark gaps rather than filling unsupported answers."
+      "ko": "수업 노트의 복습 카드 복습 카드 자료를 지정 형식으로 바꿔줘. 자료 밖의 정답은 채우지 말고 빈 부분을 표시해",
+      "en": "For Lesson notes to flashcards Review cards, reformat without semantic drift; mark gaps rather than filling unsupported answers"
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일반 정보와 상식을 확인하는 상황에서 수업 노트의 복습 카드 자료를 지정 형식으로 바꿔줘. 자료 밖의 정답은 채우지 말고 빈 부분을 표시해. 입력 상황: 수업 자료를 질문·답·주의 카드 세 종류로 바꿔야 해. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "수업 노트의 복습 카드 복습 카드 건을 보고, 분야는 일반 정보 조회 건이야. 수업 노트의 복습 카드 복습 카드 자료를 지정 형식으로 바꿔줘. 자료 밖의 정답은 채우지 말고 빈 부분을 표시해. 입력 상황: 수업 자료를 질문·답·주의 카드 세 종류로 바꿔야 해. 수업 노트의 복습 카드 복습 카드: 입력에 없는 값은 빈칸이나 미상으로 표시해."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "일반 정보 조회 건이야. 모양을 바꿔야 하는 수업 노트의 복습 카드 건이야. 수업 자료를 질문·답·주의 카드 세 종류로 바꿔야 해. 자료 밖의 정답은 채우지 말고 빈 부분을 표시해."
+          "content": "이번 수업 노트의 복습 카드 복습 카드 요청은 일반 정보 조회 건이야. 수업 노트의 복습 카드 복습 카드 자료를 복습 카드로 나눠야 해 수업 노트의 복습 카드 복습 카드 건이야. 수업 내용을 질문·답·주의 카드로 나누되 근거 없는 답은 비워둬. 🙏"
         },
         {
           "role": "user",
-          "content": "모양은 바꿔도 숫자·날짜·조건은 건드리지 마."
+          "content": "수업 노트의 복습 카드 복습 카드 기준으로 항목별로 나눠도 자료 밖의 결론은 만들지 마. 수업 노트의 복습 카드 복습 카드 걍 핵심만 뽑아줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a general-information and everyday-knowledge context, Convert the Lesson notes to flashcards material to the requested format; mark gaps rather than filling unsupported answers.. Input context: lesson material must become question, answer, and warning cards. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "For this general-information question, use Lesson notes to flashcards Review cards. For Lesson notes to flashcards Review cards, reformat without semantic drift; mark gaps rather than filling unsupported answers. Input context: Lesson material must become question, answer, and warning cards. Lesson notes to flashcards Review cards: Mark values absent from the input as blank or unknown."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a general-information lookup. The format needs changing for Lesson notes to flashcards. Lesson material must become question, answer, and warning cards. Mark gaps rather than filling unsupported answers."
+          "content": "The general-information context here concerns Lesson notes to flashcards Review cards. The Lesson notes to flashcards Review cards material should become review cards. Lesson notes to flashcards Review cards. Split the lesson into question, answer, and caution cards, leaving unsupported answers empty. 🙏"
         },
         {
           "role": "user",
-          "content": "Change the shape, not the numbers, dates, or conditions."
+          "content": "For Lesson notes to flashcards Review cards, Separate the fields without creating a conclusion beyond the material. Lesson notes to flashcards Review cards is totally mixed up; can you split it out?"
         }
       ]
     }

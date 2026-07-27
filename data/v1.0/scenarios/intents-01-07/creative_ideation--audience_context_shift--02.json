@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.audience_context_shift.0002",
   "title": {
-    "ko": "팀 협업 의식 — 임원용 브리프",
-    "en": "Team-collaboration ritual — Executive brief"
+    "ko": "팀 협업 의식 임원용 브리프",
+    "en": "Team collaboration ritual Executive brief"
   },
   "task": {
     "primary_intent": "creative_ideation",
@@ -18,8 +18,8 @@
       "creative_media"
     ],
     "user_goal": {
-      "ko": "팀 협업 의식 내용을 지정 독자에게 맞춰 다시 써줘. 상태·위험·결정 요청만 남겨",
-      "en": "Adapt the Team-collaboration ritual material for the specified reader; keep only status, risk, and decision request."
+      "ko": "팀 협업 의식 임원용 브리프를 독자에 맞게 다시 써줘. 상태·위험·결정 요청만 남겨",
+      "en": "For Team collaboration ritual Executive brief, rewrite for its reader; keep only status, risk, and decision request"
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 팀 협업 의식 내용을 지정 독자에게 맞춰 다시 써줘. 상태·위험·결정 요청만 남겨. 입력 상황: 긴 실무 자료를 임원이 30초 안에 읽을 브리프로 바꿔야 해. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "팀 협업 의식 임원용 브리프 건을 보고, 분야는 프로젝트·제품 일정 쪽이야. 팀 협업 의식 임원용 브리프를 독자에 맞게 다시 써줘. 상태·위험·결정 요청만 남겨. 입력 상황: 긴 실무 자료를 임원이 30초 안에 읽을 브리프로 바꿔야 해. 팀 협업 의식 임원용 브리프: 전문 설명과 쉬운 요약을 나란히 구분해줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "프로젝트·제품 일정 쪽이야. 읽는 사람이 달라진 팀 협업 의식 건이야. 긴 실무 자료를 임원이 30초 안에 읽을 브리프로 바꿔야 해. 상태·위험·결정 요청만 남겨."
+          "content": "팀 협업 의식 임원용 브리프 건은 프로젝트·제품 일정 쪽이야. 팀 협업 의식 임원용 브리프를 임원용 짧은 브리프로 바꿔야 해 팀 협업 의식 임원용 브리프 건이야. 임원이 30초 안에 볼 수 있게 상태·위험·결정 요청만 전면에 두어."
         },
         {
           "role": "user",
-          "content": "읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬."
+          "content": "팀 협업 의식 임원용 브리프 기준으로 전문 설명과 쉬운 요약을 나란히 구분해줘. 팀 협업 의식 임원용 브리프 오늘 공유할 만한 형태면 충분해. 번거롭겠지만 팀 협업 의식 임원용 브리프 적용 범위만 봐줄래?"
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a product or project schedule-and-requirements context, Adapt the Team-collaboration ritual material for the specified reader; keep only status, risk, and decision request.. Input context: a long working document must become a 30-second executive brief. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "Read Team collaboration ritual Executive brief against the project/product context. For Team collaboration ritual Executive brief, rewrite for its reader; keep only status, risk, and decision request. Input context: A long working document must become a 30-second executive brief. Team collaboration ritual Executive brief: Keep the specialist explanation distinct from the plain-language summary."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a project/product item. The reader has changed for Team-collaboration ritual. A long working document must become a 30-second executive brief. Keep only status, risk, and decision request."
+          "content": "For the project/product context, use Team collaboration ritual Executive brief. The Team collaboration ritual Executive brief material needs a fast executive brief. Team collaboration ritual Executive brief. Put status, risk, and the decision ask up front for an executive's 30-second read."
         },
         {
           "role": "user",
-          "content": "Make it fit the reader without changing the substance."
+          "content": "For Team collaboration ritual Executive brief, Keep the specialist explanation distinct from the plain-language summary. The reader-facing wording for Team collaboration ritual Executive brief is what I need. If possible, could you add the next source for Team collaboration ritual Executive brief?"
         }
       ]
     }

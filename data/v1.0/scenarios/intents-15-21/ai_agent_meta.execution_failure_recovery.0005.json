@@ -38,8 +38,8 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "ocr_copy_format_noise",
-      "typo_spacing_punctuation"
+      "mid_task_change",
+      "self_correction_scope_shift"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 무해한 작업과 신뢰할 수 없는 문구를 분리하는 안전한 처리로 좁히자. 큰 주제는 에이전트가 필요한 단계를 거절할 때 복구이고 믿을 수 있는 메모는 사용자는 무해한 요약을 요청했지만 인용 문서의 의심스러운 문구 때문에 에이전트가 거절했다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "다시 꺼내 보는 건 에이전트가 필요한 단계를 거절할 때 복구. 잠깐, 원하는 결과는 무해한 작업과 신뢰할 수 없는 문구를 분리하는 안전한 처리. 메모는 다음이야: 사용자는 무해한 요약을 요청했지만 인용 문서의 의심스러운 문구 때문에 에이전트가 거절했다. 없는 건 가정으로 적어줘."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a safe separation of the benign task from the untrusted text. The broader issue is recovering when an agent refuses a needed step, and the notes I can stand behind are The person asking asks for a harmless summary, but the agent refuses because a quoted document contains a suspicious phrase.. Mark assumptions instead of filling blanks."
+          "content": "I’m bringing this back up: recovering when an agent refuses a needed step. Actually, focus on a safe separation of the benign task from the untrusted text. I noted this: The person asking asks for a harmless summary, but the agent refuses because a quoted document contains a suspicious phrase. For recovering when an agent refuses a needed step, mark assumptions; gaps stay open."
         }
       ]
     }

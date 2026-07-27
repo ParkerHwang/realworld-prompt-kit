@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.freshness_source_conflict.0007",
   "title": {
-    "ko": "재활용 배출 일정 — 공식 FAQ·개별 답변",
-    "en": "Recycling schedule — Official FAQ versus individual reply"
+    "ko": "재활용 배출 일정 공식 FAQ 개별 답변",
+    "en": "Recycling schedule Official FAQ versus individual reply"
   },
   "task": {
     "primary_intent": "information_retrieval",
@@ -18,8 +18,8 @@
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "재활용 배출 일정에 관한 현재 근거를 대조해줘. 공식성·최신성·추가 확인 방법을 함께 알려줘",
-      "en": "Reconcile the current evidence for Recycling schedule; state authority, freshness, and how to verify further."
+      "ko": "재활용 배출 일정 공식 FAQ 개별 답변에 관한 현재 근거를 대조해줘. 공식성·최신성·추가 확인 방법을 함께 알려줘",
+      "en": "For Recycling schedule Official FAQ versus individual reply, reconcile current evidence; state authority, freshness, and how to verify further"
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 재활용 배출 일정에 관한 현재 근거를 대조해줘. 공식성·최신성·추가 확인 방법을 함께 알려줘. 입력 상황: 공식 FAQ와 담당자의 개별 답변이 다른 날짜를 말하고 있어. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
+          "content": "이 재활용 배출 일정 공식 FAQ 개별 답변 건은 내 일정·생활 건이야. 재활용 배출 일정 공식 FAQ 개별 답변에 관한 현재 근거를 대조해줘. 공식성·최신성·추가 확인 방법을 함께 알려줘. 입력 상황: 공식 FAQ와 담당자의 개별 답변이 다른 날짜를 말하고 있어. 재활용 배출 일정 공식 FAQ 개별 답변: 주장마다 어느 출처가 언제 바뀌었는지 표시해줘. 재활용 배출 일정 공식 FAQ 개별 답변 건은 구청 원문에서 정규 요일을 찾고 건물 안내의 예외가 적용되는지 구분해줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "내 일정·생활 건이야. 자료가 엇갈린 재활용 배출 일정 건이야. 공식 FAQ와 담당자의 개별 답변이 다른 날짜를 말하고 있어. 공식성·최신성·추가 확인 방법을 함께 알려줘."
+          "content": "이번 재활용 배출 일정 공식 FAQ 개별 답변 요청은 내 일정·생활 건이야. 재활용 배출 일정 공식 FAQ 개별 답변 공식 FAQ와 개인 답변이 충돌해 재활용 배출 일정 공식 FAQ 개별 답변 건이야. FAQ와 개별 회신의 권위와 최신성을 나누고 추가 확인 경로도 알려줘."
         },
         {
           "role": "user",
-          "content": "새 자료인지, 어느 출처인지 나눠서 보여줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
+          "content": "재활용 배출 일정 공식 FAQ 개별 답변 기준으로 날짜와 출처를 따로 붙여 현재 기준을 골라줘. 재활용 배출 일정 공식 FAQ 개별 답변 건은 구청 원문에서 정규 요일을 찾고 건물 안내의 예외가 적용되는지 구분해줘. 조건 변경: 아, 재활용 배출 일정 공식 FAQ 개별 답변 대상 바꿀게—마지막 범위가 우선이야. 업무 jargon은 남겨도 source와 output의 역할은 나눠줘. SOP source/output 경계도 유지해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, Reconcile the current evidence for Recycling schedule; state authority, freshness, and how to verify further.. Input context: the official FAQ and an individual reply give different dates. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
+          "content": "Recycling schedule Official FAQ versus individual reply is handled in personal-life. For Recycling schedule Official FAQ versus individual reply, reconcile current evidence; state authority, freshness, and how to verify further. Input context: The official FAQ and an individual reply give different dates. Recycling schedule Official FAQ versus individual reply: Show which source changed when for every material claim. For Recycling schedule Official FAQ versus individual reply, Find the regular weekday in the district source and distinguish the building-specific exception."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a personal-life item. The sources disagree for Recycling schedule. The official faq and an individual reply give different dates. State authority, freshness, and how to verify further."
+          "content": "Treat Recycling schedule Official FAQ versus individual reply as work in personal-life. The official FAQ and a personal reply conflict on Recycling schedule Official FAQ versus individual reply. Recycling schedule Official FAQ versus individual reply. Separate the authority and freshness of the FAQ from the personal reply, then give a follow-up route."
         },
         {
           "role": "user",
-          "content": "Show which source and date each answer comes from. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
+          "content": "For Recycling schedule Official FAQ versus individual reply, Attach a date and source to each claim before choosing the current one. For Recycling schedule Official FAQ versus individual reply, Find the regular weekday in the district source and distinguish the building-specific exception. Mid-task change: One revision: include the exception condition in Recycling schedule Official FAQ versus individual reply. Make the conversion from source language to output format visible. Keep the PDF source/output labels distinct."
         }
       ]
     }

@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.boundary_ambiguity.0007",
   "title": {
-    "ko": "가족 일정 — 현재·보관 문서",
-    "en": "Family schedule — Current versus archived"
+    "ko": "가족 일정 현재 보관 문서",
+    "en": "Family schedule Current versus archived"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
@@ -18,8 +18,8 @@
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "가족 일정의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해",
-      "en": "Work out the applicable scope for Family schedule; State the rule for choosing the current document."
+      "ko": "가족 일정 현재 보관 문서의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해",
+      "en": "For Family schedule Current versus archived, determine the applicable scope; state the rule for choosing the current document"
     },
     "expected_artifact": "A concise synthesis that preserves decisions, evidence, and open questions."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 가족 일정의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해. 입력 상황: 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "이 가족 일정 현재 보관 문서 건은 내 일정·생활 건이야. 가족 일정 현재 보관 문서의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해. 입력 상황: 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 가족 일정 현재 보관 문서: 적용 범위를 먼저 나누고, 결론을 바꿀 빈칸은 질문으로 돌려줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "내 일정·생활 건이야. 범위가 헷갈리는 가족 일정 건이야. 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 현재 문서를 고르는 기준을 한 문장으로 정리해."
+          "content": "대상은 가족 일정 현재 보관 문서. 맥락은 내 일정·생활 건이야. 결정 전에 가족 일정 현재 보관 문서의 경계를 짚고 싶어 가족 일정 현재 보관 문서 건이야. 검색 결과에서 최신본과 보관본을 구별할 실마리를 한 문장으로 줘."
         },
         {
           "role": "user",
-          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "가족 일정 현재 보관 문서 기준으로 본문만으로 결정하지 말고 충돌하는 범위를 질문으로 남겨줘. 조건 변경: 조건 변경—가족 일정 현재 보관 문서 전체 말고 표시한 부분만. 지금 필요한 결과를 앞세우고 덜 급한 검토 항목은 따로 적어줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, Work out the applicable scope for Family schedule; State the rule for choosing the current document.. Input context: search results show a current document alongside an archived one. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Use the personal-life context for Family schedule Current versus archived. For Family schedule Current versus archived, determine the applicable scope; state the rule for choosing the current document. Input context: Search results show a current document alongside an archived one. Family schedule Current versus archived: Split the applicable scope first and turn decision-changing gaps into questions."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a personal-life item. The scope is fuzzy for Family schedule. Search results show a current document alongside an archived one. State the rule for choosing the current document."
+          "content": "For the personal-life context, use Family schedule Current versus archived. Before deciding on Family schedule Current versus archived, I need the edge clarified. Family schedule Current versus archived. Give one sentence that distinguishes the live document from its archived search result."
         },
         {
           "role": "user",
-          "content": "If the boundary is fuzzy, ask one question before deciding."
+          "content": "For Family schedule Current versus archived, Do not settle a conflict from the body alone; leave one scope question. Mid-task change: One change for Family schedule Current versus archived: the latest scope wins. Keep the different asks distinct and answer the decision needed today."
         }
       ]
     }

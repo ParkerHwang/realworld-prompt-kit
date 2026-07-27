@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.boundary_ambiguity.0001",
   "title": {
-    "ko": "이메일 스레드 — 정규·특별 적용 경계",
-    "en": "Email thread — Regular versus special scope"
+    "ko": "이메일 스레드 정규 특별 적용 경계",
+    "en": "Email thread Regular versus special scope"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
@@ -16,8 +16,8 @@
     "primary_domain": "communication_meetings",
     "domain_tags": [],
     "user_goal": {
-      "ko": "이메일 스레드의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해",
-      "en": "Work out the applicable scope for Email thread; Compare exactly when the exception applies."
+      "ko": "이메일 스레드 정규 특별 적용 경계의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해",
+      "en": "For Email thread Regular versus special scope, determine the applicable scope; compare exactly when the exception applies"
     },
     "expected_artifact": "A concise synthesis that preserves decisions, evidence, and open questions."
   },
@@ -48,7 +48,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 이메일 스레드의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해. 입력 상황: 정규 절차와 이번 한시 예외가 같은 화면에 보여. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "요청 대상은 이메일 스레드 정규 특별 적용 경계이고, 팀 회의/커뮤니케이션 건이야. 이메일 스레드 정규 특별 적용 경계의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해. 입력 상황: 정규 절차와 이번 한시 예외가 같은 화면에 보여. 이메일 스레드 정규 특별 적용 경계: 가까운 두 기준을 섞지 말고 경계선을 하나 짚어줘."
         }
       ]
     },
@@ -64,7 +64,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 팀 회의/커뮤니케이션 건이야. 범위가 헷갈리는 이메일 스레드 건이야. 정규 절차와 이번 한시 예외가 같은 화면에 보여. 어느 조건에서 예외로 넘어가는지 비교해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "복붙한 이메일 스레드 정규 특별 적용 경계 내용이 깨져서 정리가 필요해, 이메일 스레드 정규 특별 적용 경계 건부터 볼게. 분야는 팀 회의/커뮤니케이션 건이야. 범위가 헷갈리는 이메일 스레드 정규 특별 적용 경계 건이야 이메일 스레드 정규 특별 적용 경계 건이야. 정규 흐름 안에 잠깐 생긴 예외가 어디서 갈라지는지 화면 기준으로 짚어줘. 이메일 스레드 정규 특별 적용 경계 기준으로 본문만으로 결정하지 말고 충돌하는 범위를 질문으로 남겨줘. 이메일 스레드 정규 특별 적용 경계 건, 내일 회의에 붙일 초안이면 돼? 이메일 스레드 정규 특별 적용 경계 어느 지역인지 먼저 알아야 해."
         }
       ]
     },
@@ -77,7 +77,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, Work out the applicable scope for Email thread; Compare exactly when the exception applies.. Input context: the ordinary procedure and a temporary exception appear on the same screen. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Read Email thread Regular versus special scope against the team-communication context. For Email thread Regular versus special scope, determine the applicable scope; compare exactly when the exception applies. Input context: The ordinary procedure and a temporary exception appear on the same screen. Email thread Regular versus special scope: Keep the two nearby rules apart and name the boundary between them."
         }
       ]
     },
@@ -93,7 +93,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: This is a team-communication item. The scope is fuzzy for Email thread. The ordinary procedure and a temporary exception appear on the same screen. Compare exactly when the exception applies. If the boundary is fuzzy, ask one question before deciding."
+          "content": "The pasted Email thread Regular versus special scope text is messy: Treat Email thread Regular versus special scope as work in team-communication. The scope for Email thread Regular versus special scope is fuzzy. Email thread Regular versus special scope. Use the screen's conditions to show where the temporary exception splits from the normal flow. For Email thread Regular versus special scope, Do not settle a conflict from the body alone; leave one scope question. A short reader-ready version of Email thread Regular versus special scope would be ideal. An exception condition is missing from Email thread Regular versus special scope."
         }
       ]
     }

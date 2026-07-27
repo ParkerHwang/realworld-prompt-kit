@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.boundary_ambiguity.0005",
   "title": {
-    "ko": "연구 논문 — 정기·일회성 항목",
-    "en": "Research paper — Recurring versus one-off"
+    "ko": "연구 논문 정기 일회성 항목",
+    "en": "Research paper Recurring versus one off"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
@@ -18,8 +18,8 @@
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "연구 논문의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해",
-      "en": "Work out the applicable scope for Research paper; Classify the two kinds without conflating them."
+      "ko": "연구 논문 정기 일회성 항목의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해",
+      "en": "For Research paper Recurring versus one off, determine the applicable scope; classify the two kinds without conflating them"
     },
     "expected_artifact": "A concise synthesis that preserves decisions, evidence, and open questions."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "수업·학습·연구 자료를 다루는 상황에서 연구 논문의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해. 입력 상황: 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "이번 작업의 분야는 수업·연구 자료야, 대상은 연구 논문 정기 일회성 항목. 연구 논문 정기 일회성 항목의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해. 입력 상황: 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 연구 논문 정기 일회성 항목: 범위가 겹치는 곳은 임의로 고르지 말고 확인점을 세워줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한 내용이 좀 깨졌는데, 수업·연구 자료야. 범위가 헷갈리는 연구 논문 건이야. 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 두 종류를 섞지 않고 분류해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 바로 보내거나 바꾸지는 말고 검토용 초안으로 줘."
+          "content": "이 연구 논문 정기 일회성 항목 건 핵심만 먼저 봐줘, 상황 설명은 수업·연구 자료야. 대상은 연구 논문 정기 일회성 항목. 대상이 나뉘는 연구 논문 정기 일회성 항목 건이야 연구 논문 정기 일회성 항목 건이야. 반복 업무용인지 한 번만 하는 요청인지 양식의 용도를 나눠봐. 연구 논문 정기 일회성 항목 기준으로 정규 규칙과 이번 예외를 구분해 다음 질문 하나를 제시해줘. 외부에 공유하지 않은 상태로 검토용 결과만 남겨줘. 연구 논문 정기 일회성 항목 담당자 이름이 없어서 확정은 못 해."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an education, learning, or research context, Work out the applicable scope for Research paper; Classify the two kinds without conflating them.. Input context: recurring work and one-off requests use the same form. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Read Research paper Recurring versus one off against the education/research context. For Research paper Recurring versus one off, determine the applicable scope; classify the two kinds without conflating them. Input context: Recurring work and one-off requests use the same form. Research paper Recurring versus one off: When scopes overlap, do not pick one silently; state the check needed."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "The pasted text is a bit messy: This is an education/research item. The scope is fuzzy for Research paper. Recurring work and one-off requests use the same form. Classify the two kinds without conflating them. If the boundary is fuzzy, ask one question before deciding. Do not send or change anything; make it a review draft."
+          "content": "Could you start with Research paper Recurring versus one off: Research paper Recurring versus one off falls under the education/research desk. Eligibility splits the audience for Research paper Recurring versus one off. Research paper Recurring versus one off. Classify the form by whether it supports recurring work or a one-off request. For Research paper Recurring versus one off, Contrast the normal rule with this exception and ask one next question. Assume no authority beyond this request and finish with a safe draft. One city or date needed for Research paper Recurring versus one off is missing."
         }
       ]
     }

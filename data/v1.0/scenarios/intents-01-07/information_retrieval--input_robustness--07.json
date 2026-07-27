@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.input_robustness.0007",
   "title": {
-    "ko": "재활용 배출 일정 — 오탈자 입력",
-    "en": "Recycling schedule — Typo-heavy input"
+    "ko": "재활용 배출 일정 오탈자 입력",
+    "en": "Recycling schedule Typo heavy input"
   },
   "task": {
     "primary_intent": "information_retrieval",
@@ -18,8 +18,8 @@
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "재활용 배출 일정 작업에 필요한 내용을 깨진 입력에서 복원해줘. 확실한 값과 추정값을 나눠",
-      "en": "Recover what the Recycling schedule task needs from the damaged input; separate confirmed values from guesses."
+      "ko": "재활용 배출 일정 오탈자 입력에서 읽히는 부분만 복원해줘. 확실한 값과 추정값을 나눠",
+      "en": "For Recycling schedule Typo heavy input, restore legible input only; separate confirmed values from guesses"
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 재활용 배출 일정 작업에 필요한 내용을 깨진 입력에서 복원해줘. 확실한 값과 추정값을 나눠. 입력 상황: 고유명사와 숫자에 오탈자가 두 개 있고 원문은 하나뿐이야. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
+          "content": "재활용 배출 일정 오탈자 입력 건의 배경은 내 일정·생활 건이야. 재활용 배출 일정 오탈자 입력에서 읽히는 부분만 복원해줘. 확실한 값과 추정값을 나눠. 입력 상황: 고유명사와 숫자에 오탈자가 두 개 있고 원문은 하나뿐이야. 재활용 배출 일정 오탈자 입력: 읽히는 조각만 먼저 옮기고, 깨진 값은 확인 대기로 표시해줘. 재활용 배출 일정 오탈자 입력 건은 지자체 원문의 적용 구역과 날짜를 확인한 뒤 건물별 배출 규칙을 따로 남겨줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "내 일정·생활 건이야. 입력이 좀 깨진 재활용 배출 일정 건이야. 고유명사와 숫자에 오탈자가 두 개 있고 원문은 하나뿐이야. 확실한 값과 추정값을 나눠."
+          "content": "상황 설명은 내 일정·생활 건이야. 대상은 재활용 배출 일정 오탈자 입력. 재활용 배출 일정 오탈자 입력 원문에 오탈자와 숫자 오류가 있어 재활용 배출 일정 오탈자 입력 건이야. 오타 난 고유명사와 숫자를 확실한 값과 추정으로 나눠줘."
         },
         {
           "role": "user",
-          "content": "깨진 부분은 추측하지 말고 확인 필요로 남겨줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
+          "content": "재활용 배출 일정 오탈자 입력 기준으로 받아쓴 말은 최종 의미만 살리고 반복과 빈칸은 따로 적어줘. 재활용 배출 일정 오탈자 입력 건은 지자체 원문의 적용 구역과 날짜를 확인한 뒤 건물별 배출 규칙을 따로 남겨줘. 조건 변경: 아, 재활용 배출 일정 오탈자 입력 대상 바꿀게—마지막 범위가 우선이야. 돌아온 작업의 누락 구간을 별도 경고로 두고 나머지를 처리해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, Recover what the Recycling schedule task needs from the damaged input; separate confirmed values from guesses.. Input context: two proper names and a number contain typos while only one source exists. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
+          "content": "The personal-life material concerns Recycling schedule Typo heavy input. For Recycling schedule Typo heavy input, restore legible input only; separate confirmed values from guesses. Input context: Two proper names and a number contain typos while only one source exists. Recycling schedule Typo heavy input: Transcribe legible pieces first and mark damaged values for checking. For Recycling schedule Typo heavy input, Check the municipality source, coverage area, and date while keeping building rules separate."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a personal-life item. The input is messy for Recycling schedule. Two proper names and a number contain typos while only one source exists. Separate confirmed values from guesses."
+          "content": "This personal-life question is about Recycling schedule Typo heavy input. Typos and number errors affect the Recycling schedule Typo heavy input source. Recycling schedule Typo heavy input. Separate the typo-prone names and numbers into confirmed readings and guesses."
         },
         {
           "role": "user",
-          "content": "Do not repair broken bits by guessing; mark what needs checking. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
+          "content": "For Recycling schedule Typo heavy input, Keep the final meaning from the dictation; list repeats and gaps separately. For Recycling schedule Typo heavy input, Check the municipality source, coverage area, and date while keeping building rules separate. Mid-task change: The priority changed for Recycling schedule Typo heavy input; lead with the main result. Do not assert the state before resumption; begin with the newly confirmed facts."
         }
       ]
     }

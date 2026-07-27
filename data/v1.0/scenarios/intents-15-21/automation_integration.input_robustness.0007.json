@@ -40,8 +40,8 @@
     "naturalistic_features": [
       "followup_without_restatement",
       "message_burst",
-      "multi_intent_mixed_priority",
-      "rambling_stream"
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -66,17 +66,17 @@
       "features": [
         "followup_without_restatement",
         "message_burst",
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 비정형 실험 로그로 흐름 만들기 — 메모는 로그에는 샘플 ID, 작업자 의견, 결과 주장이 섞였고 일부 기록에는 시각이 없어, 결과는 근거 필드와 시각 누락 검토 보류가 있는 입력 흐름. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "열린 질문과 관련된 건 비정형 실험 로그로 흐름 만들기 - [raw]: 메모 로그에는 샘플 ID, 작업자 의견, 결과 주장이 섞였고 일부 기록에는 시각이 없어 / 결과 근거 필드와 시각 누락 검토 보류가 있는 입력 흐름 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "빠진 사실이 있으면 초안을 되돌릴 수 있게 남겨줘."
         }
       ]
     },
@@ -101,17 +101,17 @@
       "features": [
         "followup_without_restatement",
         "message_burst",
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: a workflow from unstructured experiment logs — I’ve got Logs mix sample IDs, operator comments, and result claims; timestamps are missing for some entries.; can you give me a structured intake with evidence fields and a review hold for missing timestamps? no invented details pls"
+          "content": "i have an open question about a workflow from unstructured experiment logs - raw text: logs mix sample IDs, operator comments, and result claims; timestamps are missing for some entries / need: a structured intake with evidence fields and a review hold for missing timestamps / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "Keep the quick draft reversible when a fact is missing."
         }
       ]
     }

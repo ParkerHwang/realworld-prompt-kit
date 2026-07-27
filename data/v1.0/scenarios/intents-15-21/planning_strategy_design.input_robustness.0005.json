@@ -38,8 +38,8 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "emoji_shorthand",
-      "speech_to_text_disfluency"
+      "mid_task_change",
+      "self_correction_scope_shift"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 중복 처리, 근거 요청, 에스컬레이션 대기열이 포함된 분류 안로 좁히자. 큰 주제는 뒤섞인 고객지원 내보내기를 바탕으로 한 계획이고 믿을 수 있는 메모는 내보내기에는 중복 티켓, 설명 없는 긴급 표시, 이미 해결됐지만 열린 것으로 보이는 항목이 섞여 있어야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "조심스럽게 계획할 건 뒤섞인 고객지원 내보내기를 바탕으로 한 계획. 잠깐, 원하는 결과는 중복 처리, 근거 요청, 에스컬레이션 대기열이 포함된 분류 계획. 메모는 다음이야: 내보내기에는 중복 티켓, 설명 없는 긴급 표시, 이미 해결됐지만 열린 것으로 보이는 항목이 섞여 있어. 없는 건 가정으로 적어줘."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a triage plan with duplicate handling, evidence requests, and an escalation queue. The broader issue is a support-backlog plan from a messy export, and the notes I can stand behind are The export combines duplicate tickets, urgent labels without descriptions, and resolved items that still appear open.. Mark assumptions instead of filling blanks."
+          "content": "I’m asking for a cautious plan around a support-backlog plan from a messy export. Actually, focus on a triage plan with duplicate handling, evidence requests, and an escalation queue. I noted this: The export combines duplicate tickets, urgent labels without descriptions, and resolved items that still appear open. For a support-backlog plan from a messy export, mark assumptions; gaps stay open."
         }
       ]
     }

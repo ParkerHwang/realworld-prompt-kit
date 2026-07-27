@@ -38,10 +38,10 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "emoji_shorthand",
       "followup_without_restatement",
       "message_burst",
-      "speech_to_text_disfluency"
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
         "followup_without_restatement",
         "message_burst",
-        "speech_to_text_disfluency"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 우려를 에스컬레이션할지 판단 — 메모는 사용자는 불편한 상호작용을 말다만 안전, 정책, 즉각 위험의 세부는 없어, 결과는 안전을 중심으로 한 체크 질문 하나와 비공개 지원 경로 선택지. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "여기서 판단할 건 우려를 에스컬레이션할지 판단 - [raw]: 메모 사용자는 불편한 상호작용을 말하지만 안전, 정책, 즉각 위험의 세부는 없어 / 결과 안전을 중심으로 한 확인 질문 하나와 비공개 지원 경로 선택지 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "빠진 사실이 있으면 초안을 되돌릴 수 있게 남겨줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
         "followup_without_restatement",
         "message_burst",
-        "speech_to_text_disfluency"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: deciding whether a concern needs escalation — I’ve got The person asking describes an uncomfortable interaction but gives no details about safety, policy, or immediate risk.; can you give me one safety-oriented clarifying question and a choice of confidential support routes? no invented details pls"
+          "content": "i’m stuck on deciding whether a concern needs escalation - raw text: the person asking describes an uncomfortable interaction but gives no details about safety, policy, or immediate risk / need: one safety-oriented clarifying question and a choice of confidential support routes / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "Keep the quick draft reversible when a fact is missing."
         }
       ]
     }

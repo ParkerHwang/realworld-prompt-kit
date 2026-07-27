@@ -38,10 +38,10 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
+      "anaphora_prior_context",
       "followup_without_restatement",
       "message_burst",
-      "ocr_copy_format_noise",
-      "typo_spacing_punctuation"
+      "resume_after_interruption"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
         "message_burst",
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 출처 확인을 포함한 시장 확장 계획 얘기였어. 메모에는 팀에는 분석가 추정치, 오래된 설문, 경쟁사 주장이 있지만 시점과 정의가 서로 다르다라고 적혀 있어. 출처를 정규화하고 신중하게 확장 여부를 판단하는 안 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "안전한 다음 단계가 필요한 건 출처 확인을 포함한 시장 확장 계획. 다시 돌아와서 이 주제를 볼게. 메모 내용은 이래: 팀에는 분석가 추정치, 오래된 설문, 경쟁사 주장이 있지만 시점과 정의가 서로 다르다. 원하는 결과는 출처를 정규화하고 신중하게 확장 여부를 판단하는 계획. 앞선 범위도 봐줘."
         },
         {
           "role": "user",
-          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
+          "content": "결정 전에 가장 중요한 미확정 항목을 표시해줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
         "message_burst",
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up a market-expansion plan with source checks? I lost the thread a bit. The notes say Our team has an analyst estimate, an old survey, and a competitor claim, but their dates and definitions differ. What would a source-normalization plan and a cautious expansion decision look like? Keep the earlier boundaries in mind."
+          "content": "I’m looking for a safe way to approach a market-expansion plan with source checks. Picking this up: our team has an analyst estimate, an old survey, and a competitor claim, but their dates and definitions differ. A source-normalization plan and a cautious expansion decision could look like this. For a market-expansion plan with source checks, keep old limits visible."
         },
         {
           "role": "user",
-          "content": "If one missing detail would change the call, ask for it or label your assumption."
+          "content": "Before deciding, point out the unanswered detail that matters most."
         }
       ]
     }

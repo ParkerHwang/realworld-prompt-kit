@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.format_semantic_preservation.0003",
   "title": {
-    "ko": "한국어·영어 현지화 — 지역화 카피",
-    "en": "Korean-English localization — Localized copy"
+    "ko": "한국어 영어 현지화 지역화 카피",
+    "en": "Korean English localization Localized copy"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
@@ -18,8 +18,8 @@
       "education_research"
     ],
     "user_goal": {
-      "ko": "한국어·영어 현지화 자료를 지정 형식으로 바꿔줘. 지역 표현만 바꾸고 정책 문장은 보존해",
-      "en": "Convert the Korean-English localization material to the requested format; change conventions but preserve the policy."
+      "ko": "한국어 영어 현지화 지역화 카피 자료를 지정 형식으로 바꿔줘. 지역 표현만 바꾸고 정책 문장은 보존해",
+      "en": "For Korean English localization Localized copy, reformat without semantic drift; change conventions but preserve the policy"
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일반 정보와 상식을 확인하는 상황에서 한국어·영어 현지화 자료를 지정 형식으로 바꿔줘. 지역 표현만 바꾸고 정책 문장은 보존해. 입력 상황: 같은 정책을 두 지역의 결제·날짜 형식으로 내보내야 해. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "한국어 영어 현지화 지역화 카피 건에서 보는 맥락은 일반 정보 조회 건이야. 한국어 영어 현지화 지역화 카피 자료를 지정 형식으로 바꿔줘. 지역 표현만 바꾸고 정책 문장은 보존해. 입력 상황: 같은 정책을 두 지역의 결제·날짜 형식으로 내보내야 해. 한국어 영어 현지화 지역화 카피: 짧게 바꿔도 핵심 조건과 예외는 그대로 두어."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "일반 정보 조회 건이야. 모양을 바꿔야 하는 한국어·영어 현지화 건이야. 같은 정책을 두 지역의 결제·날짜 형식으로 내보내야 해. 지역 표현만 바꾸고 정책 문장은 보존해."
+          "content": "상황 설명은 일반 정보 조회 건이야. 대상은 한국어 영어 현지화 지역화 카피. 한국어 영어 현지화 지역화 카피 문구를 지역 형식에 맞춰야 해 한국어 영어 현지화 지역화 카피 건이야. 두 지역 결제와 날짜 표기만 맞추고 정책의 조건은 그대로 두어."
         },
         {
           "role": "user",
-          "content": "모양은 바꿔도 숫자·날짜·조건은 건드리지 마."
+          "content": "한국어 영어 현지화 지역화 카피 기준으로 새 JSON output을 항목별로 나눠도 자료 밖의 결론은 만들지 마. source 문장과 요청한 output 형식, FAQ source/output 경계를 유지해줘. 앞서 합의한 형식과 이번 빈칸만 짚어줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a general-information and everyday-knowledge context, Convert the Korean-English localization material to the requested format; change conventions but preserve the policy.. Input context: the same policy must be rendered in two regional currency and date conventions. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "Read Korean English localization Localized copy against the general-information context. For Korean English localization Localized copy, reformat without semantic drift; change conventions but preserve the policy. Input context: The same policy must be rendered in two regional currency and date conventions. Korean English localization Localized copy: Shorten the result but keep its core conditions and exceptions intact."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a general-information lookup. The format needs changing for Korean-English localization. The same policy must be rendered in two regional currency and date conventions. Change conventions but preserve the policy."
+          "content": "For the general-information context, use Korean English localization Localized copy. The Korean English localization Localized copy wording needs local conventions. Korean English localization Localized copy. Localize the payment and date conventions while leaving the policy conditions untouched."
         },
         {
           "role": "user",
-          "content": "Change the shape, not the numbers, dates, or conditions."
+          "content": "For Korean English localization Localized copy, Separate the fields without creating a conclusion beyond the material. Do not collapse the source material into the final output. Keep the JSON source/output labels distinct. Connect it to the prior answer and isolate the condition added here."
         }
       ]
     }

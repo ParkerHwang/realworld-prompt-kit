@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.boundary_ambiguity.0007",
   "title": {
-    "ko": "가전 안전 안내 — 현재·보관 문서",
-    "en": "Appliance-safety explanation — Current versus archived"
+    "ko": "가전 안전 안내 현재 보관 문서",
+    "en": "Appliance safety explanation Current versus archived"
   },
   "task": {
     "primary_intent": "explanation_teaching",
@@ -18,8 +18,8 @@
       "education_research"
     ],
     "user_goal": {
-      "ko": "가전 안전 안내의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해",
-      "en": "Work out the applicable scope for Appliance-safety explanation; State the rule for choosing the current document."
+      "ko": "가전 안전 안내 현재 보관 문서의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해",
+      "en": "For Appliance safety explanation Current versus archived, determine the applicable scope; state the rule for choosing the current document"
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 가전 안전 안내의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해. 입력 상황: 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "가전 안전 안내 현재 보관 문서 건의 배경은 내 일정·생활 건이야. 가전 안전 안내 현재 보관 문서의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해. 입력 상황: 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 가전 안전 안내 현재 보관 문서: 누가 언제 어디까지 해당하는지 가른 뒤 애매한 점만 물어봐."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "내 일정·생활 건이야. 범위가 헷갈리는 가전 안전 안내 건이야. 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 현재 문서를 고르는 기준을 한 문장으로 정리해."
+          "content": "가전 안전 안내 현재 보관 문서 건은 내 일정·생활 건이야. 결정 전에 가전 안전 안내 현재 보관 문서의 경계를 짚고 싶어 가전 안전 안내 현재 보관 문서 건이야. 검색 결과에서 최신본과 보관본을 구별할 실마리를 한 문장으로 줘."
         },
         {
           "role": "user",
-          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "가전 안전 안내 현재 보관 문서 기준으로 범위가 겹치는 곳은 임의로 고르지 말고 확인점을 세워줘. 조건 변경: 조건 변경—가전 안전 안내 현재 보관 문서 전체 말고 표시한 부분만. 요청이 겹치면 우선순위를 정하고 부수적인 항목은 표시만 해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, Work out the applicable scope for Appliance-safety explanation; State the rule for choosing the current document.. Input context: search results show a current document alongside an archived one. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Appliance safety explanation Current versus archived belongs to the personal-life context. For Appliance safety explanation Current versus archived, determine the applicable scope; state the rule for choosing the current document. Input context: Search results show a current document alongside an archived one. Appliance safety explanation Current versus archived: Separate who, when, and where it applies; ask only about the fuzzy edge."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a personal-life item. The scope is fuzzy for Appliance-safety explanation. Search results show a current document alongside an archived one. State the rule for choosing the current document."
+          "content": "This personal-life question is about Appliance safety explanation Current versus archived. Before deciding on Appliance safety explanation Current versus archived, I need the edge clarified. Appliance safety explanation Current versus archived. Give one sentence that distinguishes the live document from its archived search result."
         },
         {
           "role": "user",
-          "content": "If the boundary is fuzzy, ask one question before deciding."
+          "content": "For Appliance safety explanation Current versus archived, When scopes overlap, do not pick one silently; state the check needed. Mid-task change: Correction: use the newly stated date for Appliance safety explanation Current versus archived. If everything will not fit, choose the first question and explain why."
         }
       ]
     }

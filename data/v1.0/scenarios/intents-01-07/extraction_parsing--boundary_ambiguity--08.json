@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.boundary_ambiguity.0008",
   "title": {
-    "ko": "연구 변수 — 초보·전문가 독자",
-    "en": "Research variables — Beginner versus specialist reader"
+    "ko": "연구 변수 초보 전문가 독자",
+    "en": "Research variables Beginner versus specialist reader"
   },
   "task": {
     "primary_intent": "extraction_parsing",
@@ -18,8 +18,8 @@
       "office_admin"
     ],
     "user_goal": {
-      "ko": "연구 변수의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해",
-      "en": "Work out the applicable scope for Research variables; Propose an output that respects both audiences."
+      "ko": "연구 변수 초보 전문가 독자의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해",
+      "en": "For Research variables Beginner versus specialist reader, determine the applicable scope; propose an output that respects both audiences"
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "수업·학습·연구 자료를 다루는 상황에서 연구 변수의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 입력 상황: 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "연구 변수 초보 전문가 독자 건에서 보는 맥락은 수업·연구 자료야. 연구 변수 초보 전문가 독자의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 입력 상황: 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 연구 변수 초보 전문가 독자: 누가 언제 어디까지 해당하는지 가른 뒤 애매한 점만 물어봐."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일단 초안으로, 수업·연구 자료야. 범위가 헷갈리는 연구 변수 건이야. 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "위 건 — 연구 변수; 초록만, 표본·독립/결과변수·제한점. 초보·담당자 경계, 빠진 설계는 질문. 핵심과 확인점을 함께 표시해."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an education, learning, or research context, Work out the applicable scope for Research variables; Propose an output that respects both audiences.. Input context: the same facts must be explained differently to a beginner and a specialist. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "The education/research material concerns Research variables Beginner versus specialist reader. For Research variables Beginner versus specialist reader, determine the applicable scope; propose an output that respects both audiences. Input context: The same facts must be explained differently to a beginner and a specialist. Research variables Beginner versus specialist reader: Separate who, when, and where it applies; ask only about the fuzzy edge."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "A draft is fine for now: This is an education/research item. The scope is fuzzy for Research variables. The same facts must be explained differently to a beginner and a specialist. Propose an output that respects both audiences. If the boundary is fuzzy, ask one question before deciding."
+          "content": "That one — Research variables; abstract only: sample, independent/outcome variables, limitations. Beginner/specialist boundary; ask about missing design."
         }
       ]
     }

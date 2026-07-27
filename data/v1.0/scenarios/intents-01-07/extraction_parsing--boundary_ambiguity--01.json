@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.boundary_ambiguity.0001",
   "title": {
-    "ko": "회의 액션 아이템 — 정규·특별 적용 경계",
-    "en": "Meeting action items — Regular versus special scope"
+    "ko": "회의 액션 아이템 정규 특별 적용 경계",
+    "en": "Meeting action items Regular versus special scope"
   },
   "task": {
     "primary_intent": "extraction_parsing",
@@ -18,8 +18,8 @@
       "office_admin"
     ],
     "user_goal": {
-      "ko": "회의 액션 아이템의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해",
-      "en": "Work out the applicable scope for Meeting action items; Compare exactly when the exception applies."
+      "ko": "회의 액션 아이템 정규 특별 적용 경계의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해",
+      "en": "For Meeting action items Regular versus special scope, determine the applicable scope; compare exactly when the exception applies"
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 회의 액션 아이템의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해. 입력 상황: 정규 절차와 이번 한시 예외가 같은 화면에 보여. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "이번 작업의 분야는 팀 회의/커뮤니케이션 건이야, 대상은 회의 액션 아이템 정규 특별 적용 경계. 회의 액션 아이템 정규 특별 적용 경계의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해. 입력 상황: 정규 절차와 이번 한시 예외가 같은 화면에 보여. 회의 액션 아이템 정규 특별 적용 경계: 가까운 두 기준을 섞지 말고 경계선을 하나 짚어줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 팀 회의/커뮤니케이션 건이야. 범위가 헷갈리는 회의 액션 아이템 건이야. 정규 절차와 이번 한시 예외가 같은 화면에 보여. 어느 조건에서 예외로 넘어가는지 비교해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "복붙한 회의 액션 아이템 정규 특별 적용 경계 내용이 깨져서 정리가 필요해, 분야는 팀 회의/커뮤니케이션 건이야; 이번 대상은 회의 액션 아이템 정규 특별 적용 경계. 범위가 헷갈리는 회의 액션 아이템 정규 특별 적용 경계 건이야 회의 액션 아이템 정규 특별 적용 경계 건이야. 정규 흐름 안에 잠깐 생긴 예외가 어디서 갈라지는지 화면 기준으로 짚어줘. 회의 액션 아이템 정규 특별 적용 경계 기준으로 본문만으로 결정하지 말고 충돌하는 범위를 질문으로 남겨줘. 회의 액션 아이템 정규 특별 적용 경계는 읽는 사람용 문안만 건질 수 있을까? 회의 액션 아이템 정규 특별 적용 경계 어느 지역인지 먼저 알아야 해."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, Work out the applicable scope for Meeting action items; Compare exactly when the exception applies.. Input context: the ordinary procedure and a temporary exception appear on the same screen. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Use the team-communication context for Meeting action items Regular versus special scope. For Meeting action items Regular versus special scope, determine the applicable scope; compare exactly when the exception applies. Input context: The ordinary procedure and a temporary exception appear on the same screen. Meeting action items Regular versus special scope: Keep the two nearby rules apart and name the boundary between them."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: This is a team-communication item. The scope is fuzzy for Meeting action items. The ordinary procedure and a temporary exception appear on the same screen. Compare exactly when the exception applies. If the boundary is fuzzy, ask one question before deciding."
+          "content": "The pasted Meeting action items Regular versus special scope text is messy: Meeting action items Regular versus special scope falls under the team-communication desk. The scope for Meeting action items Regular versus special scope is fuzzy. Meeting action items Regular versus special scope. Use the screen's conditions to show where the temporary exception splits from the normal flow. For Meeting action items Regular versus special scope, Do not settle a conflict from the body alone; leave one scope question. Just the usable core of Meeting action items Regular versus special scope, perhaps? I still do not have the as-of date for Meeting action items Regular versus special scope."
         }
       ]
     }

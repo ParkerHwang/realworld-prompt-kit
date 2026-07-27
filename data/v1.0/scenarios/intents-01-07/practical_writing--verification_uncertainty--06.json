@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.verification_uncertainty.0006",
   "title": {
-    "ko": "학습 계획 — 공식 확인 경계",
-    "en": "Study plan — Official-review boundary"
+    "ko": "학습 계획 공식 확인 경계",
+    "en": "Study plan Official review boundary"
   },
   "task": {
     "primary_intent": "practical_writing",
@@ -19,8 +19,8 @@
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "학습 계획 자료의 근거와 미확인 부분을 나눠줘. 도움이 되는 정리와 전문가 판단을 분리해",
-      "en": "Separate evidence and unknowns in the Study plan material; separate useful organization from professional judgment."
+      "ko": "학습 계획 공식 확인 경계의 확인된 점과 빈틈을 나눠줘. 도움이 되는 정리와 전문가 판단을 분리해",
+      "en": "For Study plan Official review boundary, separate evidence from gaps; separate useful organization from professional judgment"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -51,7 +51,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "인사·노무 안내를 정리하되 개인별 판단은 담당자 확인이 필요한 상황에서 학습 계획 자료의 근거와 미확인 부분을 나눠줘. 도움이 되는 정리와 전문가 판단을 분리해. 입력 상황: 안전·법률·재무 판단에 쓸 자료라 담당 기관 확인이 필요해. 검증된 사실, 가정, 불확실성, 다음 확인 단계를 분리해서 제시해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "요청 대상은 학습 계획 공식 확인 경계이고, 인사 정책 건이야. 학습 계획 공식 확인 경계의 확인된 점과 빈틈을 나눠줘. 도움이 되는 정리와 전문가 판단을 분리해. 입력 상황: 안전·법률·재무 판단에 쓸 자료라 담당 기관 확인이 필요해. 학습 계획 공식 확인 경계: 관찰된 결과와 가능한 원인을 분리해 다음 확인 순서를 제안해줘. 전문 판단이 필요한 대목은 공식 확인 경계를 붙여줘."
         }
       ]
     },
@@ -67,11 +67,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "인사 정책 건이야. 근거를 다시 봐야 하는 학습 계획 건이야. 안전·법률·재무 판단에 쓸 자료라 담당 기관 확인이 필요해. 도움이 되는 정리와 전문가 판단을 분리해."
+          "content": "상황 설명은 인사 정책 건이야. 대상은 학습 계획 공식 확인 경계. 학습 계획 공식 확인 경계는 기관 확인과 정리를 나눠야 해 학습 계획 공식 확인 경계 건이야. 안전·법률·재무 판단에서 정리 가능한 정보와 기관 확인선을 구분해줘."
         },
         {
           "role": "user",
-          "content": "확정·추정·아직 모르는 것·다음 체크를 따로 적어줘. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "학습 계획 공식 확인 경계 기준으로 계산에 필요한 기준이 정해질 때까지 전제를 보류해줘. 책임 있는 판단의 선을 넘지 않게 다음 확인처를 알려줘. 조건 변경: 한 가지 수정: 학습 계획 공식 확인 경계 예외 조건도 포함해줘. 범위를 다시 좁혀서 위에 말한 대상만 처리해줘."
         }
       ]
     },
@@ -84,7 +84,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an HR or labor-policy context where individual decisions require an HR check, Separate evidence and unknowns in the Study plan material; separate useful organization from professional judgment.. Input context: the material may inform a safety, legal, or finance decision and needs official review. Separate verified facts, assumptions, uncertainty, and the next verification step. Make the boundary for official or professional review explicit."
+          "content": "Study plan Official review boundary is handled in HR/policy. For Study plan Official review boundary, separate evidence from gaps; separate useful organization from professional judgment. Input context: The material may inform a safety, legal, or finance decision and needs official review. Study plan Official review boundary: Separate observed results from possible causes and propose the next check. Mark where an official review or professional judgment is needed."
         }
       ]
     },
@@ -100,11 +100,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is an HR/policy item. The evidence needs checking for Study plan. The material may inform a safety, legal, or finance decision and needs official review. Separate useful organization from professional judgment."
+          "content": "Study plan Official review boundary falls under the HR/policy desk. Organization and official judgment must stay separate for Study plan Official review boundary. Study plan Official review boundary. Draw the line between useful organization and the agency review needed for a safety, legal, or finance call."
         },
         {
           "role": "user",
-          "content": "Keep confirmed, guessed, unknown, and next-check items separate. Do not make a professional determination; state what needs official review."
+          "content": "For Study plan Official review boundary, Hold the calculation until its required basis is agreed. Do not downplay the risk; show the verification step alongside it. Mid-task change: Take back the earlier condition; use the current rule for Study plan Official review boundary. Actually, use only the scope named in the title."
         }
       ]
     }

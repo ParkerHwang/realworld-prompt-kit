@@ -39,9 +39,9 @@
     },
     "naturalistic_features": [
       "followup_without_restatement",
+      "hedged_exploratory_request",
       "message_burst",
-      "mid_task_change",
-      "self_correction_scope_shift"
+      "missing_decisive_detail"
     ]
   },
   "realizations": [
@@ -65,18 +65,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
+        "hedged_exploratory_request",
         "message_burst",
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "신입 학습 계획 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 직무에는 제품 지식과 고객 커뮤니케이션이 필요다만 이전 경험과 입사 초기 업무량은 모른다고, 원하는 건 이전 경험을 묻는 질문 하나와 2단계 기본 안야. 답을 바꿀 빠진 정보는 따로 알려줘."
+          "content": "함께 판단할 쟁점은 신입 학습 계획. 초안부터 보자. 근거 메모는 이거야: 직무에는 제품 지식과 고객 커뮤니케이션이 필요하지만 이전 경험과 입사 초기 업무량은 모른다. 일단 이전 경험을 묻는 질문 하나와 2단계 기본 계획 형태를 잡아도 될지 함께 봐줘."
         },
         {
           "role": "user",
-          "content": "없는 입력은 맥락으로 채우지 말고 그대로 보이게 해줘."
+          "content": "근거가 얇다면 초안을 믿을 수 있게 만들 조건을 말해줘."
         }
       ]
     },
@@ -100,18 +100,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
+        "hedged_exploratory_request",
         "message_burst",
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Before we go too far on a new-hire learning plan, can you sketch a first pass? My evidence is The role needs product knowledge and customer communication, but the person's prior experience and start-date workload are unknown.; I need a two-stage baseline plan and one question about prior experience. Call out anything that would change the answer."
+          "content": "Could we reason through a new-hire learning plan. Before going further, evidence: the role needs product knowledge and customer communication, but the person's prior experience and start-date workload are unknown. Tentative first pass: a two-stage baseline plan and one question about prior experience; for a new-hire learning plan, flag answer-changing gaps."
         },
         {
           "role": "user",
-          "content": "Please leave unknown inputs visible rather than filling them in from context."
+          "content": "If the evidence is thin, say what would make a first pass reliable."
         }
       ]
     }

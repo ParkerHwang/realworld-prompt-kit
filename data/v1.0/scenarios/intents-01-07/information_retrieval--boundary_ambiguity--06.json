@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.boundary_ambiguity.0006",
   "title": {
-    "ko": "공공 건강 서비스 자격 — 성인·청소년 대상",
-    "en": "Public health-service eligibility — Adult versus youth eligibility"
+    "ko": "공공 건강 서비스 자격 성인 청소년 대상",
+    "en": "Public health service eligibility Adult versus youth eligibility"
   },
   "task": {
     "primary_intent": "information_retrieval",
@@ -18,8 +18,8 @@
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "공공 건강 서비스 자격의 적용 범위를 가려줘. 어느 조건이 누구에게 해당하는지 비교해",
-      "en": "Work out the applicable scope for Public health-service eligibility; Compare which condition applies to whom."
+      "ko": "공공 건강 서비스 자격 성인 청소년 대상의 적용 범위를 가려줘. 어느 조건이 누구에게 해당하는지 비교해",
+      "en": "For Public health service eligibility Adult versus youth eligibility, determine the applicable scope; compare which condition applies to whom"
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "건강 안내 자료를 읽고 의료진에게 확인할 내용을 정리하는 상황에서 공공 건강 서비스 자격의 적용 범위를 가려줘. 어느 조건이 누구에게 해당하는지 비교해. 입력 상황: 성인 조건과 청소년 조건이 다른 안내 두 장으로 나뉘어 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "분류는 건강 안내 자료야; 대상은 공공 건강 서비스 자격 성인 청소년 대상. 공공 건강 서비스 자격 성인 청소년 대상의 적용 범위를 가려줘. 어느 조건이 누구에게 해당하는지 비교해. 입력 상황: 성인 조건과 청소년 조건이 다른 안내 두 장으로 나뉘어 있어. 공공 건강 서비스 자격 성인 청소년 대상: 범위가 겹치는 곳은 임의로 고르지 말고 확인점을 세워줘. 공공 건강 서비스 자격 성인 청소년 대상 건은 검색 요약이 아니라 보건기관 원문을 보고 자격 정보와 진료 조언을 구분해. 전문 판단이 필요한 대목은 공식 확인 경계를 붙여줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "건강 안내 자료야. 범위가 헷갈리는 공공 건강 서비스 자격 건이야. 성인 조건과 청소년 조건이 다른 안내 두 장으로 나뉘어 있어. 어느 조건이 누구에게 해당하는지 비교해."
+          "content": "급해 — 대상은 공공 건강 서비스 자격 성인 청소년 대상. 맥락은 건강 안내 자료야. 공공 건강 서비스 자격 성인 청소년 대상에서 적용 범위가 충돌해 공공 건강 서비스 자격 성인 청소년 대상 건이야. 성인용과 청소년용 안내를 비교해 실제 해당되는 사람을 골라줘."
         },
         {
           "role": "user",
-          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
+          "content": "공공 건강 서비스 자격 성인 청소년 대상 기준으로 누가 언제 어디까지 해당하는지 가른 뒤 애매한 점만 물어봐. 전문가 검토 전에는 확정 표현을 피하고 근거를 남겨줘. 공공 건강 서비스 자격 성인 청소년 대상 건은 검색 요약이 아니라 보건기관 원문을 보고 자격 정보와 진료 조언을 구분해. 혹시 공공 건강 서비스 자격 성인 청소년 대상부터 확인해줄 수 있을까?"
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a health-information context where questions for a clinician must be separated from diagnosis, Work out the applicable scope for Public health-service eligibility; Compare which condition applies to whom.. Input context: adult and youth conditions are in two different notices. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date. Make the boundary for official or professional review explicit."
+          "content": "Public health service eligibility Adult versus youth eligibility is handled in health-information. For Public health service eligibility Adult versus youth eligibility, determine the applicable scope; compare which condition applies to whom. Input context: Adult and youth conditions are in two different notices. Public health service eligibility Adult versus youth eligibility: When scopes overlap, do not pick one silently; state the check needed. For Public health service eligibility Adult versus youth eligibility, Prefer the health agency original to a search summary and keep eligibility separate from care advice. Mark where an official review or professional judgment is needed."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a health-information item. The scope is fuzzy for Public health-service eligibility. Adult and youth conditions are in two different notices. Compare which condition applies to whom."
+          "content": "Need this now — Public health service eligibility Adult versus youth eligibility falls under the health-information desk. The applicable boundary for Public health service eligibility Adult versus youth eligibility is in dispute. Public health service eligibility Adult versus youth eligibility. Compare the adult and youth notices and identify who each one actually covers."
         },
         {
           "role": "user",
-          "content": "If the boundary is fuzzy, ask one question before deciding. Do not make a professional determination; state what needs official review. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
+          "content": "For Public health service eligibility Adult versus youth eligibility, Separate who, when, and where it applies; ask only about the fuzzy edge. Do not make a safety, legal, or finance determination; route it to the owner. For Public health service eligibility Adult versus youth eligibility, Prefer the health agency original to a search summary and keep eligibility separate from care advice. When convenient, would you look over the evidence for Public health service eligibility Adult versus youth eligibility?"
         }
       ]
     }

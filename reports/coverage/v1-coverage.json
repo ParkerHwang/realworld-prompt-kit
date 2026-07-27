@@ -1,0 +1,1753 @@
+{
+  "errors": [],
+  "manifest": "data/v1.0/manifest.json",
+  "release_evidence": {
+    "coverage_audit": {
+      "branch": "codex/coverage-audit",
+      "report": "reports/coverage/coverage-audit.json",
+      "sha": "16ae05cdf2fba02ac9827fca1c10e26b77f3acb8",
+      "status": "dated_pre_generation_baseline"
+    },
+    "status_policy": "Scenario status is source-authored; automated validation and block sampling never promote draft to reviewed.",
+    "worker_sources": {
+      "core-worker-1": {
+        "accepted_integration_base_sha": "d737e782f60ae9a1441f3ba5c92fdc71bffd8d7a",
+        "branch": "codex/worker-a-intents-01-07",
+        "integration_corrected_rows": 6,
+        "integration_overlay_report": "reports/workers/intents-01-07.md",
+        "integration_post_repair_errors": 0,
+        "later_source_tip_sha": "6757bc17cc4bd7118d1e63330565f91cc2d78d04",
+        "later_source_tip_status": "held_after_independent_strict_cue_failures"
+      },
+      "core-worker-2": {
+        "branch": "codex/worker-b-intents-08-14",
+        "integration_correction_classes": {
+          "english_sentence_boundary_capitalization": 360,
+          "korean_code_switch_profile": 39,
+          "numeric_fact_restoration": 5,
+          "rambling_length_profile": 1,
+          "resume_profile": 9,
+          "untrusted_instruction_profile": 7
+        },
+        "integration_overlay_report": "reports/workers/intents-08-14.md",
+        "integration_post_repair_errors": 0,
+        "source_reported_final_but_independently_rejected": true,
+        "source_sha": "f2662069ac556f125054ca59953467edcb2af033",
+        "source_strict_baseline_errors": 421
+      },
+      "core-worker-3": {
+        "branch": "codex/worker-c-intents-15-21",
+        "integration_corrected_rows": 12,
+        "integration_overlay_report": "reports/workers/intents-15-21.md",
+        "integration_post_repair_errors": 0,
+        "source_sha": "9b73b72b6871c2369d82f649bd768d4597384803"
+      }
+    }
+  },
+  "schema": "realworld-prompt-kit.coverage-report/1.0.0",
+  "stats": {
+    "blocks": {
+      "ai_agent_meta.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.ai_agent_meta.boundary_ambiguity.0001",
+        "scenario_ids": [
+          "rwpk.ai_agent_meta.boundary_ambiguity.0001",
+          "rwpk.ai_agent_meta.boundary_ambiguity.0002",
+          "rwpk.ai_agent_meta.boundary_ambiguity.0003",
+          "rwpk.ai_agent_meta.boundary_ambiguity.0004",
+          "rwpk.ai_agent_meta.boundary_ambiguity.0005",
+          "rwpk.ai_agent_meta.boundary_ambiguity.0006",
+          "rwpk.ai_agent_meta.boundary_ambiguity.0007",
+          "rwpk.ai_agent_meta.boundary_ambiguity.0008"
+        ]
+      },
+      "ai_agent_meta.canonical.cb8": {
+        "sample_scenario_id": "rwpk.ai_agent_meta.canonical.0001",
+        "scenario_ids": [
+          "rwpk.ai_agent_meta.canonical.0001",
+          "rwpk.ai_agent_meta.canonical.0002",
+          "rwpk.ai_agent_meta.canonical.0003",
+          "rwpk.ai_agent_meta.canonical.0004",
+          "rwpk.ai_agent_meta.canonical.0005",
+          "rwpk.ai_agent_meta.canonical.0006",
+          "rwpk.ai_agent_meta.canonical.0007",
+          "rwpk.ai_agent_meta.canonical.0008"
+        ]
+      },
+      "ai_agent_meta.execution_failure_recovery.cb8": {
+        "sample_scenario_id": "rwpk.ai_agent_meta.execution_failure_recovery.0001",
+        "scenario_ids": [
+          "rwpk.ai_agent_meta.execution_failure_recovery.0001",
+          "rwpk.ai_agent_meta.execution_failure_recovery.0002",
+          "rwpk.ai_agent_meta.execution_failure_recovery.0003",
+          "rwpk.ai_agent_meta.execution_failure_recovery.0004",
+          "rwpk.ai_agent_meta.execution_failure_recovery.0005",
+          "rwpk.ai_agent_meta.execution_failure_recovery.0006",
+          "rwpk.ai_agent_meta.execution_failure_recovery.0007",
+          "rwpk.ai_agent_meta.execution_failure_recovery.0008"
+        ]
+      },
+      "ai_agent_meta.input_robustness.cb8": {
+        "sample_scenario_id": "rwpk.ai_agent_meta.input_robustness.0001",
+        "scenario_ids": [
+          "rwpk.ai_agent_meta.input_robustness.0001",
+          "rwpk.ai_agent_meta.input_robustness.0002",
+          "rwpk.ai_agent_meta.input_robustness.0003",
+          "rwpk.ai_agent_meta.input_robustness.0004",
+          "rwpk.ai_agent_meta.input_robustness.0005",
+          "rwpk.ai_agent_meta.input_robustness.0006",
+          "rwpk.ai_agent_meta.input_robustness.0007",
+          "rwpk.ai_agent_meta.input_robustness.0008"
+        ]
+      },
+      "ai_agent_meta.meta_evaluation.cb8": {
+        "sample_scenario_id": "rwpk.ai_agent_meta.meta_evaluation.0001",
+        "scenario_ids": [
+          "rwpk.ai_agent_meta.meta_evaluation.0001",
+          "rwpk.ai_agent_meta.meta_evaluation.0002",
+          "rwpk.ai_agent_meta.meta_evaluation.0003",
+          "rwpk.ai_agent_meta.meta_evaluation.0004",
+          "rwpk.ai_agent_meta.meta_evaluation.0005",
+          "rwpk.ai_agent_meta.meta_evaluation.0006",
+          "rwpk.ai_agent_meta.meta_evaluation.0007",
+          "rwpk.ai_agent_meta.meta_evaluation.0008"
+        ]
+      },
+      "ai_agent_meta.verification_uncertainty.cb8": {
+        "sample_scenario_id": "rwpk.ai_agent_meta.verification_uncertainty.0001",
+        "scenario_ids": [
+          "rwpk.ai_agent_meta.verification_uncertainty.0001",
+          "rwpk.ai_agent_meta.verification_uncertainty.0002",
+          "rwpk.ai_agent_meta.verification_uncertainty.0003",
+          "rwpk.ai_agent_meta.verification_uncertainty.0004",
+          "rwpk.ai_agent_meta.verification_uncertainty.0005",
+          "rwpk.ai_agent_meta.verification_uncertainty.0006",
+          "rwpk.ai_agent_meta.verification_uncertainty.0007",
+          "rwpk.ai_agent_meta.verification_uncertainty.0008"
+        ]
+      },
+      "automation_integration.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.automation_integration.boundary_ambiguity.0001",
+        "scenario_ids": [
+          "rwpk.automation_integration.boundary_ambiguity.0001",
+          "rwpk.automation_integration.boundary_ambiguity.0002",
+          "rwpk.automation_integration.boundary_ambiguity.0003",
+          "rwpk.automation_integration.boundary_ambiguity.0004",
+          "rwpk.automation_integration.boundary_ambiguity.0005",
+          "rwpk.automation_integration.boundary_ambiguity.0006",
+          "rwpk.automation_integration.boundary_ambiguity.0007",
+          "rwpk.automation_integration.boundary_ambiguity.0008"
+        ]
+      },
+      "automation_integration.canonical.cb8": {
+        "sample_scenario_id": "rwpk.automation_integration.canonical.0001",
+        "scenario_ids": [
+          "rwpk.automation_integration.canonical.0001",
+          "rwpk.automation_integration.canonical.0002",
+          "rwpk.automation_integration.canonical.0003",
+          "rwpk.automation_integration.canonical.0004",
+          "rwpk.automation_integration.canonical.0005",
+          "rwpk.automation_integration.canonical.0006",
+          "rwpk.automation_integration.canonical.0007",
+          "rwpk.automation_integration.canonical.0008"
+        ]
+      },
+      "automation_integration.execution_failure_recovery.cb8": {
+        "sample_scenario_id": "rwpk.automation_integration.execution_failure_recovery.0001",
+        "scenario_ids": [
+          "rwpk.automation_integration.execution_failure_recovery.0001",
+          "rwpk.automation_integration.execution_failure_recovery.0002",
+          "rwpk.automation_integration.execution_failure_recovery.0003",
+          "rwpk.automation_integration.execution_failure_recovery.0004",
+          "rwpk.automation_integration.execution_failure_recovery.0005",
+          "rwpk.automation_integration.execution_failure_recovery.0006",
+          "rwpk.automation_integration.execution_failure_recovery.0007",
+          "rwpk.automation_integration.execution_failure_recovery.0008"
+        ]
+      },
+      "automation_integration.input_robustness.cb8": {
+        "sample_scenario_id": "rwpk.automation_integration.input_robustness.0001",
+        "scenario_ids": [
+          "rwpk.automation_integration.input_robustness.0001",
+          "rwpk.automation_integration.input_robustness.0002",
+          "rwpk.automation_integration.input_robustness.0003",
+          "rwpk.automation_integration.input_robustness.0004",
+          "rwpk.automation_integration.input_robustness.0005",
+          "rwpk.automation_integration.input_robustness.0006",
+          "rwpk.automation_integration.input_robustness.0007",
+          "rwpk.automation_integration.input_robustness.0008"
+        ]
+      },
+      "automation_integration.long_running_state.cb8": {
+        "sample_scenario_id": "rwpk.automation_integration.long_running_state.0001",
+        "scenario_ids": [
+          "rwpk.automation_integration.long_running_state.0001",
+          "rwpk.automation_integration.long_running_state.0002",
+          "rwpk.automation_integration.long_running_state.0003",
+          "rwpk.automation_integration.long_running_state.0004",
+          "rwpk.automation_integration.long_running_state.0005",
+          "rwpk.automation_integration.long_running_state.0006",
+          "rwpk.automation_integration.long_running_state.0007",
+          "rwpk.automation_integration.long_running_state.0008"
+        ]
+      },
+      "automation_integration.tradeoff_stakes.cb8": {
+        "sample_scenario_id": "rwpk.automation_integration.tradeoff_stakes.0001",
+        "scenario_ids": [
+          "rwpk.automation_integration.tradeoff_stakes.0001",
+          "rwpk.automation_integration.tradeoff_stakes.0002",
+          "rwpk.automation_integration.tradeoff_stakes.0003",
+          "rwpk.automation_integration.tradeoff_stakes.0004",
+          "rwpk.automation_integration.tradeoff_stakes.0005",
+          "rwpk.automation_integration.tradeoff_stakes.0006",
+          "rwpk.automation_integration.tradeoff_stakes.0007",
+          "rwpk.automation_integration.tradeoff_stakes.0008"
+        ]
+      },
+      "automation_integration.verification_uncertainty.cb8": {
+        "sample_scenario_id": "rwpk.automation_integration.verification_uncertainty.0001",
+        "scenario_ids": [
+          "rwpk.automation_integration.verification_uncertainty.0001",
+          "rwpk.automation_integration.verification_uncertainty.0002",
+          "rwpk.automation_integration.verification_uncertainty.0003",
+          "rwpk.automation_integration.verification_uncertainty.0004",
+          "rwpk.automation_integration.verification_uncertainty.0005",
+          "rwpk.automation_integration.verification_uncertainty.0006",
+          "rwpk.automation_integration.verification_uncertainty.0007",
+          "rwpk.automation_integration.verification_uncertainty.0008"
+        ]
+      },
+      "classification_organization.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.classification_organization.boundary_ambiguity_01.8009",
+        "scenario_ids": [
+          "rwpk.classification_organization.boundary_ambiguity_01.8009",
+          "rwpk.classification_organization.boundary_ambiguity_02.8010",
+          "rwpk.classification_organization.boundary_ambiguity_03.8011",
+          "rwpk.classification_organization.boundary_ambiguity_04.8012",
+          "rwpk.classification_organization.boundary_ambiguity_05.8013",
+          "rwpk.classification_organization.boundary_ambiguity_06.8014",
+          "rwpk.classification_organization.boundary_ambiguity_07.8015",
+          "rwpk.classification_organization.boundary_ambiguity_08.8016"
+        ]
+      },
+      "classification_organization.canonical.cb8": {
+        "sample_scenario_id": "rwpk.classification_organization.canonical_01.8001",
+        "scenario_ids": [
+          "rwpk.classification_organization.canonical_01.8001",
+          "rwpk.classification_organization.canonical_02.8002",
+          "rwpk.classification_organization.canonical_03.8003",
+          "rwpk.classification_organization.canonical_04.8004",
+          "rwpk.classification_organization.canonical_05.8005",
+          "rwpk.classification_organization.canonical_06.8006",
+          "rwpk.classification_organization.canonical_07.8007",
+          "rwpk.classification_organization.canonical_08.8008"
+        ]
+      },
+      "classification_organization.input_robustness.cb8": {
+        "sample_scenario_id": "rwpk.classification_organization.input_robustness_01.8017",
+        "scenario_ids": [
+          "rwpk.classification_organization.input_robustness_01.8017",
+          "rwpk.classification_organization.input_robustness_02.8018",
+          "rwpk.classification_organization.input_robustness_03.8019",
+          "rwpk.classification_organization.input_robustness_04.8020",
+          "rwpk.classification_organization.input_robustness_05.8021",
+          "rwpk.classification_organization.input_robustness_06.8022",
+          "rwpk.classification_organization.input_robustness_07.8023",
+          "rwpk.classification_organization.input_robustness_08.8024"
+        ]
+      },
+      "classification_organization.multi_criteria_boundary.cb8": {
+        "sample_scenario_id": "rwpk.classification_organization.multi_criteria_boundary_01.8025",
+        "scenario_ids": [
+          "rwpk.classification_organization.multi_criteria_boundary_01.8025",
+          "rwpk.classification_organization.multi_criteria_boundary_02.8026",
+          "rwpk.classification_organization.multi_criteria_boundary_03.8027",
+          "rwpk.classification_organization.multi_criteria_boundary_04.8028",
+          "rwpk.classification_organization.multi_criteria_boundary_05.8029",
+          "rwpk.classification_organization.multi_criteria_boundary_06.8030",
+          "rwpk.classification_organization.multi_criteria_boundary_07.8031",
+          "rwpk.classification_organization.multi_criteria_boundary_08.8032"
+        ]
+      },
+      "classification_organization.verification_uncertainty.cb8": {
+        "sample_scenario_id": "rwpk.classification_organization.verification_uncertainty_01.8033",
+        "scenario_ids": [
+          "rwpk.classification_organization.verification_uncertainty_01.8033",
+          "rwpk.classification_organization.verification_uncertainty_02.8034",
+          "rwpk.classification_organization.verification_uncertainty_03.8035",
+          "rwpk.classification_organization.verification_uncertainty_04.8036",
+          "rwpk.classification_organization.verification_uncertainty_05.8037",
+          "rwpk.classification_organization.verification_uncertainty_06.8038",
+          "rwpk.classification_organization.verification_uncertainty_07.8039",
+          "rwpk.classification_organization.verification_uncertainty_08.8040"
+        ]
+      },
+      "coaching_conversational_support.audience_context_shift.cb8": {
+        "sample_scenario_id": "rwpk.coaching_conversational_support.audience_context_shift.0001",
+        "scenario_ids": [
+          "rwpk.coaching_conversational_support.audience_context_shift.0001",
+          "rwpk.coaching_conversational_support.audience_context_shift.0002",
+          "rwpk.coaching_conversational_support.audience_context_shift.0003",
+          "rwpk.coaching_conversational_support.audience_context_shift.0004",
+          "rwpk.coaching_conversational_support.audience_context_shift.0005",
+          "rwpk.coaching_conversational_support.audience_context_shift.0006",
+          "rwpk.coaching_conversational_support.audience_context_shift.0007",
+          "rwpk.coaching_conversational_support.audience_context_shift.0008"
+        ]
+      },
+      "coaching_conversational_support.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.coaching_conversational_support.boundary_ambiguity.0001",
+        "scenario_ids": [
+          "rwpk.coaching_conversational_support.boundary_ambiguity.0001",
+          "rwpk.coaching_conversational_support.boundary_ambiguity.0002",
+          "rwpk.coaching_conversational_support.boundary_ambiguity.0003",
+          "rwpk.coaching_conversational_support.boundary_ambiguity.0004",
+          "rwpk.coaching_conversational_support.boundary_ambiguity.0005",
+          "rwpk.coaching_conversational_support.boundary_ambiguity.0006",
+          "rwpk.coaching_conversational_support.boundary_ambiguity.0007",
+          "rwpk.coaching_conversational_support.boundary_ambiguity.0008"
+        ]
+      },
+      "coaching_conversational_support.canonical.cb8": {
+        "sample_scenario_id": "rwpk.coaching_conversational_support.canonical.0001",
+        "scenario_ids": [
+          "rwpk.coaching_conversational_support.canonical.0001",
+          "rwpk.coaching_conversational_support.canonical.0002",
+          "rwpk.coaching_conversational_support.canonical.0003",
+          "rwpk.coaching_conversational_support.canonical.0004",
+          "rwpk.coaching_conversational_support.canonical.0005",
+          "rwpk.coaching_conversational_support.canonical.0006",
+          "rwpk.coaching_conversational_support.canonical.0007",
+          "rwpk.coaching_conversational_support.canonical.0008"
+        ]
+      },
+      "coaching_conversational_support.human_boundary.cb8": {
+        "sample_scenario_id": "rwpk.coaching_conversational_support.human_boundary.0001",
+        "scenario_ids": [
+          "rwpk.coaching_conversational_support.human_boundary.0001",
+          "rwpk.coaching_conversational_support.human_boundary.0002",
+          "rwpk.coaching_conversational_support.human_boundary.0003",
+          "rwpk.coaching_conversational_support.human_boundary.0004",
+          "rwpk.coaching_conversational_support.human_boundary.0005",
+          "rwpk.coaching_conversational_support.human_boundary.0006",
+          "rwpk.coaching_conversational_support.human_boundary.0007",
+          "rwpk.coaching_conversational_support.human_boundary.0008"
+        ]
+      },
+      "coaching_conversational_support.tradeoff_stakes.cb8": {
+        "sample_scenario_id": "rwpk.coaching_conversational_support.tradeoff_stakes.0001",
+        "scenario_ids": [
+          "rwpk.coaching_conversational_support.tradeoff_stakes.0001",
+          "rwpk.coaching_conversational_support.tradeoff_stakes.0002",
+          "rwpk.coaching_conversational_support.tradeoff_stakes.0003",
+          "rwpk.coaching_conversational_support.tradeoff_stakes.0004",
+          "rwpk.coaching_conversational_support.tradeoff_stakes.0005",
+          "rwpk.coaching_conversational_support.tradeoff_stakes.0006",
+          "rwpk.coaching_conversational_support.tradeoff_stakes.0007",
+          "rwpk.coaching_conversational_support.tradeoff_stakes.0008"
+        ]
+      },
+      "communication_collaboration_negotiation.audience_context_shift.cb8": {
+        "sample_scenario_id": "rwpk.communication_collaboration_negotiation.audience_context_shift.0001",
+        "scenario_ids": [
+          "rwpk.communication_collaboration_negotiation.audience_context_shift.0001",
+          "rwpk.communication_collaboration_negotiation.audience_context_shift.0002",
+          "rwpk.communication_collaboration_negotiation.audience_context_shift.0003",
+          "rwpk.communication_collaboration_negotiation.audience_context_shift.0004",
+          "rwpk.communication_collaboration_negotiation.audience_context_shift.0005",
+          "rwpk.communication_collaboration_negotiation.audience_context_shift.0006",
+          "rwpk.communication_collaboration_negotiation.audience_context_shift.0007",
+          "rwpk.communication_collaboration_negotiation.audience_context_shift.0008"
+        ]
+      },
+      "communication_collaboration_negotiation.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.communication_collaboration_negotiation.boundary_ambiguity.0001",
+        "scenario_ids": [
+          "rwpk.communication_collaboration_negotiation.boundary_ambiguity.0001",
+          "rwpk.communication_collaboration_negotiation.boundary_ambiguity.0002",
+          "rwpk.communication_collaboration_negotiation.boundary_ambiguity.0003",
+          "rwpk.communication_collaboration_negotiation.boundary_ambiguity.0004",
+          "rwpk.communication_collaboration_negotiation.boundary_ambiguity.0005",
+          "rwpk.communication_collaboration_negotiation.boundary_ambiguity.0006",
+          "rwpk.communication_collaboration_negotiation.boundary_ambiguity.0007",
+          "rwpk.communication_collaboration_negotiation.boundary_ambiguity.0008"
+        ]
+      },
+      "communication_collaboration_negotiation.canonical.cb8": {
+        "sample_scenario_id": "rwpk.communication_collaboration_negotiation.canonical.0001",
+        "scenario_ids": [
+          "rwpk.communication_collaboration_negotiation.canonical.0001",
+          "rwpk.communication_collaboration_negotiation.canonical.0002",
+          "rwpk.communication_collaboration_negotiation.canonical.0003",
+          "rwpk.communication_collaboration_negotiation.canonical.0004",
+          "rwpk.communication_collaboration_negotiation.canonical.0005",
+          "rwpk.communication_collaboration_negotiation.canonical.0006",
+          "rwpk.communication_collaboration_negotiation.canonical.0007",
+          "rwpk.communication_collaboration_negotiation.canonical.0008"
+        ]
+      },
+      "communication_collaboration_negotiation.stakeholder_conflict.cb8": {
+        "sample_scenario_id": "rwpk.communication_collaboration_negotiation.stakeholder_conflict.0001",
+        "scenario_ids": [
+          "rwpk.communication_collaboration_negotiation.stakeholder_conflict.0001",
+          "rwpk.communication_collaboration_negotiation.stakeholder_conflict.0002",
+          "rwpk.communication_collaboration_negotiation.stakeholder_conflict.0003",
+          "rwpk.communication_collaboration_negotiation.stakeholder_conflict.0004",
+          "rwpk.communication_collaboration_negotiation.stakeholder_conflict.0005",
+          "rwpk.communication_collaboration_negotiation.stakeholder_conflict.0006",
+          "rwpk.communication_collaboration_negotiation.stakeholder_conflict.0007",
+          "rwpk.communication_collaboration_negotiation.stakeholder_conflict.0008"
+        ]
+      },
+      "communication_collaboration_negotiation.tradeoff_stakes.cb8": {
+        "sample_scenario_id": "rwpk.communication_collaboration_negotiation.tradeoff_stakes.0001",
+        "scenario_ids": [
+          "rwpk.communication_collaboration_negotiation.tradeoff_stakes.0001",
+          "rwpk.communication_collaboration_negotiation.tradeoff_stakes.0002",
+          "rwpk.communication_collaboration_negotiation.tradeoff_stakes.0003",
+          "rwpk.communication_collaboration_negotiation.tradeoff_stakes.0004",
+          "rwpk.communication_collaboration_negotiation.tradeoff_stakes.0005",
+          "rwpk.communication_collaboration_negotiation.tradeoff_stakes.0006",
+          "rwpk.communication_collaboration_negotiation.tradeoff_stakes.0007",
+          "rwpk.communication_collaboration_negotiation.tradeoff_stakes.0008"
+        ]
+      },
+      "creative_ideation.audience_context_shift.cb8": {
+        "sample_scenario_id": "rwpk.creative_ideation.audience_context_shift.0001",
+        "scenario_ids": [
+          "rwpk.creative_ideation.audience_context_shift.0001",
+          "rwpk.creative_ideation.audience_context_shift.0002",
+          "rwpk.creative_ideation.audience_context_shift.0003",
+          "rwpk.creative_ideation.audience_context_shift.0004",
+          "rwpk.creative_ideation.audience_context_shift.0005",
+          "rwpk.creative_ideation.audience_context_shift.0006",
+          "rwpk.creative_ideation.audience_context_shift.0007",
+          "rwpk.creative_ideation.audience_context_shift.0008"
+        ]
+      },
+      "creative_ideation.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.creative_ideation.boundary_ambiguity.0001",
+        "scenario_ids": [
+          "rwpk.creative_ideation.boundary_ambiguity.0001",
+          "rwpk.creative_ideation.boundary_ambiguity.0002",
+          "rwpk.creative_ideation.boundary_ambiguity.0003",
+          "rwpk.creative_ideation.boundary_ambiguity.0004",
+          "rwpk.creative_ideation.boundary_ambiguity.0005",
+          "rwpk.creative_ideation.boundary_ambiguity.0006",
+          "rwpk.creative_ideation.boundary_ambiguity.0007",
+          "rwpk.creative_ideation.boundary_ambiguity.0008"
+        ]
+      },
+      "creative_ideation.canonical.cb8": {
+        "sample_scenario_id": "rwpk.creative_ideation.canonical.0001",
+        "scenario_ids": [
+          "rwpk.creative_ideation.canonical.0001",
+          "rwpk.creative_ideation.canonical.0002",
+          "rwpk.creative_ideation.canonical.0003",
+          "rwpk.creative_ideation.canonical.0004",
+          "rwpk.creative_ideation.canonical.0005",
+          "rwpk.creative_ideation.canonical.0006",
+          "rwpk.creative_ideation.canonical.0007",
+          "rwpk.creative_ideation.canonical.0008"
+        ]
+      },
+      "creative_ideation.creativity_diversity.cb8": {
+        "sample_scenario_id": "rwpk.creative_ideation.creativity_diversity.0001",
+        "scenario_ids": [
+          "rwpk.creative_ideation.creativity_diversity.0001",
+          "rwpk.creative_ideation.creativity_diversity.0002",
+          "rwpk.creative_ideation.creativity_diversity.0003",
+          "rwpk.creative_ideation.creativity_diversity.0004",
+          "rwpk.creative_ideation.creativity_diversity.0005",
+          "rwpk.creative_ideation.creativity_diversity.0006",
+          "rwpk.creative_ideation.creativity_diversity.0007",
+          "rwpk.creative_ideation.creativity_diversity.0008"
+        ]
+      },
+      "decision_recommendation.audience_context_shift.cb8": {
+        "sample_scenario_id": "rwpk.decision_recommendation.audience_context_shift_01.8297",
+        "scenario_ids": [
+          "rwpk.decision_recommendation.audience_context_shift_01.8297",
+          "rwpk.decision_recommendation.audience_context_shift_02.8298",
+          "rwpk.decision_recommendation.audience_context_shift_03.8299",
+          "rwpk.decision_recommendation.audience_context_shift_04.8300",
+          "rwpk.decision_recommendation.audience_context_shift_05.8301",
+          "rwpk.decision_recommendation.audience_context_shift_06.8302",
+          "rwpk.decision_recommendation.audience_context_shift_07.8303",
+          "rwpk.decision_recommendation.audience_context_shift_08.8304"
+        ]
+      },
+      "decision_recommendation.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.decision_recommendation.boundary_ambiguity_01.8281",
+        "scenario_ids": [
+          "rwpk.decision_recommendation.boundary_ambiguity_01.8281",
+          "rwpk.decision_recommendation.boundary_ambiguity_02.8282",
+          "rwpk.decision_recommendation.boundary_ambiguity_03.8283",
+          "rwpk.decision_recommendation.boundary_ambiguity_04.8284",
+          "rwpk.decision_recommendation.boundary_ambiguity_05.8285",
+          "rwpk.decision_recommendation.boundary_ambiguity_06.8286",
+          "rwpk.decision_recommendation.boundary_ambiguity_07.8287",
+          "rwpk.decision_recommendation.boundary_ambiguity_08.8288"
+        ]
+      },
+      "decision_recommendation.canonical.cb8": {
+        "sample_scenario_id": "rwpk.decision_recommendation.canonical_01.8273",
+        "scenario_ids": [
+          "rwpk.decision_recommendation.canonical_01.8273",
+          "rwpk.decision_recommendation.canonical_02.8274",
+          "rwpk.decision_recommendation.canonical_03.8275",
+          "rwpk.decision_recommendation.canonical_04.8276",
+          "rwpk.decision_recommendation.canonical_05.8277",
+          "rwpk.decision_recommendation.canonical_06.8278",
+          "rwpk.decision_recommendation.canonical_07.8279",
+          "rwpk.decision_recommendation.canonical_08.8280"
+        ]
+      },
+      "decision_recommendation.input_robustness.cb8": {
+        "sample_scenario_id": "rwpk.decision_recommendation.input_robustness_01.8289",
+        "scenario_ids": [
+          "rwpk.decision_recommendation.input_robustness_01.8289",
+          "rwpk.decision_recommendation.input_robustness_02.8290",
+          "rwpk.decision_recommendation.input_robustness_03.8291",
+          "rwpk.decision_recommendation.input_robustness_04.8292",
+          "rwpk.decision_recommendation.input_robustness_05.8293",
+          "rwpk.decision_recommendation.input_robustness_06.8294",
+          "rwpk.decision_recommendation.input_robustness_07.8295",
+          "rwpk.decision_recommendation.input_robustness_08.8296"
+        ]
+      },
+      "decision_recommendation.tradeoff_stakes.cb8": {
+        "sample_scenario_id": "rwpk.decision_recommendation.tradeoff_stakes_01.8313",
+        "scenario_ids": [
+          "rwpk.decision_recommendation.tradeoff_stakes_01.8313",
+          "rwpk.decision_recommendation.tradeoff_stakes_02.8314",
+          "rwpk.decision_recommendation.tradeoff_stakes_03.8315",
+          "rwpk.decision_recommendation.tradeoff_stakes_04.8316",
+          "rwpk.decision_recommendation.tradeoff_stakes_05.8317",
+          "rwpk.decision_recommendation.tradeoff_stakes_06.8318",
+          "rwpk.decision_recommendation.tradeoff_stakes_07.8319",
+          "rwpk.decision_recommendation.tradeoff_stakes_08.8320"
+        ]
+      },
+      "decision_recommendation.verification_uncertainty.cb8": {
+        "sample_scenario_id": "rwpk.decision_recommendation.verification_uncertainty_01.8305",
+        "scenario_ids": [
+          "rwpk.decision_recommendation.verification_uncertainty_01.8305",
+          "rwpk.decision_recommendation.verification_uncertainty_02.8306",
+          "rwpk.decision_recommendation.verification_uncertainty_03.8307",
+          "rwpk.decision_recommendation.verification_uncertainty_04.8308",
+          "rwpk.decision_recommendation.verification_uncertainty_05.8309",
+          "rwpk.decision_recommendation.verification_uncertainty_06.8310",
+          "rwpk.decision_recommendation.verification_uncertainty_07.8311",
+          "rwpk.decision_recommendation.verification_uncertainty_08.8312"
+        ]
+      },
+      "diagnosis_root_cause.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.diagnosis_root_cause.boundary_ambiguity_01.8137",
+        "scenario_ids": [
+          "rwpk.diagnosis_root_cause.boundary_ambiguity_01.8137",
+          "rwpk.diagnosis_root_cause.boundary_ambiguity_02.8138",
+          "rwpk.diagnosis_root_cause.boundary_ambiguity_03.8139",
+          "rwpk.diagnosis_root_cause.boundary_ambiguity_04.8140",
+          "rwpk.diagnosis_root_cause.boundary_ambiguity_05.8141",
+          "rwpk.diagnosis_root_cause.boundary_ambiguity_06.8142",
+          "rwpk.diagnosis_root_cause.boundary_ambiguity_07.8143",
+          "rwpk.diagnosis_root_cause.boundary_ambiguity_08.8144"
+        ]
+      },
+      "diagnosis_root_cause.canonical.cb8": {
+        "sample_scenario_id": "rwpk.diagnosis_root_cause.canonical_01.8129",
+        "scenario_ids": [
+          "rwpk.diagnosis_root_cause.canonical_01.8129",
+          "rwpk.diagnosis_root_cause.canonical_02.8130",
+          "rwpk.diagnosis_root_cause.canonical_03.8131",
+          "rwpk.diagnosis_root_cause.canonical_04.8132",
+          "rwpk.diagnosis_root_cause.canonical_05.8133",
+          "rwpk.diagnosis_root_cause.canonical_06.8134",
+          "rwpk.diagnosis_root_cause.canonical_07.8135",
+          "rwpk.diagnosis_root_cause.canonical_08.8136"
+        ]
+      },
+      "diagnosis_root_cause.competing_hypotheses.cb8": {
+        "sample_scenario_id": "rwpk.diagnosis_root_cause.competing_hypotheses_01.8153",
+        "scenario_ids": [
+          "rwpk.diagnosis_root_cause.competing_hypotheses_01.8153",
+          "rwpk.diagnosis_root_cause.competing_hypotheses_02.8154",
+          "rwpk.diagnosis_root_cause.competing_hypotheses_03.8155",
+          "rwpk.diagnosis_root_cause.competing_hypotheses_04.8156",
+          "rwpk.diagnosis_root_cause.competing_hypotheses_05.8157",
+          "rwpk.diagnosis_root_cause.competing_hypotheses_06.8158",
+          "rwpk.diagnosis_root_cause.competing_hypotheses_07.8159",
+          "rwpk.diagnosis_root_cause.competing_hypotheses_08.8160"
+        ]
+      },
+      "diagnosis_root_cause.input_robustness.cb8": {
+        "sample_scenario_id": "rwpk.diagnosis_root_cause.input_robustness_01.8145",
+        "scenario_ids": [
+          "rwpk.diagnosis_root_cause.input_robustness_01.8145",
+          "rwpk.diagnosis_root_cause.input_robustness_02.8146",
+          "rwpk.diagnosis_root_cause.input_robustness_03.8147",
+          "rwpk.diagnosis_root_cause.input_robustness_04.8148",
+          "rwpk.diagnosis_root_cause.input_robustness_05.8149",
+          "rwpk.diagnosis_root_cause.input_robustness_06.8150",
+          "rwpk.diagnosis_root_cause.input_robustness_07.8151",
+          "rwpk.diagnosis_root_cause.input_robustness_08.8152"
+        ]
+      },
+      "diagnosis_root_cause.tradeoff_stakes.cb8": {
+        "sample_scenario_id": "rwpk.diagnosis_root_cause.tradeoff_stakes_01.8169",
+        "scenario_ids": [
+          "rwpk.diagnosis_root_cause.tradeoff_stakes_01.8169",
+          "rwpk.diagnosis_root_cause.tradeoff_stakes_02.8170",
+          "rwpk.diagnosis_root_cause.tradeoff_stakes_03.8171",
+          "rwpk.diagnosis_root_cause.tradeoff_stakes_04.8172",
+          "rwpk.diagnosis_root_cause.tradeoff_stakes_05.8173",
+          "rwpk.diagnosis_root_cause.tradeoff_stakes_06.8174",
+          "rwpk.diagnosis_root_cause.tradeoff_stakes_07.8175",
+          "rwpk.diagnosis_root_cause.tradeoff_stakes_08.8176"
+        ]
+      },
+      "diagnosis_root_cause.verification_uncertainty.cb8": {
+        "sample_scenario_id": "rwpk.diagnosis_root_cause.verification_uncertainty_01.8161",
+        "scenario_ids": [
+          "rwpk.diagnosis_root_cause.verification_uncertainty_01.8161",
+          "rwpk.diagnosis_root_cause.verification_uncertainty_02.8162",
+          "rwpk.diagnosis_root_cause.verification_uncertainty_03.8163",
+          "rwpk.diagnosis_root_cause.verification_uncertainty_04.8164",
+          "rwpk.diagnosis_root_cause.verification_uncertainty_05.8165",
+          "rwpk.diagnosis_root_cause.verification_uncertainty_06.8166",
+          "rwpk.diagnosis_root_cause.verification_uncertainty_07.8167",
+          "rwpk.diagnosis_root_cause.verification_uncertainty_08.8168"
+        ]
+      },
+      "evaluation_review_audit.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.evaluation_review_audit.boundary_ambiguity_01.8233",
+        "scenario_ids": [
+          "rwpk.evaluation_review_audit.boundary_ambiguity_01.8233",
+          "rwpk.evaluation_review_audit.boundary_ambiguity_02.8234",
+          "rwpk.evaluation_review_audit.boundary_ambiguity_03.8235",
+          "rwpk.evaluation_review_audit.boundary_ambiguity_04.8236",
+          "rwpk.evaluation_review_audit.boundary_ambiguity_05.8237",
+          "rwpk.evaluation_review_audit.boundary_ambiguity_06.8238",
+          "rwpk.evaluation_review_audit.boundary_ambiguity_07.8239",
+          "rwpk.evaluation_review_audit.boundary_ambiguity_08.8240"
+        ]
+      },
+      "evaluation_review_audit.canonical.cb8": {
+        "sample_scenario_id": "rwpk.evaluation_review_audit.canonical_01.8225",
+        "scenario_ids": [
+          "rwpk.evaluation_review_audit.canonical_01.8225",
+          "rwpk.evaluation_review_audit.canonical_02.8226",
+          "rwpk.evaluation_review_audit.canonical_03.8227",
+          "rwpk.evaluation_review_audit.canonical_04.8228",
+          "rwpk.evaluation_review_audit.canonical_05.8229",
+          "rwpk.evaluation_review_audit.canonical_06.8230",
+          "rwpk.evaluation_review_audit.canonical_07.8231",
+          "rwpk.evaluation_review_audit.canonical_08.8232"
+        ]
+      },
+      "evaluation_review_audit.input_robustness.cb8": {
+        "sample_scenario_id": "rwpk.evaluation_review_audit.input_robustness_01.8241",
+        "scenario_ids": [
+          "rwpk.evaluation_review_audit.input_robustness_01.8241",
+          "rwpk.evaluation_review_audit.input_robustness_02.8242",
+          "rwpk.evaluation_review_audit.input_robustness_03.8243",
+          "rwpk.evaluation_review_audit.input_robustness_04.8244",
+          "rwpk.evaluation_review_audit.input_robustness_05.8245",
+          "rwpk.evaluation_review_audit.input_robustness_06.8246",
+          "rwpk.evaluation_review_audit.input_robustness_07.8247",
+          "rwpk.evaluation_review_audit.input_robustness_08.8248"
+        ]
+      },
+      "evaluation_review_audit.multi_criteria_boundary.cb8": {
+        "sample_scenario_id": "rwpk.evaluation_review_audit.multi_criteria_boundary_01.8249",
+        "scenario_ids": [
+          "rwpk.evaluation_review_audit.multi_criteria_boundary_01.8249",
+          "rwpk.evaluation_review_audit.multi_criteria_boundary_02.8250",
+          "rwpk.evaluation_review_audit.multi_criteria_boundary_03.8251",
+          "rwpk.evaluation_review_audit.multi_criteria_boundary_04.8252",
+          "rwpk.evaluation_review_audit.multi_criteria_boundary_05.8253",
+          "rwpk.evaluation_review_audit.multi_criteria_boundary_06.8254",
+          "rwpk.evaluation_review_audit.multi_criteria_boundary_07.8255",
+          "rwpk.evaluation_review_audit.multi_criteria_boundary_08.8256"
+        ]
+      },
+      "evaluation_review_audit.tradeoff_stakes.cb8": {
+        "sample_scenario_id": "rwpk.evaluation_review_audit.tradeoff_stakes_01.8265",
+        "scenario_ids": [
+          "rwpk.evaluation_review_audit.tradeoff_stakes_01.8265",
+          "rwpk.evaluation_review_audit.tradeoff_stakes_02.8266",
+          "rwpk.evaluation_review_audit.tradeoff_stakes_03.8267",
+          "rwpk.evaluation_review_audit.tradeoff_stakes_04.8268",
+          "rwpk.evaluation_review_audit.tradeoff_stakes_05.8269",
+          "rwpk.evaluation_review_audit.tradeoff_stakes_06.8270",
+          "rwpk.evaluation_review_audit.tradeoff_stakes_07.8271",
+          "rwpk.evaluation_review_audit.tradeoff_stakes_08.8272"
+        ]
+      },
+      "evaluation_review_audit.verification_uncertainty.cb8": {
+        "sample_scenario_id": "rwpk.evaluation_review_audit.verification_uncertainty_01.8257",
+        "scenario_ids": [
+          "rwpk.evaluation_review_audit.verification_uncertainty_01.8257",
+          "rwpk.evaluation_review_audit.verification_uncertainty_02.8258",
+          "rwpk.evaluation_review_audit.verification_uncertainty_03.8259",
+          "rwpk.evaluation_review_audit.verification_uncertainty_04.8260",
+          "rwpk.evaluation_review_audit.verification_uncertainty_05.8261",
+          "rwpk.evaluation_review_audit.verification_uncertainty_06.8262",
+          "rwpk.evaluation_review_audit.verification_uncertainty_07.8263",
+          "rwpk.evaluation_review_audit.verification_uncertainty_08.8264"
+        ]
+      },
+      "explanation_teaching.audience_context_shift.cb8": {
+        "sample_scenario_id": "rwpk.explanation_teaching.audience_context_shift.0001",
+        "scenario_ids": [
+          "rwpk.explanation_teaching.audience_context_shift.0001",
+          "rwpk.explanation_teaching.audience_context_shift.0002",
+          "rwpk.explanation_teaching.audience_context_shift.0003",
+          "rwpk.explanation_teaching.audience_context_shift.0004",
+          "rwpk.explanation_teaching.audience_context_shift.0005",
+          "rwpk.explanation_teaching.audience_context_shift.0006",
+          "rwpk.explanation_teaching.audience_context_shift.0007",
+          "rwpk.explanation_teaching.audience_context_shift.0008"
+        ]
+      },
+      "explanation_teaching.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.explanation_teaching.boundary_ambiguity.0001",
+        "scenario_ids": [
+          "rwpk.explanation_teaching.boundary_ambiguity.0001",
+          "rwpk.explanation_teaching.boundary_ambiguity.0002",
+          "rwpk.explanation_teaching.boundary_ambiguity.0003",
+          "rwpk.explanation_teaching.boundary_ambiguity.0004",
+          "rwpk.explanation_teaching.boundary_ambiguity.0005",
+          "rwpk.explanation_teaching.boundary_ambiguity.0006",
+          "rwpk.explanation_teaching.boundary_ambiguity.0007",
+          "rwpk.explanation_teaching.boundary_ambiguity.0008"
+        ]
+      },
+      "explanation_teaching.canonical.cb8": {
+        "sample_scenario_id": "rwpk.explanation_teaching.canonical.0001",
+        "scenario_ids": [
+          "rwpk.explanation_teaching.canonical.0001",
+          "rwpk.explanation_teaching.canonical.0002",
+          "rwpk.explanation_teaching.canonical.0003",
+          "rwpk.explanation_teaching.canonical.0004",
+          "rwpk.explanation_teaching.canonical.0005",
+          "rwpk.explanation_teaching.canonical.0006",
+          "rwpk.explanation_teaching.canonical.0007",
+          "rwpk.explanation_teaching.canonical.0008"
+        ]
+      },
+      "explanation_teaching.input_robustness.cb8": {
+        "sample_scenario_id": "rwpk.explanation_teaching.input_robustness.0001",
+        "scenario_ids": [
+          "rwpk.explanation_teaching.input_robustness.0001",
+          "rwpk.explanation_teaching.input_robustness.0002",
+          "rwpk.explanation_teaching.input_robustness.0003",
+          "rwpk.explanation_teaching.input_robustness.0004",
+          "rwpk.explanation_teaching.input_robustness.0005",
+          "rwpk.explanation_teaching.input_robustness.0006",
+          "rwpk.explanation_teaching.input_robustness.0007",
+          "rwpk.explanation_teaching.input_robustness.0008"
+        ]
+      },
+      "extraction_parsing.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.extraction_parsing.boundary_ambiguity.0001",
+        "scenario_ids": [
+          "rwpk.extraction_parsing.boundary_ambiguity.0001",
+          "rwpk.extraction_parsing.boundary_ambiguity.0002",
+          "rwpk.extraction_parsing.boundary_ambiguity.0003",
+          "rwpk.extraction_parsing.boundary_ambiguity.0004",
+          "rwpk.extraction_parsing.boundary_ambiguity.0005",
+          "rwpk.extraction_parsing.boundary_ambiguity.0006",
+          "rwpk.extraction_parsing.boundary_ambiguity.0007",
+          "rwpk.extraction_parsing.boundary_ambiguity.0008"
+        ]
+      },
+      "extraction_parsing.canonical.cb8": {
+        "sample_scenario_id": "rwpk.extraction_parsing.canonical.0001",
+        "scenario_ids": [
+          "rwpk.extraction_parsing.canonical.0001",
+          "rwpk.extraction_parsing.canonical.0002",
+          "rwpk.extraction_parsing.canonical.0003",
+          "rwpk.extraction_parsing.canonical.0004",
+          "rwpk.extraction_parsing.canonical.0005",
+          "rwpk.extraction_parsing.canonical.0006",
+          "rwpk.extraction_parsing.canonical.0007",
+          "rwpk.extraction_parsing.canonical.0008"
+        ]
+      },
+      "extraction_parsing.input_robustness.cb8": {
+        "sample_scenario_id": "rwpk.extraction_parsing.input_robustness.0001",
+        "scenario_ids": [
+          "rwpk.extraction_parsing.input_robustness.0001",
+          "rwpk.extraction_parsing.input_robustness.0002",
+          "rwpk.extraction_parsing.input_robustness.0003",
+          "rwpk.extraction_parsing.input_robustness.0004",
+          "rwpk.extraction_parsing.input_robustness.0005",
+          "rwpk.extraction_parsing.input_robustness.0006",
+          "rwpk.extraction_parsing.input_robustness.0007",
+          "rwpk.extraction_parsing.input_robustness.0008"
+        ]
+      },
+      "forecasting_scenario_risk.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.forecasting_scenario_risk.boundary_ambiguity_01.8185",
+        "scenario_ids": [
+          "rwpk.forecasting_scenario_risk.boundary_ambiguity_01.8185",
+          "rwpk.forecasting_scenario_risk.boundary_ambiguity_02.8186",
+          "rwpk.forecasting_scenario_risk.boundary_ambiguity_03.8187",
+          "rwpk.forecasting_scenario_risk.boundary_ambiguity_04.8188",
+          "rwpk.forecasting_scenario_risk.boundary_ambiguity_05.8189",
+          "rwpk.forecasting_scenario_risk.boundary_ambiguity_06.8190",
+          "rwpk.forecasting_scenario_risk.boundary_ambiguity_07.8191",
+          "rwpk.forecasting_scenario_risk.boundary_ambiguity_08.8192"
+        ]
+      },
+      "forecasting_scenario_risk.canonical.cb8": {
+        "sample_scenario_id": "rwpk.forecasting_scenario_risk.canonical_01.8177",
+        "scenario_ids": [
+          "rwpk.forecasting_scenario_risk.canonical_01.8177",
+          "rwpk.forecasting_scenario_risk.canonical_02.8178",
+          "rwpk.forecasting_scenario_risk.canonical_03.8179",
+          "rwpk.forecasting_scenario_risk.canonical_04.8180",
+          "rwpk.forecasting_scenario_risk.canonical_05.8181",
+          "rwpk.forecasting_scenario_risk.canonical_06.8182",
+          "rwpk.forecasting_scenario_risk.canonical_07.8183",
+          "rwpk.forecasting_scenario_risk.canonical_08.8184"
+        ]
+      },
+      "forecasting_scenario_risk.forecast_reference_class.cb8": {
+        "sample_scenario_id": "rwpk.forecasting_scenario_risk.forecast_reference_class_01.8201",
+        "scenario_ids": [
+          "rwpk.forecasting_scenario_risk.forecast_reference_class_01.8201",
+          "rwpk.forecasting_scenario_risk.forecast_reference_class_02.8202",
+          "rwpk.forecasting_scenario_risk.forecast_reference_class_03.8203",
+          "rwpk.forecasting_scenario_risk.forecast_reference_class_04.8204",
+          "rwpk.forecasting_scenario_risk.forecast_reference_class_05.8205",
+          "rwpk.forecasting_scenario_risk.forecast_reference_class_06.8206",
+          "rwpk.forecasting_scenario_risk.forecast_reference_class_07.8207",
+          "rwpk.forecasting_scenario_risk.forecast_reference_class_08.8208"
+        ]
+      },
+      "forecasting_scenario_risk.input_robustness.cb8": {
+        "sample_scenario_id": "rwpk.forecasting_scenario_risk.input_robustness_01.8193",
+        "scenario_ids": [
+          "rwpk.forecasting_scenario_risk.input_robustness_01.8193",
+          "rwpk.forecasting_scenario_risk.input_robustness_02.8194",
+          "rwpk.forecasting_scenario_risk.input_robustness_03.8195",
+          "rwpk.forecasting_scenario_risk.input_robustness_04.8196",
+          "rwpk.forecasting_scenario_risk.input_robustness_05.8197",
+          "rwpk.forecasting_scenario_risk.input_robustness_06.8198",
+          "rwpk.forecasting_scenario_risk.input_robustness_07.8199",
+          "rwpk.forecasting_scenario_risk.input_robustness_08.8200"
+        ]
+      },
+      "forecasting_scenario_risk.tradeoff_stakes.cb8": {
+        "sample_scenario_id": "rwpk.forecasting_scenario_risk.tradeoff_stakes_01.8217",
+        "scenario_ids": [
+          "rwpk.forecasting_scenario_risk.tradeoff_stakes_01.8217",
+          "rwpk.forecasting_scenario_risk.tradeoff_stakes_02.8218",
+          "rwpk.forecasting_scenario_risk.tradeoff_stakes_03.8219",
+          "rwpk.forecasting_scenario_risk.tradeoff_stakes_04.8220",
+          "rwpk.forecasting_scenario_risk.tradeoff_stakes_05.8221",
+          "rwpk.forecasting_scenario_risk.tradeoff_stakes_06.8222",
+          "rwpk.forecasting_scenario_risk.tradeoff_stakes_07.8223",
+          "rwpk.forecasting_scenario_risk.tradeoff_stakes_08.8224"
+        ]
+      },
+      "forecasting_scenario_risk.verification_uncertainty.cb8": {
+        "sample_scenario_id": "rwpk.forecasting_scenario_risk.verification_uncertainty_01.8209",
+        "scenario_ids": [
+          "rwpk.forecasting_scenario_risk.verification_uncertainty_01.8209",
+          "rwpk.forecasting_scenario_risk.verification_uncertainty_02.8210",
+          "rwpk.forecasting_scenario_risk.verification_uncertainty_03.8211",
+          "rwpk.forecasting_scenario_risk.verification_uncertainty_04.8212",
+          "rwpk.forecasting_scenario_risk.verification_uncertainty_05.8213",
+          "rwpk.forecasting_scenario_risk.verification_uncertainty_06.8214",
+          "rwpk.forecasting_scenario_risk.verification_uncertainty_07.8215",
+          "rwpk.forecasting_scenario_risk.verification_uncertainty_08.8216"
+        ]
+      },
+      "information_retrieval.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.information_retrieval.boundary_ambiguity.0001",
+        "scenario_ids": [
+          "rwpk.information_retrieval.boundary_ambiguity.0001",
+          "rwpk.information_retrieval.boundary_ambiguity.0002",
+          "rwpk.information_retrieval.boundary_ambiguity.0003",
+          "rwpk.information_retrieval.boundary_ambiguity.0004",
+          "rwpk.information_retrieval.boundary_ambiguity.0005",
+          "rwpk.information_retrieval.boundary_ambiguity.0006",
+          "rwpk.information_retrieval.boundary_ambiguity.0007",
+          "rwpk.information_retrieval.boundary_ambiguity.0008"
+        ]
+      },
+      "information_retrieval.canonical.cb8": {
+        "sample_scenario_id": "rwpk.information_retrieval.canonical.0001",
+        "scenario_ids": [
+          "rwpk.information_retrieval.canonical.0001",
+          "rwpk.information_retrieval.canonical.0002",
+          "rwpk.information_retrieval.canonical.0003",
+          "rwpk.information_retrieval.canonical.0004",
+          "rwpk.information_retrieval.canonical.0005",
+          "rwpk.information_retrieval.canonical.0006",
+          "rwpk.information_retrieval.canonical.0007",
+          "rwpk.information_retrieval.canonical.0008"
+        ]
+      },
+      "information_retrieval.freshness_source_conflict.cb8": {
+        "sample_scenario_id": "rwpk.information_retrieval.freshness_source_conflict.0001",
+        "scenario_ids": [
+          "rwpk.information_retrieval.freshness_source_conflict.0001",
+          "rwpk.information_retrieval.freshness_source_conflict.0002",
+          "rwpk.information_retrieval.freshness_source_conflict.0003",
+          "rwpk.information_retrieval.freshness_source_conflict.0004",
+          "rwpk.information_retrieval.freshness_source_conflict.0005",
+          "rwpk.information_retrieval.freshness_source_conflict.0006",
+          "rwpk.information_retrieval.freshness_source_conflict.0007",
+          "rwpk.information_retrieval.freshness_source_conflict.0008"
+        ]
+      },
+      "information_retrieval.input_robustness.cb8": {
+        "sample_scenario_id": "rwpk.information_retrieval.input_robustness.0001",
+        "scenario_ids": [
+          "rwpk.information_retrieval.input_robustness.0001",
+          "rwpk.information_retrieval.input_robustness.0002",
+          "rwpk.information_retrieval.input_robustness.0003",
+          "rwpk.information_retrieval.input_robustness.0004",
+          "rwpk.information_retrieval.input_robustness.0005",
+          "rwpk.information_retrieval.input_robustness.0006",
+          "rwpk.information_retrieval.input_robustness.0007",
+          "rwpk.information_retrieval.input_robustness.0008"
+        ]
+      },
+      "one_off_tool_execution.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.one_off_tool_execution.boundary_ambiguity.0001",
+        "scenario_ids": [
+          "rwpk.one_off_tool_execution.boundary_ambiguity.0001",
+          "rwpk.one_off_tool_execution.boundary_ambiguity.0002",
+          "rwpk.one_off_tool_execution.boundary_ambiguity.0003",
+          "rwpk.one_off_tool_execution.boundary_ambiguity.0004",
+          "rwpk.one_off_tool_execution.boundary_ambiguity.0005",
+          "rwpk.one_off_tool_execution.boundary_ambiguity.0006",
+          "rwpk.one_off_tool_execution.boundary_ambiguity.0007",
+          "rwpk.one_off_tool_execution.boundary_ambiguity.0008"
+        ]
+      },
+      "one_off_tool_execution.canonical.cb8": {
+        "sample_scenario_id": "rwpk.one_off_tool_execution.canonical.0001",
+        "scenario_ids": [
+          "rwpk.one_off_tool_execution.canonical.0001",
+          "rwpk.one_off_tool_execution.canonical.0002",
+          "rwpk.one_off_tool_execution.canonical.0003",
+          "rwpk.one_off_tool_execution.canonical.0004",
+          "rwpk.one_off_tool_execution.canonical.0005",
+          "rwpk.one_off_tool_execution.canonical.0006",
+          "rwpk.one_off_tool_execution.canonical.0007",
+          "rwpk.one_off_tool_execution.canonical.0008"
+        ]
+      },
+      "one_off_tool_execution.execution_failure_recovery.cb8": {
+        "sample_scenario_id": "rwpk.one_off_tool_execution.execution_failure_recovery.0001",
+        "scenario_ids": [
+          "rwpk.one_off_tool_execution.execution_failure_recovery.0001",
+          "rwpk.one_off_tool_execution.execution_failure_recovery.0002",
+          "rwpk.one_off_tool_execution.execution_failure_recovery.0003",
+          "rwpk.one_off_tool_execution.execution_failure_recovery.0004",
+          "rwpk.one_off_tool_execution.execution_failure_recovery.0005",
+          "rwpk.one_off_tool_execution.execution_failure_recovery.0006",
+          "rwpk.one_off_tool_execution.execution_failure_recovery.0007",
+          "rwpk.one_off_tool_execution.execution_failure_recovery.0008"
+        ]
+      },
+      "one_off_tool_execution.format_semantic_preservation.cb8": {
+        "sample_scenario_id": "rwpk.one_off_tool_execution.format_semantic_preservation.0001",
+        "scenario_ids": [
+          "rwpk.one_off_tool_execution.format_semantic_preservation.0001",
+          "rwpk.one_off_tool_execution.format_semantic_preservation.0002",
+          "rwpk.one_off_tool_execution.format_semantic_preservation.0003",
+          "rwpk.one_off_tool_execution.format_semantic_preservation.0004",
+          "rwpk.one_off_tool_execution.format_semantic_preservation.0005",
+          "rwpk.one_off_tool_execution.format_semantic_preservation.0006",
+          "rwpk.one_off_tool_execution.format_semantic_preservation.0007",
+          "rwpk.one_off_tool_execution.format_semantic_preservation.0008"
+        ]
+      },
+      "one_off_tool_execution.input_robustness.cb8": {
+        "sample_scenario_id": "rwpk.one_off_tool_execution.input_robustness.0001",
+        "scenario_ids": [
+          "rwpk.one_off_tool_execution.input_robustness.0001",
+          "rwpk.one_off_tool_execution.input_robustness.0002",
+          "rwpk.one_off_tool_execution.input_robustness.0003",
+          "rwpk.one_off_tool_execution.input_robustness.0004",
+          "rwpk.one_off_tool_execution.input_robustness.0005",
+          "rwpk.one_off_tool_execution.input_robustness.0006",
+          "rwpk.one_off_tool_execution.input_robustness.0007",
+          "rwpk.one_off_tool_execution.input_robustness.0008"
+        ]
+      },
+      "one_off_tool_execution.tradeoff_stakes.cb8": {
+        "sample_scenario_id": "rwpk.one_off_tool_execution.tradeoff_stakes.0001",
+        "scenario_ids": [
+          "rwpk.one_off_tool_execution.tradeoff_stakes.0001",
+          "rwpk.one_off_tool_execution.tradeoff_stakes.0002",
+          "rwpk.one_off_tool_execution.tradeoff_stakes.0003",
+          "rwpk.one_off_tool_execution.tradeoff_stakes.0004",
+          "rwpk.one_off_tool_execution.tradeoff_stakes.0005",
+          "rwpk.one_off_tool_execution.tradeoff_stakes.0006",
+          "rwpk.one_off_tool_execution.tradeoff_stakes.0007",
+          "rwpk.one_off_tool_execution.tradeoff_stakes.0008"
+        ]
+      },
+      "one_off_tool_execution.verification_uncertainty.cb8": {
+        "sample_scenario_id": "rwpk.one_off_tool_execution.verification_uncertainty.0001",
+        "scenario_ids": [
+          "rwpk.one_off_tool_execution.verification_uncertainty.0001",
+          "rwpk.one_off_tool_execution.verification_uncertainty.0002",
+          "rwpk.one_off_tool_execution.verification_uncertainty.0003",
+          "rwpk.one_off_tool_execution.verification_uncertainty.0004",
+          "rwpk.one_off_tool_execution.verification_uncertainty.0005",
+          "rwpk.one_off_tool_execution.verification_uncertainty.0006",
+          "rwpk.one_off_tool_execution.verification_uncertainty.0007",
+          "rwpk.one_off_tool_execution.verification_uncertainty.0008"
+        ]
+      },
+      "operations_monitoring_improvement.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.operations_monitoring_improvement.boundary_ambiguity.0001",
+        "scenario_ids": [
+          "rwpk.operations_monitoring_improvement.boundary_ambiguity.0001",
+          "rwpk.operations_monitoring_improvement.boundary_ambiguity.0002",
+          "rwpk.operations_monitoring_improvement.boundary_ambiguity.0003",
+          "rwpk.operations_monitoring_improvement.boundary_ambiguity.0004",
+          "rwpk.operations_monitoring_improvement.boundary_ambiguity.0005",
+          "rwpk.operations_monitoring_improvement.boundary_ambiguity.0006",
+          "rwpk.operations_monitoring_improvement.boundary_ambiguity.0007",
+          "rwpk.operations_monitoring_improvement.boundary_ambiguity.0008"
+        ]
+      },
+      "operations_monitoring_improvement.canonical.cb8": {
+        "sample_scenario_id": "rwpk.operations_monitoring_improvement.canonical.0001",
+        "scenario_ids": [
+          "rwpk.operations_monitoring_improvement.canonical.0001",
+          "rwpk.operations_monitoring_improvement.canonical.0002",
+          "rwpk.operations_monitoring_improvement.canonical.0003",
+          "rwpk.operations_monitoring_improvement.canonical.0004",
+          "rwpk.operations_monitoring_improvement.canonical.0005",
+          "rwpk.operations_monitoring_improvement.canonical.0006",
+          "rwpk.operations_monitoring_improvement.canonical.0007",
+          "rwpk.operations_monitoring_improvement.canonical.0008"
+        ]
+      },
+      "operations_monitoring_improvement.execution_failure_recovery.cb8": {
+        "sample_scenario_id": "rwpk.operations_monitoring_improvement.execution_failure_recovery.0001",
+        "scenario_ids": [
+          "rwpk.operations_monitoring_improvement.execution_failure_recovery.0001",
+          "rwpk.operations_monitoring_improvement.execution_failure_recovery.0002",
+          "rwpk.operations_monitoring_improvement.execution_failure_recovery.0003",
+          "rwpk.operations_monitoring_improvement.execution_failure_recovery.0004",
+          "rwpk.operations_monitoring_improvement.execution_failure_recovery.0005",
+          "rwpk.operations_monitoring_improvement.execution_failure_recovery.0006",
+          "rwpk.operations_monitoring_improvement.execution_failure_recovery.0007",
+          "rwpk.operations_monitoring_improvement.execution_failure_recovery.0008"
+        ]
+      },
+      "operations_monitoring_improvement.input_robustness.cb8": {
+        "sample_scenario_id": "rwpk.operations_monitoring_improvement.input_robustness.0001",
+        "scenario_ids": [
+          "rwpk.operations_monitoring_improvement.input_robustness.0001",
+          "rwpk.operations_monitoring_improvement.input_robustness.0002",
+          "rwpk.operations_monitoring_improvement.input_robustness.0003",
+          "rwpk.operations_monitoring_improvement.input_robustness.0004",
+          "rwpk.operations_monitoring_improvement.input_robustness.0005",
+          "rwpk.operations_monitoring_improvement.input_robustness.0006",
+          "rwpk.operations_monitoring_improvement.input_robustness.0007",
+          "rwpk.operations_monitoring_improvement.input_robustness.0008"
+        ]
+      },
+      "operations_monitoring_improvement.long_running_state.cb8": {
+        "sample_scenario_id": "rwpk.operations_monitoring_improvement.long_running_state.0001",
+        "scenario_ids": [
+          "rwpk.operations_monitoring_improvement.long_running_state.0001",
+          "rwpk.operations_monitoring_improvement.long_running_state.0002",
+          "rwpk.operations_monitoring_improvement.long_running_state.0003",
+          "rwpk.operations_monitoring_improvement.long_running_state.0004",
+          "rwpk.operations_monitoring_improvement.long_running_state.0005",
+          "rwpk.operations_monitoring_improvement.long_running_state.0006",
+          "rwpk.operations_monitoring_improvement.long_running_state.0007",
+          "rwpk.operations_monitoring_improvement.long_running_state.0008"
+        ]
+      },
+      "operations_monitoring_improvement.verification_uncertainty.cb8": {
+        "sample_scenario_id": "rwpk.operations_monitoring_improvement.verification_uncertainty.0001",
+        "scenario_ids": [
+          "rwpk.operations_monitoring_improvement.verification_uncertainty.0001",
+          "rwpk.operations_monitoring_improvement.verification_uncertainty.0002",
+          "rwpk.operations_monitoring_improvement.verification_uncertainty.0003",
+          "rwpk.operations_monitoring_improvement.verification_uncertainty.0004",
+          "rwpk.operations_monitoring_improvement.verification_uncertainty.0005",
+          "rwpk.operations_monitoring_improvement.verification_uncertainty.0006",
+          "rwpk.operations_monitoring_improvement.verification_uncertainty.0007",
+          "rwpk.operations_monitoring_improvement.verification_uncertainty.0008"
+        ]
+      },
+      "planning_strategy_design.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.planning_strategy_design.boundary_ambiguity.0001",
+        "scenario_ids": [
+          "rwpk.planning_strategy_design.boundary_ambiguity.0001",
+          "rwpk.planning_strategy_design.boundary_ambiguity.0002",
+          "rwpk.planning_strategy_design.boundary_ambiguity.0003",
+          "rwpk.planning_strategy_design.boundary_ambiguity.0004",
+          "rwpk.planning_strategy_design.boundary_ambiguity.0005",
+          "rwpk.planning_strategy_design.boundary_ambiguity.0006",
+          "rwpk.planning_strategy_design.boundary_ambiguity.0007",
+          "rwpk.planning_strategy_design.boundary_ambiguity.0008"
+        ]
+      },
+      "planning_strategy_design.canonical.cb8": {
+        "sample_scenario_id": "rwpk.planning_strategy_design.canonical.0001",
+        "scenario_ids": [
+          "rwpk.planning_strategy_design.canonical.0001",
+          "rwpk.planning_strategy_design.canonical.0002",
+          "rwpk.planning_strategy_design.canonical.0003",
+          "rwpk.planning_strategy_design.canonical.0004",
+          "rwpk.planning_strategy_design.canonical.0005",
+          "rwpk.planning_strategy_design.canonical.0006",
+          "rwpk.planning_strategy_design.canonical.0007",
+          "rwpk.planning_strategy_design.canonical.0008"
+        ]
+      },
+      "planning_strategy_design.input_robustness.cb8": {
+        "sample_scenario_id": "rwpk.planning_strategy_design.input_robustness.0001",
+        "scenario_ids": [
+          "rwpk.planning_strategy_design.input_robustness.0001",
+          "rwpk.planning_strategy_design.input_robustness.0002",
+          "rwpk.planning_strategy_design.input_robustness.0003",
+          "rwpk.planning_strategy_design.input_robustness.0004",
+          "rwpk.planning_strategy_design.input_robustness.0005",
+          "rwpk.planning_strategy_design.input_robustness.0006",
+          "rwpk.planning_strategy_design.input_robustness.0007",
+          "rwpk.planning_strategy_design.input_robustness.0008"
+        ]
+      },
+      "planning_strategy_design.stakeholder_conflict.cb8": {
+        "sample_scenario_id": "rwpk.planning_strategy_design.stakeholder_conflict.0001",
+        "scenario_ids": [
+          "rwpk.planning_strategy_design.stakeholder_conflict.0001",
+          "rwpk.planning_strategy_design.stakeholder_conflict.0002",
+          "rwpk.planning_strategy_design.stakeholder_conflict.0003",
+          "rwpk.planning_strategy_design.stakeholder_conflict.0004",
+          "rwpk.planning_strategy_design.stakeholder_conflict.0005",
+          "rwpk.planning_strategy_design.stakeholder_conflict.0006",
+          "rwpk.planning_strategy_design.stakeholder_conflict.0007",
+          "rwpk.planning_strategy_design.stakeholder_conflict.0008"
+        ]
+      },
+      "planning_strategy_design.tradeoff_stakes.cb8": {
+        "sample_scenario_id": "rwpk.planning_strategy_design.tradeoff_stakes.0001",
+        "scenario_ids": [
+          "rwpk.planning_strategy_design.tradeoff_stakes.0001",
+          "rwpk.planning_strategy_design.tradeoff_stakes.0002",
+          "rwpk.planning_strategy_design.tradeoff_stakes.0003",
+          "rwpk.planning_strategy_design.tradeoff_stakes.0004",
+          "rwpk.planning_strategy_design.tradeoff_stakes.0005",
+          "rwpk.planning_strategy_design.tradeoff_stakes.0006",
+          "rwpk.planning_strategy_design.tradeoff_stakes.0007",
+          "rwpk.planning_strategy_design.tradeoff_stakes.0008"
+        ]
+      },
+      "planning_strategy_design.verification_uncertainty.cb8": {
+        "sample_scenario_id": "rwpk.planning_strategy_design.verification_uncertainty.0001",
+        "scenario_ids": [
+          "rwpk.planning_strategy_design.verification_uncertainty.0001",
+          "rwpk.planning_strategy_design.verification_uncertainty.0002",
+          "rwpk.planning_strategy_design.verification_uncertainty.0003",
+          "rwpk.planning_strategy_design.verification_uncertainty.0004",
+          "rwpk.planning_strategy_design.verification_uncertainty.0005",
+          "rwpk.planning_strategy_design.verification_uncertainty.0006",
+          "rwpk.planning_strategy_design.verification_uncertainty.0007",
+          "rwpk.planning_strategy_design.verification_uncertainty.0008"
+        ]
+      },
+      "practical_writing.audience_context_shift.cb8": {
+        "sample_scenario_id": "rwpk.practical_writing.audience_context_shift.0001",
+        "scenario_ids": [
+          "rwpk.practical_writing.audience_context_shift.0001",
+          "rwpk.practical_writing.audience_context_shift.0002",
+          "rwpk.practical_writing.audience_context_shift.0003",
+          "rwpk.practical_writing.audience_context_shift.0004",
+          "rwpk.practical_writing.audience_context_shift.0005",
+          "rwpk.practical_writing.audience_context_shift.0006",
+          "rwpk.practical_writing.audience_context_shift.0007",
+          "rwpk.practical_writing.audience_context_shift.0008"
+        ]
+      },
+      "practical_writing.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.practical_writing.boundary_ambiguity.0001",
+        "scenario_ids": [
+          "rwpk.practical_writing.boundary_ambiguity.0001",
+          "rwpk.practical_writing.boundary_ambiguity.0002",
+          "rwpk.practical_writing.boundary_ambiguity.0003",
+          "rwpk.practical_writing.boundary_ambiguity.0004",
+          "rwpk.practical_writing.boundary_ambiguity.0005",
+          "rwpk.practical_writing.boundary_ambiguity.0006",
+          "rwpk.practical_writing.boundary_ambiguity.0007",
+          "rwpk.practical_writing.boundary_ambiguity.0008"
+        ]
+      },
+      "practical_writing.canonical.cb8": {
+        "sample_scenario_id": "rwpk.practical_writing.canonical.0001",
+        "scenario_ids": [
+          "rwpk.practical_writing.canonical.0001",
+          "rwpk.practical_writing.canonical.0002",
+          "rwpk.practical_writing.canonical.0003",
+          "rwpk.practical_writing.canonical.0004",
+          "rwpk.practical_writing.canonical.0005",
+          "rwpk.practical_writing.canonical.0006",
+          "rwpk.practical_writing.canonical.0007",
+          "rwpk.practical_writing.canonical.0008"
+        ]
+      },
+      "practical_writing.format_semantic_preservation.cb8": {
+        "sample_scenario_id": "rwpk.practical_writing.format_semantic_preservation.0001",
+        "scenario_ids": [
+          "rwpk.practical_writing.format_semantic_preservation.0001",
+          "rwpk.practical_writing.format_semantic_preservation.0002",
+          "rwpk.practical_writing.format_semantic_preservation.0003",
+          "rwpk.practical_writing.format_semantic_preservation.0004",
+          "rwpk.practical_writing.format_semantic_preservation.0005",
+          "rwpk.practical_writing.format_semantic_preservation.0006",
+          "rwpk.practical_writing.format_semantic_preservation.0007",
+          "rwpk.practical_writing.format_semantic_preservation.0008"
+        ]
+      },
+      "practical_writing.verification_uncertainty.cb8": {
+        "sample_scenario_id": "rwpk.practical_writing.verification_uncertainty.0001",
+        "scenario_ids": [
+          "rwpk.practical_writing.verification_uncertainty.0001",
+          "rwpk.practical_writing.verification_uncertainty.0002",
+          "rwpk.practical_writing.verification_uncertainty.0003",
+          "rwpk.practical_writing.verification_uncertainty.0004",
+          "rwpk.practical_writing.verification_uncertainty.0005",
+          "rwpk.practical_writing.verification_uncertainty.0006",
+          "rwpk.practical_writing.verification_uncertainty.0007",
+          "rwpk.practical_writing.verification_uncertainty.0008"
+        ]
+      },
+      "qualitative_analysis.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.qualitative_analysis.boundary_ambiguity_01.8049",
+        "scenario_ids": [
+          "rwpk.qualitative_analysis.boundary_ambiguity_01.8049",
+          "rwpk.qualitative_analysis.boundary_ambiguity_02.8050",
+          "rwpk.qualitative_analysis.boundary_ambiguity_03.8051",
+          "rwpk.qualitative_analysis.boundary_ambiguity_04.8052",
+          "rwpk.qualitative_analysis.boundary_ambiguity_05.8053",
+          "rwpk.qualitative_analysis.boundary_ambiguity_06.8054",
+          "rwpk.qualitative_analysis.boundary_ambiguity_07.8055",
+          "rwpk.qualitative_analysis.boundary_ambiguity_08.8056"
+        ]
+      },
+      "qualitative_analysis.canonical.cb8": {
+        "sample_scenario_id": "rwpk.qualitative_analysis.canonical_01.8041",
+        "scenario_ids": [
+          "rwpk.qualitative_analysis.canonical_01.8041",
+          "rwpk.qualitative_analysis.canonical_02.8042",
+          "rwpk.qualitative_analysis.canonical_03.8043",
+          "rwpk.qualitative_analysis.canonical_04.8044",
+          "rwpk.qualitative_analysis.canonical_05.8045",
+          "rwpk.qualitative_analysis.canonical_06.8046",
+          "rwpk.qualitative_analysis.canonical_07.8047",
+          "rwpk.qualitative_analysis.canonical_08.8048"
+        ]
+      },
+      "qualitative_analysis.input_robustness.cb8": {
+        "sample_scenario_id": "rwpk.qualitative_analysis.input_robustness_01.8057",
+        "scenario_ids": [
+          "rwpk.qualitative_analysis.input_robustness_01.8057",
+          "rwpk.qualitative_analysis.input_robustness_02.8058",
+          "rwpk.qualitative_analysis.input_robustness_03.8059",
+          "rwpk.qualitative_analysis.input_robustness_04.8060",
+          "rwpk.qualitative_analysis.input_robustness_05.8061",
+          "rwpk.qualitative_analysis.input_robustness_06.8062",
+          "rwpk.qualitative_analysis.input_robustness_07.8063",
+          "rwpk.qualitative_analysis.input_robustness_08.8064"
+        ]
+      },
+      "qualitative_analysis.tradeoff_stakes.cb8": {
+        "sample_scenario_id": "rwpk.qualitative_analysis.tradeoff_stakes_01.8073",
+        "scenario_ids": [
+          "rwpk.qualitative_analysis.tradeoff_stakes_01.8073",
+          "rwpk.qualitative_analysis.tradeoff_stakes_02.8074",
+          "rwpk.qualitative_analysis.tradeoff_stakes_03.8075",
+          "rwpk.qualitative_analysis.tradeoff_stakes_04.8076",
+          "rwpk.qualitative_analysis.tradeoff_stakes_05.8077",
+          "rwpk.qualitative_analysis.tradeoff_stakes_06.8078",
+          "rwpk.qualitative_analysis.tradeoff_stakes_07.8079",
+          "rwpk.qualitative_analysis.tradeoff_stakes_08.8080"
+        ]
+      },
+      "qualitative_analysis.verification_uncertainty.cb8": {
+        "sample_scenario_id": "rwpk.qualitative_analysis.verification_uncertainty_01.8065",
+        "scenario_ids": [
+          "rwpk.qualitative_analysis.verification_uncertainty_01.8065",
+          "rwpk.qualitative_analysis.verification_uncertainty_02.8066",
+          "rwpk.qualitative_analysis.verification_uncertainty_03.8067",
+          "rwpk.qualitative_analysis.verification_uncertainty_04.8068",
+          "rwpk.qualitative_analysis.verification_uncertainty_05.8069",
+          "rwpk.qualitative_analysis.verification_uncertainty_06.8070",
+          "rwpk.qualitative_analysis.verification_uncertainty_07.8071",
+          "rwpk.qualitative_analysis.verification_uncertainty_08.8072"
+        ]
+      },
+      "quantitative_formal_analysis.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.quantitative_formal_analysis.boundary_ambiguity_01.8089",
+        "scenario_ids": [
+          "rwpk.quantitative_formal_analysis.boundary_ambiguity_01.8089",
+          "rwpk.quantitative_formal_analysis.boundary_ambiguity_02.8090",
+          "rwpk.quantitative_formal_analysis.boundary_ambiguity_03.8091",
+          "rwpk.quantitative_formal_analysis.boundary_ambiguity_04.8092",
+          "rwpk.quantitative_formal_analysis.boundary_ambiguity_05.8093",
+          "rwpk.quantitative_formal_analysis.boundary_ambiguity_06.8094",
+          "rwpk.quantitative_formal_analysis.boundary_ambiguity_07.8095",
+          "rwpk.quantitative_formal_analysis.boundary_ambiguity_08.8096"
+        ]
+      },
+      "quantitative_formal_analysis.canonical.cb8": {
+        "sample_scenario_id": "rwpk.quantitative_formal_analysis.canonical_01.8081",
+        "scenario_ids": [
+          "rwpk.quantitative_formal_analysis.canonical_01.8081",
+          "rwpk.quantitative_formal_analysis.canonical_02.8082",
+          "rwpk.quantitative_formal_analysis.canonical_03.8083",
+          "rwpk.quantitative_formal_analysis.canonical_04.8084",
+          "rwpk.quantitative_formal_analysis.canonical_05.8085",
+          "rwpk.quantitative_formal_analysis.canonical_06.8086",
+          "rwpk.quantitative_formal_analysis.canonical_07.8087",
+          "rwpk.quantitative_formal_analysis.canonical_08.8088"
+        ]
+      },
+      "quantitative_formal_analysis.format_semantic_preservation.cb8": {
+        "sample_scenario_id": "rwpk.quantitative_formal_analysis.format_semantic_preservation_01.8105",
+        "scenario_ids": [
+          "rwpk.quantitative_formal_analysis.format_semantic_preservation_01.8105",
+          "rwpk.quantitative_formal_analysis.format_semantic_preservation_02.8106",
+          "rwpk.quantitative_formal_analysis.format_semantic_preservation_03.8107",
+          "rwpk.quantitative_formal_analysis.format_semantic_preservation_04.8108",
+          "rwpk.quantitative_formal_analysis.format_semantic_preservation_05.8109",
+          "rwpk.quantitative_formal_analysis.format_semantic_preservation_06.8110",
+          "rwpk.quantitative_formal_analysis.format_semantic_preservation_07.8111",
+          "rwpk.quantitative_formal_analysis.format_semantic_preservation_08.8112"
+        ]
+      },
+      "quantitative_formal_analysis.input_robustness.cb8": {
+        "sample_scenario_id": "rwpk.quantitative_formal_analysis.input_robustness_01.8097",
+        "scenario_ids": [
+          "rwpk.quantitative_formal_analysis.input_robustness_01.8097",
+          "rwpk.quantitative_formal_analysis.input_robustness_02.8098",
+          "rwpk.quantitative_formal_analysis.input_robustness_03.8099",
+          "rwpk.quantitative_formal_analysis.input_robustness_04.8100",
+          "rwpk.quantitative_formal_analysis.input_robustness_05.8101",
+          "rwpk.quantitative_formal_analysis.input_robustness_06.8102",
+          "rwpk.quantitative_formal_analysis.input_robustness_07.8103",
+          "rwpk.quantitative_formal_analysis.input_robustness_08.8104"
+        ]
+      },
+      "quantitative_formal_analysis.tradeoff_stakes.cb8": {
+        "sample_scenario_id": "rwpk.quantitative_formal_analysis.tradeoff_stakes_01.8121",
+        "scenario_ids": [
+          "rwpk.quantitative_formal_analysis.tradeoff_stakes_01.8121",
+          "rwpk.quantitative_formal_analysis.tradeoff_stakes_02.8122",
+          "rwpk.quantitative_formal_analysis.tradeoff_stakes_03.8123",
+          "rwpk.quantitative_formal_analysis.tradeoff_stakes_04.8124",
+          "rwpk.quantitative_formal_analysis.tradeoff_stakes_05.8125",
+          "rwpk.quantitative_formal_analysis.tradeoff_stakes_06.8126",
+          "rwpk.quantitative_formal_analysis.tradeoff_stakes_07.8127",
+          "rwpk.quantitative_formal_analysis.tradeoff_stakes_08.8128"
+        ]
+      },
+      "quantitative_formal_analysis.verification_uncertainty.cb8": {
+        "sample_scenario_id": "rwpk.quantitative_formal_analysis.verification_uncertainty_01.8113",
+        "scenario_ids": [
+          "rwpk.quantitative_formal_analysis.verification_uncertainty_01.8113",
+          "rwpk.quantitative_formal_analysis.verification_uncertainty_02.8114",
+          "rwpk.quantitative_formal_analysis.verification_uncertainty_03.8115",
+          "rwpk.quantitative_formal_analysis.verification_uncertainty_04.8116",
+          "rwpk.quantitative_formal_analysis.verification_uncertainty_05.8117",
+          "rwpk.quantitative_formal_analysis.verification_uncertainty_06.8118",
+          "rwpk.quantitative_formal_analysis.verification_uncertainty_07.8119",
+          "rwpk.quantitative_formal_analysis.verification_uncertainty_08.8120"
+        ]
+      },
+      "summarization_synthesis.audience_context_shift.cb8": {
+        "sample_scenario_id": "rwpk.summarization_synthesis.audience_context_shift.0001",
+        "scenario_ids": [
+          "rwpk.summarization_synthesis.audience_context_shift.0001",
+          "rwpk.summarization_synthesis.audience_context_shift.0002",
+          "rwpk.summarization_synthesis.audience_context_shift.0003",
+          "rwpk.summarization_synthesis.audience_context_shift.0004",
+          "rwpk.summarization_synthesis.audience_context_shift.0005",
+          "rwpk.summarization_synthesis.audience_context_shift.0006",
+          "rwpk.summarization_synthesis.audience_context_shift.0007",
+          "rwpk.summarization_synthesis.audience_context_shift.0008"
+        ]
+      },
+      "summarization_synthesis.boundary_ambiguity.cb8": {
+        "sample_scenario_id": "rwpk.summarization_synthesis.boundary_ambiguity.0001",
+        "scenario_ids": [
+          "rwpk.summarization_synthesis.boundary_ambiguity.0001",
+          "rwpk.summarization_synthesis.boundary_ambiguity.0002",
+          "rwpk.summarization_synthesis.boundary_ambiguity.0003",
+          "rwpk.summarization_synthesis.boundary_ambiguity.0004",
+          "rwpk.summarization_synthesis.boundary_ambiguity.0005",
+          "rwpk.summarization_synthesis.boundary_ambiguity.0006",
+          "rwpk.summarization_synthesis.boundary_ambiguity.0007",
+          "rwpk.summarization_synthesis.boundary_ambiguity.0008"
+        ]
+      },
+      "summarization_synthesis.canonical.cb8": {
+        "sample_scenario_id": "rwpk.summarization_synthesis.canonical.0001",
+        "scenario_ids": [
+          "rwpk.summarization_synthesis.canonical.0001",
+          "rwpk.summarization_synthesis.canonical.0002",
+          "rwpk.summarization_synthesis.canonical.0003",
+          "rwpk.summarization_synthesis.canonical.0004",
+          "rwpk.summarization_synthesis.canonical.0005",
+          "rwpk.summarization_synthesis.canonical.0006",
+          "rwpk.summarization_synthesis.canonical.0007",
+          "rwpk.summarization_synthesis.canonical.0008"
+        ]
+      },
+      "summarization_synthesis.input_robustness.cb8": {
+        "sample_scenario_id": "rwpk.summarization_synthesis.input_robustness.0001",
+        "scenario_ids": [
+          "rwpk.summarization_synthesis.input_robustness.0001",
+          "rwpk.summarization_synthesis.input_robustness.0002",
+          "rwpk.summarization_synthesis.input_robustness.0003",
+          "rwpk.summarization_synthesis.input_robustness.0004",
+          "rwpk.summarization_synthesis.input_robustness.0005",
+          "rwpk.summarization_synthesis.input_robustness.0006",
+          "rwpk.summarization_synthesis.input_robustness.0007",
+          "rwpk.summarization_synthesis.input_robustness.0008"
+        ]
+      },
+      "transformation_rewriting.audience_context_shift.cb8": {
+        "sample_scenario_id": "rwpk.transformation_rewriting.audience_context_shift.0001",
+        "scenario_ids": [
+          "rwpk.transformation_rewriting.audience_context_shift.0001",
+          "rwpk.transformation_rewriting.audience_context_shift.0002",
+          "rwpk.transformation_rewriting.audience_context_shift.0003",
+          "rwpk.transformation_rewriting.audience_context_shift.0004",
+          "rwpk.transformation_rewriting.audience_context_shift.0005",
+          "rwpk.transformation_rewriting.audience_context_shift.0006",
+          "rwpk.transformation_rewriting.audience_context_shift.0007",
+          "rwpk.transformation_rewriting.audience_context_shift.0008"
+        ]
+      },
+      "transformation_rewriting.canonical.cb8": {
+        "sample_scenario_id": "rwpk.transformation_rewriting.canonical.0001",
+        "scenario_ids": [
+          "rwpk.transformation_rewriting.canonical.0001",
+          "rwpk.transformation_rewriting.canonical.0002",
+          "rwpk.transformation_rewriting.canonical.0003",
+          "rwpk.transformation_rewriting.canonical.0004",
+          "rwpk.transformation_rewriting.canonical.0005",
+          "rwpk.transformation_rewriting.canonical.0006",
+          "rwpk.transformation_rewriting.canonical.0007",
+          "rwpk.transformation_rewriting.canonical.0008"
+        ]
+      },
+      "transformation_rewriting.format_semantic_preservation.cb8": {
+        "sample_scenario_id": "rwpk.transformation_rewriting.format_semantic_preservation.0001",
+        "scenario_ids": [
+          "rwpk.transformation_rewriting.format_semantic_preservation.0001",
+          "rwpk.transformation_rewriting.format_semantic_preservation.0002",
+          "rwpk.transformation_rewriting.format_semantic_preservation.0003",
+          "rwpk.transformation_rewriting.format_semantic_preservation.0004",
+          "rwpk.transformation_rewriting.format_semantic_preservation.0005",
+          "rwpk.transformation_rewriting.format_semantic_preservation.0006",
+          "rwpk.transformation_rewriting.format_semantic_preservation.0007",
+          "rwpk.transformation_rewriting.format_semantic_preservation.0008"
+        ]
+      },
+      "transformation_rewriting.input_robustness.cb8": {
+        "sample_scenario_id": "rwpk.transformation_rewriting.input_robustness.0001",
+        "scenario_ids": [
+          "rwpk.transformation_rewriting.input_robustness.0001",
+          "rwpk.transformation_rewriting.input_robustness.0002",
+          "rwpk.transformation_rewriting.input_robustness.0003",
+          "rwpk.transformation_rewriting.input_robustness.0004",
+          "rwpk.transformation_rewriting.input_robustness.0005",
+          "rwpk.transformation_rewriting.input_robustness.0006",
+          "rwpk.transformation_rewriting.input_robustness.0007",
+          "rwpk.transformation_rewriting.input_robustness.0008"
+        ]
+      }
+    },
+    "broad_ratio": 0.693182,
+    "cb8_blocks": 110,
+    "critical_fact_error_count": 0,
+    "domain_counts": {
+      "agriculture_food": 2,
+      "communication_meetings": 42,
+      "construction_real_estate": 6,
+      "creative_media": 8,
+      "customer_support_success": 54,
+      "data_analytics": 34,
+      "education_research": 93,
+      "energy_environment": 4,
+      "finance_accounting_tax": 14,
+      "general_knowledge": 30,
+      "government_public_policy": 7,
+      "health_care": 13,
+      "hr_people_labor": 19,
+      "legal_compliance": 7,
+      "manufacturing_quality": 6,
+      "nonprofit_social_impact": 4,
+      "office_admin": 136,
+      "personal_everyday": 117,
+      "privacy_security": 19,
+      "project_product_management": 46,
+      "retail_ecommerce": 4,
+      "safety_emergency": 11,
+      "sales_marketing": 44,
+      "science_rd": 14,
+      "software_it": 64,
+      "strategy_business_operations": 48,
+      "supply_chain_logistics": 18,
+      "travel_hospitality": 16
+    },
+    "exact_duplicate_groups": 0,
+    "high_similarity_cross_block_examples": [],
+    "high_similarity_cross_block_pairs": 0,
+    "intent_counts": {
+      "ai_agent_meta": 48,
+      "automation_integration": 56,
+      "classification_organization": 40,
+      "coaching_conversational_support": 40,
+      "communication_collaboration_negotiation": 40,
+      "creative_ideation": 32,
+      "decision_recommendation": 48,
+      "diagnosis_root_cause": 48,
+      "evaluation_review_audit": 48,
+      "explanation_teaching": 32,
+      "extraction_parsing": 24,
+      "forecasting_scenario_risk": 48,
+      "information_retrieval": 32,
+      "one_off_tool_execution": 56,
+      "operations_monitoring_improvement": 48,
+      "planning_strategy_design": 48,
+      "practical_writing": 40,
+      "qualitative_analysis": 40,
+      "quantitative_formal_analysis": 48,
+      "summarization_synthesis": 32,
+      "transformation_rewriting": 32
+    },
+    "manifest_status": "release_candidate",
+    "normalized_duplicate_groups": 0,
+    "partition_quality": {
+      "core-worker-1": {
+        "cb8_block_count": 28,
+        "high_similarity_cross_block_pairs": 0,
+        "intent_range": [
+          1,
+          7
+        ],
+        "phrase_concentration_review_count": 0,
+        "phrase_concentration_violation_count": 0,
+        "phrase_locale_form_scope": "locale_and_form",
+        "phrase_max_scenario_fraction": 0.05,
+        "phrase_ngram_size": 6,
+        "phrase_review_fraction": 0.05,
+        "phrase_scenario_denominator": 224,
+        "prompt_realization_count": 896,
+        "quality_errors": 0,
+        "quality_warnings": 0,
+        "scenario_count": 224,
+        "scenario_glob": "data/v1.0/scenarios/intents-01-07/*.json",
+        "semantic_goal_duplicate_groups": 0,
+        "similarity_failure_pairs": 0,
+        "similarity_warning_pairs": 0
+      },
+      "core-worker-2": {
+        "cb8_block_count": 40,
+        "high_similarity_cross_block_pairs": 0,
+        "intent_range": [
+          8,
+          14
+        ],
+        "phrase_concentration_review_count": 0,
+        "phrase_concentration_violation_count": 0,
+        "phrase_locale_form_scope": "locale_and_form",
+        "phrase_max_scenario_fraction": 0.05,
+        "phrase_ngram_size": 6,
+        "phrase_review_fraction": 0.05,
+        "phrase_scenario_denominator": 320,
+        "prompt_realization_count": 1280,
+        "quality_errors": 0,
+        "quality_warnings": 0,
+        "scenario_count": 320,
+        "scenario_glob": "data/v1.0/scenarios/intents-08-14/*.json",
+        "semantic_goal_duplicate_groups": 0,
+        "similarity_failure_pairs": 0,
+        "similarity_warning_pairs": 0
+      },
+      "core-worker-3": {
+        "cb8_block_count": 42,
+        "high_similarity_cross_block_pairs": 0,
+        "intent_range": [
+          15,
+          21
+        ],
+        "phrase_concentration_review_count": 0,
+        "phrase_concentration_violation_count": 0,
+        "phrase_locale_form_scope": "locale_and_form",
+        "phrase_max_scenario_fraction": 0.05,
+        "phrase_ngram_size": 6,
+        "phrase_review_fraction": 0.05,
+        "phrase_scenario_denominator": 336,
+        "prompt_realization_count": 1344,
+        "quality_errors": 0,
+        "quality_warnings": 1,
+        "scenario_count": 336,
+        "scenario_glob": "data/v1.0/scenarios/intents-15-21/*.json",
+        "semantic_goal_duplicate_groups": 0,
+        "similarity_failure_pairs": 0,
+        "similarity_warning_pairs": 9
+      }
+    },
+    "phrase_concentration_metric": "distinct-scenario presence count for exact six-token n-grams; every longer n-gram has a six-token prefix",
+    "phrase_concentration_review_count": 0,
+    "phrase_concentration_reviews": [],
+    "phrase_concentration_violation_count": 0,
+    "phrase_concentration_violations": [],
+    "phrase_locale_form_scope": "locale_and_form",
+    "phrase_max_scenario_fraction": 0.05,
+    "phrase_ngram_size": 6,
+    "phrase_review_fraction": 0.05,
+    "phrase_scenario_denominator": 880,
+    "phrase_whitelist": [],
+    "profile_counts": {
+      "anaphora_prior_context": 115,
+      "code_switching_jargon": 99,
+      "colloquial_slang_dialect": 20,
+      "contradictory_constraints": 62,
+      "emoji_shorthand": 102,
+      "followup_without_restatement": 276,
+      "frustration_urgency_emotion": 96,
+      "hedged_exploratory_request": 119,
+      "implicit_goal_or_output": 114,
+      "implicit_permission_or_authority": 40,
+      "indirect_polite_request": 84,
+      "interleaved_instruction_and_paste": 150,
+      "message_burst": 224,
+      "mid_task_change": 63,
+      "missing_decisive_detail": 214,
+      "multi_intent_mixed_priority": 120,
+      "ocr_copy_format_noise": 68,
+      "rambling_stream": 103,
+      "resume_after_interruption": 94,
+      "self_correction_scope_shift": 113,
+      "speech_to_text_disfluency": 100,
+      "terse_fragment": 105,
+      "typo_spacing_punctuation": 56,
+      "untrusted_embedded_instruction": 15
+    },
+    "prompt_realizations": 3520,
+    "scenario_validation_error_count": 0,
+    "semantic_goal_duplicate_groups": 0,
+    "semantic_scenarios": 880,
+    "semantic_title_duplicate_groups": 0,
+    "similarity_failure_fraction": 0.0,
+    "similarity_failure_pairs": 0,
+    "similarity_pairs": [
+      {
+        "canonical_prompt_id": "rwpk.ai_agent_meta.canonical.0004.ko-KR.canonical",
+        "locale": "ko-KR",
+        "naturalistic_prompt_id": "rwpk.ai_agent_meta.canonical.0004.ko-KR.naturalistic",
+        "scenario_id": "rwpk.ai_agent_meta.canonical.0004",
+        "similarity": 0.7543
+      },
+      {
+        "canonical_prompt_id": "rwpk.ai_agent_meta.input_robustness.0008.ko-KR.canonical",
+        "locale": "ko-KR",
+        "naturalistic_prompt_id": "rwpk.ai_agent_meta.input_robustness.0008.ko-KR.naturalistic",
+        "scenario_id": "rwpk.ai_agent_meta.input_robustness.0008",
+        "similarity": 0.7584
+      },
+      {
+        "canonical_prompt_id": "rwpk.automation_integration.canonical.0004.ko-KR.canonical",
+        "locale": "ko-KR",
+        "naturalistic_prompt_id": "rwpk.automation_integration.canonical.0004.ko-KR.naturalistic",
+        "scenario_id": "rwpk.automation_integration.canonical.0004",
+        "similarity": 0.7828
+      },
+      {
+        "canonical_prompt_id": "rwpk.automation_integration.long_running_state.0004.ko-KR.canonical",
+        "locale": "ko-KR",
+        "naturalistic_prompt_id": "rwpk.automation_integration.long_running_state.0004.ko-KR.naturalistic",
+        "scenario_id": "rwpk.automation_integration.long_running_state.0004",
+        "similarity": 0.75
+      },
+      {
+        "canonical_prompt_id": "rwpk.coaching_conversational_support.human_boundary.0008.ko-KR.canonical",
+        "locale": "ko-KR",
+        "naturalistic_prompt_id": "rwpk.coaching_conversational_support.human_boundary.0008.ko-KR.naturalistic",
+        "scenario_id": "rwpk.coaching_conversational_support.human_boundary.0008",
+        "similarity": 0.7784
+      },
+      {
+        "canonical_prompt_id": "rwpk.communication_collaboration_negotiation.canonical.0004.ko-KR.canonical",
+        "locale": "ko-KR",
+        "naturalistic_prompt_id": "rwpk.communication_collaboration_negotiation.canonical.0004.ko-KR.naturalistic",
+        "scenario_id": "rwpk.communication_collaboration_negotiation.canonical.0004",
+        "similarity": 0.7705
+      },
+      {
+        "canonical_prompt_id": "rwpk.one_off_tool_execution.boundary_ambiguity.0004.ko-KR.canonical",
+        "locale": "ko-KR",
+        "naturalistic_prompt_id": "rwpk.one_off_tool_execution.boundary_ambiguity.0004.ko-KR.naturalistic",
+        "scenario_id": "rwpk.one_off_tool_execution.boundary_ambiguity.0004",
+        "similarity": 0.7787
+      },
+      {
+        "canonical_prompt_id": "rwpk.one_off_tool_execution.format_semantic_preservation.0004.ko-KR.canonical",
+        "locale": "ko-KR",
+        "naturalistic_prompt_id": "rwpk.one_off_tool_execution.format_semantic_preservation.0004.ko-KR.naturalistic",
+        "scenario_id": "rwpk.one_off_tool_execution.format_semantic_preservation.0004",
+        "similarity": 0.7718
+      },
+      {
+        "canonical_prompt_id": "rwpk.planning_strategy_design.tradeoff_stakes.0008.ko-KR.canonical",
+        "locale": "ko-KR",
+        "naturalistic_prompt_id": "rwpk.planning_strategy_design.tradeoff_stakes.0008.ko-KR.naturalistic",
+        "scenario_id": "rwpk.planning_strategy_design.tradeoff_stakes.0008",
+        "similarity": 0.7546
+      }
+    ],
+    "similarity_warning_fraction": 0.005114,
+    "similarity_warning_pairs": 9,
+    "software_data_ratio": 0.111364,
+    "status_counts": {
+      "draft": 656,
+      "reviewed": 224
+    },
+    "suite_status": {
+      "adapter_conformance": {
+        "manifest_template": "suites/templates/adapter-conformance.manifest.template.json",
+        "populated": false,
+        "status": "planned"
+      },
+      "broad_core": {
+        "scenario_glob": "data/v1.0/scenarios/**/*.json",
+        "status": "complete_when_validator_passes"
+      },
+      "opensocrates_method_routing": {
+        "manifest_template": "suites/templates/method-routing.manifest.template.json",
+        "populated": false,
+        "status": "planned"
+      }
+    },
+    "task_intents": 21,
+    "transport_tail_error_count": 0
+  },
+  "status": "pass",
+  "warnings": [
+    "partition core-worker-3: quality: 9 locale pairs exceed similarity warning threshold 0.75",
+    "quality: 9 locale pairs exceed similarity warning threshold 0.75"
+  ]
+}

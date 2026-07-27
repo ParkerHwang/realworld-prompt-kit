@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.boundary_ambiguity.0007",
   "title": {
-    "ko": "운영 장애 공지 — 현재·보관 문서",
-    "en": "Operations-incident notice — Current versus archived"
+    "ko": "운영 장애 공지 현재 보관 문서",
+    "en": "Operations incident notice Current versus archived"
   },
   "task": {
     "primary_intent": "practical_writing",
@@ -18,8 +18,8 @@
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "운영 장애 공지의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해",
-      "en": "Work out the applicable scope for Operations-incident notice; State the rule for choosing the current document."
+      "ko": "운영 장애 공지 현재 보관 문서의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해",
+      "en": "For Operations incident notice Current versus archived, determine the applicable scope; state the rule for choosing the current document"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "내부 소프트웨어·IT 운영 자료를 확인하는 상황에서 운영 장애 공지의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해. 입력 상황: 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "검토할 항목은 운영 장애 공지 현재 보관 문서; 맥락은 내부 IT 쪽이야. 운영 장애 공지 현재 보관 문서의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해. 입력 상황: 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 운영 장애 공지 현재 보관 문서: 가까운 두 기준을 섞지 말고 경계선을 하나 짚어줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "내부 IT 쪽이야. 범위가 헷갈리는 운영 장애 공지 건이야. 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 현재 문서를 고르는 기준을 한 문장으로 정리해."
+          "content": "상황 설명은 내부 IT 쪽이야. 대상은 운영 장애 공지 현재 보관 문서. 결정 전에 운영 장애 공지 현재 보관 문서의 경계를 짚고 싶어 운영 장애 공지 현재 보관 문서 건이야. 검색 결과에서 최신본과 보관본을 구별할 실마리를 한 문장으로 줘."
         },
         {
           "role": "user",
-          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "운영 장애 공지 현재 보관 문서 기준으로 정규 규칙과 이번 예외를 구분해 다음 질문 하나를 제시해줘. 조건 변경: 한 가지 수정: 운영 장애 공지 현재 보관 문서 예외 조건도 포함해줘. 첫 결과에는 핵심 산출물을 두고 추가 확인은 짧게 뒤에 붙여줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal software or IT operations context, Work out the applicable scope for Operations-incident notice; State the rule for choosing the current document.. Input context: search results show a current document alongside an archived one. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Operations incident notice Current versus archived belongs to the internal IT context. For Operations incident notice Current versus archived, determine the applicable scope; state the rule for choosing the current document. Input context: Search results show a current document alongside an archived one. Operations incident notice Current versus archived: Keep the two nearby rules apart and name the boundary between them."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is an internal IT item. The scope is fuzzy for Operations-incident notice. Search results show a current document alongside an archived one. State the rule for choosing the current document."
+          "content": "Operations incident notice Current versus archived falls under the internal IT desk. Before deciding on Operations incident notice Current versus archived, I need the edge clarified. Operations incident notice Current versus archived. Give one sentence that distinguishes the live document from its archived search result."
         },
         {
           "role": "user",
-          "content": "If the boundary is fuzzy, ask one question before deciding."
+          "content": "For Operations incident notice Current versus archived, Contrast the normal rule with this exception and ask one next question. Mid-task change: Take back the earlier condition; use the current rule for Operations incident notice Current versus archived. Separate the must-have result from requests that can wait for a second pass."
         }
       ]
     }

@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.canonical.0002",
   "title": {
-    "ko": "팀 협업 의식 — 승인본과 내부 메모",
-    "en": "Team-collaboration ritual — Approved copy and internal note"
+    "ko": "팀 협업 의식 승인본과 내부 메모",
+    "en": "Team collaboration ritual Approved copy and internal note"
   },
   "task": {
     "primary_intent": "creative_ideation",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 원격 팀이 부담 없이 할 수 있는 주간 협업 의식 아이디어를 내줘 승인된 문서만 근거로 삼아. 입력 상황: 참여는 선택이고 20분 안에 끝나야 하며, 업무 성과를 공개 순위로 매기면 안 돼. 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "이 팀 협업 의식 승인본과 내부 메모 건은 팀 회의/커뮤니케이션 건이야. 원격 팀이 부담 없이 할 수 있는 주간 협업 의식 아이디어를 내줘 승인된 문서만 근거로 삼아. 입력 상황: 참여는 선택이고 20분 안에 끝나야 하며, 업무 성과를 공개 순위로 매기면 안 돼. 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 팀 협업 의식 승인본과 내부 메모: 원문에서 확인된 것만 적고, 빈칸은 따로 남겨줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의/커뮤니케이션 건이야. 원격 팀에서 20분 안에 끝나는 가벼운 주간 의식 아이디어 줘. 참여는 선택이고 사람 성과를 공개 순위로 매기면 안 돼. 참고로 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 그래서 승인된 문서만 근거로 삼아."
+          "content": "이 요청은 팀 회의/커뮤니케이션 건이야. 팀 협업 의식 승인본과 내부 메모 관련해서 봐줘. 원격 팀에서 20분 안에 끝나는 가벼운 주간 의식 아이디어 줘. 참여는 선택이고 사람 성과를 공개 순위로 매기면 안 돼. 2026년 2분기 승인 서명된 PDF만 근거로 삼고 옆 메모는 참고로만 남겨줘."
         },
         {
           "role": "user",
-          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
+          "content": "팀 협업 의식 승인본과 내부 메모 기준으로 확인된 범위까지만 정리하고 나머지는 질문으로 남겨줘. 앞서 말한 내용에 맞춰, 위에서 말한 팀 협업 의식 승인본과 내부 메모 대상만. 팀 협업 의식 승인본과 내부 메모 수치의 분모가 안 적혔어."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, generate low-pressure weekly collaboration rituals for a remote team; use only the approved document as evidence. Input context: participation must be optional, each ritual must fit within 20 minutes, and work performance must not be publicly ranked. an approved PDF arrives with an internal reference note. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "The team-communication material concerns Team collaboration ritual Approved copy and internal note. Generate low-pressure weekly collaboration rituals for a remote team; use only the approved document as evidence. Input context: Participation must be optional, each ritual must fit within 20 minutes, and work performance must not be publicly ranked. An approved PDF arrives with an internal reference note. Team collaboration ritual Approved copy and internal note: Keep sourced facts separate from gaps in the record."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a team-communication item. Suggest low-pressure weekly rituals for a remote team that fit in 20 minutes. Attendance is optional and no one should be publicly ranked on performance. For this case, an approved PDF arrives with an internal reference note. So use only the approved document as evidence."
+          "content": "The team-communication team is handling Team collaboration ritual Approved copy and internal note. Suggest low-pressure weekly rituals for a remote team that fit in 20 minutes. Attendance is optional and no one should be publicly ranked on performance. Use the approved 2026 Q2 PDF as evidence and keep the accompanying memo as background only."
         },
         {
           "role": "user",
-          "content": "Use what can actually be checked; say when something is unknown."
+          "content": "For Team collaboration ritual Approved copy and internal note, Stop at the supported boundary and turn the rest into a question. Continue from the Team collaboration ritual Approved copy and internal note table I sent. The denominator for Team collaboration ritual Approved copy and internal note is not stated."
         }
       ]
     }

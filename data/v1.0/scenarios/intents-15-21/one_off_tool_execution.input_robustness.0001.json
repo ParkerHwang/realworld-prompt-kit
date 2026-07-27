@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "ocr_copy_format_noise",
-      "typo_spacing_punctuation"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "형식이 깨진 CSV 업로드 준비 정리하려는데, 확실히 아는 건 붙여 넣은 파일에는 쉼표가 하나 더 있는 행, 비어 있는 헤더 값, 섞인 날짜 형식이 있어야. 이걸 원본을 조용히 바꾸지 않는 검증 보고서와 수정 예시로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "깨진 CSV — 쉼표 추가 행, 헤더 값 누락, 날짜 형식 혼합 — 검증 보고서 + 수정 예시; 원본 유지."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out preparing a malformed CSV upload, but here’s what I actually know: The pasted file has one row with an extra comma, a missing header value, and mixed date formats. Could you turn that into a validation report and a corrected example without silently changing source data, without papering over the gaps?"
+          "content": "Malformed CSV — extra comma row; missing header; mixed date formats — validation report + corrected example; source unchanged."
         }
       ]
     }

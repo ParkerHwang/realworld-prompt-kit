@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.canonical.0001",
   "title": {
-    "ko": "복리 설명 — 이번 주 기준표",
-    "en": "Compound interest — This week's baseline"
+    "ko": "복리 설명 이번 주 기준표",
+    "en": "Compound interest This week's baseline"
   },
   "task": {
     "primary_intent": "explanation_teaching",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 복리를 초보자에게 원금·이자·기간의 관계가 보이게 설명해줘 현재 바로 쓸 수 있는 답 한 가지를 정리해. 입력 상황: 숫자 예시는 원금 100, 연 5%, 2년으로 하고 투자 추천은 하지 말아줘. 이번 건은 이번 주 월요일에 배포된 한 장짜리 공지를 기준으로 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "복리 설명 이번 주 기준표 건의 배경은 내 일정·생활 건이야. 복리를 초보자에게 원금·이자·기간의 관계가 보이게 설명해줘 현재 바로 쓸 수 있는 답 한 가지를 정리해. 입력 상황: 숫자 예시는 원금 100, 연 5%, 2년으로 하고 투자 추천은 하지 말아줘. 이번 건은 이번 주 월요일에 배포된 한 장짜리 공지를 기준으로 해. 복리 설명 이번 주 기준표: 답에 쓸 수 있는 근거와 보류할 부분을 나눠줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 내 일정·생활 건이야. 복리가 뭔지 원금 100, 연 5%, 2년 예시로 초보자한테 설명해줘. 계산은 보여주되 투자 추천으로 넘어가진 마. 참고로 이번 건은 이번 주 월요일에 배포된 한 장짜리 공지를 기준으로 해. 그래서 현재 바로 쓸 수 있는 답 한 가지를 정리해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
+          "content": "복리 설명 이번 주 기준표: 복리; 원금 100·연 5%·2년 예시, 투자추천 금지. 초보용 설명 하나. 초안이면 돼?"
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, explain compound interest to a beginner so the relationship among principal, interest, and time is visible; give one answer that can be used now. Input context: use principal 100, 5% annually, and two years for the example, without making an investment recommendation. this case uses a one-page notice issued on Monday this week. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use the personal-life context for Compound interest This week's baseline. Explain compound interest to a beginner so the relationship among principal, interest, and time is visible; give one answer that can be used now. Input context: Use principal 100, 5% annually, and two years for the example, without making an investment recommendation. This case uses a one-page notice issued on Monday this week. Compound interest This week's baseline: Show what can be used now and what must wait for proof."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: This is a personal-life item. Explain compounding to a beginner with principal 100, 5% a year, and two years. Show the calculation, but keep it separate from investment advice. For this case, this case uses a one-page notice issued on Monday this week. So give one answer that can be used now. Use what can actually be checked; say when something is unknown."
+          "content": "Compound interest This week's baseline: Compound interest; principal 100, 5% yearly, two-year example; no investment advice. One beginner explanation. A usable draft?"
         }
       ]
     }

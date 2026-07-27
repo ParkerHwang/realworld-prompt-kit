@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.audience_context_shift.0003",
   "title": {
-    "ko": "한국어·영어 현지화 — 신입 온보딩",
-    "en": "Korean-English localization — New-hire onboarding"
+    "ko": "한국어 영어 현지화 신입 온보딩",
+    "en": "Korean English localization New hire onboarding"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
@@ -18,8 +18,8 @@
       "education_research"
     ],
     "user_goal": {
-      "ko": "한국어·영어 현지화 내용을 지정 독자에게 맞춰 다시 써줘. 단계와 예외를 쉽게 보여줘",
-      "en": "Adapt the Korean-English localization material for the specified reader; make steps and exceptions easy to follow."
+      "ko": "한국어 영어 현지화 신입 온보딩을 독자에 맞게 다시 써줘. 단계와 예외를 쉽게 보여줘",
+      "en": "For Korean English localization New hire onboarding, rewrite for its reader; make steps and exceptions easy to follow"
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "내부 소프트웨어·IT 운영 자료를 확인하는 상황에서 한국어·영어 현지화 내용을 지정 독자에게 맞춰 다시 써줘. 단계와 예외를 쉽게 보여줘. 입력 상황: 전문 용어가 많은 절차를 첫 주 신입에게 설명해야 해. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "한국어 영어 현지화 신입 온보딩 건에서 보는 맥락은 내부 IT 쪽이야. 한국어 영어 현지화 신입 온보딩을 독자에 맞게 다시 써줘. 단계와 예외를 쉽게 보여줘. 입력 상황: 전문 용어가 많은 절차를 첫 주 신입에게 설명해야 해. 한국어 영어 현지화 신입 온보딩: 처음 보는 사람도 따라가게 용어와 예외를 풀어줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "내부 IT 쪽이야. 읽는 사람이 달라진 한국어·영어 현지화 건이야. 전문 용어가 많은 절차를 첫 주 신입에게 설명해야 해. 단계와 예외를 쉽게 보여줘."
+          "content": "한국어 영어 현지화 신입 온보딩 건부터 볼게. 분야는 내부 IT 쪽이야. 한국어 영어 현지화 신입 온보딩 절차를 신입에게 설명해야 해 한국어 영어 현지화 신입 온보딩 건이야. 첫 주 신입도 따라가게 전문 절차의 단계와 예외를 풀어줘."
         },
         {
           "role": "user",
-          "content": "읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬."
+          "content": "한국어 영어 현지화 신입 온보딩 기준으로 읽는 사람의 배경을 가정하지 말고 필요한 맥락을 붙여줘. 말을 줄였지만 전 대화의 대상과 범위를 놓치지 말아줘. 재개 시점 이전의 상태를 단정하지 말고 새로 확인된 것부터 시작해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal software or IT operations context, Adapt the Korean-English localization material for the specified reader; make steps and exceptions easy to follow.. Input context: a jargon-heavy procedure must be explained to a new hire in week one. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "Korean English localization New hire onboarding is handled in internal IT. For Korean English localization New hire onboarding, rewrite for its reader; make steps and exceptions easy to follow. Input context: A jargon-heavy procedure must be explained to a new hire in week one. Korean English localization New hire onboarding: Unpack terms and exceptions so a first-time reader can follow."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is an internal IT item. The reader has changed for Korean-English localization. A jargon-heavy procedure must be explained to a new hire in week one. Make steps and exceptions easy to follow."
+          "content": "In the internal IT lane, handle Korean English localization New hire onboarding. A new hire needs the Korean English localization New hire onboarding procedure explained. Korean English localization New hire onboarding. Explain the specialist procedure so a first-week hire can follow its steps and exceptions."
         },
         {
           "role": "user",
-          "content": "Make it fit the reader without changing the substance."
+          "content": "For Korean English localization New hire onboarding, Do not assume the reader's background; add the context they need. Do not repeat the old context; respond to the information newly supplied. The pre-pause passage is missing, so flag it instead of inventing a continuation."
         }
       ]
     }

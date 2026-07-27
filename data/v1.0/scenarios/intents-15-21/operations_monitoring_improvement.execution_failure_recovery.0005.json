@@ -38,8 +38,8 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "multi_intent_mixed_priority",
-      "rambling_stream"
+      "mid_task_change",
+      "self_correction_scope_shift"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 부분 상태 수정, 재시도, 수신자 안내 안로 좁히자. 큰 주제는 부분 보고서 복구이고 믿을 수 있는 메모는 보고서에는 세 지역이 들어가야 다만 한 지역 로드가 실패했고 완전성 표시 없이 저장됐다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "메모를 바탕으로 정리할 건 부분 보고서 복구. 잠깐, 원하는 결과는 부분 상태 수정, 재시도, 수신자 안내 계획. 메모는 다음이야: 보고서에는 세 지역이 들어가야 하지만 한 지역 로드가 실패했고 완전성 표시 없이 저장됐다. 없는 건 가정으로 적어줘."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a partial-status correction, retry, and recipient notice plan. The broader issue is recovering from a partial report, and the notes I can stand behind are That report contains three regions, one failed to load, and the output was saved without a completeness marker.. Mark assumptions instead of filling blanks."
+          "content": "I’m trying to turn notes about recovering from a partial report. Actually, focus on a partial-status correction, retry, and recipient notice plan. I noted this: That report contains three regions, one failed to load, and the output was saved without a completeness marker. For recovering from a partial report, mark assumptions; gaps stay open."
         }
       ]
     }

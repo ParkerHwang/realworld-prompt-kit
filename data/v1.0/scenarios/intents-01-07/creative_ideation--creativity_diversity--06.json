@@ -5,21 +5,21 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.creativity_diversity.0006",
   "title": {
-    "ko": "제품 기능 발상 — 승인 흐름 제품",
-    "en": "Product-feature ideas — Approval-flow product"
+    "ko": "제품 기능 발상 승인 흐름 제품",
+    "en": "Product feature ideas Approval flow product"
   },
   "task": {
     "primary_intent": "creative_ideation",
     "secondary_intents": [
       "planning_strategy_design"
     ],
-    "primary_domain": "software_it",
+    "primary_domain": "customer_support_success",
     "domain_tags": [
       "creative_media"
     ],
     "user_goal": {
-      "ko": "제품 기능 발상를 주제로 서로 다른 아이디어를 내줘. 자동화와 사람 검토를 다르게 조합해",
-      "en": "Generate genuinely different ideas around Product-feature ideas; vary automation and human-review combinations."
+      "ko": "제품 기능 발상 승인 흐름 제품을 주제로 서로 다른 아이디어를 내줘. 자동화와 사람 검토를 다르게 조합해",
+      "en": "For Product feature ideas Approval flow product, generate distinct ideas; vary automation and human-review combinations"
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "내부 소프트웨어·IT 운영 자료를 확인하는 상황에서 제품 기능 발상를 주제로 서로 다른 아이디어를 내줘. 자동화와 사람 검토를 다르게 조합해. 입력 상황: 작은 팀의 승인 대기를 줄이는 기능이지만 권한 우회는 금지야. 서로 다른 방향의 아이디어를 내고, 각 아이디어가 제약을 어떻게 만족하는지 짧게 설명해."
+          "content": "제품 기능 발상 승인 흐름 제품 건을 보고, 분야는 고객 문의 건이야. 제품 기능 발상 승인 흐름 제품을 주제로 서로 다른 아이디어를 내줘. 자동화와 사람 검토를 다르게 조합해. 입력 상황: 작은 팀의 승인 대기를 줄이는 기능이지만 권한 우회는 금지야. 제품 기능 발상 승인 흐름 제품: 한 가지 해법만 반복하지 말고 다른 가설도 섞어줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "내부 IT 쪽이야. 방향을 여러 개로 열어야 하는 제품 기능 발상 건이야. 작은 팀의 승인 대기를 줄이는 기능이지만 권한 우회는 금지야. 자동화와 사람 검토를 다르게 조합해."
+          "content": "급해 — 상황 설명은 고객 문의 건이야. 대상은 제품 기능 발상 승인 흐름 제품. 제품 기능 발상 승인 흐름 제품은 자동화와 사람 검토를 달리 섞어야 해 제품 기능 발상 승인 흐름 제품 건이야. 권한 우회 없이 승인 대기를 줄이는 기능으로 자동화와 사람 검토 조합을 벌려줘."
         },
         {
           "role": "user",
-          "content": "서로 결이 다른 안으로 내고, 왜 괜찮은지도 한 줄씩 붙여줘."
+          "content": "제품 기능 발상 승인 흐름 제품 기준으로 서로 다른 선택지를 비교해 왜 가능한지 한 줄씩 적어줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal software or IT operations context, Generate genuinely different ideas around Product-feature ideas; vary automation and human-review combinations.. Input context: the product reduces small-team approval waiting but may not bypass authority. Offer ideas from genuinely different directions and briefly explain how each satisfies the constraints."
+          "content": "Place Product feature ideas Approval flow product in the customer-support lane. For Product feature ideas Approval flow product, generate distinct ideas; vary automation and human-review combinations. Input context: The product reduces small-team approval waiting but may not bypass authority. Product feature ideas Approval flow product: Do not repeat one solution; add a few genuinely different hypotheses."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is an internal IT item. The directions need to stay diverse for Product-feature ideas. The product reduces small-team approval waiting but may not bypass authority. Vary automation and human-review combinations."
+          "content": "Need this now — For Product feature ideas Approval flow product, the working area is customer-support. The Product feature ideas Approval flow product should vary automation and human review. Product feature ideas Approval flow product. Vary automation and human-review combinations for reducing approval waits without bypassing authority."
         },
         {
           "role": "user",
-          "content": "Give genuinely different options and one line on why each works."
+          "content": "For Product feature ideas Approval flow product, Compare options with different participation modes and give a short reason."
         }
       ]
     }

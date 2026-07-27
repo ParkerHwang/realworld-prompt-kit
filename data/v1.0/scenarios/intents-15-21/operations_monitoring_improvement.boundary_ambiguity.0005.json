@@ -38,8 +38,8 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "emoji_shorthand",
-      "speech_to_text_disfluency"
+      "mid_task_change",
+      "self_correction_scope_shift"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 결정 질문 하나와 후보 준비도 점검 리스트로 좁히자. 큰 주제는 연구 진행 기준이고 믿을 수 있는 메모는 프로젝트는 기록 수집과 검토를 진행했지만 분석으로 넘어갈 기준은 합의되지 않았다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "다시 이어서 보는 건 연구 진행 기준. 잠깐, 원하는 결과는 결정 질문 하나와 후보 준비도 점검 목록. 메모는 다음이야: 프로젝트는 기록 수집과 검토를 진행했지만 분석으로 넘어갈 기준은 합의되지 않았다. 없는 건 가정으로 적어줘."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to one decision question and a candidate readiness checklist. The broader issue is a research progress threshold, and the notes I can stand behind are The work has collected records and completed reviews, but the threshold for moving to analysis still is not agreed.. Mark assumptions instead of filling blanks."
+          "content": "I’m returning to a research progress threshold. Actually, focus on one decision question and a candidate readiness checklist. I noted this: The work has collected records and completed reviews, but the threshold for moving to analysis still is not agreed. For a research progress threshold, mark assumptions; gaps stay open."
         }
       ]
     }

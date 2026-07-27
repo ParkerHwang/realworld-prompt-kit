@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 합계 검증을 포함한 보고서 발송 준비 얘기였어. 메모에는 보고서 합계는 1,240인데 원본 행 합계는 1,238이며 조정액 하나가 댓글에만 설명돼 있어라고 적혀 있어. 조정 근거가 체크될 때까지 발송을 보류하는 대조 메모 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "행동 전에 확인할 건 합계 검증을 포함한 보고서 발송 준비. 전에 남긴 내용을 이어서 확인할게. 메모 내용은 이래: 보고서 합계는 1,240인데 원본 행 합계는 1,238이며 조정액 하나가 댓글에만 설명돼 있어. 원하는 결과는 조정 근거가 확인될 때까지 발송을 보류하는 대조 메모. 앞선 범위도 봐줘."
         },
         {
           "role": "user",
-          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
+          "content": "미해결 지점을 확정된 것처럼 넘기지 말아줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up preparing a report send with total checks? I lost the thread a bit. The notes say That report total is 1,240, the source rows sum to 1,238, and one adjustment is described only in a comment. What would a reconciliation note and a send hold until the adjustment is supported look like? Keep the earlier boundaries in mind."
+          "content": "Before I act on preparing a report send with total checks. Picking this up: that report total is 1,240, the source rows sum to 1,238, and one adjustment is described only in a comment. A reconciliation note and a send hold until the adjustment is supported could look like this. For preparing a report send with total checks, keep old limits visible."
         },
         {
           "role": "user",
-          "content": "If one missing detail would change the call, ask for it or label your assumption."
+          "content": "Keep the unresolved point visible instead of treating it as settled."
         }
       ]
     }

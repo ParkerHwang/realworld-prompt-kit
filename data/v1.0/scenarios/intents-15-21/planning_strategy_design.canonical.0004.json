@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "mid_task_change",
-      "self_correction_scope_shift"
+      "multi_intent_mixed_priority",
+      "rambling_stream"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "지금 가정 이사 일정이랑 아직 열린 문제가 엉켜 있어. 계약 만료일은 28일이고 이사업체는 25일 또는 27일에 가능하며 인터넷 설치에는 영업일 며칠이 걸린다 일단 퇴거 기한과 예비 날짜를 반영한 의존관계 기반 일정로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 설치 예약을 임의로 만들지 말고 확인이 필요한 날짜를 표시한다."
+          "content": "이사 일정이 꼬였어. 퇴거 기한을 지키는 의존 일정과 예비 날짜가 필요해 — 계약은 28일 끝나고, 이사업체는 25일/27일 가능, 인터넷 설치는 영업일 며칠 걸려. 확인할 날짜는 표시하고 설치 예약은 만들지 말아줘. 다른 쟁점은 따로 적어줘. 계약일과 이동일은 확정처럼 보이지만 설치 날짜는 아직 빈칸이라 마음이 급해. 일정마다 확인 여부를 남겨줘."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a household move timeline, plus some unresolved details. The lease ends on the 28th, movers are available on the 25th or 27th, and internet installation needs several business days. Please make a dependency-aware timeline that protects the move-out deadline and a backup date; if the second issue is out of scope, separate it. Do not invent an installation appointment; flag any date that still needs confirmation."
+          "content": "Move planning is tangled: I need a dependency-aware sequence that protects the move-out deadline and a backup date, but three pieces are still moving — the lease ends on the 28th; movers can do the 25th or 27th; internet takes several business days. Flag dates needing confirmation; do not invent an installation booking, and keep the extra questions separate."
         }
       ]
     }

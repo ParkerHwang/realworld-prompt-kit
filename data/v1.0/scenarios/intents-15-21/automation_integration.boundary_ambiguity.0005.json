@@ -38,8 +38,8 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "implicit_goal_or_output",
-      "terse_fragment"
+      "mid_task_change",
+      "self_correction_scope_shift"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "implicit_goal_or_output",
-        "terse_fragment"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 적용 보존 정책을 묻는 질문 하나와 사전 조사 흐름로 좁히자. 큰 주제는 자동 보존 아카이브이고 믿을 수 있는 메모는 오래된 데이터를 아카이브하라고 다만 보존 기간, 법적 보류, 삭제 책임자는 주어지지 않았다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "같이 풀어볼 문제는 자동 보존 아카이브. 잠깐, 원하는 결과는 적용 보존 정책을 묻는 질문 하나와 사전 조사 흐름. 메모는 다음이야: 오래된 데이터를 아카이브하라고 하지만 보존 기간, 법적 보류, 삭제 책임자는 주어지지 않았다. 없는 건 가정으로 적어줘."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "implicit_goal_or_output",
-        "terse_fragment"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to one question about the governing retention policy and a discovery-first workflow. The broader issue is an automated retention archive, and the notes I can stand behind are The request I received says archive old data, but retention periods, legal holds, and deletion ownership are not supplied.. Mark assumptions instead of filling blanks."
+          "content": "Can we make sense of an automated retention archive. Actually, focus on one question about the governing retention policy and a discovery-first workflow. I noted this: The request I received says archive old data, but retention periods, legal holds, and deletion ownership are not supplied. For an automated retention archive, mark assumptions; gaps stay open."
         }
       ]
     }

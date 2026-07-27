@@ -38,8 +38,8 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "anaphora_prior_context",
-      "resume_after_interruption"
+      "mid_task_change",
+      "self_correction_scope_shift"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
-        "resume_after_interruption"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 원본 레이블을 보존하고 매핑을 요청하는 정규화 대기열로 좁히자. 큰 주제는 구·신 지원 상태로 흐름 만들기이고 믿을 수 있는 메모는 내보내기에 예전 상태와 새 상태가 섞였고 한 티켓에는 두 레이블이 모두 있어야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "뒤섞인 메모의 주제는 구·신 지원 상태로 흐름 만들기. 잠깐, 원하는 결과는 원본 레이블을 보존하고 매핑을 요청하는 정규화 대기열. 메모는 다음이야: 내보내기에 예전 상태와 새 상태가 섞였고 한 티켓에는 두 레이블이 모두 있어. 없는 건 가정으로 적어줘."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
-        "resume_after_interruption"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a normalization queue that preserves the raw labels and asks for a mapping. The broader issue is a workflow from old and new support status labels, and the notes I can stand behind are The export mixes legacy statuses with new statuses, and one ticket has both labels.. Mark assumptions instead of filling blanks."
+          "content": "I’ve got a messy question about a workflow from old and new support status labels. Actually, focus on a normalization queue that preserves the raw labels and asks for a mapping. I noted this: The export mixes legacy statuses with new statuses, and one ticket has both labels. For a workflow from old and new support status labels, mark assumptions; gaps stay open."
         }
       ]
     }

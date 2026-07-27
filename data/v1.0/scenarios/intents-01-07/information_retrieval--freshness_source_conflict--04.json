@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.freshness_source_conflict.0004",
   "title": {
-    "ko": "도서관 강좌 접수 — 판매자·제조사 원문",
-    "en": "Library-class registration — Seller versus manufacturer source"
+    "ko": "도서관 강좌 접수 판매자 제조사 원문",
+    "en": "Library class registration Seller versus manufacturer source"
   },
   "task": {
     "primary_intent": "information_retrieval",
@@ -18,8 +18,8 @@
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "도서관 강좌 접수에 관한 현재 근거를 대조해줘. 각 주장의 출처와 현재성을 따로 표시해",
-      "en": "Reconcile the current evidence for Library-class registration; label the source and freshness of each claim."
+      "ko": "도서관 강좌 접수 판매자 제조사 원문에 관한 현재 근거를 대조해줘. 각 주장의 출처와 현재성을 따로 표시해",
+      "en": "For Library class registration Seller versus manufacturer source, reconcile current evidence; label the source and freshness of each claim"
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 도서관 강좌 접수에 관한 현재 근거를 대조해줘. 각 주장의 출처와 현재성을 따로 표시해. 입력 상황: 판매자 표가 어제 바뀌었고 제조사 보증서는 지난달 버전이야. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
+          "content": "요청 대상은 도서관 강좌 접수 판매자 제조사 원문이고, 회사 행정 쪽이야. 도서관 강좌 접수 판매자 제조사 원문에 관한 현재 근거를 대조해줘. 각 주장의 출처와 현재성을 따로 표시해. 입력 상황: 판매자 표가 어제 바뀌었고 제조사 보증서는 지난달 버전이야. 도서관 강좌 접수 판매자 제조사 원문: 날짜와 출처를 따로 붙여 현재 기준을 골라줘. 도서관 강좌 접수 판매자 제조사 원문 건은 도서관 원문 공지의 대상 강좌·접수 기간·대기 조건을 확인하고 빈 날짜는 표시해."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건 😣, 회사 행정 쪽이야. 자료가 엇갈린 도서관 강좌 접수 건이야. 판매자 표가 어제 바뀌었고 제조사 보증서는 지난달 버전이야. 각 주장의 출처와 현재성을 따로 표시해. 새 자료인지, 어느 출처인지 나눠서 보여줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
+          "content": "도서관 강좌 접수 판매자 제조사 원문 부분만 먼저 처리해줘 😣, 상황 설명은 회사 행정 쪽이야. 대상은 도서관 강좌 접수 판매자 제조사 원문. 도서관 강좌 접수 판매자 제조사 원문 주장마다 출처가 바뀐 시점이 있어 도서관 강좌 접수 판매자 제조사 원문 건이야. 판매자 표와 제조사 보증서에서 주장별 출처와 갱신 시점을 따로 적어줘. 도서관 강좌 접수 판매자 제조사 원문 기준으로 정정 전후를 대조하고 지금 유효한 문장만 써줘. 도서관 강좌 접수 판매자 제조사 원문 건은 도서관 원문 공지의 대상 강좌·접수 기간·대기 조건을 확인하고 빈 날짜는 표시해. 도서관 강좌 접수 판매자 제조사 원문이 여러 갈래라서 말이 섞였어, 그래도 중요한 순서로 묶어줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, Reconcile the current evidence for Library-class registration; label the source and freshness of each claim.. Input context: the seller table changed yesterday while the manufacturer warranty is last month's version. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
+          "content": "Read Library class registration Seller versus manufacturer source against the office-admin context. For Library class registration Seller versus manufacturer source, reconcile current evidence; label the source and freshness of each claim. Input context: The seller table changed yesterday while the manufacturer warranty is last month's version. Library class registration Seller versus manufacturer source: Attach a date and source to each claim before choosing the current one. For Library class registration Seller versus manufacturer source, Check the library source for class, registration window, and waitlist conditions; flag a missing date."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is — this is getting urgent: This is an office-admin item. The sources disagree for Library-class registration. The seller table changed yesterday while the manufacturer warranty is last month's version. Label the source and freshness of each claim. Show which source and date each answer comes from. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
+          "content": "Only the Library class registration Seller versus manufacturer source part for now — this is getting urgent: Library class registration Seller versus manufacturer source falls under the office-admin desk. Each Library class registration Seller versus manufacturer source claim has a different source date. Library class registration Seller versus manufacturer source. For each claim, label the source and revision timing in the seller table versus the maker's warranty. For Library class registration Seller versus manufacturer source, Compare the correction against the earlier record and use the live wording. For Library class registration Seller versus manufacturer source, Check the library source for class, registration window, and waitlist conditions; flag a missing date. I had one more thought about Library class registration Seller versus manufacturer source; leave it as a secondary note."
         }
       ]
     }

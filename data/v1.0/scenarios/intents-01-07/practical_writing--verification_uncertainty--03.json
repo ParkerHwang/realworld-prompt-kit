@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.verification_uncertainty.0003",
   "title": {
-    "ko": "공급업체 협의 메시지 — 승인 대기",
-    "en": "Vendor negotiation message — Pending approval"
+    "ko": "공급업체 협의 메시지 승인 대기",
+    "en": "Vendor negotiation message Pending approval"
   },
   "task": {
     "primary_intent": "practical_writing",
@@ -18,8 +18,8 @@
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "공급업체 협의 메시지 자료의 근거와 미확인 부분을 나눠줘. 확정된 문장과 승인 요청을 분리해",
-      "en": "Separate evidence and unknowns in the Vendor negotiation message material; separate confirmed wording from the approval request."
+      "ko": "공급업체 협의 메시지 승인 대기의 확인된 점과 빈틈을 나눠줘. 확정된 문장과 승인 요청을 분리해",
+      "en": "For Vendor negotiation message Pending approval, separate evidence from gaps; separate confirmed wording from the approval request"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 공급업체 협의 메시지 자료의 근거와 미확인 부분을 나눠줘. 확정된 문장과 승인 요청을 분리해. 입력 상황: 초안은 완성됐지만 예산 승인 전이라 실행 여부가 정해지지 않았어. 검증된 사실, 가정, 불확실성, 다음 확인 단계를 분리해서 제시해."
+          "content": "분류는 사업 운영 자료야; 대상은 공급업체 협의 메시지 승인 대기. 공급업체 협의 메시지 승인 대기의 확인된 점과 빈틈을 나눠줘. 확정된 문장과 승인 요청을 분리해. 입력 상황: 초안은 완성됐지만 예산 승인 전이라 실행 여부가 정해지지 않았어. 공급업체 협의 메시지 승인 대기: 확인된 사실과 추정·미상을 나누고 남은 틈을 적어줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영 자료야. 근거를 다시 봐야 하는 공급업체 협의 메시지 건이야. 초안은 완성됐지만 예산 승인 전이라 실행 여부가 정해지지 않았어. 확정된 문장과 승인 요청을 분리해."
+          "content": "상황 설명은 사업 운영 자료야. 대상은 공급업체 협의 메시지 승인 대기. 공급업체 협의 메시지 승인 대기 초안은 승인을 기다리고 있어 공급업체 협의 메시지 승인 대기 건이야. 예산 승인이 오기 전 확정할 수 있는 문장과 요청할 결재를 분리해줘."
         },
         {
           "role": "user",
-          "content": "확정·추정·아직 모르는 것·다음 체크를 따로 적어줘. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘. 바로 보내거나 바꾸지는 말고 검토용 초안으로 줘."
+          "content": "공급업체 협의 메시지 승인 대기 기준으로 승인된 내용과 보류 중인 요청을 서로 섞지 마. 요약과 누락 방지 중 무엇을 우선했는지 표시해줘. 내 대신 결정하지 말고 선택지를 검토본으로 정리해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a business-operations context where options and execution conditions matter, Separate evidence and unknowns in the Vendor negotiation message material; separate confirmed wording from the approval request.. Input context: the draft is complete but execution is not decided before budget approval. Separate verified facts, assumptions, uncertainty, and the next verification step."
+          "content": "Read Vendor negotiation message Pending approval against the business-operations context. For Vendor negotiation message Pending approval, separate evidence from gaps; separate confirmed wording from the approval request. Input context: The draft is complete but execution is not decided before budget approval. Vendor negotiation message Pending approval: Separate confirmed facts from guesses and unknowns, and name the remaining gap."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a business-operations item. The evidence needs checking for Vendor negotiation message. The draft is complete but execution is not decided before budget approval. Separate confirmed wording from the approval request."
+          "content": "The business-operations team is handling Vendor negotiation message Pending approval. The Vendor negotiation message Pending approval draft is waiting for approval. Vendor negotiation message Pending approval. Separate wording that is ready now from the approval request still waiting on budget sign-off."
         },
         {
           "role": "user",
-          "content": "Keep confirmed, guessed, unknown, and next-check items separate. If brevity and completeness conflict, call that out. Do not send or change anything; make it a review draft."
+          "content": "For Vendor negotiation message Pending approval, Do not mix approved wording with a request that is still pending. Say whether you prioritized summary or protection against omissions. Assume no authority beyond this request and finish with a safe draft."
         }
       ]
     }

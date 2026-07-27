@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.canonical.0001",
   "title": {
-    "ko": "지역 행사 이름 — 이번 주 기준표",
-    "en": "Community-event names — This week's baseline"
+    "ko": "지역 행사 이름 이번 주 기준표",
+    "en": "Community event names This week's baseline"
   },
   "task": {
     "primary_intent": "creative_ideation",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일반 정보와 상식을 확인하는 상황에서 지역 주민 행사의 이름과 짧은 설명 아이디어를 다양하게 내줘 현재 바로 쓸 수 있는 답 한 가지를 정리해. 입력 상황: 가족·청년·상인이 함께 참여하고, 과장된 경쟁 표현이나 특정 집단을 배제하는 말은 피해야 해. 이번 건은 이번 주 월요일에 배포된 한 장짜리 공지를 기준으로 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "검토할 항목은 지역 행사 이름 이번 주 기준표; 맥락은 일반 정보 조회 건이야. 지역 주민 행사의 이름과 짧은 설명 아이디어를 다양하게 내줘 현재 바로 쓸 수 있는 답 한 가지를 정리해. 입력 상황: 가족·청년·상인이 함께 참여하고, 과장된 경쟁 표현이나 특정 집단을 배제하는 말은 피해야 해. 이번 건은 이번 주 월요일에 배포된 한 장짜리 공지를 기준으로 해. 지역 행사 이름 이번 주 기준표: 확인된 범위까지만 정리하고 나머지는 질문으로 남겨줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 일반 정보 조회 건이야. 가족·청년·동네 상인이 다 같이 들어올 수 있는 행사 이름 아이디어 여러 결로 내줘. 경쟁에서 누굴 밀어내는 말은 빼고 비슷한 이름 반복은 말고. 참고로 이번 건은 이번 주 월요일에 배포된 한 장짜리 공지를 기준으로 해. 그래서 현재 바로 쓸 수 있는 답 한 가지를 정리해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
+          "content": "지역 행사 이름 이번 주 기준표: 행사명·짧은 설명; 가족·청년·상인 모두, 배제 경쟁어 금지. 월요일 공지 기준; 바로 쓸 안 하나. 초안이면 돼?"
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a general-information and everyday-knowledge context, generate diverse names and short descriptions for a community event; give one answer that can be used now. Input context: families, young adults, and local merchants should all feel included; avoid exaggerated competition or exclusionary wording. this case uses a one-page notice issued on Monday this week. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Place Community event names This week's baseline in the general-information lane. Generate diverse names and short descriptions for a community event; give one answer that can be used now. Input context: Families, young adults, and local merchants should all feel included; avoid exaggerated competition or exclusionary wording. This case uses a one-page notice issued on Monday this week. Community event names This week's baseline: Stop at the supported boundary and turn the rest into a question."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: This is a general-information lookup. Give varied name ideas for an event that families, young adults, and local merchants can all join. Avoid exclusionary competition language and near-duplicate names. For this case, this case uses a one-page notice issued on Monday this week. So give one answer that can be used now. Use what can actually be checked; say when something is unknown."
+          "content": "Community event names This week's baseline: Event names and short blurbs; include families, young adults, and merchants; no exclusionary competition. Monday notice; one usable answer. A usable draft?"
         }
       ]
     }

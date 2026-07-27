@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "anaphora_prior_context",
-      "resume_after_interruption"
+      "multi_intent_mixed_priority",
+      "rambling_stream"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
-        "resume_after_interruption"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "지금 수 주에 걸친 채용 흐름이랑 아직 열린 문제가 엉켜 있어. 지원자는 검토, 면접, 결정 상태를 거치고 검토자는 바뀔 수 있으며 동의 기록은 보존돼야 한다 일단 역할 기반 접근, 상태 이력, 검토 대기열이 있는 재개 가능한 파이프라인로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 지원자 정보를 노출하거나 검토자가 바뀔 때 상태 이력을 지우지 않는다."
+          "content": "정리할 건 수 주에 걸친 채용 흐름. 아직 갈라서 봐야 할 내용이 있어. 열린 내용은 이거야: 지원자는 검토, 면접, 결정 상태를 거치고 검토자는 바뀔 수 있으며 동의 기록은 보존돼야 한다. 역할 기반 접근, 상태 이력, 검토 대기열이 있는 재개 가능한 파이프라인 형태로 만들어줘. 이번 요청 밖의 내용은 따로 남겨줘. 지원자 정보를 노출하거나 검토자가 바뀔 때 상태 이력을 지우지 않는다."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
-        "resume_after_interruption"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a multi-week hiring workflow, plus some unresolved details. Candidates move through screening, interview, and decision states; reviewers may change and consent records must be retained. Please make a resumable pipeline with role-based access, state history, and pending-review queues; if the second issue is out of scope, separate it. Do not expose candidate data or erase state history when reviewers change."
+          "content": "I’m trying to sort out a multi-week hiring workflow. Other loose ends: candidates move through screening, interview, and decision states; reviewers may change and consent records must be retained. Please make a resumable pipeline with role-based access, state history, and pending-review queues. Do not expose candidate data or erase state history when reviewers change. Keep extra scope apart."
         }
       ]
     }

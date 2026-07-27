@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "anaphora_prior_context",
-      "resume_after_interruption"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
-        "resume_after_interruption"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "압도된 느낌에 대한 지원 정리하려는데, 확실히 아는 건 사용자는 모든 것이 벅차다고 다만 맥락, 긴급도, 원하는 도움의 종류를 말하지 않았다야. 이걸 들어주기와 안 세우기를 구분하는 부드러운 체크 질문로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "압도감 지원 — 모든 게 벅참, 맥락·긴급도·도움 선호 없음 — 부드러운 확인 + 듣기/계획 질문."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
-        "resume_after_interruption"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out support for feeling overwhelmed, but here’s what I actually know: The person asking says everything feels too much but gives no context, urgency, or desired kind of help. Could you turn that into a gentle check-in and one question distinguishing listening from planning, without papering over the gaps?"
+          "content": "Overwhelmed support — everything feels too much; no context, urgency, or help preference — gentle check-in + listening/planning question."
         }
       ]
     }

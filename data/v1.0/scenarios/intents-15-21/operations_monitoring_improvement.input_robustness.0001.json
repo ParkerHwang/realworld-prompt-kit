@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "mid_task_change",
-      "self_correction_scope_shift"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "충돌하는 스프레드시트의 KPI 검토 정리하려는데, 확실히 아는 건 두 시트가 같은 전환율에 다른 분모를 쓰고 하나에는 오래된 월 표기가 있어야. 이걸 정의, 날짜, 미해결 값을 담은 대조표로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "충돌 KPI 시트 — 같은 전환율, 다른 분모, 오래된 월 표기 — 정의·날짜·미해결 값 대조표."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out a KPI review from conflicting spreadsheets, but here’s what I actually know: Two sheets use different denominators for the same conversion rate and one has a stale month label. Could you turn that into a reconciliation table with definitions, dates, and unresolved values, without papering over the gaps?"
+          "content": "Conflicting KPI sheets — same conversion rate, different denominators; stale month label — reconciliation table: definitions, dates, unresolved values."
         }
       ]
     }

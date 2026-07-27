@@ -38,8 +38,8 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "ocr_copy_format_noise",
-      "typo_spacing_punctuation"
+      "mid_task_change",
+      "self_correction_scope_shift"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 미정 입장을 위한 자리표시자가 있는 언어 연습 대본로 좁히자. 큰 주제는 비원어민을 위한 협상 연습이고 믿을 수 있는 메모는 학습자는 명확한 영어 표현과 자신감을 원다만 사업상 입장과 최저선은 아직 안 정해졌어야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "실제로 풀어야 할 문제는 비원어민을 위한 협상 연습. 잠깐, 원하는 결과는 미정 입장을 위한 자리표시자가 있는 언어 연습 대본. 메모는 다음이야: 학습자는 명확한 영어 표현과 자신감을 원하지만 사업상 입장과 최저선은 아직 안 정해졌어. 없는 건 가정으로 적어줘."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a language practice script with placeholders for the unresolved position. The broader issue is negotiation practice for a non-native speaker, and the notes I can stand behind are The learner wants clear English phrases and confidence, but the business position and walk-away point are not fixed.. Mark assumptions instead of filling blanks."
+          "content": "The practical problem is negotiation practice for a non-native speaker. Actually, focus on a language practice script with placeholders for the unresolved position. I noted this: The learner wants clear English phrases and confidence, but the business position and walk-away point are not fixed. For negotiation practice for a non-native speaker, mark assumptions; gaps stay open."
         }
       ]
     }

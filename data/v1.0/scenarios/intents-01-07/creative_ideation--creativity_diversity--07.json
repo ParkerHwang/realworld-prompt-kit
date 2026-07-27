@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.creativity_diversity.0007",
   "title": {
-    "ko": "여행 경험 아이디어 — 반나절 지역 여행",
-    "en": "Travel-experience ideas — Half-day local trip"
+    "ko": "여행 경험 아이디어 반나절 지역 여행",
+    "en": "Travel experience ideas Half day local trip"
   },
   "task": {
     "primary_intent": "creative_ideation",
@@ -18,8 +18,8 @@
       "creative_media"
     ],
     "user_goal": {
-      "ko": "여행 경험 아이디어를 주제로 서로 다른 아이디어를 내줘. 걷기·만남·관찰처럼 서로 다른 경험 축을 써",
-      "en": "Generate genuinely different ideas around Travel-experience ideas; use different experience modes such as walking, meeting, and observing."
+      "ko": "여행 경험 아이디어 반나절 지역 여행을 주제로 서로 다른 아이디어를 내줘. 걷기·만남·관찰처럼 서로 다른 경험 축을 써",
+      "en": "For Travel experience ideas Half day local trip, generate distinct ideas; use different experience modes such as walking, meeting, and observing"
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일반 정보와 상식을 확인하는 상황에서 여행 경험 아이디어를 주제로 서로 다른 아이디어를 내줘. 걷기·만남·관찰처럼 서로 다른 경험 축을 써. 입력 상황: 대형 관광 없이 반나절에 끝나는 도시 경험을 설계해야 해. 서로 다른 방향의 아이디어를 내고, 각 아이디어가 제약을 어떻게 만족하는지 짧게 설명해."
+          "content": "여행 경험 아이디어 반나절 지역 여행 건을 보고, 분야는 일반 정보 조회 건이야. 여행 경험 아이디어 반나절 지역 여행을 주제로 서로 다른 아이디어를 내줘. 걷기·만남·관찰처럼 서로 다른 경험 축을 써. 입력 상황: 대형 관광 없이 반나절에 끝나는 도시 경험을 설계해야 해. 여행 경험 아이디어 반나절 지역 여행: 준비 부담과 참여 구조가 다른 안을 만들어줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "일반 정보 조회 건이야. 방향을 여러 개로 열어야 하는 여행 경험 아이디어 건이야. 대형 관광 없이 반나절에 끝나는 도시 경험을 설계해야 해. 걷기·만남·관찰처럼 서로 다른 경험 축을 써."
+          "content": "이 요청은 일반 정보 조회 건이야. 여행 경험 아이디어 반나절 지역 여행 관련해서 봐줘. 여행 경험 아이디어 반나절 지역 여행은 경험의 축을 바꿔봐야 해 여행 경험 아이디어 반나절 지역 여행 건이야. 대형 관광 없이 반나절 도시 경험을 걷기·만남·관찰로 다르게 설계해줘."
         },
         {
           "role": "user",
-          "content": "서로 결이 다른 안으로 내고, 왜 괜찮은지도 한 줄씩 붙여줘."
+          "content": "여행 경험 아이디어 반나절 지역 여행 기준으로 경험의 축을 바꿔 닮지 않은 방향으로 펼쳐줘. 여행 경험 아이디어 반나절 지역 여행 보고용으로 정리하면 좋겠어. 여행 경험 아이디어 반나절 지역 여행 기준일을 아직 못 받았어."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a general-information and everyday-knowledge context, Generate genuinely different ideas around Travel-experience ideas; use different experience modes such as walking, meeting, and observing.. Input context: the city experience must fit half a day without large-group tourism. Offer ideas from genuinely different directions and briefly explain how each satisfies the constraints."
+          "content": "The general-information material concerns Travel experience ideas Half day local trip. For Travel experience ideas Half day local trip, generate distinct ideas; use different experience modes such as walking, meeting, and observing. Input context: The city experience must fit half a day without large-group tourism. Travel experience ideas Half day local trip: Vary preparation burden and participation mechanics across the options."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a general-information lookup. The directions need to stay diverse for Travel-experience ideas. The city experience must fit half a day without large-group tourism. Use different experience modes such as walking, meeting, and observing."
+          "content": "Treat Travel experience ideas Half day local trip as work in general-information. The Travel experience ideas Half day local trip should vary the experience axis. Travel experience ideas Half day local trip. Design half-day city experiences around different modes such as walking, meeting, and observing, without mass tourism."
         },
         {
           "role": "user",
-          "content": "Give genuinely different options and one line on why each works."
+          "content": "For Travel experience ideas Half day local trip, Change the experience axis so the directions do not resemble one another. A marked-up review copy of Travel experience ideas Half day local trip would be enough. An exception condition is missing from Travel experience ideas Half day local trip."
         }
       ]
     }

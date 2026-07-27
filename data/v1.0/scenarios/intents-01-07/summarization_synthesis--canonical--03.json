@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.canonical.0003",
   "title": {
-    "ko": "정책 개정 공지 — 월말 운영자료",
-    "en": "Policy revision notice — Month-end operations set"
+    "ko": "정책 개정 공지 월말 운영자료",
+    "en": "Policy revision notice Month end operations set"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 정책 개정 문서를 핵심 변경, 적용일, 영향을 받는 사람으로 요약해줘 두 표의 공통값과 주의점을 구분해. 입력 상황: 초안에는 7월 1일, 최종본에는 7월 15일이 적혀 있고 적용 대상에 계약직 포함 여부가 불분명해. 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "요청 대상은 정책 개정 공지 월말 운영자료이고, 회사 행정 쪽이야. 정책 개정 문서를 핵심 변경, 적용일, 영향을 받는 사람으로 요약해줘 두 표의 공통값과 주의점을 구분해. 입력 상황: 초안에는 7월 1일, 최종본에는 7월 15일이 적혀 있고 적용 대상에 계약직 포함 여부가 불분명해. 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 정책 개정 공지 월말 운영자료: 모호한 값은 채우지 말고 다음에 볼 자료를 적어줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "회사 행정 쪽이야. 정책 개정에서 최종 변경사항이랑 적용일, 누가 영향받는지만 요약해줘. 초안 7/1, 최종 7/15이고 계약직 포함은 애매하니 그건 질문으로 남겨. 참고로 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 그래서 두 표의 공통값과 주의점을 구분해."
+          "content": "대상은 정책 개정 공지 월말 운영자료. 맥락은 회사 행정 쪽이야. 정책 개정에서 최종 변경사항이랑 적용일, 누가 영향받는지만 요약해줘. 초안 7/1, 최종 7/15이고 계약직 포함은 애매하니 그건 질문으로 남겨. 월말에 두 팀이 올린 표를 나란히 보고 겹치는 값과 주의 신호를 갈라줘."
         },
         {
           "role": "user",
-          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
+          "content": "정책 개정 공지 월말 운영자료 기준으로 자료에 없는 말은 보태지 말고 확인할 곳을 표시해줘. 정책 개정 공지 월말 운영자료를 보다가, 음, 이 부분도 있고 저 부분도 있어서 같이 정리해줘. 지금 필요한 결과를 앞세우고 덜 급한 검토 항목은 따로 적어줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, summarize the policy revision by key changes, effective date, and affected people; separate common values from cautions. Input context: the draft says July 1, the final says July 15, and inclusion of contractors is unclear. two teams supplied updated tables before month-end close. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Policy revision notice Month end operations set is handled in office-admin. Summarize the policy revision by key changes, effective date, and affected people; separate common values from cautions. Input context: The draft says July 1, the final says July 15, and inclusion of contractors is unclear. Two teams supplied updated tables before month-end close. Policy revision notice Month end operations set: Leave uncertain values open and name the next useful source."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is an office-admin item. Summarize the final policy changes, effective date, and affected people. The draft says July 1 and the final says July 15; contractor coverage is unclear, so leave it as an implementation question. For this case, two teams supplied updated tables before month-end close. So separate common values from cautions."
+          "content": "For the office-admin context, use Policy revision notice Month end operations set. Summarize the final policy changes, effective date, and affected people. The draft says July 1 and the final says July 15; contractor coverage is unclear, so leave it as an implementation question. Set the two teams' month-end tables side by side and separate shared values from warning signs."
         },
         {
           "role": "user",
-          "content": "Use what can actually be checked; say when something is unknown."
+          "content": "For Policy revision notice Month end operations set, Do not add unsupported wording; point to what needs checking. I was looking at Policy revision notice Month end operations set, um, there are a few threads, so keep them together. If everything will not fit, choose the first question and explain why."
         }
       ]
     }

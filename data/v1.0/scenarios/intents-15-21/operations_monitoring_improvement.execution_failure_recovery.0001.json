@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "emoji_shorthand",
-      "speech_to_text_disfluency"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "오래된 운영 대시보드 복구 정리하려는데, 확실히 아는 건 대시보드가 어제 이후 갱신되지 않았고 원본 작업 상태는 모르며 리더는 현황을 기다린다야. 이걸 최신성 표시, 원본 작업 체크, 데이터 없음 대안로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "오래된 대시보드 — 어제부터 갱신 없음, 원본 작업 상태 모름, 리더 대기 — 최신성 표시 + 원본 확인 + 데이터 없음 대안."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out recovering from a stale operations dashboard, but here’s what I actually know: The dashboard has not refreshed since yesterday, the source job status is unknown, and leaders are waiting for a view. Could you turn that into a freshness banner, source-job check, and no-data fallback, without papering over the gaps?"
+          "content": "Stale dashboard — no refresh since yesterday; source job unknown; leaders waiting — freshness banner + source check + no-data fallback."
         }
       ]
     }

@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "hedged_exploratory_request",
-      "missing_decisive_detail"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "hedged_exploratory_request",
-        "missing_decisive_detail"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "에이전트 도구 시간 초과 복구 정리하려는데, 확실히 아는 건 에이전트는 시간 초과 전에 읽기를 끝냈을 수 있지만 결과를 요약하지 않았다야. 이걸 무작정 재시도 대신 영수증 체크과 재개 가능한 인계로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "에이전트 도구 시간 초과 — 읽기는 끝났을 수도, 요약은 없음 — 영수증 확인·재개 인계, 재시도는 보류."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "hedged_exploratory_request",
-        "missing_decisive_detail"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out recovering from an agent tool timeout, but here’s what I actually know: The agent may have completed a read before timing out and has not summarized the result. Could you turn that into a receipt check and resumable handoff rather than a blind retry, without papering over the gaps?"
+          "content": "Agent tool timeout — read may be done, summary missing — receipt check + resumable handoff, no blind retry."
         }
       ]
     }

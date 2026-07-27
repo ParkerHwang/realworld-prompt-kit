@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.canonical.0006",
   "title": {
-    "ko": "조항의 쉬운 말 — 인수인계 자료",
-    "en": "Plain-language clause — Handoff packet"
+    "ko": "조항의 쉬운 말 인수인계 자료",
+    "en": "Plain language clause Handoff packet"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
@@ -51,7 +51,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "계약·컴플라이언스 자료의 적용 범위를 검토하는 상황에서 계약 조항을 비법률 담당자가 이해할 수 있게 풀어쓰되 법적 의미를 단정하지 않게 해줘 출처와 미확인 부분을 표시해. 입력 상황: 조항에는 자동 갱신과 해지 통지 기간이 있고 관할 법률은 명시되지 않았어. 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "요청 대상은 조항의 쉬운 말 인수인계 자료이고, 계약·준수 자료야. 계약 조항을 비법률 담당자가 이해할 수 있게 풀어쓰되 법적 의미를 단정하지 않게 해줘 출처와 미확인 부분을 표시해. 입력 상황: 조항에는 자동 갱신과 해지 통지 기간이 있고 관할 법률은 명시되지 않았어. 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 조항의 쉬운 말 인수인계 자료: 모호한 값은 채우지 말고 다음에 볼 자료를 적어줘. 위험을 과소평가하지 말고 확인 절차를 함께 표시해줘."
         }
       ]
     },
@@ -67,11 +67,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "계약·준수 자료야. 자동 갱신/해지 통지 조항을 비법무 사람이 읽을 말로 풀어줘. 관할 법률은 없으니 해석이나 법률 자문처럼 단정하지 마. 참고로 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 그래서 출처와 미확인 부분을 표시해."
+          "content": "어, 이 요청은 계약·준수 자료야. 조항의 쉬운 말 인수인계 자료 관련해서 봐줘. 자동 갱신/해지 통지 조항을 비법무 사람이 읽을 말로 풀어줘. 관할 법률은 없으니 해석이나 법률 자문처럼 단정하지 마. 담당자가 바뀌는 인수인계용이라 출처가 있는 부분과 아직 못 확인한 부분을 따로 적어줘."
         },
         {
           "role": "user",
-          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "조항의 쉬운 말 인수인계 자료 기준으로 모호한 값은 채우지 말고 다음에 볼 자료를 적어줘. 이 자료는 안내용으로 두고 개인별 판단은 유보해줘. 원문 source와 최종 output을 한 덩어리로 섞지 마. API source/output 경계도 유지해줘."
         }
       ]
     },
@@ -84,7 +84,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a contract or compliance context where the applicable scope must be verified, rewrite the contract clause in plain language without asserting a legal conclusion; mark sources and anything not yet confirmed. Input context: the clause covers auto-renewal and termination notice, but governing law is not specified. the owner is changing and the next owner must use the result immediately. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. Make the boundary for official or professional review explicit."
+          "content": "Plain language clause Handoff packet belongs to the contract/compliance context. Rewrite the contract clause in plain language without asserting a legal conclusion; mark sources and anything not yet confirmed. Input context: The clause covers auto-renewal and termination notice, but governing law is not specified. The owner is changing and the next owner must use the result immediately. Plain language clause Handoff packet: Leave uncertain values open and name the next useful source. Do not downplay the risk; show the verification step alongside it."
         }
       ]
     },
@@ -100,11 +100,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a contract/compliance item. Explain the auto-renewal and termination clause in plain language for a non-lawyer. Governing law is absent, so do not present the rewrite as legal advice. For this case, the owner is changing and the next owner must use the result immediately. So mark sources and anything not yet confirmed."
+          "content": "Um, For the contract/compliance context, use Plain language clause Handoff packet. Explain the auto-renewal and termination clause in plain language for a non-lawyer. Governing law is absent, so do not present the rewrite as legal advice. This is for a handoff, so label sourced points separately from items the next owner still needs to confirm."
         },
         {
           "role": "user",
-          "content": "Use what can actually be checked; say when something is unknown. Do not make a professional determination; state what needs official review."
+          "content": "For Plain language clause Handoff packet, Leave uncertain values open and name the next useful source. Stay below the line of professional determination and name the next reviewer. Show which statements belong to the source and which to the output. Keep the API source/output labels distinct."
         }
       ]
     }

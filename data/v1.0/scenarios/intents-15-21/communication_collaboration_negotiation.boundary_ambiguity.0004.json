@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 연구 협업자에게 피드백 전달이랑 아직 열린 문제가 엉켜 있어. 초안에 인용 두 개가 빠졌고 방법 설명을 재현하기 어렵지만 관계와 검토 일정은 설명되지 않았다 일단 원하는 직접성 정도를 묻는 질문 하나와 건설적인 피드백로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 개인적 판단 대신 초안에서 관찰되는 문제에 집중한다."
+          "content": "상황을 설명하면 주제는 연구 협업자에게 피드백 전달. 정리되지 않은 쟁점이 몇 가지 남아 있어. 열린 내용은 이거야: 초안에 인용 두 개가 빠졌고 방법 설명을 재현하기 어렵지만 관계와 검토 일정은 설명되지 않았다. 원하는 직접성 정도를 묻는 질문 하나와 건설적인 피드백 형태로 만들어줘. 범위 밖 내용은 별도로 표시해줘. 개인적 판단 대신 초안에서 관찰되는 문제에 집중한다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: feedback to a research collaborator, plus some unresolved details. One draft misses two citations and the method description is hard to reproduce, but the relationship and review timing are not described. Please make a constructive note and one question about the desired level of directness; if the second issue is out of scope, separate it. Focus on observable draft issues rather than personal judgment."
+          "content": "Here’s the situation I’m trying to resolve: feedback to a research collaborator. Other loose ends: one draft misses two citations and the method description is hard to reproduce, but the relationship and review timing are not described. Please make a constructive note and one question about the desired level of directness. Focus on observable draft issues rather than personal judgment. Keep extra scope apart."
         }
       ]
     }

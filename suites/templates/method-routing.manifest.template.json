@@ -9,9 +9,9 @@
   "visibility": "${public_or_private}",
   "coverage_claim": "none_until_artifacts_present",
   "purpose": "Separate OpenSocrates routing/effect suite. Semantic scenario IDs may overlap broad core, but routing evidence never transfers automatically.",
-  "source_catalog": "/Users/parker/Documents/OpenSocrates/evaluation/test-prompt-kit/catalog.json",
-  "method_catalog": "/Users/parker/Documents/OpenSocrates/content/catalog.yaml",
-  "method_catalog_revision": "${PIN_CONTENT_REVISION}",
+  "source_catalog": "data/v1.0/catalog.json",
+  "method_catalog": "data/v1.0/catalog.json#planned_extensions.opensocrates_method_routing",
+  "method_catalog_revision": "UNPINNED-PLANNED",
   "method_ids": [
     "boundary-critique",
     "conceptual-analysis",

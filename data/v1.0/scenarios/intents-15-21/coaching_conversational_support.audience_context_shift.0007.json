@@ -39,9 +39,9 @@
     },
     "naturalistic_features": [
       "followup_without_restatement",
-      "implicit_goal_or_output",
       "message_burst",
-      "terse_fragment"
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -65,18 +65,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
-        "implicit_goal_or_output",
         "message_burst",
-        "terse_fragment"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 공개 발표 코칭 — 메모는 발표자는 도입, 전환, 질문 대응이 필요하고 청중의 전문성은 다양하다, 결과는 청중을 고려한 예와 질문 대응 대안이 있는 리허설 안. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "먼저 범위를 확인할 건 공개 발표 코칭 - 스캔 텍스트: 메모 발표자는 도입, 전환, 질문 대응이 필요하고 청중의 전문성은 다양하다 / 결과 청중을 고려한 예와 질문 대응 대안이 있는 리허설 계획 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "추측하지 말고 다음 확인 단계를 눈에 띄게 적어줘."
         }
       ]
     },
@@ -100,18 +100,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
-        "implicit_goal_or_output",
         "message_burst",
-        "terse_fragment"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: coaching a public speaker — I’ve got The speaker needs an opening, transitions, and a way to handle questions; the audience expertise varies.; can you give me a rehearsal plan with audience-aware examples and a question-handling fallback? no invented details pls"
+          "content": "i need to clarify coaching a public speaker - scan note: the speaker needs an opening, transitions, and a way to handle questions; the audience expertise varies / need: a rehearsal plan with audience-aware examples and a question-handling fallback / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "No guessing; call out the next confirmation step."
         }
       ]
     }

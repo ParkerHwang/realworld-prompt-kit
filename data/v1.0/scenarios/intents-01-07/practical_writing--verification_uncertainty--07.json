@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.verification_uncertainty.0007",
   "title": {
-    "ko": "운영 장애 공지 — 출처 연결",
-    "en": "Operations-incident notice — Source chain"
+    "ko": "운영 장애 공지 출처 연결",
+    "en": "Operations incident notice Source chain"
   },
   "task": {
     "primary_intent": "practical_writing",
@@ -18,8 +18,8 @@
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "운영 장애 공지 자료의 근거와 미확인 부분을 나눠줘. 주장을 원문까지 추적할 수 있게 해",
-      "en": "Separate evidence and unknowns in the Operations-incident notice material; make claims traceable to the originals."
+      "ko": "운영 장애 공지 출처 연결의 확인된 점과 빈틈을 나눠줘. 주장을 원문까지 추적할 수 있게 해",
+      "en": "For Operations incident notice Source chain, separate evidence from gaps; make claims traceable to the originals"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "내부 소프트웨어·IT 운영 자료를 확인하는 상황에서 운영 장애 공지 자료의 근거와 미확인 부분을 나눠줘. 주장을 원문까지 추적할 수 있게 해. 입력 상황: 요약이 원문 두 개와 인용문 하나를 거쳐 만들어졌어. 검증된 사실, 가정, 불확실성, 다음 확인 단계를 분리해서 제시해."
+          "content": "검토할 항목은 운영 장애 공지 출처 연결; 맥락은 내부 IT 쪽이야. 운영 장애 공지 출처 연결의 확인된 점과 빈틈을 나눠줘. 주장을 원문까지 추적할 수 있게 해. 입력 상황: 요약이 원문 두 개와 인용문 하나를 거쳐 만들어졌어. 운영 장애 공지 출처 연결: 계산에 필요한 기준이 정해질 때까지 전제를 보류해줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "내부 IT 쪽이야. 근거를 다시 봐야 하는 운영 장애 공지 건이야. 요약이 원문 두 개와 인용문 하나를 거쳐 만들어졌어. 주장을 원문까지 추적할 수 있게 해."
+          "content": "어, 먼저 운영 장애 공지 출처 연결을 봐줘. 분류는 내부 IT 쪽이야. 운영 장애 공지 출처 연결 요약을 원문까지 추적해야 해 운영 장애 공지 출처 연결 건이야. 두 원문과 인용 한 줄을 따라가며 요약 주장의 출처 연결을 보여줘."
         },
         {
           "role": "user",
-          "content": "확정·추정·아직 모르는 것·다음 체크를 따로 적어줘."
+          "content": "운영 장애 공지 출처 연결 기준으로 현재 자료의 범위와 아직 필요한 추가 확인을 구분해줘. 운영 장애 공지 출처 연결 말인데, 일단 핵심부터—아 그리고 빠진 것도 봐줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal software or IT operations context, Separate evidence and unknowns in the Operations-incident notice material; make claims traceable to the originals.. Input context: the summary passes through two originals and one quotation. Separate verified facts, assumptions, uncertainty, and the next verification step."
+          "content": "The relevant internal IT case is Operations incident notice Source chain. For Operations incident notice Source chain, separate evidence from gaps; make claims traceable to the originals. Input context: The summary passes through two originals and one quotation. Operations incident notice Source chain: Hold the calculation until its required basis is agreed."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is an internal IT item. The evidence needs checking for Operations-incident notice. The summary passes through two originals and one quotation. Make claims traceable to the originals."
+          "content": "Um, For the internal IT context, use Operations incident notice Source chain. The Operations incident notice Source chain summary needs a trace back to its originals. Operations incident notice Source chain. Trace the summary claims through the two originals and the single quotation."
         },
         {
           "role": "user",
-          "content": "Keep confirmed, guessed, unknown, and next-check items separate."
+          "content": "For Operations incident notice Source chain, Keep the current material's scope distinct from checks still needed. About Operations incident notice Source chain—start with the point, and oh, include the missing piece too."
         }
       ]
     }

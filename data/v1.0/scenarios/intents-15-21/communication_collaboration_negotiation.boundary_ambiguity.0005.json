@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 적용되는 계약 절차를 묻는 질문과 사실 기반 상태 요청로 좁히자. 큰 주제는 임대료와 수리 요청 메시지이고 믿을 수 있는 메모는 수리 요청을 두 번 했고 임대료 납부일이 다가오지만 계약 조건은 대화에 없어야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "지금 검토 중인 건 임대료와 수리 요청 메시지. 잠깐, 원하는 결과는 적용되는 계약 절차를 묻는 질문과 사실 기반 상태 요청. 메모는 다음이야: 수리 요청을 두 번 했고 임대료 납부일이 다가오지만 계약 조건은 대화에 없어. 없는 건 가정으로 적어줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a factual request for status and a question about the applicable lease process. The broader issue is a message about rent and a repair request, and the notes I can stand behind are One repair has been reported twice, rent is due soon, and the lease terms are not available in the conversation.. Mark assumptions instead of filling blanks."
+          "content": "I’m reviewing a message about rent and a repair request. Actually, focus on a factual request for status and a question about the applicable lease process. I noted this: One repair has been reported twice, rent is due soon, and the lease terms are not available in the conversation. For a message about rent and a repair request, mark assumptions; gaps stay open."
         }
       ]
     }

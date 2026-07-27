@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.boundary_ambiguity.0008",
   "title": {
-    "ko": "제품 한 장 브리프 — 초보·전문가 독자",
-    "en": "One-page product brief — Beginner versus specialist reader"
+    "ko": "제품 한 장 브리프 초보 전문가 독자",
+    "en": "One page product brief Beginner versus specialist reader"
   },
   "task": {
     "primary_intent": "practical_writing",
@@ -18,8 +18,8 @@
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "제품 한 장 브리프의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해",
-      "en": "Work out the applicable scope for One-page product brief; Propose an output that respects both audiences."
+      "ko": "제품 한 장 브리프 초보 전문가 독자의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해",
+      "en": "For One page product brief Beginner versus specialist reader, determine the applicable scope; propose an output that respects both audiences"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 제품 한 장 브리프의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 입력 상황: 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "이 제품 한 장 브리프 초보 전문가 독자 건은 프로젝트·제품 일정 쪽이야. 제품 한 장 브리프 초보 전문가 독자의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 입력 상황: 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 제품 한 장 브리프 초보 전문가 독자: 예외가 시작되는 조건과 빠지는 조건을 따로 보여줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일단 초안으로, 프로젝트·제품 일정 쪽이야. 범위가 헷갈리는 제품 한 장 브리프 건이야. 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "위 건 — 제품 한 장 브리프; 초보·전문가 경계, 예외·제외 조건 따로. 핵심과 확인점을 함께 표시해. 근거 표시."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a product or project schedule-and-requirements context, Work out the applicable scope for One-page product brief; Propose an output that respects both audiences.. Input context: the same facts must be explained differently to a beginner and a specialist. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "One page product brief Beginner versus specialist reader belongs to the project/product context. For One page product brief Beginner versus specialist reader, determine the applicable scope; propose an output that respects both audiences. Input context: The same facts must be explained differently to a beginner and a specialist. One page product brief Beginner versus specialist reader: Show what triggers the exception and what remains outside it."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "A draft is fine for now: This is a project/product item. The scope is fuzzy for One-page product brief. The same facts must be explained differently to a beginner and a specialist. Propose an output that respects both audiences. If the boundary is fuzzy, ask one question before deciding."
+          "content": "That one — One-page product brief; beginner/specialist boundary; show exception triggers and exclusions separately."
         }
       ]
     }

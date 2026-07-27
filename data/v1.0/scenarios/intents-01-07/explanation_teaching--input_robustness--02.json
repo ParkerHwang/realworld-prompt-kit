@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.input_robustness.0002",
   "title": {
-    "ko": "휴가 신청 절차 — 음성 메모",
-    "en": "Leave-request process — Voice-note input"
+    "ko": "휴가 신청 절차 음성 메모",
+    "en": "Leave request process Voice note input"
   },
   "task": {
     "primary_intent": "explanation_teaching",
@@ -18,8 +18,8 @@
       "education_research"
     ],
     "user_goal": {
-      "ko": "휴가 신청 절차 작업에 필요한 내용을 깨진 입력에서 복원해줘. 최종 의도만 추려서 불확실한 말은 표시해",
-      "en": "Recover what the Leave-request process task needs from the damaged input; recover the final intent and mark uncertain wording."
+      "ko": "휴가 신청 절차 음성 메모에서 읽히는 부분만 복원해줘. 최종 의도만 추려서 불확실한 말은 표시해",
+      "en": "For Leave request process Voice note input, restore legible input only; recover the final intent and mark uncertain wording"
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 휴가 신청 절차 작업에 필요한 내용을 깨진 입력에서 복원해줘. 최종 의도만 추려서 불확실한 말은 표시해. 입력 상황: 음성 받아쓰기에 중간 수정과 반복 말이 섞여 있어. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해."
+          "content": "이 휴가 신청 절차 음성 메모 건은 회사 행정 쪽이야. 휴가 신청 절차 음성 메모에서 읽히는 부분만 복원해줘. 최종 의도만 추려서 불확실한 말은 표시해. 입력 상황: 음성 받아쓰기에 중간 수정과 반복 말이 섞여 있어. 휴가 신청 절차 음성 메모: 마지막으로 고친 조건을 따라가고 바뀐 부분을 짧게 밝혀줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "회사 행정 쪽이야. 입력이 좀 깨진 휴가 신청 절차 건이야. 음성 받아쓰기에 중간 수정과 반복 말이 섞여 있어. 최종 의도만 추려서 불확실한 말은 표시해."
+          "content": "어, 대상은 휴가 신청 절차 음성 메모. 맥락은 회사 행정 쪽이야. 휴가 신청 절차 음성 메모를 받아쓴 메모로 처리해야 해 휴가 신청 절차 음성 메모 건이야. 받아쓰기의 반복을 걷어내되 중간에 바뀐 마지막 뜻을 살리고 애매한 음성은 남겨줘."
         },
         {
           "role": "user",
-          "content": "깨진 부분은 추측하지 말고 확인 필요로 남겨줘."
+          "content": "휴가 신청 절차 음성 메모 기준으로 오탈자 있는 이름과 숫자는 확정값과 추정값으로 나눠줘. 휴가 신청 절차 음성 메모 먼저 하고—아, 아니, 근거와 빈칸도 같이."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, Recover what the Leave-request process task needs from the damaged input; recover the final intent and mark uncertain wording.. Input context: a dictated voice note contains repetitions and a mid-sentence correction. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation."
+          "content": "Read Leave request process Voice note input against the office-admin context. For Leave request process Voice note input, restore legible input only; recover the final intent and mark uncertain wording. Input context: A dictated voice note contains repetitions and a mid-sentence correction. Leave request process Voice note input: Follow the last correction and note what changed in the scope."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is an office-admin item. The input is messy for Leave-request process. A dictated voice note contains repetitions and a mid-sentence correction. Recover the final intent and mark uncertain wording."
+          "content": "Um, For Leave request process Voice note input, the working area is office-admin. A voice note now stands in for the Leave request process Voice note input request. Leave request process Voice note input. Remove repetitions from the dictation, keep the final mid-sentence correction, and mark unclear speech."
         },
         {
           "role": "user",
-          "content": "Do not repair broken bits by guessing; mark what needs checking."
+          "content": "For Leave request process Voice note input, Split typo-prone names and numbers into confirmed versus guessed values. I rambled about Leave request process Voice note input; keep the core first and the side item after it."
         }
       ]
     }

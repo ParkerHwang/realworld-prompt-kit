@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "anaphora_prior_context",
-      "resume_after_interruption"
+      "multi_intent_mixed_priority",
+      "rambling_stream"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
-        "resume_after_interruption"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "지금 표본 품질 검토이랑 아직 열린 문제가 엉켜 있어. 표본에는 누락 필드, 중복 가능 기록, 불명확한 포함 규칙이 있어 일단 검사, 검토 보류 제외, 신뢰도 주의가 있는 품질 보고서로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 의심 기록을 조용히 제거하거나 표본이 뒷받침하지 않는 정밀도를 보고하지 않는다."
+          "content": "이전 얘기로 돌아가면 주제는 표본 품질 검토. 결정 전까지 남겨둘 질문들이 있어. 열린 내용은 이거야: 표본에는 누락 필드, 중복 가능 기록, 불명확한 포함 규칙이 있어. 검사, 검토 보류 제외, 신뢰도 주의가 있는 품질 보고서 형태로 만들어줘. 산출물 범위를 넘는 내용은 분리해줘. 의심 기록을 조용히 제거하거나 표본이 뒷받침하지 않는 정밀도를 보고하지 않는다."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
-        "resume_after_interruption"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a sample-quality review, plus some unresolved details. The sample has missing fields, possible duplicate records, and an unknown inclusion rule. Please make a quality report with checks, exclusions held for review, and a confidence caveat; if the second issue is out of scope, separate it. Do not silently remove questionable records or report precision unsupported by the sample."
+          "content": "I’m circling back to a sample-quality review. Other loose ends: the sample has missing fields, possible duplicate records, and an unknown inclusion rule. Please make a quality report with checks, exclusions held for review, and a confidence caveat. Do not silently remove questionable records or report precision unsupported by the sample. Keep extra scope apart."
         }
       ]
     }

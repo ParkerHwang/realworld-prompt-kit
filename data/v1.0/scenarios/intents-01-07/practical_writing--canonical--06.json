@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.canonical.0006",
   "title": {
-    "ko": "학습 계획 — 인수인계 자료",
-    "en": "Study plan — Handoff packet"
+    "ko": "학습 계획 인수인계 자료",
+    "en": "Study plan Handoff packet"
   },
   "task": {
     "primary_intent": "practical_writing",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 시험까지 4주 남은 학습 계획을 주차별 목표와 복습 시점이 보이게 작성해줘 출처와 미확인 부분을 표시해. 입력 상황: 주당 평일 40분, 주말 90분만 가능하고 마지막 주에는 새 단원을 추가하지 않기로 했어. 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "요청 대상은 학습 계획 인수인계 자료이고, 내 일정·생활 건이야. 시험까지 4주 남은 학습 계획을 주차별 목표와 복습 시점이 보이게 작성해줘 출처와 미확인 부분을 표시해. 입력 상황: 주당 평일 40분, 주말 90분만 가능하고 마지막 주에는 새 단원을 추가하지 않기로 했어. 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 학습 계획 인수인계 자료: 자료에 없는 말은 보태지 말고 확인할 곳을 표시해줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "내 일정·생활 건이야. 시험 4주 계획 짜줘. 평일 40분, 주말 90분만 되고 마지막 주는 새 내용 말고 복습만 하게. 참고로 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 그래서 출처와 미확인 부분을 표시해."
+          "content": "어, 이번 학습 계획 인수인계 자료 요청은 내 일정·생활 건이야. 시험 4주 계획 짜줘. 평일 40분, 주말 90분만 되고 마지막 주는 새 내용 말고 복습만 하게. 담당자가 바뀌는 인수인계용이라 출처가 있는 부분과 아직 못 확인한 부분을 따로 적어줘."
         },
         {
           "role": "user",
-          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
+          "content": "학습 계획 인수인계 자료 기준으로 자료에 없는 말은 보태지 말고 확인할 곳을 표시해줘. 자료는 source, 결과물은 output으로 나눠서 적어줘. URL source/output 경계도 유지해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, write a four-week study plan with weekly goals and review points; mark sources and anything not yet confirmed. Input context: only 40 minutes on weekdays and 90 minutes on weekends are available, and no new unit should be added in the final week. the owner is changing and the next owner must use the result immediately. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Place Study plan Handoff packet in the personal-life lane. Write a four-week study plan with weekly goals and review points; mark sources and anything not yet confirmed. Input context: Only 40 minutes on weekdays and 90 minutes on weekends are available, and no new unit should be added in the final week. The owner is changing and the next owner must use the result immediately. Study plan Handoff packet: Do not add unsupported wording; point to what needs checking."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a personal-life item. Make the four-week study plan with 40 minutes on weekdays and 90 on weekends. The final week should review, not add a new unit. For this case, the owner is changing and the next owner must use the result immediately. So mark sources and anything not yet confirmed."
+          "content": "Um, The personal-life team is handling Study plan Handoff packet. Make the four-week study plan with 40 minutes on weekdays and 90 on weekends. The final week should review, not add a new unit. This is for a handoff, so label sourced points separately from items the next owner still needs to confirm."
         },
         {
           "role": "user",
-          "content": "Use what can actually be checked; say when something is unknown."
+          "content": "For Study plan Handoff packet, Do not add unsupported wording; point to what needs checking. Mark the boundary between source values and the output you produce. Keep the OCR source/output labels distinct."
         }
       ]
     }

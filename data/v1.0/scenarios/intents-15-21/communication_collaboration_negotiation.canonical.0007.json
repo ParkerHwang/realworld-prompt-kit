@@ -38,10 +38,10 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "code_switching_jargon",
       "followup_without_restatement",
-      "interleaved_instruction_and_paste",
-      "message_burst"
+      "message_burst",
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
         "followup_without_restatement",
-        "interleaved_instruction_and_paste",
-        "message_burst"
+        "message_burst",
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 제품 출시 공지 — 메모는 기능은 파일럿 그룹에 제공 중이고 전체 공개는 예정됐지만 날짜가 없으며 제한 사항 하나가 알려져 있어, 결과는 가치를 알리되 제한 사항을 숨기지 않는 정확한 공지. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "뒤섞인 메모의 주제는 제품 출시 공지 - [복사본]: 메모 기능은 파일럿 그룹에 제공 중이고 전체 공개는 예정됐지만 날짜가 없으며 제한 사항 하나가 알려져 있어 / 결과 가치를 알리되 제한 사항을 숨기지 않는 정확한 공지 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "근거가 얇으면 안전한 초안과 확인할 점을 같이 줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
         "followup_without_restatement",
-        "interleaved_instruction_and_paste",
-        "message_burst"
+        "message_burst",
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: a product announcement — I’ve got The feature is available to a pilot group, general availability is planned but not dated, and one limitation is known.; can you give me an accurate announcement that highlights value and names the limitation without overselling? no invented details pls"
+          "content": "i’ve got a messy question about a product announcement - [copy]: the feature is available to a pilot group, general availability is planned but not dated, and one limitation is known / need: an accurate announcement that highlights value and names the limitation without overselling / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "If the evidence is thin, return a safe draft and name the check needed."
         }
       ]
     }

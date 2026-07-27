@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.boundary_ambiguity.0003",
   "title": {
-    "ko": "계약 갱신 통지 — 본문·별첨 우선순위",
-    "en": "Contract-renewal notice — Body versus exhibit"
+    "ko": "계약 갱신 통지 본문 별첨 우선순위",
+    "en": "Contract renewal notice Body versus exhibit"
   },
   "task": {
     "primary_intent": "information_retrieval",
@@ -18,8 +18,8 @@
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "계약 갱신 통지의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘",
-      "en": "Work out the applicable scope for Contract-renewal notice; Show which gap prevents a conclusion."
+      "ko": "계약 갱신 통지 본문 별첨 우선순위의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘",
+      "en": "For Contract renewal notice Body versus exhibit, determine the applicable scope; show which gap prevents a conclusion"
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "계약·컴플라이언스 자료의 적용 범위를 검토하는 상황에서 계약 갱신 통지의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘. 입력 상황: 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "계약 갱신 통지 본문 별첨 우선순위 건에서 보는 맥락은 계약·준수 자료야. 계약 갱신 통지 본문 별첨 우선순위의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘. 입력 상황: 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 계약 갱신 통지 본문 별첨 우선순위: 예외가 시작되는 조건과 빠지는 조건을 따로 보여줘. 계약 갱신 통지 본문 별첨 우선순위 건은 30일과 60일을 합치지 말고 통제 조항이 확인될 때까지 두 값을 출처와 함께 남겨. 공식 자료가 필요한 부분과 지금 정리할 부분을 나눠줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "계약·준수 자료야. 범위가 헷갈리는 계약 갱신 통지 건이야. 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 어느 공백이 결론을 막는지 보여줘."
+          "content": "먼저 계약 갱신 통지 본문 별첨 우선순위를 봐줘. 분류는 계약·준수 자료야. 두 기준이 겹친 계약 갱신 통지 본문 별첨 우선순위 건이라 계약 갱신 통지 본문 별첨 우선순위 건이야. 본문·요약·별첨이 어긋날 때 결정을 막는 빈칸 하나를 집어 질문으로 바꿔줘."
         },
         {
           "role": "user",
-          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
+          "content": "계약 갱신 통지 본문 별첨 우선순위 기준으로 본문만으로 결정하지 말고 충돌하는 범위를 질문으로 남겨줘. 짧게 하라는 말과 빠짐없이라는 말이 충돌하면 그 긴장을 밝혀줘. 책임 있는 판단의 선을 넘지 않게 다음 확인처를 알려줘. 계약 갱신 통지 본문 별첨 우선순위 건은 30일과 60일을 합치지 말고 통제 조항이 확인될 때까지 두 값을 출처와 함께 남겨. 정정할게—전체로 확대하지 말고 마지막에 정한 범위만 따라줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a contract or compliance context where the applicable scope must be verified, Work out the applicable scope for Contract-renewal notice; Show which gap prevents a conclusion.. Input context: the body, summary table, and exhibit use different wording with no precedence rule. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date. Make the boundary for official or professional review explicit."
+          "content": "Contract renewal notice Body versus exhibit is handled in contract/compliance. For Contract renewal notice Body versus exhibit, determine the applicable scope; show which gap prevents a conclusion. Input context: The body, summary table, and exhibit use different wording with no precedence rule. Contract renewal notice Body versus exhibit: Show what triggers the exception and what remains outside it. For Contract renewal notice Body versus exhibit, Do not collapse 30 and 60 days; retain both with provenance until the controlling clause is known. Separate what official material must settle from what can be organized now."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a contract/compliance item. The scope is fuzzy for Contract-renewal notice. The body, summary table, and exhibit use different wording with no precedence rule. Show which gap prevents a conclusion."
+          "content": "The contract/compliance team is handling Contract renewal notice Body versus exhibit. Two criteria overlap around Contract renewal notice Body versus exhibit. Contract renewal notice Body versus exhibit. When the body, summary, and exhibit disagree, turn the one decision-blocking gap into a question."
         },
         {
           "role": "user",
-          "content": "If the boundary is fuzzy, ask one question before deciding. If brevity and completeness conflict, call that out. Do not make a professional determination; state what needs official review. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
+          "content": "For Contract renewal notice Body versus exhibit, Do not settle a conflict from the body alone; leave one scope question. Keep it quick to read, but call out conditions that had to be cut. Mark where an official review or professional judgment is needed. For Contract renewal notice Body versus exhibit, Do not collapse 30 and 60 days; retain both with provenance until the controlling clause is known. Use the revised boundary and leave everything outside it alone."
         }
       ]
     }

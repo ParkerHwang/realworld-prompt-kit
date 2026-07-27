@@ -38,8 +38,8 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "code_switching_jargon",
-      "interleaved_instruction_and_paste"
+      "emoji_shorthand",
+      "speech_to_text_disfluency"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
-        "interleaved_instruction_and_paste"
+        "emoji_shorthand",
+        "speech_to_text_disfluency"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 분석용 설문 내보내기 준비에서 쓸 수 있는 건 내보내기에는 빈 응답, 중복 응답자 코드, 숫자 점수 열의 서술형 답변이 있어야. 원본 응답을 보존한 데이터 품질 보고서와 분석 준비 규칙로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "열린 질문과 관련된 건 분석용 설문 내보내기 준비. 음: 내보내기에는 빈 응답, 중복 응답자 코드, 숫자 점수 열의 서술형 답변이 있어. 원본 응답을 보존한 데이터 품질 보고서와 분석 준비 규칙 형태로 해줄래? 빠진 입력은 말해줘 🙏"
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
-        "interleaved_instruction_and_paste"
+        "emoji_shorthand",
+        "speech_to_text_disfluency"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for preparing a survey export for analysis, the useful pieces are The export has blank responses, a duplicated respondent code, and a free-text answer in the numeric score column.. Could you make a data-quality report and analysis-ready rules that preserve raw responses? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I have an open question about preparing a survey export for analysis. Um: the export has blank responses, a duplicated respondent code, and a free-text answer in the numeric score column. Could you make a data-quality report and analysis-ready rules that preserve raw responses? Missing piece? Tell me. 👍"
         }
       ]
     }

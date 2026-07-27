@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "mid_task_change",
-      "self_correction_scope_shift"
+      "multi_intent_mixed_priority",
+      "rambling_stream"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "지금 이중언어 여행 안내이랑 아직 열린 문제가 엉켜 있어. 그룹은 역에서 만나고 출발 시각은 고정됐지만 환승 안내 하나는 체크 중이다 일단 체크 중인 환승 정보를 표시한 명확한 한국어·영어 안내로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 확인되지 않은 안내를 확정된 방향으로 번역하지 않는다."
+          "content": "결정 전에 확인할 건 이중언어 여행 안내. 한꺼번에 풀어야 할 문제가 보이네. 열린 내용은 이거야: 그룹은 역에서 만나고 출발 시각은 고정됐지만 환승 안내 하나는 확인 중이다. 확인 중인 환승 정보를 표시한 명확한 한국어·영어 안내 형태로 만들어줘. 추가로 필요한 일은 구분해서 적어줘. 확인되지 않은 안내를 확정된 방향으로 번역하지 않는다."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a bilingual travel notice, plus some unresolved details. Our group meets at a station, the departure time is fixed, and one transfer instruction is still awaiting confirmation. Please make clear Korean and English notices that flag the unconfirmed transfer detail; if the second issue is out of scope, separate it. Do not translate the unconfirmed instruction into a definite direction."
+          "content": "I’m trying to decide how to handle a bilingual travel notice. Other loose ends: our group meets at a station, the departure time is fixed, and one transfer instruction is still awaiting confirmation. Please make clear Korean and English notices that flag the unconfirmed transfer detail. Do not translate the unconfirmed instruction into a definite direction. Keep extra scope apart."
         }
       ]
     }

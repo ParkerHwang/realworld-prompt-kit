@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.boundary_ambiguity.0007",
   "title": {
-    "ko": "재활용 배출 일정 — 현재·보관 문서",
-    "en": "Recycling schedule — Current versus archived"
+    "ko": "재활용 배출 일정 현재 보관 문서",
+    "en": "Recycling schedule Current versus archived"
   },
   "task": {
     "primary_intent": "information_retrieval",
@@ -18,8 +18,8 @@
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "재활용 배출 일정의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해",
-      "en": "Work out the applicable scope for Recycling schedule; State the rule for choosing the current document."
+      "ko": "재활용 배출 일정 현재 보관 문서의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해",
+      "en": "For Recycling schedule Current versus archived, determine the applicable scope; state the rule for choosing the current document"
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "에너지 사용과 환경 운영 자료를 비교하는 상황에서 재활용 배출 일정의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해. 입력 상황: 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
+          "content": "분류는 에너지·환경 운영 건이야; 대상은 재활용 배출 일정 현재 보관 문서. 재활용 배출 일정 현재 보관 문서의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해. 입력 상황: 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 재활용 배출 일정 현재 보관 문서: 정규 규칙과 이번 예외를 구분해 다음 질문 하나를 제시해줘. 재활용 배출 일정 현재 보관 문서 건은 구청 공식 일정과 아파트 안내를 관할별로 대조하고 이번 달 임시 휴무를 표시해."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "에너지·환경 운영 건이야. 범위가 헷갈리는 재활용 배출 일정 건이야. 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 현재 문서를 고르는 기준을 한 문장으로 정리해."
+          "content": "재활용 배출 일정 현재 보관 문서 건은 에너지·환경 운영 건이야. 결정 전에 재활용 배출 일정 현재 보관 문서의 경계를 짚고 싶어 재활용 배출 일정 현재 보관 문서 건이야. 검색 결과에서 최신본과 보관본을 구별할 실마리를 한 문장으로 줘."
         },
         {
           "role": "user",
-          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
+          "content": "재활용 배출 일정 현재 보관 문서 기준으로 대상별 적용 여부를 나눠서 판단 못 할 곳을 확인해줘. 재활용 배출 일정 현재 보관 문서 건은 구청 공식 일정과 아파트 안내를 관할별로 대조하고 이번 달 임시 휴무를 표시해. 조건 변경: 재활용 배출 일정 현재 보관 문서 우선순위 바뀌었어; 핵심 결과부터. 주요 답과 선택적인 다음 단계를 두 묶음으로 나눠줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an energy-use and environmental-operations context, Work out the applicable scope for Recycling schedule; State the rule for choosing the current document.. Input context: search results show a current document alongside an archived one. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
+          "content": "Recycling schedule Current versus archived is handled in energy/environment. For Recycling schedule Current versus archived, determine the applicable scope; state the rule for choosing the current document. Input context: Search results show a current document alongside an archived one. Recycling schedule Current versus archived: Contrast the normal rule with this exception and ask one next question. For Recycling schedule Current versus archived, Compare the district schedule with the apartment notice by jurisdiction and flag this month's temporary closure."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is an energy/environment item. The scope is fuzzy for Recycling schedule. Search results show a current document alongside an archived one. State the rule for choosing the current document."
+          "content": "Treat Recycling schedule Current versus archived as work in energy/environment. Before deciding on Recycling schedule Current versus archived, I need the edge clarified. Recycling schedule Current versus archived. Give one sentence that distinguishes the live document from its archived search result."
         },
         {
           "role": "user",
-          "content": "If the boundary is fuzzy, ask one question before deciding. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
+          "content": "For Recycling schedule Current versus archived, Break out eligibility by audience and flag cases you cannot decide. For Recycling schedule Current versus archived, Compare the district schedule with the apartment notice by jurisdiction and flag this month's temporary closure. Mid-task change: One change for Recycling schedule Current versus archived: the latest scope wins. Separate the must-have result from requests that can wait for a second pass."
         }
       ]
     }

@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.canonical.0007",
   "title": {
-    "ko": "가전 안전 안내 — 소수 기록 묶음",
-    "en": "Appliance-safety explanation — Small record set"
+    "ko": "가전 안전 안내 소수 기록 묶음",
+    "en": "Appliance safety explanation Small record set"
   },
   "task": {
     "primary_intent": "explanation_teaching",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 가전제품 안전 안내를 사용자가 해야 할 일과 하지 말아야 할 일로 설명해줘 작은 표본에서 확인되는 내용만 말해. 입력 상황: 안내에는 물기 있는 손 금지, 이상 소음 시 전원 차단, 내부 수리는 서비스센터 문의가 적혀 있어. 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "가전 안전 안내 소수 기록 묶음 건의 배경은 내 일정·생활 건이야. 가전제품 안전 안내를 사용자가 해야 할 일과 하지 말아야 할 일로 설명해줘 작은 표본에서 확인되는 내용만 말해. 입력 상황: 안내에는 물기 있는 손 금지, 이상 소음 시 전원 차단, 내부 수리는 서비스센터 문의가 적혀 있어. 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 가전 안전 안내 소수 기록 묶음: 자료에 없는 말은 보태지 말고 확인할 곳을 표시해줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "내 일정·생활 건이야. 가전 안전 안내를 해야 할 일/하면 안 되는 일로 바꿔줘. 젖은 손 금지, 이상 소음이면 전원 끄기, 내부 수리는 서비스센터라는 점은 빠지면 안 돼. 참고로 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 그래서 작은 표본에서 확인되는 내용만 말해."
+          "content": "이번 가전 안전 안내 소수 기록 묶음 요청은 내 일정·생활 건이야. 가전 안전 안내를 해야 할 일/하면 안 되는 일로 바꿔줘. 젖은 손 금지, 이상 소음이면 전원 끄기, 내부 수리는 서비스센터라는 점은 빠지면 안 돼. 다섯 건뿐이고 한 건 비어 있으니 작은 기록이 뒷받침하는 만큼만 말해줘. 🙏"
         },
         {
           "role": "user",
-          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
+          "content": "가전 안전 안내 소수 기록 묶음 기준으로 확실한 대목 위주로 답하고 빠진 점은 숨기지 마. OCR에서 흐려진 값은 읽은 부분과 검토할 부분을 나눠 적어줘. OCR 원문 대조도 해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, explain the appliance-safety notice as do and do-not actions for users; state only what this small set supports. Input context: the notice says not to use wet hands, to disconnect power after unusual noise, and to contact service for internal repair. there are only five records and one has a blank field. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "The personal-life material concerns Appliance safety explanation Small record set. Explain the appliance-safety notice as do and do-not actions for users; state only what this small set supports. Input context: The notice says not to use wet hands, to disconnect power after unusual noise, and to contact service for internal repair. There are only five records and one has a blank field. Appliance safety explanation Small record set: Do not add unsupported wording; point to what needs checking."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a personal-life item. Turn the appliance notice into do and do-not actions. Keep no wet hands, disconnect after unusual noise, and service-center repair; do not invent a repair step. For this case, there are only five records and one has a blank field. So state only what this small set supports."
+          "content": "For the personal-life context, use Appliance safety explanation Small record set. Turn the appliance notice into do and do-not actions. Keep no wet hands, disconnect after unusual noise, and service-center repair; do not invent a repair step. There are just five records and one blank, so stay within what this small set can support. 🙏"
         },
         {
           "role": "user",
-          "content": "Use what can actually be checked; say when something is unknown."
+          "content": "For Appliance safety explanation Small record set, Answer from confirmed material; leave silent gaps visible. Leave a source-check point so format noise cannot change the underlying value. OCR source-check too."
         }
       ]
     }

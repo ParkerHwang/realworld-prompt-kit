@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.verification_uncertainty.0005",
   "title": {
-    "ko": "지원금 신청 요약 — 초안 지표",
-    "en": "Grant-application summary — Draft metric"
+    "ko": "지원금 신청 요약 초안 지표",
+    "en": "Grant application summary Draft metric"
   },
   "task": {
     "primary_intent": "practical_writing",
@@ -19,8 +19,8 @@
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "지원금 신청 요약 자료의 근거와 미확인 부분을 나눠줘. 계산 전제와 보류 조건을 먼저 드러내",
-      "en": "Separate evidence and unknowns in the Grant-application summary material; surface assumptions and hold conditions before calculating."
+      "ko": "지원금 신청 요약 초안 지표의 확인된 점과 빈틈을 나눠줘. 계산 전제와 보류 조건을 먼저 드러내",
+      "en": "For Grant application summary Draft metric, separate evidence from gaps; surface assumptions and hold conditions before calculating"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -51,7 +51,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "정부·공공기관 공고의 조건과 기준일을 확인하는 상황에서 지원금 신청 요약 자료의 근거와 미확인 부분을 나눠줘. 계산 전제와 보류 조건을 먼저 드러내. 입력 상황: 성공 지표는 초안이고 분모와 기준일이 아직 합의되지 않았어. 검증된 사실, 가정, 불확실성, 다음 확인 단계를 분리해서 제시해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "지원금 신청 요약 초안 지표 건에서 보는 맥락은 공공기관 공고야. 지원금 신청 요약 초안 지표의 확인된 점과 빈틈을 나눠줘. 계산 전제와 보류 조건을 먼저 드러내. 입력 상황: 성공 지표는 초안이고 분모와 기준일이 아직 합의되지 않았어. 지원금 신청 요약 초안 지표: 승인된 내용과 보류 중인 요청을 서로 섞지 마. 공식 자료가 필요한 부분과 지금 정리할 부분을 나눠줘."
         }
       ]
     },
@@ -67,7 +67,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한 내용이 좀 깨졌는데 😣, 공공기관 공고야. 근거를 다시 봐야 하는 지원금 신청 요약 건이야. 성공 지표는 초안이고 분모와 기준일이 아직 합의되지 않았어. 계산 전제와 보류 조건을 먼저 드러내. 확정·추정·아직 모르는 것·다음 체크를 따로 적어줘. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "급해 — 지원금 신청 요약 초안 지표: 지원금 지표 초안; 분모·기준일 미합의. 계산 보류; 공식 확인선. 핵심과 확인점을 함께 표시해."
         }
       ]
     },
@@ -80,7 +80,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a government or public-policy notice context where dates and eligibility matter, Separate evidence and unknowns in the Grant-application summary material; surface assumptions and hold conditions before calculating.. Input context: the success metric is a draft and its denominator and as-of date are not agreed. Separate verified facts, assumptions, uncertainty, and the next verification step. Make the boundary for official or professional review explicit."
+          "content": "The relevant public-notice case is Grant application summary Draft metric. For Grant application summary Draft metric, separate evidence from gaps; surface assumptions and hold conditions before calculating. Input context: The success metric is a draft and its denominator and as-of date are not agreed. Grant application summary Draft metric: Do not mix approved wording with a request that is still pending. Separate what official material must settle from what can be organized now."
         }
       ]
     },
@@ -96,7 +96,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "The pasted text is a bit messy — this is getting urgent: This is a public-notice item. The evidence needs checking for Grant-application summary. The success metric is a draft and its denominator and as-of date are not agreed. Surface assumptions and hold conditions before calculating. Keep confirmed, guessed, unknown, and next-check items separate. Do not make a professional determination; state what needs official review."
+          "content": "Need this now — Grant application summary Draft metric: Grant metric is a draft; denominator/as-of date unset. Hold calculation; mark official review."
         }
       ]
     }

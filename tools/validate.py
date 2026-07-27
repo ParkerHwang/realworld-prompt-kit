@@ -12,6 +12,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_MANIFEST = ROOT / "data" / "v0.1" / "manifest.json"
+DEFAULT_V1_MANIFEST = ROOT / "data" / "v1.0" / "manifest.json"
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -124,7 +125,7 @@ def validate_pairwise_coverage(
     return errors
 
 
-def validate_repository(
+def _validate_v0_1_repository(
     manifest_path: Path = DEFAULT_MANIFEST, root: Path = ROOT
 ) -> list[str]:
     errors: list[str] = []
@@ -169,17 +170,51 @@ def validate_repository(
     return errors
 
 
+def validate_repository(
+    manifest_path: Path = DEFAULT_MANIFEST, root: Path = ROOT
+) -> list[str]:
+    """Validate either the legacy v0.1 pack or the standalone v1 pack."""
+    manifest = load_json(manifest_path)
+    if manifest.get("schema") == "realworld-prompt-kit.manifest/1.0.0":
+        try:
+            from .v1_validation import validate_v1_repository
+        except ImportError:  # pragma: no cover - direct script execution
+            from v1_validation import validate_v1_repository
+
+        return validate_v1_repository(manifest_path, root).errors
+    return _validate_v0_1_repository(manifest_path, root)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
     args = parser.parse_args()
+    manifest = load_json(args.manifest)
+    if manifest.get("schema") == "realworld-prompt-kit.manifest/1.0.0":
+        try:
+            from .v1_validation import validate_v1_repository
+        except ImportError:  # pragma: no cover - direct script execution
+            from v1_validation import validate_v1_repository
+
+        report = validate_v1_repository(args.manifest)
+        for warning in report.warnings:
+            print(f"WARNING: {warning}", file=sys.stderr)
+        if report.errors:
+            for error in report.errors:
+                print(f"ERROR: {error}", file=sys.stderr)
+            return 1
+        print(
+            f"validated v1: {report.stats['semantic_scenarios']} semantic scenarios, "
+            f"{report.stats['cb8_blocks']} CB8 blocks, "
+            f"{report.stats['prompt_realizations']} prompt realizations"
+        )
+        return 0
     errors = validate_repository(args.manifest)
     if errors:
         for error in errors:
             print(f"ERROR: {error}", file=sys.stderr)
         return 1
 
-    manifest = load_json(args.manifest)
     paths = scenario_paths(manifest)
     prompt_count = sum(len(load_json(path)["realizations"]) for path in paths)
     print(

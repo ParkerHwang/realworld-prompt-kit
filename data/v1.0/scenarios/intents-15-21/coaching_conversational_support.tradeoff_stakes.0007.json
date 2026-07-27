@@ -39,9 +39,9 @@
     },
     "naturalistic_features": [
       "followup_without_restatement",
-      "hedged_exploratory_request",
       "message_burst",
-      "missing_decisive_detail"
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -65,18 +65,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
-        "hedged_exploratory_request",
         "message_burst",
-        "missing_decisive_detail"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 일관성과 유연성을 조율하는 루틴 코칭 — 메모는 사용자는 루틴을 원다만 돌봄과 업무가 예측 불가능하다, 결과는 최소 실행 루틴과 대안 단계를 죄책감 없이 제시. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "지금 검토 중인 건 일관성과 유연성을 조율하는 루틴 코칭 - 오타 포함: 메모 사용자는 루틴을 원하지만 돌봄과 업무가 예측 불가능하다 / 결과 최소 실행 루틴과 대안 단계를 죄책감 없이 제시 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "행동 전에 필요한 확인을 쉽게 찾을 수 있게 해줘."
         }
       ]
     },
@@ -100,18 +100,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
-        "hedged_exploratory_request",
         "message_burst",
-        "missing_decisive_detail"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: coaching a routine that balances consistency and flexibility — I’ve got The person asking wants a routine but has unpredictable caregiving and work demands.; can you give me a minimum viable routine with fallback levels and no guilt framing? no invented details pls"
+          "content": "i’m reviewing coaching a routine that balances consistency and flexibility - typo pass: the person asking wants a routine but has unpredictable caregiving and work demands / need: a minimum viable routine with fallback levels and no guilt framing / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "Make the missing check easy to spot before anyone acts."
         }
       ]
     }

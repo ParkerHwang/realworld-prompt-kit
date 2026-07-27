@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "code_switching_jargon",
-      "interleaved_instruction_and_paste"
+      "multi_intent_mixed_priority",
+      "rambling_stream"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
-        "interleaved_instruction_and_paste"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "지금 학부모와 학교 일정 충돌 해결 메시지이랑 아직 열린 문제가 엉켜 있어. 학교가 하교 시간을 바꿨고 두 가족은 이전 시간을 이용해야 하며 대안은 아직 체크 안 됐어 일단 학교를 비난하지 않고 대안을 묻는 협력적 메시지로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 확인되지 않은 대안을 가능하다고 제시하지 않는다."
+          "content": "조심스럽게 계획할 건 학부모와 학교 일정 충돌 해결 메시지. 아직 갈라서 봐야 할 내용이 있어. 열린 내용은 이거야: 학교가 하교 시간을 바꿨고 두 가족은 이전 시간을 이용해야 하며 대안은 아직 확인 안 됐어. 학교를 비난하지 않고 대안을 묻는 협력적 메시지 형태로 만들어줘. 이번 요청 밖의 내용은 따로 남겨줘. 확인되지 않은 대안을 가능하다고 제시하지 않는다."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
-        "interleaved_instruction_and_paste"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a message resolving a parent and school schedule conflict, plus some unresolved details. The school changed pickup time, two families rely on the prior time, and the alternative still is not confirmed. Please make a collaborative message that asks for options without blaming the school; if the second issue is out of scope, separate it. Do not present an unconfirmed alternative as available."
+          "content": "I’m asking for a cautious plan around a message resolving a parent and school schedule conflict. Other loose ends: the school changed pickup time, two families rely on the prior time, and the alternative still is not confirmed. Please make a collaborative message that asks for options without blaming the school. Do not present an unconfirmed alternative as available. Keep extra scope apart."
         }
       ]
     }

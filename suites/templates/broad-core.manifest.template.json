@@ -9,8 +9,8 @@
   "visibility": "public",
   "coverage_claim": "none_until_artifacts_present",
   "purpose": "Harness-neutral 880-scenario broad core with overlapping task-intent, domain, and naturalistic requirements.",
-  "source_catalog": "/Users/parker/Documents/OpenSocrates/evaluation/test-prompt-kit/catalog.json",
-  "scenario_source": "${REPOSITORY_ROOT}/data/v1.0/scenarios/**/*.json",
+  "source_catalog": "data/v1.0/catalog.json",
+  "scenario_source": "data/v1.0/scenarios/**/*.json",
   "expected_counts": {
     "semantic_scenarios": 880,
     "cb8_blocks": 110,
@@ -18,9 +18,9 @@
   },
   "required_realization_pairs": [
     "ko-KR.canonical",
-    "ko-KR.naturalistic_freeform",
+    "ko-KR.naturalistic",
     "en-US.canonical",
-    "en-US.naturalistic_freeform"
+    "en-US.naturalistic"
   ],
   "selectors": {
     "primary_intents": "${ALL_21_TASK_INTENTS}",

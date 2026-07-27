@@ -38,8 +38,8 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "implicit_goal_or_output",
-      "terse_fragment"
+      "mid_task_change",
+      "self_correction_scope_shift"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "implicit_goal_or_output",
-        "terse_fragment"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 공감, 승인된 선택지, 필요 시 에스컬레이션이 있는 답변 틀로 좁히자. 큰 주제는 보상과 정책에 대한 지원 담당자 코칭이고 믿을 수 있는 메모는 고객이 불편을 겪었고 정책은 제한적 보상만 허용하며 담당자는 권한을 넘지 않으면서 관대하고 싶다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "지금 살펴보는 주제는 보상과 정책에 대한 지원 담당자 코칭. 잠깐, 원하는 결과는 공감, 승인된 선택지, 필요 시 에스컬레이션이 있는 답변 틀. 메모는 다음이야: 고객이 불편을 겪었고 정책은 제한적 보상만 허용하며 담당자는 권한을 넘지 않으면서 관대하고 싶다. 없는 건 가정으로 적어줘."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "implicit_goal_or_output",
-        "terse_fragment"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a response framework with empathy, approved options, and escalation when needed. The broader issue is coaching a support agent on compensation and policy, and the notes I can stand behind are The person who contacted us was inconvenienced, policy allows limited remedies, and the agent wants to be generous without exceeding authority.. Mark assumptions instead of filling blanks."
+          "content": "I’m looking at coaching a support agent on compensation and policy. Actually, focus on a response framework with empathy, approved options, and escalation when needed. I noted this: The person who contacted us was inconvenienced, policy allows limited remedies, and the agent wants to be generous without exceeding authority. For coaching a support agent on compensation and policy, mark assumptions; gaps stay open."
         }
       ]
     }

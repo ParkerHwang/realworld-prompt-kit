@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.audience_context_shift.0002",
   "title": {
-    "ko": "프로젝트 상태 — 임원용 브리프",
-    "en": "Project status — Executive brief"
+    "ko": "프로젝트 상태 임원용 브리프",
+    "en": "Project status Executive brief"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
@@ -18,8 +18,8 @@
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "프로젝트 상태 내용을 지정 독자에게 맞춰 다시 써줘. 상태·위험·결정 요청만 남겨",
-      "en": "Adapt the Project status material for the specified reader; keep only status, risk, and decision request."
+      "ko": "프로젝트 상태 임원용 브리프를 독자에 맞게 다시 써줘. 상태·위험·결정 요청만 남겨",
+      "en": "For Project status Executive brief, rewrite for its reader; keep only status, risk, and decision request"
     },
     "expected_artifact": "A concise synthesis that preserves decisions, evidence, and open questions."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 프로젝트 상태 내용을 지정 독자에게 맞춰 다시 써줘. 상태·위험·결정 요청만 남겨. 입력 상황: 긴 실무 자료를 임원이 30초 안에 읽을 브리프로 바꿔야 해. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "이 프로젝트 상태 임원용 브리프 건은 사업 운영 자료야. 프로젝트 상태 임원용 브리프를 독자에 맞게 다시 써줘. 상태·위험·결정 요청만 남겨. 입력 상황: 긴 실무 자료를 임원이 30초 안에 읽을 브리프로 바꿔야 해. 프로젝트 상태 임원용 브리프: 독자가 비교할 기준과 판단 근거를 같은 틀에 넣어줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영 자료야. 읽는 사람이 달라진 프로젝트 상태 건이야. 긴 실무 자료를 임원이 30초 안에 읽을 브리프로 바꿔야 해. 상태·위험·결정 요청만 남겨."
+          "content": "분야는 사업 운영 자료야; 이번 대상은 프로젝트 상태 임원용 브리프. 프로젝트 상태 임원용 브리프를 임원용 짧은 브리프로 바꿔야 해 프로젝트 상태 임원용 브리프 건이야. 임원이 30초 안에 볼 수 있게 상태·위험·결정 요청만 전면에 두어."
         },
         {
           "role": "user",
-          "content": "읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬."
+          "content": "프로젝트 상태 임원용 브리프 기준으로 독자가 비교할 기준과 판단 근거를 같은 틀에 넣어줘. 프로젝트 상태 임원용 브리프 보고용으로 정리하면 좋겠어. 가능하시면 프로젝트 상태 임원용 브리프 초안 검토 부탁드려요."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a business-operations context where options and execution conditions matter, Adapt the Project status material for the specified reader; keep only status, risk, and decision request.. Input context: a long working document must become a 30-second executive brief. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "The relevant business-operations case is Project status Executive brief. For Project status Executive brief, rewrite for its reader; keep only status, risk, and decision request. Input context: A long working document must become a 30-second executive brief. Project status Executive brief: Put comparison criteria and supporting reasons into one frame."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a business-operations item. The reader has changed for Project status. A long working document must become a 30-second executive brief. Keep only status, risk, and decision request."
+          "content": "Treat Project status Executive brief as work in business-operations. The Project status Executive brief material needs a fast executive brief. Project status Executive brief. Put status, risk, and the decision ask up front for an executive's 30-second read."
         },
         {
           "role": "user",
-          "content": "Make it fit the reader without changing the substance."
+          "content": "For Project status Executive brief, Put comparison criteria and supporting reasons into one frame. The practical draft for Project status Executive brief matters more than an essay. If you have a moment, could you review the scope of Project status Executive brief?"
         }
       ]
     }

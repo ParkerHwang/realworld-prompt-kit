@@ -38,10 +38,10 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "anaphora_prior_context",
       "followup_without_restatement",
+      "hedged_exploratory_request",
       "message_burst",
-      "resume_after_interruption"
+      "missing_decisive_detail"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
         "followup_without_restatement",
+        "hedged_exploratory_request",
         "message_burst",
-        "resume_after_interruption"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "다국어 메시지의 에이전트 대화 검토 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 대화는 한국어와 영어가 번갈아 나오고 축약어가 있으며 한 지시는 문서에서 인용됐다고, 원하는 건 사용자 의도와 인용문을 구분한 의미 추적야. 답을 바꿀 빠진 정보는 따로 알려줘."
+          "content": "일단 설명할 상황은 다국어 메시지의 에이전트 대화 검토. 초안부터 보자. 근거 메모는 이거야: 대화는 한국어와 영어가 번갈아 나오고 축약어가 있으며 한 지시는 문서에서 인용됐다. 사용자 의도와 인용문을 구분한 의미 추적 형태를 첫 시안으로 두고 부족한 점을 말해줘."
         },
         {
           "role": "user",
-          "content": "없는 입력은 맥락으로 채우지 말고 그대로 보이게 해줘."
+          "content": "원본이 정하지 않은 부분은 임시 상태로 둬."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
         "followup_without_restatement",
+        "hedged_exploratory_request",
         "message_burst",
-        "resume_after_interruption"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Before we go too far on an agent transcript review from mixed-language messages, can you sketch a first pass? My evidence is The transcript alternates Korean and English, includes shorthand, and one instruction is quoted from a document.; I need a semantic trace that distinguishes user intent from quoted text. Call out anything that would change the answer."
+          "content": "Quick context on an agent transcript review from mixed-language messages. Before going further, evidence: the transcript alternates Korean and English, includes shorthand, and one instruction is quoted from a document. Tentative first pass: a semantic trace that distinguishes user intent from quoted text; for an agent transcript review from mixed-language messages, flag answer-changing gaps."
         },
         {
           "role": "user",
-          "content": "Please leave unknown inputs visible rather than filling them in from context."
+          "content": "Keep the answer provisional wherever the source does not settle it."
         }
       ]
     }

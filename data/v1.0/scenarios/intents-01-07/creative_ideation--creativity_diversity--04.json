@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.creativity_diversity.0004",
   "title": {
-    "ko": "수업 활동 — 종이만 쓰는 수업",
-    "en": "Lesson activity — Paper-only lesson"
+    "ko": "수업 활동 종이만 쓰는 수업",
+    "en": "Lesson activity Paper only lesson"
   },
   "task": {
     "primary_intent": "creative_ideation",
@@ -18,8 +18,8 @@
       "creative_media"
     ],
     "user_goal": {
-      "ko": "수업 활동를 주제로 서로 다른 아이디어를 내줘. 준비 시간과 참여 방식이 다른 안을 내",
-      "en": "Generate genuinely different ideas around Lesson activity; vary preparation time and participation mechanics."
+      "ko": "수업 활동 종이만 쓰는 수업을 주제로 서로 다른 아이디어를 내줘. 준비 시간과 참여 방식이 다른 안을 내",
+      "en": "For Lesson activity Paper only lesson, generate distinct ideas; vary preparation time and participation mechanics"
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "수업·학습·연구 자료를 다루는 상황에서 수업 활동를 주제로 서로 다른 아이디어를 내줘. 준비 시간과 참여 방식이 다른 안을 내. 입력 상황: 교사가 준비할 시간이 5분뿐인 수업 활동이야. 서로 다른 방향의 아이디어를 내고, 각 아이디어가 제약을 어떻게 만족하는지 짧게 설명해."
+          "content": "이번 작업의 분야는 수업·연구 자료야, 대상은 수업 활동 종이만 쓰는 수업. 수업 활동 종이만 쓰는 수업을 주제로 서로 다른 아이디어를 내줘. 준비 시간과 참여 방식이 다른 안을 내. 입력 상황: 교사가 준비할 시간이 5분뿐인 수업 활동이야. 수업 활동 종이만 쓰는 수업: 최소 여섯 방향으로 벌리고 서로 닮은 안은 합치지 마."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 수업·연구 자료야: 방향을 여러 개로 열어야 하는 수업 활동 건이야. 교사가 준비할 시간이 5분뿐인 수업 활동이야. 준비 시간과 참여 방식이 다른 안을 내."
+          "content": "급한 수업 활동 종이만 쓰는 수업 건이라 지금 확인이 필요해, 이 요청은 수업·연구 자료야. 수업 활동 종이만 쓰는 수업 관련해서 봐줘: 수업 활동 종이만 쓰는 수업에서 준비와 참여 구조를 바꿔봐야 해 수업 활동 종이만 쓰는 수업 건이야. 준비 5분인 종이·칠판 수업에서 준비량과 참여 방식이 다른 활동을 만들어줘."
         },
         {
           "role": "user",
-          "content": "위 건은 서로 결이 다른 안으로 내고, 왜 괜찮은지도 한 줄씩 붙여줘."
+          "content": "위 건은 수업 활동 종이만 쓰는 수업 기준으로 경험의 축을 바꿔 닮지 않은 방향으로 펼쳐줘. 원문 source와 최종 output을 한 덩어리로 섞지 마. API source/output 경계도 유지해줘. 이전 답과 연결해 읽고 이번 메시지가 추가한 조건을 분리해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an education, learning, or research context, Generate genuinely different ideas around Lesson activity; vary preparation time and participation mechanics.. Input context: the teacher has only five minutes to prepare the classroom activity. Offer ideas from genuinely different directions and briefly explain how each satisfies the constraints."
+          "content": "The education/research material concerns Lesson activity Paper only lesson. For Lesson activity Paper only lesson, generate distinct ideas; vary preparation time and participation mechanics. Input context: The teacher has only five minutes to prepare the classroom activity. Lesson activity Paper only lesson: Open at least six directions and merge ideas that are only near-duplicates."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is, This is an education/research item: The directions need to stay diverse for Lesson activity. The teacher has only five minutes to prepare the classroom activity. Vary preparation time and participation mechanics."
+          "content": "I need this fairly urgently: Lesson activity Paper only lesson, The education/research team is handling Lesson activity Paper only lesson: The Lesson activity Paper only lesson should vary preparation and participation. Lesson activity Paper only lesson. Design paper-and-board classroom activities with five-minute preparation and varied participation mechanics."
         },
         {
           "role": "user",
-          "content": "For that item: Give genuinely different options and one line on why each works."
+          "content": "For that item: For Lesson activity Paper only lesson, Change the experience axis so the directions do not resemble one another. Leave the jargon intact while separating source facts from output wording. Keep the SOP source/output labels distinct. Carry forward the earlier criteria and check what changed in this material."
         }
       ]
     }

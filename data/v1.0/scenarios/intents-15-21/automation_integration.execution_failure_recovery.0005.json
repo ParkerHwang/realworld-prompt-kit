@@ -38,8 +38,8 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "code_switching_jargon",
-      "interleaved_instruction_and_paste"
+      "mid_task_change",
+      "self_correction_scope_shift"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
-        "interleaved_instruction_and_paste"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 억제, 제한된 재시도, 복구 관찰 안로 좁히자. 큰 주제는 재시도 폭주 복구이고 믿을 수 있는 메모는 하위 시스템 장애로 작업자가 재시도하고 대기열이 늘고 있으며 백오프 제한은 문서화되지 않았다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "일단 설명할 상황은 재시도 폭주 복구. 잠깐, 원하는 결과는 억제, 제한된 재시도, 복구 관찰 계획. 메모는 다음이야: 하위 시스템 장애로 작업자가 재시도하고 대기열이 늘고 있으며 백오프 제한은 문서화되지 않았다. 없는 건 가정으로 적어줘."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
-        "interleaved_instruction_and_paste"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a containment, bounded retry, and recovery-observation plan. The broader issue is recovering from a retry storm, and the notes I can stand behind are One downstream outage caused workers to retry, queue depth is rising, and no backoff limit is documented.. Mark assumptions instead of filling blanks."
+          "content": "Quick context on recovering from a retry storm. Actually, focus on a containment, bounded retry, and recovery-observation plan. I noted this: One downstream outage caused workers to retry, queue depth is rising, and no backoff limit is documented. For recovering from a retry storm, mark assumptions; gaps stay open."
         }
       ]
     }

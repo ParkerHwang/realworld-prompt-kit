@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "ocr_copy_format_noise",
-      "typo_spacing_punctuation"
+      "multi_intent_mixed_priority",
+      "rambling_stream"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "지금 등록 메모를 바탕으로 한 워크숍 준비 계획이랑 아직 열린 문제가 엉켜 있어. 붙여 넣은 메모에는 등록자 18명, 식이 관련 질문, 취소 2건이 있지만 세션 선택은 없어 일단 참석 정보와 식이 정보를 가정과 분리한 준비 체크리스트로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 세션 배정을 추정하거나 불필요한 개인정보를 노출하지 않는다."
+          "content": "먼저 준비할 건 등록 메모를 바탕으로 한 워크숍 준비 계획. 한꺼번에 풀어야 할 문제가 보이네. 열린 내용은 이거야: 붙여 넣은 메모에는 등록자 18명, 식이 관련 질문, 취소 2건이 있지만 세션 선택은 없어. 참석 정보와 식이 정보를 가정과 분리한 준비 체크리스트 형태로 만들어줘. 추가로 필요한 일은 구분해서 적어줘. 세션 배정을 추정하거나 불필요한 개인정보를 노출하지 않는다."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a workshop preparation plan from registration notes, plus some unresolved details. The pasted notes list 18 registrants, a dietary question, and two cancellations but do not say which session each person chose. Please make a preparation checklist that keeps attendance and dietary information separate from assumptions; if the second issue is out of scope, separate it. Do not infer session assignments or expose unnecessary personal details."
+          "content": "I need to prepare for a workshop preparation plan from registration notes. Other loose ends: the pasted notes list 18 registrants, a dietary question, and two cancellations but do not say which session each person chose. Please make a preparation checklist that keeps attendance and dietary information separate from assumptions. Do not infer session assignments or expose unnecessary personal details. Keep extra scope apart."
         }
       ]
     }

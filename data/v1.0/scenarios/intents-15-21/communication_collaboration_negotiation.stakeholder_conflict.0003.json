@@ -39,9 +39,9 @@
     },
     "naturalistic_features": [
       "followup_without_restatement",
+      "hedged_exploratory_request",
       "message_burst",
-      "mid_task_change",
-      "self_correction_scope_shift"
+      "missing_decisive_detail"
     ]
   },
   "realizations": [
@@ -65,18 +65,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
+        "hedged_exploratory_request",
         "message_burst",
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "고객과 범위 협상 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 고객이 마감 직전에 추가 산출물 두 개를 요청했지만 현재 계약 범위는 원래 산출물만 들어간다고, 원하는 건 범위 선택지, 영향, 결정 경로를 담은 정중한 답변야. 답을 바꿀 빠진 정보는 따로 알려줘."
+          "content": "먼저 준비할 건 고객과 범위 협상. 초안부터 보자. 근거 메모는 이거야: 고객이 마감 직전에 추가 산출물 두 개를 요청했지만 현재 계약 범위는 원래 산출물만 들어간다. 가능하면 범위 선택지, 영향, 결정 경로를 담은 정중한 답변 형태로 시작하되 달라질 점은 알려줘."
         },
         {
           "role": "user",
-          "content": "없는 입력은 맥락으로 채우지 말고 그대로 보이게 해줘."
+          "content": "확인된 내용과 쓸 만한 추정을 나눠서 적어줘."
         }
       ]
     },
@@ -100,18 +100,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
+        "hedged_exploratory_request",
         "message_burst",
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Before we go too far on a client scope negotiation, can you sketch a first pass? My evidence is The client requests two extra deliverables near the deadline; the current statement of work covers the original deliverable only.; I need a respectful response with scope options, impact, and a decision path. Call out anything that would change the answer."
+          "content": "I need to prepare for a client scope negotiation. Before going further, evidence: the client requests two extra deliverables near the deadline; the current statement of work covers the original deliverable only. Tentative first pass: a respectful response with scope options, impact, and a decision path; for a client scope negotiation, flag answer-changing gaps."
         },
         {
           "role": "user",
-          "content": "Please leave unknown inputs visible rather than filling them in from context."
+          "content": "Separate confirmed details from useful guesses."
         }
       ]
     }

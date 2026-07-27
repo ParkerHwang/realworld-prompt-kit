@@ -38,10 +38,10 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "anaphora_prior_context",
       "followup_without_restatement",
+      "hedged_exploratory_request",
       "message_burst",
-      "resume_after_interruption"
+      "missing_decisive_detail"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
         "followup_without_restatement",
+        "hedged_exploratory_request",
         "message_burst",
-        "resume_after_interruption"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "알림 폭주 복구 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 시끄러운 모니터가 수백 개 알림을 만들었고 그 안에 실제 사고 하나가 있을 수 있으며 억제 규칙은 검토되지 않았다고, 원하는 건 분류, 상관, 임시 안전 억제 안야. 답을 바꿀 빠진 정보는 따로 알려줘."
+          "content": "실무적으로 판단할 건 알림 폭주 복구. 초안부터 보자. 근거 메모는 이거야: 시끄러운 모니터가 수백 개 알림을 만들었고 그 안에 실제 사고 하나가 있을 수 있으며 억제 규칙은 검토되지 않았다. 우선 분류, 상관, 임시 안전 억제 계획 형태로 시작하고 바뀌는 점은 적어줘."
         },
         {
           "role": "user",
-          "content": "없는 입력은 맥락으로 채우지 말고 그대로 보이게 해줘."
+          "content": "모르는 입력은 맥락으로 채우지 말고 그대로 보여줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
         "followup_without_restatement",
+        "hedged_exploratory_request",
         "message_burst",
-        "resume_after_interruption"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Before we go too far on recovering from an alert flood, can you sketch a first pass? My evidence is One noisy monitor generated hundreds of alerts, one real incident may be inside, and suppression rules are not reviewed.; I need a triage, correlation, and temporary safe-suppression plan. Call out anything that would change the answer."
+          "content": "I need a practical read on recovering from an alert flood. Before going further, evidence: one noisy monitor generated hundreds of alerts, one real incident may be inside, and suppression rules are not reviewed. Tentative first pass: a triage, correlation, and temporary safe-suppression plan; for recovering from an alert flood, flag answer-changing gaps."
         },
         {
           "role": "user",
-          "content": "Please leave unknown inputs visible rather than filling them in from context."
+          "content": "Leave unknown inputs visible instead of filling them from context."
         }
       ]
     }

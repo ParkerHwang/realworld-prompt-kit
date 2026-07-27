@@ -38,10 +38,10 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "anaphora_prior_context",
       "followup_without_restatement",
+      "hedged_exploratory_request",
       "message_burst",
-      "resume_after_interruption"
+      "missing_decisive_detail"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
         "followup_without_restatement",
+        "hedged_exploratory_request",
         "message_burst",
-        "resume_after_interruption"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "알림 중복 제거 흐름 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 같은 사고가 두 모니터에서 올 수 있고 상관 키가 불완전하며 억제 기간은 아직 체크 안 됐어고, 원하는 건 검토 대기열과 오탐 억제 방지 기준이 있는 상관 제안야. 답을 바꿀 빠진 정보는 따로 알려줘."
+          "content": "쓸 수 있는 다음 단계는 알림 중복 제거 흐름. 초안부터 보자. 근거 메모는 이거야: 같은 사고가 두 모니터에서 올 수 있고 상관 키가 불완전하며 억제 기간은 아직 확인 안 됐어. 처음에는 검토 대기열과 오탐 억제 방지 기준이 있는 상관 제안 형태로 두고 확정할 부분을 나눠줘."
         },
         {
           "role": "user",
-          "content": "없는 입력은 맥락으로 채우지 말고 그대로 보이게 해줘."
+          "content": "결정적 입력이 없으면 매끄럽게 넘기지 말고 물어봐줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
         "followup_without_restatement",
+        "hedged_exploratory_request",
         "message_burst",
-        "resume_after_interruption"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Before we go too far on an alert deduplication workflow, can you sketch a first pass? My evidence is The same incident can arrive from two monitors; correlation keys are incomplete and suppression duration still is not verified.; I need a correlation proposal with a review queue and measurable false-suppression guardrail. Call out anything that would change the answer."
+          "content": "I want a usable next step for an alert deduplication workflow. Before going further, evidence: the same incident can arrive from two monitors; correlation keys are incomplete and suppression duration still is not verified. Tentative first pass: a correlation proposal with a review queue and measurable false-suppression guardrail; for an alert deduplication workflow, flag answer-changing gaps."
         },
         {
           "role": "user",
-          "content": "Please leave unknown inputs visible rather than filling them in from context."
+          "content": "When a decisive input is missing, ask rather than smoothing it over."
         }
       ]
     }

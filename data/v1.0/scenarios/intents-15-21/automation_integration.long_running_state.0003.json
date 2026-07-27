@@ -39,9 +39,9 @@
     },
     "naturalistic_features": [
       "followup_without_restatement",
-      "implicit_goal_or_output",
+      "hedged_exploratory_request",
       "message_burst",
-      "terse_fragment"
+      "missing_decisive_detail"
     ]
   },
   "realizations": [
@@ -65,18 +65,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
-        "implicit_goal_or_output",
+        "hedged_exploratory_request",
         "message_burst",
-        "terse_fragment"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "장기 서비스 크레딧 모니터링 흐름 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 사용량은 매일 체크되고 자격은 매달 바뀔 수 있으며 크레딧 요청에는 이전 기간 근거가 필요해고, 원하는 건 근거를 스냅샷하고 월별 자격을 재체크하는 상태 기반 흐름야. 답을 바꿀 빠진 정보는 따로 알려줘."
+          "content": "지금 검토 중인 건 장기 서비스 크레딧 모니터링 흐름. 초안부터 보자. 근거 메모는 이거야: 사용량은 매일 확인되고 자격은 매달 바뀔 수 있으며 크레딧 요청에는 이전 기간 근거가 필요해. 가능하면 근거를 스냅샷하고 월별 자격을 재확인하는 상태 기반 흐름 형태로 시작하되 달라질 점은 알려줘."
         },
         {
           "role": "user",
-          "content": "없는 입력은 맥락으로 채우지 말고 그대로 보이게 해줘."
+          "content": "확인된 내용과 쓸 만한 추정을 나눠서 적어줘."
         }
       ]
     },
@@ -100,18 +100,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
-        "implicit_goal_or_output",
+        "hedged_exploratory_request",
         "message_burst",
-        "terse_fragment"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Before we go too far on a long-running service-credit monitoring workflow, can you sketch a first pass? My evidence is Usage is checked daily, eligibility may change monthly, and a credit request needs evidence from the prior period.; I need a stateful workflow that snapshots evidence and rechecks monthly eligibility. Call out anything that would change the answer."
+          "content": "I’m reviewing a long-running service-credit monitoring workflow. Before going further, evidence: usage is checked daily, eligibility may change monthly, and a credit request needs evidence from the prior period. Tentative first pass: a stateful workflow that snapshots evidence and rechecks monthly eligibility; for a long-running service-credit monitoring workflow, flag answer-changing gaps."
         },
         {
           "role": "user",
-          "content": "Please leave unknown inputs visible rather than filling them in from context."
+          "content": "Separate confirmed details from useful guesses."
         }
       ]
     }

@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.canonical.0006",
   "title": {
-    "ko": "학교 개념 비교 — 인수인계 자료",
-    "en": "School-concept comparison — Handoff packet"
+    "ko": "학교 개념 비교 인수인계 자료",
+    "en": "School concept comparison Handoff packet"
   },
   "task": {
     "primary_intent": "explanation_teaching",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일반 정보와 상식을 확인하는 상황에서 두 과학 개념의 차이를 중학생이 이해할 수 있게 표와 예시로 설명해줘 출처와 미확인 부분을 표시해. 입력 상황: 교과서 정의는 비슷한 단어를 쓰지만 관찰 가능한 예시는 서로 달라. 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "학교 개념 비교 인수인계 자료 건에서 보는 맥락은 일반 정보 조회 건이야. 두 과학 개념의 차이를 중학생이 이해할 수 있게 표와 예시로 설명해줘 출처와 미확인 부분을 표시해. 입력 상황: 교과서 정의는 비슷한 단어를 쓰지만 관찰 가능한 예시는 서로 달라. 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 학교 개념 비교 인수인계 자료: 확실한 대목 위주로 답하고 빠진 점은 숨기지 마."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "일반 정보 조회 건이야. 비슷해 보이는 두 과학 개념 차이를 중학생용 표랑 예시로 보여줘. 경계가 흐려지지 않게 각자 예시 하나씩 줘. 참고로 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 그래서 출처와 미확인 부분을 표시해."
+          "content": "어, 이번 학교 개념 비교 인수인계 자료 요청은 일반 정보 조회 건이야. 비슷해 보이는 두 과학 개념 차이를 중학생용 표랑 예시로 보여줘. 경계가 흐려지지 않게 각자 예시 하나씩 줘. 담당자가 바뀌는 인수인계용이라 출처가 있는 부분과 아직 못 확인한 부분을 따로 적어줘."
         },
         {
           "role": "user",
-          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
+          "content": "학교 개념 비교 인수인계 자료 기준으로 확실한 대목 위주로 답하고 빠진 점은 숨기지 마. source가 말한 값과 네가 만들 output을 구별해 표시해줘. OCR source/output 경계도 유지해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a general-information and everyday-knowledge context, explain the difference between two science concepts to a middle-school student with a table and examples; mark sources and anything not yet confirmed. Input context: the textbook definitions use similar words, but their observable examples differ. the owner is changing and the next owner must use the result immediately. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use the general-information context for School concept comparison Handoff packet. Explain the difference between two science concepts to a middle-school student with a table and examples; mark sources and anything not yet confirmed. Input context: The textbook definitions use similar words, but their observable examples differ. The owner is changing and the next owner must use the result immediately. School concept comparison Handoff packet: Answer from confirmed material; leave silent gaps visible."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a general-information lookup. Show the difference between the two similar science concepts in a middle-school table with one example for each. Do not blur their boundary. For this case, the owner is changing and the next owner must use the result immediately. So mark sources and anything not yet confirmed."
+          "content": "Um, In the general-information lane, handle School concept comparison Handoff packet. Show the difference between the two similar science concepts in a middle-school table with one example for each. Do not blur their boundary. This is for a handoff, so label sourced points separately from items the next owner still needs to confirm."
         },
         {
           "role": "user",
-          "content": "Use what can actually be checked; say when something is unknown."
+          "content": "For School concept comparison Handoff packet, Answer from confirmed material; leave silent gaps visible. Keep the source record distinct from the requested output. Keep the KPI source/output labels distinct."
         }
       ]
     }

@@ -38,10 +38,10 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "anaphora_prior_context",
       "followup_without_restatement",
       "message_burst",
-      "resume_after_interruption"
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
         "followup_without_restatement",
         "message_burst",
-        "resume_after_interruption"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 개인 청구서 알림 자동화 — 메모는 알림은 납부일 전에 실행하고 납부된 항목은 건너뛰며 조용한 시간에는 보내지 않아야 하고 시간대는 제공됐다, 결과는 납부일, 납부 상태, 조용한 시간 조건이 있는 알림 흐름. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "내가 이해한 내용에서 볼 건 개인 청구서 알림 자동화 - [복사본]: 메모 알림은 납부일 전에 실행하고 납부된 항목은 건너뛰며 조용한 시간에는 보내지 않아야 하고 시간대는 제공됐다 / 결과 납부일, 납부 상태, 조용한 시간 조건이 있는 알림 흐름 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "근거가 얇으면 안전한 초안과 확인할 점을 같이 줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
         "followup_without_restatement",
         "message_burst",
-        "resume_after_interruption"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: a personal bill reminder automation — I’ve got The reminder should run before a due date, skip paid items, and avoid sending on quiet hours; the timezone is supplied.; can you give me a reminder workflow with due-date, paid-state, and quiet-hour conditions? no invented details pls"
+          "content": "i’m checking my understanding of a personal bill reminder automation - [copy]: the reminder should run before a due date, skip paid items, and avoid sending on quiet hours; the timezone is supplied / need: a reminder workflow with due-date, paid-state, and quiet-hour conditions / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "If the evidence is thin, return a safe draft and name the check needed."
         }
       ]
     }

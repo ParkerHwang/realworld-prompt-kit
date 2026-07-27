@@ -38,8 +38,8 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "emoji_shorthand",
-      "speech_to_text_disfluency"
+      "mid_task_change",
+      "self_correction_scope_shift"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 사람 검토와 억제 규칙이 있는 동의 기반 흐름로 좁히자. 큰 주제는 영업 리드 후속 자동화이고 믿을 수 있는 메모는 새 리드는 CRM에 들어오고 동의 표시가 연락을 통제하며 고가치 리드는 사람 검토가 필요해야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "다뤄야 할 상황은 영업 리드 후속 자동화. 잠깐, 원하는 결과는 사람 검토와 억제 규칙이 있는 동의 기반 흐름. 메모는 다음이야: 새 리드는 CRM에 들어오고 동의 표시가 연락을 통제하며 고가치 리드는 사람 검토가 필요해. 없는 건 가정으로 적어줘."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a consent-aware workflow with human review and suppression rules. The broader issue is a sales-lead follow-up automation, and the notes I can stand behind are New leads enter a CRM, a consent flag controls contact, and high-value leads need human review.. Mark assumptions instead of filling blanks."
+          "content": "I’m not sure how to handle a sales-lead follow-up automation. Actually, focus on a consent-aware workflow with human review and suppression rules. I noted this: New leads enter a CRM, a consent flag controls contact, and high-value leads need human review. For a sales-lead follow-up automation, mark assumptions; gaps stay open."
         }
       ]
     }

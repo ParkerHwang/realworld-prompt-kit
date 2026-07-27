@@ -40,8 +40,8 @@
     "naturalistic_features": [
       "followup_without_restatement",
       "message_burst",
-      "multi_intent_mixed_priority",
-      "rambling_stream"
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -66,17 +66,17 @@
       "features": [
         "followup_without_restatement",
         "message_burst",
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 컴플라이언스 확인을 포함한 정책 시행 계획 — 메모는 정책 문안은 내부 승인됐지만 시행일, 영향받는 역할, 체크 절차는 아직 체크 안 됐어, 결과는 기준 문서 체크 리스트과 법무 검토 에스컬레이션을 들어간 시행 안. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "다뤄야 할 상황은 컴플라이언스 확인을 포함한 정책 시행 계획 - 줄바꿈 섞임: 메모 정책 문안은 내부 승인됐지만 시행일, 영향받는 역할, 확인 절차는 아직 확인 안 됐어 / 결과 기준 문서 확인 목록과 법무 검토 에스컬레이션을 들어간 시행 계획 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "원본이 불완전하면 보류 지점을 표시해줘."
         }
       ]
     },
@@ -101,17 +101,17 @@
       "features": [
         "followup_without_restatement",
         "message_burst",
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: a policy-rollout plan with compliance checks — I’ve got The current rule text is approved internally, but the effective date, impacted roles, and acknowledgement process are not confirmed.; can you give me a rollout plan with a source-of-truth checklist and escalation for legal review? no invented details pls"
+          "content": "i’m not sure how to handle a policy-rollout plan with compliance checks - messy paste: the current rule text is approved internally, but the effective date, impacted roles, and acknowledgement process are not confirmed / need: a rollout plan with a source-of-truth checklist and escalation for legal review / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "If the source is incomplete, show the hold point."
         }
       ]
     }

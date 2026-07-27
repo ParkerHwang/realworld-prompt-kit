@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.boundary_ambiguity.0002",
   "title": {
-    "ko": "휴가 신청 절차 — 직원·계약자 경계",
-    "en": "Leave-request process — Employee versus contractor"
+    "ko": "휴가 신청 절차 직원 계약자 경계",
+    "en": "Leave request process Employee versus contractor"
   },
   "task": {
     "primary_intent": "explanation_teaching",
@@ -18,8 +18,8 @@
       "education_research"
     ],
     "user_goal": {
-      "ko": "휴가 신청 절차의 적용 범위를 가려줘. 대상별로 적용 범위를 나눠",
-      "en": "Work out the applicable scope for Leave-request process; Split the applicable scope by audience."
+      "ko": "휴가 신청 절차 직원 계약자 경계의 적용 범위를 가려줘. 대상별로 적용 범위를 나눠",
+      "en": "For Leave request process Employee versus contractor, determine the applicable scope; split the applicable scope by audience"
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 휴가 신청 절차의 적용 범위를 가려줘. 대상별로 적용 범위를 나눠. 입력 상황: 직원 안내와 계약자 안내가 한 문서에 섞여 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "이번 작업의 분야는 회사 행정 쪽이야, 대상은 휴가 신청 절차 직원 계약자 경계. 휴가 신청 절차 직원 계약자 경계의 적용 범위를 가려줘. 대상별로 적용 범위를 나눠. 입력 상황: 직원 안내와 계약자 안내가 한 문서에 섞여 있어. 휴가 신청 절차 직원 계약자 경계: 대상별 적용 여부를 나눠서 판단 못 할 곳을 확인해줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "회사 행정 쪽이야. 범위가 헷갈리는 휴가 신청 절차 건이야. 직원 안내와 계약자 안내가 한 문서에 섞여 있어. 대상별로 적용 범위를 나눠."
+          "content": "휴가 신청 절차 직원 계약자 경계 건은 회사 행정 쪽이야. 휴가 신청 절차 직원 계약자 경계는 어느 쪽 규칙을 따르는지 애매해 휴가 신청 절차 직원 계약자 경계 건이야. 직원용 말과 계약자용 말을 대상별로 분리해서 어느 쪽 규칙인지 보여줘."
         },
         {
           "role": "user",
-          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "휴가 신청 절차 직원 계약자 경계 기준으로 대상별 적용 여부를 나눠서 판단 못 할 곳을 확인해줘. 바쁘시겠지만 휴가 신청 절차 직원 계약자 경계에서 확인할 점만 알려주세요. 혹시 휴가 신청 절차 직원 계약자 경계에 이런 설명이 더 맞을 수도 있나?"
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, Work out the applicable scope for Leave-request process; Split the applicable scope by audience.. Input context: employee and contractor guidance is combined in one document. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Leave request process Employee versus contractor is handled in office-admin. For Leave request process Employee versus contractor, determine the applicable scope; split the applicable scope by audience. Input context: Employee and contractor guidance is combined in one document. Leave request process Employee versus contractor: Break out eligibility by audience and flag cases you cannot decide."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is an office-admin item. The scope is fuzzy for Leave-request process. Employee and contractor guidance is combined in one document. Split the applicable scope by audience."
+          "content": "For Leave request process Employee versus contractor, the working area is office-admin. I cannot tell which rule controls Leave request process Employee versus contractor. Leave request process Employee versus contractor. Sort the employee and contractor wording by audience and show which rule belongs to each."
         },
         {
           "role": "user",
-          "content": "If the boundary is fuzzy, ask one question before deciding."
+          "content": "For Leave request process Employee versus contractor, Break out eligibility by audience and flag cases you cannot decide. I know you are busy; could you name the checks for Leave request process Employee versus contractor? Could this explanation fit Leave request process Employee versus contractor better, perhaps?"
         }
       ]
     }

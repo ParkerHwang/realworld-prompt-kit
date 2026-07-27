@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "multi_intent_mixed_priority",
-      "rambling_stream"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "직장에서 애도하는 사람 지원 정리하려는데, 확실히 아는 건 사용자는 애도 중인 동료에게 전할 말을 원하고 부담을 주고 싶지 않다야. 이걸 짧고 공감적인 메시지와 선택권을 주는 실질적 지원 제안로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "직장 애도 지원 — 애도 중 동료에게 전할 말, 부담 주기 싫음 — 짧은 공감 메시지 + 선택권 있는 실무 지원."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out supporting someone grieving at work, but here’s what I actually know: The person asking wants words for a colleague who is grieving and does not want to intrude. Could you turn that into a brief compassionate message and a choice-based offer of practical support, without papering over the gaps?"
+          "content": "Grief at work — words for grieving colleague; avoid intrusion — brief compassionate message + choice-based practical support."
         }
       ]
     }
@@ -105,7 +105,7 @@
   "evaluation": {
     "response_mode": {
       "canonical": "state_assumptions_and_answer",
-      "naturalistic": "refuse_or_escalate"
+      "naturalistic": "state_assumptions_and_answer"
     },
     "invariants": [
       "Preserve the stated facts and constraints for supporting someone grieving at work.",

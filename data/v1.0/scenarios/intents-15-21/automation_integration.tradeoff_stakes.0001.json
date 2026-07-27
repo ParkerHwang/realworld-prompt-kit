@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "노코드와 스크립트 흐름 중 선택 정리하려는데, 확실히 아는 건 팀은 작은 내부 자동화가 필요하고 개발 시간은 제한되며 감사 추적이 필요해야. 이걸 의사결정 표와 되돌릴 수 있는 파일럿 추천로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "노코드/스크립트 선택 — 소규모 내부 자동화, 개발 시간 제한, 감사 추적 필요 — 결정표 + 되돌릴 파일럿."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out choosing a no-code or scripted workflow, but here’s what I actually know: Our team needs a small internal automation, has limited engineering time, and must maintain an audit trail. Could you turn that into a decision matrix and a reversible pilot recommendation, without papering over the gaps?"
+          "content": "No-code vs script — small internal automation; limited engineering time; audit trail required — decision matrix + reversible pilot."
         }
       ]
     }

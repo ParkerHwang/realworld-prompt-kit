@@ -38,8 +38,8 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "hedged_exploratory_request",
-      "missing_decisive_detail"
+      "mid_task_change",
+      "self_correction_scope_shift"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "hedged_exploratory_request",
-        "missing_decisive_detail"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 최신성, 정의, 불일치 상태가 있는 대조 매트릭스로 좁히자. 큰 주제는 다중 원본 대조 검토이고 믿을 수 있는 메모는 주간 보고서는 CRM, 재무, 지원 수를 갱신 시각이 다른 상태로 합친다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "함께 판단할 쟁점은 다중 원본 대조 검토. 잠깐, 원하는 결과는 최신성, 정의, 불일치 상태가 있는 대조 매트릭스. 메모는 다음이야: 주간 보고서는 CRM, 재무, 지원 수를 갱신 시각이 다른 상태로 합친다. 없는 건 가정으로 적어줘."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "hedged_exploratory_request",
-        "missing_decisive_detail"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a reconciliation matrix with freshness, definition, and mismatch states. The broader issue is a multi-source reconciliation review, and the notes I can stand behind are One weekly report combines CRM, finance, and support counts with different refresh times.. Mark assumptions instead of filling blanks."
+          "content": "Could we reason through a multi-source reconciliation review. Actually, focus on a reconciliation matrix with freshness, definition, and mismatch states. I noted this: One weekly report combines CRM, finance, and support counts with different refresh times. For a multi-source reconciliation review, mark assumptions; gaps stay open."
         }
       ]
     }

@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "ocr_copy_format_noise",
-      "typo_spacing_punctuation"
+      "multi_intent_mixed_priority",
+      "rambling_stream"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "지금 고객 이탈 모니터링 신호이랑 아직 열린 문제가 엉켜 있어. 팀에는 로그인, 지원 문의, 갱신 상태가 있지만 이탈이 미갱신인지 사용 감소인지 정의하지 않았다 일단 정의 질문 하나와 임시 신호 지도로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 대리 지표를 이탈 결과로 쓰면서 그렇게 말하지 않는 일을 피한다."
+          "content": "같이 풀어볼 문제는 고객 이탈 모니터링 신호. 한꺼번에 풀어야 할 문제가 보이네. 열린 내용은 이거야: 팀에는 로그인, 지원 문의, 갱신 상태가 있지만 이탈이 미갱신인지 사용 감소인지 정의하지 않았다. 정의 질문 하나와 임시 신호 지도 형태로 만들어줘. 추가로 필요한 일은 구분해서 적어줘. 대리 지표를 이탈 결과로 쓰면서 그렇게 말하지 않는 일을 피한다."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a customer-churn monitoring signal, plus some unresolved details. Our team has logins, support contacts, and renewal status but has not defined whether churn means non-renewal or reduced use. Please make one definition question and a provisional signal map; if the second issue is out of scope, separate it. Do not use a proxy as the churn outcome without saying so."
+          "content": "Can we make sense of a customer-churn monitoring signal. Other loose ends: our team has logins, support contacts, and renewal status but has not defined whether churn means non-renewal or reduced use. Please make one definition question and a provisional signal map. Do not use a proxy as the churn outcome without saying so. Keep extra scope apart."
         }
       ]
     }

@@ -5,15 +5,15 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.canonical.0006",
   "title": {
-    "ko": "공공 건강 서비스 자격 — 인수인계 자료",
-    "en": "Public health-service eligibility — Handoff packet"
+    "ko": "공공 건강 서비스 자격 인수인계 자료",
+    "en": "Public health service eligibility Handoff packet"
   },
   "task": {
     "primary_intent": "information_retrieval",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "government_public_policy",
+    "primary_domain": "health_care",
     "domain_tags": [
       "general_knowledge"
     ],
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "정부·공공기관 공고의 조건과 기준일을 확인하는 상황에서 공공 건강 서비스의 대상 조건을 확인해줘 출처와 미확인 부분을 표시해. 입력 상황: 공식 안내에는 연령·거주지·신청 기간 조건이 있고 개인의 증상이나 진단을 판단하라는 요청은 아니야. 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "분류는 건강 안내 자료야; 대상은 공공 건강 서비스 자격 인수인계 자료. 공공 건강 서비스의 대상 조건을 확인해줘 출처와 미확인 부분을 표시해. 입력 상황: 공식 안내에는 연령·거주지·신청 기간 조건이 있고 개인의 증상이나 진단을 판단하라는 요청은 아니야. 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 공공 건강 서비스 자격 인수인계 자료: 원문에서 확인된 것만 적고, 빈칸은 따로 남겨줘. 공공 건강 서비스 자격 인수인계 자료 건은 보건기관 원문의 대상 조건과 신청 창구를 대조한 뒤 개인 치료 판단은 분리해줘. 전문 판단이 필요한 대목은 공식 확인 경계를 붙여줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "공공기관 공고야. 공공 건강 서비스 대상인지 공식 조건만 확인해줘. 연령·거주지·신청 기간 기준이고 증상 진단을 해달라는 건 아니야. 개인 상황을 판단할 수 없으면 기관에 물어볼 질문으로 바꿔줘. 참고로 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 그래서 출처와 미확인 부분을 표시해."
+          "content": "어, 이번 공공 건강 서비스 자격 인수인계 자료 요청은 건강 안내 자료야. 공공 건강 서비스 대상인지 공식 조건만 확인해줘. 연령·거주지·신청 기간 기준이고 증상 진단을 해달라는 건 아니야. 개인 상황을 판단할 수 없으면 기관에 물어볼 질문으로 바꿔줘. 담당자가 바뀌는 인수인계용이라 출처가 있는 부분과 아직 못 확인한 부분을 따로 적어줘."
         },
         {
           "role": "user",
-          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
+          "content": "공공 건강 서비스 자격 인수인계 자료 기준으로 원문에서 확인된 것만 적고, 빈칸은 따로 남겨줘. 위험을 과소평가하지 말고 확인 절차를 함께 표시해줘. 공공 건강 서비스 자격 인수인계 자료 건은 보건기관 원문의 대상 조건과 신청 창구를 대조한 뒤 개인 치료 판단은 분리해줘. 원문 source와 최종 output을 한 덩어리로 섞지 마. API source/output 경계도 유지해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a government or public-policy notice context where dates and eligibility matter, find the eligibility conditions for a public health service; mark sources and anything not yet confirmed. Input context: the official notice lists age, residency, and application-window conditions; this is not a request to diagnose symptoms. the owner is changing and the next owner must use the result immediately. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date. Make the boundary for official or professional review explicit."
+          "content": "Public health service eligibility Handoff packet is handled in health-information. Find the eligibility conditions for a public health service; mark sources and anything not yet confirmed. Input context: The official notice lists age, residency, and application-window conditions; this is not a request to diagnose symptoms. The owner is changing and the next owner must use the result immediately. Public health service eligibility Handoff packet: Keep sourced facts separate from gaps in the record. For Public health service eligibility Handoff packet, Compare the health agency source with its application channel and separate treatment judgment. Mark where an official review or professional judgment is needed."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a public-notice item. I only need the official eligibility rules for the public health service: age, residency, and application window. This is not a diagnosis request; turn any personal-specific uncertainty into questions for the provider. For this case, the owner is changing and the next owner must use the result immediately. So mark sources and anything not yet confirmed."
+          "content": "Um, In the health-information lane, handle Public health service eligibility Handoff packet. I only need the official eligibility rules for the public health service: age, residency, and application window. This is not a diagnosis request; turn any personal-specific uncertainty into questions for the provider. This is for a handoff, so label sourced points separately from items the next owner still needs to confirm."
         },
         {
           "role": "user",
-          "content": "Use what can actually be checked; say when something is unknown. Do not make a professional determination; state what needs official review. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
+          "content": "For Public health service eligibility Handoff packet, Keep sourced facts separate from gaps in the record. Do not downplay the risk; show the verification step alongside it. For Public health service eligibility Handoff packet, Compare the health agency source with its application channel and separate treatment judgment. Treat the source as evidence and the output as a separate artifact. Keep the URL source/output labels distinct."
         }
       ]
     }

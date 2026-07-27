@@ -40,6 +40,47 @@ CB8 is a coverage primitive, not a universal claim that eight examples are
 enough for every risk. High-stakes, multi-level, tool-mutating, or known failure
 interactions require additional blocks.
 
+## v1 broad-core contract
+
+The v1 catalog contains 21 intents and 110 disjoint CB8 blocks. Every block has
+rows 1–8 and uses the same seven two-level facets above. The 880 semantic
+scenarios are the counting unit; each is rendered as four prompt realizations:
+`ko-KR`/`en-US` × `canonical`/`naturalistic`. A translation, paraphrase, or
+coverage condition is not a new semantic scenario.
+
+Every row must introduce a distinct latent situation, evidence fixture, and
+goal. The validator rejects duplicate normalized title bases and goals, plus
+high canonical-text similarity across blocks, so a topic cannot be multiplied
+by attaching a new condition label. Scenario, semantic-group, and prompt
+identifiers are globally unique across the union.
+
+The catalog also overlays all 28 authorized primary domains and all 24
+naturalistic profile IDs. Domain tags describe context but do not justify an
+unrelated primary-domain assignment. The broad composition is measured over
+semantic scenarios: at least 60% must use the general/office/business/
+education/personal primary-domain set, while software plus data analytics must
+remain at or below 20%.
+
+Naturalistic authorship is independent from canonical wording. Pairwise
+SequenceMatcher similarity at or above 0.75 is reviewed and at or above 0.85
+fails, subject to the documented corpus limits. A second corpus-level gate
+counts exact six-token n-grams by locale/form and distinct scenario presence.
+More than 5% in either the full union or a worker partition is a release error;
+the six-token prefix scan also catches every longer n-gram. Generic task,
+boundary, or FOCUS boilerplate is not whitelisted.
+
+Rendered-message gates also reject malformed Korean particles/endings, English
+punctuation defects, overlong serialized terse prompts, and transport-specific
+retrieval tails whose title and goal have no transport context.
+
+The public v1 core is synthetic and declares no personal data. Its expected
+response mode, invariants, and failure signals are part of each scenario. A
+benign support request must not be labeled `refuse_or_escalate` merely because
+it is emotionally sensitive; that mode is reserved for an actual safety or
+authority boundary. The 880-scenario core does not claim OpenSocrates
+method-routing or adapter-conformance coverage. Those remain separate planned
+manifests until populated artifacts and evidence exist.
+
 ## Naturalistic utterances
 
 Naturalistic prompts may contain:

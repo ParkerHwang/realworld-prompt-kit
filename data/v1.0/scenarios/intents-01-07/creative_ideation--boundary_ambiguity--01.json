@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.boundary_ambiguity.0001",
   "title": {
-    "ko": "지역 행사 이름 — 정규·특별 적용 경계",
-    "en": "Community-event names — Regular versus special scope"
+    "ko": "지역 행사 이름 정규 특별 적용 경계",
+    "en": "Community event names Regular versus special scope"
   },
   "task": {
     "primary_intent": "creative_ideation",
@@ -18,8 +18,8 @@
       "creative_media"
     ],
     "user_goal": {
-      "ko": "지역 행사 이름의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해",
-      "en": "Work out the applicable scope for Community-event names; Compare exactly when the exception applies."
+      "ko": "지역 행사 이름 정규 특별 적용 경계의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해",
+      "en": "For Community event names Regular versus special scope, determine the applicable scope; compare exactly when the exception applies"
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 지역 행사 이름의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해. 입력 상황: 정규 절차와 이번 한시 예외가 같은 화면에 보여. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "지역 행사 이름 정규 특별 적용 경계 건을 보고, 분야는 내 일정·생활 건이야. 지역 행사 이름 정규 특별 적용 경계의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해. 입력 상황: 정규 절차와 이번 한시 예외가 같은 화면에 보여. 지역 행사 이름 정규 특별 적용 경계: 본문만으로 결정하지 말고 충돌하는 범위를 질문으로 남겨줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 내 일정·생활 건이야. 범위가 헷갈리는 지역 행사 이름 건이야. 정규 절차와 이번 한시 예외가 같은 화면에 보여. 어느 조건에서 예외로 넘어가는지 비교해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "지역 행사 이름 정규 특별 적용 경계는 일단 초안 형태면 돼, 분야는 내 일정·생활 건이야; 이번 대상은 지역 행사 이름 정규 특별 적용 경계. 범위가 헷갈리는 지역 행사 이름 정규 특별 적용 경계 건이야 지역 행사 이름 정규 특별 적용 경계 건이야. 정규 흐름 안에 잠깐 생긴 예외가 어디서 갈라지는지 화면 기준으로 짚어줘. 지역 행사 이름 정규 특별 적용 경계 기준으로 적용 범위를 먼저 나누고, 결론을 바꿀 빈칸은 질문으로 돌려줘. 지역 행사 이름 정규 특별 적용 경계 표시본이면 다음 결정에 쓰겠어. 지역 행사 이름 정규 특별 적용 경계 예외 조건이 빠진 채로 왔어."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, Work out the applicable scope for Community-event names; Compare exactly when the exception applies.. Input context: the ordinary procedure and a temporary exception appear on the same screen. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Read Community event names Regular versus special scope against the personal-life context. For Community event names Regular versus special scope, determine the applicable scope; compare exactly when the exception applies. Input context: The ordinary procedure and a temporary exception appear on the same screen. Community event names Regular versus special scope: Do not settle a conflict from the body alone; leave one scope question."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: This is a personal-life item. The scope is fuzzy for Community-event names. The ordinary procedure and a temporary exception appear on the same screen. Compare exactly when the exception applies. If the boundary is fuzzy, ask one question before deciding."
+          "content": "A draft for Community event names Regular versus special scope is fine: Treat Community event names Regular versus special scope as work in personal-life. The scope for Community event names Regular versus special scope is fuzzy. Community event names Regular versus special scope. Use the screen's conditions to show where the temporary exception splits from the normal flow. For Community event names Regular versus special scope, Split the applicable scope first and turn decision-changing gaps into questions. The practical draft for Community event names Regular versus special scope matters more than an essay. The audience scope for Community event names Regular versus special scope is absent; do not settle it yet."
         }
       ]
     }

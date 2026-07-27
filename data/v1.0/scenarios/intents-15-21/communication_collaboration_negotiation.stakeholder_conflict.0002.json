@@ -38,10 +38,10 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
+      "anaphora_prior_context",
       "followup_without_restatement",
       "message_burst",
-      "multi_intent_mixed_priority",
-      "rambling_stream"
+      "resume_after_interruption"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
         "message_burst",
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 공급업체 이견 이메일 얘기였어. 메모에는 납품 수량이 발주서와 다르고 양쪽에 문서가 있으며 대금 처리는 보류 중이다라고 적혀 있어. 책임을 단정하기 전 대조를 요청하는 사실 기반 에스컬레이션 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "메모를 바탕으로 정리할 건 공급업체 이견 이메일. 전에 남긴 내용을 이어서 확인할게. 메모 내용은 이래: 납품 수량이 발주서와 다르고 양쪽에 문서가 있으며 대금 처리는 보류 중이다. 원하는 결과는 책임을 단정하기 전 대조를 요청하는 사실 기반 에스컬레이션. 앞선 범위도 봐줘."
         },
         {
           "role": "user",
-          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
+          "content": "미해결 지점을 확정된 것처럼 넘기지 말아줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
         "message_burst",
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up a vendor dispute email? I lost the thread a bit. The notes say The delivered quantity differs from the purchase order, both sides have a document, and payment processing is pending. What would a fact-based escalation that requests reconciliation before assigning fault look like? Keep the earlier boundaries in mind."
+          "content": "I’m trying to turn notes about a vendor dispute email. Picking this up: the delivered quantity differs from the purchase order, both sides have a document, and payment processing is pending. A fact-based escalation that requests reconciliation before assigning fault could look like this. For a vendor dispute email, keep old limits visible."
         },
         {
           "role": "user",
-          "content": "If one missing detail would change the call, ask for it or label your assumption."
+          "content": "Keep the unresolved point visible instead of treating it as settled."
         }
       ]
     }

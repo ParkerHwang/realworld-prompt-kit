@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "hedged_exploratory_request",
-      "missing_decisive_detail"
+      "multi_intent_mixed_priority",
+      "rambling_stream"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "hedged_exploratory_request",
-        "missing_decisive_detail"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "지금 프로세스 담당자 변경 복구이랑 아직 열린 문제가 엉켜 있어. 기존 담당자가 팀을 떠났고 열린 조치에는 새 담당자가 없으며 다음 검토가 내일이다 일단 인계 리스트과 약속을 만들지 않는 임시 에스컬레이션 담당로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 권한과 가능 여부 확인 없이 사람에게 일을 배정하지 않는다."
+          "content": "차근차근 생각해볼 건 프로세스 담당자 변경 복구. 아직 열린 문제들이 서로 엉켜 있어. 열린 내용은 이거야: 기존 담당자가 팀을 떠났고 열린 조치에는 새 담당자가 없으며 다음 검토가 내일이다. 인계 목록과 약속을 만들지 않는 임시 에스컬레이션 담당 형태로 만들어줘. 빈 범위는 따로 적어줘. 권한과 가능 여부 확인 없이 사람에게 일을 배정하지 않는다."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "hedged_exploratory_request",
-        "missing_decisive_detail"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: recovering from a process owner change, plus some unresolved details. The former owner left the team, open actions have no new owner, and the next review is tomorrow. Please make a handoff inventory and temporary escalation owner without inventing commitment; if the second issue is out of scope, separate it. Do not assign work to a person without authority or availability confirmation."
+          "content": "Please help me think through recovering from a process owner change. Other loose ends: the former owner left the team, open actions have no new owner, and the next review is tomorrow. Please make a handoff inventory and temporary escalation owner without inventing commitment. Do not assign work to a person without authority or availability confirmation. Keep extra scope apart."
         }
       ]
     }

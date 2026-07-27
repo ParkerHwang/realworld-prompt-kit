@@ -38,10 +38,10 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
+      "anaphora_prior_context",
       "followup_without_restatement",
       "message_burst",
-      "mid_task_change",
-      "self_correction_scope_shift"
+      "resume_after_interruption"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
         "message_burst",
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 송장 승인 라우팅 자동화 얘기였어. 메모에는 일정 금액 이상 송장은 재무 검토, 그보다 낮은 금액은 예산 담당 검토가 필요하며 발주서가 없으면 보류한다라고 적혀 있어. 보류, 승인, 감사 결과가 있는 규칙 기반 라우팅 설계 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "다음 수를 정할 건 송장 승인 라우팅 자동화. 이거 이어서 볼게. 메모 내용은 이래: 일정 금액 이상 송장은 재무 검토, 그보다 낮은 금액은 예산 담당 검토가 필요하며 발주서가 없으면 보류한다. 원하는 결과는 보류, 승인, 감사 결과가 있는 규칙 기반 라우팅 설계. 앞선 범위도 봐줘."
         },
         {
           "role": "user",
-          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
+          "content": "다음 결정에 정보가 빠졌다면 질문하고 가정은 표시해줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
         "message_burst",
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up an invoice approval routing automation? I lost the thread a bit. The notes say Invoices above a threshold need finance review, lower amounts need a budget owner, and missing purchase orders are held. What would a rule-based routing design with hold, approval, and audit outcomes look like? Keep the earlier boundaries in mind."
+          "content": "I’m sorting out next steps for an invoice approval routing automation. Picking this up: invoices above a threshold need finance review, lower amounts need a budget owner, and missing purchase orders are held. A rule-based routing design with hold, approval, and audit outcomes could look like this. For an invoice approval routing automation, keep old limits visible."
         },
         {
           "role": "user",
-          "content": "If one missing detail would change the call, ask for it or label your assumption."
+          "content": "If the next decision depends on a missing detail, ask for it or label the assumption."
         }
       ]
     }

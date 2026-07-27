@@ -1,0 +1,138 @@
+{
+  "schema": "realworld-prompt-kit.scenario/1.0.0",
+  "scenario_id": "rwpk.evaluation_review_audit.multi_criteria_boundary_04.8252",
+  "revision": 1,
+  "status": "draft",
+  "semantic_group_id": "rwpg.evaluation_review_audit.multi_criteria_boundary.04",
+  "title": {
+    "ko": "공급업체 제안서 검토: 신선도와 비용 사례 제안은 식품 안전 정보가 필수이고 — 하드·소프트 기준 구분",
+    "en": "Review supplier bids: Bid freshness cost packet food safety information required — hard and soft criteria"
+  },
+  "task": {
+    "primary_intent": "evaluation_review_audit",
+    "secondary_intents": [
+      "classification_organization",
+      "qualitative_analysis"
+    ],
+    "primary_domain": "office_admin",
+    "domain_tags": [
+      "supply_chain_logistics",
+      "office_admin"
+    ],
+    "user_goal": {
+      "ko": "일반 포장재 공급업체 세 제안 (신선도와 비용 사례) 검토를 발견, 근거, 불확실성, 다음 수정 우선순위가 보이게 해줘. 하드·소프트 기준 구분 관점에서 판단하되 원자료의 근거를 드러내줘.",
+      "en": "Make this three bids for routine packaging material for freshness-and-cost inspectable: finding, evidence, uncertainty, and priority for the next fix. Use a hard and soft criteria lens while keeping the source evidence visible."
+    },
+    "expected_artifact": "An evidence-aware review table with findings, gaps, and minimum corrections."
+  },
+  "coverage": {
+    "block_id": "evaluation_review_audit.multi_criteria_boundary.cb8",
+    "row": 4,
+    "facets": {
+      "context_scale": "short",
+      "goal_clarity": "implicit",
+      "output_shape": "structured",
+      "evidence_state": "incomplete",
+      "stakes": "moderate",
+      "interaction": "single",
+      "surface_noise": "light"
+    },
+    "naturalistic_features": [
+      "multi_intent_mixed_priority",
+      "self_correction_scope_shift",
+      "contradictory_constraints"
+    ]
+  },
+  "realizations": [
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.multi_criteria_boundary_04.8252.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "일반 포장재 공급업체 세 제안 (신선도와 비용 사례) 검토를 발견, 근거, 불확실성, 다음 수정 우선순위가 보이게 해줘.\n\n일반 포장재 공급업체 세 제안 (신선도와 비용 사례):\n- 신선도와 비용 사례 A 제안은 22달러, 14일 배송, 불량률 이력 없음\n- 신선도와 비용 사례 B 제안은 28달러, 11일 배송, 불량률 2% 기록\n- 신선도와 비용 사례 C 제안은 34달러, 12일 배송, 보증 문구 불명확\n- 신선도와 비용 사례 제안은 서로 다른 포장 단위를 제시함\n- 사례 자료: 식품 안전 정보가 필수이고 다양성은 선호 기준임\n\n일반 포장재 공급업체 세 제안 (신선도와 비용 사례): 제약을 모두 남겨줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.multi_criteria_boundary_04.8252.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "multi_intent_mixed_priority",
+        "self_correction_scope_shift",
+        "contradictory_constraints"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "확인할 수 있는 검토 흔적이 필요해: 일반 포장재 공급업체 세 제안 (신선도와 비용 사례): 원문에는 다음 문구가 있어: 신선도와 비용 사례 C 제안은 34달러, 12일 배송, 보증 문구 불명확; 추가 관찰은 식품 안전 정보가 필수이고 다양성은 선호 기준임; 메모에는 이렇게 남아 있어: 신선도와 비용 사례 B 제안은 28달러, 11일 배송, 불량률 2% 기록; 적어 둔 내용은 신선도와 비용 사례 제안은 서로 다른 포장 단위를 제시함; 해당 항목은 신선도와 비용 사례 A 제안은 22달러, 14일 배송, 불량률 이력 없음. 통과·실패로 바로 표시하려다, 아 아니다. 근거가 비는 곳부터 보여줘. 먼저 핵심을 답하고 일반 포장재 공급업체 세 제안 (신선도와 비용 사례)에서 다음 확인도 정해줘. 짧은 일반 포장재 공급업체 세 제안 (신선도와 비용 사례) 답을 원하지만 한계는 포함해줘. 일반 포장재 공급업체 세 제안 (신선도와 비용 사례): 체크리스트로 줘. 일반 포장재 공급업체 세 제안 (신선도와 비용 사례): 제약을 모두 남겨줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.multi_criteria_boundary_04.8252.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Make this three bids for routine packaging material for freshness-and-cost inspectable: finding, evidence, uncertainty, and priority for the next fix.\n\nThree bids for routine packaging material for the freshness-and-cost case:\n- Bid A in the freshness-and-cost packet is 22 dollars, arrives in 14 days, and has no defect history\n- Bid B in the freshness-and-cost packet is 28 dollars, arrives in 11 days, and reports a 2% defect rate\n- Bid C in the freshness-and-cost packet is 34 dollars, arrives in 12 days, and has unclear warranty wording\n- the freshness-and-cost bids quote different package sizes\n- Case fixture: food safety information is required; variety is a preference.\n\nThree bids for routine packaging material for the freshness-and-cost case: keep every constraint visible."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.multi_criteria_boundary_04.8252.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "multi_intent_mixed_priority",
+        "self_correction_scope_shift",
+        "contradictory_constraints"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "I need a review trail I can inspect: Three bids for routine packaging material for the freshness-and-cost case: The entry records bid C in the freshness-and-cost packet is 34 dollars, arrives in 12 days, and has unclear warranty wording; Food safety information is required; variety is a preference; The record lists bid B in the freshness-and-cost packet is 28 dollars, arrives in 11 days, and reports a 2% defect rate; The source line is the freshness-and-cost bids quote different package sizes; Written: bid A in the freshness-and-cost packet is 22 dollars, arrives in 14 days, and has no defect history. I was going to mark this pass/fail, but actually show the evidence gaps before deciding. Do the main pass first, then give me the next check for three bids for routine packaging material for the freshness-and-cost case. I want a concise three bids for routine packaging material for the freshness-and-cost case answer with the key limitation intact. Three bids for routine packaging material for the freshness-and-cost case: show a checklist. Three bids for routine packaging material for the freshness-and-cost case: keep every constraint visible."
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "response_mode": {
+      "canonical": "state_assumptions_and_answer",
+      "naturalistic": "state_assumptions_and_answer"
+    },
+    "invariants": [
+      "Distinguish a control or criterion that is present, absent, and merely described but untested."
+    ],
+    "rubric_dimensions": [
+      "audit_completeness",
+      "evidence_traceability",
+      "prioritization",
+      "criteria_separation",
+      "tradeoff_reasoning",
+      "decision_traceability"
+    ],
+    "failure_signals": [
+      "A review claims compliance or success from a description that was not tested.",
+      "A soft preference overrides a hard constraint without acknowledgement."
+    ]
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit contributors"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT"
+  }
+}

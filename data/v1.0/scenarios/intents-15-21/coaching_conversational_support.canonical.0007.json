@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 일정에 관해 가족에게 경계 세우기 — 메모는 사용자는 매주 저녁 한 번은 약속 없이 보내고 싶지만 다정하고 연결된 관계를 유지하고 싶다, 결과는 분명한 경계와 실행 가능한 대안이 있는 친절한 대본. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "의미를 보존하며 정리할 건 일정에 관해 가족에게 경계 세우기 - ocr 메모: 메모 사용자는 매주 저녁 한 번은 약속 없이 보내고 싶지만 다정하고 연결된 관계를 유지하고 싶다 / 결과 분명한 경계와 실행 가능한 대안이 있는 친절한 대본 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "흔들리는 입력이 있으면 아직 확인할 내용을 말해줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "quick one: setting a family boundary about schedule — I’ve got The person asking needs one evening each week without commitments and wants to remain caring and connected.; can you give me a kind script with a clear boundary and a workable alternative? no invented details pls"
+          "content": "i’d like help making sense of setting a family boundary about schedule - ocr bits: the person asking needs one evening each week without commitments and wants to remain caring and connected / need: a kind script with a clear boundary and a workable alternative / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "If an input is shaky, say what still needs confirmation."
         }
       ]
     }

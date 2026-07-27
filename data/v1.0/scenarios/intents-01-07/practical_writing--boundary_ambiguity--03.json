@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.boundary_ambiguity.0003",
   "title": {
-    "ko": "공급업체 협의 메시지 — 본문·별첨 우선순위",
-    "en": "Vendor negotiation message — Body versus exhibit"
+    "ko": "공급업체 협의 메시지 본문 별첨 우선순위",
+    "en": "Vendor negotiation message Body versus exhibit"
   },
   "task": {
     "primary_intent": "practical_writing",
@@ -18,8 +18,8 @@
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "공급업체 협의 메시지의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘",
-      "en": "Work out the applicable scope for Vendor negotiation message; Show which gap prevents a conclusion."
+      "ko": "공급업체 협의 메시지 본문 별첨 우선순위의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘",
+      "en": "For Vendor negotiation message Body versus exhibit, determine the applicable scope; show which gap prevents a conclusion"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 공급업체 협의 메시지의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘. 입력 상황: 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "검토할 항목은 공급업체 협의 메시지 본문 별첨 우선순위; 맥락은 사업 운영 자료야. 공급업체 협의 메시지 본문 별첨 우선순위의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘. 입력 상황: 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 공급업체 협의 메시지 본문 별첨 우선순위: 범위가 겹치는 곳은 임의로 고르지 말고 확인점을 세워줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영 자료야. 범위가 헷갈리는 공급업체 협의 메시지 건이야. 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 어느 공백이 결론을 막는지 보여줘."
+          "content": "이 요청은 사업 운영 자료야. 공급업체 협의 메시지 본문 별첨 우선순위 관련해서 봐줘. 두 기준이 겹친 공급업체 협의 메시지 본문 별첨 우선순위 건이라 공급업체 협의 메시지 본문 별첨 우선순위 건이야. 본문·요약·별첨이 어긋날 때 결정을 막는 빈칸 하나를 집어 질문으로 바꿔줘."
         },
         {
           "role": "user",
-          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘."
+          "content": "공급업체 협의 메시지 본문 별첨 우선순위 기준으로 적용 범위를 먼저 나누고, 결론을 바꿀 빈칸은 질문으로 돌려줘. 분량과 완전성이 함께 안 되면 둘 사이의 손해를 적어줘. 아까보다 범위를 줄였어; 그 안에서만 답해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a business-operations context where options and execution conditions matter, Work out the applicable scope for Vendor negotiation message; Show which gap prevents a conclusion.. Input context: the body, summary table, and exhibit use different wording with no precedence rule. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Use the business-operations context for Vendor negotiation message Body versus exhibit. For Vendor negotiation message Body versus exhibit, determine the applicable scope; show which gap prevents a conclusion. Input context: The body, summary table, and exhibit use different wording with no precedence rule. Vendor negotiation message Body versus exhibit: When scopes overlap, do not pick one silently; state the check needed."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a business-operations item. The scope is fuzzy for Vendor negotiation message. The body, summary table, and exhibit use different wording with no precedence rule. Show which gap prevents a conclusion."
+          "content": "Treat Vendor negotiation message Body versus exhibit as work in business-operations. Two criteria overlap around Vendor negotiation message Body versus exhibit. Vendor negotiation message Body versus exhibit. When the body, summary, and exhibit disagree, turn the one decision-blocking gap into a question."
         },
         {
           "role": "user",
-          "content": "If the boundary is fuzzy, ask one question before deciding. If brevity and completeness conflict, call that out."
+          "content": "For Vendor negotiation message Body versus exhibit, Split the applicable scope first and turn decision-changing gaps into questions. Flag any item that disappears in the interest of a short answer. Correction—Limit the answer to the segment I identified above."
         }
       ]
     }

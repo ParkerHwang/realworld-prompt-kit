@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.boundary_ambiguity.0008",
   "title": {
-    "ko": "서로 다른 기사 — 초보·전문가 독자",
-    "en": "Conflicting news reports — Beginner versus specialist reader"
+    "ko": "서로 다른 기사 초보 전문가 독자",
+    "en": "Conflicting news reports Beginner versus specialist reader"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
@@ -18,8 +18,8 @@
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "서로 다른 기사의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해",
-      "en": "Work out the applicable scope for Conflicting news reports; Propose an output that respects both audiences."
+      "ko": "서로 다른 기사 초보 전문가 독자의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해",
+      "en": "For Conflicting news reports Beginner versus specialist reader, determine the applicable scope; propose an output that respects both audiences"
     },
     "expected_artifact": "A concise synthesis that preserves decisions, evidence, and open questions."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 서로 다른 기사의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 입력 상황: 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "서로 다른 기사 초보 전문가 독자 건을 보고, 분야는 사업 운영 자료야. 서로 다른 기사 초보 전문가 독자의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 입력 상황: 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 서로 다른 기사 초보 전문가 독자: 누가 언제 어디까지 해당하는지 가른 뒤 애매한 점만 물어봐."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일단 초안으로, 사업 운영 자료야. 범위가 헷갈리는 서로 다른 기사 건이야. 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "위 건 — 서로 다른 기사; 게시 시각 다름, 정정 1건. 초보·전문가용 공통·충돌·확인 분리; 애매하면 질문."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a business-operations context where options and execution conditions matter, Work out the applicable scope for Conflicting news reports; Propose an output that respects both audiences.. Input context: the same facts must be explained differently to a beginner and a specialist. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Use the business-operations context for Conflicting news reports Beginner versus specialist reader. For Conflicting news reports Beginner versus specialist reader, determine the applicable scope; propose an output that respects both audiences. Input context: The same facts must be explained differently to a beginner and a specialist. Conflicting news reports Beginner versus specialist reader: Separate who, when, and where it applies; ask only about the fuzzy edge."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "A draft is fine for now: This is a business-operations item. The scope is fuzzy for Conflicting news reports. The same facts must be explained differently to a beginner and a specialist. Propose an output that respects both audiences. If the boundary is fuzzy, ask one question before deciding."
+          "content": "That one — Conflicting reports; publication times differ and one correction exists. Separate common, conflicting, and checkable claims for beginner/specialist readers; ask at the fuzzy edge."
         }
       ]
     }

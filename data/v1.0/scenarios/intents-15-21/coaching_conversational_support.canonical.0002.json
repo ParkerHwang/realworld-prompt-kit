@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 시험 결과가 좋지 않은 뒤 학습 계획 얘기였어. 메모에는 학습자는 2주가 있고 세 주제에서 문제를 틀렸으며 휴식과 연습이 모두 필요해라고 적혀 있어. 원인 파악, 연습, 휴식, 재검토가 있는 현실적인 안 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "성급한 추측을 피할 건 시험 결과가 좋지 않은 뒤 학습 계획. 앞서 보던 흐름을 다시 잇자. 메모 내용은 이래: 학습자는 2주가 있고 세 주제에서 문제를 틀렸으며 휴식과 연습이 모두 필요해. 원하는 결과는 원인 파악, 연습, 휴식, 재검토가 있는 현실적인 계획. 앞선 범위도 봐줘."
         },
         {
           "role": "user",
-          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
+          "content": "미확인 입력은 선택 전에 밝혀줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up a study plan after an exam setback? I lost the thread a bit. The notes say The learner has two weeks, missed questions in three topics, and needs rest as well as practice. What would a realistic plan with diagnosis, practice, rest, and a review checkpoint look like? Keep the earlier boundaries in mind."
+          "content": "I’m trying to avoid a bad guess on a study plan after an exam setback. Picking this up: the learner has two weeks, missed questions in three topics, and needs rest as well as practice. A realistic plan with diagnosis, practice, rest, and a review checkpoint could look like this. For a study plan after an exam setback, keep old limits visible."
         },
         {
           "role": "user",
-          "content": "If one missing detail would change the call, ask for it or label your assumption."
+          "content": "Name any unknown input before choosing a path."
         }
       ]
     }

@@ -33,6 +33,43 @@ would type it into a chat box:
 Korean and English should be authored as native messages. They may differ in
 politeness, sentence order, and workplace idiom while preserving the same goal.
 
+Each naturalistic profile must be visible in the prompt itself. A label is not
+evidence: `message_burst` means two or more user messages, `rambling_stream`
+means at least 180 characters in each locale, and `terse_fragment` means no
+more than 32 whitespace tokens in each locale. Paste/format-noise,
+emoji, code-switching, correction, change, and resumption profiles need a
+corresponding cue. Ambiguous discourse labels such as an implicit goal or
+polite request are reviewed from the complete utterance; generic FOCUS,
+boundary, safety, or a literal word such as `jargon` alone does not satisfy
+them; code-switching should use a task-specific field or technical term in the
+localized message. The v1 validator checks
+the objective cues and the release review records the softer judgments.
+
+Do not reuse a latent topic across blocks and call the condition new breadth.
+Before assigning the row, record a distinct evidence fixture, user goal, and
+expected artifact. The normalized semantic-duplicate lint compares these
+fields across blocks and the canonical-similarity lint catches copied prompt
+templates.
+
+Naturalistic diversity has a corpus-level limit as well as a pairwise one. For
+each locale/form, count exact six-token n-grams by distinct scenario presence.
+Any non-whitelisted n-gram in more than 5% of the full union or its originating
+worker partition is a release error. A longer repeated phrase is already
+captured by its six-token prefix; no generic boilerplate is whitelisted.
+
+Retrieval guidance must fit the latent fixture. The validator rejects known
+transport tails such as 도시·노선·운행일 / city, route, service day and
+stop/route-missing variants when the title and goal contain no transport
+context. Korean particle and ending defects are also release errors; do not
+repair quota failures by appending a domain- or transport-irrelevant sentence.
+An apparent terse prompt with eight or fewer whitespace tokens must also stay
+under the configured short-message character cap and must not serialize
+topic/context/result fields with delimiters.
+
+Keep decision-critical numeric literals in both localized naturalistic
+realizations. The validator checks presence of canonical numeric facts and
+flags English possessive nouns that become bare plurals.
+
 ## Set the response boundary
 
 Choose the expected mode before reviewing outputs. Ask:

@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.canonical.0004",
   "title": {
-    "ko": "실험 결과 설명 — 다음 분기 결정",
-    "en": "Experiment result — Next-quarter decision"
+    "ko": "실험 결과 설명 다음 분기 결정",
+    "en": "Experiment result Next quarter decision"
   },
   "task": {
     "primary_intent": "explanation_teaching",
@@ -48,7 +48,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "수업·학습·연구 자료를 다루는 상황에서 실험 결과를 비전문가에게 결과, 불확실성, 다음 확인 단계로 나눠 설명해줘 결정에 필요한 핵심 근거와 보류 조건을 정리해. 입력 상황: 표본이 작고 두 조건의 차이는 관찰됐지만 반복 실험은 아직 없어. 다음 분기 실행 여부를 오늘 정해야 하는 자료야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "이번 작업의 분야는 수업·연구 자료야, 대상은 실험 결과 설명 다음 분기 결정. 실험 결과를 비전문가에게 결과, 불확실성, 다음 확인 단계로 나눠 설명해줘 결정에 필요한 핵심 근거와 보류 조건을 정리해. 입력 상황: 표본이 작고 두 조건의 차이는 관찰됐지만 반복 실험은 아직 없어. 다음 분기 실행 여부를 오늘 정해야 하는 자료야. 실험 결과 설명 다음 분기 결정: 원문에서 확인된 것만 적고, 빈칸은 따로 남겨줘."
         }
       ]
     },
@@ -64,7 +64,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 수업·연구 자료야. 작은 표본에서 두 조건 차이가 보였지만 반복 실험은 아직이야. 결과/불확실성/다음 확인을 나눠서 비전문가에게 설명해줘. 참고로 다음 분기 실행 여부를 오늘 정해야 하는 자료야. 그래서 결정에 필요한 핵심 근거와 보류 조건을 정리해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘. 참고 메모가 중간에 붙어 있어도 요청과 자료는 나눠서 봐줘. 아, 대상은 전체가 아니라 위에 적은 범위만이야."
+          "content": "이 실험 결과 설명 다음 분기 결정 건 핵심만 먼저 봐줘, 실험 결과 설명 다음 분기 결정 건부터 볼게. 분야는 수업·연구 자료야. 작은 표본에서 두 조건 차이가 보였지만 반복 실험은 아직이야. 결과/불확실성/다음 확인을 나눠서 비전문가에게 설명해줘. 오늘 go-or-hold 판단에 필요한 근거와 멈춰야 할 조건을 추려줘. 실험 결과 설명 다음 분기 결정 기준으로 자료에 없는 말은 보태지 말고 확인할 곳을 표시해줘. 붙은 자료와 답을 요구한 문장을 각각 식별해줘. <pasted-note>복사된 설명</pasted-note> 참고 조각은 인용으로 보관해. 아까보다 범위를 줄였어; 그 안에서만 답해줘."
         }
       ]
     },
@@ -77,7 +77,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an education, learning, or research context, explain the experiment to a non-specialist as result, uncertainty, and next check; state the key evidence and hold conditions. Input context: the sample is small and a difference was observed between conditions, but there has been no replication. the material supports a go-or-hold decision for next quarter today. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "The relevant education/research case is Experiment result Next quarter decision. Explain the experiment to a non-specialist as result, uncertainty, and next check; state the key evidence and hold conditions. Input context: The sample is small and a difference was observed between conditions, but there has been no replication. The material supports a go-or-hold decision for next quarter today. Experiment result Next quarter decision: Keep sourced facts separate from gaps in the record."
         }
       ]
     },
@@ -93,7 +93,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is: This is an education/research item. A difference appeared in a small sample, but there is no replication yet. Explain the result, uncertainty, and next check separately for a non-specialist. For this case, the material supports a go-or-hold decision for next quarter today. So state the key evidence and hold conditions. Use what can actually be checked; say when something is unknown. If notes are pasted inline, separate the request from the material. Actually, use only the scope stated above, not the broader one."
+          "content": "Could you start with Experiment result Next quarter decision: For Experiment result Next quarter decision, the working area is education/research. A difference appeared in a small sample, but there is no replication yet. Explain the result, uncertainty, and next check separately for a non-specialist. Pull out the evidence for today's go-or-hold call and the conditions that would stop it. For Experiment result Next quarter decision, Do not add unsupported wording; point to what needs checking. Read the mid-conversation explanation as evidence, not as a new task. <pasted-note>Mid-conversation material</pasted-note> Mark the note and the requested action separately. Correction—Limit the answer to the segment I identified above."
         }
       ]
     }

@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.canonical.0007",
   "title": {
-    "ko": "여행 경험 아이디어 — 소수 기록 묶음",
-    "en": "Travel-experience ideas — Small record set"
+    "ko": "여행 경험 아이디어 소수 기록 묶음",
+    "en": "Travel experience ideas Small record set"
   },
   "task": {
     "primary_intent": "creative_ideation",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "출장·여행·호스피탈리티 일정을 조율하는 상황에서 짧은 도시 여행에서 지역 주민과 자연스럽게 만날 수 있는 경험 아이디어를 내줘 작은 표본에서 확인되는 내용만 말해. 입력 상황: 하루 반나절 일정이고 대규모 단체 관광은 피하며, 지역 문화를 소비품처럼 다루지 않는 방식이어야 해. 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "이번 작업의 분야는 여행·출장 일정이야, 대상은 여행 경험 아이디어 소수 기록 묶음. 짧은 도시 여행에서 지역 주민과 자연스럽게 만날 수 있는 경험 아이디어를 내줘 작은 표본에서 확인되는 내용만 말해. 입력 상황: 하루 반나절 일정이고 대규모 단체 관광은 피하며, 지역 문화를 소비품처럼 다루지 않는 방식이어야 해. 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 여행 경험 아이디어 소수 기록 묶음: 답에 쓸 수 있는 근거와 보류할 부분을 나눠줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "여행·출장 일정이야. 도시에서 반나절 동안 소수로 지역 사람을 만나는 여행 경험 아이디어를 줘. 대형 관광이나 문화를 구경거리로 만드는 방식은 빼. 참고로 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 그래서 작은 표본에서 확인되는 내용만 말해."
+          "content": "여행 경험 아이디어 소수 기록 묶음 건부터 볼게. 분야는 여행·출장 일정이야. 도시에서 반나절 동안 소수로 지역 사람을 만나는 여행 경험 아이디어를 줘. 대형 관광이나 문화를 구경거리로 만드는 방식은 빼. 다섯 건뿐이고 한 건 비어 있으니 작은 기록이 뒷받침하는 만큼만 말해줘. 🙏"
         },
         {
           "role": "user",
-          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
+          "content": "여행 경험 아이디어 소수 기록 묶음 기준으로 지금 확인할 수 있는 사실부터 적고 추측은 구분해줘. OCR에서 흐려진 값은 읽은 부분과 검토할 부분을 나눠 적어줘. OCR 원문 대조도 해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a travel or hospitality scheduling context, generate travel experiences that help visitors meet local residents naturally on a short city trip; state only what this small set supports. Input context: the schedule is half a day, large group tourism should be avoided, and local culture should not be treated as a commodity. there are only five records and one has a blank field. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "The travel/hospitality material concerns Travel experience ideas Small record set. Generate travel experiences that help visitors meet local residents naturally on a short city trip; state only what this small set supports. Input context: The schedule is half a day, large group tourism should be avoided, and local culture should not be treated as a commodity. There are only five records and one has a blank field. Travel experience ideas Small record set: Show what can be used now and what must wait for proof."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a travel/hospitality item. Suggest half-day, small-group city experiences that meet local residents naturally. Avoid large tours and treating local culture as a prop. For this case, there are only five records and one has a blank field. So state only what this small set supports."
+          "content": "Travel experience ideas Small record set falls under the travel/hospitality desk. Suggest half-day, small-group city experiences that meet local residents naturally. Avoid large tours and treating local culture as a prop. There are just five records and one blank, so stay within what this small set can support. 🙏"
         },
         {
           "role": "user",
-          "content": "Use what can actually be checked; say when something is unknown."
+          "content": "For Travel experience ideas Small record set, Lead with checkable facts and label every inference. Transfer only clear pieces from the photograph and hold the rest open. OCR source-check too."
         }
       ]
     }

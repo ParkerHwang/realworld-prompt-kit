@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "implicit_goal_or_output",
-      "terse_fragment"
+      "multi_intent_mixed_priority",
+      "rambling_stream"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "implicit_goal_or_output",
-        "terse_fragment"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "지금 불완전한 구매 규칙으로 승인 흐름 만들기이랑 아직 열린 문제가 엉켜 있어. 메모에는 금액, 범주, 긴급도가 있지만 기준값이나 승인 권한 역할이 없어 일단 실행 가능한 승인 로직 대신 보류 상태가 있는 규칙 리스트로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 기준값과 역할 없이 자동 승인하지 않는다."
+          "content": "지금 비교할 선택지는 불완전한 구매 규칙으로 승인 흐름 만들기. 한꺼번에 풀어야 할 문제가 보이네. 열린 내용은 이거야: 메모에는 금액, 범주, 긴급도가 있지만 기준값이나 승인 권한 역할이 없어. 실행 가능한 승인 로직 대신 보류 상태가 있는 규칙 목록 형태로 만들어줘. 추가로 필요한 일은 구분해서 적어줘. 기준값과 역할 없이 자동 승인하지 않는다."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "implicit_goal_or_output",
-        "terse_fragment"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: an approval workflow from incomplete purchase rules, plus some unresolved details. The notes mention amount, category, and urgency but provide no thresholds or authorized roles. Please make a rule inventory with a hold state instead of executable approval logic; if the second issue is out of scope, separate it. Do not auto-approve without thresholds and roles."
+          "content": "I’m considering an approval workflow from incomplete purchase rules. Other loose ends: the notes mention amount, category, and urgency but provide no thresholds or authorized roles. Please make a rule inventory with a hold state instead of executable approval logic. Do not auto-approve without thresholds and roles. Keep extra scope apart."
         }
       ]
     }

@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "emoji_shorthand",
-      "speech_to_text_disfluency"
+      "multi_intent_mixed_priority",
+      "rambling_stream"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "지금 관계를 지키는 경계 코칭이랑 아직 열린 문제가 엉켜 있어. 사용자는 친척의 반복되는 막판 요청을 거절하되 연락을 끊고 싶지는 않다 일단 분명한 경계, 대안, 지킬 수 있는 결과로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 상대가 경계를 받아들일 것이라고 약속하지 않는다."
+          "content": "선택을 앞둔 건 관계를 지키는 경계 코칭. 결정 전까지 남겨둘 질문들이 있어. 열린 내용은 이거야: 사용자는 친척의 반복되는 막판 요청을 거절하되 연락을 끊고 싶지는 않다. 분명한 경계, 대안, 지킬 수 있는 결과 형태로 만들어줘. 산출물 범위를 넘는 내용은 분리해줘. 상대가 경계를 받아들일 것이라고 약속하지 않는다. 가능한 말로 천천히 정리해줘."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: coaching a boundary that preserves a relationship, plus some unresolved details. The person asking needs to decline recurring last-minute requests from a relative without ending contact. Please make a clear boundary, an alternative offer, and a consequence the user can actually keep; if the second issue is out of scope, separate it. Do not promise the other person will accept the boundary."
+          "content": "I’m weighing what to do about coaching a boundary that preserves a relationship. Other loose ends: the person asking needs to decline recurring last-minute requests from a relative without ending contact. Please make a clear boundary, an alternative offer, and a consequence the user can actually keep. Do not promise the other person will accept the boundary. Keep extra scope apart."
         }
       ]
     }

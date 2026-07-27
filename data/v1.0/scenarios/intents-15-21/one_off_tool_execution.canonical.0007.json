@@ -39,9 +39,9 @@
     },
     "naturalistic_features": [
       "followup_without_restatement",
-      "hedged_exploratory_request",
       "message_burst",
-      "missing_decisive_detail"
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -65,18 +65,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
-        "hedged_exploratory_request",
         "message_burst",
-        "missing_decisive_detail"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 구매 주문서 준비 — 메모는 요청에는 표준 부품 20개, 선호 공급업체, 배송 월이 있지만 승인 여부는 없어, 결과는 승인 보류와 미체크 항목을 표시한 구매 주문서 초안. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "안전한 다음 단계가 필요한 건 구매 주문서 준비 - 오타 포함: 메모 요청에는 표준 부품 20개, 선호 공급업체, 배송 월이 있지만 승인 여부는 없어 / 결과 승인 보류와 미확인 항목을 표시한 구매 주문서 초안 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "행동 전에 필요한 확인을 쉽게 찾을 수 있게 해줘."
         }
       ]
     },
@@ -100,18 +100,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
-        "hedged_exploratory_request",
         "message_burst",
-        "missing_decisive_detail"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: preparing a purchase order — I’ve got The request I received names 20 units of a standard part, a preferred supplier, and a delivery month, but approval still is not shown.; can you give me a purchase-order draft with an approval hold and explicit unknown fields? no invented details pls"
+          "content": "i’m looking for a safe way to approach preparing a purchase order - typo pass: the request I received names 20 units of a standard part, a preferred supplier, and a delivery month, but approval still is not shown / need: a purchase-order draft with an approval hold and explicit unknown fields / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "Make the missing check easy to spot before anyone acts."
         }
       ]
     }

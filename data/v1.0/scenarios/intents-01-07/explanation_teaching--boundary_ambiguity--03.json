@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.boundary_ambiguity.0003",
   "title": {
-    "ko": "앱 권한 설명 — 본문·별첨 우선순위",
-    "en": "App permissions — Body versus exhibit"
+    "ko": "앱 권한 설명 본문 별첨 우선순위",
+    "en": "App permissions Body versus exhibit"
   },
   "task": {
     "primary_intent": "explanation_teaching",
@@ -18,8 +18,8 @@
       "education_research"
     ],
     "user_goal": {
-      "ko": "앱 권한 설명의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘",
-      "en": "Work out the applicable scope for App permissions; Show which gap prevents a conclusion."
+      "ko": "앱 권한 설명 본문 별첨 우선순위의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘",
+      "en": "For App permissions Body versus exhibit, determine the applicable scope; show which gap prevents a conclusion"
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "고객 문의와 지원 운영을 처리하는 상황에서 앱 권한 설명의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘. 입력 상황: 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "앱 권한 설명 본문 별첨 우선순위 건의 배경은 고객 문의 건이야. 앱 권한 설명 본문 별첨 우선순위의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘. 입력 상황: 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 앱 권한 설명 본문 별첨 우선순위: 본문만으로 결정하지 말고 충돌하는 범위를 질문으로 남겨줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "고객 문의 건이야. 범위가 헷갈리는 앱 권한 설명 건이야. 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 어느 공백이 결론을 막는지 보여줘."
+          "content": "상황 설명은 고객 문의 건이야. 대상은 앱 권한 설명 본문 별첨 우선순위. 두 기준이 겹친 앱 권한 설명 본문 별첨 우선순위 건이라 앱 권한 설명 본문 별첨 우선순위 건이야. 본문·요약·별첨이 어긋날 때 결정을 막는 빈칸 하나를 집어 질문으로 바꿔줘."
         },
         {
           "role": "user",
-          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘."
+          "content": "앱 권한 설명 본문 별첨 우선순위 기준으로 정규 규칙과 이번 예외를 구분해 다음 질문 하나를 제시해줘. 간결함 때문에 빠지는 항목이 있으면 먼저 알려줘. 정정할게—방금 조건을 고쳐서, 넓은 범위는 빼줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a customer-support and success context, Work out the applicable scope for App permissions; Show which gap prevents a conclusion.. Input context: the body, summary table, and exhibit use different wording with no precedence rule. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "App permissions Body versus exhibit belongs to the customer-support context. For App permissions Body versus exhibit, determine the applicable scope; show which gap prevents a conclusion. Input context: The body, summary table, and exhibit use different wording with no precedence rule. App permissions Body versus exhibit: Do not settle a conflict from the body alone; leave one scope question."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a customer-support item. The scope is fuzzy for App permissions. The body, summary table, and exhibit use different wording with no precedence rule. Show which gap prevents a conclusion."
+          "content": "The customer-support context here concerns App permissions Body versus exhibit. Two criteria overlap around App permissions Body versus exhibit. App permissions Body versus exhibit. When the body, summary, and exhibit disagree, turn the one decision-blocking gap into a question."
         },
         {
           "role": "user",
-          "content": "If the boundary is fuzzy, ask one question before deciding. If brevity and completeness conflict, call that out."
+          "content": "For App permissions Body versus exhibit, Contrast the normal rule with this exception and ask one next question. Do not hide the choice between a compact answer and full support. Actually, use only the scope named in the title."
         }
       ]
     }

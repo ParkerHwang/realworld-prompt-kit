@@ -38,10 +38,10 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "code_switching_jargon",
+      "anaphora_prior_context",
       "followup_without_restatement",
-      "interleaved_instruction_and_paste",
-      "message_burst"
+      "message_burst",
+      "resume_after_interruption"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
+        "anaphora_prior_context",
         "followup_without_restatement",
-        "interleaved_instruction_and_paste",
-        "message_burst"
+        "message_burst",
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 가격 변경 출시 계획 얘기였어. 메모에는 영업은 빠른 출시를 원하고 지원팀은 유예 기간을 원하며 재무팀은 공개 전에 마진 가시성을 요구한다라고 적혀 있어. 이해관계자 결정, 고객 안내, 롤백 조건을 들어간 단계적 출시 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "일단 설명할 상황은 가격 변경 출시 계획. 전에 남긴 내용을 이어서 확인할게. 메모 내용은 이래: 영업은 빠른 출시를 원하고 지원팀은 유예 기간을 원하며 재무팀은 공개 전에 마진 가시성을 요구한다. 원하는 결과는 이해관계자 결정, 고객 안내, 롤백 조건을 들어간 단계적 출시. 앞선 범위도 봐줘."
         },
         {
           "role": "user",
-          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
+          "content": "미해결 지점을 확정된 것처럼 넘기지 말아줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
+        "anaphora_prior_context",
         "followup_without_restatement",
-        "interleaved_instruction_and_paste",
-        "message_burst"
+        "message_burst",
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up a pricing-change rollout plan? I lost the thread a bit. The notes say Sales wants a fast launch, support wants a grace period, and finance requires margin visibility before publishing. What would a staged rollout with stakeholder decisions, customer messaging, and a rollback trigger look like? Keep the earlier boundaries in mind."
+          "content": "Quick context on a pricing-change rollout plan. Picking this up: sales wants a fast launch, support wants a grace period, and finance requires margin visibility before publishing. A staged rollout with stakeholder decisions, customer messaging, and a rollback trigger could look like this. For a pricing-change rollout plan, keep old limits visible."
         },
         {
           "role": "user",
-          "content": "If one missing detail would change the call, ask for it or label your assumption."
+          "content": "Keep the unresolved point visible instead of treating it as settled."
         }
       ]
     }

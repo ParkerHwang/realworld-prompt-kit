@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "hedged_exploratory_request",
-      "missing_decisive_detail"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "hedged_exploratory_request",
-        "missing_decisive_detail"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "경험 수준이 다른 사람 코칭 정리하려는데, 확실히 아는 건 같은 위임 문제가 구조가 필요한 주니어와 자율성이 필요한 시니어에게 영향을 준다야. 이걸 같은 목표와 다른 지원 수준을 가진 두 버전로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "주니어/시니어 코칭 — 같은 위임 문제, 주니어는 구조·시니어는 자율성 필요 — 같은 목표, 다른 지원 두 버전."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "hedged_exploratory_request",
-        "missing_decisive_detail"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out coaching people at different experience levels, but here’s what I actually know: The same delegation issue affects a junior employee who needs structure and a senior employee who needs autonomy. Could you turn that into two versions with the same goal and different scaffolding, without papering over the gaps?"
+          "content": "Junior/senior coaching — same delegation issue; junior needs structure, senior autonomy — same-goal versions, different scaffolding."
         }
       ]
     }

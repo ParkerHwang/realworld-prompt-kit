@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "ocr_copy_format_noise",
-      "typo_spacing_punctuation"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "스마트한 에이전트가 할 일 정의 정리하려는데, 확실히 아는 건 에이전트를 더 똑똑하게 해 달라고 다만 작업, 대상, 실패 비용, 성공 기준이 없어야. 이걸 대상 의사결정 질문 하나와 측정 가능한 1차 정의로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "스마트한 에이전트? 결정에 쓸 질문 1개와 측정 가능한 1차 정의만. 작업·대상·실패 비용·성공 기준은 아직 없음."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out defining what a smart agent should do, but here’s what I actually know: The request I received says make the agent smarter but gives no task, audience, failure cost, or success measure. Could you turn that into one question about the target decision and a measurable first-pass definition, without papering over the gaps?"
+          "content": "“Smart” agent? Just one decision question and a measurable first definition. Task, audience, failure cost, and success measure are still open."
         }
       ]
     }

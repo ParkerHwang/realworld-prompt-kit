@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "anaphora_prior_context",
-      "resume_after_interruption"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
-        "resume_after_interruption"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "고객용 기술 출시 노트 정리하려는데, 확실히 아는 건 개발 노트에는 성능 변경, 마이그레이션 단계, 알려진 제한이 있으며 고객은 실무 영향이 필요해야. 이걸 기술적 사실을 보존하고 필요한 행동을 강조한 고객용 문안로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "고객용 출시 노트 — 성능 변경·이관 단계·알려진 제한; 실무 영향, 사실 유지, 행동 강조."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
-        "resume_after_interruption"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out a technical release note for customers, but here’s what I actually know: The engineering note lists a performance change, a migration step, and one known limitation; customers need practical impact. Could you turn that into a customer-facing version that keeps the technical truth and emphasizes action, without papering over the gaps?"
+          "content": "Customer release note — performance change, migration step, known limit; practical impact, keep facts, emphasize action."
         }
       ]
     }

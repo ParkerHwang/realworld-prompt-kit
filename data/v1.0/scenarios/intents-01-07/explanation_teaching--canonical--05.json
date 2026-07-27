@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.canonical.0005",
   "title": {
-    "ko": "관용 표현의 맥락 — 지역별 두 버전",
-    "en": "Idiom in context — Two regional versions"
+    "ko": "관용 표현의 맥락 지역별 두 버전",
+    "en": "Idiom in context Two regional versions"
   },
   "task": {
     "primary_intent": "explanation_teaching",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 관용 표현의 뜻과 상황별 뉘앙스를 학습자에게 설명해줘 지역 조건을 섞지 않고 해당 지역만 답해. 입력 상황: 직역하면 오해할 수 있고, 공식 메일에서는 덜 적절한 표현이라는 맥락이 있어. 서울용과 부산용 안내가 한 파일에 섞여 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "이번 작업의 분야는 팀 회의/커뮤니케이션 건이야, 대상은 관용 표현의 맥락 지역별 두 버전. 관용 표현의 뜻과 상황별 뉘앙스를 학습자에게 설명해줘 지역 조건을 섞지 않고 해당 지역만 답해. 입력 상황: 직역하면 오해할 수 있고, 공식 메일에서는 덜 적절한 표현이라는 맥락이 있어. 서울용과 부산용 안내가 한 파일에 섞여 있어. 관용 표현의 맥락 지역별 두 버전: 근거가 있는 내용과 아직 모르는 내용을 나눠 써줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한내용이 좀 깨졌는데, 팀 회의/커뮤니케이션 건이야. 이 관용 표현은 직역하면 이상해질 수 있고 공식 메일에는 덜 맞는대. 자연스러운 뜻, 쓸 만한 상황, 피할 상황을 학습자용으로 알려줘. 참고로 서울용과 부산용 안내가 한 파일에 섞여 있어. 그래서 지역 조건을 섞지 않고 해당 지역만 답해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘;."
+          "content": "아까 말한 관용 표현의 맥락 지역별 두 버전 관련해서 물어볼게, 대상은 관용 표현의 맥락 지역별 두 버전. 맥락은 팀 회의/커뮤니케이션 건이야. 이 관용 표현은 직역하면 이상해질 수 있고 공식 메일에는 덜 맞는대. 자연스러운 뜻, 쓸 만한 상황, 피할 상황을 학습자용으로 알려줘. 서울과 부산 버전 중 요청받은 곳의 조건만 남겨 섞이지 않게 답해줘;. 관용 표현의 맥락 지역별 두 버전 기준으로 모호한 값은 채우지 말고 다음에 볼 자료를 적어줘. 관용 표현의 맥락 지역별 두 버전 말이 좀 꼬였거든, 알아보기 쉽게 해줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, explain the meaning and situational nuance of an idiom to a learner; answer for the requested region without mixing conditions. Input context: a literal translation could mislead, and the expression is less suitable for a formal email. Seoul and Busan notices are mixed in one file. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Idiom in context Two regional versions belongs to the team-communication context. Explain the meaning and situational nuance of an idiom to a learner; answer for the requested region without mixing conditions. Input context: A literal translation could mislead, and the expression is less suitable for a formal email. Seoul and Busan notices are mixed in one file. Idiom in context Two regional versions: Use the evidence on hand and flag anything still unknown."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Thepasted text is a bit messy: This is a team-communication item.. The idiom can sound wrong when translated literally and is not ideal in a formal email. Give its natural meaning, a good setting, and a setting to avoid. For this case, Seoul and Busan notices are mixed in one file. So answer for the requested region without mixing conditions. Use what can actually be checked; say when something is unknown."
+          "content": "I have a quick question about Idiom in context Two regional versions: The team-communication context here concerns Idiom in context Two regional versions?! The idiom can sound wrong when translated literally and is not ideal in a formal email. Give its natural meaning, a good setting, and a setting to avoid. Keep only the requested city's conditions so the Seoul and Busan versions do not bleed together. For Idiom in context Two regional versions, Leave uncertain values open and name the next useful source. Idiom in context Two regional versions got kinda messy, honestly."
         }
       ]
     }

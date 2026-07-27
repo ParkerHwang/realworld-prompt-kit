@@ -38,10 +38,10 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
+      "anaphora_prior_context",
       "followup_without_restatement",
       "message_burst",
-      "multi_intent_mixed_priority",
-      "rambling_stream"
+      "resume_after_interruption"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
         "message_burst",
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 학습 개념을 어린이와 성인에게 설명 얘기였어. 메모에는 개념은 확률이며 두 대상 모두 같은 핵심 아이디어와 다른 예가 필요해라고 적혀 있어. 같은 주의사항을 보존한 두 대상별 설명 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "한번 봐줄 건 학습 개념을 어린이와 성인에게 설명. 전에 남긴 내용을 이어서 확인할게. 메모 내용은 이래: 개념은 확률이며 두 대상 모두 같은 핵심 아이디어와 다른 예가 필요해. 원하는 결과는 같은 주의사항을 보존한 두 대상별 설명. 앞선 범위도 봐줘."
         },
         {
           "role": "user",
-          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
+          "content": "미해결 지점을 확정된 것처럼 넘기지 말아줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
         "message_burst",
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up explaining a study concept to a child and an adult? I lost the thread a bit. The notes say The concept is probability, and both audiences need the same core idea with different examples. What would two audience-fit explanations that preserve the same caveat look like? Keep the earlier boundaries in mind."
+          "content": "Could you take a look at explaining a study concept to a child and an adult. Picking this up: the concept is probability, and both audiences need the same core idea with different examples. Two audience-fit explanations that preserve the same caveat could look like this. For explaining a study concept to a child and an adult, keep old limits visible."
         },
         {
           "role": "user",
-          "content": "If one missing detail would change the call, ask for it or label your assumption."
+          "content": "Keep the unresolved point visible instead of treating it as settled."
         }
       ]
     }

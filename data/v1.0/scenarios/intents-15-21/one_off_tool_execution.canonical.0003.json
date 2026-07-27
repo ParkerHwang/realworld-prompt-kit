@@ -39,9 +39,9 @@
     },
     "naturalistic_features": [
       "followup_without_restatement",
+      "hedged_exploratory_request",
       "message_burst",
-      "ocr_copy_format_noise",
-      "typo_spacing_punctuation"
+      "missing_decisive_detail"
     ]
   },
   "realizations": [
@@ -65,18 +65,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
+        "hedged_exploratory_request",
         "message_burst",
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "한 번에 파일 이름 바꾸기 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 대상 폴더는 합성 프로젝트 아카이브이고 이름은 YYYY-MM-DD_topic 형식이며 날짜가 없는 파일은 보류해야 한다고, 원하는 건 드라이런 매핑과 안전한 실행 점검 리스트야. 답을 바꿀 빠진 정보는 따로 알려줘."
+          "content": "다음 수를 정할 건 한 번에 파일 이름 바꾸기. 초안부터 보자. 근거 메모는 이거야: 대상 폴더는 합성 프로젝트 아카이브이고 이름은 YYYY-MM-DD_topic 형식이며 날짜가 없는 파일은 보류해야 한다. 드라이런 매핑과 안전한 실행 점검 목록 형태를 제안해도 되는지 먼저 확인해줘."
         },
         {
           "role": "user",
-          "content": "없는 입력은 맥락으로 채우지 말고 그대로 보이게 해줘."
+          "content": "빠진 내용을 표시하고 조용히 추론하지 말아줘."
         }
       ]
     },
@@ -100,18 +100,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
+        "hedged_exploratory_request",
         "message_burst",
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Before we go too far on a one-time file-renaming batch, can you sketch a first pass? My evidence is The target folder is the synthetic project archive, names should use YYYY-MM-DD_topic, and files with missing dates must be held.; I need a dry-run mapping and a safe execution checklist. Call out anything that would change the answer."
+          "content": "I’m sorting out next steps for a one-time file-renaming batch. Before going further, evidence: the target folder is the synthetic project archive, names should use YYYY-MM-DD_topic, and files with missing dates must be held. Tentative first pass: a dry-run mapping and a safe execution checklist; for a one-time file-renaming batch, flag answer-changing gaps."
         },
         {
           "role": "user",
-          "content": "Please leave unknown inputs visible rather than filling them in from context."
+          "content": "Mark the missing piece that limits the answer; do not infer it silently."
         }
       ]
     }

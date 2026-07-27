@@ -40,8 +40,8 @@
     "naturalistic_features": [
       "followup_without_restatement",
       "message_burst",
-      "mid_task_change",
-      "self_correction_scope_shift"
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -66,17 +66,17 @@
       "features": [
         "followup_without_restatement",
         "message_burst",
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 계절 재고 흐름 — 메모는 수요는 몇 주 동안 변하고 공급업체 납기는 달라지며 재주문 결정은 각 점검 시 검토된다, 결과는 예측 버전 관리와 승인 상태가 있는 체크포인트 흐름. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "지금 살펴보는 주제는 계절 재고 흐름 - 스캔 텍스트: 메모 수요는 몇 주 동안 변하고 공급업체 납기는 달라지며 재주문 결정은 각 점검 시 검토된다 / 결과 예측 버전 관리와 승인 상태가 있는 체크포인트 흐름 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "추측하지 말고 다음 확인 단계를 눈에 띄게 적어줘."
         }
       ]
     },
@@ -101,17 +101,17 @@
       "features": [
         "followup_without_restatement",
         "message_burst",
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: a seasonal inventory workflow — I’ve got Demand changes over several weeks, supplier lead time varies, and a reorder decision is reviewed at each checkpoint.; can you give me a checkpointed workflow with forecast versioning and approval state? no invented details pls"
+          "content": "i’m looking at a seasonal inventory workflow - scan note: demand changes over several weeks, supplier lead time varies, and a reorder decision is reviewed at each checkpoint / need: a checkpointed workflow with forecast versioning and approval state / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "No guessing; call out the next confirmation step."
         }
       ]
     }

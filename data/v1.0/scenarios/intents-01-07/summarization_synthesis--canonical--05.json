@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.canonical.0005",
   "title": {
-    "ko": "연구 논문 — 지역별 두 버전",
-    "en": "Research paper — Two regional versions"
+    "ko": "연구 논문 지역별 두 버전",
+    "en": "Research paper Two regional versions"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지표 표와 분석 메모를 검토하는 상황에서 연구 논문을 연구 질문, 방법, 결과, 한계, 실무적 의미로 요약해줘 지역 조건을 섞지 않고 해당 지역만 답해. 입력 상황: 결과는 통계적으로 유의하지만 표본이 한 지역에 한정되고 저자도 일반화에 주의하라고 적었어. 서울용과 부산용 안내가 한 파일에 섞여 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "이 연구 논문 지역별 두 버전 건은 지표·분석 메모야. 연구 논문을 연구 질문, 방법, 결과, 한계, 실무적 의미로 요약해줘 지역 조건을 섞지 않고 해당 지역만 답해. 입력 상황: 결과는 통계적으로 유의하지만 표본이 한 지역에 한정되고 저자도 일반화에 주의하라고 적었어. 서울용과 부산용 안내가 한 파일에 섞여 있어. 연구 논문 지역별 두 버전: 원문에서 확인된 것만 적고, 빈칸은 따로 남겨줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한내용이 좀 깨졌는데, 지표·분석 메모야. 논문은 질문·방법·결과·한계·실무 의미 순서로 짧게 정리해줘;. 유의하더라도 한 지역 표본이고 저자가 일반화에 주의하라고 했다는 점은 꼭 남겨. 참고로 서울용과 부산용 안내가 한 파일에 섞여 있어. 그래서 지역 조건을 섞지 않고 해당 지역만 답해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘;."
+          "content": "이 연구 논문 지역별 두 버전 건 핵심만 먼저 봐줘, 분야는 지표·분석 메모야; 이번 대상은 연구 논문 지역별 두 버전. 논문은 질문·방법·결과·한계·실무 의미 순서로 짧게 정리해줘;. 유의하더라도 한 지역 표본이고 저자가 일반화에 주의하라고 했다는 점은 꼭 남겨. 서울과 부산 버전 중 요청받은 곳의 조건만 남겨 섞이지 않게 답해줘. 연구 논문 지역별 두 버전 기준으로 답에 쓸 수 있는 근거와 보류할 부분을 나눠줘. 연구 논문 지역별 두 버전 말이 좀 꼬였거든, 알아보기 쉽게 해줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a metrics-table and data-analysis context, summarize the paper by question, method, results, limitations, and practical meaning; answer for the requested region without mixing conditions. Input context: the result is statistically significant, but the sample is limited to one region and the authors caution against generalization. Seoul and Busan notices are mixed in one file. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "For this metrics/analysis question, use Research paper Two regional versions. Summarize the paper by question, method, results, limitations, and practical meaning; answer for the requested region without mixing conditions. Input context: The result is statistically significant, but the sample is limited to one region and the authors caution against generalization. Seoul and Busan notices are mixed in one file. Research paper Two regional versions: Keep sourced facts separate from gaps in the record."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Thepasted text is a bit messy: This is a metrics/analysis item.. Give me a short paper summary in question, method, result, limitation, and practical meaning order. Keep the one-region sample and the authors' warning about generalization. For this case, Seoul and Busan notices are mixed in one file. So answer for the requested region without mixing conditions. Use what can actually be checked; say when something is unknown."
+          "content": "Could you start with Research paper Two regional versions: Treat Research paper Two regional versions as work in metrics/analysis?! Give me a short paper summary in question, method, result, limitation, and practical meaning order. Keep the one-region sample and the authors' warning about generalization. Keep only the requested city's conditions so the Seoul and Busan versions do not bleed together. For Research paper Two regional versions, Show what can be used now and what must wait for proof. I mean, Research paper Two regional versions is roughly this—please tidy it up."
         }
       ]
     }

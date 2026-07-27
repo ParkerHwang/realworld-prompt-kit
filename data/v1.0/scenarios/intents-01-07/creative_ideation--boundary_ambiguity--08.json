@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.boundary_ambiguity.0008",
   "title": {
-    "ko": "지속가능 포장 — 초보·전문가 독자",
-    "en": "Sustainable packaging — Beginner versus specialist reader"
+    "ko": "지속가능 포장 초보 전문가 독자",
+    "en": "Sustainable packaging Beginner versus specialist reader"
   },
   "task": {
     "primary_intent": "creative_ideation",
@@ -18,8 +18,8 @@
       "creative_media"
     ],
     "user_goal": {
-      "ko": "지속가능 포장의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해",
-      "en": "Work out the applicable scope for Sustainable packaging; Propose an output that respects both audiences."
+      "ko": "지속가능 포장 초보 전문가 독자의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해",
+      "en": "For Sustainable packaging Beginner versus specialist reader, determine the applicable scope; propose an output that respects both audiences"
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "유통·온라인 주문 운영을 개선하는 상황에서 지속가능 포장의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 입력 상황: 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "지속가능 포장 초보 전문가 독자 건에서 보는 맥락은 판매·온라인 주문 건이야. 지속가능 포장 초보 전문가 독자의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 입력 상황: 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 지속가능 포장 초보 전문가 독자: 대상별 적용 여부를 나눠서 판단 못 할 곳을 확인해줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일단 초안으로, 판매·온라인 주문 건이야. 범위가 헷갈리는 지속가능 포장 건이야. 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "위 건 — 식품 포장; 200원/개 이하, 안전 표기 유지, 근거 없는 재활용 주장 금지. 초보·전문가용 경계."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a retail or e-commerce operations context, Work out the applicable scope for Sustainable packaging; Propose an output that respects both audiences.. Input context: the same facts must be explained differently to a beginner and a specialist. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Sustainable packaging Beginner versus specialist reader belongs to the retail/e-commerce context. For Sustainable packaging Beginner versus specialist reader, determine the applicable scope; propose an output that respects both audiences. Input context: The same facts must be explained differently to a beginner and a specialist. Sustainable packaging Beginner versus specialist reader: Break out eligibility by audience and flag cases you cannot decide."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "A draft is fine for now: This is a retail/e-commerce item. The scope is fuzzy for Sustainable packaging. The same facts must be explained differently to a beginner and a specialist. Propose an output that respects both audiences. If the boundary is fuzzy, ask one question before deciding."
+          "content": "That one — Food packaging; ≤200 won/unit, safety label stays, no unsupported recycling claim. Split beginner versus specialist scope."
         }
       ]
     }

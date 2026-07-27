@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "ocr_copy_format_noise",
-      "typo_spacing_punctuation"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "KPI 정의 감사 정리하려는데, 확실히 아는 건 세 팀이 active user를 서로 다르게 정의하고 대시보드에는 쿼리 버전이 없어야. 이걸 정의, 담당, 쿼리 버전, 대조 조치가 있는 감사표로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "KPI 정의 감사 — 3팀의 active user 정의 다름, 쿼리 버전 없음 — 정의·담당·쿼리·대조 조치 감사표."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out a KPI definition audit, but here’s what I actually know: Three teams use 'active user' differently and the dashboard does not show its query version. Could you turn that into an audit table with definitions, owners, query versions, and a reconciliation action, without papering over the gaps?"
+          "content": "KPI definition audit — three teams define active user differently; query version absent — audit table: definitions, owners, query versions, reconciliation."
         }
       ]
     }

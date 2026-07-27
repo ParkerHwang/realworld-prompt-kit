@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.canonical.0003",
   "title": {
-    "ko": "한국어·영어 현지화 — 월말 운영자료",
-    "en": "Korean-English localization — Month-end operations set"
+    "ko": "한국어 영어 현지화 월말 운영자료",
+    "en": "Korean English localization Month end operations set"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일반 정보와 상식을 확인하는 상황에서 제품 안내 문구를 한국어와 영어 사용자에게 자연스럽게 현지화해줘 두 표의 공통값과 주의점을 구분해. 입력 상황: 버튼 이름, 결제 단위, 날짜 표기, 고객지원 링크는 지역별로 달라질 수 있지만 정책 자체는 같아. 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "요청 대상은 한국어 영어 현지화 월말 운영자료이고, 일반 정보 조회 건이야. 제품 안내 문구를 한국어와 영어 사용자에게 자연스럽게 현지화해줘 두 표의 공통값과 주의점을 구분해. 입력 상황: 버튼 이름, 결제 단위, 날짜 표기, 고객지원 링크는 지역별로 달라질 수 있지만 정책 자체는 같아. 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 한국어 영어 현지화 월말 운영자료: 자료에 없는 말은 보태지 말고 확인할 곳을 표시해줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "일반 정보 조회 건이야. 제품 안내를 한국어랑 영어 사용자에게 자연스럽게 현지화해줘. 통화·날짜·버튼·지원 링크는 지역에 맞춰도 정책이 바뀌면 안 돼. 참고로 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 그래서 두 표의 공통값과 주의점을 구분해."
+          "content": "대상은 한국어 영어 현지화 월말 운영자료. 맥락은 일반 정보 조회 건이야. 제품 안내를 한국어랑 영어 사용자에게 자연스럽게 현지화해줘. 통화·날짜·버튼·지원 링크는 지역에 맞춰도 정책이 바뀌면 안 돼. 월말에 두 팀이 올린 표를 나란히 보고 겹치는 값과 주의 신호를 갈라줘."
         },
         {
           "role": "user",
-          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
+          "content": "한국어 영어 현지화 월말 운영자료 기준으로 원문에서 확인된 것만 적고, 빈칸은 따로 남겨줘. 한국어 영어 현지화 월말 운영자료를 빨리 말하려다 길어졌네; 핵심 뒤에 부수적인 것도 남겨줘. 요청이 겹치면 우선순위를 정하고 부수적인 항목은 표시만 해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a general-information and everyday-knowledge context, localize the product notice naturally for Korean and English users; separate common values from cautions. Input context: button labels, currency units, date formats, and support links may vary by region while the policy remains the same. two teams supplied updated tables before month-end close. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "The general-information material concerns Korean English localization Month end operations set. Localize the product notice naturally for Korean and English users; separate common values from cautions. Input context: Button labels, currency units, date formats, and support links may vary by region while the policy remains the same. Two teams supplied updated tables before month-end close. Korean English localization Month end operations set: Do not add unsupported wording; point to what needs checking."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a general-information lookup. Localize the product notice for Korean and English users. Adjust currency, date style, buttons, and support links for the locale, but keep the policy unchanged. For this case, two teams supplied updated tables before month-end close. So separate common values from cautions."
+          "content": "Treat Korean English localization Month end operations set as work in general-information. Localize the product notice for Korean and English users. Adjust currency, date style, buttons, and support links for the locale, but keep the policy unchanged. Set the two teams' month-end tables side by side and separate shared values from warning signs."
         },
         {
           "role": "user",
-          "content": "Use what can actually be checked; say when something is unknown."
+          "content": "For Korean English localization Month end operations set, Keep sourced facts separate from gaps in the record. I had one more thought about Korean English localization Month end operations set; leave it as a secondary note. Keep the different asks distinct and answer the decision needed today."
         }
       ]
     }

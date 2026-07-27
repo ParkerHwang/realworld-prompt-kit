@@ -38,10 +38,10 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "emoji_shorthand",
+      "anaphora_prior_context",
       "followup_without_restatement",
       "message_burst",
-      "speech_to_text_disfluency"
+      "resume_after_interruption"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
+        "anaphora_prior_context",
         "followup_without_restatement",
         "message_burst",
-        "speech_to_text_disfluency"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 리서치 에이전트 성공 기준 정의 얘기였어. 메모에는 에이전트는 출처를 찾아야 다만 깊이, 최신성, 인용 기준은 불명확하다라고 적혀 있어. 결정 용도 질문 하나와 임시 성공 계약 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "실무적으로 판단할 건 리서치 에이전트 성공 기준 정의. 앞서 보던 흐름을 다시 잇자. 메모 내용은 이래: 에이전트는 출처를 찾아야 하지만 깊이, 최신성, 인용 기준은 불명확하다. 원하는 결과는 결정 용도 질문 하나와 임시 성공 계약. 앞선 범위도 봐줘."
         },
         {
           "role": "user",
-          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
+          "content": "미확인 입력은 선택 전에 밝혀줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
+        "anaphora_prior_context",
         "followup_without_restatement",
         "message_burst",
-        "speech_to_text_disfluency"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up defining success for a research agent? I lost the thread a bit. The notes say The agent should find sources, but the desired depth, freshness, and citation standard are unspecified. What would one question about the decision use and a provisional success contract look like? Keep the earlier boundaries in mind."
+          "content": "I need a practical read on defining success for a research agent. Picking this up: the agent should find sources, but the desired depth, freshness, and citation standard are unspecified. One question about the decision use and a provisional success contract could look like this. For defining success for a research agent, keep old limits visible."
         },
         {
           "role": "user",
-          "content": "If one missing detail would change the call, ask for it or label your assumption."
+          "content": "Name any unknown input before choosing a path."
         }
       ]
     }

@@ -8,17 +8,28 @@ import json
 from pathlib import Path
 from typing import Any
 
-from validate import DEFAULT_MANIFEST, ROOT, load_json, scenario_paths, validate_repository
+try:
+    from .validate import DEFAULT_MANIFEST, ROOT, load_json, scenario_paths, validate_repository
+    from .v1_validation import validate_v1_repository
+except ImportError:  # pragma: no cover - direct script execution
+    from validate import DEFAULT_MANIFEST, ROOT, load_json, scenario_paths, validate_repository
+    from v1_validation import validate_v1_repository
 
 
 def flatten(document: dict[str, Any]) -> list[dict[str, Any]]:
+    sample_schema = (
+        "realworld-prompt-kit.sample/1.0.0"
+        if document.get("schema") == "realworld-prompt-kit.scenario/1.0.0"
+        else "realworld-prompt-kit.sample/0.1.0"
+    )
     rows: list[dict[str, Any]] = []
     for realization in document["realizations"]:
         rows.append(
             {
-                "schema": "realworld-prompt-kit.sample/0.1.0",
+                "schema": sample_schema,
                 "scenario_id": document["scenario_id"],
                 "scenario_revision": document["revision"],
+                "semantic_group_id": document["semantic_group_id"],
                 "prompt_id": realization["prompt_id"],
                 "locale": realization["locale"],
                 "form": realization["form"],
@@ -28,6 +39,7 @@ def flatten(document: dict[str, Any]) -> list[dict[str, Any]]:
                 "task": document["task"],
                 "coverage": document["coverage"],
                 "evaluation": document["evaluation"],
+                "provenance": document["provenance"],
             }
         )
     return rows
@@ -39,13 +51,21 @@ def main() -> int:
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
 
-    errors = validate_repository(args.manifest)
+    manifest = load_json(args.manifest)
+    v1_report = None
+    if manifest.get("schema") == "realworld-prompt-kit.manifest/1.0.0":
+        v1_report = validate_v1_repository(args.manifest)
+        errors = v1_report.errors
+    else:
+        errors = validate_repository(args.manifest)
     if errors:
         raise SystemExit("validation failed; run tools/validate.py for details")
 
-    manifest = load_json(args.manifest)
     rows: list[dict[str, Any]] = []
-    for path in scenario_paths(manifest):
+    paths = scenario_paths(manifest)
+    if v1_report is not None:
+        paths = sorted(ROOT.glob(manifest["scenario_glob"]))
+    for path in paths:
         rows.extend(flatten(load_json(path)))
 
     output = args.output

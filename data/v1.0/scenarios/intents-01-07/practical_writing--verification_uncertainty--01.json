@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.verification_uncertainty.0001",
   "title": {
-    "ko": "회의 후속 메일 — 두 출처 대조",
-    "en": "Meeting follow-up email — Two-source check"
+    "ko": "회의 후속 메일 두 출처 대조",
+    "en": "Meeting follow up email Two source check"
   },
   "task": {
     "primary_intent": "practical_writing",
@@ -16,8 +16,8 @@
     "primary_domain": "communication_meetings",
     "domain_tags": [],
     "user_goal": {
-      "ko": "회의 후속 메일 자료의 근거와 미확인 부분을 나눠줘. 무엇이 검증됐고 무엇이 더 필요한지 대조해",
-      "en": "Separate evidence and unknowns in the Meeting follow-up email material; compare what is verified and what still needs support."
+      "ko": "회의 후속 메일 두 출처 대조의 확인된 점과 빈틈을 나눠줘. 무엇이 검증됐고 무엇이 더 필요한지 대조해",
+      "en": "For Meeting follow up email Two source check, separate evidence from gaps; compare what is verified and what still needs support"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -48,7 +48,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 회의 후속 메일 자료의 근거와 미확인 부분을 나눠줘. 무엇이 검증됐고 무엇이 더 필요한지 대조해. 입력 상황: 같은 수치를 말하는 공식 문서와 내부 표가 하나씩 있어. 검증된 사실, 가정, 불확실성, 다음 확인 단계를 분리해서 제시해."
+          "content": "이번 작업의 분야는 팀 회의/커뮤니케이션 건이야, 대상은 회의 후속 메일 두 출처 대조. 회의 후속 메일 두 출처 대조의 확인된 점과 빈틈을 나눠줘. 무엇이 검증됐고 무엇이 더 필요한지 대조해. 입력 상황: 같은 수치를 말하는 공식 문서와 내부 표가 하나씩 있어. 회의 후속 메일 두 출처 대조: 주장을 원문이나 근거까지 따라가며 연결을 표시해줘."
         }
       ]
     },
@@ -64,7 +64,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 팀 회의/커뮤니케이션 건이야. 근거를 다시 봐야 하는 회의 후속 메일 건이야. 같은 수치를 말하는 공식 문서와 내부 표가 하나씩 있어. 무엇이 검증됐고 무엇이 더 필요한지 대조해. 확정·추정·아직 모르는 것·다음 체크를 따로 적어줘."
+          "content": "회의 후속 메일 두 출처 대조 부분만 먼저 처리해줘, 회의 후속 메일 두 출처 대조 건부터 볼게. 분야는 팀 회의/커뮤니케이션 건이야. 회의 후속 메일 두 출처 대조의 두 출처를 맞춰봐야 해 회의 후속 메일 두 출처 대조 건이야. 공식 문서와 내부 표의 숫자가 진짜 맞는지 대조하고 남은 틈을 적어줘. 회의 후속 메일 두 출처 대조 기준으로 이번 자료의 범위와 넓혀 말할 수 없는 한계를 함께 적어줘. 회의 후속 메일 두 출처 대조 대상 범위가 빠졌어; 여기서 확정은 말아줘. 회의 후속 메일 두 출처 대조를 단정하지 않고 가능한 방향만 먼저 볼래?"
         }
       ]
     },
@@ -77,7 +77,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, Separate evidence and unknowns in the Meeting follow-up email material; compare what is verified and what still needs support.. Input context: one official document and one internal table report the same metric. Separate verified facts, assumptions, uncertainty, and the next verification step."
+          "content": "For this team-communication question, use Meeting follow up email Two source check. For Meeting follow up email Two source check, separate evidence from gaps; compare what is verified and what still needs support. Input context: One official document and one internal table report the same metric. Meeting follow up email Two source check: Trace each claim to its source or state what evidence is still missing."
         }
       ]
     },
@@ -93,7 +93,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: This is a team-communication item. The evidence needs checking for Meeting follow-up email. One official document and one internal table report the same metric. Compare what is verified and what still needs support. Keep confirmed, guessed, unknown, and next-check items separate."
+          "content": "Only the Meeting follow up email Two source check part for now: This team-communication question is about Meeting follow up email Two source check. Two sources need checking for Meeting follow up email Two source check. Meeting follow up email Two source check. Check whether the official document and internal table truly agree, and name the remaining gap. For Meeting follow up email Two source check, State the scope of this material and the limit on broader conclusions. An exception condition is missing from Meeting follow up email Two source check. Do not settle Meeting follow up email Two source check; just explore the possible directions first."
         }
       ]
     }

@@ -38,8 +38,8 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "hedged_exploratory_request",
-      "missing_decisive_detail"
+      "mid_task_change",
+      "self_correction_scope_shift"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "hedged_exploratory_request",
-        "missing_decisive_detail"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 동의 게이트, 품질 보류, 분석 동결 체크포인트가 있는 상태 머신로 좁히자. 큰 주제는 수 주 연구 데이터 수집 흐름이고 믿을 수 있는 메모는 수집에는 동의, 입력, 품질 검토, 분석 동결 일정이 있고 늦은 입력의 상태 정의가 필요해야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "내가 막힌 지점은 수 주 연구 데이터 수집 흐름. 잠깐, 원하는 결과는 동의 게이트, 품질 보류, 분석 동결 체크포인트가 있는 상태 머신. 메모는 다음이야: 수집에는 동의, 입력, 품질 검토, 분석 동결 일정이 있고 늦은 입력의 상태 정의가 필요해. 없는 건 가정으로 적어줘."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "hedged_exploratory_request",
-        "missing_decisive_detail"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a state machine with consent gates, quality holds, and an analysis-freeze checkpoint. The broader issue is a multi-week research data-collection workflow, and the notes I can stand behind are Collection has consent, intake, quality review, and a scheduled analysis freeze; late entries need a defined state.. Mark assumptions instead of filling blanks."
+          "content": "The situation I need help with is a multi-week research data-collection workflow. Actually, focus on a state machine with consent gates, quality holds, and an analysis-freeze checkpoint. I noted this: Collection has consent, intake, quality review, and a scheduled analysis freeze; late entries need a defined state. For a multi-week research data-collection workflow, mark assumptions; gaps stay open."
         }
       ]
     }

@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.canonical.0008",
   "title": {
-    "ko": "제품 한 장 브리프 — 외부 공유 전",
-    "en": "One-page product brief — Before external sharing"
+    "ko": "제품 한 장 브리프 외부 공유 전",
+    "en": "One page product brief Before external sharing"
   },
   "task": {
     "primary_intent": "practical_writing",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 제품 아이디어를 문제, 대상 사용자, 제안, 성공 신호가 들어간 한 장 브리프로 써줘 공유 가능한 형식으로 근거를 함께 제시해. 입력 상황: 대상은 소규모 팀이고 핵심 문제는 승인 대기이며, 성공 신호는 처리 시간 감소와 재작업 감소야. 외부 공유 직전이라 원문 근거와 제한을 짧게 붙여야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "이번 작업의 분야는 프로젝트·제품 일정 쪽이야, 대상은 제품 한 장 브리프 외부 공유 전. 제품 아이디어를 문제, 대상 사용자, 제안, 성공 신호가 들어간 한 장 브리프로 써줘 공유 가능한 형식으로 근거를 함께 제시해. 입력 상황: 대상은 소규모 팀이고 핵심 문제는 승인 대기이며, 성공 신호는 처리 시간 감소와 재작업 감소야. 외부 공유 직전이라 원문 근거와 제한을 짧게 붙여야 해. 제품 한 장 브리프 외부 공유 전: 답에 쓸 수 있는 근거와 보류할 부분을 나눠줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "프로젝트·제품 일정 쪽이야. 작은 팀용 승인 대기 문제 제품 브리프를 한 장으로. 대상/문제/제안/처리시간·재작업 성공 신호를 나누고 검증됐다고 말하진 마. 참고로 외부 공유 직전이라 원문 근거와 제한을 짧게 붙여야 해. 그래서 공유 가능한 형식으로 근거를 함께 제시해."
+          "content": "상황 설명은 프로젝트·제품 일정 쪽이야. 대상은 제품 한 장 브리프 외부 공유 전. 작은 팀용 승인 대기 문제 제품 브리프를 한 장으로. 대상/문제/제안/처리시간·재작업 성공 신호를 나누고 검증됐다고 말하진 마. 외부에 내기 전 원문 근거와 한계를 짧게 붙인 공유용 결과로 만들어줘."
         },
         {
           "role": "user",
-          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
+          "content": "제품 한 장 브리프 외부 공유 전 기준으로 답에 쓸 수 있는 근거와 보류할 부분을 나눠줘. 반복 설명 대신 기존 기준을 적용한 새 결과만 보여줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a product or project schedule-and-requirements context, write a one-page product brief with problem, target user, proposal, and success signals; make the evidence visible in a shareable format. Input context: the target is small teams, the core problem is approval waiting time, and success signals are lower processing time and rework. the result is going outside the team and needs a short source note and limitation. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use the project/product context for One page product brief Before external sharing. Write a one-page product brief with problem, target user, proposal, and success signals; make the evidence visible in a shareable format. Input context: The target is small teams, the core problem is approval waiting time, and success signals are lower processing time and rework. The result is going outside the team and needs a short source note and limitation. One page product brief Before external sharing: Show what can be used now and what must wait for proof."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a project/product item. Make a one-page brief for a small-team approval-waiting problem. Separate audience, problem, proposal, and processing-time/rework signals; it is not validated yet. For this case, the result is going outside the team and needs a short source note and limitation. So make the evidence visible in a shareable format."
+          "content": "The project/product team is handling One page product brief Before external sharing. Make a one-page brief for a small-team approval-waiting problem. Separate audience, problem, proposal, and processing-time/rework signals; it is not validated yet. Before it leaves the team, make the shareable result carry a brief source note and limitation."
         },
         {
           "role": "user",
-          "content": "Use what can actually be checked; say when something is unknown."
+          "content": "For One page product brief Before external sharing, Show what can be used now and what must wait for proof. Do not repeat the old context; respond to the information newly supplied."
         }
       ]
     }

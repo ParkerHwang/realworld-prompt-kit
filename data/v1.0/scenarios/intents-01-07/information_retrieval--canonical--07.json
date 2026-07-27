@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.canonical.0007",
   "title": {
-    "ko": "재활용 배출 일정 — 소수 기록 묶음",
-    "en": "Recycling schedule — Small record set"
+    "ko": "재활용 배출 일정 소수 기록 묶음",
+    "en": "Recycling schedule Small record set"
   },
   "task": {
     "primary_intent": "information_retrieval",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "농업·식품 운영 기록과 안내를 검토하는 상황에서 우리 동네 재활용 배출 요일을 확인해줘 작은 표본에서 확인되는 내용만 말해. 입력 상황: 구청 공지와 아파트 안내문이 다르고 이번 달에 임시 휴무일이 하나 있어. 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
+          "content": "이 재활용 배출 일정 소수 기록 묶음 건은 농장·식품 운영 건이야. 우리 동네 재활용 배출 요일을 확인해줘 작은 표본에서 확인되는 내용만 말해. 입력 상황: 구청 공지와 아파트 안내문이 다르고 이번 달에 임시 휴무일이 하나 있어. 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 재활용 배출 일정 소수 기록 묶음: 근거가 있는 내용과 아직 모르는 내용을 나눠 써줘. 재활용 배출 일정 소수 기록 묶음 건은 검색 결과보다 구청 공지를 우선하되 아파트 운영 안내와 다른 날은 숨기지 마."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "농장·식품 운영 건이야. 재활용은 무슨 요일에 내놓는지 찾아줘. 구청 공지랑 아파트 안내가 다르고 이번 달 임시 휴무도 하나 있으니 둘을 섞지 말고 공식 범위를 설명해줘. 참고로 응답과 기록은 다섯 건뿐이고 한 건은 빈칸이야. 그래서 작은 표본에서 확인되는 내용만 말해."
+          "content": "분야는 농장·식품 운영 건이야; 이번 대상은 재활용 배출 일정 소수 기록 묶음. 재활용은 무슨 요일에 내놓는지 찾아줘. 구청 공지랑 아파트 안내가 다르고 이번 달 임시 휴무도 하나 있으니 둘을 섞지 말고 공식 범위를 설명해줘. 다섯 건뿐이고 한 건 비어 있으니 작은 기록이 뒷받침하는 만큼만 말해줘. 🙏"
         },
         {
           "role": "user",
-          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
+          "content": "재활용 배출 일정 소수 기록 묶음 기준으로 원문에서 확인된 것만 적고, 빈칸은 따로 남겨줘. 재활용 배출 일정 소수 기록 묶음 건은 검색 결과보다 구청 공지를 우선하되 아파트 운영 안내와 다른 날은 숨기지 마. 형식 잡음이 값 자체를 바꾸지 않도록 원문 확인 지점을 남겨줘. OCR 원문 대조도 해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an agriculture or food-operations context, find the recycling collection day for the neighborhood; state only what this small set supports. Input context: the district notice and building notice disagree, and there is one temporary holiday change this month. there are only five records and one has a blank field. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
+          "content": "Recycling schedule Small record set is handled in agriculture/food. Find the recycling collection day for the neighborhood; state only what this small set supports. Input context: The district notice and building notice disagree, and there is one temporary holiday change this month. There are only five records and one has a blank field. Recycling schedule Small record set: Use the evidence on hand and flag anything still unknown. For Recycling schedule Small record set, Prefer the district notice to a search result, but show any day that conflicts with building logistics."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is an agriculture/food item. Which day is recycling collected? The district notice and the building notice differ, and there is one temporary closure this month. Keep the official district schedule separate from the building-specific exception. For this case, there are only five records and one has a blank field. So state only what this small set supports."
+          "content": "The agriculture/food team is handling Recycling schedule Small record set. Which day is recycling collected? The district notice and the building notice differ, and there is one temporary closure this month. Keep the official district schedule separate from the building-specific exception. There are just five records and one blank, so stay within what this small set can support. 🙏"
         },
         {
           "role": "user",
-          "content": "Use what can actually be checked; say when something is unknown. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
+          "content": "For Recycling schedule Small record set, Keep sourced facts separate from gaps in the record. For Recycling schedule Small record set, Prefer the district notice to a search result, but show any day that conflicts with building logistics. Transfer only clear pieces from the photograph and hold the rest open. OCR source-check too."
         }
       ]
     }

@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "emoji_shorthand",
-      "speech_to_text_disfluency"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "경영진용 프로젝트 현황 업데이트 정리하려는데, 확실히 아는 건 출시는 목표일에 맞춰 진행 중이지만 의존 항목 하나가 늦었고 대응 담당자가 정해져 있어야. 이걸 상태, 위험, 대응, 필요한 의사결정을 담은 간결한 업데이트로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "경영진 현황 — 목표일 진행, 의존 항목 1개 지연, 대응 담당 있음 — 상태·위험·대응·결정 업데이트."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out a project status update for executives, but here’s what I actually know: The launch is on track for the target date, one dependency is late, and the mitigation has a named owner. Could you turn that into a concise update with status, risk, mitigation, and the decision needed, without papering over the gaps?"
+          "content": "Executive status — target date on track; one dependency late; mitigation owner named — concise status/risk/mitigation/decision update."
         }
       ]
     }

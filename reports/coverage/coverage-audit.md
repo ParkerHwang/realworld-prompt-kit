@@ -1,6 +1,10 @@
-# v1.0 coverage audit
+# v1.0 pre-generation coverage baseline
 
-Status: **requirements-only / unverified**. This branch contains no claim that v1.0 prompt coverage has been generated.
+Status: **dated pre-generation baseline** (2026-07-27). This audit records the
+requirements-only state of origin/main before v1 artifacts were generated; it
+is not the current release report and its zero observations must not be used to
+describe the checked-in v1 package. Current evidence is generated at
+`reports/coverage/v1-coverage.json` and `reports/coverage/v1-coverage.md`.
 
 ## Bottom line
 
@@ -57,4 +61,7 @@ These may reuse semantic scenario IDs, but they do not inherit release credit fr
 9. Pass schema, identity, hash, split, leakage, privacy, and deterministic-scoring checks.
 10. Publish only a manifest whose counts match present artifacts.
 
-Until these gates pass, the release status remains **not met**, and no generated v1 coverage should be reported.
+At the audit timestamp these gates were **not met** because origin/main held
+only v0.1. The baseline is retained for evidence separation; after generation,
+the current release status comes only from the v1 manifest, scenario files, and
+the current coverage report.

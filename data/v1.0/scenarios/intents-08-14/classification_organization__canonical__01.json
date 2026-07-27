@@ -1,0 +1,133 @@
+{
+  "schema": "realworld-prompt-kit.scenario/1.0.0",
+  "scenario_id": "rwpk.classification_organization.canonical_01.8001",
+  "revision": 1,
+  "status": "draft",
+  "semantic_group_id": "rwpg.classification_organization.canonical.01",
+  "title": {
+    "ko": "출시 회의 메모 분류: 결정 출시 검토 일정은 창구는 오후 3 — 근거 중심 정리",
+    "en": "Sort launch meeting notes: decision launch review remains window closes at — direct evidence organization"
+  },
+  "task": {
+    "primary_intent": "classification_organization",
+    "secondary_intents": [
+      "qualitative_analysis"
+    ],
+    "primary_domain": "office_admin",
+    "domain_tags": [
+      "communication_meetings"
+    ],
+    "user_goal": {
+      "ko": "각 메모를 결정, 할 일, 미해결 질문, 위험으로 분류하되 근거를 보존해줘. 2분기 검토 라운드 기록만 사용하고 기록 밖으로 일반화하지 마. 근거 중심 정리 관점에서 판단하되 원자료의 근거를 드러내줘.",
+      "en": "Classify each note as decision, action, open question, or risk, preserving the evidence. Work only from this Q2 review round record; do not generalize beyond it. Use a direct evidence organization lens while keeping the source evidence visible."
+    },
+    "expected_artifact": "A labeled list with the original note and its category. for this Q2 review round case."
+  },
+  "coverage": {
+    "block_id": "classification_organization.canonical.cb8",
+    "row": 1,
+    "facets": {
+      "context_scale": "short",
+      "goal_clarity": "explicit",
+      "output_shape": "prose",
+      "evidence_state": "complete",
+      "stakes": "low",
+      "interaction": "single",
+      "surface_noise": "light"
+    },
+    "naturalistic_features": [
+      "terse_fragment",
+      "implicit_goal_or_output"
+    ]
+  },
+  "realizations": [
+    {
+      "prompt_id": "rwpk.classification_organization.canonical_01.8001.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "각 메모를 결정, 할 일, 미해결 질문, 위험으로 분류하되 근거를 보존해줘. 2분기 검토 라운드 기록만 사용하고 기록 밖으로 일반화하지 마.\n\n출시 회의 메모 (2분기 검토 라운드):\n- 결정: 출시 검토 일정은 9월 14일로 유지\n- 할 일: 최종 디자인 화면은 8월 28일까지\n- 질문: 가격안은 아직 미결정\n- 위험: 분석 이벤트 이름이 문서화되지 않음\n- 사례 자료: 검토 창구는 오후 3시에 닫힘\n\n출시 회의 메모 (2분기 검토 라운드): 근거 범위를 지켜줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.classification_organization.canonical_01.8001.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "terse_fragment",
+        "implicit_goal_or_output"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "정렬? 닫힘 3시, 할 일은 8월28일, 위험은 문서화 안 됨, 결정은 9월14일, 질문은 가격안은 2분기 기록. 원문 수치 14과 28은 그대로 보존해줘."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.classification_organization.canonical_01.8001.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Classify each note as decision, action, open question, or risk, preserving the evidence. Work only from this Q2 review round record; do not generalize beyond it.\n\nA launch meeting note set for the Q2 review round:\n- decision: launch review remains on 14 September\n- action: design final screens due 28 August\n- question: pricing option is still open\n- risk: analytics event names are not documented\n- Case fixture: the review window closes at 3 p.m.\n\nLaunch meeting note set for the Q2 review round: keep evidence in scope."
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.classification_organization.canonical_01.8001.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "terse_fragment",
+        "implicit_goal_or_output"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Sort? Closes 3 pm, action due 28 Aug, risk is not documented, decision stays 14 Sep, question remains open Q2 round."
+        }
+      ]
+    }
+  ],
+  "evaluation": {
+    "response_mode": {
+      "canonical": "answer_directly",
+      "naturalistic": "state_assumptions_and_answer"
+    },
+    "invariants": [
+      "Assign each item once unless the evidence explicitly supports a multi-label or unresolved status."
+    ],
+    "rubric_dimensions": [
+      "category_fit",
+      "boundary_visibility",
+      "traceability",
+      "evidence_fidelity",
+      "organization",
+      "clarity"
+    ],
+    "failure_signals": [
+      "A label is applied without reference to the supplied evidence or an unresolved item is forced into a definitive category.",
+      "A supplied fact or qualifier is dropped or silently changed."
+    ]
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit contributors"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT"
+  }
+}

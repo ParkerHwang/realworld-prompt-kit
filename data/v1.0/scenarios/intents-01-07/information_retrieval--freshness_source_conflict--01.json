@@ -5,21 +5,21 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.freshness_source_conflict.0001",
   "title": {
-    "ko": "공휴일 교통 시간표 — 작년·올해 공지",
-    "en": "Holiday transit timetable — Last year's versus this year's notice"
+    "ko": "공휴일 교통 시간표 작년 올해 공지",
+    "en": "Holiday transit timetable Last year's versus this year's notice"
   },
   "task": {
     "primary_intent": "information_retrieval",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "personal_everyday",
+    "primary_domain": "travel_hospitality",
     "domain_tags": [
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "공휴일 교통 시간표에 관한 현재 근거를 대조해줘. 기준일이 가장 최근인 공식 원문을 확인해",
-      "en": "Reconcile the current evidence for Holiday transit timetable; verify the latest official source by as-of date."
+      "ko": "공휴일 교통 시간표 작년 올해 공지에 관한 현재 근거를 대조해줘. 기준일이 가장 최근인 공식 원문을 확인해",
+      "en": "For Holiday transit timetable Last year's versus this year's notice, reconcile current evidence; verify the latest official source by as-of date"
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 공휴일 교통 시간표에 관한 현재 근거를 대조해줘. 기준일이 가장 최근인 공식 원문을 확인해. 입력 상황: 작년 공지와 올해 개정 공지가 검색 결과에 함께 남아 있어. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
+          "content": "이번 작업의 분야는 여행·출장 일정이야, 대상은 공휴일 교통 시간표 작년 올해 공지. 공휴일 교통 시간표 작년 올해 공지에 관한 현재 근거를 대조해줘. 기준일이 가장 최근인 공식 원문을 확인해. 입력 상황: 작년 공지와 올해 개정 공지가 검색 결과에 함께 남아 있어. 공휴일 교통 시간표 작년 올해 공지: 정정 전후를 대조하고 지금 유효한 문장만 써줘. 공휴일 교통 시간표 작년 올해 공지 건은 운영기관 공식 시간표와 적용일을 맞춰 보고 도시·노선·정류장이 비면 먼저 물어봐."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 내 일정·생활 건이야: 자료가 엇갈린 공휴일 교통 시간표 건이야. 작년 공지와 올해 개정 공지가 검색 결과에 함께 남아 있어. 기준일이 가장 최근인 공식 원문을 확인해."
+          "content": "어, 내가 말한 공휴일 교통 시간표 작년 올해 공지는 이 부분이야, 이번 공휴일 교통 시간표 작년 올해 공지 요청은 여행·출장 일정이야: 공휴일 교통 시간표 작년 올해 공지의 옛 공지와 새 공지가 함께 보여 공휴일 교통 시간표 작년 올해 공지 건이야. 검색에 남은 두 연도 공지 중 기준일이 더 최근인 공식 문장만 확인해줘."
         },
         {
           "role": "user",
-          "content": "위 건은 새 자료인지, 어느 출처인지 나눠서 보여줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
+          "content": "위 건은 공휴일 교통 시간표 작년 올해 공지 기준으로 초안과 승인본의 시각을 비교해 적용 값을 확인해줘. 공휴일 교통 시간표 작년 올해 공지 건은 운영기관 공식 시간표와 적용일을 맞춰 보고 도시·노선·정류장이 비면 먼저 물어봐. 공휴일 교통 시간표 작년 올해 공지 대상 범위가 빠졌어; 여기서 확정은 말아줘. 이전 맥락을 다시 복사하지 말고 새로 들어온 정보에만 반응해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, Reconcile the current evidence for Holiday transit timetable; verify the latest official source by as-of date.. Input context: last year's notice remains in search results beside this year's revision. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
+          "content": "Use the travel/hospitality context for Holiday transit timetable Last year's versus this year's notice. For Holiday transit timetable Last year's versus this year's notice, reconcile current evidence; verify the latest official source by as-of date. Input context: Last year's notice remains in search results beside this year's revision. Holiday transit timetable Last year's versus this year's notice: Compare the correction against the earlier record and use the live wording. For Holiday transit timetable Last year's versus this year's notice, Match the operator's official timetable to the effective date; ask for city, route, or stop when absent."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this, This is a personal-life item: The sources disagree for Holiday transit timetable. Last year's notice remains in search results beside this year's revision. Verify the latest official source by as-of date."
+          "content": "Actually, I mean Holiday transit timetable Last year's versus this year's notice, The travel/hospitality context here concerns Holiday transit timetable Last year's versus this year's notice: An older notice and a revision both appear for Holiday transit timetable Last year's versus this year's notice. Holiday transit timetable Last year's versus this year's notice. Of the two dated notices in search, verify the official wording with the newer effective date."
         },
         {
           "role": "user",
-          "content": "For that item: Show which source and date each answer comes from. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
+          "content": "For that item: For Holiday transit timetable Last year's versus this year's notice, Compare the draft and approval timestamps before using a value. For Holiday transit timetable Last year's versus this year's notice, Match the operator's official timetable to the effective date; ask for city, route, or stop when absent. The source link for Holiday transit timetable Last year's versus this year's notice was not supplied. Apply the existing rule and show the new result without restating everything."
         }
       ]
     }

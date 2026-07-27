@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.boundary_ambiguity.0005",
   "title": {
-    "ko": "비영리 모금 행사 — 정기·일회성 항목",
-    "en": "Nonprofit fundraiser — Recurring versus one-off"
+    "ko": "비영리 모금 행사 정기 일회성 항목",
+    "en": "Nonprofit fundraiser Recurring versus one off"
   },
   "task": {
     "primary_intent": "creative_ideation",
@@ -16,8 +16,8 @@
     "primary_domain": "creative_media",
     "domain_tags": [],
     "user_goal": {
-      "ko": "비영리 모금 행사의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해",
-      "en": "Work out the applicable scope for Nonprofit fundraiser; Classify the two kinds without conflating them."
+      "ko": "비영리 모금 행사 정기 일회성 항목의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해",
+      "en": "For Nonprofit fundraiser Recurring versus one off, determine the applicable scope; classify the two kinds without conflating them"
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -48,7 +48,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "창작·미디어 프로젝트의 자료를 발전시키는 상황에서 비영리 모금 행사의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해. 입력 상황: 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "이번 작업의 분야는 콘텐츠·창작 프로젝트야, 대상은 비영리 모금 행사 정기 일회성 항목. 비영리 모금 행사 정기 일회성 항목의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해. 입력 상황: 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 비영리 모금 행사 정기 일회성 항목: 누가 언제 어디까지 해당하는지 가른 뒤 애매한 점만 물어봐."
         }
       ]
     },
@@ -64,7 +64,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한 내용이 좀 깨졌는데, 콘텐츠·창작 프로젝트야. 범위가 헷갈리는 비영리 모금 행사 건이야. 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 두 종류를 섞지 않고 분류해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 바로 보내거나 바꾸지는 말고 검토용 초안으로 줘."
+          "content": "어, 내가 말한 비영리 모금 행사 정기 일회성 항목은 이 부분이야, 먼저 비영리 모금 행사 정기 일회성 항목을 봐줘. 분류는 콘텐츠·창작 프로젝트야. 대상이 나뉘는 비영리 모금 행사 정기 일회성 항목 건이야 비영리 모금 행사 정기 일회성 항목 건이야. 반복 업무용인지 한 번만 하는 요청인지 양식의 용도를 나눠봐. 비영리 모금 행사 정기 일회성 항목 기준으로 가까운 두 기준을 섞지 말고 경계선을 하나 짚어줘. 원본을 수정하지 말고 어느 부분을 바꿀지 표시해줘. 비영리 모금 행사 정기 일회성 항목 어느 지역인지 먼저 알아야 해."
         }
       ]
     },
@@ -77,7 +77,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a creative or media-project context, Work out the applicable scope for Nonprofit fundraiser; Classify the two kinds without conflating them.. Input context: recurring work and one-off requests use the same form. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Nonprofit fundraiser Recurring versus one off belongs to the creative/media context. For Nonprofit fundraiser Recurring versus one off, determine the applicable scope; classify the two kinds without conflating them. Input context: Recurring work and one-off requests use the same form. Nonprofit fundraiser Recurring versus one off: Separate who, when, and where it applies; ask only about the fuzzy edge."
         }
       ]
     },
@@ -93,7 +93,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "The pasted text is a bit messy: This is a creative/media item. The scope is fuzzy for Nonprofit fundraiser. Recurring work and one-off requests use the same form. Classify the two kinds without conflating them. If the boundary is fuzzy, ask one question before deciding. Do not send or change anything; make it a review draft."
+          "content": "Actually, I mean Nonprofit fundraiser Recurring versus one off: Treat Nonprofit fundraiser Recurring versus one off as work in creative/media. Eligibility splits the audience for Nonprofit fundraiser Recurring versus one off. Nonprofit fundraiser Recurring versus one off. Classify the form by whether it supports recurring work or a one-off request. For Nonprofit fundraiser Recurring versus one off, Keep the two nearby rules apart and name the boundary between them. Leave the source untouched and mark the edits that would be needed. The audience scope for Nonprofit fundraiser Recurring versus one off is absent; do not settle it yet."
         }
       ]
     }

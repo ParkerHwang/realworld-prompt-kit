@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.canonical.0006",
   "title": {
-    "ko": "회의 메모 — 인수인계 자료",
-    "en": "Meeting notes — Handoff packet"
+    "ko": "회의 메모 인수인계 자료",
+    "en": "Meeting notes Handoff packet"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
@@ -48,7 +48,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 회의 메모를 참석자에게 공유할 수 있는 짧은 요약으로 바꿔줘 출처와 미확인 부분을 표시해. 입력 상황: 메모에는 말한 사람 없이 의견이 나열되고, 확정된 다음 단계와 브레인스토밍 아이디어가 섞여 있어. 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "회의 메모 인수인계 자료 건을 보고, 분야는 팀 회의/커뮤니케이션 건이야. 회의 메모를 참석자에게 공유할 수 있는 짧은 요약으로 바꿔줘 출처와 미확인 부분을 표시해. 입력 상황: 메모에는 말한 사람 없이 의견이 나열되고, 확정된 다음 단계와 브레인스토밍 아이디어가 섞여 있어. 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 회의 메모 인수인계 자료: 근거가 있는 내용과 아직 모르는 내용을 나눠 써줘."
         }
       ]
     },
@@ -64,11 +64,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의/커뮤니케이션 건이야. 회의 메모를 참석자 공유용으로 줄여줘. 누가 말했는지는 적혀 있지 않으니 이름 붙이지 말고, 확정된 다음 단계랑 아이디어를 따로 둬. 참고로 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 그래서 출처와 미확인 부분을 표시해."
+          "content": "어, 분야는 팀 회의/커뮤니케이션 건이야; 이번 대상은 회의 메모 인수인계 자료. 회의 메모를 참석자 공유용으로 줄여줘. 누가 말했는지는 적혀 있지 않으니 이름 붙이지 말고, 확정된 다음 단계랑 아이디어를 따로 둬. 담당자가 바뀌는 인수인계용이라 출처가 있는 부분과 아직 못 확인한 부분을 따로 적어줘."
         },
         {
           "role": "user",
-          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
+          "content": "회의 메모 인수인계 자료 기준으로 근거가 있는 내용과 아직 모르는 내용을 나눠 써줘. 다음 단계의 owner는 비워 두고, source 문장과 요청한 output 형식은 구분해줘. FAQ source/output 경계도 유지해줘."
         }
       ]
     },
@@ -81,7 +81,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, turn the meeting notes into a short shareable summary for attendees; mark sources and anything not yet confirmed. Input context: the notes list opinions without speakers and mix confirmed next steps with brainstorming ideas. the owner is changing and the next owner must use the result immediately. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use the team-communication context for Meeting notes Handoff packet. Turn the meeting notes into a short shareable summary for attendees; mark sources and anything not yet confirmed. Input context: The notes list opinions without speakers and mix confirmed next steps with brainstorming ideas. The owner is changing and the next owner must use the result immediately. Meeting notes Handoff packet: Use the evidence on hand and flag anything still unknown."
         }
       ]
     },
@@ -97,11 +97,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a team-communication item. Shorten the meeting notes for attendees. Speakers are not identified, so do not attach names; separate confirmed next steps from brainstorming ideas. For this case, the owner is changing and the next owner must use the result immediately. So mark sources and anything not yet confirmed."
+          "content": "Um, The team-communication team is handling Meeting notes Handoff packet. Shorten the meeting notes for attendees. Speakers are not identified, so do not attach names; separate confirmed next steps from brainstorming ideas. This is for a handoff, so label sourced points separately from items the next owner still needs to confirm."
         },
         {
           "role": "user",
-          "content": "Use what can actually be checked; say when something is unknown."
+          "content": "For Meeting notes Handoff packet, Use the evidence on hand and flag anything still unknown. Do not collapse the source material into the final output. Keep the JSON source/output labels distinct."
         }
       ]
     }

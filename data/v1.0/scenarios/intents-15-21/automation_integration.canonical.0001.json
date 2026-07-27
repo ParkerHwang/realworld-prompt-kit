@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "multi_intent_mixed_priority",
-      "rambling_stream"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "양식 접수 후 확인 자동화 정리하려는데, 확실히 아는 건 워크숍 양식은 등록부에 쓰고 체크을 보내야 하며 중복 제출은 검토해야 한다야. 이걸 중복 제거와 예외 담당이 있는 트리거-조치 업무 흐름로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "양식 확인 흐름 — 양식→등록부·확인 발송, 중복 제출 검토 — 트리거→조치 흐름 + 중복 제거 + 예외 담당."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out a form-to-acknowledgement workflow, but here’s what I actually know: One workshop form should write to a register and send a confirmation; duplicate submissions need review. Could you turn that into a trigger-to-action workflow with deduplication and an owner for exceptions, without papering over the gaps?"
+          "content": "Form acknowledgement flow — form→register + confirmation; duplicate submissions need review — trigger→action flow + dedup + exception owner."
         }
       ]
     }

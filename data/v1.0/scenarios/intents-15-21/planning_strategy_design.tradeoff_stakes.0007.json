@@ -40,8 +40,8 @@
     "naturalistic_features": [
       "followup_without_restatement",
       "message_burst",
-      "mid_task_change",
-      "self_correction_scope_shift"
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -66,17 +66,17 @@
       "features": [
         "followup_without_restatement",
         "message_burst",
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 행사 장소 선정 — 메모는 행사는 교통 접근성, 중간 수준 예산, 접근 가능한 방이 필요하며 참석자는 추정치다, 결과는 가중 기준의 후보 리스트과 참석 저조·초과 시 대안. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "같이 풀어볼 문제는 행사 장소 선정 - 오타 포함: 메모 행사는 교통 접근성, 중간 수준 예산, 접근 가능한 방이 필요하며 참석자는 추정치다 / 결과 가중 기준의 후보 목록과 참석 저조·초과 시 대안 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "행동 전에 필요한 확인을 쉽게 찾을 수 있게 해줘."
         }
       ]
     },
@@ -101,17 +101,17 @@
       "features": [
         "followup_without_restatement",
         "message_burst",
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: an event venue selection — I’ve got The event needs transit access, a moderate budget, and an accessible room; attendance is only an estimate.; can you give me a weighted shortlist with a low-attendance and over-capacity fallback? no invented details pls"
+          "content": "can we make sense of an event venue selection - typo pass: the event needs transit access, a moderate budget, and an accessible room; attendance is only an estimate / need: a weighted shortlist with a low-attendance and over-capacity fallback / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "Make the missing check easy to spot before anyone acts."
         }
       ]
     }

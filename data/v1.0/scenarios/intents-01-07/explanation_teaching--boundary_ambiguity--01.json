@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.boundary_ambiguity.0001",
   "title": {
-    "ko": "복리 설명 — 정규·특별 적용 경계",
-    "en": "Compound interest — Regular versus special scope"
+    "ko": "복리 설명 정규 특별 적용 경계",
+    "en": "Compound interest Regular versus special scope"
   },
   "task": {
     "primary_intent": "explanation_teaching",
@@ -18,8 +18,8 @@
       "education_research"
     ],
     "user_goal": {
-      "ko": "복리 설명의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해",
-      "en": "Work out the applicable scope for Compound interest; Compare exactly when the exception applies."
+      "ko": "복리 설명 정규 특별 적용 경계의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해",
+      "en": "For Compound interest Regular versus special scope, determine the applicable scope; compare exactly when the exception applies"
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 복리 설명의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해. 입력 상황: 정규 절차와 이번 한시 예외가 같은 화면에 보여. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "복리 설명 정규 특별 적용 경계 건에서 보는 맥락은 내 일정·생활 건이야. 복리 설명 정규 특별 적용 경계의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해. 입력 상황: 정규 절차와 이번 한시 예외가 같은 화면에 보여. 복리 설명 정규 특별 적용 경계: 예외가 시작되는 조건과 빠지는 조건을 따로 보여줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 내 일정·생활 건이야. 범위가 헷갈리는 복리 설명 건이야. 정규 절차와 이번 한시 예외가 같은 화면에 보여. 어느 조건에서 예외로 넘어가는지 비교해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "회의 전에 복리 설명 정규 특별 적용 경계부터 빠르게 잡아줘, 먼저 복리 설명 정규 특별 적용 경계를 봐줘. 분류는 내 일정·생활 건이야. 범위가 헷갈리는 복리 설명 정규 특별 적용 경계 건이야 복리 설명 정규 특별 적용 경계 건이야. 정규 흐름 안에 잠깐 생긴 예외가 어디서 갈라지는지 화면 기준으로 짚어줘. 복리 설명 정규 특별 적용 경계 기준으로 범위가 겹치는 곳은 임의로 고르지 말고 확인점을 세워줘. 복리 설명 정규 특별 적용 경계는 읽는 사람용 문안만 건질 수 있을까? 복리 설명 정규 특별 적용 경계 담당자 이름이 없어서 확정은 못 해."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, Work out the applicable scope for Compound interest; Compare exactly when the exception applies.. Input context: the ordinary procedure and a temporary exception appear on the same screen. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Use the personal-life context for Compound interest Regular versus special scope. For Compound interest Regular versus special scope, determine the applicable scope; compare exactly when the exception applies. Input context: The ordinary procedure and a temporary exception appear on the same screen. Compound interest Regular versus special scope: Show what triggers the exception and what remains outside it."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: This is a personal-life item. The scope is fuzzy for Compound interest. The ordinary procedure and a temporary exception appear on the same screen. Compare exactly when the exception applies. If the boundary is fuzzy, ask one question before deciding."
+          "content": "Before the meeting, check Compound interest Regular versus special scope: The personal-life team is handling Compound interest Regular versus special scope. The scope for Compound interest Regular versus special scope is fuzzy. Compound interest Regular versus special scope. Use the screen's conditions to show where the temporary exception splits from the normal flow. For Compound interest Regular versus special scope, When scopes overlap, do not pick one silently; state the check needed. A marked-up review copy of Compound interest Regular versus special scope would be enough. The source link for Compound interest Regular versus special scope was not supplied."
         }
       ]
     }

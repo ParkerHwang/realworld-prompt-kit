@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.boundary_ambiguity.0002",
   "title": {
-    "ko": "청구서 필드 — 직원·계약자 경계",
-    "en": "Invoice fields — Employee versus contractor"
+    "ko": "청구서 필드 직원 계약자 경계",
+    "en": "Invoice fields Employee versus contractor"
   },
   "task": {
     "primary_intent": "extraction_parsing",
@@ -16,8 +16,8 @@
     "primary_domain": "office_admin",
     "domain_tags": [],
     "user_goal": {
-      "ko": "청구서 필드의 적용 범위를 가려줘. 대상별로 적용 범위를 나눠",
-      "en": "Work out the applicable scope for Invoice fields; Split the applicable scope by audience."
+      "ko": "청구서 필드 직원 계약자 경계의 적용 범위를 가려줘. 대상별로 적용 범위를 나눠",
+      "en": "For Invoice fields Employee versus contractor, determine the applicable scope; split the applicable scope by audience"
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -48,7 +48,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 청구서 필드의 적용 범위를 가려줘. 대상별로 적용 범위를 나눠. 입력 상황: 직원 안내와 계약자 안내가 한 문서에 섞여 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "청구서 필드 직원 계약자 경계 건의 배경은 회사 행정 쪽이야. 청구서 필드 직원 계약자 경계의 적용 범위를 가려줘. 대상별로 적용 범위를 나눠. 입력 상황: 직원 안내와 계약자 안내가 한 문서에 섞여 있어. 청구서 필드 직원 계약자 경계: 예외가 시작되는 조건과 빠지는 조건을 따로 보여줘."
         }
       ]
     },
@@ -64,11 +64,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "회사 행정 쪽이야. 범위가 헷갈리는 청구서 필드 건이야. 직원 안내와 계약자 안내가 한 문서에 섞여 있어. 대상별로 적용 범위를 나눠."
+          "content": "먼저 청구서 필드 직원 계약자 경계를 봐줘. 분류는 회사 행정 쪽이야. 청구서 필드 직원 계약자 경계는 어느 쪽 규칙을 따르는지 애매해 청구서 필드 직원 계약자 경계 건이야. 직원용 말과 계약자용 말을 대상별로 분리해서 어느 쪽 규칙인지 보여줘."
         },
         {
           "role": "user",
-          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "청구서 필드 직원 계약자 경계 기준으로 예외가 시작되는 조건과 빠지는 조건을 따로 보여줘. 시간 괜찮을 때 청구서 필드 직원 계약자 경계 근거를 한 번 봐주면 좋겠어. 청구서 필드 직원 계약자 경계를 단정하지 않고 가능한 방향만 먼저 볼래?"
         }
       ]
     },
@@ -81,7 +81,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, Work out the applicable scope for Invoice fields; Split the applicable scope by audience.. Input context: employee and contractor guidance is combined in one document. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "The office-admin material concerns Invoice fields Employee versus contractor. For Invoice fields Employee versus contractor, determine the applicable scope; split the applicable scope by audience. Input context: Employee and contractor guidance is combined in one document. Invoice fields Employee versus contractor: Show what triggers the exception and what remains outside it."
         }
       ]
     },
@@ -97,11 +97,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is an office-admin item. The scope is fuzzy for Invoice fields. Employee and contractor guidance is combined in one document. Split the applicable scope by audience."
+          "content": "Treat Invoice fields Employee versus contractor as work in office-admin. I cannot tell which rule controls Invoice fields Employee versus contractor. Invoice fields Employee versus contractor. Sort the employee and contractor wording by audience and show which rule belongs to each."
         },
         {
           "role": "user",
-          "content": "If the boundary is fuzzy, ask one question before deciding."
+          "content": "For Invoice fields Employee versus contractor, Show what triggers the exception and what remains outside it. If it is not too much trouble, mark the gaps in Invoice fields Employee versus contractor. I am not fully sure, but could Invoice fields Employee versus contractor be read this way?"
         }
       ]
     }

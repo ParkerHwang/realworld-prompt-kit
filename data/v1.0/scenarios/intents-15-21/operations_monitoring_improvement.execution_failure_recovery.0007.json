@@ -38,10 +38,10 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "code_switching_jargon",
       "followup_without_restatement",
-      "interleaved_instruction_and_paste",
-      "message_burst"
+      "message_burst",
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
         "followup_without_restatement",
-        "interleaved_instruction_and_paste",
-        "message_burst"
+        "message_burst",
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 프로세스 회귀 복구 — 메모는 템플릿 변경 후 이전에 고친 오류가 다시 발생했고 예전 우회책은 더 이상 맞지 않을 수 있어, 결과는 회귀 비교, 억제, 재검증 안. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "조심스럽게 계획할 건 프로세스 회귀 복구 - [복사본]: 메모 템플릿 변경 후 이전에 고친 오류가 다시 발생했고 예전 우회책은 더 이상 맞지 않을 수 있어 / 결과 회귀 비교, 억제, 재검증 계획 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "근거가 얇으면 안전한 초안과 확인할 점을 같이 줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
         "followup_without_restatement",
-        "interleaved_instruction_and_paste",
-        "message_burst"
+        "message_burst",
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: recovering from a process regression — I’ve got One previously fixed error returned after a template change, and the old workaround may no longer apply.; can you give me a regression comparison, containment, and revalidation plan? no invented details pls"
+          "content": "i’m asking for a cautious plan around recovering from a process regression - [copy]: one previously fixed error returned after a template change, and the old workaround may no longer apply / need: a regression comparison, containment, and revalidation plan / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "If the evidence is thin, return a safe draft and name the check needed."
         }
       ]
     }

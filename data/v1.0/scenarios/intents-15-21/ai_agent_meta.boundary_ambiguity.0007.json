@@ -40,8 +40,8 @@
     "naturalistic_features": [
       "followup_without_restatement",
       "message_burst",
-      "mid_task_change",
-      "self_correction_scope_shift"
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -66,17 +66,17 @@
       "features": [
         "followup_without_restatement",
         "message_burst",
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 에이전트가 무엇을 기억할지 정의 — 메모는 에이전트는 프로젝트 맥락과 사용자 선호를 보지만 보존 기간, 삭제 통제, 민감도는 아직 안 정해졌어, 결과는 보존 목적 질문 하나와 최소 메모리 정책. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "불완전한 메모로 시작할 주제는 에이전트가 무엇을 기억할지 정의 - ocr 메모: 메모 에이전트는 프로젝트 맥락과 사용자 선호를 보지만 보존 기간, 삭제 통제, 민감도는 아직 안 정해졌어 / 결과 보존 목적 질문 하나와 최소 메모리 정책 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "흔들리는 입력이 있으면 아직 확인할 내용을 말해줘."
         }
       ]
     },
@@ -101,17 +101,17 @@
       "features": [
         "followup_without_restatement",
         "message_burst",
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: defining what an agent should remember — I’ve got The agent sees project context and user preferences, but retention period, deletion control, and sensitivity are not specified.; can you give me one question about retention purpose and a minimal-memory policy? no invented details pls"
+          "content": "i’m working from partial notes about defining what an agent should remember - ocr bits: the agent sees project context and user preferences, but retention period, deletion control, and sensitivity are not specified / need: one question about retention purpose and a minimal-memory policy / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "If an input is shaky, say what still needs confirmation."
         }
       ]
     }

@@ -38,10 +38,10 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
+      "anaphora_prior_context",
       "followup_without_restatement",
-      "implicit_goal_or_output",
       "message_burst",
-      "terse_fragment"
+      "resume_after_interruption"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
-        "implicit_goal_or_output",
         "message_burst",
-        "terse_fragment"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 공급업체 지연 안내 이메일 얘기였어. 메모에는 배송이 이틀 늦었고 공급업체는 새 날짜를 체크하지 않았으며 내부 팀은 내일까지 결정이 필요해라고 적혀 있어. 사실, 영향, 복구 안을 요청하는 단호하고 전문적인 이메일 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "여기서 막힌 건 공급업체 지연 안내 이메일. 이거 이어서 볼게. 메모 내용은 이래: 배송이 이틀 늦었고 공급업체는 새 날짜를 확인하지 않았으며 내부 팀은 내일까지 결정이 필요해. 원하는 결과는 사실, 영향, 복구 계획을 요청하는 단호하고 전문적인 이메일. 앞선 범위도 봐줘."
         },
         {
           "role": "user",
-          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
+          "content": "다음 결정에 정보가 빠졌다면 질문하고 가정은 표시해줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
-        "implicit_goal_or_output",
         "message_burst",
-        "terse_fragment"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up an email about a vendor delay? I lost the thread a bit. The notes say The shipment is two days late, the vendor has not confirmed a new date, and the internal team needs a decision by tomorrow. What would a firm but professional email requesting facts, impact, and a recovery plan look like? Keep the earlier boundaries in mind."
+          "content": "I want to get unstuck on an email about a vendor delay. Picking this up: the shipment is two days late, the vendor has not confirmed a new date, and the internal team needs a decision by tomorrow. A firm but professional email requesting facts, impact, and a recovery plan could look like this. For an email about a vendor delay, keep old limits visible."
         },
         {
           "role": "user",
-          "content": "If one missing detail would change the call, ask for it or label your assumption."
+          "content": "If the next decision depends on a missing detail, ask for it or label the assumption."
         }
       ]
     }

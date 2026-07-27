@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.boundary_ambiguity.0002",
   "title": {
-    "ko": "임원 상태 업데이트 — 직원·계약자 경계",
-    "en": "Executive status update — Employee versus contractor"
+    "ko": "임원 상태 업데이트 직원 계약자 경계",
+    "en": "Executive status update Employee versus contractor"
   },
   "task": {
     "primary_intent": "practical_writing",
@@ -18,8 +18,8 @@
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "임원 상태 업데이트의 적용 범위를 가려줘. 대상별로 적용 범위를 나눠",
-      "en": "Work out the applicable scope for Executive status update; Split the applicable scope by audience."
+      "ko": "임원 상태 업데이트 직원 계약자 경계의 적용 범위를 가려줘. 대상별로 적용 범위를 나눠",
+      "en": "For Executive status update Employee versus contractor, determine the applicable scope; split the applicable scope by audience"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 임원 상태 업데이트의 적용 범위를 가려줘. 대상별로 적용 범위를 나눠. 입력 상황: 직원 안내와 계약자 안내가 한 문서에 섞여 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "임원 상태 업데이트 직원 계약자 경계 건의 배경은 사업 운영 자료야. 임원 상태 업데이트 직원 계약자 경계의 적용 범위를 가려줘. 대상별로 적용 범위를 나눠. 입력 상황: 직원 안내와 계약자 안내가 한 문서에 섞여 있어. 임원 상태 업데이트 직원 계약자 경계: 본문만으로 결정하지 말고 충돌하는 범위를 질문으로 남겨줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영 자료야. 범위가 헷갈리는 임원 상태 업데이트 건이야. 직원 안내와 계약자 안내가 한 문서에 섞여 있어. 대상별로 적용 범위를 나눠."
+          "content": "상황 설명은 사업 운영 자료야. 대상은 임원 상태 업데이트 직원 계약자 경계. 임원 상태 업데이트 직원 계약자 경계는 어느 쪽 규칙을 따르는지 애매해 임원 상태 업데이트 직원 계약자 경계 건이야. 직원용 말과 계약자용 말을 대상별로 분리해서 어느 쪽 규칙인지 보여줘."
         },
         {
           "role": "user",
-          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "임원 상태 업데이트 직원 계약자 경계 기준으로 본문만으로 결정하지 말고 충돌하는 범위를 질문으로 남겨줘. 혹시 임원 상태 업데이트 직원 계약자 경계를 읽는 사람용으로 다듬어줄 수 있을까? 임원 상태 업데이트 직원 계약자 경계는 잠정적으로 이렇게 두고 다음 근거를 찾아볼까?"
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a business-operations context where options and execution conditions matter, Work out the applicable scope for Executive status update; Split the applicable scope by audience.. Input context: employee and contractor guidance is combined in one document. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "The business-operations material concerns Executive status update Employee versus contractor. For Executive status update Employee versus contractor, determine the applicable scope; split the applicable scope by audience. Input context: Employee and contractor guidance is combined in one document. Executive status update Employee versus contractor: Do not settle a conflict from the body alone; leave one scope question."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a business-operations item. The scope is fuzzy for Executive status update. Employee and contractor guidance is combined in one document. Split the applicable scope by audience."
+          "content": "For the business-operations context, use Executive status update Employee versus contractor. I cannot tell which rule controls Executive status update Employee versus contractor. Executive status update Employee versus contractor. Sort the employee and contractor wording by audience and show which rule belongs to each."
         },
         {
           "role": "user",
-          "content": "If the boundary is fuzzy, ask one question before deciding."
+          "content": "For Executive status update Employee versus contractor, Do not settle a conflict from the body alone; leave one scope question. I know you are busy; could you name the checks for Executive status update Employee versus contractor? Do not settle Executive status update Employee versus contractor; just explore the possible directions first."
         }
       ]
     }

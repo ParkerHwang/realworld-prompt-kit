@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "code_switching_jargon",
-      "interleaved_instruction_and_paste"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
-        "interleaved_instruction_and_paste"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "대상이 모호한 캘린더 업데이트 정리하려는데, 확실히 아는 건 요청에는 리뷰를 다음 주로 옮기라고 되어 있지만 리뷰가 두 개이고 시간대와 날짜가 없어야. 이걸 체크 질문 하나와 실행하지 않는 매개변수 점검 리스트로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "모호한 캘린더 이동 — 다음 주, 리뷰 2개, 시간대·정확한 날짜 없음 — 확인 질문 + 미실행 매개변수 목록."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
-        "interleaved_instruction_and_paste"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out a calendar update with an ambiguous target, but here’s what I actually know: The request I received says to move the review to next week, but there are two reviews and no timezone or exact day. Could you turn that into one clarifying question and a non-executing parameter checklist, without papering over the gaps?"
+          "content": "Ambiguous calendar move — next week; two reviews; no timezone/exact day — clarifying question + non-executing parameter checklist."
         }
       ]
     }

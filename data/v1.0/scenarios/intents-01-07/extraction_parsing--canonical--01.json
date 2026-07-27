@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.canonical.0001",
   "title": {
-    "ko": "회의 액션 아이템 — 이번 주 기준표",
-    "en": "Meeting action items — This week's baseline"
+    "ko": "회의 액션 아이템 이번 주 기준표",
+    "en": "Meeting action items This week's baseline"
   },
   "task": {
     "primary_intent": "extraction_parsing",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 회의 기록에서 결정, 할 일, 담당자, 기한을 추출해줘 현재 바로 쓸 수 있는 답 한 가지를 정리해. 입력 상황: 기록에는 결정된 항목 두 개, 담당자 없는 할 일 하나, 다음 회의에서 정할 질문 두 개가 섞여 있어. 이번 건은 이번 주 월요일에 배포된 한 장짜리 공지를 기준으로 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "회의 액션 아이템 이번 주 기준표 건에서 보는 맥락은 팀 회의/커뮤니케이션 건이야. 회의 기록에서 결정, 할 일, 담당자, 기한을 추출해줘 현재 바로 쓸 수 있는 답 한 가지를 정리해. 입력 상황: 기록에는 결정된 항목 두 개, 담당자 없는 할 일 하나, 다음 회의에서 정할 질문 두 개가 섞여 있어. 이번 건은 이번 주 월요일에 배포된 한 장짜리 공지를 기준으로 해. 회의 액션 아이템 이번 주 기준표: 지금 확인할 수 있는 사실부터 적고 추측은 구분해줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 팀 회의/커뮤니케이션 건이야. 회의 기록에서 결정/할 일/담당/기한만 뽑아 표로 줘. 담당자 없는 일이 하나 있고 다음 회의로 넘긴 질문도 있으니까 억지로 채우지 마. 참고로 이번 건은 이번 주 월요일에 배포된 한 장짜리 공지를 기준으로 해. 그래서 현재 바로 쓸 수 있는 답 한 가지를 정리해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
+          "content": "회의 액션 아이템 이번 주 기준표: 회의 기록: 결정 2, 담당자 없는 일 1, 다음 회의 질문 2. 결정·일·담당·기한 표. 초안이면 돼?"
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, extract decisions, actions, owners, and deadlines from the meeting record; give one answer that can be used now. Input context: the record mixes two decisions, one action without an owner, and two questions deferred to the next meeting. this case uses a one-page notice issued on Monday this week. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Use the team-communication context for Meeting action items This week's baseline. Extract decisions, actions, owners, and deadlines from the meeting record; give one answer that can be used now. Input context: The record mixes two decisions, one action without an owner, and two questions deferred to the next meeting. This case uses a one-page notice issued on Monday this week. Meeting action items This week's baseline: Lead with checkable facts and label every inference."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: This is a team-communication item. Pull decisions, actions, owners, and deadlines from the meeting record into a table. One action has no owner and two items are deferred questions, so leave those gaps visible. For this case, this case uses a one-page notice issued on Monday this week. So give one answer that can be used now. Use what can actually be checked; say when something is unknown."
+          "content": "Meeting action items This week's baseline: Meeting record: two decisions, one ownerless action, two deferred questions. Decisions/actions/owners/deadlines table. A usable draft?"
         }
       ]
     }

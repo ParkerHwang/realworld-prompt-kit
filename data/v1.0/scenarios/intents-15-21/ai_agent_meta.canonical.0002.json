@@ -37,10 +37,10 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
+      "anaphora_prior_context",
       "followup_without_restatement",
       "message_burst",
-      "ocr_copy_format_noise",
-      "typo_spacing_punctuation"
+      "resume_after_interruption"
     ]
   },
   "realizations": [
@@ -63,19 +63,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
         "message_burst",
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 리서치 에이전트와 작성 에이전트 사이 인계 얘기였어. 메모에는 리서치 에이전트는 출처와 불확실성을 전달하고 작성 에이전트는 미체크 주장을 사실로 바꾸면 안 된다라고 적혀 있어. 근거 상태, 열린 질문, 담당이 있는 인계 스키마 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "도움이 필요한 건 리서치 에이전트와 작성 에이전트 사이 인계. 이거 이어서 볼게. 메모 내용은 이래: 리서치 에이전트는 출처와 불확실성을 전달하고 작성 에이전트는 미확인 주장을 사실로 바꾸면 안 된다. 원하는 결과는 근거 상태, 열린 질문, 담당이 있는 인계 스키마. 앞선 범위도 봐줘."
         },
         {
           "role": "user",
-          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
+          "content": "다음 결정에 정보가 빠졌다면 질문하고 가정은 표시해줘."
         }
       ]
     },
@@ -98,19 +98,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
         "message_burst",
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up an agent handoff between research and writing? I lost the thread a bit. The notes say The research agent supplies sources and uncertainty, while the writing agent must not turn unverified claims into facts. What would a handoff schema with evidence status, open questions, and ownership look like? Keep the earlier boundaries in mind."
+          "content": "Could you help me untangle an agent handoff between research and writing. Picking this up: the research agent supplies sources and uncertainty, while the writing agent must not turn unverified claims into facts. A handoff schema with evidence status, open questions, and ownership could look like this. For an agent handoff between research and writing, keep old limits visible."
         },
         {
           "role": "user",
-          "content": "If one missing detail would change the call, ask for it or label your assumption."
+          "content": "If the next decision depends on a missing detail, ask for it or label the assumption."
         }
       ]
     }

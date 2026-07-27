@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.creativity_diversity.0002",
   "title": {
-    "ko": "팀 협업 의식 — 원격 팀 루틴",
-    "en": "Team-collaboration ritual — Remote-team routine"
+    "ko": "팀 협업 의식 원격 팀 루틴",
+    "en": "Team collaboration ritual Remote team routine"
   },
   "task": {
     "primary_intent": "creative_ideation",
@@ -18,8 +18,8 @@
       "creative_media"
     ],
     "user_goal": {
-      "ko": "팀 협업 의식를 주제로 서로 다른 아이디어를 내줘. 참여 방식이 서로 다른 안을 비교해",
-      "en": "Generate genuinely different ideas around Team-collaboration ritual; compare options with different participation modes."
+      "ko": "팀 협업 의식 원격 팀 루틴을 주제로 서로 다른 아이디어를 내줘. 참여 방식이 서로 다른 안을 비교해",
+      "en": "For Team collaboration ritual Remote team routine, generate distinct ideas; compare options with different participation modes"
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 팀 협업 의식를 주제로 서로 다른 아이디어를 내줘. 참여 방식이 서로 다른 안을 비교해. 입력 상황: 분산된 팀이 카메라 없이도 할 수 있는 20분 루틴이 필요해. 서로 다른 방향의 아이디어를 내고, 각 아이디어가 제약을 어떻게 만족하는지 짧게 설명해."
+          "content": "분류는 팀 회의/커뮤니케이션 건이야; 대상은 팀 협업 의식 원격 팀 루틴. 팀 협업 의식 원격 팀 루틴을 주제로 서로 다른 아이디어를 내줘. 참여 방식이 서로 다른 안을 비교해. 입력 상황: 분산된 팀이 카메라 없이도 할 수 있는 20분 루틴이 필요해. 팀 협업 의식 원격 팀 루틴: 경험의 축을 바꿔 닮지 않은 방향으로 펼쳐줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의/커뮤니케이션 건이야. 방향을 여러 개로 열어야 하는 팀 협업 의식 건이야. 분산된 팀이 카메라 없이도 할 수 있는 20분 루틴이 필요해. 참여 방식이 서로 다른 안을 비교해."
+          "content": "대상은 팀 협업 의식 원격 팀 루틴. 맥락은 팀 회의/커뮤니케이션 건이야. 팀 협업 의식 원격 팀 루틴은 참여 방식이 다른 안을 비교해야 해 팀 협업 의식 원격 팀 루틴 건이야. 카메라 없이 20분 할 수 있도록 참여 방식이 다른 원격 팀 루틴을 비교해줘."
         },
         {
           "role": "user",
-          "content": "서로 결이 다른 안으로 내고, 왜 괜찮은지도 한 줄씩 붙여줘."
+          "content": "팀 협업 의식 원격 팀 루틴 기준으로 자동화와 사람 판단의 조합을 서로 다르게 설계해줘. 팀 협업 의식 원격 팀 루틴 헷갈리네—어느 쪽인지 알려줘. 주요 답과 선택적인 다음 단계를 두 묶음으로 나눠줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, Generate genuinely different ideas around Team-collaboration ritual; compare options with different participation modes.. Input context: a distributed team needs a 20-minute routine that works without cameras. Offer ideas from genuinely different directions and briefly explain how each satisfies the constraints."
+          "content": "The team-communication material concerns Team collaboration ritual Remote team routine. For Team collaboration ritual Remote team routine, generate distinct ideas; compare options with different participation modes. Input context: A distributed team needs a 20-minute routine that works without cameras. Team collaboration ritual Remote team routine: Change the experience axis so the directions do not resemble one another."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a team-communication item. The directions need to stay diverse for Team-collaboration ritual. A distributed team needs a 20-minute routine that works without cameras. Compare options with different participation modes."
+          "content": "Treat Team collaboration ritual Remote team routine as work in team-communication. The Team collaboration ritual Remote team routine options should use different participation modes. Team collaboration ritual Remote team routine. Compare remote-team routines that fit 20 minutes and differ in how people participate without cameras."
         },
         {
           "role": "user",
-          "content": "Give genuinely different options and one line on why each works."
+          "content": "For Team collaboration ritual Remote team routine, Design different combinations of automation and human judgment. Team collaboration ritual Remote team routine is totally mixed up; can you split it out? Keep the different asks distinct and answer the decision needed today."
         }
       ]
     }

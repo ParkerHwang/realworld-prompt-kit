@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.audience_context_shift.0001",
   "title": {
-    "ko": "지역 행사 이름 — 고객용 안내",
-    "en": "Community-event names — Customer-facing notice"
+    "ko": "지역 행사 이름 고객용 안내",
+    "en": "Community event names Customer facing notice"
   },
   "task": {
     "primary_intent": "creative_ideation",
@@ -19,8 +19,8 @@
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "지역 행사 이름 내용을 지정 독자에게 맞춰 다시 써줘. 안심시키되 확인되지 않은 약속은 하지 마",
-      "en": "Adapt the Community-event names material for the specified reader; reassure without promising what is unconfirmed."
+      "ko": "지역 행사 이름 고객용 안내를 독자에 맞게 다시 써줘. 안심시키되 확인되지 않은 약속은 하지 마",
+      "en": "For Community event names Customer facing notice, rewrite for its reader; reassure without promising what is unconfirmed"
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -51,7 +51,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "정부·공공기관 공고의 조건과 기준일을 확인하는 상황에서 지역 행사 이름 내용을 지정 독자에게 맞춰 다시 써줘. 안심시키되 확인되지 않은 약속은 하지 마. 입력 상황: 같은 사실을 불안한 고객이 읽을 짧은 안내로 써야 해. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "검토할 항목은 지역 행사 이름 고객용 안내; 맥락은 공공기관 공고야. 지역 행사 이름 고객용 안내를 독자에 맞게 다시 써줘. 안심시키되 확인되지 않은 약속은 하지 마. 입력 상황: 같은 사실을 불안한 고객이 읽을 짧은 안내로 써야 해. 지역 행사 이름 고객용 안내: 다른 배경의 독자가 헷갈릴 전제를 밝혀줘. 안전·법률·재무 판단은 단정하지 말고 담당자에게 넘겨줘."
         }
       ]
     },
@@ -67,7 +67,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 공공기관 공고야. 읽는 사람이 달라진 지역 행사 이름 건이야. 같은 사실을 불안한 고객이 읽을 짧은 안내로 써야 해. 안심시키되 확인되지 않은 약속은 하지 마. 읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘. source랑 output은 구분해서."
+          "content": "지역 행사 이름 고객용 안내는 일단 초안 형태면 돼, 이번 지역 행사 이름 고객용 안내 요청은 공공기관 공고야. 지역 행사 이름 고객용 안내를 불안한 고객에게 알려야 해 지역 행사 이름 고객용 안내 건이야. 걱정하는 고객에게 짧고 안심되는 안내로 만들되 확인 전 약속은 빼줘. 지역 행사 이름 고객용 안내 기준으로 독자가 비교할 기준과 판단 근거를 같은 틀에 넣어줘. 전문가 검토 전에는 확정 표현을 피하고 근거를 남겨줘. 지역 행사 이름 고객용 안내 헷갈리네—어느 쪽인지 알려줘. source 쪽 사실과 output 쪽 표현을 따로 보여줘. JSON source/output 경계도 유지해줘."
         }
       ]
     },
@@ -80,7 +80,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a government or public-policy notice context where dates and eligibility matter, Adapt the Community-event names material for the specified reader; reassure without promising what is unconfirmed.. Input context: the same facts must become a short notice for an anxious customer. Adapt tone and explanation level to the specified audience and context without changing the core facts. Make the boundary for official or professional review explicit."
+          "content": "Community event names Customer facing notice belongs to the public-notice context. For Community event names Customer facing notice, rewrite for its reader; reassure without promising what is unconfirmed. Input context: The same facts must become a short notice for an anxious customer. Community event names Customer facing notice: Explain what a reader's background may leave unclear. Do not make a safety, legal, or finance determination; route it to the owner."
         }
       ]
     },
@@ -96,7 +96,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: This is a public-notice item. The reader has changed for Community-event names. The same facts must become a short notice for an anxious customer. Reassure without promising what is unconfirmed. Make it fit the reader without changing the substance. Do not make a professional determination; state what needs official review. Keep the source and output distinct."
+          "content": "A draft for Community event names Customer facing notice is fine: The public-notice team is handling Community event names Customer facing notice. An anxious customer will read this notice about Community event names Customer facing notice. Community event names Customer facing notice. Write a short reassuring notice for a worried customer, with no promise before confirmation. For Community event names Customer facing notice, Put comparison criteria and supporting reasons into one frame. Mark where an official review or professional judgment is needed. Community event names Customer facing notice is totally mixed up; can you split it out? Do not collapse the source material into the final output. Keep the JSON source/output labels distinct."
         }
       ]
     }

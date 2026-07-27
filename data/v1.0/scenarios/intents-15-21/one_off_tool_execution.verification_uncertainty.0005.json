@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 빠진 규칙을 표시한 변환표와 실행하지 않은 예약안로 좁히자. 큰 주제는 시간대 확인을 포함한 예약 배치 준비이고 믿을 수 있는 메모는 원본은 서울과 베를린 현지 시간을 쓰지만 스케줄러는 UTC를 요구하고 서머타임 처리는 없어야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "도움이 필요한 건 시간대 확인을 포함한 예약 배치 준비. 잠깐, 원하는 결과는 빠진 규칙을 표시한 변환표와 실행하지 않은 예약안. 메모는 다음이야: 원본은 서울과 베를린 현지 시간을 쓰지만 스케줄러는 UTC를 요구하고 서머타임 처리는 없어. 없는 건 가정으로 적어줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a conversion table with the missing rule flagged and no scheduled execution. The broader issue is preparing a scheduled batch with timezone checks, and the notes I can stand behind are The source lists local times from Seoul and Berlin, while the scheduler expects UTC; daylight-saving treatment still is not stated.. Mark assumptions instead of filling blanks."
+          "content": "Could you help me untangle preparing a scheduled batch with timezone checks. Actually, focus on a conversion table with the missing rule flagged and no scheduled execution. I noted this: The source lists local times from Seoul and Berlin, while the scheduler expects UTC; daylight-saving treatment still is not stated. For preparing a scheduled batch with timezone checks, mark assumptions; gaps stay open."
         }
       ]
     }

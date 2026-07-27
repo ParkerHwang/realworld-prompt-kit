@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.canonical.0004",
   "title": {
-    "ko": "영수증 항목 — 다음 분기 결정",
-    "en": "Receipt line items — Next-quarter decision"
+    "ko": "영수증 항목 다음 분기 결정",
+    "en": "Receipt line items Next quarter decision"
   },
   "task": {
     "primary_intent": "extraction_parsing",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 영수증에서 품목, 수량, 단가, 할인액을 추출해줘 결정에 필요한 핵심 근거와 보류 조건을 정리해. 입력 상황: 영수증에는 묶음 할인 한 줄과 개별 품목 세 줄이 있고, 총 할인액만 표시돼. 다음 분기 실행 여부를 오늘 정해야 하는 자료야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "영수증 항목 다음 분기 결정 건을 보고, 분야는 내 일정·생활 건이야. 영수증에서 품목, 수량, 단가, 할인액을 추출해줘 결정에 필요한 핵심 근거와 보류 조건을 정리해. 입력 상황: 영수증에는 묶음 할인 한 줄과 개별 품목 세 줄이 있고, 총 할인액만 표시돼. 다음 분기 실행 여부를 오늘 정해야 하는 자료야. 영수증 항목 다음 분기 결정: 확인된 범위까지만 정리하고 나머지는 질문으로 남겨줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 내 일정·생활 건이야. 영수증 품목별로 품목·수량·단가·할인을 뽑아줘. 묶음 할인 한 줄과 총 할인액만 있으니 품목별 할인으로 나눠 계산하지 마. 참고로 다음 분기 실행 여부를 오늘 정해야 하는 자료야. 그래서 결정에 필요한 핵심 근거와 보류 조건을 정리해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘. 참고 메모가 중간에 붙어 있어도 요청과 자료는 나눠서 봐줘. 아, 대상은 전체가 아니라 위에 적은 범위만이야."
+          "content": "영수증 항목 다음 분기 결정은 일단 초안 형태면 돼, 상황 설명은 내 일정·생활 건이야. 대상은 영수증 항목 다음 분기 결정. 영수증 품목별로 품목·수량·단가·할인을 뽑아줘. 묶음 할인 한 줄과 총 할인액만 있으니 품목별 할인으로 나눠 계산하지 마. 오늘 go-or-hold 판단에 필요한 근거와 멈춰야 할 조건을 추려줘. 영수증 항목 다음 분기 결정 기준으로 확실한 대목 위주로 답하고 빠진 점은 숨기지 마. 참고 문장이 섞여 있어도 실제 지시가 어디인지 표시해줘. <pasted-note>자료 메모</pasted-note> 사용자 작업 문장과 겹치지 않게 둬. 정정할게—전체로 확대하지 말고 마지막에 정한 범위만 따라줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, extract item, quantity, unit price, and discount from the receipt; state the key evidence and hold conditions. Input context: the receipt has one bundle-discount line and three item lines, but only the total discount is shown. the material supports a go-or-hold decision for next quarter today. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "The personal-life material concerns Receipt line items Next quarter decision. Extract item, quantity, unit price, and discount from the receipt; state the key evidence and hold conditions. Input context: The receipt has one bundle-discount line and three item lines, but only the total discount is shown. The material supports a go-or-hold decision for next quarter today. Receipt line items Next quarter decision: Stop at the supported boundary and turn the rest into a question."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is: This is a personal-life item. Read the receipt into item, quantity, unit price, and discount fields. There is a bundle-discount line and only a total discount, so do not invent an allocation by item. For this case, the material supports a go-or-hold decision for next quarter today. So state the key evidence and hold conditions. Use what can actually be checked; say when something is unknown. If notes are pasted inline, separate the request from the material. Actually, use only the scope stated above, not the broader one."
+          "content": "A draft for Receipt line items Next quarter decision is fine: The personal-life team is handling Receipt line items Next quarter decision. Read the receipt into item, quantity, unit price, and discount fields. There is a bundle-discount line and only a total discount, so do not invent an allocation by item. Pull out the evidence for today's go-or-hold call and the conditions that would stop it. For Receipt line items Next quarter decision, Answer from confirmed material; leave silent gaps visible. Label the pasted material apart from the sentence asking for an answer. <pasted-note>Copied explanation</pasted-note> Keep the quoted fragment from changing the request. The smaller scope wins here; do not expand it."
         }
       ]
     }

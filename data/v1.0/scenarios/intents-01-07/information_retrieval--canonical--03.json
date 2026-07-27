@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.canonical.0003",
   "title": {
-    "ko": "계약 갱신 통지 — 월말 운영자료",
-    "en": "Contract-renewal notice — Month-end operations set"
+    "ko": "계약 갱신 통지 월말 운영자료",
+    "en": "Contract renewal notice Month end operations set"
   },
   "task": {
     "primary_intent": "information_retrieval",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "건설·부동산 운영 자료를 검토하는 상황에서 계약 갱신 통지 기한이 며칠인지 확인해줘 두 표의 공통값과 주의점을 구분해. 입력 상황: 요약표에는 30일, 본문 조항에는 60일이라고 적혀 있고 부속합의서의 우선순위가 불명확해. 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
+          "content": "이 계약 갱신 통지 월말 운영자료 건은 건설·부동산 자료야. 계약 갱신 통지 기한이 며칠인지 확인해줘 두 표의 공통값과 주의점을 구분해. 입력 상황: 요약표에는 30일, 본문 조항에는 60일이라고 적혀 있고 부속합의서의 우선순위가 불명확해. 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 계약 갱신 통지 월말 운영자료: 답에 쓸 수 있는 근거와 보류할 부분을 나눠줘. 계약 갱신 통지 월말 운영자료 건은 서명된 계약 원문에서 통지 기산일과 기간을 대조한 뒤 지배 문서가 없으면 표시해."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "건설·부동산 자료야. 갱신 통지가 30일인지 60일인지 헷갈려. 요약표랑 본문이 달라서 부속합의서 우선인지도 확인해야 해. 근거가 없으면 어느 문서를 더 받아야 하는지 말해줘. 참고로 월말 마감 전에 두 팀이 각각 업데이트한 표가 들어와 있어. 그래서 두 표의 공통값과 주의점을 구분해."
+          "content": "상황 설명은 건설·부동산 자료야. 대상은 계약 갱신 통지 월말 운영자료. 갱신 통지가 30일인지 60일인지 헷갈려. 요약표랑 본문이 달라서 부속합의서 우선인지도 확인해야 해. 근거가 없으면 어느 문서를 더 받아야 하는지 말해줘. 월말에 두 팀이 올린 표를 나란히 보고 겹치는 값과 주의 신호를 갈라줘."
         },
         {
           "role": "user",
-          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
+          "content": "계약 갱신 통지 월말 운영자료 기준으로 확실한 대목 위주로 답하고 빠진 점은 숨기지 마. 계약 갱신 통지 월말 운영자료 건은 서명된 계약 원문에서 통지 기산일과 기간을 대조한 뒤 지배 문서가 없으면 표시해. 계약 갱신 통지 월말 운영자료는 일단 여기까지 생각했는데 또 떠오른 게 있어, 그것도 표시해줘. 여러 부탁 중 지금 답에 꼭 필요한 것과 나중에 할 일을 갈라줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a construction or real-estate operations context, find the contract-renewal notice period; separate common values from cautions. Input context: the summary says 30 days while the clause says 60, and the addendum's precedence is unclear. two teams supplied updated tables before month-end close. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
+          "content": "Place Contract renewal notice Month end operations set in the construction/real-estate lane. Find the contract-renewal notice period; separate common values from cautions. Input context: The summary says 30 days while the clause says 60, and the addendum's precedence is unclear. Two teams supplied updated tables before month-end close. Contract renewal notice Month end operations set: Show what can be used now and what must wait for proof. For Contract renewal notice Month end operations set, Compare the signed contract's notice clock and period, and flag the missing controlling document."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a construction/real-estate item. Is the renewal notice 30 or 60 days? The summary and clause disagree, so check whether the addendum controls. If that cannot be established, say which document is still needed instead of picking a number. For this case, two teams supplied updated tables before month-end close. So separate common values from cautions."
+          "content": "The construction/real-estate context here concerns Contract renewal notice Month end operations set. Is the renewal notice 30 or 60 days? The summary and clause disagree, so check whether the addendum controls. If that cannot be established, say which document is still needed instead of picking a number. Set the two teams' month-end tables side by side and separate shared values from warning signs."
         },
         {
           "role": "user",
-          "content": "Use what can actually be checked; say when something is unknown. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
+          "content": "For Contract renewal notice Month end operations set, Answer from confirmed material; leave silent gaps visible. For Contract renewal notice Month end operations set, Compare the signed contract's notice clock and period, and flag the missing controlling document. The Contract renewal notice Month end operations set request got long; I need both the answer and the next step. Separate the must-have result from requests that can wait for a second pass."
         }
       ]
     }

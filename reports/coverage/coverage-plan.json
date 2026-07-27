@@ -1,12 +1,15 @@
 {
   "schema": "realworld-prompt-kit.coverage-plan/1.0.0",
   "version": "1.0.0",
-  "audit_status": "requirements_only_unverified",
+  "audit_status": "pre_generation_baseline",
+  "observation_phase": "pre_generation",
+  "observed_at": "2026-07-27",
+  "superseded_by_current_release_report": "reports/coverage/v1-coverage.json",
   "coverage_claim_policy": "No v1 scenario or prompt coverage is claimed unless committed artifacts, manifests, and validation evidence prove it.",
   "source_basis": {
-    "catalog_path": "/Users/parker/Documents/OpenSocrates/evaluation/test-prompt-kit/catalog.json",
-    "method_catalog_path": "/Users/parker/Documents/OpenSocrates/content/catalog.yaml",
-    "source_thread_id": "019f9d99-7fd5-7230-831a-a90e902429c2",
+    "catalog_path": "data/v1.0/catalog.json",
+    "method_catalog_path": "data/v1.0/catalog.json#planned_extensions.opensocrates_method_routing",
+    "source_reference": "Pre-generation audit of origin/main at f8dc8d9ba376c64e44613ebcc0b9119a2530064f (2026-07-27); task-thread identifiers intentionally omitted from public metadata.",
     "authoritative_basis_available": true,
     "local_catalog_available": false,
     "schemas_available_locally": false,
@@ -21,9 +24,9 @@
     "core_prompt_realizations": 3520,
     "realization_pairs": [
       "ko-KR.canonical",
-      "ko-KR.naturalistic_freeform",
+      "ko-KR.naturalistic",
       "en-US.canonical",
-      "en-US.naturalistic_freeform"
+      "en-US.naturalistic"
     ],
     "translations_count_as_new_scenarios": false,
     "naturalistic_realizations_count_as_new_scenarios": false,
@@ -965,8 +968,8 @@
     }
   ],
   "opensocrates_coverage": {
-    "source_path": "/Users/parker/Documents/OpenSocrates/content/catalog.yaml",
-    "catalog_reference": "../../content/catalog.yaml",
+    "source_path": "data/v1.0/catalog.json#planned_extensions.opensocrates_method_routing",
+    "catalog_reference": "data/v1.0/catalog.json#planned_extensions.opensocrates_method_routing",
     "top_level_keys": [
       "schema",
       "content_revision",

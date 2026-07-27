@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.input_robustness.0007",
   "title": {
-    "ko": "계약 의무 조항 — 오탈자 입력",
-    "en": "Contract obligations — Typo-heavy input"
+    "ko": "계약 의무 조항 오탈자 입력",
+    "en": "Contract obligations Typo heavy input"
   },
   "task": {
     "primary_intent": "extraction_parsing",
@@ -18,8 +18,8 @@
       "office_admin"
     ],
     "user_goal": {
-      "ko": "계약 의무 조항 작업에 필요한 내용을 깨진 입력에서 복원해줘. 확실한 값과 추정값을 나눠",
-      "en": "Recover what the Contract obligations task needs from the damaged input; separate confirmed values from guesses."
+      "ko": "계약 의무 조항 오탈자 입력에서 읽히는 부분만 복원해줘. 확실한 값과 추정값을 나눠",
+      "en": "For Contract obligations Typo heavy input, restore legible input only; separate confirmed values from guesses"
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 계약 의무 조항 작업에 필요한 내용을 깨진 입력에서 복원해줘. 확실한 값과 추정값을 나눠. 입력 상황: 고유명사와 숫자에 오탈자가 두 개 있고 원문은 하나뿐이야. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해."
+          "content": "검토할 항목은 계약 의무 조항 오탈자 입력; 맥락은 프로젝트·제품 일정 쪽이야. 계약 의무 조항 오탈자 입력에서 읽히는 부분만 복원해줘. 확실한 값과 추정값을 나눠. 입력 상황: 고유명사와 숫자에 오탈자가 두 개 있고 원문은 하나뿐이야. 계약 의무 조항 오탈자 입력: 받아쓴 말은 최종 의미만 살리고 반복과 빈칸은 따로 적어줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "프로젝트·제품 일정 쪽이야. 입력이 좀 깨진 계약 의무 조항 건이야. 고유명사와 숫자에 오탈자가 두 개 있고 원문은 하나뿐이야. 확실한 값과 추정값을 나눠."
+          "content": "대상은 계약 의무 조항 오탈자 입력. 맥락은 프로젝트·제품 일정 쪽이야. 계약 의무 조항 오탈자 입력 원문에 오탈자와 숫자 오류가 있어 계약 의무 조항 오탈자 입력 건이야. 오타 난 고유명사와 숫자를 확실한 값과 추정으로 나눠줘."
         },
         {
           "role": "user",
-          "content": "깨진 부분은 추측하지 말고 확인 필요로 남겨줘."
+          "content": "계약 의무 조항 오탈자 입력 기준으로 열이 흐트러진 표는 복원되는 범위까지만 구조화해줘. 조건 변경: 조건 변경—계약 의무 조항 오탈자 입력 전체 말고 표시한 부분만. 중단 전 대목이 비어 있으니 이어지는 사실을 지어내지 말고 표시해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a product or project schedule-and-requirements context, Recover what the Contract obligations task needs from the damaged input; separate confirmed values from guesses.. Input context: two proper names and a number contain typos while only one source exists. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation."
+          "content": "Use the project/product context for Contract obligations Typo heavy input. For Contract obligations Typo heavy input, restore legible input only; separate confirmed values from guesses. Input context: Two proper names and a number contain typos while only one source exists. Contract obligations Typo heavy input: Keep the final meaning from the dictation; list repeats and gaps separately."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a project/product item. The input is messy for Contract obligations. Two proper names and a number contain typos while only one source exists. Separate confirmed values from guesses."
+          "content": "Contract obligations Typo heavy input falls under the project/product desk. Typos and number errors affect the Contract obligations Typo heavy input source. Contract obligations Typo heavy input. Separate the typo-prone names and numbers into confirmed readings and guesses."
         },
         {
           "role": "user",
-          "content": "Do not repair broken bits by guessing; mark what needs checking."
+          "content": "For Contract obligations Typo heavy input, Restore only the columns that the scrambled table actually supports. Mid-task change: One change for Contract obligations Typo heavy input: the latest scope wins. This work resumed after a break; leave the interrupted section for verification."
         }
       ]
     }

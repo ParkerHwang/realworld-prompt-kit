@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "mid_task_change",
-      "self_correction_scope_shift"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "사무실 이전 의사결정 계획 정리하려는데, 확실히 아는 건 재무팀은 임대료 절감을, 팀은 대중교통 접근성을, 운영팀은 장비 공간을 원하며 임대 계약은 6개월 후 끝난다야. 이걸 이해관계자의 우선순위와 절대 조건을 명확히 하는 의사결정 과정로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "사무실 이전 — 재무는 임대료, 팀은 교통, 운영은 장비 공간, 계약 6개월 — 우선순위·절대 조건 결정 과정."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out an office-relocation decision plan, but here’s what I actually know: Finance wants lower rent, the team wants transit access, and operations needs room for equipment; the lease ends in six months. Could you turn that into a decision process that makes stakeholder priorities and non-negotiables explicit, without papering over the gaps?"
+          "content": "Office relocation — finance wants lower rent; team transit; ops equipment room; lease ends in 6mo — priorities/non-negotiables decision process."
         }
       ]
     }

@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 속도와 감사 가능성을 조율한 승인 자동화 얘기였어. 메모에는 재무팀은 빠른 처리를 원하고 감사 담당은 근거가 필요하며 예외가 잦아 사람 검토가 필요해라고 적혀 있어. 예외 경로와 근거 보존이 있는 두 흐름 선택지 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "조심스럽게 계획할 건 속도와 감사 가능성을 조율한 승인 자동화. 끊겼던 작업을 여기서 계속하자. 메모 내용은 이래: 재무팀은 빠른 처리를 원하고 감사 담당은 근거가 필요하며 예외가 잦아 사람 검토가 필요해. 원하는 결과는 예외 경로와 근거 보존이 있는 두 흐름 선택지. 앞선 범위도 봐줘."
         },
         {
           "role": "user",
-          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
+          "content": "다음 단계가 뻔해 보여도 빈칸을 채우지 말아줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up an approval automation balancing speed and auditability? I lost the thread a bit. The notes say Finance wants faster processing, auditors need evidence, and exceptions are common enough to need human review. What would two workflow options with an exception path and evidence retention look like? Keep the earlier boundaries in mind."
+          "content": "I’m asking for a cautious plan around an approval automation balancing speed and auditability. Picking this up: finance wants faster processing, auditors need evidence, and exceptions are common enough to need human review. Two workflow options with an exception path and evidence retention could look like this. For an approval automation balancing speed and auditability, keep old limits visible."
         },
         {
           "role": "user",
-          "content": "If one missing detail would change the call, ask for it or label your assumption."
+          "content": "Do not fill a blank just because the next step feels obvious."
         }
       ]
     }

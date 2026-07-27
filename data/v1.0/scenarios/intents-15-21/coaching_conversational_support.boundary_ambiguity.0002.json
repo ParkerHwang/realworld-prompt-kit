@@ -38,10 +38,10 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
+      "anaphora_prior_context",
       "followup_without_restatement",
-      "hedged_exploratory_request",
       "message_burst",
-      "missing_decisive_detail"
+      "resume_after_interruption"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
-        "hedged_exploratory_request",
         "message_burst",
-        "missing_decisive_detail"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 조언과 경청 중 원하는 지원 얘기였어. 메모에는 사용자는 실망스러운 업무 일을 말다만 직접 질문하지 않았다라고 적혀 있어. 경청, 정리, 선택지 중 무엇을 원하는지 묻는 짧은 질문 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "메시지로 다듬을 건 조언과 경청 중 원하는 지원. 중간에 멈춘 메모부터 볼게. 메모 내용은 이래: 사용자는 실망스러운 업무 일을 말하지만 직접 질문하지 않았다. 원하는 결과는 경청, 정리, 선택지 중 무엇을 원하는지 묻는 짧은 질문. 앞선 범위도 봐줘."
         },
         {
           "role": "user",
-          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
+          "content": "열린 질문이 결과를 바꾼다면 멈추고 드러내줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
-        "hedged_exploratory_request",
         "message_burst",
-        "missing_decisive_detail"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up a conversation where the user may want advice or listening? I lost the thread a bit. The notes say The person asking shares a disappointing work event but does not ask a direct question. What would one short question about whether they want listening, reflection, or options look like? Keep the earlier boundaries in mind."
+          "content": "I need to frame a conversation where the user may want advice or listening. Picking this up: the person asking shares a disappointing work event but does not ask a direct question. One short question about whether they want listening, reflection, or options could look like this. For a conversation where the user may want advice or listening, keep old limits visible."
         },
         {
           "role": "user",
-          "content": "If one missing detail would change the call, ask for it or label your assumption."
+          "content": "If the open question changes the outcome, pause and surface it."
         }
       ]
     }

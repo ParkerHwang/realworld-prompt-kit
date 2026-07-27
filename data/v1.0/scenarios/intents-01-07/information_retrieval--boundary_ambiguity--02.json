@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.boundary_ambiguity.0002",
   "title": {
-    "ko": "경비 규정 버전 — 직원·계약자 경계",
-    "en": "Expense-policy version — Employee versus contractor"
+    "ko": "경비 규정 버전 직원 계약자 경계",
+    "en": "Expense policy version Employee versus contractor"
   },
   "task": {
     "primary_intent": "information_retrieval",
@@ -18,8 +18,8 @@
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "경비 규정 버전의 적용 범위를 가려줘. 대상별로 적용 범위를 나눠",
-      "en": "Work out the applicable scope for Expense-policy version; Split the applicable scope by audience."
+      "ko": "경비 규정 버전 직원 계약자 경계의 적용 범위를 가려줘. 대상별로 적용 범위를 나눠",
+      "en": "For Expense policy version Employee versus contractor, determine the applicable scope; split the applicable scope by audience"
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "인사·노무 안내를 정리하되 개인별 판단은 담당자 확인이 필요한 상황에서 경비 규정 버전의 적용 범위를 가려줘. 대상별로 적용 범위를 나눠. 입력 상황: 직원 안내와 계약자 안내가 한 문서에 섞여 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "경비 규정 버전 직원 계약자 경계 건의 배경은 인사 정책 건이야. 경비 규정 버전 직원 계약자 경계의 적용 범위를 가려줘. 대상별로 적용 범위를 나눠. 입력 상황: 직원 안내와 계약자 안내가 한 문서에 섞여 있어. 경비 규정 버전 직원 계약자 경계: 가까운 두 기준을 섞지 말고 경계선을 하나 짚어줘. 경비 규정 버전 직원 계약자 경계 건은 정책 원문에서 식비 한도와 예외 조항의 적용 범위를 확인해줘. 안전·법률·재무 판단은 단정하지 말고 담당자에게 넘겨줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "인사 정책 건이야. 범위가 헷갈리는 경비 규정 버전 건이야. 직원 안내와 계약자 안내가 한 문서에 섞여 있어. 대상별로 적용 범위를 나눠."
+          "content": "경비 규정 버전 직원 계약자 경계 건은 인사 정책 건이야. 경비 규정 버전 직원 계약자 경계는 어느 쪽 규칙을 따르는지 애매해 경비 규정 버전 직원 계약자 경계 건이야. 직원용 말과 계약자용 말을 대상별로 분리해서 어느 쪽 규칙인지 보여줘."
         },
         {
           "role": "user",
-          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
+          "content": "경비 규정 버전 직원 계약자 경계 기준으로 가까운 두 기준을 섞지 말고 경계선을 하나 짚어줘. 공식 자료가 필요한 부분과 지금 정리할 부분을 나눠줘. 경비 규정 버전 직원 계약자 경계 건은 정책 원문에서 식비 한도와 예외 조항의 적용 범위를 확인해줘. 바쁘시겠지만 경비 규정 버전 직원 계약자 경계에서 확인할 점만 알려주세요. 가능한 해석 중 하나로 경비 규정 버전 직원 계약자 경계를 비교해봐도 될 것 같아."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an HR or labor-policy context where individual decisions require an HR check, Work out the applicable scope for Expense-policy version; Split the applicable scope by audience.. Input context: employee and contractor guidance is combined in one document. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date. Make the boundary for official or professional review explicit."
+          "content": "Place Expense policy version Employee versus contractor in the HR/policy lane. For Expense policy version Employee versus contractor, determine the applicable scope; split the applicable scope by audience. Input context: Employee and contractor guidance is combined in one document. Expense policy version Employee versus contractor: Keep the two nearby rules apart and name the boundary between them. For Expense policy version Employee versus contractor, Read the policy source for the meal limit and the scope of its exception clause. Do not make a safety, legal, or finance determination; route it to the owner."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is an HR/policy item. The scope is fuzzy for Expense-policy version. Employee and contractor guidance is combined in one document. Split the applicable scope by audience."
+          "content": "In the HR/policy lane, handle Expense policy version Employee versus contractor. I cannot tell which rule controls Expense policy version Employee versus contractor. Expense policy version Employee versus contractor. Sort the employee and contractor wording by audience and show which rule belongs to each."
         },
         {
           "role": "user",
-          "content": "If the boundary is fuzzy, ask one question before deciding. Do not make a professional determination; state what needs official review. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
+          "content": "For Expense policy version Employee versus contractor, Keep the two nearby rules apart and name the boundary between them. Do not make a safety, legal, or finance determination; route it to the owner. For Expense policy version Employee versus contractor, Read the policy source for the meal limit and the scope of its exception clause. When convenient, would you look over the evidence for Expense policy version Employee versus contractor? Do not settle Expense policy version Employee versus contractor; just explore the possible directions first."
         }
       ]
     }

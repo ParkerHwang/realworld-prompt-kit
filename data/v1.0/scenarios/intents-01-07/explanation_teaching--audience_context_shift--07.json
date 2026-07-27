@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.audience_context_shift.0007",
   "title": {
-    "ko": "가전 안전 안내 — 혼합 언어 수업",
-    "en": "Appliance-safety explanation — Mixed-language classroom"
+    "ko": "가전 안전 안내 혼합 언어 수업",
+    "en": "Appliance safety explanation Mixed language classroom"
   },
   "task": {
     "primary_intent": "explanation_teaching",
@@ -18,8 +18,8 @@
       "education_research"
     ],
     "user_goal": {
-      "ko": "가전 안전 안내 내용을 지정 독자에게 맞춰 다시 써줘. 표현을 단순하게 하고 문화적 전제를 설명해",
-      "en": "Adapt the Appliance-safety explanation material for the specified reader; simplify wording and explain cultural assumptions."
+      "ko": "가전 안전 안내 혼합 언어 수업을 독자에 맞게 다시 써줘. 표현을 단순하게 하고 문화적 전제를 설명해",
+      "en": "For Appliance safety explanation Mixed language classroom, rewrite for its reader; simplify wording and explain cultural assumptions"
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 가전 안전 안내 내용을 지정 독자에게 맞춰 다시 써줘. 표현을 단순하게 하고 문화적 전제를 설명해. 입력 상황: 서로 다른 언어 배경의 학생이 함께 읽을 자료야. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "가전 안전 안내 혼합 언어 수업 건의 배경은 내 일정·생활 건이야. 가전 안전 안내 혼합 언어 수업을 독자에 맞게 다시 써줘. 표현을 단순하게 하고 문화적 전제를 설명해. 입력 상황: 서로 다른 언어 배경의 학생이 함께 읽을 자료야. 가전 안전 안내 혼합 언어 수업: 처음 보는 사람도 따라가게 용어와 예외를 풀어줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "내 일정·생활 건이야. 읽는 사람이 달라진 가전 안전 안내 건이야. 서로 다른 언어 배경의 학생이 함께 읽을 자료야. 표현을 단순하게 하고 문화적 전제를 설명해."
+          "content": "어, 분야는 내 일정·생활 건이야; 이번 대상은 가전 안전 안내 혼합 언어 수업. 가전 안전 안내 혼합 언어 수업을 다른 언어 배경의 학생도 읽어야 해 가전 안전 안내 혼합 언어 수업 건이야. 언어 배경이 다른 학생들이 함께 읽을 수 있게 단순한 표현과 문화 맥락을 보태줘."
         },
         {
           "role": "user",
-          "content": "읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬."
+          "content": "가전 안전 안내 혼합 언어 수업 기준으로 공유 범위에 맞지 않는 내부 정보는 분리해줘. 가전 안전 안내 혼합 언어 수업 원문 링크가 비었어."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, Adapt the Appliance-safety explanation material for the specified reader; simplify wording and explain cultural assumptions.. Input context: students with different language backgrounds will read the material together. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "The relevant personal-life case is Appliance safety explanation Mixed language classroom. For Appliance safety explanation Mixed language classroom, rewrite for its reader; simplify wording and explain cultural assumptions. Input context: Students with different language backgrounds will read the material together. Appliance safety explanation Mixed language classroom: Unpack terms and exceptions so a first-time reader can follow."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a personal-life item. The reader has changed for Appliance-safety explanation. Students with different language backgrounds will read the material together. Simplify wording and explain cultural assumptions."
+          "content": "Um, For Appliance safety explanation Mixed language classroom, the working area is personal-life. Students with different language backgrounds will share the Appliance safety explanation Mixed language classroom lesson. Appliance safety explanation Mixed language classroom. Make the material work for students from different language backgrounds by simplifying phrasing and explaining context."
         },
         {
           "role": "user",
-          "content": "Make it fit the reader without changing the substance."
+          "content": "For Appliance safety explanation Mixed language classroom, Separate internal material that does not belong in the sharing scope. I still do not have the as-of date for Appliance safety explanation Mixed language classroom."
         }
       ]
     }

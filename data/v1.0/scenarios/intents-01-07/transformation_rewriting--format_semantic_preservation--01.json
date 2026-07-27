@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.format_semantic_preservation.0001",
   "title": {
-    "ko": "격식 메일의 친근한 버전 — 모바일 알림",
-    "en": "Friendly version of a formal email — Mobile notification"
+    "ko": "격식 메일의 친근한 버전 모바일 알림",
+    "en": "Friendly version of a formal email Mobile notification"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
@@ -18,8 +18,8 @@
       "education_research"
     ],
     "user_goal": {
-      "ko": "격식 메일의 친근한 버전 자료를 지정 형식으로 바꿔줘. 짧게 줄이되 날짜와 선택지는 살아 있게 해",
-      "en": "Convert the Friendly version of a formal email material to the requested format; shorten it while keeping dates and options."
+      "ko": "격식 메일의 친근한 버전 모바일 알림 자료를 지정 형식으로 바꿔줘. 짧게 줄이되 날짜와 선택지는 살아 있게 해",
+      "en": "For Friendly version of a formal email Mobile notification, reformat without semantic drift; shorten it while keeping dates and options"
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 격식 메일의 친근한 버전 자료를 지정 형식으로 바꿔줘. 짧게 줄이되 날짜와 선택지는 살아 있게 해. 입력 상황: 긴 안내를 모바일 알림 세 줄로 줄여야 해. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "검토할 항목은 격식 메일의 친근한 버전 모바일 알림; 맥락은 팀 회의/커뮤니케이션 건이야. 격식 메일의 친근한 버전 모바일 알림 자료를 지정 형식으로 바꿔줘. 짧게 줄이되 날짜와 선택지는 살아 있게 해. 입력 상황: 긴 안내를 모바일 알림 세 줄로 줄여야 해. 격식 메일의 친근한 버전 모바일 알림: 항목별로 나눠도 자료 밖의 결론은 만들지 마."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 팀 회의/커뮤니케이션 건이야. 모양을 바꿔야 하는 격식 메일의 친근한 버전 건이야. 긴 안내를 모바일 알림 세 줄로 줄여야 해. 짧게 줄이되 날짜와 선택지는 살아 있게 해. 모양은 바꿔도 숫자·날짜·조건은 건드리지 마."
+          "content": "격식 메일의 친근한 버전 모바일 알림: 격식 메일→모바일 3줄; 날짜·선택지 유지. 카드·미지원 빈칸 표시. 초안이면 돼?"
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, Convert the Friendly version of a formal email material to the requested format; shorten it while keeping dates and options.. Input context: a long notice must become a three-line mobile notification. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "Read Friendly version of a formal email Mobile notification against the team-communication context. For Friendly version of a formal email Mobile notification, reformat without semantic drift; shorten it while keeping dates and options. Input context: A long notice must become a three-line mobile notification. Friendly version of a formal email Mobile notification: Separate the fields without creating a conclusion beyond the material."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: This is a team-communication item. The format needs changing for Friendly version of a formal email. A long notice must become a three-line mobile notification. Shorten it while keeping dates and options. Change the shape, not the numbers, dates, or conditions."
+          "content": "Friendly version of a formal email Mobile notification: Formal email → three-line mobile alert; keep dates/options. Cards; show unsupported blanks. A usable draft?"
         }
       ]
     }

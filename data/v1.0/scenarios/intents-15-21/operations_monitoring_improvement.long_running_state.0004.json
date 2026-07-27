@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "implicit_goal_or_output",
-      "terse_fragment"
+      "multi_intent_mixed_priority",
+      "rambling_stream"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "implicit_goal_or_output",
-        "terse_fragment"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "지금 반복 고객지원 문제의 장기 모니터링 계획이랑 아직 열린 문제가 엉켜 있어. 같은 문제가 여러 릴리스에서 반복되고 우회책이 바뀌며 영구 수정 날짜는 아직 체크 안 됐어 일단 추세와 우회책을 추적하고 에스컬레이션 상태를 명시한 추적기로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 우회책을 영구 수정처럼 제시하지 않는다."
+          "content": "내가 막힌 지점은 반복 고객지원 문제의 장기 모니터링 계획. 주변 쟁점까지 같이 얽혀 있는 상태야. 열린 내용은 이거야: 같은 문제가 여러 릴리스에서 반복되고 우회책이 바뀌며 영구 수정 날짜는 아직 확인 안 됐어. 추세와 우회책을 추적하고 에스컬레이션 상태를 명시한 추적기 형태로 만들어줘. 들어가지 않은 사항은 별도 메모해줘. 우회책을 영구 수정처럼 제시하지 않는다."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "implicit_goal_or_output",
-        "terse_fragment"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a long-running monitoring plan for a chronic support issue, plus some unresolved details. The same issue recurs across releases, workarounds change, and a permanent fix has no confirmed date. Please make a trend and workaround tracker with explicit escalation state; if the second issue is out of scope, separate it. Do not present a workaround as a permanent fix."
+          "content": "The situation I need help with is a long-running monitoring plan for a chronic support issue. Other loose ends: the same issue recurs across releases, workarounds change, and a permanent fix has no confirmed date. Please make a trend and workaround tracker with explicit escalation state. Do not present a workaround as a permanent fix. Keep extra scope apart."
         }
       ]
     }

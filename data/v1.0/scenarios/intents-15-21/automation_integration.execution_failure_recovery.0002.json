@@ -38,10 +38,10 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
+      "anaphora_prior_context",
       "followup_without_restatement",
-      "hedged_exploratory_request",
       "message_burst",
-      "missing_decisive_detail"
+      "resume_after_interruption"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
-        "hedged_exploratory_request",
         "message_burst",
-        "missing_decisive_detail"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 만료된 연동 토큰 복구 얘기였어. 메모에는 권한 실패 전에 흐름이 열 개 기록을 읽었지만 체크포인트는 쓰이지 않았다라고 적혀 있어. 재인증, 제한된 재개, 읽기·쓰기 감사 안 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "의미를 보존하며 정리할 건 만료된 연동 토큰 복구. 이거 이어서 볼게. 메모 내용은 이래: 권한 실패 전에 흐름이 열 개 기록을 읽었지만 체크포인트는 쓰이지 않았다. 원하는 결과는 재인증, 제한된 재개, 읽기·쓰기 감사 계획. 앞선 범위도 봐줘."
         },
         {
           "role": "user",
-          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
+          "content": "다음 결정에 정보가 빠졌다면 질문하고 가정은 표시해줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
-        "hedged_exploratory_request",
         "message_burst",
-        "missing_decisive_detail"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up recovering from an expired integration token? I lost the thread a bit. The notes say This flow read ten records before authorization failed, and the checkpoint was not written. What would a reauthorization, bounded resume, and read-versus-write audit plan look like? Keep the earlier boundaries in mind."
+          "content": "I’d like help making sense of recovering from an expired integration token. Picking this up: this flow read ten records before authorization failed, and the checkpoint was not written. A reauthorization, bounded resume, and read-versus-write audit plan could look like this. For recovering from an expired integration token, keep old limits visible."
         },
         {
           "role": "user",
-          "content": "If one missing detail would change the call, ask for it or label your assumption."
+          "content": "If the next decision depends on a missing detail, ask for it or label the assumption."
         }
       ]
     }

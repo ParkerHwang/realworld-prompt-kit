@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "code_switching_jargon",
-      "interleaved_instruction_and_paste"
+      "multi_intent_mixed_priority",
+      "rambling_stream"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
-        "interleaved_instruction_and_paste"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "지금 반품 요청 업무 흐름이랑 아직 열린 문제가 엉켜 있어. 요청에는 파손 상품과 단순 변심 상품이 모두 언급됐지만 기간, 환불 방법, 승인 권한은 없어 일단 정책 경계 질문 하나와 분기형 업무 흐름 초안로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 자격이나 환불을 약속하지 말고 빠진 정책 정보에 따라 분기한다."
+          "content": "행동 전에 확인할 건 반품 요청 업무 흐름. 정리되지 않은 쟁점이 몇 가지 남아 있어. 열린 내용은 이거야: 요청에는 파손 상품과 단순 변심 상품이 모두 언급됐지만 기간, 환불 방법, 승인 권한은 없어. 정책 경계 질문 하나와 분기형 업무 흐름 초안 형태로 만들어줘. 범위 밖 내용은 별도로 표시해줘. 자격이나 환불을 약속하지 말고 빠진 정책 정보에 따라 분기한다."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
-        "interleaved_instruction_and_paste"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a return-request workflow, plus some unresolved details. The request I received mentions damaged and unwanted items, but the allowed time window, refund method, and approval authority are not stated. Please make a branching draft workflow and one question about the policy boundary; if the second issue is out of scope, separate it. Do not promise eligibility or a refund; branch on the missing policy facts."
+          "content": "Before I act on a return-request workflow. Other loose ends: the request I received mentions damaged and unwanted items, but the allowed time window, refund method, and approval authority are not stated. Please make a branching draft workflow and one question about the policy boundary. Do not promise eligibility or a refund; branch on the missing policy facts. Keep extra scope apart."
         }
       ]
     }

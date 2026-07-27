@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "anaphora_prior_context",
-      "resume_after_interruption"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
-        "resume_after_interruption"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "에이전트의 도구 호출 주장 검증 정리하려는데, 확실히 아는 건 에이전트는 대시보드를 체크했다고 다만 추적에는 안 메시지만 있고 도구 영수증이 없어야. 이걸 주장을 미검증으로 표시한 근거 감사로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "도구 호출 주장 — 대시보드 확인 주장, 추적은 계획만, 영수증 없음 — 미검증 표시 근거 감사."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
-        "resume_after_interruption"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out verifying an agent's tool-call claim, but here’s what I actually know: The agent says it checked the dashboard, but the trace shows only a planning message and no tool receipt. Could you turn that into an evidence audit that labels the claim unverified, without papering over the gaps?"
+          "content": "Tool-call claim — dashboard check claimed; trace shows plan only, no tool receipt — evidence audit; mark claim unverified."
         }
       ]
     }

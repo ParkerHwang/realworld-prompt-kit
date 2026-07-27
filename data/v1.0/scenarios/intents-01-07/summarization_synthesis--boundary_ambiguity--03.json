@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.boundary_ambiguity.0003",
   "title": {
-    "ko": "정책 개정 공지 — 본문·별첨 우선순위",
-    "en": "Policy revision notice — Body versus exhibit"
+    "ko": "정책 개정 공지 본문 별첨 우선순위",
+    "en": "Policy revision notice Body versus exhibit"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
@@ -18,8 +18,8 @@
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "정책 개정 공지의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘",
-      "en": "Work out the applicable scope for Policy revision notice; Show which gap prevents a conclusion."
+      "ko": "정책 개정 공지 본문 별첨 우선순위의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘",
+      "en": "For Policy revision notice Body versus exhibit, determine the applicable scope; show which gap prevents a conclusion"
     },
     "expected_artifact": "A concise synthesis that preserves decisions, evidence, and open questions."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 정책 개정 공지의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘. 입력 상황: 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "이 정책 개정 공지 본문 별첨 우선순위 건은 회사 행정 쪽이야. 정책 개정 공지 본문 별첨 우선순위의 적용 범위를 가려줘. 어느 공백이 결론을 막는지 보여줘. 입력 상황: 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 정책 개정 공지 본문 별첨 우선순위: 대상별 적용 여부를 나눠서 판단 못 할 곳을 확인해줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "회사 행정 쪽이야. 범위가 헷갈리는 정책 개정 공지 건이야. 본문, 요약표, 별첨이 서로 다른 표현을 쓰고 우선순위 문구가 없어. 어느 공백이 결론을 막는지 보여줘."
+          "content": "이 요청은 회사 행정 쪽이야. 정책 개정 공지 본문 별첨 우선순위 관련해서 봐줘. 두 기준이 겹친 정책 개정 공지 본문 별첨 우선순위 건이라 정책 개정 공지 본문 별첨 우선순위 건이야. 본문·요약·별첨이 어긋날 때 결정을 막는 빈칸 하나를 집어 질문으로 바꿔줘."
         },
         {
           "role": "user",
-          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘."
+          "content": "정책 개정 공지 본문 별첨 우선순위 기준으로 범위가 겹치는 곳은 임의로 고르지 말고 확인점을 세워줘. 빨리 읽히게 하되 빠진 조건은 따로 경고해줘. 정정할게—방금 조건을 고쳐서, 넓은 범위는 빼줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, Work out the applicable scope for Policy revision notice; Show which gap prevents a conclusion.. Input context: the body, summary table, and exhibit use different wording with no precedence rule. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Read Policy revision notice Body versus exhibit against the office-admin context. For Policy revision notice Body versus exhibit, determine the applicable scope; show which gap prevents a conclusion. Input context: The body, summary table, and exhibit use different wording with no precedence rule. Policy revision notice Body versus exhibit: Break out eligibility by audience and flag cases you cannot decide."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is an office-admin item. The scope is fuzzy for Policy revision notice. The body, summary table, and exhibit use different wording with no precedence rule. Show which gap prevents a conclusion."
+          "content": "The office-admin context here concerns Policy revision notice Body versus exhibit. Two criteria overlap around Policy revision notice Body versus exhibit. Policy revision notice Body versus exhibit. When the body, summary, and exhibit disagree, turn the one decision-blocking gap into a question."
         },
         {
           "role": "user",
-          "content": "If the boundary is fuzzy, ask one question before deciding. If brevity and completeness conflict, call that out."
+          "content": "For Policy revision notice Body versus exhibit, When scopes overlap, do not pick one silently; state the check needed. Flag any item that disappears in the interest of a short answer. Actually, use only the scope named in the title."
         }
       ]
     }

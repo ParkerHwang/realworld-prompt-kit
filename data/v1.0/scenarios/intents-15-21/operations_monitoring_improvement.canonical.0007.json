@@ -39,9 +39,9 @@
     },
     "naturalistic_features": [
       "followup_without_restatement",
-      "implicit_goal_or_output",
       "message_burst",
-      "terse_fragment"
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -65,18 +65,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
-        "implicit_goal_or_output",
         "message_burst",
-        "terse_fragment"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 캠페인 성과 검토 — 메모는 캠페인에는 도달, 클릭, 전환 지표가 있지만 두 대시보드의 기여 산정이 다르다, 결과는 정의를 대조하고 관찰 결과와 해석을 구분한 검토. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "다음 수를 정할 건 캠페인 성과 검토 - ocr 메모: 메모 캠페인에는 도달, 클릭, 전환 지표가 있지만 두 대시보드의 기여 산정이 다르다 / 결과 정의를 대조하고 관찰 결과와 해석을 구분한 검토 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "흔들리는 입력이 있으면 아직 확인할 내용을 말해줘."
         }
       ]
     },
@@ -100,18 +100,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
-        "implicit_goal_or_output",
         "message_burst",
-        "terse_fragment"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: a campaign performance review — I’ve got The campaign has reach, click, and conversion metrics, but attribution differs between two dashboards.; can you give me a review that reconciles definitions and separates observed results from interpretation? no invented details pls"
+          "content": "i’m sorting out next steps for a campaign performance review - ocr bits: the campaign has reach, click, and conversion metrics, but attribution differs between two dashboards / need: a review that reconciles definitions and separates observed results from interpretation / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "If an input is shaky, say what still needs confirmation."
         }
       ]
     }

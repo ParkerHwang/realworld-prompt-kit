@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.freshness_source_conflict.0002",
   "title": {
-    "ko": "경비 규정 버전 — 초안·승인 시각",
-    "en": "Expense-policy version — Draft versus approval time"
+    "ko": "경비 규정 버전 초안 승인 시각",
+    "en": "Expense policy version Draft versus approval time"
   },
   "task": {
     "primary_intent": "information_retrieval",
@@ -18,8 +18,8 @@
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "경비 규정 버전에 관한 현재 근거를 대조해줘. 승인 시각과 적용 값을 함께 확인해",
-      "en": "Reconcile the current evidence for Expense-policy version; verify the approval time alongside the operative value."
+      "ko": "경비 규정 버전 초안 승인 시각에 관한 현재 근거를 대조해줘. 승인 시각과 적용 값을 함께 확인해",
+      "en": "For Expense policy version Draft versus approval time, reconcile current evidence; verify the approval time alongside the operative value"
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 경비 규정 버전에 관한 현재 근거를 대조해줘. 승인 시각과 적용 값을 함께 확인해. 입력 상황: 초안은 오전에, 승인본은 오후에 올라왔고 두 파일의 숫자가 달라. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
+          "content": "경비 규정 버전 초안 승인 시각 건을 보고, 분야는 회사 행정 쪽이야. 경비 규정 버전 초안 승인 시각에 관한 현재 근거를 대조해줘. 승인 시각과 적용 값을 함께 확인해. 입력 상황: 초안은 오전에, 승인본은 오후에 올라왔고 두 파일의 숫자가 달라. 경비 규정 버전 초안 승인 시각: 공식 답변과 개인 답변의 권위를 나눠 추가 확인법도 적어줘. 경비 규정 버전 초안 승인 시각 건은 승인된 정책 원문에서 적용 분기와 식비 한도·예외를 확인하고 초안은 제외해."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "회사 행정 쪽이야. 자료가 엇갈린 경비 규정 버전 건이야. 초안은 오전에, 승인본은 오후에 올라왔고 두 파일의 숫자가 달라. 승인 시각과 적용 값을 함께 확인해."
+          "content": "대상은 경비 규정 버전 초안 승인 시각. 맥락은 회사 행정 쪽이야. 경비 규정 버전 초안 승인 시각 초안과 승인본의 시각이 달라 경비 규정 버전 초안 승인 시각 건이야. 오전 초안과 오후 승인본의 시간 및 값 차이를 함께 대조해줘."
         },
         {
           "role": "user",
-          "content": "새 자료인지, 어느 출처인지 나눠서 보여줘. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
+          "content": "경비 규정 버전 초안 승인 시각 기준으로 관할과 대상이 다른 공지를 섞지 말고 충돌을 남겨줘. 짧게 하라는 말과 빠짐없이라는 말이 충돌하면 그 긴장을 밝혀줘. 경비 규정 버전 초안 승인 시각 건은 승인된 정책 원문에서 적용 분기와 식비 한도·예외를 확인하고 초안은 제외해. 혹시 경비 규정 버전 초안 승인 시각에 이런 설명이 더 맞을 수도 있나?"
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, Reconcile the current evidence for Expense-policy version; verify the approval time alongside the operative value.. Input context: the draft was posted in the morning and the approved copy in the afternoon with different numbers. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
+          "content": "Use the office-admin context for Expense policy version Draft versus approval time. For Expense policy version Draft versus approval time, reconcile current evidence; verify the approval time alongside the operative value. Input context: The draft was posted in the morning and the approved copy in the afternoon with different numbers. Expense policy version Draft versus approval time: Distinguish an official answer from an individual reply and give a next check. For Expense policy version Draft versus approval time, Check the approved policy's effective quarter, meal cap, and exceptions; exclude the draft."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is an office-admin item. The sources disagree for Expense-policy version. The draft was posted in the morning and the approved copy in the afternoon with different numbers. Verify the approval time alongside the operative value."
+          "content": "Treat Expense policy version Draft versus approval time as work in office-admin. The draft and approved timestamps differ for Expense policy version Draft versus approval time. Expense policy version Draft versus approval time. Compare both the timestamps and values in the morning draft and afternoon approval."
         },
         {
           "role": "user",
-          "content": "Show which source and date each answer comes from. If brevity and completeness conflict, call that out. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
+          "content": "For Expense policy version Draft versus approval time, Keep notices with different jurisdictions or audiences separate and preserve conflicts. If brevity and completeness collide, show the tradeoff. For Expense policy version Draft versus approval time, Check the approved policy's effective quarter, meal cap, and exceptions; exclude the draft. Do not settle Expense policy version Draft versus approval time; just explore the possible directions first."
         }
       ]
     }

@@ -38,10 +38,10 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "emoji_shorthand",
       "followup_without_restatement",
       "message_burst",
-      "speech_to_text_disfluency"
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
         "followup_without_restatement",
         "message_burst",
-        "speech_to_text_disfluency"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 진료 예약 접근성 개선 계획 — 메모는 병원은 긴 전화 대기, 예약 부도, 제한된 저녁 진료 용량을 보고했지만 환자 단위 데이터는 없어, 결과는 측정 방법, 개인정보 한계, 임상 검토가 필요한 지점을 담은 저위험 개선 안. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "정리할 건 진료 예약 접근성 개선 계획 - [복사본]: 메모 병원은 긴 전화 대기, 예약 부도, 제한된 저녁 진료 용량을 보고했지만 환자 단위 데이터는 없어 / 결과 측정 방법, 개인정보 한계, 임상 검토가 필요한 지점을 담은 저위험 개선 계획 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "근거가 얇으면 안전한 초안과 확인할 점을 같이 줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
         "followup_without_restatement",
         "message_burst",
-        "speech_to_text_disfluency"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: a clinic appointment access improvement plan — I’ve got The clinic reports long phone wait times, no-show appointments, and limited evening capacity; patient-level data still is not available.; can you give me a low-risk improvement plan with measures, privacy limits, and an escalation point for clinical review? no invented details pls"
+          "content": "i’m trying to sort out a clinic appointment access improvement plan - [copy]: the clinic reports long phone wait times, no-show appointments, and limited evening capacity; patient-level data still is not available / need: a low-risk improvement plan with measures, privacy limits, and an escalation point for clinical review / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "If the evidence is thin, return a safe draft and name the check needed."
         }
       ]
     }

@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.summarization_synthesis.boundary_ambiguity.0006",
   "title": {
-    "ko": "회의 메모 — 성인·청소년 대상",
-    "en": "Meeting notes — Adult versus youth eligibility"
+    "ko": "회의 메모 성인 청소년 대상",
+    "en": "Meeting notes Adult versus youth eligibility"
   },
   "task": {
     "primary_intent": "summarization_synthesis",
@@ -16,8 +16,8 @@
     "primary_domain": "communication_meetings",
     "domain_tags": [],
     "user_goal": {
-      "ko": "회의 메모의 적용 범위를 가려줘. 어느 조건이 누구에게 해당하는지 비교해",
-      "en": "Work out the applicable scope for Meeting notes; Compare which condition applies to whom."
+      "ko": "회의 메모 성인 청소년 대상의 적용 범위를 가려줘. 어느 조건이 누구에게 해당하는지 비교해",
+      "en": "For Meeting notes Adult versus youth eligibility, determine the applicable scope; compare which condition applies to whom"
     },
     "expected_artifact": "A concise synthesis that preserves decisions, evidence, and open questions."
   },
@@ -48,7 +48,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 회의 메모의 적용 범위를 가려줘. 어느 조건이 누구에게 해당하는지 비교해. 입력 상황: 성인 조건과 청소년 조건이 다른 안내 두 장으로 나뉘어 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "회의 메모 성인 청소년 대상 건의 배경은 팀 회의/커뮤니케이션 건이야. 회의 메모 성인 청소년 대상의 적용 범위를 가려줘. 어느 조건이 누구에게 해당하는지 비교해. 입력 상황: 성인 조건과 청소년 조건이 다른 안내 두 장으로 나뉘어 있어. 회의 메모 성인 청소년 대상: 정규 규칙과 이번 예외를 구분해 다음 질문 하나를 제시해줘."
         }
       ]
     },
@@ -64,11 +64,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의/커뮤니케이션 건이야. 범위가 헷갈리는 회의 메모 건이야. 성인 조건과 청소년 조건이 다른 안내 두 장으로 나뉘어 있어. 어느 조건이 누구에게 해당하는지 비교해."
+          "content": "급해 — 이번 회의 메모 성인 청소년 대상 요청은 팀 회의/커뮤니케이션 건이야. 회의 메모 성인 청소년 대상에서 적용 범위가 충돌해 회의 메모 성인 청소년 대상 건이야. 성인용과 청소년용 안내를 비교해 실제 해당되는 사람을 골라줘."
         },
         {
           "role": "user",
-          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "회의 메모 성인 청소년 대상 기준으로 가까운 두 기준을 섞지 말고 경계선을 하나 짚어줘. 가능하시면 회의 메모 성인 청소년 대상 초안 검토 부탁드려요."
         }
       ]
     },
@@ -81,7 +81,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, Work out the applicable scope for Meeting notes; Compare which condition applies to whom.. Input context: adult and youth conditions are in two different notices. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "The relevant team-communication case is Meeting notes Adult versus youth eligibility. For Meeting notes Adult versus youth eligibility, determine the applicable scope; compare which condition applies to whom. Input context: Adult and youth conditions are in two different notices. Meeting notes Adult versus youth eligibility: Contrast the normal rule with this exception and ask one next question."
         }
       ]
     },
@@ -97,11 +97,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a team-communication item. The scope is fuzzy for Meeting notes. Adult and youth conditions are in two different notices. Compare which condition applies to whom."
+          "content": "Need this now — The team-communication team is handling Meeting notes Adult versus youth eligibility. The applicable boundary for Meeting notes Adult versus youth eligibility is in dispute. Meeting notes Adult versus youth eligibility. Compare the adult and youth notices and identify who each one actually covers."
         },
         {
           "role": "user",
-          "content": "If the boundary is fuzzy, ask one question before deciding."
+          "content": "For Meeting notes Adult versus youth eligibility, Keep the two nearby rules apart and name the boundary between them. Would you mind checking Meeting notes Adult versus youth eligibility first?"
         }
       ]
     }

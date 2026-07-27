@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.boundary_ambiguity.0004",
   "title": {
-    "ko": "수업 활동 — 현장·본사 기준",
-    "en": "Lesson activity — Local site versus headquarters"
+    "ko": "수업 활동 현장 본사 기준",
+    "en": "Lesson activity Local site versus headquarters"
   },
   "task": {
     "primary_intent": "creative_ideation",
@@ -18,8 +18,8 @@
       "creative_media"
     ],
     "user_goal": {
-      "ko": "수업 활동의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해",
-      "en": "Work out the applicable scope for Lesson activity; Separate what changes by jurisdiction."
+      "ko": "수업 활동 현장 본사 기준의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해",
+      "en": "For Lesson activity Local site versus headquarters, determine the applicable scope; separate what changes by jurisdiction"
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "과학·R&D 실험 자료와 연구 기록을 다루는 상황에서 수업 활동의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해. 입력 상황: 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "분류는 실험·연구 기록이야; 대상은 수업 활동 현장 본사 기준. 수업 활동 현장 본사 기준의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해. 입력 상황: 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 수업 활동 현장 본사 기준: 적용 범위를 먼저 나누고, 결론을 바꿀 빈칸은 질문으로 돌려줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 실험·연구 기록이야: 범위가 헷갈리는 수업 활동 건이야. 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 지역 관할에 따라 무엇이 달라지는지 구분해."
+          "content": "급한 수업 활동 현장 본사 기준 건이라 지금 확인이 필요해, 먼저 수업 활동 현장 본사 기준을 봐줘. 분류는 실험·연구 기록이야: 수업 활동 현장 본사 기준의 예외선부터 확인해야 해 수업 활동 현장 본사 기준 건이야. 현장 규정과 본사 기준 중 적용 지역에 따라 달라지는 부분만 나눠줘."
         },
         {
           "role": "user",
-          "content": "위 건은 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "위 건은 수업 활동 현장 본사 기준 본문만으로 결정하지 말고 충돌하는 범위를 질문으로 남겨줘. 위 수업 활동 현장 본사 기준 자료 기준으로. 반복 설명 대신 기존 기준을 적용한 새 결과만 보여줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a science or R&D experiment-and-records context, Work out the applicable scope for Lesson activity; Separate what changes by jurisdiction.. Input context: the site notice may apply differently from the headquarters baseline. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Lesson activity Local site versus headquarters belongs to the science/R&D context. For Lesson activity Local site versus headquarters, determine the applicable scope; separate what changes by jurisdiction. Input context: The site notice may apply differently from the headquarters baseline. Lesson activity Local site versus headquarters: Split the applicable scope first and turn decision-changing gaps into questions."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is, This is a science/R&D item: The scope is fuzzy for Lesson activity. The site notice may apply differently from the headquarters baseline. Separate what changes by jurisdiction."
+          "content": "I need this fairly urgently: Lesson activity Local site versus headquarters, In the science/R&D lane, handle Lesson activity Local site versus headquarters: The exception line matters for Lesson activity Local site versus headquarters. Lesson activity Local site versus headquarters. Separate only the parts that change with the site jurisdiction rather than blending them with headquarters policy."
         },
         {
           "role": "user",
-          "content": "For that item: If the boundary is fuzzy, ask one question before deciding."
+          "content": "For that item: For Lesson activity Local site versus headquarters, Do not settle a conflict from the body alone; leave one scope question. Tie Lesson activity Local site versus headquarters back to the previous version. Apply the existing rule and show the new result without restating everything."
         }
       ]
     }

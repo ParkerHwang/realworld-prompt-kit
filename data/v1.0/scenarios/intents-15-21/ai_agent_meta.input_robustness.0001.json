@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "emoji_shorthand",
-      "speech_to_text_disfluency"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "충돌하는 에이전트 정책 메모로 정책 만들기 정리하려는데, 확실히 아는 건 한 메모는 자동 초안을 허용하고 다른 메모는 모든 외부 메시지에 검토를 요구하며 버전 소유자가 불명확하다야. 이걸 권한 체크 전 보수적 정책 초안과 충돌 원장로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "에이전트 정책 충돌 — 자동 초안 허용 메모 vs 외부 메시지 전부 검토 메모; 소유자 불명 — 충돌 원장 + 권한 전 보수적 초안."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out an agent policy from contradictory notes, but here’s what I actually know: One note permits automatic drafts and another requires review for all external messages; version ownership is unclear. Could you turn that into a conflict ledger and a conservative policy draft pending authority confirmation, without papering over the gaps?"
+          "content": "Agent policy conflict — auto drafts allowed in one note; review required for all external messages in another; owner unclear — conflict ledger + conservative draft pending authority."
         }
       ]
     }

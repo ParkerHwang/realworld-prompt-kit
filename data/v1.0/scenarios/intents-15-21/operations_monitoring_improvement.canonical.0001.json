@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "hedged_exploratory_request",
-      "missing_decisive_detail"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "hedged_exploratory_request",
-        "missing_decisive_detail"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "주간 팀 가용량 대시보드 정리하려는데, 확실히 아는 건 대시보드는 역할별 예정 작업, 진행 작업, 차단 작업, 가용량을 보여줘야 한다야. 이걸 지표 정의, 데이터 원본, 검토 주기로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "팀 가용량 대시보드 — 역할별 예정·진행·차단 작업, 가용량 — 지표 정의 + 데이터 원본 + 검토 주기."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "hedged_exploratory_request",
-        "missing_decisive_detail"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out a weekly team-capacity dashboard, but here’s what I actually know: The dashboard should show planned work, active work, blocked work, and available capacity by role. Could you turn that into a metric definition, data-source list, and review cadence, without papering over the gaps?"
+          "content": "Team capacity dashboard — planned/active/blocked work + role capacity — metric definitions + data sources + review cadence."
         }
       ]
     }

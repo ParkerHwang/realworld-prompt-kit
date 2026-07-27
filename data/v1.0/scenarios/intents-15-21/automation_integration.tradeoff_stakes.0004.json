@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 데이터 흐름의 중앙·로컬 처리 선택이랑 아직 열린 문제가 엉켜 있어. 중앙 처리는 모니터링이 쉽고 로컬 처리는 제한 기록 노출을 줄이지만 데이터 분류가 완전히 매핑되지 않았다 일단 분류를 게이트로 삼는 단계적 추천로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 분류와 접근 검토 전 제한 기록을 중앙화하지 않는다."
+          "content": "실무적으로 판단할 건 데이터 흐름의 중앙·로컬 처리 선택. 결정 전까지 남겨둘 질문들이 있어. 열린 내용은 이거야: 중앙 처리는 모니터링이 쉽고 로컬 처리는 제한 기록 노출을 줄이지만 데이터 분류가 완전히 매핑되지 않았다. 분류를 게이트로 삼는 단계적 추천 형태로 만들어줘. 산출물 범위를 넘는 내용은 분리해줘. 분류와 접근 검토 전 제한 기록을 중앙화하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: choosing central or local processing for a data workflow, plus some unresolved details. Central processing simplifies monitoring, while local handling reduces exposure of restricted records; the data classification still is not fully mapped. Please make a staged recommendation that makes classification the gate; if the second issue is out of scope, separate it. Do not centralize restricted records before classification and access review."
+          "content": "I need a practical read on choosing central or local processing for a data workflow. Other loose ends: central processing simplifies monitoring, while local handling reduces exposure of restricted records; the data classification still is not fully mapped. Please make a staged recommendation that makes classification the gate. Do not centralize restricted records before classification and access review. Keep extra scope apart."
         }
       ]
     }

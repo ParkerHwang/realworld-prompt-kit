@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "정체를 드러내지 않고 두 프롬프트 평가 정리하려는데, 확실히 아는 건 두 프롬프트는 같은 작업을 겨냥다만 하나가 더 길고 평가는 정확성과 보정을 우선해야 한다야. 이걸 근거, 반론, 판정 전환 조건이 있는 블라인드 비교 기록로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "프롬프트 공정 비교 — 같은 작업, 하나 더 장황, 정확성·보정 우선 — 근거·반론·판정 전환 조건 비교 기록."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out judging two prompts without revealing their identities, but here’s what I actually know: The prompts target the same task, but one is more verbose and the evaluation should prioritize correctness and calibration. Could you turn that into a blind comparison record with evidence, counterargument, and flip condition, without papering over the gaps?"
+          "content": "Fair prompt comparison — same task; one more verbose; correctness + calibration first — blind record: evidence, counterargument, flip condition."
         }
       ]
     }

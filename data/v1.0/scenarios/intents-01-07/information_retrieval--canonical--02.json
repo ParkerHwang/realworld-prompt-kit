@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.canonical.0002",
   "title": {
-    "ko": "경비 규정 버전 — 승인본과 내부 메모",
-    "en": "Expense-policy version — Approved copy and internal note"
+    "ko": "경비 규정 버전 승인본과 내부 메모",
+    "en": "Expense policy version Approved copy and internal note"
   },
   "task": {
     "primary_intent": "information_retrieval",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "재무·세무 자료를 정리하되 전문 확인 경계를 지켜야 하는 상황에서 최신 경비 규정에서 식비 한도와 예외를 찾아줘 승인된 문서만 근거로 삼아. 입력 상황: 2026년 2분기 초안과 승인본이 함께 있고 승인본만 적용된다는 메모가 있어. 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "경비 규정 버전 승인본과 내부 메모 건의 배경은 재무·세무 쪽이야. 최신 경비 규정에서 식비 한도와 예외를 찾아줘 승인된 문서만 근거로 삼아. 입력 상황: 2026년 2분기 초안과 승인본이 함께 있고 승인본만 적용된다는 메모가 있어. 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 경비 규정 버전 승인본과 내부 메모: 지금 확인할 수 있는 사실부터 적고 추측은 구분해줘. 경비 규정 버전 승인본과 내부 메모 건은 공식 사내 정책 링크와 승인 메모를 함께 보고 최신 적용본을 골라줘. 전문가 검토 전에는 확정 표현을 피하고 근거를 남겨줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "재무·세무 쪽이야. 회사 경비 규정은 Q2 초안 말고 승인본으로 봐줘. 식비 한도랑 예외만 찾아서 적어주면 되고, 두 버전이 같이 있으니 실제 적용 문서부터 구분해. 참고로 승인 서명된 PDF와 내부 참고 메모가 함께 들어와 있어. 그래서 승인된 문서만 근거로 삼아."
+          "content": "상황 설명은 재무·세무 쪽이야. 대상은 경비 규정 버전 승인본과 내부 메모. 회사 경비 규정은 Q2 초안 말고 승인본으로 봐줘. 식비 한도랑 예외만 찾아서 적어주면 되고, 두 버전이 같이 있으니 실제 적용 문서부터 구분해. 2026년 2분기 승인 서명된 PDF만 근거로 삼고 옆 메모는 참고로만 남겨줘."
         },
         {
           "role": "user",
-          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
+          "content": "경비 규정 버전 승인본과 내부 메모 기준으로 자료에 없는 말은 보태지 말고 확인할 곳을 표시해줘. 위험을 과소평가하지 말고 확인 절차를 함께 표시해줘. 경비 규정 버전 승인본과 내부 메모 건은 공식 사내 정책 링크와 승인 메모를 함께 보고 최신 적용본을 골라줘. 앞서 보낸 경비 규정 버전 승인본과 내부 메모 표는? 경비 규정 버전 승인본과 내부 메모 대상 범위가 빠졌어; 여기서 확정은 말아줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a finance or tax context where assumptions and professional review must be explicit, find the meal limit and exceptions in the latest expense policy; use only the approved document as evidence. Input context: a Q2 2026 draft and an approved copy are both present, with a note that only the approved copy applies. an approved PDF arrives with an internal reference note. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date. Make the boundary for official or professional review explicit."
+          "content": "Use the finance/tax context for Expense policy version Approved copy and internal note. Find the meal limit and exceptions in the latest expense policy; use only the approved document as evidence. Input context: A Q2 2026 draft and an approved copy are both present, with a note that only the approved copy applies. An approved PDF arrives with an internal reference note. Expense policy version Approved copy and internal note: Lead with checkable facts and label every inference. For Expense policy version Approved copy and internal note, Check the internal policy link against the approval note and select the operative copy. Avoid definitive wording before expert review and retain the supporting basis."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a finance/tax item. For the company expense policy, use the approved Q2 copy, not the draft. I only need the meal cap and exceptions, with the operative version clearly separated from the other file. For this case, an approved PDF arrives with an internal reference note. So use only the approved document as evidence."
+          "content": "For Expense policy version Approved copy and internal note, the working area is finance/tax. For the company expense policy, use the approved Q2 copy, not the draft. I only need the meal cap and exceptions, with the operative version clearly separated from the other file. Use the approved 2026 Q2 PDF as evidence and keep the accompanying memo as background only."
         },
         {
           "role": "user",
-          "content": "Use what can actually be checked; say when something is unknown. Do not make a professional determination; state what needs official review. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
+          "content": "For Expense policy version Approved copy and internal note, Do not add unsupported wording; point to what needs checking. Keep this as information and hold back an individualized decision. For Expense policy version Approved copy and internal note, Check the internal policy link against the approval note and select the operative copy. Apply the same rule to that Expense policy version Approved copy and internal note item. The owner is missing from Expense policy version Approved copy and internal note, so it cannot be final."
         }
       ]
     }

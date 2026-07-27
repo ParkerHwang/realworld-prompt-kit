@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.boundary_ambiguity.0005",
   "title": {
-    "ko": "지원금 신청 요약 — 정기·일회성 항목",
-    "en": "Grant-application summary — Recurring versus one-off"
+    "ko": "지원금 신청 요약 정기 일회성 항목",
+    "en": "Grant application summary Recurring versus one off"
   },
   "task": {
     "primary_intent": "practical_writing",
@@ -18,8 +18,8 @@
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "지원금 신청 요약의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해",
-      "en": "Work out the applicable scope for Grant-application summary; Classify the two kinds without conflating them."
+      "ko": "지원금 신청 요약 정기 일회성 항목의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해",
+      "en": "For Grant application summary Recurring versus one off, determine the applicable scope; classify the two kinds without conflating them"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "수업·학습·연구 자료를 다루는 상황에서 지원금 신청 요약의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해. 입력 상황: 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "검토할 항목은 지원금 신청 요약 정기 일회성 항목; 맥락은 수업·연구 자료야. 지원금 신청 요약 정기 일회성 항목의 적용 범위를 가려줘. 두 종류를 섞지 않고 분류해. 입력 상황: 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 지원금 신청 요약 정기 일회성 항목: 적용 범위를 먼저 나누고, 결론을 바꿀 빈칸은 질문으로 돌려줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한 내용이 좀 깨졌는데, 수업·연구 자료야. 범위가 헷갈리는 지원금 신청 요약 건이야. 정기 절차와 일회성 요청이 같은 양식으로 들어와 있어. 두 종류를 섞지 않고 분류해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 바로 보내거나 바꾸지는 말고 검토용 초안으로 줘."
+          "content": "급한 지원금 신청 요약 정기 일회성 항목 건이라 지금 확인이 필요해, 이번 지원금 신청 요약 정기 일회성 항목 요청은 수업·연구 자료야. 대상이 나뉘는 지원금 신청 요약 정기 일회성 항목 건이야 지원금 신청 요약 정기 일회성 항목 건이야. 반복 업무용인지 한 번만 하는 요청인지 양식의 용도를 나눠봐. 지원금 신청 요약 정기 일회성 항목 기준으로 누가 언제 어디까지 해당하는지 가른 뒤 애매한 점만 물어봐. 원본을 수정하지 말고 어느 부분을 바꿀지 표시해줘. 지원금 신청 요약 정기 일회성 항목 어느 지역인지 먼저 알아야 해."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an education, learning, or research context, Work out the applicable scope for Grant-application summary; Classify the two kinds without conflating them.. Input context: recurring work and one-off requests use the same form. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "The relevant education/research case is Grant application summary Recurring versus one off. For Grant application summary Recurring versus one off, determine the applicable scope; classify the two kinds without conflating them. Input context: Recurring work and one-off requests use the same form. Grant application summary Recurring versus one off: Split the applicable scope first and turn decision-changing gaps into questions."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "The pasted text is a bit messy: This is an education/research item. The scope is fuzzy for Grant-application summary. Recurring work and one-off requests use the same form. Classify the two kinds without conflating them. If the boundary is fuzzy, ask one question before deciding. Do not send or change anything; make it a review draft."
+          "content": "I need this fairly urgently: Grant application summary Recurring versus one off: For Grant application summary Recurring versus one off, the working area is education/research. Eligibility splits the audience for Grant application summary Recurring versus one off. Grant application summary Recurring versus one off. Classify the form by whether it supports recurring work or a one-off request. For Grant application summary Recurring versus one off, Separate who, when, and where it applies; ask only about the fuzzy edge. Do not send it yet; leave a draft that someone can review. One city or date needed for Grant application summary Recurring versus one off is missing."
         }
       ]
     }

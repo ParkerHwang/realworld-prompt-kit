@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "hedged_exploratory_request",
-      "missing_decisive_detail"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "hedged_exploratory_request",
-        "missing_decisive_detail"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "예산 요청 범위 정리하려는데, 확실히 아는 건 관리자는 도구와 교육을 포함하라고 했지만 승인 한도와 안 기간은 아직 안 정해졌어야. 이걸 결정적인 체크 질문 하나와 가정을 표시한 1차 요청안로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "예산 요청 — 도구·교육 포함, 승인 한도·계획 기간 미정 — 1차 요청 + 핵심 질문 + 가정 표시."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "hedged_exploratory_request",
-        "missing_decisive_detail"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out the scope of a budget request, but here’s what I actually know: One manager says the request should cover tooling and training, but the approval limit and planning period are not specified. Could you turn that into a first-pass request with one decisive clarification and clearly labeled assumptions, without papering over the gaps?"
+          "content": "Budget request — tooling/training requested; approval limit/planning period unspecified — first-pass request + decisive clarification + labeled assumptions."
         }
       ]
     }

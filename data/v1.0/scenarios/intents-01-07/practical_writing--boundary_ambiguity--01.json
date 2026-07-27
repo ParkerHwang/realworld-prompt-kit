@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.boundary_ambiguity.0001",
   "title": {
-    "ko": "회의 후속 메일 — 정규·특별 적용 경계",
-    "en": "Meeting follow-up email — Regular versus special scope"
+    "ko": "회의 후속 메일 정규 특별 적용 경계",
+    "en": "Meeting follow up email Regular versus special scope"
   },
   "task": {
     "primary_intent": "practical_writing",
@@ -18,8 +18,8 @@
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "회의 후속 메일의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해",
-      "en": "Work out the applicable scope for Meeting follow-up email; Compare exactly when the exception applies."
+      "ko": "회의 후속 메일 정규 특별 적용 경계의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해",
+      "en": "For Meeting follow up email Regular versus special scope, determine the applicable scope; compare exactly when the exception applies"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 회의 후속 메일의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해. 입력 상황: 정규 절차와 이번 한시 예외가 같은 화면에 보여. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "이 회의 후속 메일 정규 특별 적용 경계 건은 프로젝트·제품 일정 쪽이야. 회의 후속 메일 정규 특별 적용 경계의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해. 입력 상황: 정규 절차와 이번 한시 예외가 같은 화면에 보여. 회의 후속 메일 정규 특별 적용 경계: 대상별 적용 여부를 나눠서 판단 못 할 곳을 확인해줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 프로젝트·제품 일정 쪽이야. 범위가 헷갈리는 회의 후속 메일 건이야. 정규 절차와 이번 한시 예외가 같은 화면에 보여. 어느 조건에서 예외로 넘어가는지 비교해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "회의 후속 메일 정규 특별 적용 경계 부분만 먼저 처리해줘, 상황 설명은 프로젝트·제품 일정 쪽이야. 대상은 회의 후속 메일 정규 특별 적용 경계. 범위가 헷갈리는 회의 후속 메일 정규 특별 적용 경계 건이야 회의 후속 메일 정규 특별 적용 경계 건이야. 정규 흐름 안에 잠깐 생긴 예외가 어디서 갈라지는지 화면 기준으로 짚어줘. 회의 후속 메일 정규 특별 적용 경계 기준으로 정규 규칙과 이번 예외를 구분해 다음 질문 하나를 제시해줘. 회의 후속 메일 정규 특별 적용 경계 결과는 한 장짜리로 보면 될까? 회의 후속 메일 정규 특별 적용 경계 원문 링크가 비었어."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a product or project schedule-and-requirements context, Work out the applicable scope for Meeting follow-up email; Compare exactly when the exception applies.. Input context: the ordinary procedure and a temporary exception appear on the same screen. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Meeting follow up email Regular versus special scope belongs to the project/product context. For Meeting follow up email Regular versus special scope, determine the applicable scope; compare exactly when the exception applies. Input context: The ordinary procedure and a temporary exception appear on the same screen. Meeting follow up email Regular versus special scope: Break out eligibility by audience and flag cases you cannot decide."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: This is a project/product item. The scope is fuzzy for Meeting follow-up email. The ordinary procedure and a temporary exception appear on the same screen. Compare exactly when the exception applies. If the boundary is fuzzy, ask one question before deciding."
+          "content": "Only the Meeting follow up email Regular versus special scope part for now: Meeting follow up email Regular versus special scope falls under the project/product desk. The scope for Meeting follow up email Regular versus special scope is fuzzy. Meeting follow up email Regular versus special scope. Use the screen's conditions to show where the temporary exception splits from the normal flow. For Meeting follow up email Regular versus special scope, Contrast the normal rule with this exception and ask one next question. A short reader-ready version of Meeting follow up email Regular versus special scope would be ideal. I still do not have the as-of date for Meeting follow up email Regular versus special scope."
         }
       ]
     }

@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 분석 대시보드 내보내기 준비 — 메모는 대시보드는 2분기, 한 지역, 활성 계정으로 필터됐지만 스크린샷이나 내보내기 결과는 없어, 결과는 모든 필터를 기록하고 미리보기 체크을 요구하는 내보내기 점검. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "함께 판단할 쟁점은 분석 대시보드 내보내기 준비 - 스캔 텍스트: 메모 대시보드는 2분기, 한 지역, 활성 계정으로 필터됐지만 스크린샷이나 내보내기 결과는 없어 / 결과 모든 필터를 기록하고 미리보기 확인을 요구하는 내보내기 점검 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "추측하지 말고 다음 확인 단계를 눈에 띄게 적어줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "quick one: preparing an analytics dashboard export — I’ve got The dashboard is filtered to Q2, one region, and active accounts; the user has not supplied a screenshot or export result.; can you give me an export checklist that records every filter and requires a preview check? no invented details pls"
+          "content": "could we reason through preparing an analytics dashboard export - scan note: the dashboard is filtered to Q2, one region, and active accounts; the user has not supplied a screenshot or export result / need: an export checklist that records every filter and requires a preview check / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "No guessing; call out the next confirmation step."
         }
       ]
     }

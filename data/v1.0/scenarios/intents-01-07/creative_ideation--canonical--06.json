@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.canonical.0006",
   "title": {
-    "ko": "제품 기능 발상 — 인수인계 자료",
-    "en": "Product-feature ideas — Handoff packet"
+    "ko": "제품 기능 발상 인수인계 자료",
+    "en": "Product feature ideas Handoff packet"
   },
   "task": {
     "primary_intent": "creative_ideation",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지표 표와 분석 메모를 검토하는 상황에서 승인 대기 시간을 줄이는 제품 기능 아이디어를 서로 다른 방향으로 내줘 출처와 미확인 부분을 표시해. 입력 상황: 작은 팀이 쓸 수 있어야 하고 관리자 권한을 우회하는 기능은 허용되지 않으며, 성공 신호는 처리 시간과 재작업률이야. 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "검토할 항목은 제품 기능 발상 인수인계 자료; 맥락은 지표·분석 메모야. 승인 대기 시간을 줄이는 제품 기능 아이디어를 서로 다른 방향으로 내줘 출처와 미확인 부분을 표시해. 입력 상황: 작은 팀이 쓸 수 있어야 하고 관리자 권한을 우회하는 기능은 허용되지 않으며, 성공 신호는 처리 시간과 재작업률이야. 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 제품 기능 발상 인수인계 자료: 지금 확인할 수 있는 사실부터 적고 추측은 구분해줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "지표·분석 메모야. 승인 대기 시간을 줄일 제품 기능을 서로 다른 방향으로 생각해줘. 관리자 권한 우회는 안 되고 처리시간/재작업률과 연결돼야 해. 참고로 담당자 교체 중이라 새 담당자가 바로 읽을 수 있어야 해. 그래서 출처와 미확인 부분을 표시해."
+          "content": "어, 이번 제품 기능 발상 인수인계 자료 요청은 지표·분석 메모야. 승인 대기 시간을 줄일 제품 기능을 서로 다른 방향으로 생각해줘. 관리자 권한 우회는 안 되고 처리시간/재작업률과 연결돼야 해. 담당자가 바뀌는 인수인계용이라 출처가 있는 부분과 아직 못 확인한 부분을 따로 적어줘."
         },
         {
           "role": "user",
-          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
+          "content": "제품 기능 발상 인수인계 자료 기준으로 지금 확인할 수 있는 사실부터 적고 추측은 구분해줘. 업무 jargon은 남겨도 source와 output의 역할은 나눠줘. SOP source/output 경계도 유지해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a metrics-table and data-analysis context, generate product-feature ideas from different directions to reduce approval waiting time; mark sources and anything not yet confirmed. Input context: the ideas must fit small teams, may not bypass admin authority, and should relate to processing time and rework rate. the owner is changing and the next owner must use the result immediately. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Product feature ideas Handoff packet is handled in metrics/analysis. Generate product-feature ideas from different directions to reduce approval waiting time; mark sources and anything not yet confirmed. Input context: The ideas must fit small teams, may not bypass admin authority, and should relate to processing time and rework rate. The owner is changing and the next owner must use the result immediately. Product feature ideas Handoff packet: Lead with checkable facts and label every inference."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a metrics/analysis item. Think of product features from different angles to reduce approval waiting. Do not bypass admin authority, and connect each idea to processing time or rework. For this case, the owner is changing and the next owner must use the result immediately. So mark sources and anything not yet confirmed."
+          "content": "Um, This metrics/analysis question is about Product feature ideas Handoff packet. Think of product features from different angles to reduce approval waiting. Do not bypass admin authority, and connect each idea to processing time or rework. This is for a handoff, so label sourced points separately from items the next owner still needs to confirm."
         },
         {
           "role": "user",
-          "content": "Use what can actually be checked; say when something is unknown."
+          "content": "For Product feature ideas Handoff packet, Lead with checkable facts and label every inference. Treat the source as evidence and the output as a separate artifact. Keep the URL source/output labels distinct."
         }
       ]
     }

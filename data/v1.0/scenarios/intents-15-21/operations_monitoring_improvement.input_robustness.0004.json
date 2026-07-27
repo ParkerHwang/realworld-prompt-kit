@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "emoji_shorthand",
-      "speech_to_text_disfluency"
+      "multi_intent_mixed_priority",
+      "rambling_stream"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "지금 재고 수량 개선 검토이랑 아직 열린 문제가 엉켜 있어. 순환 실사와 시스템 수량이 두 구역에서 다르고 한 조정에는 이유가 없어 일단 조정 근거가 있는 대조·통제 개선 안로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 추적 가능한 이유 없이 시스템 수량을 덮어쓰지 않는다."
+          "content": "뒤섞인 메모의 주제는 재고 수량 개선 검토. 아직 갈라서 봐야 할 내용이 있어. 열린 내용은 이거야: 순환 실사와 시스템 수량이 두 구역에서 다르고 한 조정에는 이유가 없어. 조정 근거가 있는 대조·통제 개선 계획 형태로 만들어줘. 이번 요청 밖의 내용은 따로 남겨줘. 추적 가능한 이유 없이 시스템 수량을 덮어쓰지 않는다."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: an inventory-count improvement review, plus some unresolved details. Cycle counts differ from the system for two zones, and one adjustment was entered without a reason. Please make a reconciliation and control-improvement plan with adjustment evidence; if the second issue is out of scope, separate it. Do not overwrite the system count without a traceable reason."
+          "content": "I’ve got a messy question about an inventory-count improvement review. Other loose ends: cycle counts differ from the system for two zones, and one adjustment was entered without a reason. Please make a reconciliation and control-improvement plan with adjustment evidence. Do not overwrite the system count without a traceable reason. Keep extra scope apart."
         }
       ]
     }

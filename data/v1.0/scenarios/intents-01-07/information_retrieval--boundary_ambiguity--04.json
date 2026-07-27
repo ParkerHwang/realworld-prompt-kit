@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.boundary_ambiguity.0004",
   "title": {
-    "ko": "도서관 강좌 접수 — 현장·본사 기준",
-    "en": "Library-class registration — Local site versus headquarters"
+    "ko": "도서관 강좌 접수 현장 본사 기준",
+    "en": "Library class registration Local site versus headquarters"
   },
   "task": {
     "primary_intent": "information_retrieval",
@@ -18,8 +18,8 @@
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "도서관 강좌 접수의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해",
-      "en": "Work out the applicable scope for Library-class registration; Separate what changes by jurisdiction."
+      "ko": "도서관 강좌 접수 현장 본사 기준의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해",
+      "en": "For Library class registration Local site versus headquarters, determine the applicable scope; separate what changes by jurisdiction"
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사내 행정과 문서 운영을 처리하는 상황에서 도서관 강좌 접수의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해. 입력 상황: 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
+          "content": "이번 작업의 분야는 회사 행정 쪽이야, 대상은 도서관 강좌 접수 현장 본사 기준. 도서관 강좌 접수 현장 본사 기준의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해. 입력 상황: 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 도서관 강좌 접수 현장 본사 기준: 대상별 적용 여부를 나눠서 판단 못 할 곳을 확인해줘. 도서관 강좌 접수 현장 본사 기준 건은 도서관 공식 올해 공지에서 접수 시작일을 확인하고 신청과 대기를 분리해줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 회사 행정 쪽이야: 범위가 헷갈리는 도서관 강좌 접수 건이야. 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 지역 관할에 따라 무엇이 달라지는지 구분해."
+          "content": "도서관 강좌 접수 현장 본사 기준 부분만 먼저 처리해줘, 도서관 강좌 접수 현장 본사 기준 건부터 볼게. 분야는 회사 행정 쪽이야: 도서관 강좌 접수 현장 본사 기준의 예외선부터 확인해야 해 도서관 강좌 접수 현장 본사 기준 건이야. 현장 규정과 본사 기준 중 적용 지역에 따라 달라지는 부분만 나눠줘."
         },
         {
           "role": "user",
-          "content": "위 건은 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
+          "content": "위 건은 도서관 강좌 접수 현장 본사 기준 누가 언제 어디까지 해당하는지 가른 뒤 애매한 점만 물어봐. 도서관 강좌 접수 현장 본사 기준 건은 도서관 공식 올해 공지에서 접수 시작일을 확인하고 신청과 대기를 분리해줘. 그 얘기한 도서관 강좌 접수 현장 본사 기준 부분만. 앞서 합의한 형식을 유지하면서 이번 건의 빈칸만 짚어줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal office-administration and document-operations context, Work out the applicable scope for Library-class registration; Separate what changes by jurisdiction.. Input context: the site notice may apply differently from the headquarters baseline. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
+          "content": "Library class registration Local site versus headquarters belongs to the office-admin context. For Library class registration Local site versus headquarters, determine the applicable scope; separate what changes by jurisdiction. Input context: The site notice may apply differently from the headquarters baseline. Library class registration Local site versus headquarters: Break out eligibility by audience and flag cases you cannot decide. For Library class registration Local site versus headquarters, Use the library's current official notice for the opening date and separate enrollment from waitlisting."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is, This is an office-admin item: The scope is fuzzy for Library-class registration. The site notice may apply differently from the headquarters baseline. Separate what changes by jurisdiction."
+          "content": "Only the Library class registration Local site versus headquarters part for now, The office-admin team is handling Library class registration Local site versus headquarters: The exception line matters for Library class registration Local site versus headquarters. Library class registration Local site versus headquarters. Separate only the parts that change with the site jurisdiction rather than blending them with headquarters policy."
         },
         {
           "role": "user",
-          "content": "For that item: If the boundary is fuzzy, ask one question before deciding. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
+          "content": "For that item: For Library class registration Local site versus headquarters, Separate who, when, and where it applies; ask only about the fuzzy edge. For Library class registration Local site versus headquarters, Use the library's current official notice for the opening date and separate enrollment from waitlisting. Apply the same rule to that Library class registration Local site versus headquarters item. Connect it to the prior answer and isolate the condition added here."
         }
       ]
     }

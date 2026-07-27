@@ -38,8 +38,8 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "multi_intent_mixed_priority",
-      "rambling_stream"
+      "mid_task_change",
+      "self_correction_scope_shift"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 두 기록을 모두 보존하고 식별 체크을 기다리는 중복 대기열로 좁히자. 큰 주제는 중복 평가 기록 정리이고 믿을 수 있는 메모는 두 결과 행이 같은 task ID를 공유다만 시각과 기준 메모가 다르다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "단계로 나눠볼 건 중복 평가 기록 정리. 잠깐, 원하는 결과는 두 기록을 모두 보존하고 식별 확인을 기다리는 중복 대기열. 메모는 다음이야: 두 결과 행이 같은 task ID를 공유하지만 시각과 기준 메모가 다르다. 없는 건 가정으로 적어줘."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a deduplication queue that keeps both records pending identity resolution. The broader issue is an evaluation cleanup from duplicate records, and the notes I can stand behind are Two result rows share a task ID but have different timestamps and rubric notes.. Mark assumptions instead of filling blanks."
+          "content": "Let’s work through an evaluation cleanup from duplicate records. Actually, focus on a deduplication queue that keeps both records pending identity resolution. I noted this: Two result rows share a task ID but have different timestamps and rubric notes. For an evaluation cleanup from duplicate records, mark assumptions; gaps stay open."
         }
       ]
     }

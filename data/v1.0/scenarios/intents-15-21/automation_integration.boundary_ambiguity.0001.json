@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "mid_task_change",
-      "self_correction_scope_shift"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "보고서 배포 자동화 정리하려는데, 확실히 아는 건 보고서는 매주 준비되지만 수신자, 데이터 민감도, 링크와 첨부 중 방식은 아직 안 정해졌어야. 이걸 승인된 대상을 묻는 질문 하나와 최소 권한 초안 흐름로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "보고서 배포 — 매주 준비, 수신자·민감도·링크/첨부 미정 — 승인 대상 질문 + 최소 권한 흐름."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out automating report distribution, but here’s what I actually know: That report is ready weekly, but recipients, data sensitivity, and whether to send a link or attachment are not specified. Could you turn that into one question about the authorized audience and a least-privilege draft workflow, without papering over the gaps?"
+          "content": "Report distribution — weekly report ready; recipients, sensitivity, link vs attachment unset — authorized-audience question + least-privilege workflow."
         }
       ]
     }

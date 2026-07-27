@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "중복 감지를 포함한 CRM 업데이트 준비 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 두 레코드가 같은 회사 표기를 쓰지만 계정 코드는 다르고 병합 규칙은 없어고, 원하는 건 비파괴 업데이트 안과 검토 대기열야. 답을 바꿀 빠진 정보는 따로 알려줘."
+          "content": "결정 전에 확인할 건 중복 감지를 포함한 CRM 업데이트 준비. 초안부터 보자. 근거 메모는 이거야: 두 레코드가 같은 회사 표기를 쓰지만 계정 코드는 다르고 병합 규칙은 없어. 가능하면 비파괴 업데이트 계획과 검토 대기열 형태로 시작하되 달라질 점은 알려줘."
         },
         {
           "role": "user",
-          "content": "없는 입력은 맥락으로 채우지 말고 그대로 보이게 해줘."
+          "content": "확인된 내용과 쓸 만한 추정을 나눠서 적어줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Before we go too far on preparing a CRM update with duplicate detection, can you sketch a first pass? My evidence is Two records share a company label but have different account codes; the merge rule still is not supplied.; I need a review queue and a non-destructive update plan. Call out anything that would change the answer."
+          "content": "I’m trying to decide how to handle preparing a CRM update with duplicate detection. Before going further, evidence: two records share a company label but have different account codes; the merge rule still is not supplied. Tentative first pass: a review queue and a non-destructive update plan; for preparing a CRM update with duplicate detection, flag answer-changing gaps."
         },
         {
           "role": "user",
-          "content": "Please leave unknown inputs visible rather than filling them in from context."
+          "content": "Separate confirmed details from useful guesses."
         }
       ]
     }

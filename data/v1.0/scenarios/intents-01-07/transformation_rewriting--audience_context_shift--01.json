@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.audience_context_shift.0001",
   "title": {
-    "ko": "격식 메일의 친근한 버전 — 고객용 안내",
-    "en": "Friendly version of a formal email — Customer-facing notice"
+    "ko": "격식 메일의 친근한 버전 고객용 안내",
+    "en": "Friendly version of a formal email Customer facing notice"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
@@ -18,8 +18,8 @@
       "education_research"
     ],
     "user_goal": {
-      "ko": "격식 메일의 친근한 버전 내용을 지정 독자에게 맞춰 다시 써줘. 안심시키되 확인되지 않은 약속은 하지 마",
-      "en": "Adapt the Friendly version of a formal email material for the specified reader; reassure without promising what is unconfirmed."
+      "ko": "격식 메일의 친근한 버전 고객용 안내를 독자에 맞게 다시 써줘. 안심시키되 확인되지 않은 약속은 하지 마",
+      "en": "For Friendly version of a formal email Customer facing notice, rewrite for its reader; reassure without promising what is unconfirmed"
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 격식 메일의 친근한 버전 내용을 지정 독자에게 맞춰 다시 써줘. 안심시키되 확인되지 않은 약속은 하지 마. 입력 상황: 같은 사실을 불안한 고객이 읽을 짧은 안내로 써야 해. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "분류는 팀 회의/커뮤니케이션 건이야; 대상은 격식 메일의 친근한 버전 고객용 안내. 격식 메일의 친근한 버전 고객용 안내를 독자에 맞게 다시 써줘. 안심시키되 확인되지 않은 약속은 하지 마. 입력 상황: 같은 사실을 불안한 고객이 읽을 짧은 안내로 써야 해. 격식 메일의 친근한 버전 고객용 안내: 읽는 사람의 배경을 가정하지 말고 필요한 맥락을 붙여줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 팀 회의/커뮤니케이션 건이야. 읽는 사람이 달라진 격식 메일의 친근한 버전 건이야. 같은 사실을 불안한 고객이 읽을 짧은 안내로 써야 해. 안심시키되 확인되지 않은 약속은 하지 마. 읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬. source랑 output은 구분해서."
+          "content": "아까 말한 격식 메일의 친근한 버전 고객용 안내 관련해서 물어볼게, 먼저 격식 메일의 친근한 버전 고객용 안내를 봐줘. 분류는 팀 회의/커뮤니케이션 건이야. 격식 메일의 친근한 버전 고객용 안내를 불안한 고객에게 알려야 해 격식 메일의 친근한 버전 고객용 안내 건이야. 걱정하는 고객에게 짧고 안심되는 안내로 만들되 확인 전 약속은 빼줘. 격식 메일의 친근한 버전 고객용 안내 기준으로 다른 배경의 독자가 헷갈릴 전제를 밝혀줘. 이 customer notice의 status는 확인 전으로 남겨줘. 문서 source와 답변 output의 변환, PDF source/output 경계를 보여줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, Adapt the Friendly version of a formal email material for the specified reader; reassure without promising what is unconfirmed.. Input context: the same facts must become a short notice for an anxious customer. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "Use the team-communication context for Friendly version of a formal email Customer facing notice. For Friendly version of a formal email Customer facing notice, rewrite for its reader; reassure without promising what is unconfirmed. Input context: The same facts must become a short notice for an anxious customer. Friendly version of a formal email Customer facing notice: Do not assume the reader's background; add the context they need."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: This is a team-communication item. The reader has changed for Friendly version of a formal email. The same facts must become a short notice for an anxious customer. Reassure without promising what is unconfirmed. Make it fit the reader without changing the substance. Keep the source and output distinct."
+          "content": "I have a quick question about Friendly version of a formal email Customer facing notice: Treat Friendly version of a formal email Customer facing notice as work in team-communication. An anxious customer will read this notice about Friendly version of a formal email Customer facing notice. Friendly version of a formal email Customer facing notice. Write a short reassuring notice for a worried customer, with no promise before confirmation. For Friendly version of a formal email Customer facing notice, Explain what a reader's background may leave unclear. I mean, Friendly version of a formal email Customer facing notice is roughly this—please tidy it up. Treat the source as evidence and the output as a separate artifact. Keep the URL source/output labels distinct."
         }
       ]
     }

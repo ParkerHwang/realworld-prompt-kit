@@ -39,9 +39,9 @@
     },
     "naturalistic_features": [
       "followup_without_restatement",
-      "implicit_goal_or_output",
       "message_burst",
-      "terse_fragment"
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -65,18 +65,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
-        "implicit_goal_or_output",
         "message_burst",
-        "terse_fragment"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 주택 공사 단계 계획 — 메모는 주방 개선과 단열 보강을 원다만 예산, 허가, 공사 중 거주 여부는 모른다, 결과는 공사 순서를 바꾸는 제약 질문 하나와 단계 개요. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "도움이 필요한 건 주택 공사 단계 계획 - ocr 메모: 메모 주방 개선과 단열 보강을 원하지만 예산, 허가, 공사 중 거주 여부는 모른다 / 결과 공사 순서를 바꾸는 제약 질문 하나와 단계 개요 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "흔들리는 입력이 있으면 아직 확인할 내용을 말해줘."
         }
       ]
     },
@@ -100,18 +100,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
-        "implicit_goal_or_output",
         "message_burst",
-        "terse_fragment"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: a home-renovation phase plan — I’ve got The owner wants a kitchen update and better insulation, but the budget, permits, and whether the home stays occupied are unknown.; can you give me a phase outline plus one question about the constraint that changes sequencing? no invented details pls"
+          "content": "could you help me untangle a home-renovation phase plan - ocr bits: the owner wants a kitchen update and better insulation, but the budget, permits, and whether the home stays occupied are unknown / need: a phase outline plus one question about the constraint that changes sequencing / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "If an input is shaky, say what still needs confirmation."
         }
       ]
     }

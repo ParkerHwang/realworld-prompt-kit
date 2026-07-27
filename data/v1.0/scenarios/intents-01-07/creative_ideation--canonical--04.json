@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.canonical.0004",
   "title": {
-    "ko": "수업 활동 — 다음 분기 결정",
-    "en": "Lesson activity — Next-quarter decision"
+    "ko": "수업 활동 다음 분기 결정",
+    "en": "Lesson activity Next quarter decision"
   },
   "task": {
     "primary_intent": "creative_ideation",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "수업·학습·연구 자료를 다루는 상황에서 중학생 수업에서 개념을 직접 써보게 하는 활동 아이디어를 내줘 결정에 필요한 핵심 근거와 보류 조건을 정리해. 입력 상황: 준비물은 종이와 칠판뿐이고 25분 안에 끝나며, 경쟁에서 탈락하는 학생이 생기면 안 돼. 다음 분기 실행 여부를 오늘 정해야 하는 자료야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "이 수업 활동 다음 분기 결정 건은 수업·연구 자료야. 중학생 수업에서 개념을 직접 써보게 하는 활동 아이디어를 내줘 결정에 필요한 핵심 근거와 보류 조건을 정리해. 입력 상황: 준비물은 종이와 칠판뿐이고 25분 안에 끝나며, 경쟁에서 탈락하는 학생이 생기면 안 돼. 다음 분기 실행 여부를 오늘 정해야 하는 자료야. 수업 활동 다음 분기 결정: 확실한 대목 위주로 답하고 빠진 점은 숨기지 마."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 수업·연구 자료야. 중학생 수업에서 종이랑 칠판만으로 25분 안에 해볼 활동을 여러 방향으로 내줘. 탈락시키는 경쟁은 없이 모두 참여하게. 참고로 다음 분기 실행 여부를 오늘 정해야 하는 자료야. 그래서 결정에 필요한 핵심 근거와 보류 조건을 정리해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘. 참고 메모가 중간에 붙어 있어도 요청과 자료는 나눠서 봐줘. 아, 대상은 전체가 아니라 위에 적은 범위만이야."
+          "content": "급한 수업 활동 다음 분기 결정 건이라 지금 확인이 필요해, 분야는 수업·연구 자료야; 이번 대상은 수업 활동 다음 분기 결정. 중학생 수업에서 종이랑 칠판만으로 25분 안에 해볼 활동을 여러 방향으로 내줘. 탈락시키는 경쟁은 없이 모두 참여하게. 오늘 go-or-hold 판단에 필요한 근거와 멈춰야 할 조건을 추려줘. 수업 활동 다음 분기 결정 기준으로 답에 쓸 수 있는 근거와 보류할 부분을 나눠줘. 중간에 끼어든 메모는 자료로 두고 사용자의 요청과 먼저 갈라줘. <pasted-note>참고용 문장</pasted-note> 실제 부탁과 따로 읽어줘. 정정할게—대상은 앞서 표시한 구간으로 한정해줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an education, learning, or research context, generate classroom activities that let middle-school students use the concept directly; state the key evidence and hold conditions. Input context: materials are limited to paper and a board, the activity must fit in 25 minutes, and no student should be eliminated through competition. the material supports a go-or-hold decision for next quarter today. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "The education/research material concerns Lesson activity Next quarter decision. Generate classroom activities that let middle-school students use the concept directly; state the key evidence and hold conditions. Input context: Materials are limited to paper and a board, the activity must fit in 25 minutes, and no student should be eliminated through competition. The material supports a go-or-hold decision for next quarter today. Lesson activity Next quarter decision: Answer from confirmed material; leave silent gaps visible."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is: This is an education/research item. Give several kinds of classroom activities for middle school using only paper and a board in 25 minutes. Everyone should participate; no elimination competition. For this case, the material supports a go-or-hold decision for next quarter today. So state the key evidence and hold conditions. Use what can actually be checked; say when something is unknown. If notes are pasted inline, separate the request from the material. Actually, use only the scope stated above, not the broader one."
+          "content": "I need this fairly urgently: Lesson activity Next quarter decision: For the education/research context, use Lesson activity Next quarter decision. Give several kinds of classroom activities for middle school using only paper and a board in 25 minutes. Everyone should participate; no elimination competition. Pull out the evidence for today's go-or-hold call and the conditions that would stop it. For Lesson activity Next quarter decision, Show what can be used now and what must wait for proof. Separate the three message fragments into evidence and requested action. <pasted-note>Original excerpt</pasted-note> Treat the pasted words as reference only. Correction—Limit the answer to the segment I identified above."
         }
       ]
     }

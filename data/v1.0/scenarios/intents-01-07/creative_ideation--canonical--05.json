@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.canonical.0005",
   "title": {
-    "ko": "비영리 모금 행사 — 지역별 두 버전",
-    "en": "Nonprofit fundraiser — Two regional versions"
+    "ko": "비영리 모금 행사 지역별 두 버전",
+    "en": "Nonprofit fundraiser Two regional versions"
   },
   "task": {
     "primary_intent": "creative_ideation",
@@ -48,7 +48,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "창작·미디어 프로젝트의 자료를 발전시키는 상황에서 비영리 단체의 모금 행사 콘셉트와 후속 콘텐츠 아이디어를 내줘 지역 조건을 섞지 않고 해당 지역만 답해. 입력 상황: 후원자에게 성과를 투명하게 보여주되 수혜자의 사생활을 노출하지 않고, 행사 후 한 달 안에 결과를 공유해야 해. 서울용과 부산용 안내가 한 파일에 섞여 있어. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "이 비영리 모금 행사 지역별 두 버전 건은 콘텐츠·창작 프로젝트야. 비영리 단체의 모금 행사 콘셉트와 후속 콘텐츠 아이디어를 내줘 지역 조건을 섞지 않고 해당 지역만 답해. 입력 상황: 후원자에게 성과를 투명하게 보여주되 수혜자의 사생활을 노출하지 않고, 행사 후 한 달 안에 결과를 공유해야 해. 서울용과 부산용 안내가 한 파일에 섞여 있어. 비영리 모금 행사 지역별 두 버전: 자료에 없는 말은 보태지 말고 확인할 곳을 표시해줘."
         }
       ]
     },
@@ -64,7 +64,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한내용이 좀 깨졌는데, 콘텐츠·창작 프로젝트야. 비영리 모금 행사 콘셉트랑 행사 뒤 콘텐츠 아이디어가 필요해. 수혜자 사생활은 지키고 한 달 안에 결과 공유하는 흐름으로. 참고로 서울용과 부산용 안내가 한 파일에 섞여 있어. 그래서 지역 조건을 섞지 않고 해당 지역만 답해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘;."
+          "content": "어, 내가 말한 비영리 모금 행사 지역별 두 버전은 이 부분이야, 분야는 콘텐츠·창작 프로젝트야; 이번 대상은 비영리 모금 행사 지역별 두 버전. 비영리 모금 행사 콘셉트랑 행사 뒤 콘텐츠 아이디어가 필요해. 수혜자 사생활은 지키고 한 달 안에 결과 공유하는 흐름으로. 서울과 부산 버전 중 요청받은 곳의 조건만 남겨 섞이지 않게 답해줘;. 비영리 모금 행사 지역별 두 버전 기준으로 원문에서 확인된 것만 적고, 빈칸은 따로 남겨줘. 비영리 모금 행사 지역별 두 버전 좀 봐줘, 이거 꽤 급해."
         }
       ]
     },
@@ -77,7 +77,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a creative or media-project context, generate a nonprofit fundraiser concept and follow-up content ideas; answer for the requested region without mixing conditions. Input context: show impact transparently without exposing beneficiaries' privacy, and share results within one month after the event. Seoul and Busan notices are mixed in one file. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "The creative/media material concerns Nonprofit fundraiser Two regional versions. Generate a nonprofit fundraiser concept and follow-up content ideas; answer for the requested region without mixing conditions. Input context: Show impact transparently without exposing beneficiaries' privacy, and share results within one month after the event. Seoul and Busan notices are mixed in one file. Nonprofit fundraiser Two regional versions: Do not add unsupported wording; point to what needs checking."
         }
       ]
     },
@@ -93,7 +93,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Thepasted text is a bit messy: This is a creative/media item.. I need a nonprofit fundraiser concept and follow-up content. Protect beneficiary privacy and build in an impact update within one month. For this case, Seoul and Busan notices are mixed in one file. So answer for the requested region without mixing conditions. Use what can actually be checked; say when something is unknown."
+          "content": "Actually, I mean Nonprofit fundraiser Two regional versions: For the creative/media context, use Nonprofit fundraiser Two regional versions?! I need a nonprofit fundraiser concept and follow-up content. Protect beneficiary privacy and build in an impact update within one month. Keep only the requested city's conditions so the Seoul and Busan versions do not bleed together. For Nonprofit fundraiser Two regional versions, Keep sourced facts separate from gaps in the record. Could you have a quick look at Nonprofit fundraiser Two regional versions? Keep it casual."
         }
       ]
     }

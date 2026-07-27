@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "ocr_copy_format_noise",
-      "typo_spacing_punctuation"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "한 달 캠페인 추적 흐름 정리하려는데, 확실히 아는 건 캠페인에는 주간 점검, 바뀌는 크리에이티브 변형, 마지막 주 이후 최종 검토가 있어야. 이걸 버전 관리 입력과 최종 종합 단계가 있는 체크포인트 흐름로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "캠페인 추적 — 주간 점검, 크리에이티브 변형, 마지막 주 후 최종 검토 — 버전 입력·체크포인트·최종 종합."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out a month-long campaign tracking workflow, but here’s what I actually know: The campaign has weekly checkpoints, changing creative variants, and a final review after the last week. Could you turn that into a checkpointed workflow with versioned inputs and a final synthesis step, without papering over the gaps?"
+          "content": "Campaign tracking — weekly checkpoints; changing creative variants; final review after last week — versioned checkpoints + final synthesis."
         }
       ]
     }

@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "ocr_copy_format_noise",
-      "typo_spacing_punctuation"
+      "multi_intent_mixed_priority",
+      "rambling_stream"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "지금 캘린더에서 준비 체크리스트 생성 자동화이랑 아직 열린 문제가 엉켜 있어. research-review 태그 일정은 체크리스트를 만들어야 다만 외부 일정과 담당자 없는 일정은 검토해야 한다 일단 의도하지 않은 외부 작업을 피하는 트리거·필터·검토 흐름로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 외부 일정에 작업을 만들거나 추측으로 담당자를 정하지 않는다."
+          "content": "메시지로 다듬을 건 캘린더에서 준비 체크리스트 생성 자동화. 아직 열린 문제들이 서로 엉켜 있어. 열린 내용은 이거야: research-review 태그 일정은 체크리스트를 만들어야 하지만 외부 일정과 담당자 없는 일정은 검토해야 한다. 의도하지 않은 외부 작업을 피하는 트리거·필터·검토 흐름 형태로 만들어줘. 빈 범위는 따로 적어줘. 외부 일정에 작업을 만들거나 추측으로 담당자를 정하지 않는다."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "ocr_copy_format_noise",
-        "typo_spacing_punctuation"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: a calendar-to-preparation checklist automation, plus some unresolved details. Events tagged research-review should create a checklist, but external events and events without an owner need review. Please make a trigger, filter, and review workflow that avoids unintended external actions; if the second issue is out of scope, separate it. Do not create tasks for external events or assign an owner from guesswork."
+          "content": "I need to frame a calendar-to-preparation checklist automation. Other loose ends: events tagged research-review should create a checklist, but external events and events without an owner need review. Please make a trigger, filter, and review workflow that avoids unintended external actions. Do not create tasks for external events or assign an owner from guesswork. Keep extra scope apart."
         }
       ]
     }

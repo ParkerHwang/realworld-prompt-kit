@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.boundary_ambiguity.0004",
   "title": {
-    "ko": "고객 사과 답변 — 현장·본사 기준",
-    "en": "Customer apology reply — Local site versus headquarters"
+    "ko": "고객 사과 답변 현장 본사 기준",
+    "en": "Customer apology reply Local site versus headquarters"
   },
   "task": {
     "primary_intent": "practical_writing",
@@ -18,8 +18,8 @@
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "고객 사과 답변의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해",
-      "en": "Work out the applicable scope for Customer apology reply; Separate what changes by jurisdiction."
+      "ko": "고객 사과 답변 현장 본사 기준의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해",
+      "en": "For Customer apology reply Local site versus headquarters, determine the applicable scope; separate what changes by jurisdiction"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "고객 문의와 지원 운영을 처리하는 상황에서 고객 사과 답변의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해. 입력 상황: 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "분류는 고객 문의 건이야; 대상은 고객 사과 답변 현장 본사 기준. 고객 사과 답변 현장 본사 기준의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해. 입력 상황: 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 고객 사과 답변 현장 본사 기준: 정규 규칙과 이번 예외를 구분해 다음 질문 하나를 제시해줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 고객 문의 건이야: 범위가 헷갈리는 고객 사과 답변 건이야. 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 지역 관할에 따라 무엇이 달라지는지 구분해."
+          "content": "아까 말한 고객 사과 답변 현장 본사 기준 관련해서 물어볼게, 이번 고객 사과 답변 현장 본사 기준 요청은 고객 문의 건이야: 고객 사과 답변 현장 본사 기준의 예외선부터 확인해야 해 고객 사과 답변 현장 본사 기준 건이야. 현장 규정과 본사 기준 중 적용 지역에 따라 달라지는 부분만 나눠줘."
         },
         {
           "role": "user",
-          "content": "위 건은 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "위 건은 고객 사과 답변 현장 본사 기준 대상별 적용 여부를 나눠서 판단 못 할 곳을 확인해줘. 방금 그 고객 사과 답변 현장 본사 기준 문서 이어서. 같은 작업의 후속 질문이니 지난 결론과 달라지는 부분을 표시해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a customer-support and success context, Work out the applicable scope for Customer apology reply; Separate what changes by jurisdiction.. Input context: the site notice may apply differently from the headquarters baseline. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Customer apology reply Local site versus headquarters belongs to the customer-support context. For Customer apology reply Local site versus headquarters, determine the applicable scope; separate what changes by jurisdiction. Input context: The site notice may apply differently from the headquarters baseline. Customer apology reply Local site versus headquarters: Contrast the normal rule with this exception and ask one next question."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is, This is a customer-support item: The scope is fuzzy for Customer apology reply. The site notice may apply differently from the headquarters baseline. Separate what changes by jurisdiction."
+          "content": "I have a quick question about Customer apology reply Local site versus headquarters, For the customer-support context, use Customer apology reply Local site versus headquarters: The exception line matters for Customer apology reply Local site versus headquarters. Customer apology reply Local site versus headquarters. Separate only the parts that change with the site jurisdiction rather than blending them with headquarters policy."
         },
         {
           "role": "user",
-          "content": "For that item: If the boundary is fuzzy, ask one question before deciding."
+          "content": "For that item: For Customer apology reply Local site versus headquarters, Break out eligibility by audience and flag cases you cannot decide. The Customer apology reply Local site versus headquarters material above, please. Carry forward the earlier criteria and check what changed in this material."
         }
       ]
     }

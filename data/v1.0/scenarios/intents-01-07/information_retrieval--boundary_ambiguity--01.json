@@ -5,21 +5,21 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.boundary_ambiguity.0001",
   "title": {
-    "ko": "공휴일 교통 시간표 — 정규·특별 적용 경계",
-    "en": "Holiday transit timetable — Regular versus special scope"
+    "ko": "공휴일 교통 시간표 정규 특별 적용 경계",
+    "en": "Holiday transit timetable Regular versus special scope"
   },
   "task": {
     "primary_intent": "information_retrieval",
     "secondary_intents": [
       "summarization_synthesis"
     ],
-    "primary_domain": "personal_everyday",
+    "primary_domain": "government_public_policy",
     "domain_tags": [
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "공휴일 교통 시간표의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해",
-      "en": "Work out the applicable scope for Holiday transit timetable; Compare exactly when the exception applies."
+      "ko": "공휴일 교통 시간표 정규 특별 적용 경계의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해",
+      "en": "For Holiday transit timetable Regular versus special scope, determine the applicable scope; compare exactly when the exception applies"
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 공휴일 교통 시간표의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해. 입력 상황: 정규 절차와 이번 한시 예외가 같은 화면에 보여. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
+          "content": "요청 대상은 공휴일 교통 시간표 정규 특별 적용 경계이고, 공공기관 공고야. 공휴일 교통 시간표 정규 특별 적용 경계의 적용 범위를 가려줘. 어느 조건에서 예외로 넘어가는지 비교해. 입력 상황: 정규 절차와 이번 한시 예외가 같은 화면에 보여. 공휴일 교통 시간표 정규 특별 적용 경계: 누가 언제 어디까지 해당하는지 가른 뒤 애매한 점만 물어봐. 공휴일 교통 시간표 정규 특별 적용 경계 건은 운영기관의 공식 표에서 휴일 막차를 찾고 빠진 운행 조건은 질문으로 돌려줘. 위험을 과소평가하지 말고 확인 절차를 함께 표시해줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 내 일정·생활 건이야. 범위가 헷갈리는 공휴일 교통 시간표 건이야. 정규 절차와 이번 한시 예외가 같은 화면에 보여. 어느 조건에서 예외로 넘어가는지 비교해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
+          "content": "어, 내가 말한 공휴일 교통 시간표 정규 특별 적용 경계는 이 부분이야, 분야는 공공기관 공고야; 이번 대상은 공휴일 교통 시간표 정규 특별 적용 경계. 범위가 헷갈리는 공휴일 교통 시간표 정규 특별 적용 경계 건이야 공휴일 교통 시간표 정규 특별 적용 경계 건이야. 정규 흐름 안에 잠깐 생긴 예외가 어디서 갈라지는지 화면 기준으로 짚어줘. 공휴일 교통 시간표 정규 특별 적용 경계 기준으로 대상별 적용 여부를 나눠서 판단 못 할 곳을 확인해줘. 전문 판단이 필요한 대목은 공식 확인 경계를 붙여줘. 공휴일 교통 시간표 정규 특별 적용 경계 건은 운영기관의 공식 표에서 휴일 막차를 찾고 빠진 운행 조건은 질문으로 돌려줘. 공휴일 교통 시간표 정규 특별 적용 경계 결과는 한 장짜리로 보면 될까? 공휴일 교통 시간표 정규 특별 적용 경계 원문 링크가 비었어."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, Work out the applicable scope for Holiday transit timetable; Compare exactly when the exception applies.. Input context: the ordinary procedure and a temporary exception appear on the same screen. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
+          "content": "Holiday transit timetable Regular versus special scope is handled in public-notice. For Holiday transit timetable Regular versus special scope, determine the applicable scope; compare exactly when the exception applies. Input context: The ordinary procedure and a temporary exception appear on the same screen. Holiday transit timetable Regular versus special scope: Separate who, when, and where it applies; ask only about the fuzzy edge. For Holiday transit timetable Regular versus special scope, Find the holiday last trip in the operator's official table and ask for missing service conditions. Do not downplay the risk; show the verification step alongside it."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: This is a personal-life item. The scope is fuzzy for Holiday transit timetable. The ordinary procedure and a temporary exception appear on the same screen. Compare exactly when the exception applies. If the boundary is fuzzy, ask one question before deciding. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
+          "content": "Actually, I mean Holiday transit timetable Regular versus special scope: This public-notice question is about Holiday transit timetable Regular versus special scope. The scope for Holiday transit timetable Regular versus special scope is fuzzy. Holiday transit timetable Regular versus special scope. Use the screen's conditions to show where the temporary exception splits from the normal flow. For Holiday transit timetable Regular versus special scope, Break out eligibility by audience and flag cases you cannot decide. Avoid definitive wording before expert review and retain the supporting basis. For Holiday transit timetable Regular versus special scope, Find the holiday last trip in the operator's official table and ask for missing service conditions. A short reader-ready version of Holiday transit timetable Regular versus special scope would be ideal. I still do not have the as-of date for Holiday transit timetable Regular versus special scope."
         }
       ]
     }
@@ -107,7 +107,8 @@
     },
     "invariants": [
       "Preserve the requested date and distinguish weekday from holiday service.",
-      "Give the source or state that it still needs checking."
+      "Give the source or state that it still needs checking.",
+      "For high-stakes context, state uncertainty and the appropriate official or professional escalation boundary."
     ],
     "rubric_dimensions": [
       "scope_accuracy",
@@ -116,7 +117,8 @@
     ],
     "failure_signals": [
       "Using a weekday time for the holiday.",
-      "Presenting an unverified time as current."
+      "Presenting an unverified time as current.",
+      "Giving definitive professional advice without the stated source or escalation boundary."
     ]
   },
   "provenance": {

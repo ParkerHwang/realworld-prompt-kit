@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 필수 안전 검증과 명시적인 초안 상태가 있는 검증 설계로 좁히자. 큰 주제는 연구 입력 검증의 엄격·유연 선택이고 믿을 수 있는 메모는 엄격한 규칙은 데이터 품질을 보호다만 현장 연구자는 연결이 불안정해 나중에 저장하는 길이 필요해야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "차근차근 생각해볼 건 연구 입력 검증의 엄격·유연 선택. 잠깐, 원하는 결과는 필수 안전 검증과 명시적인 초안 상태가 있는 검증 설계. 메모는 다음이야: 엄격한 규칙은 데이터 품질을 보호하지만 현장 연구자는 연결이 불안정해 나중에 저장하는 길이 필요해. 없는 건 가정으로 적어줘."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a validation design with hard safety checks and a clearly labeled draft state. The broader issue is choosing strict or flexible validation for research input, and the notes I can stand behind are Strict rules protect data quality, but field researchers may have intermittent connectivity and need a save-later path.. Mark assumptions instead of filling blanks."
+          "content": "Please help me think through choosing strict or flexible validation for research input. Actually, focus on a validation design with hard safety checks and a clearly labeled draft state. I noted this: Strict rules protect data quality, but field researchers may have intermittent connectivity and need a save-later path. For choosing strict or flexible validation for research input, mark assumptions; gaps stay open."
         }
       ]
     }

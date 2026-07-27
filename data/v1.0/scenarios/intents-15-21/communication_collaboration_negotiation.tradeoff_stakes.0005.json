@@ -38,8 +38,8 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "emoji_shorthand",
-      "speech_to_text_disfluency"
+      "mid_task_change",
+      "self_correction_scope_shift"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "잠깐, 범위를 동작을 바꾸는 주의사항을 보존한 읽기 쉬운 설명로 좁히자. 큰 주제는 단순함과 정확성을 조율한 기술 문서이고 믿을 수 있는 메모는 독자는 시스템에 익숙하지 않지만 설정상의 주의사항 하나가 동작을 바꾸므로 남겨야 한다야. 빈 내용을 지어내지 말고 가정이라고 써줘."
+          "content": "성급한 추측을 피할 건 단순함과 정확성을 조율한 기술 문서. 잠깐, 원하는 결과는 동작을 바꾸는 주의사항을 보존한 읽기 쉬운 설명. 메모는 다음이야: 독자는 시스템에 익숙하지 않지만 설정상의 주의사항 하나가 동작을 바꾸므로 남겨야 한다. 없는 건 가정으로 적어줘."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
-        "speech_to_text_disfluency"
+        "mid_task_change",
+        "self_correction_scope_shift"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Actually, let’s narrow this to a readable explanation that keeps the behavior-changing caveat. The broader issue is technical documentation that balances simplicity and precision, and the notes I can stand behind are Readers are new to the system, but one configuration caveat changes the behavior and must remain.. Mark assumptions instead of filling blanks."
+          "content": "I’m trying to avoid a bad guess on technical documentation that balances simplicity and precision. Actually, focus on a readable explanation that keeps the behavior-changing caveat. I noted this: Readers are new to the system, but one configuration caveat changes the behavior and must remain. For technical documentation that balances simplicity and precision, mark assumptions; gaps stay open."
         }
       ]
     }

@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.canonical.0008",
   "title": {
-    "ko": "연구 변수 — 외부 공유 전",
-    "en": "Research variables — Before external sharing"
+    "ko": "연구 변수 외부 공유 전",
+    "en": "Research variables Before external sharing"
   },
   "task": {
     "primary_intent": "extraction_parsing",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지표 표와 분석 메모를 검토하는 상황에서 연구 초록에서 표본, 독립변수, 결과변수, 제한점을 추출해줘 공유 가능한 형식으로 근거를 함께 제시해. 입력 상황: 초록에는 표본 수는 있지만 비교군 설명이 없고 제한점은 한 문장으로만 적혀 있어. 외부 공유 직전이라 원문 근거와 제한을 짧게 붙여야 해. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마."
+          "content": "이 연구 변수 외부 공유 전 건은 지표·분석 메모야. 연구 초록에서 표본, 독립변수, 결과변수, 제한점을 추출해줘 공유 가능한 형식으로 근거를 함께 제시해. 입력 상황: 초록에는 표본 수는 있지만 비교군 설명이 없고 제한점은 한 문장으로만 적혀 있어. 외부 공유 직전이라 원문 근거와 제한을 짧게 붙여야 해. 연구 변수 외부 공유 전: 자료에 없는 말은 보태지 말고 확인할 곳을 표시해줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "지표·분석 메모야. 초록만 보고 표본, 독립변수, 결과변수, 제한점을 정리해줘. 비교군 설명이 없으니 인과관계라고 쓰지 말고 초록에 없는 건 비워둬. 참고로 외부 공유 직전이라 원문 근거와 제한을 짧게 붙여야 해. 그래서 공유 가능한 형식으로 근거를 함께 제시해."
+          "content": "먼저 연구 변수 외부 공유 전을 봐줘. 분류는 지표·분석 메모야. 초록만 보고 표본, 독립변수, 결과변수, 제한점을 정리해줘. 비교군 설명이 없으니 인과관계라고 쓰지 말고 초록에 없는 건 비워둬. 외부에 내기 전 원문 근거와 한계를 짧게 붙인 공유용 결과로 만들어줘."
         },
         {
           "role": "user",
-          "content": "확인되는 것만 쓰고, 모르는 건 모른다고 해줘."
+          "content": "연구 변수 외부 공유 전 기준으로 자료에 없는 말은 보태지 말고 확인할 곳을 표시해줘. 직전 논의의 후속 건으로 보고 달라진 사실을 중심으로 답해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a metrics-table and data-analysis context, extract the sample, independent variable, outcome, and limitations from the abstract; make the evidence visible in a shareable format. Input context: the abstract gives a sample size but no comparison-group description, and limitations are stated in one sentence. the result is going outside the team and needs a short source note and limitation. Complete the request directly, separate facts from inference, and do not invent anything absent from the input."
+          "content": "Research variables Before external sharing belongs to the metrics/analysis context. Extract the sample, independent variable, outcome, and limitations from the abstract; make the evidence visible in a shareable format. Input context: The abstract gives a sample size but no comparison-group description, and limitations are stated in one sentence. The result is going outside the team and needs a short source note and limitation. Research variables Before external sharing: Do not add unsupported wording; point to what needs checking."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a metrics/analysis item. From the abstract only, list the sample, independent variable, outcome, and limitations. There is no comparison-group description, so do not call it causal or fill the missing design. For this case, the result is going outside the team and needs a short source note and limitation. So make the evidence visible in a shareable format."
+          "content": "The metrics/analysis team is handling Research variables Before external sharing. From the abstract only, list the sample, independent variable, outcome, and limitations. There is no comparison-group description, so do not call it causal or fill the missing design. Before it leaves the team, make the shareable result carry a brief source note and limitation."
         },
         {
           "role": "user",
-          "content": "Use what can actually be checked; say when something is unknown."
+          "content": "For Research variables Before external sharing, Do not add unsupported wording; point to what needs checking. The request is abbreviated, so retain the audience and scope from the exchange."
         }
       ]
     }

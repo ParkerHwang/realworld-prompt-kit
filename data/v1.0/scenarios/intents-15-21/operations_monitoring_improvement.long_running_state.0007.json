@@ -40,8 +40,8 @@
     "naturalistic_features": [
       "followup_without_restatement",
       "message_burst",
-      "multi_intent_mixed_priority",
-      "rambling_stream"
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -66,17 +66,17 @@
       "features": [
         "followup_without_restatement",
         "message_burst",
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 장기 돌봄 조정 추적기 — 메모는 진료, 약 관련 질문, 가족 할 일을 추적해야 다만 임상 결정은 돌봄 팀의 몫이다, 결과는 알림과 명확한 임상 에스컬레이션 경계가 있는 조정 추적기. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "상황을 설명하면 주제는 장기 돌봄 조정 추적기 - 줄바꿈 섞임: 메모 진료, 약 관련 질문, 가족 할 일을 추적해야 하지만 임상 결정은 돌봄 팀의 몫이다 / 결과 알림과 명확한 임상 에스컬레이션 경계가 있는 조정 추적기 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "원본이 불완전하면 보류 지점을 표시해줘."
         }
       ]
     },
@@ -101,17 +101,17 @@
       "features": [
         "followup_without_restatement",
         "message_burst",
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: a long-term care coordination tracker — I’ve got Appointments, medication questions, and family tasks need tracking, but clinical decisions belong to the care team.; can you give me a coordination tracker with reminders and a clear clinical-escalation boundary? no invented details pls"
+          "content": "here’s the situation i’m trying to resolve: a long-term care coordination tracker - messy paste: appointments, medication questions, and family tasks need tracking, but clinical decisions belong to the care team / need: a coordination tracker with reminders and a clear clinical-escalation boundary / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "If the source is incomplete, show the hold point."
         }
       ]
     }

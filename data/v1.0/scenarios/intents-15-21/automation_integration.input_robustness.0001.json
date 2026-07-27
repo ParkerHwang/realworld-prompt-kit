@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "code_switching_jargon",
-      "interleaved_instruction_and_paste"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
-        "interleaved_instruction_and_paste"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "뒤섞인 SOP를 자동화 흐름으로 변환 정리하려는데, 확실히 아는 건 SOP는 한 단계를 반복하고 같은 조치에 review와 approve를 섞어 쓰며 손글씨 예외 메모가 있어야. 이걸 용어 미해결과 예외 검토 게이트가 있는 정규화 흐름로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "SOP 자동화 — 단계 반복, review/approve 충돌, 손글씨 예외 — 미해결 용어 + 예외 검토 게이트 흐름."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
-        "interleaved_instruction_and_paste"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out turning a messy SOP into an automation, but here’s what I actually know: The SOP repeats a step, uses both 'review' and 'approve' for the same action, and contains a handwritten exception note. Could you turn that into a normalized workflow with unresolved terms and an exception review gate, without papering over the gaps?"
+          "content": "Messy SOP automation — repeated step; review/approve conflict; handwritten exception — normalized workflow + unresolved terms + review gate."
         }
       ]
     }

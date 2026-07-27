@@ -38,10 +38,10 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "code_switching_jargon",
       "followup_without_restatement",
-      "interleaved_instruction_and_paste",
-      "message_burst"
+      "hedged_exploratory_request",
+      "message_burst",
+      "missing_decisive_detail"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
         "followup_without_restatement",
-        "interleaved_instruction_and_paste",
-        "message_burst"
+        "hedged_exploratory_request",
+        "message_burst",
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "회의 과부하 지표 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 회의가 너무 많다고 다만 단위는 시간, 전환 횟수, 참석 부담 중 무엇인지 모른다고, 원하는 건 결정 목적 질문 하나와 소수의 후보 측정치야. 답을 바꿀 빠진 정보는 따로 알려줘."
+          "content": "한번 봐줄 건 회의 과부하 지표. 초안부터 보자. 근거 메모는 이거야: 회의가 너무 많다고 하지만 단위는 시간, 전환 횟수, 참석 부담 중 무엇인지 모른다. 결정 목적 질문 하나와 소수의 후보 측정치 형태를 첫 시안으로 두고 부족한 점을 말해줘."
         },
         {
           "role": "user",
-          "content": "없는 입력은 맥락으로 채우지 말고 그대로 보이게 해줘."
+          "content": "원본이 정하지 않은 부분은 임시 상태로 둬."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
         "followup_without_restatement",
-        "interleaved_instruction_and_paste",
-        "message_burst"
+        "hedged_exploratory_request",
+        "message_burst",
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Before we go too far on a meeting-overload metric, can you sketch a first pass? My evidence is The request I received says too many meetings, but the relevant unit could be hours, context switches, or attendance burden.; I need one question about the decision and a small set of candidate measures. Call out anything that would change the answer."
+          "content": "Could you take a look at a meeting-overload metric. Before going further, evidence: the request I received says too many meetings, but the relevant unit could be hours, context switches, or attendance burden. Tentative first pass: one question about the decision and a small set of candidate measures; for a meeting-overload metric, flag answer-changing gaps."
         },
         {
           "role": "user",
-          "content": "Please leave unknown inputs visible rather than filling them in from context."
+          "content": "Keep the answer provisional wherever the source does not settle it."
         }
       ]
     }

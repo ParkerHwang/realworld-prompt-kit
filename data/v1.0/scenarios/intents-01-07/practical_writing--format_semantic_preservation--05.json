@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.format_semantic_preservation.0005",
   "title": {
-    "ko": "지원금 신청 요약 — 스키마 JSON",
-    "en": "Grant-application summary — Schema-constrained JSON"
+    "ko": "지원금 신청 요약 스키마 JSON",
+    "en": "Grant application summary Schema constrained JSON"
   },
   "task": {
     "primary_intent": "practical_writing",
@@ -18,8 +18,8 @@
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "지원금 신청 요약 자료를 지정 형식으로 바꿔줘. JSON 외 말은 내지 말고 값의 출처를 보존해",
-      "en": "Convert the Grant-application summary material to the requested format; return only json and preserve value provenance."
+      "ko": "지원금 신청 요약 스키마 JSON 자료를 지정 형식으로 바꿔줘. JSON 외 말은 내지 말고 값의 출처를 보존해",
+      "en": "For Grant application summary Schema constrained JSON, reformat without semantic drift; return only json and preserve value provenance"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "과학·R&D 실험 자료와 연구 기록을 다루는 상황에서 지원금 신청 요약 자료를 지정 형식으로 바꿔줘. JSON 외 말은 내지 말고 값의 출처를 보존해. 입력 상황: 출력 스키마는 네 필드만 허용하고 빠진 값은 null이야. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "검토할 항목은 지원금 신청 요약 스키마 JSON; 맥락은 실험·연구 기록이야. 지원금 신청 요약 스키마 JSON 자료를 지정 형식으로 바꿔줘. JSON 외 말은 내지 말고 값의 출처를 보존해. 입력 상황: 출력 스키마는 네 필드만 허용하고 빠진 값은 null이야. 지원금 신청 요약 스키마 JSON: 제출 가능한 형태로 정리하되 빠진 식별자는 남겨둬."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "실험·연구 기록이야. 모양을 바꿔야 하는 지원금 신청 요약 건이야. 출력 스키마는 네 필드만 허용하고 빠진 값은 null이야. JSON 외 말은 내지 말고 값의 출처를 보존해."
+          "content": "상황 설명은 실험·연구 기록이야. 대상은 지원금 신청 요약 스키마 JSON. 지원금 신청 요약 스키마 JSON를 제한된 JSON 구조로 내야 해 지원금 신청 요약 스키마 JSON 건이야. 허용된 네 JSON 키만 내고 모르는 값은 null로 표시해. …"
         },
         {
           "role": "user",
-          "content": "모양은 바꿔도 숫자·날짜·조건은 건드리지 마."
+          "content": "지원금 신청 요약 스키마 JSON 기준으로 짧게 바꿔도 핵심 조건과 예외는 그대로 두어."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a science or R&D experiment-and-records context, Convert the Grant-application summary material to the requested format; return only json and preserve value provenance.. Input context: the output schema allows four fields only and absent values must be null. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "Read Grant application summary Schema constrained JSON against the science/R&D context. For Grant application summary Schema constrained JSON, reformat without semantic drift; return only json and preserve value provenance. Input context: The output schema allows four fields only and absent values must be null. Grant application summary Schema constrained JSON: Prepare the deliverable while leaving unavailable identifiers visible."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a science/R&D item. The format needs changing for Grant-application summary. The output schema allows four fields only and absent values must be null. Return only json and preserve value provenance."
+          "content": "For the science/R&D context, use Grant application summary Schema constrained JSON?! The Grant application summary Schema constrained JSON output is limited to a JSON structure. Grant application summary Schema constrained JSON. Return only the four permitted JSON keys and represent unknown values as null."
         },
         {
           "role": "user",
-          "content": "Change the shape, not the numbers, dates, or conditions."
+          "content": "For Grant application summary Schema constrained JSON, Shorten the result but keep its core conditions and exceptions intact."
         }
       ]
     }

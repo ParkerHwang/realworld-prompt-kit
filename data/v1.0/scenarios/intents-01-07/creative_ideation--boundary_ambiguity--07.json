@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.boundary_ambiguity.0007",
   "title": {
-    "ko": "여행 경험 아이디어 — 현재·보관 문서",
-    "en": "Travel-experience ideas — Current versus archived"
+    "ko": "여행 경험 아이디어 현재 보관 문서",
+    "en": "Travel experience ideas Current versus archived"
   },
   "task": {
     "primary_intent": "creative_ideation",
@@ -18,8 +18,8 @@
       "creative_media"
     ],
     "user_goal": {
-      "ko": "여행 경험 아이디어의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해",
-      "en": "Work out the applicable scope for Travel-experience ideas; State the rule for choosing the current document."
+      "ko": "여행 경험 아이디어 현재 보관 문서의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해",
+      "en": "For Travel experience ideas Current versus archived, determine the applicable scope; state the rule for choosing the current document"
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "출장·여행·호스피탈리티 일정을 조율하는 상황에서 여행 경험 아이디어의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해. 입력 상황: 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "이번 작업의 분야는 여행·출장 일정이야, 대상은 여행 경험 아이디어 현재 보관 문서. 여행 경험 아이디어 현재 보관 문서의 적용 범위를 가려줘. 현재 문서를 고르는 기준을 한 문장으로 정리해. 입력 상황: 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 여행 경험 아이디어 현재 보관 문서: 예외가 시작되는 조건과 빠지는 조건을 따로 보여줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "여행·출장 일정이야. 범위가 헷갈리는 여행 경험 아이디어 건이야. 검색 결과에 현재 문서와 보관 문서가 함께 노출돼. 현재 문서를 고르는 기준을 한 문장으로 정리해."
+          "content": "상황 설명은 여행·출장 일정이야. 대상은 여행 경험 아이디어 현재 보관 문서. 결정 전에 여행 경험 아이디어 현재 보관 문서의 경계를 짚고 싶어 여행 경험 아이디어 현재 보관 문서 건이야. 검색 결과에서 최신본과 보관본을 구별할 실마리를 한 문장으로 줘."
         },
         {
           "role": "user",
-          "content": "어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "여행 경험 아이디어 현재 보관 문서 기준으로 적용 범위를 먼저 나누고, 결론을 바꿀 빈칸은 질문으로 돌려줘. 조건 변경: 아, 여행 경험 아이디어 현재 보관 문서 대상 바꿀게—마지막 범위가 우선이야. 여러 부탁 중 지금 답에 꼭 필요한 것과 나중에 할 일을 갈라줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a travel or hospitality scheduling context, Work out the applicable scope for Travel-experience ideas; State the rule for choosing the current document.. Input context: search results show a current document alongside an archived one. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "The relevant travel/hospitality case is Travel experience ideas Current versus archived. For Travel experience ideas Current versus archived, determine the applicable scope; state the rule for choosing the current document. Input context: Search results show a current document alongside an archived one. Travel experience ideas Current versus archived: Show what triggers the exception and what remains outside it."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a travel/hospitality item. The scope is fuzzy for Travel-experience ideas. Search results show a current document alongside an archived one. State the rule for choosing the current document."
+          "content": "Treat Travel experience ideas Current versus archived as work in travel/hospitality. Before deciding on Travel experience ideas Current versus archived, I need the edge clarified. Travel experience ideas Current versus archived. Give one sentence that distinguishes the live document from its archived search result."
         },
         {
           "role": "user",
-          "content": "If the boundary is fuzzy, ask one question before deciding."
+          "content": "For Travel experience ideas Current versus archived, Split the applicable scope first and turn decision-changing gaps into questions. Mid-task change: Scope change—keep Travel experience ideas Current versus archived to the marked section, not the whole set. Lead with the result needed now and list lower-urgency checks separately."
         }
       ]
     }

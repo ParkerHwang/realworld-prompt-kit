@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.boundary_ambiguity.0008",
   "title": {
-    "ko": "고객 지표 설명 — 초보·전문가 독자",
-    "en": "Customer metric — Beginner versus specialist reader"
+    "ko": "고객 지표 설명 초보 전문가 독자",
+    "en": "Customer metric Beginner versus specialist reader"
   },
   "task": {
     "primary_intent": "explanation_teaching",
@@ -18,8 +18,8 @@
       "education_research"
     ],
     "user_goal": {
-      "ko": "고객 지표 설명의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해",
-      "en": "Work out the applicable scope for Customer metric; Propose an output that respects both audiences."
+      "ko": "고객 지표 설명 초보 전문가 독자의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해",
+      "en": "For Customer metric Beginner versus specialist reader, determine the applicable scope; propose an output that respects both audiences"
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "사업 운영의 선택지와 실행 조건을 검토하는 상황에서 고객 지표 설명의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 입력 상황: 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "고객 지표 설명 초보 전문가 독자 건을 보고, 분야는 사업 운영 자료야. 고객 지표 설명 초보 전문가 독자의 적용 범위를 가려줘. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 입력 상황: 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 고객 지표 설명 초보 전문가 독자: 가까운 두 기준을 섞지 말고 경계선을 하나 짚어줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일단 초안으로, 사업 운영 자료야. 범위가 헷갈리는 고객 지표 설명 건이야. 같은 사실을 초보자와 담당자에게 다르게 설명해야 해. 두 독자의 경계를 넘지 않는 출력 방식을 제안해. 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "위 건 — 고객 유지율; 월초 활성 고객=분모, 중간 신규 제외. 초보·담당자 설명 경계, 애매하면 질문. 핵심과 확인점을 함께 표시해."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a business-operations context where options and execution conditions matter, Work out the applicable scope for Customer metric; Propose an output that respects both audiences.. Input context: the same facts must be explained differently to a beginner and a specialist. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "Read Customer metric Beginner versus specialist reader against the business-operations context. For Customer metric Beginner versus specialist reader, determine the applicable scope; propose an output that respects both audiences. Input context: The same facts must be explained differently to a beginner and a specialist. Customer metric Beginner versus specialist reader: Keep the two nearby rules apart and name the boundary between them."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "A draft is fine for now: This is a business-operations item. The scope is fuzzy for Customer metric. The same facts must be explained differently to a beginner and a specialist. Propose an output that respects both audiences. If the boundary is fuzzy, ask one question before deciding."
+          "content": "That one — Customer retention; starting active customers are the denominator, mid-month signups excluded. Beginner/specialist explanation boundary; ask when unclear."
         }
       ]
     }

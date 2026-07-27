@@ -38,10 +38,10 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "code_switching_jargon",
       "followup_without_restatement",
-      "interleaved_instruction_and_paste",
-      "message_burst"
+      "message_burst",
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
         "followup_without_restatement",
-        "interleaved_instruction_and_paste",
-        "message_burst"
+        "message_burst",
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 구조화된 API 페이로드 준비 — 메모는 엔드포인트는 action, resource_id, dry_run을 요구하며 리소스 ID는 합성 값이고 실시간 엔드포인트는 없어, 결과는 dry_run을 켠 페이로드 예시와 요청 미전송 안내. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "선택을 앞둔 건 구조화된 API 페이로드 준비 - [raw]: 메모 엔드포인트는 action, resource_id, dry_run을 요구하며 리소스 ID는 합성 값이고 실시간 엔드포인트는 없어 / 결과 dry_run을 켠 페이로드 예시와 요청 미전송 안내 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "빠진 사실이 있으면 초안을 되돌릴 수 있게 남겨줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
         "followup_without_restatement",
-        "interleaved_instruction_and_paste",
-        "message_burst"
+        "message_burst",
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: preparing a structured API payload — I’ve got The endpoint requires action, resource_id, and dry_run; the resource ID is synthetic and the live endpoint still is not available.; can you give me a payload example with dry_run enabled and a note that no request was sent? no invented details pls"
+          "content": "i’m weighing what to do about preparing a structured api payload - raw text: the endpoint requires action, resource_id, and dry_run; the resource ID is synthetic and the live endpoint still is not available / need: a payload example with dry_run enabled and a note that no request was sent / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "Keep the quick draft reversible when a fact is missing."
         }
       ]
     }

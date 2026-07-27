@@ -68,7 +68,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "지금 권한 확인을 포함한 문서 게시 준비이랑 아직 열린 문제가 엉켜 있어. 문서는 검토 준비가 됐지만 대상 그룹과 링크 설정은 아직 체크 안 됐어 일단 대상, 권한, 링크를 체크하는 게시 점검 리스트로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 접근 권한을 확인하기 전 게시하거나 링크를 공개하지 않는다."
+          "content": "쓸 수 있는 다음 단계는 권한 확인을 포함한 문서 게시 준비. 아직 갈라서 봐야 할 내용이 있어. 열린 내용은 이거야: 문서는 검토 준비가 됐지만 대상 그룹과 링크 설정은 아직 확인 안 됐어. 대상, 권한, 링크를 확인하는 게시 점검 목록 형태로 만들어줘. 이번 요청 밖의 내용은 따로 남겨줘. 접근 권한을 확인하기 전 게시하거나 링크를 공개하지 않는다."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: preparing a document publication with permission checks, plus some unresolved details. The document is ready for review, but the audience group and link setting are not confirmed. Please make a publication checklist with audience, permission, and link verification; if the second issue is out of scope, separate it. Do not publish or make a link public before access is verified."
+          "content": "I want a usable next step for preparing a document publication with permission checks. Other loose ends: the document is ready for review, but the audience group and link setting are not confirmed. Please make a publication checklist with audience, permission, and link verification. Do not publish or make a link public before access is verified. Keep extra scope apart."
         }
       ]
     }

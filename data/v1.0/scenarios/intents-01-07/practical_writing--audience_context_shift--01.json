@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.audience_context_shift.0001",
   "title": {
-    "ko": "회의 후속 메일 — 고객용 안내",
-    "en": "Meeting follow-up email — Customer-facing notice"
+    "ko": "회의 후속 메일 고객용 안내",
+    "en": "Meeting follow up email Customer facing notice"
   },
   "task": {
     "primary_intent": "practical_writing",
@@ -16,8 +16,8 @@
     "primary_domain": "communication_meetings",
     "domain_tags": [],
     "user_goal": {
-      "ko": "회의 후속 메일 내용을 지정 독자에게 맞춰 다시 써줘. 안심시키되 확인되지 않은 약속은 하지 마",
-      "en": "Adapt the Meeting follow-up email material for the specified reader; reassure without promising what is unconfirmed."
+      "ko": "회의 후속 메일 고객용 안내를 독자에 맞게 다시 써줘. 안심시키되 확인되지 않은 약속은 하지 마",
+      "en": "For Meeting follow up email Customer facing notice, rewrite for its reader; reassure without promising what is unconfirmed"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -48,7 +48,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 회의 후속 메일 내용을 지정 독자에게 맞춰 다시 써줘. 안심시키되 확인되지 않은 약속은 하지 마. 입력 상황: 같은 사실을 불안한 고객이 읽을 짧은 안내로 써야 해. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "회의 후속 메일 고객용 안내 건을 보고, 분야는 팀 회의/커뮤니케이션 건이야. 회의 후속 메일 고객용 안내를 독자에 맞게 다시 써줘. 안심시키되 확인되지 않은 약속은 하지 마. 입력 상황: 같은 사실을 불안한 고객이 읽을 짧은 안내로 써야 해. 회의 후속 메일 고객용 안내: 예시와 한계를 함께 보여줘."
         }
       ]
     },
@@ -64,7 +64,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "이거 핵심만 좀 봐줘, 팀 회의/커뮤니케이션 건이야. 읽는 사람이 달라진 회의 후속 메일 건이야. 같은 사실을 불안한 고객이 읽을 짧은 안내로 써야 해. 안심시키되 확인되지 않은 약속은 하지 마. 읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬. source랑 output은 구분해서."
+          "content": "회의 후속 메일 고객용 안내 부분만 먼저 처리해줘, 이 요청은 팀 회의/커뮤니케이션 건이야. 회의 후속 메일 고객용 안내 관련해서 봐줘. 회의 후속 메일 고객용 안내를 불안한 고객에게 알려야 해 회의 후속 메일 고객용 안내 건이야. 걱정하는 고객에게 짧고 안심되는 안내로 만들되 확인 전 약속은 빼줘. 회의 후속 메일 고객용 안내 기준으로 공유 범위에 맞지 않는 내부 정보는 분리해줘. 회의 후속 메일 고객용 안내 이거 완전 섞였어, 분리 좀 해줘. source 쪽 사실과 output 쪽 표현을 따로 보여줘. JSON source/output 경계도 유지해줘."
         }
       ]
     },
@@ -77,7 +77,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, Adapt the Meeting follow-up email material for the specified reader; reassure without promising what is unconfirmed.. Input context: the same facts must become a short notice for an anxious customer. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "Place Meeting follow up email Customer facing notice in the team-communication lane. For Meeting follow up email Customer facing notice, rewrite for its reader; reassure without promising what is unconfirmed. Input context: The same facts must become a short notice for an anxious customer. Meeting follow up email Customer facing notice: Give an example together with its limitation."
         }
       ]
     },
@@ -93,7 +93,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Can you take a quick look at this: This is a team-communication item. The reader has changed for Meeting follow-up email. The same facts must become a short notice for an anxious customer. Reassure without promising what is unconfirmed. Make it fit the reader without changing the substance. Keep the source and output distinct."
+          "content": "Only the Meeting follow up email Customer facing notice part for now: The team-communication team is handling Meeting follow up email Customer facing notice. An anxious customer will read this notice about Meeting follow up email Customer facing notice. Meeting follow up email Customer facing notice. Write a short reassuring notice for a worried customer, with no promise before confirmation. For Meeting follow up email Customer facing notice, Separate internal material that does not belong in the sharing scope. Meeting follow up email Customer facing notice got kinda messy, honestly. Make the conversion from source language to output format visible. Keep the PDF source/output labels distinct."
         }
       ]
     }

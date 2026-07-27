@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.audience_context_shift.0006",
   "title": {
-    "ko": "조항의 쉬운 말 — 초보 학습자",
-    "en": "Plain-language clause — Beginner learner"
+    "ko": "조항의 쉬운 말 초보 학습자",
+    "en": "Plain language clause Beginner learner"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
@@ -19,8 +19,8 @@
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "조항의 쉬운 말 내용을 지정 독자에게 맞춰 다시 써줘. 예시와 한계를 같이 넣어",
-      "en": "Adapt the Plain-language clause material for the specified reader; include an example and a limitation."
+      "ko": "조항의 쉬운 말 초보 학습자를 독자에 맞게 다시 써줘. 예시와 한계를 같이 넣어",
+      "en": "For Plain language clause Beginner learner, rewrite for its reader; include an example and a limitation"
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -51,7 +51,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "계약·컴플라이언스 자료의 적용 범위를 검토하는 상황에서 조항의 쉬운 말 내용을 지정 독자에게 맞춰 다시 써줘. 예시와 한계를 같이 넣어. 입력 상황: 전문가용 자료를 배경지식 없는 학습자가 따라갈 설명으로 바꿔야 해. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "조항의 쉬운 말 초보 학습자 건을 보고, 분야는 계약·준수 자료야. 조항의 쉬운 말 초보 학습자를 독자에 맞게 다시 써줘. 예시와 한계를 같이 넣어. 입력 상황: 전문가용 자료를 배경지식 없는 학습자가 따라갈 설명으로 바꿔야 해. 조항의 쉬운 말 초보 학습자: 예시와 한계를 함께 보여줘. 위험을 과소평가하지 말고 확인 절차를 함께 표시해줘."
         }
       ]
     },
@@ -67,11 +67,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "계약·준수 자료야. 읽는 사람이 달라진 조항의 쉬운 말 건이야. 전문가용 자료를 배경지식 없는 학습자가 따라갈 설명으로 바꿔야 해. 예시와 한계를 같이 넣어."
-        },
-        {
-          "role": "user",
-          "content": "읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "위 건 — 조항의 쉬운 말; 전문가 자료→배경 없는 학습자. 예시+한계, 공식 확인선. 핵심과 확인점을 함께 표시해."
         }
       ]
     },
@@ -84,7 +80,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a contract or compliance context where the applicable scope must be verified, Adapt the Plain-language clause material for the specified reader; include an example and a limitation.. Input context: expert material must become an explanation for a learner with no background. Adapt tone and explanation level to the specified audience and context without changing the core facts. Make the boundary for official or professional review explicit."
+          "content": "Place Plain language clause Beginner learner in the contract/compliance lane. For Plain language clause Beginner learner, rewrite for its reader; include an example and a limitation. Input context: Expert material must become an explanation for a learner with no background. Plain language clause Beginner learner: Give an example together with its limitation. Do not downplay the risk; show the verification step alongside it."
         }
       ]
     },
@@ -100,11 +96,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a contract/compliance item. The reader has changed for Plain-language clause. Expert material must become an explanation for a learner with no background. Include an example and a limitation."
-        },
-        {
-          "role": "user",
-          "content": "Make it fit the reader without changing the substance. Do not make a professional determination; state what needs official review."
+          "content": "That one — Plain-language clause; expert material → learner without background. Example and limit; mark official review."
         }
       ]
     }

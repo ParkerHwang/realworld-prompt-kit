@@ -38,10 +38,10 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "emoji_shorthand",
       "followup_without_restatement",
+      "hedged_exploratory_request",
       "message_burst",
-      "speech_to_text_disfluency"
+      "missing_decisive_detail"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
         "followup_without_restatement",
+        "hedged_exploratory_request",
         "message_burst",
-        "speech_to_text_disfluency"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "근거 확인을 포함한 교육 예산 계획 너무 멀리 가기 전에 초안부터 잡아줄래? 내가 가진 근거는 제안서는 생산성 향상을 예측다만 기준선, 비교군, 합의된 측정치가 없어고, 원하는 건 대규모 예산 결정 전 파일럿과 측정 안야. 답을 바꿀 빠진 정보는 따로 알려줘."
+          "content": "내가 이해한 내용에서 볼 건 근거 확인을 포함한 교육 예산 계획. 초안부터 보자. 근거 메모는 이거야: 제안서는 생산성 향상을 예측하지만 기준선, 비교군, 합의된 측정치가 없어. 처음에는 대규모 예산 결정 전 파일럿과 측정 계획 형태로 두고 확정할 부분을 나눠줘."
         },
         {
           "role": "user",
-          "content": "없는 입력은 맥락으로 채우지 말고 그대로 보이게 해줘."
+          "content": "결정적 입력이 없으면 매끄럽게 넘기지 말고 물어봐줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "emoji_shorthand",
         "followup_without_restatement",
+        "hedged_exploratory_request",
         "message_burst",
-        "speech_to_text_disfluency"
+        "missing_decisive_detail"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Before we go too far on a training-budget plan with an evidence check, can you sketch a first pass? My evidence is The proposal predicts productivity gains but has no baseline, control comparison, or agreed measure.; I need a pilot and measurement plan before a larger funding decision. Call out anything that would change the answer."
+          "content": "I’m checking my understanding of a training-budget plan with an evidence check. Before going further, evidence: the proposal predicts productivity gains but has no baseline, control comparison, or agreed measure. Tentative first pass: a pilot and measurement plan before a larger funding decision; for a training-budget plan with an evidence check, flag answer-changing gaps."
         },
         {
           "role": "user",
-          "content": "Please leave unknown inputs visible rather than filling them in from context."
+          "content": "When a decisive input is missing, ask rather than smoothing it over."
         }
       ]
     }

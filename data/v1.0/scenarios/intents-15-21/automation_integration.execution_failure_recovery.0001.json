@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "anaphora_prior_context",
-      "resume_after_interruption"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
-        "resume_after_interruption"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "중복 웹훅 전달 복구 정리하려는데, 확실히 아는 건 같은 이벤트 ID가 두 번 왔고 하위 조치가 한 번 또는 두 번 실행됐을 수 있어야. 이걸 중복 조회와 보정 조치 안로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "중복 웹훅 — 같은 이벤트 ID 2회, 하위 조치 1/2회 가능 — 중복 조회 + 보정 조치."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
-        "resume_after_interruption"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out recovering from duplicate webhook delivery, but here’s what I actually know: The same event ID arrived twice and the downstream action may have run once or twice. Could you turn that into a deduplication lookup and compensating-action plan, without papering over the gaps?"
+          "content": "Duplicate webhook — same event ID twice; downstream ran 1 or 2 times — dedup lookup + compensating action plan."
         }
       ]
     }

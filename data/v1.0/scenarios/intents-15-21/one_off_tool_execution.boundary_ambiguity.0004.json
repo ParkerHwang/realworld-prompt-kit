@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "implicit_goal_or_output",
-      "terse_fragment"
+      "multi_intent_mixed_priority",
+      "rambling_stream"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "implicit_goal_or_output",
-        "terse_fragment"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "지금 탭이 모호한 스프레드시트 업데이트이랑 아직 열린 문제가 엉켜 있어. 통합 문서에 Current, Archive, Draft 탭이 있지만 요청에는 합계를 업데이트하라고만 되어 있어 일단 기준 탭을 묻는 질문 하나와 안전한 미리보기 안로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 이름만 보고 Archive나 Draft를 수정하지 않는다."
+          "content": "먼저 범위를 확인할 건 탭이 모호한 스프레드시트 업데이트. 아직 열린 문제들이 서로 엉켜 있어. 열린 내용은 이거야: 통합 문서에 Current, Archive, Draft 탭이 있지만 요청에는 합계를 업데이트하라고만 되어 있어. 기준 탭을 묻는 질문 하나와 안전한 미리보기 계획 형태로 만들어줘. 빈 범위는 따로 적어줘. 이름만 보고 Archive나 Draft를 수정하지 않는다."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "implicit_goal_or_output",
-        "terse_fragment"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: updating an ambiguous spreadsheet tab, plus some unresolved details. The workbook has tabs named Current, Archive, and Draft; the request only says update the totals. Please make one question identifying the source-of-truth tab and a safe preview plan; if the second issue is out of scope, separate it. Do not edit Archive or Draft based on naming alone."
+          "content": "I need to clarify updating an ambiguous spreadsheet tab. Other loose ends: the workbook has tabs named Current, Archive, and Draft; the request only says update the totals. Please make one question identifying the source-of-truth tab and a safe preview plan. Do not edit Archive or Draft based on naming alone. Keep extra scope apart."
         }
       ]
     }

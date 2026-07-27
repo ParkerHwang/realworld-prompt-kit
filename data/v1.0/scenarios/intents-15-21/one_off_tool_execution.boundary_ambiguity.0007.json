@@ -40,8 +40,8 @@
     "naturalistic_features": [
       "followup_without_restatement",
       "message_burst",
-      "multi_intent_mixed_priority",
-      "rambling_stream"
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -66,17 +66,17 @@
       "features": [
         "followup_without_restatement",
         "message_burst",
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 진료 예약 요청 준비 — 메모는 전문의 예약을 원다만 병원, 의뢰서, 긴급도, 희망 날짜가 없어, 결과는 긴급도를 묻는 질문 하나와 개인정보를 보호하는 정보 리스트. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "다시 이어서 보는 건 진료 예약 요청 준비 - [복사본]: 메모 전문의 예약을 원하지만 병원, 의뢰서, 긴급도, 희망 날짜가 없어 / 결과 긴급도를 묻는 질문 하나와 개인정보를 보호하는 정보 목록 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "근거가 얇으면 안전한 초안과 확인할 점을 같이 줘."
         }
       ]
     },
@@ -101,17 +101,17 @@
       "features": [
         "followup_without_restatement",
         "message_burst",
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: preparing a medical appointment request — I’ve got The person asking wants a specialist appointment but has not supplied clinic, referral, urgency, or date preferences.; can you give me one question about urgency and a privacy-safe information checklist? no invented details pls"
+          "content": "i’m returning to preparing a medical appointment request - [copy]: the person asking wants a specialist appointment but has not supplied clinic, referral, urgency, or date preferences / need: one question about urgency and a privacy-safe information checklist / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "If the evidence is thin, return a safe draft and name the check needed."
         }
       ]
     }

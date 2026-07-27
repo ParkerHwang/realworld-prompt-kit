@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.explanation_teaching.input_robustness.0005",
   "title": {
-    "ko": "관용 표현의 맥락 — 빈 칸이 있는 양식",
-    "en": "Idiom in context — Form with a missing column"
+    "ko": "관용 표현의 맥락 빈 칸이 있는 양식",
+    "en": "Idiom in context Form with a missing column"
   },
   "task": {
     "primary_intent": "explanation_teaching",
@@ -18,8 +18,8 @@
       "education_research"
     ],
     "user_goal": {
-      "ko": "관용 표현의 맥락 작업에 필요한 내용을 깨진 입력에서 복원해줘. 누락을 숨기지 않고 처리 가능한 부분만 답해",
-      "en": "Recover what the Idiom in context task needs from the damaged input; answer only what can be supported without hiding the omission."
+      "ko": "관용 표현의 맥락 빈 칸이 있는 양식에서 읽히는 부분만 복원해줘. 누락을 숨기지 않고 처리 가능한 부분만 답해",
+      "en": "For Idiom in context Form with a missing column, restore legible input only; answer only what can be supported without hiding the omission"
     },
     "expected_artifact": "An audience-appropriate explanation with examples and caveats."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "팀 회의와 업무 커뮤니케이션을 정리하는 상황에서 관용 표현의 맥락 작업에 필요한 내용을 깨진 입력에서 복원해줘. 누락을 숨기지 않고 처리 가능한 부분만 답해. 입력 상황: 핵심 열 하나가 통째로 빠진 양식이 도착했어. 오탈자·누락·복붙 오류가 있어도 확실한 부분과 확인이 필요한 부분을 나눠 처리해."
+          "content": "검토할 항목은 관용 표현의 맥락 빈 칸이 있는 양식; 맥락은 팀 회의/커뮤니케이션 건이야. 관용 표현의 맥락 빈 칸이 있는 양식에서 읽히는 부분만 복원해줘. 누락을 숨기지 않고 처리 가능한 부분만 답해. 입력 상황: 핵심 열 하나가 통째로 빠진 양식이 도착했어. 관용 표현의 맥락 빈 칸이 있는 양식: 읽히는 조각만 먼저 옮기고, 깨진 값은 확인 대기로 표시해줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "복붙한 내용이 좀 깨졌는데, 팀 회의/커뮤니케이션 건이야. 입력이 좀 깨진 관용 표현의 맥락 건이야. 핵심 열 하나가 통째로 빠진 양식이 도착했어. 누락을 숨기지 않고 처리 가능한 부분만 답해. 깨진 부분은 추측하지 말고 확인 필요로 남겨줘. 가능하면 관련해서 다음 확인할 것도 한 줄만 덧붙여줘. 아, 대상은 전체가 아니라 위에 적은 범위만이야."
+          "content": "아까 말한 관용 표현의 맥락 빈 칸이 있는 양식 관련해서 물어볼게, 상황 설명은 팀 회의/커뮤니케이션 건이야. 대상은 관용 표현의 맥락 빈 칸이 있는 양식. 관용 표현의 맥락 빈 칸이 있는 양식에 핵심 칸이 빠졌어 관용 표현의 맥락 빈 칸이 있는 양식 건이야. 빠진 열을 채우지 말고 남아 있는 항목으로 할 수 있는 답만 내줘. 관용 표현의 맥락 빈 칸이 있는 양식 기준으로 받아쓴 말은 최종 의미만 살리고 반복과 빈칸은 따로 적어줘. 여러 부탁 중 지금 답에 꼭 필요한 것과 나중에 할 일을 갈라줘. 정정할게—대상은 앞서 표시한 구간으로 한정해줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a team-meeting and work-communication context, Recover what the Idiom in context task needs from the damaged input; answer only what can be supported without hiding the omission.. Input context: one important column is entirely missing from the received form. Work through typos, omissions, or pasted-text errors by separating what is supported from what needs confirmation."
+          "content": "Place Idiom in context Form with a missing column in the team-communication lane. For Idiom in context Form with a missing column, restore legible input only; answer only what can be supported without hiding the omission. Input context: One important column is entirely missing from the received form. Idiom in context Form with a missing column: Transcribe legible pieces first and mark damaged values for checking."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "The pasted text is a bit messy: This is a team-communication item. The input is messy for Idiom in context. One important column is entirely missing from the received form. Answer only what can be supported without hiding the omission. Do not repair broken bits by guessing; mark what needs checking. If possible, add one brief next-check item. Actually, use only the scope stated above, not the broader one."
+          "content": "I have a quick question about Idiom in context Form with a missing column: In the team-communication lane, handle Idiom in context Form with a missing column. A required field is missing from the Idiom in context Form with a missing column form. Idiom in context Form with a missing column. Do not fill the absent column; answer only from the fields that remain. For Idiom in context Form with a missing column, Keep the final meaning from the dictation; list repeats and gaps separately. Separate the must-have result from requests that can wait for a second pass. Correction—Limit the answer to the segment I identified above."
         }
       ]
     }

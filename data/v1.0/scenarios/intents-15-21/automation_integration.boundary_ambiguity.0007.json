@@ -39,9 +39,9 @@
     },
     "naturalistic_features": [
       "followup_without_restatement",
-      "hedged_exploratory_request",
       "message_burst",
-      "missing_decisive_detail"
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -65,18 +65,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
-        "hedged_exploratory_request",
         "message_burst",
-        "missing_decisive_detail"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 고객 에스컬레이션 자동 라우팅 — 메모는 요청에는 긴급 불만이 언급됐지만 심각도 근거, 계정 권한, 업무 외 시간 담당은 정의되지 않았다, 결과는 심각도 규칙 질문 하나와 사람 검토 우선 흐름 초안. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "실제로 풀어야 할 문제는 고객 에스컬레이션 자동 라우팅 - ocr 메모: 메모 요청에는 긴급 불만이 언급됐지만 심각도 근거, 계정 권한, 업무 외 시간 담당은 정의되지 않았다 / 결과 심각도 규칙 질문 하나와 사람 검토 우선 흐름 초안 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "흔들리는 입력이 있으면 아직 확인할 내용을 말해줘."
         }
       ]
     },
@@ -100,18 +100,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
-        "hedged_exploratory_request",
         "message_burst",
-        "missing_decisive_detail"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: an automated customer escalation route — I’ve got The request I received mentions urgent complaints, but severity evidence, account authority, and after-hours ownership are not defined.; can you give me one question about the severity rule and a human-review-first draft? no invented details pls"
+          "content": "the practical problem is an automated customer escalation route - ocr bits: the request I received mentions urgent complaints, but severity evidence, account authority, and after-hours ownership are not defined / need: one question about the severity rule and a human-review-first draft / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "If an input is shaky, say what still needs confirmation."
         }
       ]
     }

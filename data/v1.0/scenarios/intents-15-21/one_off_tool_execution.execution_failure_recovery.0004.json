@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "code_switching_jargon",
-      "interleaved_instruction_and_paste"
+      "multi_intent_mixed_priority",
+      "rambling_stream"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
-        "interleaved_instruction_and_paste"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "지금 스프레드시트 쓰기 실패 복구이랑 아직 열린 문제가 엉켜 있어. 일괄 업데이트가 일부 행을 바꾼 뒤 실패했을 수 있고 시트에는 트랜잭션 로그가 없어 일단 재시도 전 스냅샷, 차이, 행별 검증 안로 정리해줘. 범위를 넘는 건 나눠서 표시하고, 부분 쓰기를 확인하기 전 전체 배치를 다시 실행하지 않는다."
+          "content": "성급한 추측을 피할 건 스프레드시트 쓰기 실패 복구. 결정 전까지 남겨둘 질문들이 있어. 열린 내용은 이거야: 일괄 업데이트가 일부 행을 바꾼 뒤 실패했을 수 있고 시트에는 트랜잭션 로그가 없어. 재시도 전 스냅샷, 차이, 행별 검증 계획 형태로 만들어줘. 산출물 범위를 넘는 내용은 분리해줘. 부분 쓰기를 확인하기 전 전체 배치를 다시 실행하지 않는다."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
-        "interleaved_instruction_and_paste"
+        "multi_intent_mixed_priority",
+        "rambling_stream"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "There are two things tangled together here: recovering from a spreadsheet write failure, plus some unresolved details. One batch update failed after some rows may have changed, and the sheet has no transaction log. Please make a snapshot, diff, and row-level verification plan before retry; if the second issue is out of scope, separate it. Do not rerun the entire batch until partial writes are identified."
+          "content": "I’m trying to avoid a bad guess on recovering from a spreadsheet write failure. Other loose ends: one batch update failed after some rows may have changed, and the sheet has no transaction log. Please make a snapshot, diff, and row-level verification plan before retry. Do not rerun the entire batch until partial writes are identified. Keep extra scope apart."
         }
       ]
     }

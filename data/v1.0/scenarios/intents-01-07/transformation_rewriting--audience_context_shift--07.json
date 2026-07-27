@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.audience_context_shift.0007",
   "title": {
-    "ko": "수업 노트의 복습 카드 — 혼합 언어 수업",
-    "en": "Lesson notes to flashcards — Mixed-language classroom"
+    "ko": "수업 노트의 복습 카드 혼합 언어 수업",
+    "en": "Lesson notes to flashcards Mixed language classroom"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
@@ -18,8 +18,8 @@
       "education_research"
     ],
     "user_goal": {
-      "ko": "수업 노트의 복습 카드 내용을 지정 독자에게 맞춰 다시 써줘. 표현을 단순하게 하고 문화적 전제를 설명해",
-      "en": "Adapt the Lesson notes to flashcards material for the specified reader; simplify wording and explain cultural assumptions."
+      "ko": "수업 노트의 복습 카드 혼합 언어 수업을 독자에 맞게 다시 써줘. 표현을 단순하게 하고 문화적 전제를 설명해",
+      "en": "For Lesson notes to flashcards Mixed language classroom, rewrite for its reader; simplify wording and explain cultural assumptions"
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일반 정보와 상식을 확인하는 상황에서 수업 노트의 복습 카드 내용을 지정 독자에게 맞춰 다시 써줘. 표현을 단순하게 하고 문화적 전제를 설명해. 입력 상황: 서로 다른 언어 배경의 학생이 함께 읽을 자료야. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "요청 대상은 수업 노트의 복습 카드 혼합 언어 수업이고, 일반 정보 조회 건이야. 수업 노트의 복습 카드 혼합 언어 수업을 독자에 맞게 다시 써줘. 표현을 단순하게 하고 문화적 전제를 설명해. 입력 상황: 서로 다른 언어 배경의 학생이 함께 읽을 자료야. 수업 노트의 복습 카드 혼합 언어 수업: 다른 배경의 독자가 헷갈릴 전제를 밝혀줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "일반 정보 조회 건이야. 읽는 사람이 달라진 수업 노트의 복습 카드 건이야. 서로 다른 언어 배경의 학생이 함께 읽을 자료야. 표현을 단순하게 하고 문화적 전제를 설명해."
+          "content": "어, 수업 노트의 복습 카드 혼합 언어 수업 건은 일반 정보 조회 건이야. 수업 노트의 복습 카드 혼합 언어 수업을 다른 언어 배경의 학생도 읽어야 해 수업 노트의 복습 카드 혼합 언어 수업 건이야. 언어 배경이 다른 학생들이 함께 읽을 수 있게 단순한 표현과 문화 맥락을 보태줘."
         },
         {
           "role": "user",
-          "content": "읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬."
+          "content": "수업 노트의 복습 카드 혼합 언어 수업 기준으로 전문 설명과 쉬운 요약을 나란히 구분해줘. 수업 노트의 복습 카드 혼합 언어 수업 결론에 필요한 도시나 날짜 하나가 비어 있어."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a general-information and everyday-knowledge context, Adapt the Lesson notes to flashcards material for the specified reader; simplify wording and explain cultural assumptions.. Input context: students with different language backgrounds will read the material together. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "Read Lesson notes to flashcards Mixed language classroom against the general-information context. For Lesson notes to flashcards Mixed language classroom, rewrite for its reader; simplify wording and explain cultural assumptions. Input context: Students with different language backgrounds will read the material together. Lesson notes to flashcards Mixed language classroom: Explain what a reader's background may leave unclear."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a general-information lookup. The reader has changed for Lesson notes to flashcards. Students with different language backgrounds will read the material together. Simplify wording and explain cultural assumptions."
+          "content": "Um, Treat Lesson notes to flashcards Mixed language classroom as work in general-information. Students with different language backgrounds will share the Lesson notes to flashcards Mixed language classroom lesson. Lesson notes to flashcards Mixed language classroom. Make the material work for students from different language backgrounds by simplifying phrasing and explaining context."
         },
         {
           "role": "user",
-          "content": "Make it fit the reader without changing the substance."
+          "content": "For Lesson notes to flashcards Mixed language classroom, Keep the specialist explanation distinct from the plain-language summary. The owner is missing from Lesson notes to flashcards Mixed language classroom, so it cannot be final."
         }
       ]
     }

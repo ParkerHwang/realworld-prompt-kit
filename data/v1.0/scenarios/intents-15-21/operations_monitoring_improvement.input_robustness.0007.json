@@ -39,9 +39,9 @@
     },
     "naturalistic_features": [
       "followup_without_restatement",
-      "hedged_exploratory_request",
       "message_burst",
-      "missing_decisive_detail"
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -65,18 +65,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
-        "hedged_exploratory_request",
         "message_burst",
-        "missing_decisive_detail"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 콘텐츠 성과 내보내기 검토 — 메모는 내보내기에는 자연 유입과 유료 조회가 섞였고 캠페인 라벨 하나가 빠졌으며 날짜 행이 중복됐다, 결과는 모든 지표의 출처를 표시한 정리·검토 안. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "다시 꺼내 보는 건 콘텐츠 성과 내보내기 검토 - 스캔 텍스트: 메모 내보내기에는 자연 유입과 유료 조회가 섞였고 캠페인 라벨 하나가 빠졌으며 날짜 행이 중복됐다 / 결과 모든 지표의 출처를 표시한 정리·검토 계획 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "추측하지 말고 다음 확인 단계를 눈에 띄게 적어줘."
         }
       ]
     },
@@ -100,18 +100,18 @@
       "origin": "synthetic_naturalistic",
       "features": [
         "followup_without_restatement",
-        "hedged_exploratory_request",
         "message_burst",
-        "missing_decisive_detail"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: a content-performance review from an export — I’ve got The export mixes organic and paid views, includes a missing campaign label, and has a duplicate date row.; can you give me a clean-up and review plan with provenance for every metric? no invented details pls"
+          "content": "i’m bringing this back up: a content-performance review from an export - scan note: the export mixes organic and paid views, includes a missing campaign label, and has a duplicate date row / need: a clean-up and review plan with provenance for every metric / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "No guessing; call out the next confirmation step."
         }
       ]
     }

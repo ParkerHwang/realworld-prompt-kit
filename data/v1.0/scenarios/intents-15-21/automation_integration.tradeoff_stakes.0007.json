@@ -72,11 +72,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 인사 프로세스 자동화와 사람 검토 선택 — 메모는 자동화는 일반 사례를 빠르게 할 수 있지만 경계 사례는 사람에게 영향을 주고 예외 정책은 아직 승인되지 않았다, 결과는 경계 사례를 반드시 사람 검토로 보내는 제한적 자동화 파일럿. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "먼저 준비할 건 인사 프로세스 자동화와 사람 검토 선택 - 오타 포함: 메모 자동화는 일반 사례를 빠르게 할 수 있지만 경계 사례는 사람에게 영향을 주고 예외 정책은 아직 승인되지 않았다 / 결과 경계 사례를 반드시 사람 검토로 보내는 제한적 자동화 파일럿 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "행동 전에 필요한 확인을 쉽게 찾을 수 있게 해줘."
         }
       ]
     },
@@ -107,11 +107,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "quick one: choosing automation or human review for a people process — I’ve got Automation could speed routine cases, but edge cases affect people and the exception policy still is not yet approved.; can you give me a narrow automation pilot with mandatory human review for edge cases? no invented details pls"
+          "content": "i need to prepare for choosing automation or human review for a people process - typo pass: automation could speed routine cases, but edge cases affect people and the exception policy still is not yet approved / need: a narrow automation pilot with mandatory human review for edge cases / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "Make the missing check easy to spot before anyone acts."
         }
       ]
     }

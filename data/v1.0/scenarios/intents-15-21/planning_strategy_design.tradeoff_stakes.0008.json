@@ -38,8 +38,8 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
-      "code_switching_jargon",
-      "interleaved_instruction_and_paste"
+      "emoji_shorthand",
+      "speech_to_text_disfluency"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
-        "interleaved_instruction_and_paste"
+        "emoji_shorthand",
+        "speech_to_text_disfluency"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "말로 설명하면, 지속가능한 제품 포장 전략에서 쓸 수 있는 건 회사는 플라스틱을 줄이고 싶지만 배송 중 파손이 걱정되고 비용도 크게 올릴 수 없어야. 근거 필요 사항, 비용 트레이드오프, 파일럿을 들어간 포장 선택지로 해줄래? 중요한 입력이 빠졌으면 멈추고 알려줘 🙏"
+          "content": "다시 이어서 보는 건 지속가능한 제품 포장 전략. 음: 회사는 플라스틱을 줄이고 싶지만 배송 중 파손이 걱정되고 비용도 크게 올릴 수 없어. 근거 필요 사항, 비용 트레이드오프, 파일럿을 들어간 포장 선택지 형태로 해줄래? 빠진 입력은 말해줘 🙏"
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "code_switching_jargon",
-        "interleaved_instruction_and_paste"
+        "emoji_shorthand",
+        "speech_to_text_disfluency"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m saying this out loud: for a sustainable product-packaging strategy, the useful pieces are The company wants less plastic, shipping damage is a concern, and cost cannot rise sharply.. Could you make a small set of packaging options with evidence needs, cost tradeoffs, and a pilot? If I’m missing a key input, stop and tell me. 👍"
+          "content": "I’m returning to a sustainable product-packaging strategy. Um: the company wants less plastic, shipping damage is a concern, and cost cannot rise sharply. Could you make a small set of packaging options with evidence needs, cost tradeoffs, and a pilot? Missing piece? Tell me. 👍"
         }
       ]
     }

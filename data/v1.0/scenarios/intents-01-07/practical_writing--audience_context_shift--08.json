@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.practical_writing.audience_context_shift.0008",
   "title": {
-    "ko": "제품 한 장 브리프 — 전문가·일반인 동시 독자",
-    "en": "One-page product brief — Specialist and general reader"
+    "ko": "제품 한 장 브리프 전문가 일반인 동시 독자",
+    "en": "One page product brief Specialist and general reader"
   },
   "task": {
     "primary_intent": "practical_writing",
@@ -18,8 +18,8 @@
       "communication_meetings"
     ],
     "user_goal": {
-      "ko": "제품 한 장 브리프 내용을 지정 독자에게 맞춰 다시 써줘. 핵심은 평이하게, 세부 근거는 접어 둘 수 있게 해",
-      "en": "Adapt the One-page product brief material for the specified reader; keep the headline plain with supporting detail available."
+      "ko": "제품 한 장 브리프 전문가 일반인 동시 독자를 독자에 맞게 다시 써줘. 핵심은 평이하게, 세부 근거는 접어 둘 수 있게 해",
+      "en": "For One page product brief Specialist and general reader, rewrite for its reader; keep the headline plain with supporting detail available"
     },
     "expected_artifact": "A ready-to-review work document or message that does not invent commitments."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "제품·프로젝트 일정과 요구사항을 다루는 상황에서 제품 한 장 브리프 내용을 지정 독자에게 맞춰 다시 써줘. 핵심은 평이하게, 세부 근거는 접어 둘 수 있게 해. 입력 상황: 전문 담당자와 일반 독자가 같은 문서를 봐야 해. 지정한 독자와 사용 맥락에 맞는 말투와 설명 수준을 선택하되 핵심 사실은 바꾸지 마."
+          "content": "이 제품 한 장 브리프 전문가 일반인 동시 독자 건은 프로젝트·제품 일정 쪽이야. 제품 한 장 브리프 전문가 일반인 동시 독자를 독자에 맞게 다시 써줘. 핵심은 평이하게, 세부 근거는 접어 둘 수 있게 해. 입력 상황: 전문 담당자와 일반 독자가 같은 문서를 봐야 해. 제품 한 장 브리프 전문가 일반인 동시 독자: 독자가 비교할 기준과 판단 근거를 같은 틀에 넣어줘."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "일단 초안으로, 프로젝트·제품 일정 쪽이야. 읽는 사람이 달라진 제품 한 장 브리프 건이야. 전문 담당자와 일반 독자가 같은 문서를 봐야 해. 핵심은 평이하게, 세부 근거는 접어 둘 수 있게 해. 읽는 사람에 맞춰 쉽게 쓰되 내용은 그대로 둬. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘."
+          "content": "회의 전에 제품 한 장 브리프 전문가 일반인 동시 독자부터 빠르게 잡아줘, 분야는 프로젝트·제품 일정 쪽이야; 이번 대상은 제품 한 장 브리프 전문가 일반인 동시 독자. 제품 한 장 브리프 전문가 일반인 동시 독자를 전문가와 일반인이 함께 봐야 해 제품 한 장 브리프 전문가 일반인 동시 독자 건이야. 전문가용 근거는 접어 두고 일반 독자가 먼저 읽을 핵심을 분리해줘. 제품 한 장 브리프 전문가 일반인 동시 독자 기준으로 처음 보는 사람도 따라가게 용어와 예외를 풀어줘. 분량과 완전성이 함께 안 되면 둘 사이의 손해를 적어줘. 조건 변경: 방향을 바꿨어—제품 한 장 브리프 전문가 일반인 동시 독자는 초안으로만 남겨줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a product or project schedule-and-requirements context, Adapt the One-page product brief material for the specified reader; keep the headline plain with supporting detail available.. Input context: a specialist and a general reader must use the same document. Adapt tone and explanation level to the specified audience and context without changing the core facts."
+          "content": "Use the project/product context for One page product brief Specialist and general reader. For One page product brief Specialist and general reader, rewrite for its reader; keep the headline plain with supporting detail available. Input context: A specialist and a general reader must use the same document. One page product brief Specialist and general reader: Put comparison criteria and supporting reasons into one frame."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "A draft is fine for now: This is a project/product item. The reader has changed for One-page product brief. A specialist and a general reader must use the same document. Keep the headline plain with supporting detail available. Make it fit the reader without changing the substance. If brevity and completeness conflict, call that out."
+          "content": "Before the meeting, check One page product brief Specialist and general reader: For the project/product context, use One page product brief Specialist and general reader. Both specialists and general readers need the One page product brief Specialist and general reader document. One page product brief Specialist and general reader. Separate the plain-language headline for general readers from the specialist support behind it. For One page product brief Specialist and general reader, Unpack terms and exceptions so a first-time reader can follow. Say whether you prioritized summary or protection against omissions. Mid-task change: One revision: include the exception condition in One page product brief Specialist and general reader."
         }
       ]
     }

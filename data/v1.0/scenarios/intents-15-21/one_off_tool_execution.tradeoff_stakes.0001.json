@@ -38,8 +38,8 @@
       "surface_noise": "light"
     },
     "naturalistic_features": [
-      "anaphora_prior_context",
-      "resume_after_interruption"
+      "implicit_goal_or_output",
+      "terse_fragment"
     ]
   },
   "realizations": [
@@ -62,13 +62,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
-        "resume_after_interruption"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "삭제와 아카이브 중 선택 정리하려는데, 확실히 아는 건 파일은 오래된 초안이고 저장 공간은 거의 찼지만 향후 감사에 일부 기록이 필요할 수 있어야. 이걸 보존 결정 시점이 있는 되돌릴 수 있는 아카이브 우선안로 만들어줘. 빈칸은 숨기지 말아줘."
+          "content": "삭제/아카이브 선택 — 오래된 초안, 저장 공간 부족, 향후 감사 기록 필요 가능 — 되돌릴 아카이브 우선 + 보존 결정."
         }
       ]
     },
@@ -91,13 +91,13 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
-        "anaphora_prior_context",
-        "resume_after_interruption"
+        "implicit_goal_or_output",
+        "terse_fragment"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "I’m trying to sort out choosing between deletion and archiving, but here’s what I actually know: The files are old drafts, storage is nearly full, and a future audit may need some history. Could you turn that into a reversible archive-first option with a retention decision point, without papering over the gaps?"
+          "content": "Delete vs archive — old drafts; storage nearly full; future audit may need history — reversible archive-first + retention decision."
         }
       ]
     }

@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.format_semantic_preservation.0006",
   "title": {
-    "ko": "조항의 쉬운 말 — 비법무 설명",
-    "en": "Plain-language clause — Plain-language explanation"
+    "ko": "조항의 쉬운 말 비법무 설명",
+    "en": "Plain language clause Plain language explanation"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
@@ -19,8 +19,8 @@
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "조항의 쉬운 말 자료를 지정 형식으로 바꿔줘. 읽기 쉽게 하되 법률 결론을 추가하지 마",
-      "en": "Convert the Plain-language clause material to the requested format; make it readable without adding a legal conclusion."
+      "ko": "조항의 쉬운 말 비법무 설명 자료를 지정 형식으로 바꿔줘. 읽기 쉽게 하되 법률 결론을 추가하지 마",
+      "en": "For Plain language clause Plain language explanation, reformat without semantic drift; make it readable without adding a legal conclusion"
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -51,7 +51,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "정부·공공기관 공고의 조건과 기준일을 확인하는 상황에서 조항의 쉬운 말 자료를 지정 형식으로 바꿔줘. 읽기 쉽게 하되 법률 결론을 추가하지 마. 입력 상황: 법무 문장을 비법무 담당자가 읽는 설명문으로 바꿔야 해. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해. 공식 자료와 전문가 확인이 필요한 경계를 분명히 표시해."
+          "content": "분류는 공공기관 공고야; 대상은 조항의 쉬운 말 비법무 설명. 조항의 쉬운 말 비법무 설명 자료를 지정 형식으로 바꿔줘. 읽기 쉽게 하되 법률 결론을 추가하지 마. 입력 상황: 법무 문장을 비법무 담당자가 읽는 설명문으로 바꿔야 해. 조항의 쉬운 말 비법무 설명: 새 출력에 실행 경계와 예외가 보이게 해줘. 전문 판단이 필요한 대목은 공식 확인 경계를 붙여줘."
         }
       ]
     },
@@ -67,11 +67,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "공공기관 공고야. 모양을 바꿔야 하는 조항의 쉬운 말 건이야. 법무 문장을 비법무 담당자가 읽는 설명문으로 바꿔야 해. 읽기 쉽게 하되 법률 결론을 추가하지 마."
+          "content": "분야는 공공기관 공고야; 이번 대상은 조항의 쉬운 말 비법무 설명. 조항의 쉬운 말 비법무 설명 조항을 비전문가 말로 풀어야 해 조항의 쉬운 말 비법무 설명 건이야. 법률 문장을 동료가 읽을 말로 풀되 새 법률 결론은 만들지 마."
         },
         {
           "role": "user",
-          "content": "모양은 바꿔도 숫자·날짜·조건은 건드리지 마. 짧게 하면서 빠짐없이 해달라는 조건이 부딪히면 그 점도 말해줘. 전문 판단이 필요한 부분은 단정하지 말고 확인할 곳을 적어줘."
+          "content": "조항의 쉬운 말 비법무 설명 기준으로 요청한 구조로 옮기되 원래 표현의 범위를 보존해. 간결함 때문에 빠지는 항목이 있으면 먼저 알려줘. 이 자료는 안내용으로 두고 개인별 판단은 유보해줘. 조건 변경: 조건 변경—조항의 쉬운 말 비법무 설명 전체 말고 표시한 부분만."
         }
       ]
     },
@@ -84,7 +84,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a government or public-policy notice context where dates and eligibility matter, Convert the Plain-language clause material to the requested format; make it readable without adding a legal conclusion.. Input context: legal wording must become an explanation for a non-legal colleague. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors. Make the boundary for official or professional review explicit."
+          "content": "Use the public-notice context for Plain language clause Plain language explanation. For Plain language clause Plain language explanation, reformat without semantic drift; make it readable without adding a legal conclusion. Input context: Legal wording must become an explanation for a non-legal colleague. Plain language clause Plain language explanation: Make the execution boundary and exceptions visible in the new output. Mark where an official review or professional judgment is needed."
         }
       ]
     },
@@ -100,11 +100,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a public-notice item. The format needs changing for Plain-language clause. Legal wording must become an explanation for a non-legal colleague. Make it readable without adding a legal conclusion."
+          "content": "For the public-notice context, use Plain language clause Plain language explanation. The Plain language clause Plain language explanation needs a plain-language version. Plain language clause Plain language explanation. Put the legal wording into colleague-friendly language without creating a new legal conclusion."
         },
         {
           "role": "user",
-          "content": "Change the shape, not the numbers, dates, or conditions. If brevity and completeness conflict, call that out. Do not make a professional determination; state what needs official review."
+          "content": "For Plain language clause Plain language explanation, Move the material into the requested structure without widening its scope. If brevity and completeness collide, show the tradeoff. Keep this as information and hold back an individualized decision. Mid-task change: I changed direction—leave Plain language clause Plain language explanation as a draft only."
         }
       ]
     }

@@ -40,8 +40,8 @@
     "naturalistic_features": [
       "followup_without_restatement",
       "message_burst",
-      "mid_task_change",
-      "self_correction_scope_shift"
+      "ocr_copy_format_noise",
+      "typo_spacing_punctuation"
     ]
   },
   "realizations": [
@@ -66,17 +66,17 @@
       "features": [
         "followup_without_restatement",
         "message_burst",
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "빠르게 부탁: 필수 항목이 빠진 양식 준비 — 메모는 양식에는 프로젝트 설명과 연락 역할이 있지만 필수로 표시된 승인 참조가 없어, 결과는 참조 값을 만들지 않는 검증 메시지와 완료 점검 리스트. 없는 정보는 추정하지 말고 표시해줘"
+          "content": "여기서 막힌 건 필수 항목이 빠진 양식 준비 - ocr 메모: 메모 양식에는 프로젝트 설명과 연락 역할이 있지만 필수로 표시된 승인 참조가 없어 / 결과 참조 값을 만들지 않는 검증 메시지와 완료 점검 목록 / 없는 정보는 표시해줘"
         },
         {
           "role": "user",
-          "content": "근거가 얇으면 안전한 초안으로 두고 아직 확인할 내용을 말해줘."
+          "content": "흔들리는 입력이 있으면 아직 확인할 내용을 말해줘."
         }
       ]
     },
@@ -101,17 +101,17 @@
       "features": [
         "followup_without_restatement",
         "message_burst",
-        "mid_task_change",
-        "self_correction_scope_shift"
+        "ocr_copy_format_noise",
+        "typo_spacing_punctuation"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "quick one: preparing a form with a missing required field — I’ve got The form has a project description and contact role but no approval reference, which the form marks as required.; can you give me a validation message and a completion checklist without fabricating the reference? no invented details pls"
+          "content": "i want to get unstuck on preparing a form with a missing required field - ocr bits: the form has a project description and contact role but no approval reference, which the form marks as required / need: a validation message and a completion checklist without fabricating the reference / no invented details pls"
         },
         {
           "role": "user",
-          "content": "If the evidence is thin, return a safe draft and say what still needs confirmation."
+          "content": "If an input is shaky, say what still needs confirmation."
         }
       ]
     }

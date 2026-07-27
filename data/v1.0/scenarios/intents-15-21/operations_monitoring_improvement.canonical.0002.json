@@ -38,10 +38,10 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
+      "anaphora_prior_context",
       "followup_without_restatement",
       "message_burst",
-      "multi_intent_mixed_priority",
-      "rambling_stream"
+      "resume_after_interruption"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
         "message_burst",
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 사무용품 재주문 프로세스 얘기였어. 메모에는 사무실에서 프린터 용지가 자주 떨어지고 보관 공간은 작으며 배송은 주 2회 온다라고 적혀 있어. 재주문 기준, 담당자, 예외 검토 프로세스 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "여기서 판단할 건 사무용품 재주문 프로세스. 앞서 보던 흐름을 다시 잇자. 메모 내용은 이래: 사무실에서 프린터 용지가 자주 떨어지고 보관 공간은 작으며 배송은 주 2회 온다. 원하는 결과는 재주문 기준, 담당자, 예외 검토 프로세스. 앞선 범위도 봐줘."
         },
         {
           "role": "user",
-          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
+          "content": "미확인 입력은 선택 전에 밝혀줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
         "message_burst",
-        "multi_intent_mixed_priority",
-        "rambling_stream"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up an office-supplies reorder process? I lost the thread a bit. The notes say The office frequently runs out of printer paper, has a small storage area, and receives deliveries twice a week. What would a reorder trigger, owner, and exception review process look like? Keep the earlier boundaries in mind."
+          "content": "I’m stuck on an office-supplies reorder process. Picking this up: the office frequently runs out of printer paper, has a small storage area, and receives deliveries twice a week. A reorder trigger, owner, and exception review process could look like this. For an office-supplies reorder process, keep old limits visible."
         },
         {
           "role": "user",
-          "content": "If one missing detail would change the call, ask for it or label your assumption."
+          "content": "Name any unknown input before choosing a path."
         }
       ]
     }

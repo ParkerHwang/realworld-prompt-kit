@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.extraction_parsing.boundary_ambiguity.0004",
   "title": {
-    "ko": "영수증 항목 — 현장·본사 기준",
-    "en": "Receipt line items — Local site versus headquarters"
+    "ko": "영수증 항목 현장 본사 기준",
+    "en": "Receipt line items Local site versus headquarters"
   },
   "task": {
     "primary_intent": "extraction_parsing",
@@ -18,8 +18,8 @@
       "office_admin"
     ],
     "user_goal": {
-      "ko": "영수증 항목의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해",
-      "en": "Work out the applicable scope for Receipt line items; Separate what changes by jurisdiction."
+      "ko": "영수증 항목 현장 본사 기준의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해",
+      "en": "For Receipt line items Local site versus headquarters, determine the applicable scope; separate what changes by jurisdiction"
     },
     "expected_artifact": "A faithful structured extraction with missing values marked."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "개인 일정과 생활 결정을 정리하는 상황에서 영수증 항목의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해. 입력 상황: 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 비슷한 범주가 섞이지 않도록 적용 범위와 제외 범위를 구분하고, 결론을 바꿀 모호점은 한 가지 확인 질문으로 표시해."
+          "content": "영수증 항목 현장 본사 기준 건의 배경은 내 일정·생활 건이야. 영수증 항목 현장 본사 기준의 적용 범위를 가려줘. 지역 관할에 따라 무엇이 달라지는지 구분해. 입력 상황: 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 영수증 항목 현장 본사 기준: 본문만으로 결정하지 말고 충돌하는 범위를 질문으로 남겨줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 내 일정·생활 건이야: 범위가 헷갈리는 영수증 항목 건이야. 현장 안내와 본사 기본 규정의 적용 지역이 다를 수 있어. 지역 관할에 따라 무엇이 달라지는지 구분해."
+          "content": "영수증 항목 현장 본사 기준은 일단 초안 형태면 돼, 이번 영수증 항목 현장 본사 기준 요청은 내 일정·생활 건이야: 영수증 항목 현장 본사 기준의 예외선부터 확인해야 해 영수증 항목 현장 본사 기준 건이야. 현장 규정과 본사 기준 중 적용 지역에 따라 달라지는 부분만 나눠줘."
         },
         {
           "role": "user",
-          "content": "위 건은 어디까지 해당하는지 애매하면 질문 하나만 먼저 해줘."
+          "content": "위 건은 영수증 항목 현장 본사 기준 가까운 두 기준을 섞지 말고 경계선을 하나 짚어줘. 앞서 보낸 영수증 항목 현장 본사 기준 표는? 이전 맥락을 다시 복사하지 말고 새로 들어온 정보에만 반응해줘."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a personal scheduling and everyday-life context, Work out the applicable scope for Receipt line items; Separate what changes by jurisdiction.. Input context: the site notice may apply differently from the headquarters baseline. Separate the applicable and excluded scope, and surface one clarifying question for any ambiguity that could change the conclusion."
+          "content": "The relevant personal-life case is Receipt line items Local site versus headquarters. For Receipt line items Local site versus headquarters, determine the applicable scope; separate what changes by jurisdiction. Input context: The site notice may apply differently from the headquarters baseline. Receipt line items Local site versus headquarters: Do not settle a conflict from the body alone; leave one scope question."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is, This is a personal-life item: The scope is fuzzy for Receipt line items. The site notice may apply differently from the headquarters baseline. Separate what changes by jurisdiction."
+          "content": "A draft for Receipt line items Local site versus headquarters is fine, Receipt line items Local site versus headquarters falls under the personal-life desk: The exception line matters for Receipt line items Local site versus headquarters. Receipt line items Local site versus headquarters. Separate only the parts that change with the site jurisdiction rather than blending them with headquarters policy."
         },
         {
           "role": "user",
-          "content": "For that item: If the boundary is fuzzy, ask one question before deciding."
+          "content": "For that item: For Receipt line items Local site versus headquarters, Keep the two nearby rules apart and name the boundary between them. The Receipt line items Local site versus headquarters material above, please. Keep the agreed format while identifying only the gap in this case."
         }
       ]
     }

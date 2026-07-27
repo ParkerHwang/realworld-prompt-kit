@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.freshness_source_conflict.0005",
   "title": {
-    "ko": "제품 보증 비교 — 구청·건물 공지",
-    "en": "Product-warranty comparison — District versus building notice"
+    "ko": "제품 보증 비교 구청 건물 공지",
+    "en": "Product warranty comparison District versus building notice"
   },
   "task": {
     "primary_intent": "information_retrieval",
@@ -18,8 +18,8 @@
       "general_knowledge"
     ],
     "user_goal": {
-      "ko": "제품 보증 비교에 관한 현재 근거를 대조해줘. 관할과 적용 대상을 확인한 뒤 충돌을 남겨",
-      "en": "Reconcile the current evidence for Product-warranty comparison; check jurisdiction and audience while preserving the conflict."
+      "ko": "제품 보증 비교 구청 건물 공지에 관한 현재 근거를 대조해줘. 관할과 적용 대상을 확인한 뒤 충돌을 남겨",
+      "en": "For Product warranty comparison District versus building notice, reconcile current evidence; check jurisdiction and audience while preserving the conflict"
     },
     "expected_artifact": "A sourced answer with dates, scope, and uncertainty clearly separated."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "내부 소프트웨어·IT 운영 자료를 확인하는 상황에서 제품 보증 비교에 관한 현재 근거를 대조해줘. 관할과 적용 대상을 확인한 뒤 충돌을 남겨. 입력 상황: 구청 공지와 건물 공지의 임시 휴무 날짜가 달라. 기준일과 출처의 우선순위를 명시하고, 충돌하는 정보는 임의로 합치지 말고 확인 경계를 남겨. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
+          "content": "제품 보증 비교 구청 건물 공지 건에서 보는 맥락은 내부 IT 쪽이야. 제품 보증 비교 구청 건물 공지에 관한 현재 근거를 대조해줘. 관할과 적용 대상을 확인한 뒤 충돌을 남겨. 입력 상황: 구청 공지와 건물 공지의 임시 휴무 날짜가 달라. 제품 보증 비교 구청 건물 공지: 초안과 승인본의 시각을 비교해 적용 값을 확인해줘. 제품 보증 비교 구청 건물 공지 건은 보증서 링크·모델명·개정일을 확인한 다음 확인되지 않은 제외 조건은 보류해."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "내부 IT 쪽이야. 자료가 엇갈린 제품 보증 비교 건이야. 구청 공지와 건물 공지의 임시 휴무 날짜가 달라. 관할과 적용 대상을 확인한 뒤 충돌을 남겨."
+          "content": "제품 보증 비교 구청 건물 공지 건부터 볼게. 분야는 내부 IT 쪽이야. 제품 보증 비교 구청 건물 공지 관할 공지들이 서로 다른 날짜를 말해 제품 보증 비교 구청 건물 공지 건이야. 구청과 건물 공지 중 어느 관할과 대상에 적용되는지 밝히며 날짜 충돌은 남겨줘."
         },
         {
           "role": "user",
-          "content": "새 자료인지, 어느 출처인지 나눠서 보여줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가."
+          "content": "제품 보증 비교 구청 건물 공지 기준으로 날짜와 출처를 따로 붙여 현재 기준을 골라줘. 제품 보증 비교 구청 건물 공지 건은 보증서 링크·모델명·개정일을 확인한 다음 확인되지 않은 제외 조건은 보류해. 수정된 범위가 우선이야; 바깥 내용은 건드리지 마."
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an internal software or IT operations context, Reconcile the current evidence for Product-warranty comparison; check jurisdiction and audience while preserving the conflict.. Input context: the district and building notices give different temporary-closure dates. State the as-of date and source priority; do not silently merge conflicting information, and leave a verification boundary. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
+          "content": "Use the internal IT context for Product warranty comparison District versus building notice. For Product warranty comparison District versus building notice, reconcile current evidence; check jurisdiction and audience while preserving the conflict. Input context: The district and building notices give different temporary-closure dates. Product warranty comparison District versus building notice: Compare the draft and approval timestamps before using a value. For Product warranty comparison District versus building notice, Check the warranty link, model, and revision date before confirming an unverified exclusion."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is an internal IT item. The sources disagree for Product-warranty comparison. The district and building notices give different temporary-closure dates. Check jurisdiction and audience while preserving the conflict."
+          "content": "In the internal IT lane, handle Product warranty comparison District versus building notice. Jurisdiction notices give different dates for Product warranty comparison District versus building notice. Product warranty comparison District versus building notice. Name the jurisdiction and audience for each district or building notice, and preserve the date conflict."
         },
         {
           "role": "user",
-          "content": "Show which source and date each answer comes from. Check the official link and as-of date; ask for missing city, route, or date instead of guessing."
+          "content": "For Product warranty comparison District versus building notice, Attach a date and source to each claim before choosing the current one. For Product warranty comparison District versus building notice, Check the warranty link, model, and revision date before confirming an unverified exclusion. Correction—Limit the answer to the segment I identified above."
         }
       ]
     }

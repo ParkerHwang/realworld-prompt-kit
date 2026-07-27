@@ -38,10 +38,10 @@
       "surface_noise": "heavy"
     },
     "naturalistic_features": [
+      "anaphora_prior_context",
       "followup_without_restatement",
-      "hedged_exploratory_request",
       "message_burst",
-      "missing_decisive_detail"
+      "resume_after_interruption"
     ]
   },
   "realizations": [
@@ -64,19 +64,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
-        "hedged_exploratory_request",
         "message_burst",
-        "missing_decisive_detail"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "이거 이어서 볼 수 있을까? 에이전트 확신 표현 보정 얘기였어. 메모에는 에이전트는 완전한 사례에는 높은 확신, 불완전한 사례에는 낮은 확신을 보이지만 보정 예시가 적다라고 적혀 있어. 확신을 근거에 연결하는 보정 세트와 검토 규칙 형태면 좋겠어. 앞서 정한 범위는 유지해줘."
+          "content": "같이 풀어볼 문제는 에이전트 확신 표현 보정. 다시 돌아와서 이 주제를 볼게. 메모 내용은 이래: 에이전트는 완전한 사례에는 높은 확신, 불완전한 사례에는 낮은 확신을 보이지만 보정 예시가 적다. 원하는 결과는 확신을 근거에 연결하는 보정 세트와 검토 규칙. 앞선 범위도 봐줘."
         },
         {
           "role": "user",
-          "content": "결정을 바꿀 정보가 빠졌다면 질문하거나 가정이라고 적어줘."
+          "content": "결정 전에 가장 중요한 미확정 항목을 표시해줘."
         }
       ]
     },
@@ -99,19 +99,19 @@
       "form": "naturalistic",
       "origin": "synthetic_naturalistic",
       "features": [
+        "anaphora_prior_context",
         "followup_without_restatement",
-        "hedged_exploratory_request",
         "message_burst",
-        "missing_decisive_detail"
+        "resume_after_interruption"
       ],
       "messages": [
         {
           "role": "user",
-          "content": "Can we pick up calibrating an agent's confidence language? I lost the thread a bit. The notes say The agent gives high-confidence answers on complete cases and low-confidence answers on incomplete cases, but calibration examples are sparse. What would a calibration set and a review rule that ties confidence to evidence look like? Keep the earlier boundaries in mind."
+          "content": "Can we make sense of calibrating an agent's confidence language. Picking this up: the agent gives high-confidence answers on complete cases and low-confidence answers on incomplete cases, but calibration examples are sparse. A calibration set and a review rule that ties confidence to evidence could look like this. For calibrating an agent's confidence language, keep old limits visible."
         },
         {
           "role": "user",
-          "content": "If one missing detail would change the call, ask for it or label your assumption."
+          "content": "Before deciding, point out the unanswered detail that matters most."
         }
       ]
     }

@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.creative_ideation.creativity_diversity.0003",
   "title": {
-    "ko": "동네 가게 캠페인 — 작은 가게 실험",
-    "en": "Local-store campaign — Small-shop experiment"
+    "ko": "동네 가게 캠페인 작은 가게 실험",
+    "en": "Local store campaign Small shop experiment"
   },
   "task": {
     "primary_intent": "creative_ideation",
@@ -18,8 +18,8 @@
       "creative_media"
     ],
     "user_goal": {
-      "ko": "동네 가게 캠페인를 주제로 서로 다른 아이디어를 내줘. 할인 외의 가설도 섞어서 제안해",
-      "en": "Generate genuinely different ideas around Local-store campaign; include hypotheses beyond discounts."
+      "ko": "동네 가게 캠페인 작은 가게 실험을 주제로 서로 다른 아이디어를 내줘. 할인 외의 가설도 섞어서 제안해",
+      "en": "For Local store campaign Small shop experiment, generate distinct ideas; include hypotheses beyond discounts"
     },
     "expected_artifact": "A diverse set of usable ideas with rationale and stated constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "영업·마케팅 캠페인 자료를 준비하는 상황에서 동네 가게 캠페인를 주제로 서로 다른 아이디어를 내줘. 할인 외의 가설도 섞어서 제안해. 입력 상황: 동네 가게가 한 달 동안 시험할 수 있는 예산 작은 캠페인이야. 서로 다른 방향의 아이디어를 내고, 각 아이디어가 제약을 어떻게 만족하는지 짧게 설명해."
+          "content": "요청 대상은 동네 가게 캠페인 작은 가게 실험이고, 영업·캠페인 자료야. 동네 가게 캠페인 작은 가게 실험을 주제로 서로 다른 아이디어를 내줘. 할인 외의 가설도 섞어서 제안해. 입력 상황: 동네 가게가 한 달 동안 시험할 수 있는 예산 작은 캠페인이야. 동네 가게 캠페인 작은 가게 실험: 서로 다른 우선순위를 두고 안을 비교해줘."
         }
       ]
     },
@@ -66,11 +66,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "영업·캠페인 자료야. 방향을 여러 개로 열어야 하는 동네 가게 캠페인 건이야. 동네 가게가 한 달 동안 시험할 수 있는 예산 작은 캠페인이야. 할인 외의 가설도 섞어서 제안해."
+          "content": "동네 가게 캠페인 작은 가게 실험 건부터 볼게. 분야는 영업·캠페인 자료야. 동네 가게 캠페인 작은 가게 실험에는 할인 밖의 가설도 필요해 동네 가게 캠페인 작은 가게 실험 건이야. 동네 가게가 한 달 시험할 캠페인에 할인 외 가설을 섞어줘."
         },
         {
           "role": "user",
-          "content": "서로 결이 다른 안으로 내고, 왜 괜찮은지도 한 줄씩 붙여줘."
+          "content": "동네 가게 캠페인 작은 가게 실험 기준으로 서로 다른 우선순위를 두고 안을 비교해줘. 번거롭겠지만 동네 가게 캠페인 작은 가게 실험 적용 범위만 봐줄래? 아마 동네 가게 캠페인 작은 가게 실험은 이쪽일 텐데, 먼저 살펴볼 수 있을까?"
         }
       ]
     },
@@ -83,7 +83,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a sales or marketing-campaign context, Generate genuinely different ideas around Local-store campaign; include hypotheses beyond discounts.. Input context: a local shop will trial a low-budget campaign for one month. Offer ideas from genuinely different directions and briefly explain how each satisfies the constraints."
+          "content": "The relevant sales/marketing case is Local store campaign Small shop experiment. For Local store campaign Small shop experiment, generate distinct ideas; include hypotheses beyond discounts. Input context: A local shop will trial a low-budget campaign for one month. Local store campaign Small shop experiment: Compare options that place their priorities in different orders."
         }
       ]
     },
@@ -99,11 +99,11 @@
       "messages": [
         {
           "role": "user",
-          "content": "This is a sales/marketing item. The directions need to stay diverse for Local-store campaign. A local shop will trial a low-budget campaign for one month. Include hypotheses beyond discounts."
+          "content": "For the sales/marketing context, use Local store campaign Small shop experiment. The Local store campaign Small shop experiment needs hypotheses beyond discounts. Local store campaign Small shop experiment. Mix hypotheses beyond discounts into a one-month campaign a neighborhood shop can trial."
         },
         {
           "role": "user",
-          "content": "Give genuinely different options and one line on why each works."
+          "content": "For Local store campaign Small shop experiment, Compare options that place their priorities in different orders. If it is not too much trouble, mark the gaps in Local store campaign Small shop experiment. I am not fully sure, but could Local store campaign Small shop experiment be read this way?"
         }
       ]
     }

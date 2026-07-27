@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.transformation_rewriting.format_semantic_preservation.0004",
   "title": {
-    "ko": "메모의 SOP 변환 — 승인 게이트 SOP",
-    "en": "Notes-to-SOP conversion — Approval-gated SOP"
+    "ko": "메모의 SOP 변환 승인 게이트 SOP",
+    "en": "Notes to SOP conversion Approval gated SOP"
   },
   "task": {
     "primary_intent": "transformation_rewriting",
@@ -18,8 +18,8 @@
       "education_research"
     ],
     "user_goal": {
-      "ko": "메모의 SOP 변환 자료를 지정 형식으로 바꿔줘. 순서와 예외를 만들되 없는 단계는 발명하지 마",
-      "en": "Convert the Notes-to-SOP conversion material to the requested format; order steps and exceptions without inventing steps."
+      "ko": "메모의 SOP 변환 승인 게이트 SOP 자료를 지정 형식으로 바꿔줘. 순서와 예외를 만들되 없는 단계는 발명하지 마",
+      "en": "For Notes to SOP conversion Approval gated SOP, reformat without semantic drift; order steps and exceptions without inventing steps"
     },
     "expected_artifact": "A target-format rewrite that preserves the source meaning and constraints."
   },
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "제조 공정과 품질관리 기록을 다루는 상황에서 메모의 SOP 변환 자료를 지정 형식으로 바꿔줘. 순서와 예외를 만들되 없는 단계는 발명하지 마. 입력 상황: 현장 메모를 승인 전 실행 금지가 포함된 절차로 바꿔야 해. 지정한 형식으로 바꾸되 숫자·날짜·조건·주체의 의미는 그대로 보존해."
+          "content": "메모의 SOP 변환 승인 게이트 SOP 건에서 보는 맥락은 공정·품질 기록이야. 메모의 SOP 변환 승인 게이트 SOP 자료를 지정 형식으로 바꿔줘. 순서와 예외를 만들되 없는 단계는 발명하지 마. 입력 상황: 현장 메모를 승인 전 실행 금지가 포함된 절차로 바꿔야 해. 메모의 SOP 변환 승인 게이트 SOP: 요청한 구조로 옮기되 원래 표현의 범위를 보존해."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 공정·품질 기록이야. 모양을 바꿔야 하는 메모의 SOP 변환 건이야. 현장 메모를 승인 전 실행 금지가 포함된 절차로 바꿔야 해. 순서와 예외를 만들되 없는 단계는 발명하지 마. 모양은 바꿔도 숫자·날짜·조건은 건드리지 마. 아, 대상은 전체가 아니라 위에 적은 범위만이야."
+          "content": "복붙한 메모의 SOP 변환 승인 게이트 SOP 내용이 깨져서 정리가 필요해, 이번 메모의 SOP 변환 승인 게이트 SOP 요청은 공정·품질 기록이야. 메모의 SOP 변환 승인 게이트 SOP 메모를 승인 절차로 바꿔야 해 메모의 SOP 변환 승인 게이트 SOP 건이야. 현장 메모에서 승인 전에는 실행하지 않는 단계와 예외를 드러내. 메모의 SOP 변환 승인 게이트 SOP 기준으로 항목별로 나눠도 자료 밖의 결론은 만들지 마. 메모의 SOP 변환 승인 게이트 SOP 결론에 필요한 도시나 날짜 하나가 비어 있어. 정정할게—방금 조건을 고쳐서, 넓은 범위는 빼줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In a manufacturing-process and quality-control context, Convert the Notes-to-SOP conversion material to the requested format; order steps and exceptions without inventing steps.. Input context: field notes must become a procedure with a do-not-run-before-approval gate. Convert to the requested format while preserving the meaning of numbers, dates, conditions, and actors."
+          "content": "Use the manufacturing-quality context for Notes to SOP conversion Approval gated SOP. For Notes to SOP conversion Approval gated SOP, reformat without semantic drift; order steps and exceptions without inventing steps. Input context: Field notes must become a procedure with a do-not-run-before-approval gate. Notes to SOP conversion Approval gated SOP: Move the material into the requested structure without widening its scope."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is: This is a manufacturing-quality item. The format needs changing for Notes-to-SOP conversion. Field notes must become a procedure with a do-not-run-before-approval gate. Order steps and exceptions without inventing steps. Change the shape, not the numbers, dates, or conditions. Actually, use only the scope stated above, not the broader one."
+          "content": "The pasted Notes to SOP conversion Approval gated SOP text is messy: The manufacturing-quality team is handling Notes to SOP conversion Approval gated SOP. The Notes to SOP conversion Approval gated SOP notes must become an approval procedure. Notes to SOP conversion Approval gated SOP. Make the do-not-run-before-approval gate and its exceptions visible in the procedure. For Notes to SOP conversion Approval gated SOP, Separate the fields without creating a conclusion beyond the material. I need the location for Notes to SOP conversion Approval gated SOP before deciding. Do not generalize to the full set; follow the final range."
         }
       ]
     }

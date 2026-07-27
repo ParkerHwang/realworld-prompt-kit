@@ -5,8 +5,8 @@
   "status": "reviewed",
   "semantic_group_id": "rwpg.information_retrieval.canonical.0004",
   "title": {
-    "ko": "도서관 강좌 접수 — 다음 분기 결정",
-    "en": "Library-class registration — Next-quarter decision"
+    "ko": "도서관 강좌 접수 다음 분기 결정",
+    "en": "Library class registration Next quarter decision"
   },
   "task": {
     "primary_intent": "information_retrieval",
@@ -50,7 +50,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "수업·학습·연구 자료를 다루는 상황에서 강좌 접수 시작일과 대기 등록 방법을 찾아줘 결정에 필요한 핵심 근거와 보류 조건을 정리해. 입력 상황: 웹페이지에는 올해 공지와 지난해 공지가 함께 검색되고, 접수 페이지에는 대기 버튼이 따로 있어. 다음 분기 실행 여부를 오늘 정해야 하는 자료야. 요청한 일을 바로 처리하되, 확인한 사실과 추론을 구분하고 입력에 없는 내용은 만들지 마. 실제 원문이나 시간표가 첨부되지 않았다면 공식 출처를 조회하거나 도시·노선·기준일 같은 결정적 정보를 먼저 확인해."
+          "content": "도서관 강좌 접수 다음 분기 결정 건의 배경은 수업·연구 자료야. 강좌 접수 시작일과 대기 등록 방법을 찾아줘 결정에 필요한 핵심 근거와 보류 조건을 정리해. 입력 상황: 웹페이지에는 올해 공지와 지난해 공지가 함께 검색되고, 접수 페이지에는 대기 버튼이 따로 있어. 다음 분기 실행 여부를 오늘 정해야 하는 자료야. 도서관 강좌 접수 다음 분기 결정: 모호한 값은 채우지 말고 다음에 볼 자료를 적어줘. 도서관 강좌 접수 다음 분기 결정 건은 지난해 검색 결과를 제외하고 현재 강좌 공지의 신청 절차와 대기 버튼을 확인해."
         }
       ]
     },
@@ -66,7 +66,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "어 그러니까 내가 말한 건, 수업·연구 자료야. 도서관 강좌 접수 언제 열리고 대기는 어떻게 거는지 알려줘. 검색하면 올해 공지랑 작년 공지가 같이 나오고, 페이지에는 waitlist 버튼도 따로 있어. 올해 공식 안내로 확인해줘. 참고로 다음 분기 실행 여부를 오늘 정해야 하는 자료야. 그래서 결정에 필요한 핵심 근거와 보류 조건을 정리해. 확인되는 것만 쓰고, 모르는 건 모른다고 해줘. 공식 링크나 기준일을 확인하고, 도시·노선·날짜처럼 빠진 조건은 묻고 넘어가. 참고 메모가 중간에 붙어 있어도 요청과 자료는 나눠서 봐줘. 아, 대상은 전체가 아니라 위에 적은 범위만이야."
+          "content": "도서관 강좌 접수 다음 분기 결정 부분만 먼저 처리해줘, 상황 설명은 수업·연구 자료야. 대상은 도서관 강좌 접수 다음 분기 결정. 도서관 강좌 접수 언제 열리고 대기는 어떻게 거는지 알려줘. 검색하면 올해 공지랑 작년 공지가 같이 나오고, 페이지에는 waitlist 버튼도 따로 있어. 올해 공식 안내로 확인해줘. 오늘 go-or-hold 판단에 필요한 근거와 멈춰야 할 조건을 추려줘. 도서관 강좌 접수 다음 분기 결정 기준으로 근거가 있는 내용과 아직 모르는 내용을 나눠 써줘. 도서관 강좌 접수 다음 분기 결정 건은 지난해 검색 결과를 제외하고 현재 강좌 공지의 신청 절차와 대기 버튼을 확인해. 대화 중간의 설명은 근거로만 취급하고 작업 문장과 분리해줘. <pasted-note>대화 중간 자료</pasted-note> 본문 메모와 답을 요구한 문장을 분리해. 아까보다 범위를 줄였어; 그 안에서만 답해줘."
         }
       ]
     },
@@ -79,7 +79,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "In an education, learning, or research context, find the class-registration opening date and waitlist process; state the key evidence and hold conditions. Input context: the page search returns this year's notice and last year's notice, and the registration page has a separate waitlist button. the material supports a go-or-hold decision for next quarter today. Complete the request directly, separate facts from inference, and do not invent anything absent from the input. If the source or timetable is not attached, look up the official source or ask for decisive details such as city, route, and as-of date."
+          "content": "Place Library class registration Next quarter decision in the education/research lane. Find the class-registration opening date and waitlist process; state the key evidence and hold conditions. Input context: The page search returns this year's notice and last year's notice, and the registration page has a separate waitlist button. The material supports a go-or-hold decision for next quarter today. Library class registration Next quarter decision: Leave uncertain values open and name the next useful source. For Library class registration Next quarter decision, Discard last year's search result and verify the current class notice and waitlist button."
         }
       ]
     },
@@ -95,7 +95,7 @@
       "messages": [
         {
           "role": "user",
-          "content": "Actually, what I mean is: This is an education/research item. When does the library class open and how do I join the waitlist? Search results include this year's and last year's notices, and the page has a separate waitlist button. Use the current official notice. For this case, the material supports a go-or-hold decision for next quarter today. So state the key evidence and hold conditions. Use what can actually be checked; say when something is unknown. Check the official link and as-of date; ask for missing city, route, or date instead of guessing. If notes are pasted inline, separate the request from the material. Actually, use only the scope stated above, not the broader one."
+          "content": "Only the Library class registration Next quarter decision part for now: This education/research question is about Library class registration Next quarter decision. When does the library class open and how do I join the waitlist? Search results include this year's and last year's notices, and the page has a separate waitlist button. Use the current official notice. Pull out the evidence for today's go-or-hold call and the conditions that would stop it. For Library class registration Next quarter decision, Use the evidence on hand and flag anything still unknown. For Library class registration Next quarter decision, Discard last year's search result and verify the current class notice and waitlist button. Separate the three message fragments into evidence and requested action. <pasted-note>Original excerpt</pasted-note> Treat the pasted words as reference only. I narrowed the target; stay inside the scope already given."
         }
       ]
     }
