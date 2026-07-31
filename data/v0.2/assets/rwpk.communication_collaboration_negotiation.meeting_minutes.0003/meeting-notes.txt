@@ -1,0 +1,9 @@
+
+Weekly program sync - 2026-07-28
+
+Decision: keep the pilot launch on 2026-08-17.
+Decision: the data migration dry run must finish before training starts.
+Action: Operations role owns the dry run by 2026-08-05.
+Action: Enablement role drafts the quick guide by 2026-08-07.
+Open question: Support escalation coverage for launch week is not assigned.
+Risk: two pilot locations have not confirmed their local champions.

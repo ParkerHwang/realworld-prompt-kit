@@ -1,0 +1,6 @@
+
+Apply only these changes:
+1. Replace the 48-hour access target with 24 hours.
+2. Assign access approval to the Hiring Manager role, not People Operations.
+3. Add a final verification step owned by IT Service Desk.
+4. Keep the existing scope and do not add software procurement.

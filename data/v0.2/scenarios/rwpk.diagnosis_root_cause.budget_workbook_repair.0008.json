@@ -1,0 +1,455 @@
+{
+  "schema": "realworld-prompt-kit.scenario/0.2.0",
+  "scenario_id": "rwpk.diagnosis_root_cause.budget_workbook_repair.0008",
+  "revision": 1,
+  "status": "calibration_ready",
+  "semantic_group_id": "rwpg.diagnosis_root_cause.budget_workbook_repair.0008",
+  "title": {
+    "ko": "예산 워크북 수식 복구",
+    "en": "Budget workbook formula repair"
+  },
+  "task": {
+    "primary_intent": "diagnosis_root_cause",
+    "secondary_intents": [
+      "quantitative_formal_analysis",
+      "evaluation_review_audit"
+    ],
+    "workflow_job": "validate",
+    "primary_domain": "finance_accounting_tax",
+    "domain_tags": [
+      "office_admin",
+      "data_analytics"
+    ],
+    "user_goal": {
+      "ko": "누락된 합계 범위를 고치고 검증 시트를 추가하되 원본 입력을 보존한다.",
+      "en": "Repair the omitted total range and add checks while preserving inputs."
+    },
+    "expected_artifact": "An editable repaired XLSX with reconciled totals and a checks sheet."
+  },
+  "coverage": {
+    "module": "spreadsheet_work",
+    "input_artifact_families": [
+      "spreadsheet"
+    ],
+    "output_artifact_families": [
+      "spreadsheet"
+    ],
+    "input_conditions": [
+      "incomplete"
+    ],
+    "request_forms": [
+      "canonical",
+      "naturalistic"
+    ],
+    "interaction_pattern": "one_shot",
+    "authority": "local_reversible_write",
+    "naturalistic_features": [
+      "frustration_urgency_emotion"
+    ]
+  },
+  "assets": [
+    {
+      "asset_id": "broken_budget",
+      "path": "data/v0.2/assets/rwpk.diagnosis_root_cause.budget_workbook_repair.0008/budget-with-range-error.xlsx",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "artifact_family": "spreadsheet",
+      "attachment_role": "existing_artifact",
+      "trust_level": "trusted",
+      "input_condition": "incomplete",
+      "allowed_delivery_modes": [
+        "native_file"
+      ],
+      "locale_variant": "en-US",
+      "locale_status": "shared_across_locales",
+      "sha256": "52fca31ae830b76f3aeca4df52137eb39dd384f38df2fc2261947dba2dbefd29",
+      "rights_basis": "original_project_authorship",
+      "privacy": {
+        "contains_personal_data": false,
+        "classification": "public_synthetic"
+      }
+    }
+  ],
+  "realizations": [
+    {
+      "prompt_id": "rwpk.diagnosis_root_cause.budget_workbook_repair.0008.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "첨부 예산 워크북의 합계와 분산 수식을 점검해 누락된 범위를 수정하고 영어 XLSX 개정본을 만들어 주세요. 입력 값과 기존 형식은 유지하고, 합계 및 분산 조정을 검증하는 Checks 시트를 추가해 주세요.",
+          "attachment_refs": [
+            "broken_budget"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.diagnosis_root_cause.budget_workbook_repair.0008.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "frustration_urgency_emotion"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "이 예산표 total이 계속 안 맞아. 값은 건드리지 말고 빠진 범위 찾아서 수식 고쳐줘. Checks 시트에서 합계랑 variance가 맞는지도 보이게 해줘.",
+          "attachment_refs": [
+            "broken_budget"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.diagnosis_root_cause.budget_workbook_repair.0008.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Audit the attached budget workbook, repair the omitted range in the totals, and create an editable English XLSX revision. Preserve inputs and formatting and add a Checks sheet that reconciles totals and variance.",
+          "attachment_refs": [
+            "broken_budget"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.diagnosis_root_cause.budget_workbook_repair.0008.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "frustration_urgency_emotion"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "This budget total won't tie. Please keep the inputs, fix the missing formula range, and add a Checks sheet showing that the totals and variance reconcile.",
+          "attachment_refs": [
+            "broken_budget"
+          ]
+        }
+      ]
+    }
+  ],
+  "artifact_contract": {
+    "outputs": [
+      {
+        "artifact_id": "repaired_budget",
+        "artifact_family": "spreadsheet",
+        "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "required": true,
+        "editable": true,
+        "filename": "budget-repaired.xlsx",
+        "required_features": [
+          "worksheets",
+          "formulas",
+          "editable_cells"
+        ],
+        "reference_path": "data/v0.2/public-calibration/rwpk.diagnosis_root_cause.budget_workbook_repair.0008/budget-repaired.xlsx",
+        "reference_sha256": "30bcb45711da6eea3f12edf0235c87aefd73920196e4a9249e8d1b8e6c09d8f2",
+        "reference_checks": [
+          {
+            "check_id": "check.budget_sheets",
+            "type": "required_sheet_names",
+            "values": [
+              "Budget",
+              "Checks"
+            ]
+          },
+          {
+            "check_id": "check.budget_formulas",
+            "type": "minimum_feature",
+            "feature": "formula_count",
+            "minimum": 8
+          },
+          {
+            "check_id": "check.budget_text",
+            "type": "contains_text",
+            "values": [
+              "Technology",
+              "Variance reconciliation"
+            ]
+          }
+        ]
+      }
+    ],
+    "side_effect_scope": "local_reversible_write",
+    "output_root": "outputs",
+    "preserve_input_assets": true
+  },
+  "evaluation": {
+    "response_mode": {
+      "canonical": "answer_directly",
+      "naturalistic": "answer_directly"
+    },
+    "hard_gates": [
+      {
+        "gate_id": "hg.required_artifacts_present",
+        "criterion": {
+          "ko": "필수 산출물이 모두 존재한다.",
+          "en": "Every required artifact is present."
+        },
+        "category": "artifact_presence",
+        "artifact_refs": [
+          "repaired_budget"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "repaired_budget",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Resolve every exact output filename in the submission directory.",
+          "check": {
+            "check_id": "check.required_artifacts_present",
+            "type": "artifact_present"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.media_types_match",
+        "criterion": {
+          "ko": "각 산출물의 파일 형식이 계약과 일치한다.",
+          "en": "Every artifact media type matches the contract."
+        },
+        "category": "file_type",
+        "artifact_refs": [
+          "repaired_budget"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "repaired_budget",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Compare extension, file signature, and declared media type.",
+          "check": {
+            "check_id": "check.media_types_match",
+            "type": "media_type"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.artifacts_parse",
+        "criterion": {
+          "ko": "모든 산출물을 참조 파서가 열 수 있다.",
+          "en": "Every artifact opens in the reference parser."
+        },
+        "category": "parseability",
+        "artifact_refs": [
+          "repaired_budget"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "repaired_budget",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Open ZIP-based Office files, JSON, and other formats with the reference inspector.",
+          "check": {
+            "check_id": "check.artifacts_parse",
+            "type": "parseable"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.required_structure_present",
+        "criterion": {
+          "ko": "계약에 명시된 편집 가능한 구조가 존재한다.",
+          "en": "The required editable structure is present."
+        },
+        "category": "editability",
+        "artifact_refs": [
+          "repaired_budget"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "repaired_budget",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Inspect OOXML and JSON features declared by each output.",
+          "check": {
+            "check_id": "check.required_structure_present",
+            "type": "required_features"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.inputs_preserved",
+        "criterion": {
+          "ko": "공개 입력 자산의 해시가 변경되지 않았다.",
+          "en": "The public input asset hashes remain unchanged."
+        },
+        "category": "input_preservation",
+        "artifact_refs": [],
+        "evidence_refs": [
+          {
+            "source": "asset",
+            "ref": "broken_budget",
+            "locator": "whole supplied file"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Recompute every declared input SHA-256 digest.",
+          "check": {
+            "check_id": "check.inputs_preserved",
+            "type": "source_hashes_match"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      }
+    ],
+    "atomic_rubric_items": [
+      {
+        "rubric_id": "ar.repaired_budget_content",
+        "criterion": {
+          "ko": "budget-repaired.xlsx에 작업별 핵심 사실과 구조가 포함된다.",
+          "en": "budget-repaired.xlsx contains the task-specific facts and structure."
+        },
+        "dimension": "source_fidelity",
+        "requirement": "required",
+        "scoring": {
+          "type": "binary"
+        },
+        "scorer": {
+          "method": "rule_assisted",
+          "implementation_status": "implemented",
+          "procedure": "Run the output's declared reference checks against extracted structure and text.",
+          "check": {
+            "check_id": "check.repaired_budget_reference",
+            "type": "reference_checks"
+          }
+        },
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "repaired_budget",
+            "locator": "declared reference checks"
+          }
+        ],
+        "adjudication_note": {
+          "ko": "검사는 정답 파일의 바이트 일치가 아니라 요구 속성을 확인한다.",
+          "en": "Checks verify required properties, not byte equality with the reference."
+        }
+      },
+      {
+        "rubric_id": "ar.visual_quality",
+        "criterion": {
+          "ko": "렌더링된 산출물에 겹침, 잘림 또는 읽기 어려운 요소가 없다.",
+          "en": "Rendered artifacts have no overlap, clipping, or unreadable elements."
+        },
+        "dimension": "visual_and_layout_quality",
+        "requirement": "quality_improving",
+        "scoring": {
+          "type": "bounded",
+          "minimum": 0,
+          "maximum": 2,
+          "step": 1
+        },
+        "scorer": {
+          "method": "human",
+          "implementation_status": "implemented",
+          "procedure": "Blindly inspect every rendered page, slide, or sheet at normal zoom."
+        },
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "repaired_budget",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "adjudication_note": {
+          "ko": "공개 기준 산출물은 제작 QA를 통과했지만 모델 출력에 대한 인간 보정은 아직 필요하다.",
+          "en": "Reference artifacts pass production QA; human calibration on model outputs remains required."
+        }
+      },
+      {
+        "rubric_id": "ar.scope_precision",
+        "criterion": {
+          "ko": "제출 폴더에 계약된 파일만 존재한다.",
+          "en": "The submission folder contains only contracted files."
+        },
+        "dimension": "scope_precision",
+        "requirement": "negative_check",
+        "scoring": {
+          "type": "binary"
+        },
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Compare the submission file list with the exact output contract.",
+          "check": {
+            "check_id": "check.bundle_exact_files",
+            "type": "bundle_exact_files",
+            "values": [
+              "budget-repaired.xlsx"
+            ]
+          }
+        },
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "repaired_budget",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "adjudication_note": {
+          "ko": "운영체제가 만든 숨김 파일은 무시한다.",
+          "en": "Operating-system metadata files are ignored."
+        }
+      }
+    ],
+    "human_calibration": {
+      "required": true,
+      "status": "not_run",
+      "plan_path": "data/v0.2/public-calibration/README.md"
+    }
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT",
+    "review": {
+      "review_type": "automated_structural",
+      "reviewer": "Codex release QA",
+      "review_date": "2026-07-31",
+      "evidence_path": "reports/v0.2/release-validation.json",
+      "human_practitioner_review": false
+    }
+  }
+}

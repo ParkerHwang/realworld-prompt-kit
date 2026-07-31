@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/ParkerHwang/realworld-prompt-kit/main/schemas/manifest-0.2.schema.json",
+  "title": "RealWorld Prompt Kit v0.2 Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "pack_id",
+    "version",
+    "status",
+    "description",
+    "catalog_path",
+    "scenario_glob",
+    "expected_scenarios",
+    "expected_realizations",
+    "realizations_per_scenario",
+    "required_locales",
+    "required_forms",
+    "required_modules",
+    "required_workflow_jobs",
+    "required_output_families",
+    "reference_validation",
+    "source_policy",
+    "claim_boundaries",
+    "release_evidence"
+  ],
+  "properties": {
+    "schema": {
+      "const": "realworld-prompt-kit.manifest/0.2.0"
+    },
+    "pack_id": {
+      "const": "realworld-prompt-kit-v0.2-artifact-core"
+    },
+    "version": {
+      "const": "0.2.0"
+    },
+    "status": {
+      "const": "calibration_release"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "catalog_path": {
+      "const": "data/v0.2/catalog.json"
+    },
+    "scenario_glob": {
+      "const": "data/v0.2/scenarios/*.json"
+    },
+    "expected_scenarios": {
+      "const": 12
+    },
+    "expected_realizations": {
+      "const": 48
+    },
+    "realizations_per_scenario": {
+      "const": 4
+    },
+    "required_locales": {
+      "const": [
+        "ko-KR",
+        "en-US"
+      ]
+    },
+    "required_forms": {
+      "const": [
+        "canonical",
+        "naturalistic"
+      ]
+    },
+    "required_modules": {
+      "type": "object",
+      "minProperties": 6
+    },
+    "required_workflow_jobs": {
+      "type": "array",
+      "minItems": 8,
+      "uniqueItems": true
+    },
+    "required_output_families": {
+      "const": [
+        "document",
+        "presentation",
+        "spreadsheet"
+      ]
+    },
+    "reference_validation": {
+      "type": "object"
+    },
+    "source_policy": {
+      "type": "object"
+    },
+    "claim_boundaries": {
+      "type": "object",
+      "required": [
+        "leaderboard_valid",
+        "human_calibration_complete",
+        "external_replication_complete"
+      ],
+      "properties": {
+        "leaderboard_valid": {
+          "const": false
+        },
+        "human_calibration_complete": {
+          "const": false
+        },
+        "external_replication_complete": {
+          "const": false
+        }
+      }
+    },
+    "release_evidence": {
+      "type": "object"
+    }
+  }
+}

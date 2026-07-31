@@ -1,0 +1,479 @@
+{
+  "schema": "realworld-prompt-kit.scenario/0.2.0",
+  "scenario_id": "rwpk.evaluation_review_audit.quarterly_report_audit.0011",
+  "revision": 1,
+  "status": "calibration_ready",
+  "semantic_group_id": "rwpg.evaluation_review_audit.quarterly_report_audit.0011",
+  "title": {
+    "ko": "분기 보고서 근거 감사",
+    "en": "Quarterly report evidence audit"
+  },
+  "task": {
+    "primary_intent": "evaluation_review_audit",
+    "secondary_intents": [
+      "quantitative_formal_analysis"
+    ],
+    "workflow_job": "inspect",
+    "primary_domain": "strategy_business_operations",
+    "domain_tags": [
+      "data_analytics",
+      "office_admin"
+    ],
+    "user_goal": {
+      "ko": "초안 보고서의 근거 오류를 CSV와 대조해 영어 감사 보고서로 기록한다.",
+      "en": "Audit draft claims against the CSV and document the findings."
+    },
+    "expected_artifact": "An editable English DOCX audit with claim-level evidence."
+  },
+  "coverage": {
+    "module": "artifact_quality_control_delivery",
+    "input_artifact_families": [
+      "document",
+      "spreadsheet"
+    ],
+    "output_artifact_families": [
+      "document"
+    ],
+    "input_conditions": [
+      "conflicting"
+    ],
+    "request_forms": [
+      "canonical",
+      "naturalistic"
+    ],
+    "interaction_pattern": "one_shot",
+    "authority": "local_reversible_write",
+    "naturalistic_features": [
+      "contradictory_constraints"
+    ]
+  },
+  "assets": [
+    {
+      "asset_id": "draft_report",
+      "path": "data/v0.2/assets/rwpk.evaluation_review_audit.quarterly_report_audit.0011/quarterly-report-draft.docx",
+      "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "artifact_family": "document",
+      "attachment_role": "existing_artifact",
+      "trust_level": "trusted",
+      "input_condition": "conflicting",
+      "allowed_delivery_modes": [
+        "native_file"
+      ],
+      "locale_variant": "en-US",
+      "locale_status": "shared_across_locales",
+      "sha256": "4ebb32f1412fb20b8b9d81f41eba6f6822cfe2862bd948677d9f339427d94712",
+      "rights_basis": "original_project_authorship",
+      "privacy": {
+        "contains_personal_data": false,
+        "classification": "public_synthetic"
+      }
+    },
+    {
+      "asset_id": "source_data",
+      "path": "data/v0.2/assets/rwpk.evaluation_review_audit.quarterly_report_audit.0011/quarterly-source.csv",
+      "media_type": "text/csv",
+      "artifact_family": "spreadsheet",
+      "attachment_role": "authoritative_source",
+      "trust_level": "trusted",
+      "input_condition": "clean",
+      "allowed_delivery_modes": [
+        "native_file"
+      ],
+      "locale_variant": "en-US",
+      "locale_status": "shared_across_locales",
+      "sha256": "1dd21047be5580d3084f717193c31df52594d0b72bd0fec17baf29b036440b18",
+      "rights_basis": "original_project_authorship",
+      "privacy": {
+        "contains_personal_data": false,
+        "classification": "public_synthetic"
+      }
+    }
+  ],
+  "realizations": [
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.quarterly_report_audit.0011.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "분기 보고서 초안을 CSV와 대조해 영어 DOCX 감사 보고서를 작성해 주세요. 잘못된 전체 지역 성장 및 정시율 주장을 근거 행과 함께 표시하고, 원본 초안 자체는 수정하지 말며 필요한 교정만 제안해 주세요.",
+          "attachment_refs": [
+            "draft_report",
+            "source_data"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.quarterly_report_audit.0011.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "contradictory_constraints"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "이 보고서 숫자 맞는지 CSV랑 대조해줘. 초안 파일은 손대지 말고 영어 audit 문서로 어떤 문장이 틀렸는지, 실제 숫자랑 고칠 방향만 적어줘.",
+          "attachment_refs": [
+            "draft_report",
+            "source_data"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.quarterly_report_audit.0011.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Audit the draft quarterly report against the attached CSV and create an editable English DOCX audit. Identify the unsupported all-region growth and on-time-rate claims with source evidence; preserve the draft and recommend only necessary corrections.",
+          "attachment_refs": [
+            "draft_report",
+            "source_data"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.quarterly_report_audit.0011.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "contradictory_constraints"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Can you check this report against the CSV? Don't edit the draft itself; give me an English audit showing which claims are wrong, the actual figures, and the needed corrections.",
+          "attachment_refs": [
+            "draft_report",
+            "source_data"
+          ]
+        }
+      ]
+    }
+  ],
+  "artifact_contract": {
+    "outputs": [
+      {
+        "artifact_id": "audit_report",
+        "artifact_family": "document",
+        "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "required": true,
+        "editable": true,
+        "filename": "quarterly-report-audit.docx",
+        "required_features": [
+          "editable_text",
+          "headings",
+          "tables"
+        ],
+        "reference_path": "data/v0.2/public-calibration/rwpk.evaluation_review_audit.quarterly_report_audit.0011/quarterly-report-audit.docx",
+        "reference_sha256": "8e13ecbcec60d3a94dc71e1c0c39ee88ce352e593e119ab298348e0455467601",
+        "reference_checks": [
+          {
+            "check_id": "check.audit_text",
+            "type": "contains_text",
+            "values": [
+              "South",
+              "760",
+              "735",
+              "91%",
+              "Unsupported"
+            ]
+          },
+          {
+            "check_id": "check.audit_table",
+            "type": "minimum_feature",
+            "feature": "table_count",
+            "minimum": 1
+          }
+        ]
+      }
+    ],
+    "side_effect_scope": "local_reversible_write",
+    "output_root": "outputs",
+    "preserve_input_assets": true
+  },
+  "evaluation": {
+    "response_mode": {
+      "canonical": "answer_directly",
+      "naturalistic": "answer_directly"
+    },
+    "hard_gates": [
+      {
+        "gate_id": "hg.required_artifacts_present",
+        "criterion": {
+          "ko": "필수 산출물이 모두 존재한다.",
+          "en": "Every required artifact is present."
+        },
+        "category": "artifact_presence",
+        "artifact_refs": [
+          "audit_report"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "audit_report",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Resolve every exact output filename in the submission directory.",
+          "check": {
+            "check_id": "check.required_artifacts_present",
+            "type": "artifact_present"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.media_types_match",
+        "criterion": {
+          "ko": "각 산출물의 파일 형식이 계약과 일치한다.",
+          "en": "Every artifact media type matches the contract."
+        },
+        "category": "file_type",
+        "artifact_refs": [
+          "audit_report"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "audit_report",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Compare extension, file signature, and declared media type.",
+          "check": {
+            "check_id": "check.media_types_match",
+            "type": "media_type"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.artifacts_parse",
+        "criterion": {
+          "ko": "모든 산출물을 참조 파서가 열 수 있다.",
+          "en": "Every artifact opens in the reference parser."
+        },
+        "category": "parseability",
+        "artifact_refs": [
+          "audit_report"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "audit_report",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Open ZIP-based Office files, JSON, and other formats with the reference inspector.",
+          "check": {
+            "check_id": "check.artifacts_parse",
+            "type": "parseable"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.required_structure_present",
+        "criterion": {
+          "ko": "계약에 명시된 편집 가능한 구조가 존재한다.",
+          "en": "The required editable structure is present."
+        },
+        "category": "editability",
+        "artifact_refs": [
+          "audit_report"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "audit_report",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Inspect OOXML and JSON features declared by each output.",
+          "check": {
+            "check_id": "check.required_structure_present",
+            "type": "required_features"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.inputs_preserved",
+        "criterion": {
+          "ko": "공개 입력 자산의 해시가 변경되지 않았다.",
+          "en": "The public input asset hashes remain unchanged."
+        },
+        "category": "input_preservation",
+        "artifact_refs": [],
+        "evidence_refs": [
+          {
+            "source": "asset",
+            "ref": "draft_report",
+            "locator": "whole supplied file"
+          },
+          {
+            "source": "asset",
+            "ref": "source_data",
+            "locator": "whole supplied file"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Recompute every declared input SHA-256 digest.",
+          "check": {
+            "check_id": "check.inputs_preserved",
+            "type": "source_hashes_match"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      }
+    ],
+    "atomic_rubric_items": [
+      {
+        "rubric_id": "ar.audit_report_content",
+        "criterion": {
+          "ko": "quarterly-report-audit.docx에 작업별 핵심 사실과 구조가 포함된다.",
+          "en": "quarterly-report-audit.docx contains the task-specific facts and structure."
+        },
+        "dimension": "source_fidelity",
+        "requirement": "required",
+        "scoring": {
+          "type": "binary"
+        },
+        "scorer": {
+          "method": "rule_assisted",
+          "implementation_status": "implemented",
+          "procedure": "Run the output's declared reference checks against extracted structure and text.",
+          "check": {
+            "check_id": "check.audit_report_reference",
+            "type": "reference_checks"
+          }
+        },
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "audit_report",
+            "locator": "declared reference checks"
+          }
+        ],
+        "adjudication_note": {
+          "ko": "검사는 정답 파일의 바이트 일치가 아니라 요구 속성을 확인한다.",
+          "en": "Checks verify required properties, not byte equality with the reference."
+        }
+      },
+      {
+        "rubric_id": "ar.visual_quality",
+        "criterion": {
+          "ko": "렌더링된 산출물에 겹침, 잘림 또는 읽기 어려운 요소가 없다.",
+          "en": "Rendered artifacts have no overlap, clipping, or unreadable elements."
+        },
+        "dimension": "visual_and_layout_quality",
+        "requirement": "quality_improving",
+        "scoring": {
+          "type": "bounded",
+          "minimum": 0,
+          "maximum": 2,
+          "step": 1
+        },
+        "scorer": {
+          "method": "human",
+          "implementation_status": "implemented",
+          "procedure": "Blindly inspect every rendered page, slide, or sheet at normal zoom."
+        },
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "audit_report",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "adjudication_note": {
+          "ko": "공개 기준 산출물은 제작 QA를 통과했지만 모델 출력에 대한 인간 보정은 아직 필요하다.",
+          "en": "Reference artifacts pass production QA; human calibration on model outputs remains required."
+        }
+      },
+      {
+        "rubric_id": "ar.scope_precision",
+        "criterion": {
+          "ko": "제출 폴더에 계약된 파일만 존재한다.",
+          "en": "The submission folder contains only contracted files."
+        },
+        "dimension": "scope_precision",
+        "requirement": "negative_check",
+        "scoring": {
+          "type": "binary"
+        },
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Compare the submission file list with the exact output contract.",
+          "check": {
+            "check_id": "check.bundle_exact_files",
+            "type": "bundle_exact_files",
+            "values": [
+              "quarterly-report-audit.docx"
+            ]
+          }
+        },
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "audit_report",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "adjudication_note": {
+          "ko": "운영체제가 만든 숨김 파일은 무시한다.",
+          "en": "Operating-system metadata files are ignored."
+        }
+      }
+    ],
+    "human_calibration": {
+      "required": true,
+      "status": "not_run",
+      "plan_path": "data/v0.2/public-calibration/README.md"
+    }
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT",
+    "review": {
+      "review_type": "automated_structural",
+      "reviewer": "Codex release QA",
+      "review_date": "2026-07-31",
+      "evidence_path": "reports/v0.2/release-validation.json",
+      "human_practitioner_review": false
+    }
+  }
+}

@@ -1,0 +1,7 @@
+month,orders,on_time_rate,backlog,support_cases
+Jan,1180,0.91,84,126
+Feb,1240,0.92,79,118
+Mar,1310,0.9,96,134
+Apr,1390,0.93,71,112
+May,1460,0.94,63,105
+Jun,1525,0.95,54,99

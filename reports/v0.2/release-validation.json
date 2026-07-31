@@ -1,0 +1,1099 @@
+{
+  "errors": [],
+  "manifest": "data/v0.2/manifest.json",
+  "reference_results": [
+    {
+      "artifact_valid_rate": 1.0,
+      "artifacts": {
+        "meeting_minutes": {
+          "features": [
+            "editable_text",
+            "headings",
+            "tables"
+          ],
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "parseable": true,
+          "path": "data/v0.2/public-calibration/rwpk.communication_collaboration_negotiation.meeting_minutes.0003/program-sync-minutes.docx"
+        }
+      },
+      "atomic_score_by_dimension": {
+        "scope_precision": 1.0,
+        "source_fidelity": 1.0
+      },
+      "full_pass": true,
+      "hard_gate_results": [
+        {
+          "category": "artifact_presence",
+          "errors": [],
+          "gate_id": "hg.required_artifacts_present",
+          "status": "pass"
+        },
+        {
+          "category": "file_type",
+          "errors": [],
+          "gate_id": "hg.media_types_match",
+          "status": "pass"
+        },
+        {
+          "category": "parseability",
+          "errors": [],
+          "gate_id": "hg.artifacts_parse",
+          "status": "pass"
+        },
+        {
+          "category": "editability",
+          "errors": [],
+          "gate_id": "hg.required_structure_present",
+          "status": "pass"
+        },
+        {
+          "category": "input_preservation",
+          "errors": [],
+          "gate_id": "hg.inputs_preserved",
+          "status": "pass"
+        }
+      ],
+      "mode": "reference",
+      "rubric_results": [
+        {
+          "dimension": "source_fidelity",
+          "errors": [],
+          "rubric_id": "ar.meeting_minutes_content",
+          "score": 1.0,
+          "status": "pass"
+        },
+        {
+          "dimension": "visual_and_layout_quality",
+          "errors": [],
+          "rubric_id": "ar.visual_quality",
+          "score": null,
+          "status": "unscored"
+        },
+        {
+          "dimension": "scope_precision",
+          "errors": [],
+          "rubric_id": "ar.scope_precision",
+          "score": 1.0,
+          "status": "pass"
+        }
+      ],
+      "scenario_id": "rwpk.communication_collaboration_negotiation.meeting_minutes.0003",
+      "schema": "realworld-prompt-kit.artifact-result/0.2.0",
+      "unscored_item_count": 1
+    },
+    {
+      "artifact_valid_rate": 1.0,
+      "artifacts": {
+        "repaired_budget": {
+          "features": [
+            "editable_cells",
+            "formulas",
+            "worksheets"
+          ],
+          "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "parseable": true,
+          "path": "data/v0.2/public-calibration/rwpk.diagnosis_root_cause.budget_workbook_repair.0008/budget-repaired.xlsx"
+        }
+      },
+      "atomic_score_by_dimension": {
+        "scope_precision": 1.0,
+        "source_fidelity": 1.0
+      },
+      "full_pass": true,
+      "hard_gate_results": [
+        {
+          "category": "artifact_presence",
+          "errors": [],
+          "gate_id": "hg.required_artifacts_present",
+          "status": "pass"
+        },
+        {
+          "category": "file_type",
+          "errors": [],
+          "gate_id": "hg.media_types_match",
+          "status": "pass"
+        },
+        {
+          "category": "parseability",
+          "errors": [],
+          "gate_id": "hg.artifacts_parse",
+          "status": "pass"
+        },
+        {
+          "category": "editability",
+          "errors": [],
+          "gate_id": "hg.required_structure_present",
+          "status": "pass"
+        },
+        {
+          "category": "input_preservation",
+          "errors": [],
+          "gate_id": "hg.inputs_preserved",
+          "status": "pass"
+        }
+      ],
+      "mode": "reference",
+      "rubric_results": [
+        {
+          "dimension": "source_fidelity",
+          "errors": [],
+          "rubric_id": "ar.repaired_budget_content",
+          "score": 1.0,
+          "status": "pass"
+        },
+        {
+          "dimension": "visual_and_layout_quality",
+          "errors": [],
+          "rubric_id": "ar.visual_quality",
+          "score": null,
+          "status": "unscored"
+        },
+        {
+          "dimension": "scope_precision",
+          "errors": [],
+          "rubric_id": "ar.scope_precision",
+          "score": 1.0,
+          "status": "pass"
+        }
+      ],
+      "scenario_id": "rwpk.diagnosis_root_cause.budget_workbook_repair.0008",
+      "schema": "realworld-prompt-kit.artifact-result/0.2.0",
+      "unscored_item_count": 1
+    },
+    {
+      "artifact_valid_rate": 1.0,
+      "artifacts": {
+        "campaign_brief": {
+          "features": [
+            "editable_text",
+            "headings",
+            "tables"
+          ],
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "parseable": true,
+          "path": "data/v0.2/public-calibration/rwpk.evaluation_review_audit.campaign_readout_package.0010/campaign-readout-brief.docx"
+        },
+        "campaign_deck": {
+          "features": [
+            "charts",
+            "editable_text",
+            "slides"
+          ],
+          "media_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+          "parseable": true,
+          "path": "data/v0.2/public-calibration/rwpk.evaluation_review_audit.campaign_readout_package.0010/campaign-recap-deck.pptx"
+        }
+      },
+      "atomic_score_by_dimension": {
+        "scope_precision": 1.0,
+        "source_fidelity": 1.0
+      },
+      "full_pass": true,
+      "hard_gate_results": [
+        {
+          "category": "artifact_presence",
+          "errors": [],
+          "gate_id": "hg.required_artifacts_present",
+          "status": "pass"
+        },
+        {
+          "category": "file_type",
+          "errors": [],
+          "gate_id": "hg.media_types_match",
+          "status": "pass"
+        },
+        {
+          "category": "parseability",
+          "errors": [],
+          "gate_id": "hg.artifacts_parse",
+          "status": "pass"
+        },
+        {
+          "category": "editability",
+          "errors": [],
+          "gate_id": "hg.required_structure_present",
+          "status": "pass"
+        },
+        {
+          "category": "input_preservation",
+          "errors": [],
+          "gate_id": "hg.inputs_preserved",
+          "status": "pass"
+        }
+      ],
+      "mode": "reference",
+      "rubric_results": [
+        {
+          "dimension": "source_fidelity",
+          "errors": [],
+          "rubric_id": "ar.campaign_brief_content",
+          "score": 1.0,
+          "status": "pass"
+        },
+        {
+          "dimension": "source_fidelity",
+          "errors": [],
+          "rubric_id": "ar.campaign_deck_content",
+          "score": 1.0,
+          "status": "pass"
+        },
+        {
+          "dimension": "visual_and_layout_quality",
+          "errors": [],
+          "rubric_id": "ar.visual_quality",
+          "score": null,
+          "status": "unscored"
+        },
+        {
+          "dimension": "scope_precision",
+          "errors": [],
+          "rubric_id": "ar.scope_precision",
+          "score": 1.0,
+          "status": "pass"
+        }
+      ],
+      "scenario_id": "rwpk.evaluation_review_audit.campaign_readout_package.0010",
+      "schema": "realworld-prompt-kit.artifact-result/0.2.0",
+      "unscored_item_count": 1
+    },
+    {
+      "artifact_valid_rate": 1.0,
+      "artifacts": {
+        "audit_report": {
+          "features": [
+            "editable_text",
+            "headings",
+            "tables"
+          ],
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "parseable": true,
+          "path": "data/v0.2/public-calibration/rwpk.evaluation_review_audit.quarterly_report_audit.0011/quarterly-report-audit.docx"
+        }
+      },
+      "atomic_score_by_dimension": {
+        "scope_precision": 1.0,
+        "source_fidelity": 1.0
+      },
+      "full_pass": true,
+      "hard_gate_results": [
+        {
+          "category": "artifact_presence",
+          "errors": [],
+          "gate_id": "hg.required_artifacts_present",
+          "status": "pass"
+        },
+        {
+          "category": "file_type",
+          "errors": [],
+          "gate_id": "hg.media_types_match",
+          "status": "pass"
+        },
+        {
+          "category": "parseability",
+          "errors": [],
+          "gate_id": "hg.artifacts_parse",
+          "status": "pass"
+        },
+        {
+          "category": "editability",
+          "errors": [],
+          "gate_id": "hg.required_structure_present",
+          "status": "pass"
+        },
+        {
+          "category": "input_preservation",
+          "errors": [],
+          "gate_id": "hg.inputs_preserved",
+          "status": "pass"
+        }
+      ],
+      "mode": "reference",
+      "rubric_results": [
+        {
+          "dimension": "source_fidelity",
+          "errors": [],
+          "rubric_id": "ar.audit_report_content",
+          "score": 1.0,
+          "status": "pass"
+        },
+        {
+          "dimension": "visual_and_layout_quality",
+          "errors": [],
+          "rubric_id": "ar.visual_quality",
+          "score": null,
+          "status": "unscored"
+        },
+        {
+          "dimension": "scope_precision",
+          "errors": [],
+          "rubric_id": "ar.scope_precision",
+          "score": 1.0,
+          "status": "pass"
+        }
+      ],
+      "scenario_id": "rwpk.evaluation_review_audit.quarterly_report_audit.0011",
+      "schema": "realworld-prompt-kit.artifact-result/0.2.0",
+      "unscored_item_count": 1
+    },
+    {
+      "artifact_valid_rate": 1.0,
+      "artifacts": {
+        "expense_workbook": {
+          "features": [
+            "editable_cells",
+            "formulas",
+            "worksheets"
+          ],
+          "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "parseable": true,
+          "path": "data/v0.2/public-calibration/rwpk.extraction_parsing.scanned_expense_table.0002/expense-table-extracted.xlsx"
+        }
+      },
+      "atomic_score_by_dimension": {
+        "scope_precision": 1.0,
+        "source_fidelity": 1.0
+      },
+      "full_pass": true,
+      "hard_gate_results": [
+        {
+          "category": "artifact_presence",
+          "errors": [],
+          "gate_id": "hg.required_artifacts_present",
+          "status": "pass"
+        },
+        {
+          "category": "file_type",
+          "errors": [],
+          "gate_id": "hg.media_types_match",
+          "status": "pass"
+        },
+        {
+          "category": "parseability",
+          "errors": [],
+          "gate_id": "hg.artifacts_parse",
+          "status": "pass"
+        },
+        {
+          "category": "editability",
+          "errors": [],
+          "gate_id": "hg.required_structure_present",
+          "status": "pass"
+        },
+        {
+          "category": "input_preservation",
+          "errors": [],
+          "gate_id": "hg.inputs_preserved",
+          "status": "pass"
+        }
+      ],
+      "mode": "reference",
+      "rubric_results": [
+        {
+          "dimension": "source_fidelity",
+          "errors": [],
+          "rubric_id": "ar.expense_workbook_content",
+          "score": 1.0,
+          "status": "pass"
+        },
+        {
+          "dimension": "visual_and_layout_quality",
+          "errors": [],
+          "rubric_id": "ar.visual_quality",
+          "score": null,
+          "status": "unscored"
+        },
+        {
+          "dimension": "scope_precision",
+          "errors": [],
+          "rubric_id": "ar.scope_precision",
+          "score": 1.0,
+          "status": "pass"
+        }
+      ],
+      "scenario_id": "rwpk.extraction_parsing.scanned_expense_table.0002",
+      "schema": "realworld-prompt-kit.artifact-result/0.2.0",
+      "unscored_item_count": 1
+    },
+    {
+      "artifact_valid_rate": 1.0,
+      "artifacts": {
+        "delivery_deck": {
+          "features": [
+            "charts",
+            "editable_text",
+            "slides"
+          ],
+          "media_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+          "parseable": true,
+          "path": "data/v0.2/public-calibration/rwpk.one_off_tool_execution.delivery_package.0012/delivery-recap-deck.pptx"
+        },
+        "delivery_manifest": {
+          "features": [
+            "json_object",
+            "file_manifest"
+          ],
+          "media_type": "application/json",
+          "parseable": true,
+          "path": "data/v0.2/public-calibration/rwpk.one_off_tool_execution.delivery_package.0012/delivery-manifest.json"
+        },
+        "delivery_tracker": {
+          "features": [
+            "editable_cells",
+            "formulas",
+            "worksheets"
+          ],
+          "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "parseable": true,
+          "path": "data/v0.2/public-calibration/rwpk.one_off_tool_execution.delivery_package.0012/delivery-tracker.xlsx"
+        },
+        "handoff_note": {
+          "features": [
+            "editable_text",
+            "headings",
+            "tables"
+          ],
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "parseable": true,
+          "path": "data/v0.2/public-calibration/rwpk.one_off_tool_execution.delivery_package.0012/handoff-note.docx"
+        }
+      },
+      "atomic_score_by_dimension": {
+        "scope_precision": 1.0,
+        "source_fidelity": 1.0
+      },
+      "full_pass": true,
+      "hard_gate_results": [
+        {
+          "category": "artifact_presence",
+          "errors": [],
+          "gate_id": "hg.required_artifacts_present",
+          "status": "pass"
+        },
+        {
+          "category": "file_type",
+          "errors": [],
+          "gate_id": "hg.media_types_match",
+          "status": "pass"
+        },
+        {
+          "category": "parseability",
+          "errors": [],
+          "gate_id": "hg.artifacts_parse",
+          "status": "pass"
+        },
+        {
+          "category": "editability",
+          "errors": [],
+          "gate_id": "hg.required_structure_present",
+          "status": "pass"
+        },
+        {
+          "category": "input_preservation",
+          "errors": [],
+          "gate_id": "hg.inputs_preserved",
+          "status": "pass"
+        }
+      ],
+      "mode": "reference",
+      "rubric_results": [
+        {
+          "dimension": "source_fidelity",
+          "errors": [],
+          "rubric_id": "ar.delivery_deck_content",
+          "score": 1.0,
+          "status": "pass"
+        },
+        {
+          "dimension": "source_fidelity",
+          "errors": [],
+          "rubric_id": "ar.delivery_tracker_content",
+          "score": 1.0,
+          "status": "pass"
+        },
+        {
+          "dimension": "source_fidelity",
+          "errors": [],
+          "rubric_id": "ar.handoff_note_content",
+          "score": 1.0,
+          "status": "pass"
+        },
+        {
+          "dimension": "source_fidelity",
+          "errors": [],
+          "rubric_id": "ar.delivery_manifest_content",
+          "score": 1.0,
+          "status": "pass"
+        },
+        {
+          "dimension": "visual_and_layout_quality",
+          "errors": [],
+          "rubric_id": "ar.visual_quality",
+          "score": null,
+          "status": "unscored"
+        },
+        {
+          "dimension": "scope_precision",
+          "errors": [],
+          "rubric_id": "ar.scope_precision",
+          "score": 1.0,
+          "status": "pass"
+        }
+      ],
+      "scenario_id": "rwpk.one_off_tool_execution.delivery_package.0012",
+      "schema": "realworld-prompt-kit.artifact-result/0.2.0",
+      "unscored_item_count": 1
+    },
+    {
+      "artifact_valid_rate": 1.0,
+      "artifacts": {
+        "ops_deck": {
+          "features": [
+            "charts",
+            "editable_text",
+            "slides"
+          ],
+          "media_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+          "parseable": true,
+          "path": "data/v0.2/public-calibration/rwpk.operations_monitoring_improvement.monthly_ops_package.0009/monthly-ops-deck.pptx"
+        },
+        "ops_memo": {
+          "features": [
+            "editable_text",
+            "headings"
+          ],
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "parseable": true,
+          "path": "data/v0.2/public-calibration/rwpk.operations_monitoring_improvement.monthly_ops_package.0009/monthly-ops-memo.docx"
+        },
+        "ops_workbook": {
+          "features": [
+            "charts",
+            "editable_cells",
+            "formulas",
+            "worksheets"
+          ],
+          "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "parseable": true,
+          "path": "data/v0.2/public-calibration/rwpk.operations_monitoring_improvement.monthly_ops_package.0009/monthly-ops-workbook.xlsx"
+        }
+      },
+      "atomic_score_by_dimension": {
+        "scope_precision": 1.0,
+        "source_fidelity": 1.0
+      },
+      "full_pass": true,
+      "hard_gate_results": [
+        {
+          "category": "artifact_presence",
+          "errors": [],
+          "gate_id": "hg.required_artifacts_present",
+          "status": "pass"
+        },
+        {
+          "category": "file_type",
+          "errors": [],
+          "gate_id": "hg.media_types_match",
+          "status": "pass"
+        },
+        {
+          "category": "parseability",
+          "errors": [],
+          "gate_id": "hg.artifacts_parse",
+          "status": "pass"
+        },
+        {
+          "category": "editability",
+          "errors": [],
+          "gate_id": "hg.required_structure_present",
+          "status": "pass"
+        },
+        {
+          "category": "input_preservation",
+          "errors": [],
+          "gate_id": "hg.inputs_preserved",
+          "status": "pass"
+        }
+      ],
+      "mode": "reference",
+      "rubric_results": [
+        {
+          "dimension": "source_fidelity",
+          "errors": [],
+          "rubric_id": "ar.ops_workbook_content",
+          "score": 1.0,
+          "status": "pass"
+        },
+        {
+          "dimension": "source_fidelity",
+          "errors": [],
+          "rubric_id": "ar.ops_memo_content",
+          "score": 1.0,
+          "status": "pass"
+        },
+        {
+          "dimension": "source_fidelity",
+          "errors": [],
+          "rubric_id": "ar.ops_deck_content",
+          "score": 1.0,
+          "status": "pass"
+        },
+        {
+          "dimension": "visual_and_layout_quality",
+          "errors": [],
+          "rubric_id": "ar.visual_quality",
+          "score": null,
+          "status": "unscored"
+        },
+        {
+          "dimension": "scope_precision",
+          "errors": [],
+          "rubric_id": "ar.scope_precision",
+          "score": 1.0,
+          "status": "pass"
+        }
+      ],
+      "scenario_id": "rwpk.operations_monitoring_improvement.monthly_ops_package.0009",
+      "schema": "realworld-prompt-kit.artifact-result/0.2.0",
+      "unscored_item_count": 1
+    },
+    {
+      "artifact_valid_rate": 1.0,
+      "artifacts": {
+        "status_workbook": {
+          "features": [
+            "charts",
+            "editable_cells",
+            "formulas",
+            "worksheets"
+          ],
+          "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "parseable": true,
+          "path": "data/v0.2/public-calibration/rwpk.quantitative_formal_analysis.project_status_workbook.0007/project-status-summary.xlsx"
+        }
+      },
+      "atomic_score_by_dimension": {
+        "scope_precision": 1.0,
+        "source_fidelity": 1.0
+      },
+      "full_pass": true,
+      "hard_gate_results": [
+        {
+          "category": "artifact_presence",
+          "errors": [],
+          "gate_id": "hg.required_artifacts_present",
+          "status": "pass"
+        },
+        {
+          "category": "file_type",
+          "errors": [],
+          "gate_id": "hg.media_types_match",
+          "status": "pass"
+        },
+        {
+          "category": "parseability",
+          "errors": [],
+          "gate_id": "hg.artifacts_parse",
+          "status": "pass"
+        },
+        {
+          "category": "editability",
+          "errors": [],
+          "gate_id": "hg.required_structure_present",
+          "status": "pass"
+        },
+        {
+          "category": "input_preservation",
+          "errors": [],
+          "gate_id": "hg.inputs_preserved",
+          "status": "pass"
+        }
+      ],
+      "mode": "reference",
+      "rubric_results": [
+        {
+          "dimension": "source_fidelity",
+          "errors": [],
+          "rubric_id": "ar.status_workbook_content",
+          "score": 1.0,
+          "status": "pass"
+        },
+        {
+          "dimension": "visual_and_layout_quality",
+          "errors": [],
+          "rubric_id": "ar.visual_quality",
+          "score": null,
+          "status": "unscored"
+        },
+        {
+          "dimension": "scope_precision",
+          "errors": [],
+          "rubric_id": "ar.scope_precision",
+          "score": 1.0,
+          "status": "pass"
+        }
+      ],
+      "scenario_id": "rwpk.quantitative_formal_analysis.project_status_workbook.0007",
+      "schema": "realworld-prompt-kit.artifact-result/0.2.0",
+      "unscored_item_count": 1
+    },
+    {
+      "artifact_valid_rate": 1.0,
+      "artifacts": {
+        "executive_deck": {
+          "features": [
+            "charts",
+            "editable_text",
+            "slides"
+          ],
+          "media_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+          "parseable": true,
+          "path": "data/v0.2/public-calibration/rwpk.summarization_synthesis.executive_update_deck.0005/executive-update-deck.pptx"
+        }
+      },
+      "atomic_score_by_dimension": {
+        "scope_precision": 1.0,
+        "source_fidelity": 1.0
+      },
+      "full_pass": true,
+      "hard_gate_results": [
+        {
+          "category": "artifact_presence",
+          "errors": [],
+          "gate_id": "hg.required_artifacts_present",
+          "status": "pass"
+        },
+        {
+          "category": "file_type",
+          "errors": [],
+          "gate_id": "hg.media_types_match",
+          "status": "pass"
+        },
+        {
+          "category": "parseability",
+          "errors": [],
+          "gate_id": "hg.artifacts_parse",
+          "status": "pass"
+        },
+        {
+          "category": "editability",
+          "errors": [],
+          "gate_id": "hg.required_structure_present",
+          "status": "pass"
+        },
+        {
+          "category": "input_preservation",
+          "errors": [],
+          "gate_id": "hg.inputs_preserved",
+          "status": "pass"
+        }
+      ],
+      "mode": "reference",
+      "rubric_results": [
+        {
+          "dimension": "source_fidelity",
+          "errors": [],
+          "rubric_id": "ar.executive_deck_content",
+          "score": 1.0,
+          "status": "pass"
+        },
+        {
+          "dimension": "visual_and_layout_quality",
+          "errors": [],
+          "rubric_id": "ar.visual_quality",
+          "score": null,
+          "status": "unscored"
+        },
+        {
+          "dimension": "scope_precision",
+          "errors": [],
+          "rubric_id": "ar.scope_precision",
+          "score": 1.0,
+          "status": "pass"
+        }
+      ],
+      "scenario_id": "rwpk.summarization_synthesis.executive_update_deck.0005",
+      "schema": "realworld-prompt-kit.artifact-result/0.2.0",
+      "unscored_item_count": 1
+    },
+    {
+      "artifact_valid_rate": 1.0,
+      "artifacts": {
+        "vendor_brief": {
+          "features": [
+            "editable_text",
+            "headings",
+            "tables"
+          ],
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "parseable": true,
+          "path": "data/v0.2/public-calibration/rwpk.summarization_synthesis.vendor_packet_brief.0001/vendor-comparison-brief.docx"
+        }
+      },
+      "atomic_score_by_dimension": {
+        "scope_precision": 1.0,
+        "source_fidelity": 1.0
+      },
+      "full_pass": true,
+      "hard_gate_results": [
+        {
+          "category": "artifact_presence",
+          "errors": [],
+          "gate_id": "hg.required_artifacts_present",
+          "status": "pass"
+        },
+        {
+          "category": "file_type",
+          "errors": [],
+          "gate_id": "hg.media_types_match",
+          "status": "pass"
+        },
+        {
+          "category": "parseability",
+          "errors": [],
+          "gate_id": "hg.artifacts_parse",
+          "status": "pass"
+        },
+        {
+          "category": "editability",
+          "errors": [],
+          "gate_id": "hg.required_structure_present",
+          "status": "pass"
+        },
+        {
+          "category": "input_preservation",
+          "errors": [],
+          "gate_id": "hg.inputs_preserved",
+          "status": "pass"
+        }
+      ],
+      "mode": "reference",
+      "rubric_results": [
+        {
+          "dimension": "source_fidelity",
+          "errors": [],
+          "rubric_id": "ar.vendor_brief_content",
+          "score": 1.0,
+          "status": "pass"
+        },
+        {
+          "dimension": "visual_and_layout_quality",
+          "errors": [],
+          "rubric_id": "ar.visual_quality",
+          "score": null,
+          "status": "unscored"
+        },
+        {
+          "dimension": "scope_precision",
+          "errors": [],
+          "rubric_id": "ar.scope_precision",
+          "score": 1.0,
+          "status": "pass"
+        }
+      ],
+      "scenario_id": "rwpk.summarization_synthesis.vendor_packet_brief.0001",
+      "schema": "realworld-prompt-kit.artifact-result/0.2.0",
+      "unscored_item_count": 1
+    },
+    {
+      "artifact_valid_rate": 1.0,
+      "artifacts": {
+        "revised_deck": {
+          "features": [
+            "charts",
+            "editable_text",
+            "slides"
+          ],
+          "media_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+          "parseable": true,
+          "path": "data/v0.2/public-calibration/rwpk.transformation_rewriting.deck_feedback_revision.0006/revised-status-deck.pptx"
+        }
+      },
+      "atomic_score_by_dimension": {
+        "scope_precision": 1.0,
+        "source_fidelity": 1.0
+      },
+      "full_pass": true,
+      "hard_gate_results": [
+        {
+          "category": "artifact_presence",
+          "errors": [],
+          "gate_id": "hg.required_artifacts_present",
+          "status": "pass"
+        },
+        {
+          "category": "file_type",
+          "errors": [],
+          "gate_id": "hg.media_types_match",
+          "status": "pass"
+        },
+        {
+          "category": "parseability",
+          "errors": [],
+          "gate_id": "hg.artifacts_parse",
+          "status": "pass"
+        },
+        {
+          "category": "editability",
+          "errors": [],
+          "gate_id": "hg.required_structure_present",
+          "status": "pass"
+        },
+        {
+          "category": "input_preservation",
+          "errors": [],
+          "gate_id": "hg.inputs_preserved",
+          "status": "pass"
+        }
+      ],
+      "mode": "reference",
+      "rubric_results": [
+        {
+          "dimension": "source_fidelity",
+          "errors": [],
+          "rubric_id": "ar.revised_deck_content",
+          "score": 1.0,
+          "status": "pass"
+        },
+        {
+          "dimension": "visual_and_layout_quality",
+          "errors": [],
+          "rubric_id": "ar.visual_quality",
+          "score": null,
+          "status": "unscored"
+        },
+        {
+          "dimension": "scope_precision",
+          "errors": [],
+          "rubric_id": "ar.scope_precision",
+          "score": 1.0,
+          "status": "pass"
+        }
+      ],
+      "scenario_id": "rwpk.transformation_rewriting.deck_feedback_revision.0006",
+      "schema": "realworld-prompt-kit.artifact-result/0.2.0",
+      "unscored_item_count": 1
+    },
+    {
+      "artifact_valid_rate": 1.0,
+      "artifacts": {
+        "revised_sop": {
+          "features": [
+            "editable_text",
+            "headings",
+            "tables"
+          ],
+          "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "parseable": true,
+          "path": "data/v0.2/public-calibration/rwpk.transformation_rewriting.onboarding_sop_revision.0004/onboarding-sop-revised.docx"
+        }
+      },
+      "atomic_score_by_dimension": {
+        "scope_precision": 1.0,
+        "source_fidelity": 1.0
+      },
+      "full_pass": true,
+      "hard_gate_results": [
+        {
+          "category": "artifact_presence",
+          "errors": [],
+          "gate_id": "hg.required_artifacts_present",
+          "status": "pass"
+        },
+        {
+          "category": "file_type",
+          "errors": [],
+          "gate_id": "hg.media_types_match",
+          "status": "pass"
+        },
+        {
+          "category": "parseability",
+          "errors": [],
+          "gate_id": "hg.artifacts_parse",
+          "status": "pass"
+        },
+        {
+          "category": "editability",
+          "errors": [],
+          "gate_id": "hg.required_structure_present",
+          "status": "pass"
+        },
+        {
+          "category": "input_preservation",
+          "errors": [],
+          "gate_id": "hg.inputs_preserved",
+          "status": "pass"
+        }
+      ],
+      "mode": "reference",
+      "rubric_results": [
+        {
+          "dimension": "source_fidelity",
+          "errors": [],
+          "rubric_id": "ar.revised_sop_content",
+          "score": 1.0,
+          "status": "pass"
+        },
+        {
+          "dimension": "visual_and_layout_quality",
+          "errors": [],
+          "rubric_id": "ar.visual_quality",
+          "score": null,
+          "status": "unscored"
+        },
+        {
+          "dimension": "scope_precision",
+          "errors": [],
+          "rubric_id": "ar.scope_precision",
+          "score": 1.0,
+          "status": "pass"
+        }
+      ],
+      "scenario_id": "rwpk.transformation_rewriting.onboarding_sop_revision.0004",
+      "schema": "realworld-prompt-kit.artifact-result/0.2.0",
+      "unscored_item_count": 1
+    }
+  ],
+  "schema": "realworld-prompt-kit.artifact-release-report/0.2.0",
+  "stats": {
+    "human_calibration_status_counts": {
+      "not_run": 12
+    },
+    "human_unscored_rubric_items": 12,
+    "input_assets": 20,
+    "manifest_status": "calibration_release",
+    "module_counts": {
+      "artifact_quality_control_delivery": 2,
+      "attached_file_grounding": 2,
+      "cross_artifact_workflow": 2,
+      "document_work": 2,
+      "presentation_work": 2,
+      "spreadsheet_work": 2
+    },
+    "output_family_counts": {
+      "document": 7,
+      "presentation": 5,
+      "response_only": 1,
+      "spreadsheet": 5
+    },
+    "prompt_realizations": 48,
+    "reference_artifacts": 18,
+    "reference_full_pass_count": 12,
+    "reference_result_count": 12,
+    "semantic_scenarios": 12,
+    "status_counts": {
+      "calibration_ready": 12
+    },
+    "workflow_job_counts": {
+      "create": 3,
+      "extract": 1,
+      "inspect": 1,
+      "package": 2,
+      "repurpose": 1,
+      "revise": 2,
+      "synthesize": 1,
+      "validate": 1
+    }
+  },
+  "status": "pass",
+  "warnings": []
+}

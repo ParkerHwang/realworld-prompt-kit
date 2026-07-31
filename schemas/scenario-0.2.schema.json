@@ -1,0 +1,1278 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/ParkerHwang/realworld-prompt-kit/main/schemas/scenario-0.2.schema.json",
+  "title": "RealWorld Prompt Kit v0.2 Artifact Scenario",
+  "description": "Release schema for a portable artifact-grounded office-work calibration episode.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "scenario_id",
+    "revision",
+    "status",
+    "semantic_group_id",
+    "title",
+    "task",
+    "coverage",
+    "assets",
+    "realizations",
+    "artifact_contract",
+    "evaluation",
+    "provenance"
+  ],
+  "properties": {
+    "schema": {
+      "const": "realworld-prompt-kit.scenario/0.2.0"
+    },
+    "scenario_id": {
+      "type": "string",
+      "pattern": "^rwpk\\.[a-z][a-z0-9_]*\\.[a-z][a-z0-9_]*\\.[0-9]{4}$"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "calibration_ready",
+        "reviewed",
+        "frozen",
+        "retired"
+      ]
+    },
+    "semantic_group_id": {
+      "type": "string",
+      "pattern": "^rwpg\\.[a-z0-9_.]+$"
+    },
+    "title": {
+      "$ref": "#/$defs/localized"
+    },
+    "task": {
+      "$ref": "#/$defs/task"
+    },
+    "coverage": {
+      "$ref": "#/$defs/artifact_coverage"
+    },
+    "assets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/asset"
+      }
+    },
+    "realizations": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "$ref": "#/$defs/realization"
+      },
+      "allOf": [
+        {
+          "contains": {
+            "type": "object",
+            "required": [
+              "locale",
+              "form"
+            ],
+            "properties": {
+              "locale": {
+                "const": "ko-KR"
+              },
+              "form": {
+                "const": "canonical"
+              }
+            }
+          },
+          "minContains": 1,
+          "maxContains": 1
+        },
+        {
+          "contains": {
+            "type": "object",
+            "required": [
+              "locale",
+              "form"
+            ],
+            "properties": {
+              "locale": {
+                "const": "ko-KR"
+              },
+              "form": {
+                "const": "naturalistic"
+              }
+            }
+          },
+          "minContains": 1,
+          "maxContains": 1
+        },
+        {
+          "contains": {
+            "type": "object",
+            "required": [
+              "locale",
+              "form"
+            ],
+            "properties": {
+              "locale": {
+                "const": "en-US"
+              },
+              "form": {
+                "const": "canonical"
+              }
+            }
+          },
+          "minContains": 1,
+          "maxContains": 1
+        },
+        {
+          "contains": {
+            "type": "object",
+            "required": [
+              "locale",
+              "form"
+            ],
+            "properties": {
+              "locale": {
+                "const": "en-US"
+              },
+              "form": {
+                "const": "naturalistic"
+              }
+            }
+          },
+          "minContains": 1,
+          "maxContains": 1
+        }
+      ]
+    },
+    "artifact_contract": {
+      "$ref": "#/$defs/artifact_contract"
+    },
+    "evaluation": {
+      "$ref": "#/$defs/evaluation"
+    },
+    "provenance": {
+      "$ref": "#/$defs/provenance"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "type": "object",
+        "required": [
+          "status"
+        ],
+        "properties": {
+          "status": {
+            "enum": [
+              "reviewed",
+              "frozen"
+            ]
+          }
+        }
+      },
+      "then": {
+        "type": "object",
+        "required": [
+          "evaluation"
+        ],
+        "properties": {
+          "evaluation": {
+            "type": "object",
+            "required": [
+              "human_calibration"
+            ],
+            "properties": {
+              "human_calibration": {
+                "type": "object",
+                "required": [
+                  "status"
+                ],
+                "properties": {
+                  "status": {
+                    "const": "completed"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "localized": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ko",
+        "en"
+      ],
+      "properties": {
+        "ko": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "primary_intent": {
+      "type": "string",
+      "enum": [
+        "information_retrieval",
+        "extraction_parsing",
+        "summarization_synthesis",
+        "transformation_rewriting",
+        "explanation_teaching",
+        "practical_writing",
+        "creative_ideation",
+        "classification_organization",
+        "qualitative_analysis",
+        "quantitative_formal_analysis",
+        "diagnosis_root_cause",
+        "forecasting_scenario_risk",
+        "evaluation_review_audit",
+        "decision_recommendation",
+        "planning_strategy_design",
+        "communication_collaboration_negotiation",
+        "one_off_tool_execution",
+        "automation_integration",
+        "operations_monitoring_improvement",
+        "coaching_conversational_support",
+        "ai_agent_meta"
+      ]
+    },
+    "domain": {
+      "type": "string",
+      "enum": [
+        "general_knowledge",
+        "office_admin",
+        "communication_meetings",
+        "project_product_management",
+        "strategy_business_operations",
+        "sales_marketing",
+        "customer_support_success",
+        "education_research",
+        "personal_everyday",
+        "software_it",
+        "data_analytics",
+        "creative_media",
+        "health_care",
+        "legal_compliance",
+        "finance_accounting_tax",
+        "hr_people_labor",
+        "privacy_security",
+        "government_public_policy",
+        "safety_emergency",
+        "manufacturing_quality",
+        "supply_chain_logistics",
+        "construction_real_estate",
+        "energy_environment",
+        "retail_ecommerce",
+        "travel_hospitality",
+        "science_rd",
+        "nonprofit_social_impact",
+        "agriculture_food"
+      ]
+    },
+    "workflow_job": {
+      "type": "string",
+      "enum": [
+        "inspect",
+        "extract",
+        "synthesize",
+        "create",
+        "revise",
+        "repurpose",
+        "validate",
+        "package"
+      ]
+    },
+    "artifact_family": {
+      "type": "string",
+      "enum": [
+        "response_only",
+        "pdf_or_image",
+        "document",
+        "presentation",
+        "spreadsheet",
+        "mixed_bundle"
+      ]
+    },
+    "input_condition": {
+      "type": "string",
+      "enum": [
+        "clean",
+        "noisy_or_scanned",
+        "incomplete",
+        "conflicting",
+        "untrusted_embedded_content"
+      ]
+    },
+    "module": {
+      "type": "string",
+      "enum": [
+        "attached_file_grounding",
+        "document_work",
+        "presentation_work",
+        "spreadsheet_work",
+        "cross_artifact_workflow",
+        "artifact_quality_control_delivery"
+      ]
+    },
+    "request_form": {
+      "type": "string",
+      "enum": [
+        "canonical",
+        "naturalistic"
+      ]
+    },
+    "interaction_pattern": {
+      "type": "string",
+      "enum": [
+        "one_shot",
+        "clarification_required",
+        "feedback_revision",
+        "scope_change",
+        "infeasible_or_hold"
+      ]
+    },
+    "artifact_core_authority": {
+      "type": "string",
+      "enum": [
+        "read_only",
+        "draft_only",
+        "local_reversible_write"
+      ]
+    },
+    "naturalistic_profile": {
+      "type": "string",
+      "enum": [
+        "terse_fragment",
+        "implicit_goal_or_output",
+        "anaphora_prior_context",
+        "missing_decisive_detail",
+        "rambling_stream",
+        "multi_intent_mixed_priority",
+        "self_correction_scope_shift",
+        "interleaved_instruction_and_paste",
+        "typo_spacing_punctuation",
+        "colloquial_slang_dialect",
+        "code_switching_jargon",
+        "speech_to_text_disfluency",
+        "ocr_copy_format_noise",
+        "emoji_shorthand",
+        "message_burst",
+        "followup_without_restatement",
+        "mid_task_change",
+        "resume_after_interruption",
+        "indirect_polite_request",
+        "frustration_urgency_emotion",
+        "hedged_exploratory_request",
+        "contradictory_constraints",
+        "implicit_permission_or_authority",
+        "untrusted_embedded_instruction"
+      ]
+    },
+    "task": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "primary_intent",
+        "secondary_intents",
+        "workflow_job",
+        "primary_domain",
+        "domain_tags",
+        "user_goal",
+        "expected_artifact"
+      ],
+      "properties": {
+        "primary_intent": {
+          "$ref": "#/$defs/primary_intent"
+        },
+        "secondary_intents": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "uniqueItems": true
+        },
+        "workflow_job": {
+          "$ref": "#/$defs/workflow_job"
+        },
+        "primary_domain": {
+          "$ref": "#/$defs/domain"
+        },
+        "domain_tags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/domain"
+          },
+          "uniqueItems": true
+        },
+        "user_goal": {
+          "$ref": "#/$defs/localized"
+        },
+        "expected_artifact": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "artifact_coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "module",
+        "input_artifact_families",
+        "output_artifact_families",
+        "input_conditions",
+        "request_forms",
+        "interaction_pattern",
+        "authority",
+        "naturalistic_features"
+      ],
+      "properties": {
+        "module": {
+          "$ref": "#/$defs/module"
+        },
+        "input_artifact_families": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/artifact_family"
+          },
+          "uniqueItems": true
+        },
+        "output_artifact_families": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/artifact_family"
+          },
+          "uniqueItems": true
+        },
+        "input_conditions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/input_condition"
+          },
+          "uniqueItems": true
+        },
+        "request_forms": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "$ref": "#/$defs/request_form"
+          },
+          "uniqueItems": true
+        },
+        "interaction_pattern": {
+          "$ref": "#/$defs/interaction_pattern"
+        },
+        "authority": {
+          "$ref": "#/$defs/artifact_core_authority"
+        },
+        "naturalistic_features": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/naturalistic_profile"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "relative_path": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\]+$"
+    },
+    "asset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "asset_id",
+        "path",
+        "media_type",
+        "artifact_family",
+        "attachment_role",
+        "trust_level",
+        "input_condition",
+        "allowed_delivery_modes",
+        "locale_variant",
+        "locale_status",
+        "sha256",
+        "rights_basis",
+        "privacy"
+      ],
+      "properties": {
+        "asset_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "path": {
+          "$ref": "#/$defs/relative_path"
+        },
+        "media_type": {
+          "enum": [
+            "application/pdf",
+            "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "text/csv",
+            "image/png",
+            "image/jpeg",
+            "text/plain"
+          ]
+        },
+        "artifact_family": {
+          "$ref": "#/$defs/artifact_family"
+        },
+        "attachment_role": {
+          "enum": [
+            "authoritative_source",
+            "supporting_source",
+            "template",
+            "existing_artifact",
+            "style_reference",
+            "brand_asset",
+            "reference_output"
+          ]
+        },
+        "trust_level": {
+          "enum": [
+            "trusted",
+            "untrusted",
+            "mixed"
+          ]
+        },
+        "input_condition": {
+          "$ref": "#/$defs/input_condition"
+        },
+        "allowed_delivery_modes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "native_file",
+              "rendered_proxy",
+              "extracted_text",
+              "unsupported_capability"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "locale_variant": {
+          "enum": [
+            "ko-KR",
+            "en-US",
+            "multilingual",
+            "locale-neutral"
+          ]
+        },
+        "locale_status": {
+          "enum": [
+            "locale_specific",
+            "independently_authored",
+            "equivalence_audited",
+            "shared_across_locales",
+            "unaudited",
+            "not_applicable"
+          ]
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "rights_basis": {
+          "enum": [
+            "original_project_authorship",
+            "public_domain",
+            "licensed",
+            "permission_granted"
+          ]
+        },
+        "privacy": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "contains_personal_data",
+            "classification"
+          ],
+          "properties": {
+            "contains_personal_data": {
+              "const": false
+            },
+            "classification": {
+              "enum": [
+                "public_synthetic",
+                "public_non_personal"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "message": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "role",
+        "content"
+      ],
+      "properties": {
+        "role": {
+          "enum": [
+            "system",
+            "developer",
+            "user",
+            "assistant",
+            "tool"
+          ]
+        },
+        "content": {
+          "type": "string",
+          "minLength": 1
+        },
+        "attachment_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "realization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prompt_id",
+        "locale",
+        "form",
+        "origin",
+        "features",
+        "messages"
+      ],
+      "properties": {
+        "prompt_id": {
+          "type": "string",
+          "pattern": "^rwpk\\.[A-Za-z0-9_.-]+\\.(ko-KR|en-US)\\.(canonical|naturalistic)$"
+        },
+        "locale": {
+          "enum": [
+            "ko-KR",
+            "en-US"
+          ]
+        },
+        "form": {
+          "enum": [
+            "canonical",
+            "naturalistic"
+          ]
+        },
+        "origin": {
+          "enum": [
+            "controlled_canonical",
+            "synthetic_naturalistic"
+          ]
+        },
+        "features": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/naturalistic_profile"
+          },
+          "uniqueItems": true
+        },
+        "messages": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/message"
+          },
+          "contains": {
+            "type": "object",
+            "required": [
+              "role",
+              "attachment_refs"
+            ],
+            "properties": {
+              "role": {
+                "const": "user"
+              },
+              "attachment_refs": {
+                "type": "array",
+                "minItems": 1
+              }
+            }
+          },
+          "minContains": 1
+        }
+      }
+    },
+    "artifact_output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact_id",
+        "artifact_family",
+        "media_type",
+        "required",
+        "editable",
+        "filename",
+        "required_features",
+        "reference_path",
+        "reference_sha256",
+        "reference_checks"
+      ],
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "artifact_family": {
+          "$ref": "#/$defs/artifact_family"
+        },
+        "media_type": {
+          "enum": [
+            "application/pdf",
+            "application/json",
+            "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "text/csv",
+            "text/plain"
+          ]
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "editable": {
+          "type": "boolean"
+        },
+        "filename": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^(?!\\.\\.?$)[^/\\\\]+$"
+        },
+        "required_features": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "uniqueItems": true
+        },
+        "reference_path": {
+          "$ref": "#/$defs/relative_path"
+        },
+        "reference_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "reference_checks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/check"
+          }
+        }
+      }
+    },
+    "artifact_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "outputs",
+        "side_effect_scope",
+        "output_root",
+        "preserve_input_assets"
+      ],
+      "properties": {
+        "outputs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/artifact_output"
+          },
+          "contains": {
+            "type": "object",
+            "required": [
+              "required"
+            ],
+            "properties": {
+              "required": {
+                "const": true
+              }
+            }
+          },
+          "minContains": 1
+        },
+        "side_effect_scope": {
+          "$ref": "#/$defs/artifact_core_authority"
+        },
+        "output_root": {
+          "$ref": "#/$defs/relative_path"
+        },
+        "preserve_input_assets": {
+          "const": true
+        }
+      }
+    },
+    "response_mode": {
+      "type": "string",
+      "enum": [
+        "answer_directly",
+        "infer_and_answer",
+        "state_assumptions_and_answer",
+        "ask_one_clarifying_question",
+        "clarification_dialogue",
+        "hold",
+        "refuse_or_escalate"
+      ]
+    },
+    "response_mode_pair": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "canonical",
+        "naturalistic"
+      ],
+      "properties": {
+        "canonical": {
+          "$ref": "#/$defs/response_mode"
+        },
+        "naturalistic": {
+          "$ref": "#/$defs/response_mode"
+        }
+      }
+    },
+    "evidence_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "ref",
+        "locator"
+      ],
+      "properties": {
+        "source": {
+          "enum": [
+            "request",
+            "asset",
+            "output",
+            "artifact_contract"
+          ]
+        },
+        "ref": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "check_id",
+        "type"
+      ],
+      "properties": {
+        "check_id": {
+          "type": "string",
+          "pattern": "^check\\.[a-z][a-z0-9_]*$"
+        },
+        "type": {
+          "enum": [
+            "artifact_present",
+            "bundle_exact_files",
+            "contains_text",
+            "json_keys",
+            "media_type",
+            "minimum_feature",
+            "parseable",
+            "reference_checks",
+            "required_features",
+            "required_sheet_names",
+            "source_hashes_match"
+          ]
+        },
+        "values": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "feature": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "minimum": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "case_sensitive": {
+          "type": "boolean"
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "method",
+        "implementation_status",
+        "procedure"
+      ],
+      "properties": {
+        "method": {
+          "enum": [
+            "deterministic",
+            "office_engine",
+            "rule_assisted",
+            "model_judge",
+            "human"
+          ]
+        },
+        "implementation_status": {
+          "enum": [
+            "planned",
+            "implemented",
+            "calibrated"
+          ]
+        },
+        "procedure": {
+          "type": "string",
+          "minLength": 1
+        },
+        "check": {
+          "$ref": "#/$defs/check"
+        }
+      }
+    },
+    "hard_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "gate_id",
+        "criterion",
+        "category",
+        "artifact_refs",
+        "evidence_refs",
+        "scorer",
+        "on_fail"
+      ],
+      "properties": {
+        "gate_id": {
+          "type": "string",
+          "pattern": "^hg\\.[a-z][a-z0-9_]*$"
+        },
+        "criterion": {
+          "$ref": "#/$defs/localized"
+        },
+        "category": {
+          "enum": [
+            "artifact_presence",
+            "file_type",
+            "parseability",
+            "editability",
+            "source_fidelity",
+            "side_effect_scope",
+            "input_preservation",
+            "critical_completeness"
+          ]
+        },
+        "artifact_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "uniqueItems": true
+        },
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/evidence_ref"
+          }
+        },
+        "scorer": {
+          "$ref": "#/$defs/verification"
+        },
+        "on_fail": {
+          "const": "blocks_full_pass"
+        }
+      }
+    },
+    "rubric_scoring": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type"
+          ],
+          "properties": {
+            "type": {
+              "const": "binary"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type",
+            "minimum",
+            "maximum",
+            "step"
+          ],
+          "properties": {
+            "type": {
+              "const": "bounded"
+            },
+            "minimum": {
+              "type": "number"
+            },
+            "maximum": {
+              "type": "number"
+            },
+            "step": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          }
+        }
+      ]
+    },
+    "atomic_rubric_item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rubric_id",
+        "criterion",
+        "dimension",
+        "requirement",
+        "scoring",
+        "scorer",
+        "evidence_refs",
+        "adjudication_note"
+      ],
+      "properties": {
+        "rubric_id": {
+          "type": "string",
+          "pattern": "^ar\\.[a-z][a-z0-9_]*$"
+        },
+        "criterion": {
+          "$ref": "#/$defs/localized"
+        },
+        "dimension": {
+          "enum": [
+            "instruction_fulfillment",
+            "source_fidelity",
+            "functional_validity",
+            "audience_and_communication_fit",
+            "visual_and_layout_quality",
+            "editability_and_maintainability",
+            "interaction_judgment",
+            "scope_precision"
+          ]
+        },
+        "requirement": {
+          "enum": [
+            "required",
+            "quality_improving",
+            "negative_check"
+          ]
+        },
+        "scoring": {
+          "$ref": "#/$defs/rubric_scoring"
+        },
+        "scorer": {
+          "$ref": "#/$defs/verification"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/evidence_ref"
+          }
+        },
+        "adjudication_note": {
+          "$ref": "#/$defs/localized"
+        }
+      }
+    },
+    "human_calibration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "required",
+        "status",
+        "plan_path"
+      ],
+      "properties": {
+        "required": {
+          "const": true
+        },
+        "status": {
+          "enum": [
+            "not_run",
+            "in_progress",
+            "completed"
+          ]
+        },
+        "evidence_path": {
+          "$ref": "#/$defs/relative_path"
+        },
+        "plan_path": {
+          "$ref": "#/$defs/relative_path"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "status"
+            ],
+            "properties": {
+              "status": {
+                "const": "completed"
+              }
+            }
+          },
+          "then": {
+            "type": "object",
+            "properties": {
+              "evidence_path": {
+                "$ref": "#/$defs/relative_path"
+              }
+            },
+            "required": [
+              "evidence_path"
+            ]
+          }
+        }
+      ]
+    },
+    "evaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "response_mode",
+        "hard_gates",
+        "atomic_rubric_items",
+        "human_calibration"
+      ],
+      "properties": {
+        "response_mode": {
+          "$ref": "#/$defs/response_mode_pair"
+        },
+        "hard_gates": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/hard_gate"
+          }
+        },
+        "atomic_rubric_items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/atomic_rubric_item"
+          }
+        },
+        "human_calibration": {
+          "$ref": "#/$defs/human_calibration"
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "origin",
+        "authors",
+        "contains_personal_data",
+        "rights_basis",
+        "license",
+        "review"
+      ],
+      "properties": {
+        "origin": {
+          "const": "synthetic"
+        },
+        "authors": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "contains_personal_data": {
+          "const": false
+        },
+        "rights_basis": {
+          "const": "original_project_authorship"
+        },
+        "license": {
+          "const": "MIT"
+        },
+        "review": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "review_type",
+            "reviewer",
+            "review_date",
+            "evidence_path",
+            "human_practitioner_review"
+          ],
+          "properties": {
+            "review_type": {
+              "enum": [
+                "automated_structural",
+                "human_practitioner"
+              ]
+            },
+            "reviewer": {
+              "type": "string",
+              "minLength": 1
+            },
+            "review_date": {
+              "type": "string",
+              "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+            },
+            "evidence_path": {
+              "$ref": "#/$defs/relative_path"
+            },
+            "human_practitioner_review": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    }
+  }
+}

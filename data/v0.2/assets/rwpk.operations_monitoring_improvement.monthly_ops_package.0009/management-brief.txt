@@ -1,0 +1,6 @@
+
+Prepare a management package for the January-June 2026 operating review.
+Keep the source rows in the workbook. Highlight the relationship between
+orders, on-time delivery, and backlog. The memo and deck must use the same June
+figures and identify the 93% service floor as a monitoring threshold, not a
+historical target.

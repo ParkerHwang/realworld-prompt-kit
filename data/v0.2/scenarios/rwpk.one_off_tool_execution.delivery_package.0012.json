@@ -1,0 +1,680 @@
+{
+  "schema": "realworld-prompt-kit.scenario/0.2.0",
+  "scenario_id": "rwpk.one_off_tool_execution.delivery_package.0012",
+  "revision": 1,
+  "status": "calibration_ready",
+  "semantic_group_id": "rwpg.one_off_tool_execution.delivery_package.0012",
+  "title": {
+    "ko": "분기 인계 패키지",
+    "en": "Quarterly handoff package"
+  },
+  "task": {
+    "primary_intent": "one_off_tool_execution",
+    "secondary_intents": [
+      "communication_collaboration_negotiation",
+      "classification_organization"
+    ],
+    "workflow_job": "package",
+    "primary_domain": "office_admin",
+    "domain_tags": [
+      "project_product_management",
+      "strategy_business_operations"
+    ],
+    "user_goal": {
+      "ko": "정확한 파일명과 로컬 쓰기 범위로 영어 인계 패키지를 만든다.",
+      "en": "Create an English handoff package with exact filenames and local-only writes."
+    },
+    "expected_artifact": "A four-file local package: PPTX, XLSX, DOCX, and JSON manifest."
+  },
+  "coverage": {
+    "module": "artifact_quality_control_delivery",
+    "input_artifact_families": [
+      "document",
+      "spreadsheet"
+    ],
+    "output_artifact_families": [
+      "document",
+      "presentation",
+      "response_only",
+      "spreadsheet"
+    ],
+    "input_conditions": [
+      "clean"
+    ],
+    "request_forms": [
+      "canonical",
+      "naturalistic"
+    ],
+    "interaction_pattern": "one_shot",
+    "authority": "local_reversible_write",
+    "naturalistic_features": [
+      "implicit_permission_or_authority"
+    ]
+  },
+  "assets": [
+    {
+      "asset_id": "delivery_brief",
+      "path": "data/v0.2/assets/rwpk.one_off_tool_execution.delivery_package.0012/delivery-brief.docx",
+      "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "artifact_family": "document",
+      "attachment_role": "authoritative_source",
+      "trust_level": "trusted",
+      "input_condition": "clean",
+      "allowed_delivery_modes": [
+        "native_file"
+      ],
+      "locale_variant": "en-US",
+      "locale_status": "shared_across_locales",
+      "sha256": "80622384e353e2caddf40bf2359637c1b7967993a1521052f4a3dfc88355ab92",
+      "rights_basis": "original_project_authorship",
+      "privacy": {
+        "contains_personal_data": false,
+        "classification": "public_synthetic"
+      }
+    },
+    {
+      "asset_id": "delivery_data",
+      "path": "data/v0.2/assets/rwpk.one_off_tool_execution.delivery_package.0012/delivery-data.csv",
+      "media_type": "text/csv",
+      "artifact_family": "spreadsheet",
+      "attachment_role": "authoritative_source",
+      "trust_level": "trusted",
+      "input_condition": "clean",
+      "allowed_delivery_modes": [
+        "native_file"
+      ],
+      "locale_variant": "en-US",
+      "locale_status": "shared_across_locales",
+      "sha256": "7a6b12d3fe9428b0153f690685e736d33c2dbe8018ff41abdb6650dd544042b8",
+      "rights_basis": "original_project_authorship",
+      "privacy": {
+        "contains_personal_data": false,
+        "classification": "public_synthetic"
+      }
+    }
+  ],
+  "realizations": [
+    {
+      "prompt_id": "rwpk.one_off_tool_execution.delivery_package.0012.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "첨부 brief와 CSV로 영어 분기 인계 패키지를 만들어 주세요. 지정된 이름의 3장 PPTX, 편집 가능한 XLSX tracker, DOCX handoff note, JSON manifest를 로컬 출력 폴더에만 작성하고 입력 파일은 변경하지 마세요.",
+          "attachment_refs": [
+            "delivery_brief",
+            "delivery_data"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.one_off_tool_execution.delivery_package.0012.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "implicit_permission_or_authority"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "이 자료로 handoff 묶음 마무리해줘. 영어 덱/트래커/노트랑 manifest까지 brief에 적힌 파일명 그대로. 로컬 폴더에만 만들고 원본은 건드리지 마.",
+          "attachment_refs": [
+            "delivery_brief",
+            "delivery_data"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.one_off_tool_execution.delivery_package.0012.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Use the attached brief and CSV to create the English quarterly handoff package: a three-slide PPTX, editable XLSX tracker, DOCX handoff note, and JSON manifest with the exact required filenames. Write only to the local output folder and preserve the inputs.",
+          "attachment_refs": [
+            "delivery_brief",
+            "delivery_data"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.one_off_tool_execution.delivery_package.0012.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "implicit_permission_or_authority"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Please finish the handoff bundle from these files: English deck, tracker, note, and manifest with the names in the brief. Keep it local and don't touch the source files.",
+          "attachment_refs": [
+            "delivery_brief",
+            "delivery_data"
+          ]
+        }
+      ]
+    }
+  ],
+  "artifact_contract": {
+    "outputs": [
+      {
+        "artifact_id": "delivery_deck",
+        "artifact_family": "presentation",
+        "media_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "required": true,
+        "editable": true,
+        "filename": "delivery-recap-deck.pptx",
+        "required_features": [
+          "slides",
+          "charts",
+          "editable_text"
+        ],
+        "reference_path": "data/v0.2/public-calibration/rwpk.one_off_tool_execution.delivery_package.0012/delivery-recap-deck.pptx",
+        "reference_sha256": "2650a281e9a02eab32b8826382e9bf35dcdb8da50eb91e834adcb3b0932b3768",
+        "reference_checks": [
+          {
+            "check_id": "check.delivery_deck_text",
+            "type": "contains_text",
+            "values": [
+              "4 / 4",
+              "August 3",
+              "handoff"
+            ]
+          }
+        ]
+      },
+      {
+        "artifact_id": "delivery_tracker",
+        "artifact_family": "spreadsheet",
+        "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "required": true,
+        "editable": true,
+        "filename": "delivery-tracker.xlsx",
+        "required_features": [
+          "worksheets",
+          "formulas",
+          "editable_cells"
+        ],
+        "reference_path": "data/v0.2/public-calibration/rwpk.one_off_tool_execution.delivery_package.0012/delivery-tracker.xlsx",
+        "reference_sha256": "f020624321db89603edce03f4b70041016bf09de2a22eb0419a820309ac4c048",
+        "reference_checks": [
+          {
+            "check_id": "check.delivery_tracker_sheet",
+            "type": "required_sheet_names",
+            "values": [
+              "Delivery Tracker"
+            ]
+          },
+          {
+            "check_id": "check.delivery_tracker_text",
+            "type": "contains_text",
+            "values": [
+              "Archive copy",
+              "Ready"
+            ]
+          }
+        ]
+      },
+      {
+        "artifact_id": "handoff_note",
+        "artifact_family": "document",
+        "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "required": true,
+        "editable": true,
+        "filename": "handoff-note.docx",
+        "required_features": [
+          "editable_text",
+          "headings",
+          "tables"
+        ],
+        "reference_path": "data/v0.2/public-calibration/rwpk.one_off_tool_execution.delivery_package.0012/handoff-note.docx",
+        "reference_sha256": "857c22529d0545cb6a991bd80b9cc12094d8bcd754fc36f60efc0ab6972ec7dc",
+        "reference_checks": [
+          {
+            "check_id": "check.handoff_text",
+            "type": "contains_text",
+            "values": [
+              "2026-08-03",
+              "Archive copy",
+              "Ready"
+            ]
+          }
+        ]
+      },
+      {
+        "artifact_id": "delivery_manifest",
+        "artifact_family": "response_only",
+        "media_type": "application/json",
+        "required": true,
+        "editable": false,
+        "filename": "delivery-manifest.json",
+        "required_features": [
+          "json_object",
+          "file_manifest"
+        ],
+        "reference_path": "data/v0.2/public-calibration/rwpk.one_off_tool_execution.delivery_package.0012/delivery-manifest.json",
+        "reference_sha256": "d88422cb889ab7f89a9f65152e9fc28f3160e71d3dba9217a11c53f481bb5b26",
+        "reference_checks": [
+          {
+            "check_id": "check.manifest_keys",
+            "type": "json_keys",
+            "values": [
+              "schema",
+              "package_id",
+              "files",
+              "authority",
+              "source_assets_preserved"
+            ]
+          },
+          {
+            "check_id": "check.manifest_files",
+            "type": "contains_text",
+            "values": [
+              "delivery-recap-deck.pptx",
+              "delivery-tracker.xlsx",
+              "handoff-note.docx"
+            ]
+          }
+        ]
+      }
+    ],
+    "side_effect_scope": "local_reversible_write",
+    "output_root": "outputs",
+    "preserve_input_assets": true
+  },
+  "evaluation": {
+    "response_mode": {
+      "canonical": "answer_directly",
+      "naturalistic": "answer_directly"
+    },
+    "hard_gates": [
+      {
+        "gate_id": "hg.required_artifacts_present",
+        "criterion": {
+          "ko": "필수 산출물이 모두 존재한다.",
+          "en": "Every required artifact is present."
+        },
+        "category": "artifact_presence",
+        "artifact_refs": [
+          "delivery_deck",
+          "delivery_tracker",
+          "handoff_note",
+          "delivery_manifest"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "delivery_deck",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Resolve every exact output filename in the submission directory.",
+          "check": {
+            "check_id": "check.required_artifacts_present",
+            "type": "artifact_present"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.media_types_match",
+        "criterion": {
+          "ko": "각 산출물의 파일 형식이 계약과 일치한다.",
+          "en": "Every artifact media type matches the contract."
+        },
+        "category": "file_type",
+        "artifact_refs": [
+          "delivery_deck",
+          "delivery_tracker",
+          "handoff_note",
+          "delivery_manifest"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "delivery_deck",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Compare extension, file signature, and declared media type.",
+          "check": {
+            "check_id": "check.media_types_match",
+            "type": "media_type"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.artifacts_parse",
+        "criterion": {
+          "ko": "모든 산출물을 참조 파서가 열 수 있다.",
+          "en": "Every artifact opens in the reference parser."
+        },
+        "category": "parseability",
+        "artifact_refs": [
+          "delivery_deck",
+          "delivery_tracker",
+          "handoff_note",
+          "delivery_manifest"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "delivery_deck",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Open ZIP-based Office files, JSON, and other formats with the reference inspector.",
+          "check": {
+            "check_id": "check.artifacts_parse",
+            "type": "parseable"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.required_structure_present",
+        "criterion": {
+          "ko": "계약에 명시된 편집 가능한 구조가 존재한다.",
+          "en": "The required editable structure is present."
+        },
+        "category": "editability",
+        "artifact_refs": [
+          "delivery_deck",
+          "delivery_tracker",
+          "handoff_note",
+          "delivery_manifest"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "delivery_deck",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Inspect OOXML and JSON features declared by each output.",
+          "check": {
+            "check_id": "check.required_structure_present",
+            "type": "required_features"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.inputs_preserved",
+        "criterion": {
+          "ko": "공개 입력 자산의 해시가 변경되지 않았다.",
+          "en": "The public input asset hashes remain unchanged."
+        },
+        "category": "input_preservation",
+        "artifact_refs": [],
+        "evidence_refs": [
+          {
+            "source": "asset",
+            "ref": "delivery_brief",
+            "locator": "whole supplied file"
+          },
+          {
+            "source": "asset",
+            "ref": "delivery_data",
+            "locator": "whole supplied file"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Recompute every declared input SHA-256 digest.",
+          "check": {
+            "check_id": "check.inputs_preserved",
+            "type": "source_hashes_match"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      }
+    ],
+    "atomic_rubric_items": [
+      {
+        "rubric_id": "ar.delivery_deck_content",
+        "criterion": {
+          "ko": "delivery-recap-deck.pptx에 작업별 핵심 사실과 구조가 포함된다.",
+          "en": "delivery-recap-deck.pptx contains the task-specific facts and structure."
+        },
+        "dimension": "source_fidelity",
+        "requirement": "required",
+        "scoring": {
+          "type": "binary"
+        },
+        "scorer": {
+          "method": "rule_assisted",
+          "implementation_status": "implemented",
+          "procedure": "Run the output's declared reference checks against extracted structure and text.",
+          "check": {
+            "check_id": "check.delivery_deck_reference",
+            "type": "reference_checks"
+          }
+        },
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "delivery_deck",
+            "locator": "declared reference checks"
+          }
+        ],
+        "adjudication_note": {
+          "ko": "검사는 정답 파일의 바이트 일치가 아니라 요구 속성을 확인한다.",
+          "en": "Checks verify required properties, not byte equality with the reference."
+        }
+      },
+      {
+        "rubric_id": "ar.delivery_tracker_content",
+        "criterion": {
+          "ko": "delivery-tracker.xlsx에 작업별 핵심 사실과 구조가 포함된다.",
+          "en": "delivery-tracker.xlsx contains the task-specific facts and structure."
+        },
+        "dimension": "source_fidelity",
+        "requirement": "required",
+        "scoring": {
+          "type": "binary"
+        },
+        "scorer": {
+          "method": "rule_assisted",
+          "implementation_status": "implemented",
+          "procedure": "Run the output's declared reference checks against extracted structure and text.",
+          "check": {
+            "check_id": "check.delivery_tracker_reference",
+            "type": "reference_checks"
+          }
+        },
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "delivery_tracker",
+            "locator": "declared reference checks"
+          }
+        ],
+        "adjudication_note": {
+          "ko": "검사는 정답 파일의 바이트 일치가 아니라 요구 속성을 확인한다.",
+          "en": "Checks verify required properties, not byte equality with the reference."
+        }
+      },
+      {
+        "rubric_id": "ar.handoff_note_content",
+        "criterion": {
+          "ko": "handoff-note.docx에 작업별 핵심 사실과 구조가 포함된다.",
+          "en": "handoff-note.docx contains the task-specific facts and structure."
+        },
+        "dimension": "source_fidelity",
+        "requirement": "required",
+        "scoring": {
+          "type": "binary"
+        },
+        "scorer": {
+          "method": "rule_assisted",
+          "implementation_status": "implemented",
+          "procedure": "Run the output's declared reference checks against extracted structure and text.",
+          "check": {
+            "check_id": "check.handoff_note_reference",
+            "type": "reference_checks"
+          }
+        },
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "handoff_note",
+            "locator": "declared reference checks"
+          }
+        ],
+        "adjudication_note": {
+          "ko": "검사는 정답 파일의 바이트 일치가 아니라 요구 속성을 확인한다.",
+          "en": "Checks verify required properties, not byte equality with the reference."
+        }
+      },
+      {
+        "rubric_id": "ar.delivery_manifest_content",
+        "criterion": {
+          "ko": "delivery-manifest.json에 작업별 핵심 사실과 구조가 포함된다.",
+          "en": "delivery-manifest.json contains the task-specific facts and structure."
+        },
+        "dimension": "source_fidelity",
+        "requirement": "required",
+        "scoring": {
+          "type": "binary"
+        },
+        "scorer": {
+          "method": "rule_assisted",
+          "implementation_status": "implemented",
+          "procedure": "Run the output's declared reference checks against extracted structure and text.",
+          "check": {
+            "check_id": "check.delivery_manifest_reference",
+            "type": "reference_checks"
+          }
+        },
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "delivery_manifest",
+            "locator": "declared reference checks"
+          }
+        ],
+        "adjudication_note": {
+          "ko": "검사는 정답 파일의 바이트 일치가 아니라 요구 속성을 확인한다.",
+          "en": "Checks verify required properties, not byte equality with the reference."
+        }
+      },
+      {
+        "rubric_id": "ar.visual_quality",
+        "criterion": {
+          "ko": "렌더링된 산출물에 겹침, 잘림 또는 읽기 어려운 요소가 없다.",
+          "en": "Rendered artifacts have no overlap, clipping, or unreadable elements."
+        },
+        "dimension": "visual_and_layout_quality",
+        "requirement": "quality_improving",
+        "scoring": {
+          "type": "bounded",
+          "minimum": 0,
+          "maximum": 2,
+          "step": 1
+        },
+        "scorer": {
+          "method": "human",
+          "implementation_status": "implemented",
+          "procedure": "Blindly inspect every rendered page, slide, or sheet at normal zoom."
+        },
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "delivery_deck",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "adjudication_note": {
+          "ko": "공개 기준 산출물은 제작 QA를 통과했지만 모델 출력에 대한 인간 보정은 아직 필요하다.",
+          "en": "Reference artifacts pass production QA; human calibration on model outputs remains required."
+        }
+      },
+      {
+        "rubric_id": "ar.scope_precision",
+        "criterion": {
+          "ko": "제출 폴더에 계약된 파일만 존재한다.",
+          "en": "The submission folder contains only contracted files."
+        },
+        "dimension": "scope_precision",
+        "requirement": "negative_check",
+        "scoring": {
+          "type": "binary"
+        },
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Compare the submission file list with the exact output contract.",
+          "check": {
+            "check_id": "check.bundle_exact_files",
+            "type": "bundle_exact_files",
+            "values": [
+              "delivery-recap-deck.pptx",
+              "delivery-tracker.xlsx",
+              "handoff-note.docx",
+              "delivery-manifest.json"
+            ]
+          }
+        },
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "delivery_deck",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "adjudication_note": {
+          "ko": "운영체제가 만든 숨김 파일은 무시한다.",
+          "en": "Operating-system metadata files are ignored."
+        }
+      }
+    ],
+    "human_calibration": {
+      "required": true,
+      "status": "not_run",
+      "plan_path": "data/v0.2/public-calibration/README.md"
+    }
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT",
+    "review": {
+      "review_type": "automated_structural",
+      "reviewer": "Codex release QA",
+      "review_date": "2026-07-31",
+      "evidence_path": "reports/v0.2/release-validation.json",
+      "human_practitioner_review": false
+    }
+  }
+}

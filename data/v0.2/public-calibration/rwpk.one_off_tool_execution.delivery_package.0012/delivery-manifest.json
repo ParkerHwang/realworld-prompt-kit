@@ -1,0 +1,12 @@
+{
+  "schema": "realworld-prompt-kit.delivery-manifest/0.2.0",
+  "package_id": "quarterly-delivery-handoff",
+  "files": [
+    "delivery-recap-deck.pptx",
+    "delivery-tracker.xlsx",
+    "handoff-note.docx",
+    "delivery-manifest.json"
+  ],
+  "authority": "local_reversible_write",
+  "source_assets_preserved": true
+}

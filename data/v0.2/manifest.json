@@ -1,0 +1,74 @@
+{
+  "schema": "realworld-prompt-kit.manifest/0.2.0",
+  "pack_id": "realworld-prompt-kit-v0.2-artifact-core",
+  "version": "0.2.0",
+  "status": "calibration_release",
+  "description": "The v0.2 Artifact Core calibration release: 12 complete work episodes with native assets, editable references, atomic rubrics, and deterministic grading.",
+  "catalog_path": "data/v0.2/catalog.json",
+  "scenario_glob": "data/v0.2/scenarios/*.json",
+  "expected_scenarios": 12,
+  "expected_realizations": 48,
+  "realizations_per_scenario": 4,
+  "required_locales": [
+    "ko-KR",
+    "en-US"
+  ],
+  "required_forms": [
+    "canonical",
+    "naturalistic"
+  ],
+  "required_modules": {
+    "attached_file_grounding": 2,
+    "document_work": 2,
+    "presentation_work": 2,
+    "spreadsheet_work": 2,
+    "cross_artifact_workflow": 2,
+    "artifact_quality_control_delivery": 2
+  },
+  "required_workflow_jobs": [
+    "inspect",
+    "extract",
+    "synthesize",
+    "create",
+    "revise",
+    "repurpose",
+    "validate",
+    "package"
+  ],
+  "required_output_families": [
+    "document",
+    "presentation",
+    "spreadsheet"
+  ],
+  "reference_validation": {
+    "required": true,
+    "all_hard_gates_must_pass": true,
+    "report_path": "reports/v0.2/release-validation.json"
+  },
+  "source_policy": {
+    "allowed_origin": "synthetic",
+    "require_personal_data_false": true,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT"
+  },
+  "claim_boundaries": {
+    "leaderboard_valid": false,
+    "human_calibration_complete": false,
+    "external_replication_complete": false,
+    "supported_claim": "portable artifact construction and deterministic contract conformance on the public calibration episodes",
+    "unsupported_claims": [
+      "global office-worker capability ranking",
+      "population task frequency",
+      "GUI-operation proficiency",
+      "stateful external action safety"
+    ]
+  },
+  "release_evidence": {
+    "build_date": "2026-07-31",
+    "scenario_schema": "schemas/scenario-0.2.schema.json",
+    "artifact_validator": "tools/artifacts/validate.py",
+    "artifact_grader": "tools/artifacts/grade_artifacts.py",
+    "reference_outputs": "data/v0.2/public-calibration/",
+    "human_calibration_plan": "data/v0.2/public-calibration/README.md"
+  }
+}

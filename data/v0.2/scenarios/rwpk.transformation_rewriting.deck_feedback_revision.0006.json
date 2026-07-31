@@ -1,0 +1,477 @@
+{
+  "schema": "realworld-prompt-kit.scenario/0.2.0",
+  "scenario_id": "rwpk.transformation_rewriting.deck_feedback_revision.0006",
+  "revision": 1,
+  "status": "calibration_ready",
+  "semantic_group_id": "rwpg.transformation_rewriting.deck_feedback_revision.0006",
+  "title": {
+    "ko": "피드백 기반 덱 개정",
+    "en": "Feedback-driven deck revision"
+  },
+  "task": {
+    "primary_intent": "transformation_rewriting",
+    "secondary_intents": [
+      "evaluation_review_audit"
+    ],
+    "workflow_job": "revise",
+    "primary_domain": "strategy_business_operations",
+    "domain_tags": [
+      "project_product_management",
+      "communication_meetings"
+    ],
+    "user_goal": {
+      "ko": "기존 덱에 지정 피드백을 적용하고 관련 없는 범위와 원본 수치를 보존한다.",
+      "en": "Apply specified feedback while preserving unrelated scope and source figures."
+    },
+    "expected_artifact": "A scoped three-slide revision of the English PPTX."
+  },
+  "coverage": {
+    "module": "presentation_work",
+    "input_artifact_families": [
+      "presentation",
+      "response_only"
+    ],
+    "output_artifact_families": [
+      "presentation"
+    ],
+    "input_conditions": [
+      "clean"
+    ],
+    "request_forms": [
+      "canonical",
+      "naturalistic"
+    ],
+    "interaction_pattern": "one_shot",
+    "authority": "local_reversible_write",
+    "naturalistic_features": [
+      "mid_task_change"
+    ]
+  },
+  "assets": [
+    {
+      "asset_id": "existing_deck",
+      "path": "data/v0.2/assets/rwpk.transformation_rewriting.deck_feedback_revision.0006/existing-status-deck.pptx",
+      "media_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "artifact_family": "presentation",
+      "attachment_role": "existing_artifact",
+      "trust_level": "trusted",
+      "input_condition": "clean",
+      "allowed_delivery_modes": [
+        "native_file"
+      ],
+      "locale_variant": "en-US",
+      "locale_status": "shared_across_locales",
+      "sha256": "a6af5f652d7b5778fbbf40d79706a19f6e583304a62614e3b801b9f56a850952",
+      "rights_basis": "original_project_authorship",
+      "privacy": {
+        "contains_personal_data": false,
+        "classification": "public_synthetic"
+      }
+    },
+    {
+      "asset_id": "reviewer_comments",
+      "path": "data/v0.2/assets/rwpk.transformation_rewriting.deck_feedback_revision.0006/reviewer-comments.txt",
+      "media_type": "text/plain",
+      "artifact_family": "response_only",
+      "attachment_role": "authoritative_source",
+      "trust_level": "trusted",
+      "input_condition": "clean",
+      "allowed_delivery_modes": [
+        "native_file"
+      ],
+      "locale_variant": "en-US",
+      "locale_status": "shared_across_locales",
+      "sha256": "929a2b531d1f3352706e1e6df6edabb996896917dfd1182c6d00c7a07c4a5313",
+      "rights_basis": "original_project_authorship",
+      "privacy": {
+        "contains_personal_data": false,
+        "classification": "public_synthetic"
+      }
+    }
+  ],
+  "realizations": [
+    {
+      "prompt_id": "rwpk.transformation_rewriting.deck_feedback_revision.0006.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "기존 PPTX에 첨부된 리뷰 코멘트를 반영해 영어 개정본을 만들어 주세요. 검증된 준비도와 자체 보고를 구분하고 handoff 책임을 핵심 리스크로 만들되, Q2 2026과 원본 수치는 유지하고 3장 범위를 넘기지 마세요.",
+          "attachment_refs": [
+            "existing_deck",
+            "reviewer_comments"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.transformation_rewriting.deck_feedback_revision.0006.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "mid_task_change"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "이 덱 코멘트대로 손봐줘. 준비됐다고 한 거랑 실제 확인된 거는 나누고 handoff 담당 문제를 중심에 둬. 아, 숫자나 Q2 표시는 바꾸지 말고 3장 그대로.",
+          "attachment_refs": [
+            "existing_deck",
+            "reviewer_comments"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.transformation_rewriting.deck_feedback_revision.0006.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Revise the existing English PPTX using the reviewer comments. Distinguish verified readiness from self-reporting, make handoff ownership the central risk, preserve Q2 2026 and source figures, and keep the deck to three slides.",
+          "attachment_refs": [
+            "existing_deck",
+            "reviewer_comments"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.transformation_rewriting.deck_feedback_revision.0006.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "mid_task_change"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Please update this deck from the comments. Separate what's verified from what's just reported and center the handoff-owner risk. Keep the Q2 label, figures, and three-slide scope.",
+          "attachment_refs": [
+            "existing_deck",
+            "reviewer_comments"
+          ]
+        }
+      ]
+    }
+  ],
+  "artifact_contract": {
+    "outputs": [
+      {
+        "artifact_id": "revised_deck",
+        "artifact_family": "presentation",
+        "media_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "required": true,
+        "editable": true,
+        "filename": "revised-status-deck.pptx",
+        "required_features": [
+          "slides",
+          "charts",
+          "editable_text"
+        ],
+        "reference_path": "data/v0.2/public-calibration/rwpk.transformation_rewriting.deck_feedback_revision.0006/revised-status-deck.pptx",
+        "reference_sha256": "12259a76e80f42fcefd454e2fc9b1daa5225f4651022f76cde7d04dadcb59bca",
+        "reference_checks": [
+          {
+            "check_id": "check.revised_slides",
+            "type": "minimum_feature",
+            "feature": "slide_count",
+            "minimum": 3
+          },
+          {
+            "check_id": "check.revised_text",
+            "type": "contains_text",
+            "values": [
+              "76%",
+              "handoff",
+              "Q2 2026"
+            ]
+          }
+        ]
+      }
+    ],
+    "side_effect_scope": "local_reversible_write",
+    "output_root": "outputs",
+    "preserve_input_assets": true
+  },
+  "evaluation": {
+    "response_mode": {
+      "canonical": "answer_directly",
+      "naturalistic": "answer_directly"
+    },
+    "hard_gates": [
+      {
+        "gate_id": "hg.required_artifacts_present",
+        "criterion": {
+          "ko": "필수 산출물이 모두 존재한다.",
+          "en": "Every required artifact is present."
+        },
+        "category": "artifact_presence",
+        "artifact_refs": [
+          "revised_deck"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "revised_deck",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Resolve every exact output filename in the submission directory.",
+          "check": {
+            "check_id": "check.required_artifacts_present",
+            "type": "artifact_present"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.media_types_match",
+        "criterion": {
+          "ko": "각 산출물의 파일 형식이 계약과 일치한다.",
+          "en": "Every artifact media type matches the contract."
+        },
+        "category": "file_type",
+        "artifact_refs": [
+          "revised_deck"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "revised_deck",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Compare extension, file signature, and declared media type.",
+          "check": {
+            "check_id": "check.media_types_match",
+            "type": "media_type"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.artifacts_parse",
+        "criterion": {
+          "ko": "모든 산출물을 참조 파서가 열 수 있다.",
+          "en": "Every artifact opens in the reference parser."
+        },
+        "category": "parseability",
+        "artifact_refs": [
+          "revised_deck"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "revised_deck",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Open ZIP-based Office files, JSON, and other formats with the reference inspector.",
+          "check": {
+            "check_id": "check.artifacts_parse",
+            "type": "parseable"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.required_structure_present",
+        "criterion": {
+          "ko": "계약에 명시된 편집 가능한 구조가 존재한다.",
+          "en": "The required editable structure is present."
+        },
+        "category": "editability",
+        "artifact_refs": [
+          "revised_deck"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "revised_deck",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Inspect OOXML and JSON features declared by each output.",
+          "check": {
+            "check_id": "check.required_structure_present",
+            "type": "required_features"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.inputs_preserved",
+        "criterion": {
+          "ko": "공개 입력 자산의 해시가 변경되지 않았다.",
+          "en": "The public input asset hashes remain unchanged."
+        },
+        "category": "input_preservation",
+        "artifact_refs": [],
+        "evidence_refs": [
+          {
+            "source": "asset",
+            "ref": "existing_deck",
+            "locator": "whole supplied file"
+          },
+          {
+            "source": "asset",
+            "ref": "reviewer_comments",
+            "locator": "whole supplied file"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Recompute every declared input SHA-256 digest.",
+          "check": {
+            "check_id": "check.inputs_preserved",
+            "type": "source_hashes_match"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      }
+    ],
+    "atomic_rubric_items": [
+      {
+        "rubric_id": "ar.revised_deck_content",
+        "criterion": {
+          "ko": "revised-status-deck.pptx에 작업별 핵심 사실과 구조가 포함된다.",
+          "en": "revised-status-deck.pptx contains the task-specific facts and structure."
+        },
+        "dimension": "source_fidelity",
+        "requirement": "required",
+        "scoring": {
+          "type": "binary"
+        },
+        "scorer": {
+          "method": "rule_assisted",
+          "implementation_status": "implemented",
+          "procedure": "Run the output's declared reference checks against extracted structure and text.",
+          "check": {
+            "check_id": "check.revised_deck_reference",
+            "type": "reference_checks"
+          }
+        },
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "revised_deck",
+            "locator": "declared reference checks"
+          }
+        ],
+        "adjudication_note": {
+          "ko": "검사는 정답 파일의 바이트 일치가 아니라 요구 속성을 확인한다.",
+          "en": "Checks verify required properties, not byte equality with the reference."
+        }
+      },
+      {
+        "rubric_id": "ar.visual_quality",
+        "criterion": {
+          "ko": "렌더링된 산출물에 겹침, 잘림 또는 읽기 어려운 요소가 없다.",
+          "en": "Rendered artifacts have no overlap, clipping, or unreadable elements."
+        },
+        "dimension": "visual_and_layout_quality",
+        "requirement": "quality_improving",
+        "scoring": {
+          "type": "bounded",
+          "minimum": 0,
+          "maximum": 2,
+          "step": 1
+        },
+        "scorer": {
+          "method": "human",
+          "implementation_status": "implemented",
+          "procedure": "Blindly inspect every rendered page, slide, or sheet at normal zoom."
+        },
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "revised_deck",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "adjudication_note": {
+          "ko": "공개 기준 산출물은 제작 QA를 통과했지만 모델 출력에 대한 인간 보정은 아직 필요하다.",
+          "en": "Reference artifacts pass production QA; human calibration on model outputs remains required."
+        }
+      },
+      {
+        "rubric_id": "ar.scope_precision",
+        "criterion": {
+          "ko": "제출 폴더에 계약된 파일만 존재한다.",
+          "en": "The submission folder contains only contracted files."
+        },
+        "dimension": "scope_precision",
+        "requirement": "negative_check",
+        "scoring": {
+          "type": "binary"
+        },
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Compare the submission file list with the exact output contract.",
+          "check": {
+            "check_id": "check.bundle_exact_files",
+            "type": "bundle_exact_files",
+            "values": [
+              "revised-status-deck.pptx"
+            ]
+          }
+        },
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "revised_deck",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "adjudication_note": {
+          "ko": "운영체제가 만든 숨김 파일은 무시한다.",
+          "en": "Operating-system metadata files are ignored."
+        }
+      }
+    ],
+    "human_calibration": {
+      "required": true,
+      "status": "not_run",
+      "plan_path": "data/v0.2/public-calibration/README.md"
+    }
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT",
+    "review": {
+      "review_type": "automated_structural",
+      "reviewer": "Codex release QA",
+      "review_date": "2026-07-31",
+      "evidence_path": "reports/v0.2/release-validation.json",
+      "human_practitioner_review": false
+    }
+  }
+}

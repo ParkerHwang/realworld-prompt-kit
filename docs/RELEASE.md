@@ -1,4 +1,10 @@
-# v0.1 Release Criteria
+# Release Criteria
+
+The current artifact-work calibration release is documented in
+[V0.2-RELEASE.md](V0.2-RELEASE.md). The criteria below remain the contract for
+the independent v0.1 Broad Core.
+
+## v0.1 Broad Core
 
 The v0.1 release counts semantic breadth separately from prompt realizations.
 The broad core is complete only when the checked-in artifacts and the
@@ -56,8 +62,9 @@ evidenced release may use `status=released` with no draft rows.
 
 The broad core does not claim OpenSocrates method routing, confusable-edge
 coverage, adapter conformance, dynamic-live behavior, side-effect safety,
-additional locales, or modality overlays. Those remain planned extension suites
-with separate manifests and evidence requirements under `suites/templates/`.
+additional locales, or artifact-work coverage. v0.2 Artifact Core is a
+separate calibration release with its own manifest and evidence; it does not
+change these v0.1 counts.
 
 Run the release checks from the repository root:
 
@@ -81,6 +88,7 @@ instruction cues, 5 numeric fact losses, and 1 rambling-length failure); the
 path-restricted integration repair reduced every class to zero without adding
 a phrase whitelist or promoting scenario status.
 
-The v0.1 manifest and validator are the sole release contract. Future suites
-must remain separately planned and must not change the broad-core counts or
-silently acquire release coverage without their own artifacts and evidence.
+The v0.1 manifest and validator are the sole contract for the Broad Core.
+Other tracks must remain separately versioned and must not change the
+broad-core counts or silently acquire coverage without their own artifacts and
+evidence.

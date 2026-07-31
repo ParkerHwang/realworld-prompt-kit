@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/ParkerHwang/realworld-prompt-kit/main/schemas/atomic-rubric.schema.json",
+  "title": "RealWorld Prompt Kit v0.2 Atomic Rubric Item",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "rubric_id",
+    "criterion",
+    "dimension",
+    "requirement",
+    "scoring",
+    "scorer",
+    "evidence_refs",
+    "adjudication_note"
+  ],
+  "properties": {
+    "rubric_id": {
+      "type": "string",
+      "pattern": "^ar\\.[a-z][a-z0-9_]*$"
+    },
+    "criterion": {
+      "$ref": "#/$defs/localized"
+    },
+    "dimension": {
+      "enum": [
+        "instruction_fulfillment",
+        "source_fidelity",
+        "functional_validity",
+        "audience_and_communication_fit",
+        "visual_and_layout_quality",
+        "editability_and_maintainability",
+        "interaction_judgment",
+        "scope_precision"
+      ]
+    },
+    "requirement": {
+      "enum": [
+        "required",
+        "quality_improving",
+        "negative_check"
+      ]
+    },
+    "scoring": {
+      "$ref": "#/$defs/scoring"
+    },
+    "scorer": {
+      "$ref": "#/$defs/scorer"
+    },
+    "evidence_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/evidence"
+      }
+    },
+    "adjudication_note": {
+      "$ref": "#/$defs/localized"
+    }
+  },
+  "$defs": {
+    "localized": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ko",
+        "en"
+      ],
+      "properties": {
+        "ko": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "scoring": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type"
+          ],
+          "properties": {
+            "type": {
+              "const": "binary"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "type",
+            "minimum",
+            "maximum",
+            "step"
+          ],
+          "properties": {
+            "type": {
+              "const": "bounded"
+            },
+            "minimum": {
+              "type": "number"
+            },
+            "maximum": {
+              "type": "number"
+            },
+            "step": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          }
+        }
+      ]
+    },
+    "scorer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "method",
+        "implementation_status",
+        "procedure"
+      ],
+      "properties": {
+        "method": {
+          "enum": [
+            "deterministic",
+            "office_engine",
+            "rule_assisted",
+            "model_judge",
+            "human"
+          ]
+        },
+        "implementation_status": {
+          "enum": [
+            "planned",
+            "implemented",
+            "calibrated"
+          ]
+        },
+        "procedure": {
+          "type": "string",
+          "minLength": 1
+        },
+        "check": {
+          "type": "object"
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "ref",
+        "locator"
+      ],
+      "properties": {
+        "source": {
+          "enum": [
+            "request",
+            "asset",
+            "output",
+            "artifact_contract"
+          ]
+        },
+        "ref": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

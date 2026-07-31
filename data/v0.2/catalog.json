@@ -1,0 +1,192 @@
+{
+  "schema": "realworld-prompt-kit.catalog/0.2.0",
+  "version": "0.2.0",
+  "track": "artifact_core",
+  "description": "Twelve portable, bilingual artifact-grounded office-work calibration episodes.",
+  "workflow_jobs": [
+    "inspect",
+    "extract",
+    "synthesize",
+    "create",
+    "revise",
+    "repurpose",
+    "validate",
+    "package"
+  ],
+  "modules": [
+    {
+      "module_id": "attached_file_grounding",
+      "episode_count": 2
+    },
+    {
+      "module_id": "document_work",
+      "episode_count": 2
+    },
+    {
+      "module_id": "presentation_work",
+      "episode_count": 2
+    },
+    {
+      "module_id": "spreadsheet_work",
+      "episode_count": 2
+    },
+    {
+      "module_id": "cross_artifact_workflow",
+      "episode_count": 2
+    },
+    {
+      "module_id": "artifact_quality_control_delivery",
+      "episode_count": 2
+    }
+  ],
+  "artifact_families": [
+    "response_only",
+    "pdf_or_image",
+    "document",
+    "presentation",
+    "spreadsheet",
+    "mixed_bundle"
+  ],
+  "input_conditions": [
+    "clean",
+    "noisy_or_scanned",
+    "incomplete",
+    "conflicting",
+    "untrusted_embedded_content"
+  ],
+  "interaction_patterns": [
+    "one_shot",
+    "clarification_required",
+    "feedback_revision",
+    "scope_change",
+    "infeasible_or_hold"
+  ],
+  "episodes": [
+    {
+      "scenario_id": "rwpk.summarization_synthesis.vendor_packet_brief.0001",
+      "path": "data/v0.2/scenarios/rwpk.summarization_synthesis.vendor_packet_brief.0001.json",
+      "module": "attached_file_grounding",
+      "workflow_job": "synthesize",
+      "primary_intent": "summarization_synthesis",
+      "output_artifact_families": [
+        "document"
+      ]
+    },
+    {
+      "scenario_id": "rwpk.extraction_parsing.scanned_expense_table.0002",
+      "path": "data/v0.2/scenarios/rwpk.extraction_parsing.scanned_expense_table.0002.json",
+      "module": "attached_file_grounding",
+      "workflow_job": "extract",
+      "primary_intent": "extraction_parsing",
+      "output_artifact_families": [
+        "spreadsheet"
+      ]
+    },
+    {
+      "scenario_id": "rwpk.communication_collaboration_negotiation.meeting_minutes.0003",
+      "path": "data/v0.2/scenarios/rwpk.communication_collaboration_negotiation.meeting_minutes.0003.json",
+      "module": "document_work",
+      "workflow_job": "create",
+      "primary_intent": "communication_collaboration_negotiation",
+      "output_artifact_families": [
+        "document"
+      ]
+    },
+    {
+      "scenario_id": "rwpk.transformation_rewriting.onboarding_sop_revision.0004",
+      "path": "data/v0.2/scenarios/rwpk.transformation_rewriting.onboarding_sop_revision.0004.json",
+      "module": "document_work",
+      "workflow_job": "revise",
+      "primary_intent": "transformation_rewriting",
+      "output_artifact_families": [
+        "document"
+      ]
+    },
+    {
+      "scenario_id": "rwpk.summarization_synthesis.executive_update_deck.0005",
+      "path": "data/v0.2/scenarios/rwpk.summarization_synthesis.executive_update_deck.0005.json",
+      "module": "presentation_work",
+      "workflow_job": "create",
+      "primary_intent": "summarization_synthesis",
+      "output_artifact_families": [
+        "presentation"
+      ]
+    },
+    {
+      "scenario_id": "rwpk.transformation_rewriting.deck_feedback_revision.0006",
+      "path": "data/v0.2/scenarios/rwpk.transformation_rewriting.deck_feedback_revision.0006.json",
+      "module": "presentation_work",
+      "workflow_job": "revise",
+      "primary_intent": "transformation_rewriting",
+      "output_artifact_families": [
+        "presentation"
+      ]
+    },
+    {
+      "scenario_id": "rwpk.quantitative_formal_analysis.project_status_workbook.0007",
+      "path": "data/v0.2/scenarios/rwpk.quantitative_formal_analysis.project_status_workbook.0007.json",
+      "module": "spreadsheet_work",
+      "workflow_job": "create",
+      "primary_intent": "quantitative_formal_analysis",
+      "output_artifact_families": [
+        "spreadsheet"
+      ]
+    },
+    {
+      "scenario_id": "rwpk.diagnosis_root_cause.budget_workbook_repair.0008",
+      "path": "data/v0.2/scenarios/rwpk.diagnosis_root_cause.budget_workbook_repair.0008.json",
+      "module": "spreadsheet_work",
+      "workflow_job": "validate",
+      "primary_intent": "diagnosis_root_cause",
+      "output_artifact_families": [
+        "spreadsheet"
+      ]
+    },
+    {
+      "scenario_id": "rwpk.operations_monitoring_improvement.monthly_ops_package.0009",
+      "path": "data/v0.2/scenarios/rwpk.operations_monitoring_improvement.monthly_ops_package.0009.json",
+      "module": "cross_artifact_workflow",
+      "workflow_job": "package",
+      "primary_intent": "operations_monitoring_improvement",
+      "output_artifact_families": [
+        "document",
+        "presentation",
+        "spreadsheet"
+      ]
+    },
+    {
+      "scenario_id": "rwpk.evaluation_review_audit.campaign_readout_package.0010",
+      "path": "data/v0.2/scenarios/rwpk.evaluation_review_audit.campaign_readout_package.0010.json",
+      "module": "cross_artifact_workflow",
+      "workflow_job": "repurpose",
+      "primary_intent": "evaluation_review_audit",
+      "output_artifact_families": [
+        "document",
+        "presentation"
+      ]
+    },
+    {
+      "scenario_id": "rwpk.evaluation_review_audit.quarterly_report_audit.0011",
+      "path": "data/v0.2/scenarios/rwpk.evaluation_review_audit.quarterly_report_audit.0011.json",
+      "module": "artifact_quality_control_delivery",
+      "workflow_job": "inspect",
+      "primary_intent": "evaluation_review_audit",
+      "output_artifact_families": [
+        "document"
+      ]
+    },
+    {
+      "scenario_id": "rwpk.one_off_tool_execution.delivery_package.0012",
+      "path": "data/v0.2/scenarios/rwpk.one_off_tool_execution.delivery_package.0012.json",
+      "module": "artifact_quality_control_delivery",
+      "workflow_job": "package",
+      "primary_intent": "one_off_tool_execution",
+      "output_artifact_families": [
+        "document",
+        "presentation",
+        "response_only",
+        "spreadsheet"
+      ]
+    }
+  ]
+}

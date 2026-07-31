@@ -15,20 +15,25 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python3 tools/validate.py
+      - run: python3 tools/validate.py --manifest data/v0.1/manifest.json
+      - run: python3 tools/validate.py --manifest data/v0.2/manifest.json
       - run: python3 -m unittest discover -s tests
       - run: python3 tools/export_jsonl.py --output build/realworld-prompt-kit.jsonl
+      - run: python3 tools/artifacts/export_jsonl.py
       - run: python3 tools/coverage_report.py
+      - run: python3 tools/artifacts/coverage_report.py
       - run: python3 tools/review.py
-      - name: Check one release root and exact export size
+      - name: Check release roots and exact export sizes
         run: |
           python3 -c 'from pathlib import Path; raise SystemExit((Path("data") / ("v" + "1.0")).exists())'
-          test "$(find data -mindepth 1 -maxdepth 1 -type d | wc -l | tr -d ' ')" = 1
+          test "$(find data -mindepth 1 -maxdepth 1 -type d | wc -l | tr -d ' ')" = 2
           test "$(find data/v0.1/scenarios -type f -name '*.json' | wc -l | tr -d ' ')" = 880
+          test "$(find data/v0.2/scenarios -type f -name '*.json' | wc -l | tr -d ' ')" = 12
           test "$(wc -l < build/realworld-prompt-kit.jsonl | tr -d ' ')" = 3520
+          test "$(wc -l < build/realworld-prompt-kit-v0.2.jsonl | tr -d ' ')" = 48
       - name: Check public metadata hygiene
         run: |
-          if rg -n '/Users/|source_thread_id|naturalistic_freeform' reports suites; then
+          if rg -n '/Users/|source_thread_id|naturalistic_freeform' reports suites data/v0.2/scenarios docs README.md CONTRIBUTING.md; then
             echo 'private or obsolete source metadata found in public artifacts' >&2
             exit 1
           fi

@@ -1,0 +1,6 @@
+
+Revise the existing deck without changing its source figures.
+- Separate verified readiness from owner-reported confidence.
+- Make handoff ownership the central risk.
+- Keep the deck to three slides.
+- Preserve the Q2 2026 period and do not introduce a launch date.

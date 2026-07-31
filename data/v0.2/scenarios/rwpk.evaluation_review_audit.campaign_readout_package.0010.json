@@ -1,0 +1,543 @@
+{
+  "schema": "realworld-prompt-kit.scenario/0.2.0",
+  "scenario_id": "rwpk.evaluation_review_audit.campaign_readout_package.0010",
+  "revision": 1,
+  "status": "calibration_ready",
+  "semantic_group_id": "rwpg.evaluation_review_audit.campaign_readout_package.0010",
+  "title": {
+    "ko": "캠페인 리드아웃 재구성",
+    "en": "Campaign readout repackaging"
+  },
+  "task": {
+    "primary_intent": "evaluation_review_audit",
+    "secondary_intents": [
+      "decision_recommendation",
+      "quantitative_formal_analysis"
+    ],
+    "workflow_job": "repurpose",
+    "primary_domain": "sales_marketing",
+    "domain_tags": [
+      "data_analytics",
+      "strategy_business_operations"
+    ],
+    "user_goal": {
+      "ko": "캠페인 워크북을 브랜드 지침에 맞는 브리프와 덱으로 재구성한다.",
+      "en": "Repurpose the campaign workbook into a branded brief and deck."
+    },
+    "expected_artifact": "An English DOCX brief and three-slide PPTX with consistent findings."
+  },
+  "coverage": {
+    "module": "cross_artifact_workflow",
+    "input_artifact_families": [
+      "document",
+      "spreadsheet"
+    ],
+    "output_artifact_families": [
+      "document",
+      "presentation"
+    ],
+    "input_conditions": [
+      "clean"
+    ],
+    "request_forms": [
+      "canonical",
+      "naturalistic"
+    ],
+    "interaction_pattern": "one_shot",
+    "authority": "local_reversible_write",
+    "naturalistic_features": [
+      "code_switching_jargon"
+    ]
+  },
+  "assets": [
+    {
+      "asset_id": "campaign_results",
+      "path": "data/v0.2/assets/rwpk.evaluation_review_audit.campaign_readout_package.0010/campaign-results.xlsx",
+      "media_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "artifact_family": "spreadsheet",
+      "attachment_role": "authoritative_source",
+      "trust_level": "trusted",
+      "input_condition": "clean",
+      "allowed_delivery_modes": [
+        "native_file"
+      ],
+      "locale_variant": "en-US",
+      "locale_status": "shared_across_locales",
+      "sha256": "4b6faaa6b85b29fd11d7aabe9a7c398ee701c6820f9770f7ee93fea6a46e5bb4",
+      "rights_basis": "original_project_authorship",
+      "privacy": {
+        "contains_personal_data": false,
+        "classification": "public_synthetic"
+      }
+    },
+    {
+      "asset_id": "brand_guide",
+      "path": "data/v0.2/assets/rwpk.evaluation_review_audit.campaign_readout_package.0010/brand-guide.docx",
+      "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "artifact_family": "document",
+      "attachment_role": "style_reference",
+      "trust_level": "trusted",
+      "input_condition": "clean",
+      "allowed_delivery_modes": [
+        "native_file"
+      ],
+      "locale_variant": "en-US",
+      "locale_status": "shared_across_locales",
+      "sha256": "0da263d57ed64c8c37cc758bc24fef9ba0db2031dc13de44f96c42c450051a9b",
+      "rights_basis": "original_project_authorship",
+      "privacy": {
+        "contains_personal_data": false,
+        "classification": "public_synthetic"
+      }
+    }
+  ],
+  "realizations": [
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.campaign_readout_package.0010.ko-KR.canonical",
+      "locale": "ko-KR",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "캠페인 결과 XLSX와 브랜드 가이드를 바탕으로 영어 DOCX 리드아웃과 3장 PPTX를 만들어 주세요. 규모와 효율을 구분하고 Partner와 Search의 결론을 두 파일에서 일치시키며 제공된 색상과 직접적인 문체를 사용해 주세요.",
+          "attachment_refs": [
+            "campaign_results",
+            "brand_guide"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.campaign_readout_package.0010.ko-KR.naturalistic",
+      "locale": "ko-KR",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "code_switching_jargon"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "이 campaign 결과로 영어 brief랑 3장 deck 만들어줘. scale이랑 efficiency는 구분하고 Partner/Search 얘기가 두 파일에서 안 엇갈리게. brand guide 톤이랑 컬러도 맞춰줘.",
+          "attachment_refs": [
+            "campaign_results",
+            "brand_guide"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.campaign_readout_package.0010.en-US.canonical",
+      "locale": "en-US",
+      "form": "canonical",
+      "origin": "controlled_canonical",
+      "features": [],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Use the campaign-results XLSX and brand guide to create an English DOCX readout and three-slide PPTX. Distinguish scale from efficiency, keep the Partner and Search conclusions consistent, and follow the supplied tone and colors.",
+          "attachment_refs": [
+            "campaign_results",
+            "brand_guide"
+          ]
+        }
+      ]
+    },
+    {
+      "prompt_id": "rwpk.evaluation_review_audit.campaign_readout_package.0010.en-US.naturalistic",
+      "locale": "en-US",
+      "form": "naturalistic",
+      "origin": "synthetic_naturalistic",
+      "features": [
+        "code_switching_jargon"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "Please turn the campaign workbook into an English brief and three-slide deck. Separate scale from efficiency, keep the Partner/Search story consistent, and follow the brand guide.",
+          "attachment_refs": [
+            "campaign_results",
+            "brand_guide"
+          ]
+        }
+      ]
+    }
+  ],
+  "artifact_contract": {
+    "outputs": [
+      {
+        "artifact_id": "campaign_brief",
+        "artifact_family": "document",
+        "media_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "required": true,
+        "editable": true,
+        "filename": "campaign-readout-brief.docx",
+        "required_features": [
+          "editable_text",
+          "headings",
+          "tables"
+        ],
+        "reference_path": "data/v0.2/public-calibration/rwpk.evaluation_review_audit.campaign_readout_package.0010/campaign-readout-brief.docx",
+        "reference_sha256": "520fac203f3365a010bdce95c9dc708fdd08c35aa889465833ec571f7387f3af",
+        "reference_checks": [
+          {
+            "check_id": "check.campaign_brief_text",
+            "type": "contains_text",
+            "values": [
+              "Partner",
+              "$130",
+              "Search",
+              "$310,000"
+            ]
+          }
+        ]
+      },
+      {
+        "artifact_id": "campaign_deck",
+        "artifact_family": "presentation",
+        "media_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        "required": true,
+        "editable": true,
+        "filename": "campaign-recap-deck.pptx",
+        "required_features": [
+          "slides",
+          "charts",
+          "editable_text"
+        ],
+        "reference_path": "data/v0.2/public-calibration/rwpk.evaluation_review_audit.campaign_readout_package.0010/campaign-recap-deck.pptx",
+        "reference_sha256": "e2426ddbe7e6e92d12f526054a9e43e0befe284422339083d295d36ab8566791",
+        "reference_checks": [
+          {
+            "check_id": "check.campaign_deck_slides",
+            "type": "minimum_feature",
+            "feature": "slide_count",
+            "minimum": 3
+          },
+          {
+            "check_id": "check.campaign_deck_text",
+            "type": "contains_text",
+            "values": [
+              "Partner",
+              "$130",
+              "Search"
+            ]
+          }
+        ]
+      }
+    ],
+    "side_effect_scope": "local_reversible_write",
+    "output_root": "outputs",
+    "preserve_input_assets": true
+  },
+  "evaluation": {
+    "response_mode": {
+      "canonical": "answer_directly",
+      "naturalistic": "answer_directly"
+    },
+    "hard_gates": [
+      {
+        "gate_id": "hg.required_artifacts_present",
+        "criterion": {
+          "ko": "필수 산출물이 모두 존재한다.",
+          "en": "Every required artifact is present."
+        },
+        "category": "artifact_presence",
+        "artifact_refs": [
+          "campaign_brief",
+          "campaign_deck"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "campaign_brief",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Resolve every exact output filename in the submission directory.",
+          "check": {
+            "check_id": "check.required_artifacts_present",
+            "type": "artifact_present"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.media_types_match",
+        "criterion": {
+          "ko": "각 산출물의 파일 형식이 계약과 일치한다.",
+          "en": "Every artifact media type matches the contract."
+        },
+        "category": "file_type",
+        "artifact_refs": [
+          "campaign_brief",
+          "campaign_deck"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "campaign_brief",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Compare extension, file signature, and declared media type.",
+          "check": {
+            "check_id": "check.media_types_match",
+            "type": "media_type"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.artifacts_parse",
+        "criterion": {
+          "ko": "모든 산출물을 참조 파서가 열 수 있다.",
+          "en": "Every artifact opens in the reference parser."
+        },
+        "category": "parseability",
+        "artifact_refs": [
+          "campaign_brief",
+          "campaign_deck"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "campaign_brief",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Open ZIP-based Office files, JSON, and other formats with the reference inspector.",
+          "check": {
+            "check_id": "check.artifacts_parse",
+            "type": "parseable"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.required_structure_present",
+        "criterion": {
+          "ko": "계약에 명시된 편집 가능한 구조가 존재한다.",
+          "en": "The required editable structure is present."
+        },
+        "category": "editability",
+        "artifact_refs": [
+          "campaign_brief",
+          "campaign_deck"
+        ],
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "campaign_brief",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Inspect OOXML and JSON features declared by each output.",
+          "check": {
+            "check_id": "check.required_structure_present",
+            "type": "required_features"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      },
+      {
+        "gate_id": "hg.inputs_preserved",
+        "criterion": {
+          "ko": "공개 입력 자산의 해시가 변경되지 않았다.",
+          "en": "The public input asset hashes remain unchanged."
+        },
+        "category": "input_preservation",
+        "artifact_refs": [],
+        "evidence_refs": [
+          {
+            "source": "asset",
+            "ref": "campaign_results",
+            "locator": "whole supplied file"
+          },
+          {
+            "source": "asset",
+            "ref": "brand_guide",
+            "locator": "whole supplied file"
+          }
+        ],
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Recompute every declared input SHA-256 digest.",
+          "check": {
+            "check_id": "check.inputs_preserved",
+            "type": "source_hashes_match"
+          }
+        },
+        "on_fail": "blocks_full_pass"
+      }
+    ],
+    "atomic_rubric_items": [
+      {
+        "rubric_id": "ar.campaign_brief_content",
+        "criterion": {
+          "ko": "campaign-readout-brief.docx에 작업별 핵심 사실과 구조가 포함된다.",
+          "en": "campaign-readout-brief.docx contains the task-specific facts and structure."
+        },
+        "dimension": "source_fidelity",
+        "requirement": "required",
+        "scoring": {
+          "type": "binary"
+        },
+        "scorer": {
+          "method": "rule_assisted",
+          "implementation_status": "implemented",
+          "procedure": "Run the output's declared reference checks against extracted structure and text.",
+          "check": {
+            "check_id": "check.campaign_brief_reference",
+            "type": "reference_checks"
+          }
+        },
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "campaign_brief",
+            "locator": "declared reference checks"
+          }
+        ],
+        "adjudication_note": {
+          "ko": "검사는 정답 파일의 바이트 일치가 아니라 요구 속성을 확인한다.",
+          "en": "Checks verify required properties, not byte equality with the reference."
+        }
+      },
+      {
+        "rubric_id": "ar.campaign_deck_content",
+        "criterion": {
+          "ko": "campaign-recap-deck.pptx에 작업별 핵심 사실과 구조가 포함된다.",
+          "en": "campaign-recap-deck.pptx contains the task-specific facts and structure."
+        },
+        "dimension": "source_fidelity",
+        "requirement": "required",
+        "scoring": {
+          "type": "binary"
+        },
+        "scorer": {
+          "method": "rule_assisted",
+          "implementation_status": "implemented",
+          "procedure": "Run the output's declared reference checks against extracted structure and text.",
+          "check": {
+            "check_id": "check.campaign_deck_reference",
+            "type": "reference_checks"
+          }
+        },
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "campaign_deck",
+            "locator": "declared reference checks"
+          }
+        ],
+        "adjudication_note": {
+          "ko": "검사는 정답 파일의 바이트 일치가 아니라 요구 속성을 확인한다.",
+          "en": "Checks verify required properties, not byte equality with the reference."
+        }
+      },
+      {
+        "rubric_id": "ar.visual_quality",
+        "criterion": {
+          "ko": "렌더링된 산출물에 겹침, 잘림 또는 읽기 어려운 요소가 없다.",
+          "en": "Rendered artifacts have no overlap, clipping, or unreadable elements."
+        },
+        "dimension": "visual_and_layout_quality",
+        "requirement": "quality_improving",
+        "scoring": {
+          "type": "bounded",
+          "minimum": 0,
+          "maximum": 2,
+          "step": 1
+        },
+        "scorer": {
+          "method": "human",
+          "implementation_status": "implemented",
+          "procedure": "Blindly inspect every rendered page, slide, or sheet at normal zoom."
+        },
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "campaign_brief",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "adjudication_note": {
+          "ko": "공개 기준 산출물은 제작 QA를 통과했지만 모델 출력에 대한 인간 보정은 아직 필요하다.",
+          "en": "Reference artifacts pass production QA; human calibration on model outputs remains required."
+        }
+      },
+      {
+        "rubric_id": "ar.scope_precision",
+        "criterion": {
+          "ko": "제출 폴더에 계약된 파일만 존재한다.",
+          "en": "The submission folder contains only contracted files."
+        },
+        "dimension": "scope_precision",
+        "requirement": "negative_check",
+        "scoring": {
+          "type": "binary"
+        },
+        "scorer": {
+          "method": "deterministic",
+          "implementation_status": "implemented",
+          "procedure": "Compare the submission file list with the exact output contract.",
+          "check": {
+            "check_id": "check.bundle_exact_files",
+            "type": "bundle_exact_files",
+            "values": [
+              "campaign-readout-brief.docx",
+              "campaign-recap-deck.pptx"
+            ]
+          }
+        },
+        "evidence_refs": [
+          {
+            "source": "output",
+            "ref": "campaign_brief",
+            "locator": "complete artifact bundle"
+          }
+        ],
+        "adjudication_note": {
+          "ko": "운영체제가 만든 숨김 파일은 무시한다.",
+          "en": "Operating-system metadata files are ignored."
+        }
+      }
+    ],
+    "human_calibration": {
+      "required": true,
+      "status": "not_run",
+      "plan_path": "data/v0.2/public-calibration/README.md"
+    }
+  },
+  "provenance": {
+    "origin": "synthetic",
+    "authors": [
+      "RealWorld Prompt Kit"
+    ],
+    "contains_personal_data": false,
+    "rights_basis": "original_project_authorship",
+    "license": "MIT",
+    "review": {
+      "review_type": "automated_structural",
+      "reviewer": "Codex release QA",
+      "review_date": "2026-07-31",
+      "evidence_path": "reports/v0.2/release-validation.json",
+      "human_practitioner_review": false
+    }
+  }
+}

@@ -1,0 +1,5 @@
+region,q1_orders,q2_orders,q2_on_time_rate
+North,820,860,0.95
+South,760,735,0.91
+East,690,745,0.94
+West,710,772,0.93
